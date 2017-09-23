@@ -1,0 +1,8 @@
+Bartender4: disabled
+ElvUI: enabled
+ElvUI_Config: enabled
+WeakAuras: enabled
+WeakAurasModelPaths: enabled
+WeakAurasOptions: enabled
+WeakAurasTemplates: enabled
+ConsolePort: disabled

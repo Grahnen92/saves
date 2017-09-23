@@ -1,0 +1,44 @@
+VER 3 000000000000001C "BearTotem" "132276"
+/cast Bear Form(Shapeshift)
+END
+VER 3 0000000000000019 "CatTotem" "132115"
+/cast Cat Form(Shapeshift)
+END
+VER 3 000000000000001F "Entangling Roots" "136100"
+/cast [target=mouseover,exists,nodead,harm]  Entangling Roots; Entangling Roots
+END
+VER 3 000000000000001E "Growl" "132270"
+/cast [target=mouseover,exists,nodead,harm]  Growl; Growl
+END
+VER 3 0000000000000012 "heal" "Ability_Creature_Poison_01"
+#showtooltip
+/cast [target=mouseover,exists,nodead,help] Healing Wave; Healing Wave
+END
+VER 3 0000000000000014 "heal/smit#showto" "SPELL_HOLY_HEAL"
+#showtooltip
+/cast [target=mouseover,exists,nodead,harm]  Smite; Smite [target=mouseover,exists,nodead, help] Flash Heal ; Smite
+END
+VER 3 0000000000000016 "MaulGrowth" "132136"
+#showtooltip Maul
+/cast [target=mouseover,exists,nodead,help] Regrowth; Maul
+END
+VER 3 0000000000000015 "mind blast" "SPELL_SHADOW_UNHOLYFRENZY"
+#showtooltip
+/cast [target=mouseover,exists,nodead,harm]  Mind Blast;  Mind Blast [target=mouseover,exists,nodead, help] Flash Heal ; Mind Blast
+END
+VER 3 000000000000001D "Mouselock" "134239"
+/run if IsMouselooking() then MouselookStop() SetBinding("BUTTON1","CAMERAORSELECTORMOVE") SetBinding("BUTTON2","TURNORACTION") else MouselookStart() SetBinding("BUTTON1","STRAFELEFT") SetBinding("BUTTON2","STRAFERIGHT") end
+END
+VER 3 0000000000000017 "PulvRej" "1033490"
+#showtooltip
+/cast [target=mouseover,exists,nodead,help] Rejuvenation;  [target=mouseover,exists,nodead] Pulverize; Pulverize
+END
+VER 3 000000000000001B "Totem" "135158"
+/cancelaura [stance:1] Bloodtotem War Harness
+/cancelaura [stance:2] Bloodtotem War Harness
+/cancelaura [stance:3] Bloodtotem War Harness
+/use [nostance:1,nostance:2,nostance:3] Bloodtotem War Harness
+END
+VER 3 000000000000001A "TravelTotem" "132144"
+/cast Travel Form(Shapeshift)
+END

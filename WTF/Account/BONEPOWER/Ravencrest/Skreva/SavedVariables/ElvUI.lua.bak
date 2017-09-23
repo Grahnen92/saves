@@ -1,0 +1,51 @@
+
+ElvCharacterDB = {
+	["ChatEditHistory"] = {
+	},
+	["ChatLog"] = {
+		["1505670690.601"] = {
+			"<Holding Absence> is a new social guild thats growing fast and seeking more active members to join our ranks. We are seeking more players to start a RBG Team and Raid Team. Come join a growing community and have fun with experienced players", -- [1]
+			"Álesana", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Álesana", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			3, -- [11]
+			"Player-1329-05DFFA93", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			nil, -- [18]
+			nil, -- [19]
+			"CHAT_MSG_WHISPER", -- [20]
+		},
+		["1505666569.236"] = {
+			"Hey! Stormwind Royal Guards is a Social guild with No Demand or Must do! We have Active Players almost every hour! Ppl can use Calender to get something Started for PvP or PvE if like! Good place just to chill when lvl or just doing stuff in WoW! Welcome!", -- [1]
+			"Darknordic", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Darknordic", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2, -- [11]
+			"Player-1329-0419DBF2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			nil, -- [18]
+			nil, -- [19]
+			"CHAT_MSG_WHISPER", -- [20]
+		},
+	},
+}

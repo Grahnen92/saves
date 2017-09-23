@@ -1,0 +1,8 @@
+Version: 1
+Frame: ColorPickerFrame
+FrameLevel: 21
+Anchor: CENTER
+X: 104
+Y: -16
+W: 365
+H: 241

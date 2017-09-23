@@ -1,0 +1,25 @@
+## Interface: 70300
+## Title: Console Port |cff69ccf0Action Bar|r
+## Notes: Action bar extension for Console Port
+## SavedVariables: ConsolePortBarManifest
+## SavedVariablesPerCharacter: ConsolePortBarSetup
+## RequiredDeps: ConsolePort
+
+ButtonTemplate.xml
+
+Libs\CallbackHandler.lua
+Libs\ButtonGlow.lua
+Libs\ActionButton.lua
+Libs\Button.lua
+
+Core\Lookup.lua
+Core\Wrapper.lua
+Core\Bar.lua
+Core\Config.lua
+
+Custom\Blizzard.lua
+Custom\ConsolePort.lua
+
+Options\Pet.lua
+Options\Stance.lua
+Options\MenuBar.lua
