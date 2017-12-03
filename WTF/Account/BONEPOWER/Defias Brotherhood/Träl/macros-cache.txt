@@ -27,6 +27,6 @@ VER 3 0100000000000005 "Purify spirit" "ABILITY_SHAMAN_CLEANSESPIRIT"
 /cast [target=mouseover,exists,nodead,harm]  Purge; Purge [target=mouseover,exists,nodead, help] Purify Spirit ;  Purge
 END
 VER 3 0100000000000004 "Riptide" "SPELL_NATURE_RIPTIDE"
-#showtooltip
+#showtooltip Riptide
 /cast [target=mouseover,exists,nodead,harm]  Flame Shock; Flame Shock [target=mouseover,exists,nodead, help] Riptide ;  Flame Shock
 END

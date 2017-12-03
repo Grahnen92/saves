@@ -1,6 +1,8 @@
 
 ElvCharacterDB = {
 	["ChatEditHistory"] = {
+		"/mock", -- [1]
+		"/taunt", -- [2]
 	},
 	["ChatLog"] = {
 		["1505666569.236"] = {

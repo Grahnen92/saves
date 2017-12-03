@@ -51,7 +51,7 @@ VER 3 0100000000000002 "Speed" "ABILITY_DRUID_DASH"
 END
 VER 3 0100000000000005 "Swiftmend" "INV_RELICS_IDOLOFREJUVENATION"
 #showtooltip
-/cast [target=mouseover,exists,nodead,harm]  Solar Wrath; Solar Wrath [target=mouseover,exists,nodead, help] Swiftmend ; Solar Wrath
+/cast [target=mouseover,exists,nodead,harm]  Shred; Shred [target=mouseover,exists,nodead, help] Swiftmend ; Shred
 END
 VER 3 010000000000000F "TrashGrowth" "451161"
 #showtooltip Thrash

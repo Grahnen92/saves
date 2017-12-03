@@ -12,12 +12,9 @@ VER 3 0100000000000004 "Lifebloom" "INV_MISC_HERB_FELBLOSSOM"
 END
 VER 3 0100000000000011 "MangleHeal" "132135"
 #showtooltip Mangle
-/use [stance:1, target=mouseover,exists,nodead,help] Bloodtotem War Harness
-/use [stance:2, target=mouseover,exists,nodead,help] Bloodtotem War Harness
 /cast [target=mouseover,exists,nodead,help] Rejuvenation; Mangle
 END
 VER 3 0100000000000012 "MoonHealing" "136096"
-/use [stance:1, target=mouseover,exists,nodead,help] Bloodtotem War Harness
 /cast [target=mouseover,exists,nodead,harm]  MoonFire; MoonFire [target=mouseover,exists,nodead, help] Healing Touch ; MoonFire
 END
 VER 3 010000000000000B "Nature's Cure" "ABILITY_SHAMAN_CLEANSESPIRIT"
@@ -39,6 +36,7 @@ VER 3 0100000000000006 "Regrowth" "SPELL_NATURE_RESISTNATURE"
 END
 VER 3 0100000000000001 "Rejuvenation" "SPELL_NATURE_REJUVENATION"
 #showtooltip
+Rejuvenation
 /cast [target=mouseover,exists,nodead,harm]  Sunfire; Sunfire [target=mouseover,exists,nodead, help] Rejuvenation ; Sunfire
 END
 VER 3 0100000000000010 "Remove Corruptio" "135952"
@@ -54,12 +52,11 @@ VER 3 0100000000000002 "Speed" "ABILITY_DRUID_DASH"
 END
 VER 3 0100000000000005 "Swiftmend" "INV_RELICS_IDOLOFREJUVENATION"
 #showtooltip
-/cast [target=mouseover,exists,nodead,harm]  Solar Wrath; Solar Wrath [target=mouseover,exists,nodead, help] Swiftmend ; Solar Wrath
+Swiftmend
+/cast [target=mouseover,exists,nodead,harm]  Shred; Shred [target=mouseover,exists,nodead, help] Swiftmend ; Shred
 END
 VER 3 010000000000000F "TrashGrowth" "451161"
 #showtooltip Thrash
-/use [stance:1, target=mouseover,exists,nodead,help] Bloodtotem War Harness
-/use [stance:2, target=mouseover,exists,nodead,help] Bloodtotem War Harness
 /cast [target=mouseover,exists,nodead,help]  Swiftmend; Thrash
 END
 VER 3 010000000000000C "Wild Charge" "SPELL_DRUID_WILDCHARGE"

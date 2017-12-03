@@ -1,0 +1,23 @@
+tag 80a1275186e28fc42f94f2ed5f47be8e5985f792 2.3.9
+Author:	Benjamin Staneck <staneck@gmail.com>
+Date:	Tue Apr 4 19:13:18 2017 +0200
+
+commit c879426dbeb0d5c8ddb2b3cccb3d9dcdf9cdcfaf
+Author: Infus <infus@squorn.de>
+Date:   Fri Mar 31 07:47:29 2017 +0200
+
+    Fix Power Type trigger with "Only if primary"
+    
+    Ticket-Nr: 906
+
+commit 9617b6d9fe26f2e633ef05741ed11beb4e66ee10
+Author: Infus <infus@squorn.de>
+Date:   Thu Mar 30 20:29:30 2017 +0200
+
+    Fix Expel Harm again
+    
+    Another small tweak to unified cooldown function.
+    A spell on gcd cooldown is not a spell with a cooldown.
+    
+    Ticket-Nr: 910
+
