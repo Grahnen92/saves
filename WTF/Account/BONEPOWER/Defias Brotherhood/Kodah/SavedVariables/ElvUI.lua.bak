@@ -186,8 +186,8 @@ ElvCharacterDB = {
 			nil, -- [19]
 			"CHAT_MSG_INSTANCE_CHAT", -- [20]
 		},
-		["1512315248.186"] = {
-			"ty all", -- [1]
+		["1512314409.92"] = {
+			"hey", -- [1]
 			"Macneal-EmeraldDream", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -197,7 +197,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			194, -- [11]
+			57, -- [11]
 			"Player-2074-0690C6D0", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -207,6 +207,28 @@ ElvCharacterDB = {
 			nil, -- [18]
 			nil, -- [19]
 			"CHAT_MSG_INSTANCE_CHAT_LEADER", -- [20]
+		},
+		["1512316116.864"] = {
+			"TUNNEL", -- [1]
+			"Narwzul-Zul'jin", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Narwzul-Zul'jin", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			267, -- [11]
+			"Player-1379-06B32137", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			nil, -- [18]
+			nil, -- [19]
+			"CHAT_MSG_INSTANCE_CHAT", -- [20]
 		},
 		["1512314812.05"] = {
 			"grats mate:)", -- [1]
@@ -252,19 +274,19 @@ ElvCharacterDB = {
 			nil, -- [19]
 			"CHAT_MSG_SAY", -- [20]
 		},
-		["1512316116.864"] = {
-			"TUNNEL", -- [1]
-			"Narwzul-Zul'jin", -- [2]
+		["1512368694.551"] = {
+			"<WhoTaunted> Qenjua-Blackhand taunted Flameweaver Verathix using |cff71d5ff|Hspell:56222:0|h[Dark Command]|h|r.", -- [1]
+			"Moonwallker-Dunemaul", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Narwzul-Zul'jin", -- [5]
+			"Moonwallker-Dunemaul", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			267, -- [11]
-			"Player-1379-06B32137", -- [12]
+			110, -- [11]
+			"Player-1597-06C64B21", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
@@ -272,7 +294,7 @@ ElvCharacterDB = {
 			false, -- [17]
 			nil, -- [18]
 			nil, -- [19]
-			"CHAT_MSG_INSTANCE_CHAT", -- [20]
+			"CHAT_MSG_RAID", -- [20]
 		},
 		["1512316116.318"] = {
 			"2", -- [1]
@@ -296,8 +318,8 @@ ElvCharacterDB = {
 			nil, -- [19]
 			"CHAT_MSG_INSTANCE_CHAT", -- [20]
 		},
-		["1512314409.92"] = {
-			"hey", -- [1]
+		["1512315248.186"] = {
+			"ty all", -- [1]
 			"Macneal-EmeraldDream", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -307,7 +329,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			57, -- [11]
+			194, -- [11]
 			"Player-2074-0690C6D0", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -340,10 +362,10 @@ ElvCharacterDB = {
 			nil, -- [19]
 			"CHAT_MSG_INSTANCE_CHAT", -- [20]
 		},
-		["1512314945.229"] = {
-			"stay dead", -- [1]
+		["1507452002.899"] = {
+			"Rejuvenation", -- [1]
 			"Kodah-DefiasBrotherhood", -- [2]
-			"", -- [3]
+			"Orcish", -- [3]
 			"", -- [4]
 			"Kodah", -- [5]
 			"", -- [6]
@@ -351,7 +373,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			152, -- [11]
+			15, -- [11]
 			"Player-1096-069DD293", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -360,7 +382,7 @@ ElvCharacterDB = {
 			false, -- [17]
 			nil, -- [18]
 			nil, -- [19]
-			"CHAT_MSG_INSTANCE_CHAT", -- [20]
+			"CHAT_MSG_SAY", -- [20]
 		},
 		["1502222814.913"] = {
 			"7ec", -- [1]
@@ -472,8 +494,8 @@ ElvCharacterDB = {
 			nil, -- [19]
 			"CHAT_MSG_INSTANCE_CHAT_LEADER", -- [20]
 		},
-		["1507452002.899"] = {
-			"Rejuvenation", -- [1]
+		["1502257978.482"] = {
+			"7ec", -- [1]
 			"Kodah-DefiasBrotherhood", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
@@ -483,7 +505,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			15, -- [11]
+			8, -- [11]
 			"Player-1096-069DD293", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -516,10 +538,10 @@ ElvCharacterDB = {
 			nil, -- [19]
 			"CHAT_MSG_INSTANCE_CHAT", -- [20]
 		},
-		["1502257978.482"] = {
-			"7ec", -- [1]
+		["1512314945.229"] = {
+			"stay dead", -- [1]
 			"Kodah-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
+			"", -- [3]
 			"", -- [4]
 			"Kodah", -- [5]
 			"", -- [6]
@@ -527,7 +549,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			8, -- [11]
+			152, -- [11]
 			"Player-1096-069DD293", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -536,7 +558,7 @@ ElvCharacterDB = {
 			false, -- [17]
 			nil, -- [18]
 			nil, -- [19]
-			"CHAT_MSG_SAY", -- [20]
+			"CHAT_MSG_INSTANCE_CHAT", -- [20]
 		},
 		["1512314774.483"] = {
 			"|cffa335ee|Hitem:134211::::::::110:264::2:3:1726:1527:3528:::|h[Tideskorn Coif]|h|r anyone?", -- [1]

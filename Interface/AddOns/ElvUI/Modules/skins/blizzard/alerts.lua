@@ -3,15 +3,17 @@ local S = E:GetModule('Skins')
 
 --Cache global variables
 --Lua functions
-local _G = _G
 local unpack, select = unpack, select
 --WoW API / Variables
 local CreateFrame = CreateFrame
-local BAG_ITEM_QUALITY_COLORS = BAG_ITEM_QUALITY_COLORS
-local MAX_ACHIEVEMENT_ALERTS = MAX_ACHIEVEMENT_ALERTS
+local GetItemInfo = GetItemInfo
+local SetLargeGuildTabardTextures = SetLargeGuildTabardTextures
+local ITEM_QUALITY_COLORS = ITEM_QUALITY_COLORS
+local hooksecurefunc = hooksecurefunc
 
 local function LoadSkin()
 	if E.private.skins.blizzard.enable ~= true or E.private.skins.blizzard.alertframes ~= true then return end
+
 	local function forceAlpha(self, alpha, isForced)
 		if alpha ~= 1 and isForced ~= true then
 			self:SetAlpha(1, true)
@@ -138,10 +140,10 @@ local function LoadSkin()
 
 		frame.glow:Kill()
 		frame.shine:Kill()
-		_G[frame:GetName().."EmblemBorder"]:Kill()
+		frame.EmblemBorder:Kill()
 
 		-- Icon border
-		local EmblemIcon = _G[frame:GetName().."EmblemIcon"]
+		local EmblemIcon = frame.EmblemIcon
 		if not EmblemIcon.b then
 			EmblemIcon.b = CreateFrame("Frame", nil, frame)
 			EmblemIcon.b:SetTemplate("Default")
@@ -261,7 +263,7 @@ local function LoadSkin()
 				if region:GetObjectType() == "Texture" then
 					if region:GetAtlas() == "Garr_MissionToast" then
 						region:Kill()
-					end 
+					end
 				end
 			end
 			--Create Backdrop
@@ -424,7 +426,7 @@ local function LoadSkin()
 
 			frame.isSkinned = true
 		end
-		
+
 		local color = ITEM_QUALITY_COLORS[quality]
 		if color then
 			frame.PortraitFrame.squareBG:SetBackdropBorderColor(color.r, color.g, color.b)
@@ -696,12 +698,13 @@ local function LoadSkin()
 	hooksecurefunc(DigsiteCompleteAlertSystem, "setUpFunction", SkinDigsiteCompleteAlert)
 	hooksecurefunc(NewRecipeLearnedAlertSystem, "setUpFunction", SkinNewRecipeLearnedAlert)
 
-	-- Pets
+	-- Pets/Mounts
 	hooksecurefunc(NewPetAlertSystem, "setUpFunction", SkinNewPetAlert)
+	hooksecurefunc(NewMountAlertSystem, "setUpFunction", SkinNewPetAlert)
 
 	--[[ STATIC SKINNING ]]--
 	--Bonus Roll Money
-	frame = BonusRollMoneyWonFrame
+	local frame = BonusRollMoneyWonFrame
 	frame:SetAlpha(1)
 	hooksecurefunc(frame, "SetAlpha", forceAlpha)
 	frame.Background:Kill()

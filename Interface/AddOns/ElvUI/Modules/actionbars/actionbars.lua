@@ -63,6 +63,8 @@ local LSM = LibStub("LibSharedMedia-3.0")
 local Masque = LibStub("Masque", true)
 local MasqueGroup = Masque and Masque:Group("ElvUI", "ActionBars")
 
+local UIHider
+
 AB.RegisterCooldown = E.RegisterCooldown
 
 AB["handledBars"] = {} --List of all bars
@@ -253,8 +255,7 @@ function AB:PositionAndSizeBar(barName)
 		if AB['barDefaults']['bar'..bar.id].conditions:find("[form,noform]") then
 			bar:SetAttribute("hasTempBar", true)
 
-			local newCondition = page
-			newCondition = gsub(AB['barDefaults']['bar'..bar.id].conditions, " %[form,noform%] 0; ", "")
+			local newCondition = gsub(AB['barDefaults']['bar'..bar.id].conditions, " %[form,noform%] 0; ", "")
 			bar:SetAttribute("newCondition", newCondition)
 		else
 			bar:SetAttribute("hasTempBar", false)
@@ -573,13 +574,15 @@ function AB:UpdateButtonSettings()
 
 	self:UpdatePetBindings()
 	self:UpdateStanceBindings()
-	for barName, bar in pairs(self["handledBars"]) do
+	for _, bar in pairs(self["handledBars"]) do
 		self:UpdateButtonConfig(bar, bar.bindButtons)
 	end
 
 	for i=1, 6 do
 		self:PositionAndSizeBar('bar'..i)
 	end
+
+	self:AdjustMaxStanceButtons()
 	self:PositionAndSizeBarPet()
 	self:PositionAndSizeBarShapeShift()
 end
@@ -745,9 +748,21 @@ function AB:FadeParent_OnEvent()
 	end
 end
 
+function AB:IconIntroTracker_Toggle()
+	if self.db.addNewSpells then
+		IconIntroTracker:RegisterEvent("SPELL_PUSHED_TO_ACTIONBAR")
+		IconIntroTracker:Show()
+		IconIntroTracker:SetParent(UIParent)
+	else
+		IconIntroTracker:UnregisterAllEvents()
+		IconIntroTracker:Hide()
+		IconIntroTracker:SetParent(UIHider)
+	end
+end
+
 function AB:DisableBlizzard()
 	-- Hidden parent frame
-	local UIHider = CreateFrame("Frame")
+	UIHider = CreateFrame("Frame")
 	UIHider:Hide()
 
 	MultiBarBottomLeft:SetParent(UIHider)
@@ -845,10 +860,8 @@ function AB:DisableBlizzard()
 	MultiCastActionBarFrame:Hide()
 	MultiCastActionBarFrame:SetParent(UIHider)
 
-	--This frame puts spells on the damn actionbar, fucking obliterate that shit
-	IconIntroTracker:UnregisterAllEvents()
-	IconIntroTracker:Hide()
-	IconIntroTracker:SetParent(UIHider)
+	--Enable/disable functionality to automatically put spells on the actionbar.
+	self:IconIntroTracker_Toggle()
 
 	InterfaceOptionsActionBarsPanelAlwaysShowActionBars:EnableMouse(false)
 	InterfaceOptionsActionBarsPanelPickupActionKeyDropDownButton:SetScale(0.0001)

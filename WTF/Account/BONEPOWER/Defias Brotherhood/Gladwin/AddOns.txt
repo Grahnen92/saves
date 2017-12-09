@@ -1,6 +1,6 @@
 Bartender4: disabled
 ElvUI: enabled
-ElvUI_Config: disabled
+ElvUI_Config: enabled
 WeakAuras: enabled
 WeakAurasModelPaths: enabled
 WeakAurasOptions: enabled
@@ -8,3 +8,4 @@ WeakAurasTemplates: enabled
 Immersion: disabled
 Storyline: disabled
 ConsolePort: disabled
+DynamicCam: enabled

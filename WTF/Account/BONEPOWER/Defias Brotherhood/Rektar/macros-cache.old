@@ -1,0 +1,41 @@
+VER 3 010000000000000F "Axe Toss" "132406"
+#showtooltip Axe Toss
+/cast Axe Toss
+END
+VER 3 010000000000000A "Banish" "INV_STAFF_2H_GNOMEWARLOCK_C_01.BLP"
+#showtooltip Banish
+/target Doom Lord
+/cast Banish
+/targetlasttarget
+END
+VER 3 010000000000000B "Damage" "463284"
+/cast Dark Soul
+/cast Blood Fury
+END
+VER 3 0100000000000009 "Enslave Demon" "RACIAL_ORC_BERSERKERSTRENGTH"
+#showtooltip Enslave Demon
+/target Pit Lord
+/cast Enslave Demon
+/targetlasttarget
+END
+VER 3 0100000000000002 "gadsgf" "INV_MISC_QUESTIONMARK"
+/script DEFAULT_CHAT_FRAME:AddMessage("\124cff0070dd\124Hitem:113802:0:0:0:0:0:0:0:0:0:0\124h[Shadowmoon Leggings]\124h\124r");
+END
+VER 3 0100000000000010 "Havoc" "ABILITY_WARLOCK_BANEOFHAVOC"
+#showtooltip
+/cast [target=mouseover,exists,nodead] Havoc; Havoc
+END
+VER 3 0100000000000011 "Mesmerize" "SPELL_SHADOW_EVILEYE"
+/cast Mesmerize
+END
+VER 3 010000000000000D "petmove" "463283"
+/petmoveto
+END
+VER 3 010000000000000E "Shield" "SPELL_SHADOW_DEMONICTACTICS"
+#showtooltip Sacrificial Pact
+/cast Sacrificial Pact
+/cast Unending Resolve
+END
+VER 3 0100000000000001 "skjdh" "INV_MISC_QUESTIONMARK"
+/script DEFAULT_CHAT_FRAME:AddMessage("\124cff0070dd\124Hitem:113800:0:0:0:0:0:0:0:0:0:0\124h[Shadowmoon Grips]\124h\124r");
+END
