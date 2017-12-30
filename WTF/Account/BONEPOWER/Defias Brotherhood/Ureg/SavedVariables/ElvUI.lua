@@ -23,5 +23,49 @@ ElvCharacterDB = {
 		"/dc", -- [20]
 	},
 	["ChatHistoryLog"] = {
+		{
+			"OMG 2 HEALZ", -- [1]
+			"Mahvedici-TheMaelstrom", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Mahvedici-TheMaelstrom", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			14979, -- [11]
+			"Player-1596-0750DAB1", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc69b6dMahvedici-TheMaelstrom|r",
+			[51] = 1513506246,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [1]
+		{
+			"FTW", -- [1]
+			"Mahvedici-TheMaelstrom", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Mahvedici-TheMaelstrom", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			14980, -- [11]
+			"Player-1596-0750DAB1", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc69b6dMahvedici-TheMaelstrom|r",
+			[51] = 1513506250,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [2]
 	},
 }

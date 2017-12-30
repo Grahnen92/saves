@@ -24,2206 +24,6 @@ ElvCharacterDB = {
 	},
 	["ChatHistoryLog"] = {
 		{
-			"fight on a flag", -- [1]
-			"Homgarion-Ragnaros", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Homgarion-Ragnaros", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			150, -- [11]
-			"Player-3682-05C9F9A8", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffaad372Homgarion-Ragnaros|r",
-			[51] = 1512541906,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [1]
-		{
-			"not in the open", -- [1]
-			"Homgarion-Ragnaros", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Homgarion-Ragnaros", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			152, -- [11]
-			"Player-3682-05C9F9A8", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffaad372Homgarion-Ragnaros|r",
-			[51] = 1512541909,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [2]
-		{
-			"u made us lose mines by fighting in the middle", -- [1]
-			"Homgarion-Ragnaros", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Homgarion-Ragnaros", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			153, -- [11]
-			"Player-3682-05C9F9A8", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffaad372Homgarion-Ragnaros|r",
-			[51] = 1512541918,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [3]
-		{
-			"i wanted to go there", -- [1]
-			"Suicidekorn-Drak'thul", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Suicidekorn-Drak'thul", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			155, -- [11]
-			"Player-1092-08441F3A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffSuicidekorn-Drak'thul|r",
-			[51] = 1512541934,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [4]
-		{
-			"so we can all call you a \"FGT\"", -- [1]
-			"Homgarion-Ragnaros", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Homgarion-Ragnaros", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			156, -- [11]
-			"Player-3682-05C9F9A8", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffaad372Homgarion-Ragnaros|r",
-			[51] = 1512541934,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [5]
-		{
-			"but 2 priests and warr just banged me", -- [1]
-			"Suicidekorn-Drak'thul", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Suicidekorn-Drak'thul", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			161, -- [11]
-			"Player-1092-08441F3A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffSuicidekorn-Drak'thul|r",
-			[51] = 1512541949,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [6]
-		{
-			"so ", -- [1]
-			"Suicidekorn-Drak'thul", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Suicidekorn-Drak'thul", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			162, -- [11]
-			"Player-1092-08441F3A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffSuicidekorn-Drak'thul|r",
-			[51] = 1512541950,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [7]
-		{
-			"just run ", -- [1]
-			"Homgarion-Ragnaros", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Homgarion-Ragnaros", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			163, -- [11]
-			"Player-3682-05C9F9A8", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffaad372Homgarion-Ragnaros|r",
-			[51] = 1512541951,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [8]
-		{
-			"and u just sit on fkcin ww and watch as die", -- [1]
-			"Suicidekorn-Drak'thul", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Suicidekorn-Drak'thul", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			165, -- [11]
-			"Player-1092-08441F3A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffSuicidekorn-Drak'thul|r",
-			[51] = 1512541959,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [9]
-		{
-			"thyey dont bang u", -- [1]
-			"Prosaiko-Ragnaros", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Prosaiko-Ragnaros", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			166, -- [11]
-			"Player-3682-08446988", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dProsaiko-Ragnaros|r",
-			[51] = 1512541960,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [10]
-		{
-			"u stay there like a stupid 1", -- [1]
-			"Prosaiko-Ragnaros", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Prosaiko-Ragnaros", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			168, -- [11]
-			"Player-3682-08446988", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dProsaiko-Ragnaros|r",
-			[51] = 1512541965,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [11]
-		{
-			"you can keep running to ww or mines", -- [1]
-			"Homgarion-Ragnaros", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Homgarion-Ragnaros", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			170, -- [11]
-			"Player-3682-05C9F9A8", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffaad372Homgarion-Ragnaros|r",
-			[51] = 1512541978,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [12]
-		{
-			"and bring them to us", -- [1]
-			"Homgarion-Ragnaros", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Homgarion-Ragnaros", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			171, -- [11]
-			"Player-3682-05C9F9A8", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffaad372Homgarion-Ragnaros|r",
-			[51] = 1512541983,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [13]
-		{
-			"i go there help you and u did not even try to leave", -- [1]
-			"Prosaiko-Ragnaros", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Prosaiko-Ragnaros", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			172, -- [11]
-			"Player-3682-08446988", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dProsaiko-Ragnaros|r",
-			[51] = 1512541983,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [14]
-		{
-			"inc MINES", -- [1]
-			"Yakuno-DefiasBrotherhood", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Yakuno", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			173, -- [11]
-			"Player-1096-060690EF", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Yakuno|r",
-			[51] = 1512541984,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [15]
-		{
-			"but nooo - to smart :)", -- [1]
-			"Homgarion-Ragnaros", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Homgarion-Ragnaros", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			174, -- [11]
-			"Player-3682-05C9F9A8", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffaad372Homgarion-Ragnaros|r",
-			[51] = 1512541987,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [16]
-		{
-			"MINES", -- [1]
-			"Addled-DefiasBrotherhood", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Addled", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			175, -- [11]
-			"Player-1096-067E2FDF", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffff468Addled|r",
-			[51] = 1512541987,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [17]
-		{
-			"4", -- [1]
-			"Addled-DefiasBrotherhood", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Addled", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			176, -- [11]
-			"Player-1096-067E2FDF", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffff468Addled|r",
-			[51] = 1512541988,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [18]
-		{
-			"yea with 3 fckin !@#$s behind me", -- [1]
-			"Suicidekorn-Drak'thul", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Suicidekorn-Drak'thul", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			177, -- [11]
-			"Player-1092-08441F3A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffSuicidekorn-Drak'thul|r",
-			[51] = 1512541992,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [19]
-		{
-			"your name suits you :)", -- [1]
-			"Homgarion-Ragnaros", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Homgarion-Ragnaros", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			181, -- [11]
-			"Player-3682-05C9F9A8", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffaad372Homgarion-Ragnaros|r",
-			[51] = 1512542021,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [20]
-		{
-			"gg guys, atleast we tried", -- [1]
-			"Homgarion-Ragnaros", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Homgarion-Ragnaros", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			185, -- [11]
-			"Player-3682-05C9F9A8", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffaad372Homgarion-Ragnaros|r",
-			[51] = 1512542041,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [21]
-		{
-			"mines", -- [1]
-			"Snifa-Stormscale", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Snifa-Stormscale", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			186, -- [11]
-			"Player-2073-0613ADAC", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Snifa-Stormscale|r",
-			[51] = 1512542042,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [22]
-		{
-			"Rogues get efc", -- [1]
-			"Blomblebee-TarrenMill", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Blomblebee-TarrenMill", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			273, -- [11]
-			"Player-1084-08440B74", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aBlomblebee-TarrenMill|r",
-			[51] = 1512592283,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [23]
-		{
-			"run", -- [1]
-			"Artmetal-Sylvanas", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Artmetal-Sylvanas", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			287, -- [11]
-			"Player-3687-084A15A5", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffaad372Artmetal-Sylvanas|r",
-			[51] = 1512592470,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [24]
-		{
-			"Are you rogues just walking around up there?", -- [1]
-			"Zooinspace-TarrenMill", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Zooinspace-TarrenMill", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			288, -- [11]
-			"Player-1084-070FAD45", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8787edZooinspace-TarrenMill|r",
-			[51] = 1512592470,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [25]
-		{
-			"its 9 stacks", -- [1]
-			"Zooinspace-TarrenMill", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Zooinspace-TarrenMill", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			289, -- [11]
-			"Player-1084-070FAD45", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8787edZooinspace-TarrenMill|r",
-			[51] = 1512592475,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [26]
-		{
-			"just kill him", -- [1]
-			"Zooinspace-TarrenMill", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Zooinspace-TarrenMill", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			290, -- [11]
-			"Player-1084-070FAD45", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8787edZooinspace-TarrenMill|r",
-			[51] = 1512592477,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [27]
-		{
-			"5 ppl here ", -- [1]
-			"Catahkegar-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Catahkegar-Draenor", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			291, -- [11]
-			"Player-1403-06B4C7F9", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffff468Catahkegar-Draenor|r",
-			[51] = 1512592482,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [28]
-		{
-			"9 stacks", -- [1]
-			"Zooinspace-TarrenMill", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Zooinspace-TarrenMill", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			292, -- [11]
-			"Player-1084-070FAD45", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8787edZooinspace-TarrenMill|r",
-			[51] = 1512592487,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [29]
-		{
-			"10 now", -- [1]
-			"Zooinspace-TarrenMill", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Zooinspace-TarrenMill", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			293, -- [11]
-			"Player-1084-070FAD45", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8787edZooinspace-TarrenMill|r",
-			[51] = 1512592490,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [30]
-		{
-			"and ,", -- [1]
-			"Catahkegar-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Catahkegar-Draenor", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			294, -- [11]
-			"Player-1403-06B4C7F9", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffff468Catahkegar-Draenor|r",
-			[51] = 1512592491,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [31]
-		{
-			"yeah", -- [1]
-			"Addled-DefiasBrotherhood", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Addled", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			295, -- [11]
-			"Player-1096-067E2FDF", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffff468Addled|r",
-			[51] = 1512592494,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [32]
-		{
-			"100% dmg increase", -- [1]
-			"Zooinspace-TarrenMill", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Zooinspace-TarrenMill", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			296, -- [11]
-			"Player-1084-070FAD45", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8787edZooinspace-TarrenMill|r",
-			[51] = 1512592496,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [33]
-		{
-			"w8 for me", -- [1]
-			"Addled-DefiasBrotherhood", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Addled", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			297, -- [11]
-			"Player-1096-067E2FDF", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffff468Addled|r",
-			[51] = 1512592496,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [34]
-		{
-			"then lets go", -- [1]
-			"Addled-DefiasBrotherhood", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Addled", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			298, -- [11]
-			"Player-1096-067E2FDF", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffff468Addled|r",
-			[51] = 1512592500,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [35]
-		{
-			"its 1 shot pretty much", -- [1]
-			"Zooinspace-TarrenMill", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Zooinspace-TarrenMill", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			299, -- [11]
-			"Player-1084-070FAD45", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8787edZooinspace-TarrenMill|r",
-			[51] = 1512592501,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [36]
-		{
-			"mb for you ", -- [1]
-			"Catahkegar-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Catahkegar-Draenor", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			300, -- [11]
-			"Player-1403-06B4C7F9", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffff468Catahkegar-Draenor|r",
-			[51] = 1512592509,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [37]
-		{
-			"Maybe for 2 rogues", -- [1]
-			"Zooinspace-TarrenMill", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Zooinspace-TarrenMill", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			301, -- [11]
-			"Player-1084-070FAD45", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8787edZooinspace-TarrenMill|r",
-			[51] = 1512592515,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [38]
-		{
-			"its 1 sec and hes dead", -- [1]
-			"Zooinspace-TarrenMill", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Zooinspace-TarrenMill", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			302, -- [11]
-			"Player-1084-070FAD45", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8787edZooinspace-TarrenMill|r",
-			[51] = 1512592518,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [39]
-		{
-			"lets go!", -- [1]
-			"Addled-DefiasBrotherhood", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Addled", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			303, -- [11]
-			"Player-1096-067E2FDF", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffff468Addled|r",
-			[51] = 1512592522,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [40]
-		{
-			"rogues assemble!", -- [1]
-			"Addled-DefiasBrotherhood", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Addled", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			306, -- [11]
-			"Player-1096-067E2FDF", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffff468Addled|r",
-			[51] = 1512592525,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [41]
-		{
-			"1 stun ", -- [1]
-			"Catahkegar-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Catahkegar-Draenor", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			307, -- [11]
-			"Player-1403-06B4C7F9", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffff468Catahkegar-Draenor|r",
-			[51] = 1512592528,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [42]
-		{
-			"and dead ", -- [1]
-			"Catahkegar-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Catahkegar-Draenor", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			308, -- [11]
-			"Player-1403-06B4C7F9", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffff468Catahkegar-Draenor|r",
-			[51] = 1512592538,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [43]
-		{
-			"inc", -- [1]
-			"Angelicia-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Angelicia-Draenor", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			313, -- [11]
-			"Player-1403-069D2DA8", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff48cbaAngelicia-Draenor|r",
-			[51] = 1512592598,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [44]
-		{
-			"this is bad", -- [1]
-			"Artmetal-Sylvanas", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Artmetal-Sylvanas", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			316, -- [11]
-			"Player-3687-084A15A5", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffaad372Artmetal-Sylvanas|r",
-			[51] = 1512592615,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [45]
-		{
-			"def him", -- [1]
-			"Artmetal-Sylvanas", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Artmetal-Sylvanas", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			317, -- [11]
-			"Player-3687-084A15A5", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffaad372Artmetal-Sylvanas|r",
-			[51] = 1512592622,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [46]
-		{
-			"help!", -- [1]
-			"Addled-DefiasBrotherhood", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Addled", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			336, -- [11]
-			"Player-1096-067E2FDF", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffff468Addled|r",
-			[51] = 1512592762,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [47]
-		{
-			"lol", -- [1]
-			"Artmetal-Sylvanas", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Artmetal-Sylvanas", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			348, -- [11]
-			"Player-3687-084A15A5", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffaad372Artmetal-Sylvanas|r",
-			[51] = 1512592916,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [48]
-		{
-			"hahah stupid allys", -- [1]
-			"Artmetal-Sylvanas", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Artmetal-Sylvanas", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			353, -- [11]
-			"Player-3687-084A15A5", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffaad372Artmetal-Sylvanas|r",
-			[51] = 1512592941,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [49]
-		{
-			"i keep them all on me :P", -- [1]
-			"Artmetal-Sylvanas", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Artmetal-Sylvanas", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			355, -- [11]
-			"Player-3687-084A15A5", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffaad372Artmetal-Sylvanas|r",
-			[51] = 1512592953,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [50]
-		{
-			"they have zero brain", -- [1]
-			"Artmetal-Sylvanas", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Artmetal-Sylvanas", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			357, -- [11]
-			"Player-3687-084A15A5", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffaad372Artmetal-Sylvanas|r",
-			[51] = 1512592960,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [51]
-		{
-			"gg", -- [1]
-			"Addled-DefiasBrotherhood", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Addled", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			368, -- [11]
-			"Player-1096-067E2FDF", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffff468Addled|r",
-			[51] = 1512593008,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [52]
-		{
-			"3 orbs up", -- [1]
-			"Alorath-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Alorath-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			100, -- [11]
-			"Player-3702-06CDC2C9", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaAlorath-ArgentDawn|r",
-			[51] = 1512630736,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [53]
-		{
-			"Why are you farming mid?", -- [1]
-			"Alorath-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Alorath-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			103, -- [11]
-			"Player-3702-06CDC2C9", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaAlorath-ArgentDawn|r",
-			[51] = 1512630740,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [54]
-		{
-			"makes some strange gestures.", -- [1]
-			"Drock-Sanguino", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Drock-Sanguino", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			104, -- [11]
-			"Player-1379-055244D0", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dDrock-Sanguino|r",
-			[51] = 1512630750,
-			[50] = "CHAT_MSG_EMOTE",
-		}, -- [55]
-		{
-			"makes some strange gestures.", -- [1]
-			"Drock-Sanguino", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Drock-Sanguino", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			147, -- [11]
-			"Player-1379-055244D0", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dDrock-Sanguino|r",
-			[51] = 1512630937,
-			[50] = "CHAT_MSG_EMOTE",
-		}, -- [56]
-		{
-			"makes some strange gestures.", -- [1]
-			"Drock-Sanguino", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Drock-Sanguino", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			154, -- [11]
-			"Player-1379-055244D0", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dDrock-Sanguino|r",
-			[51] = 1512630976,
-			[50] = "CHAT_MSG_EMOTE",
-		}, -- [57]
-		{
-			"healers?", -- [1]
-			"Maryoku-Pozzodell'Eternità", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Maryoku-Pozzodell'Eternità", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			190, -- [11]
-			"Player-1309-04AF62EA", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Maryoku-Pozzodell'Eternità|r",
-			[51] = 1512631112,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [58]
-		{
-			"lol ", -- [1]
-			"Maryoku-Pozzodell'Eternità", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Maryoku-Pozzodell'Eternità", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			192, -- [11]
-			"Player-1309-04AF62EA", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Maryoku-Pozzodell'Eternità|r",
-			[51] = 1512631118,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [59]
-		{
-			"que lag nen", -- [1]
-			"Farfaleta-Minahonda", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Farfaleta-Minahonda", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			251, -- [11]
-			"Player-1385-08E3748D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaFarfaleta-Minahonda|r",
-			[51] = 1512631404,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [60]
-		{
-			":P", -- [1]
-			"Chiochan-Bloodscalp", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Chiochan-Bloodscalp", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			255, -- [11]
-			"Player-1091-04F9E2C1", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aChiochan-Bloodscalp|r",
-			[51] = 1512631441,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [61]
-		{
-			"como lo bajo?", -- [1]
-			"Farfaleta-Minahonda", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Farfaleta-Minahonda", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			256, -- [11]
-			"Player-1385-08E3748D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaFarfaleta-Minahonda|r",
-			[51] = 1512631452,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [62]
-		{
-			"there is a chest", -- [1]
-			"Chiochan-Bloodscalp", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Chiochan-Bloodscalp", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			292, -- [11]
-			"Player-1091-04F9E2C1", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aChiochan-Bloodscalp|r",
-			[51] = 1512631769,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [63]
-		{
-			"thx", -- [1]
-			"Chiochan-Bloodscalp", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Chiochan-Bloodscalp", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			293, -- [11]
-			"Player-1091-04F9E2C1", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aChiochan-Bloodscalp|r",
-			[51] = 1512631796,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [64]
-		{
-			"ty :) ", -- [1]
-			"Koozi-Ravencrest", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Koozi-Ravencrest", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			297, -- [11]
-			"Player-1329-0606133B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaKoozi-Ravencrest|r",
-			[51] = 1512631804,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [65]
-		{
-			"xd srry", -- [1]
-			"Farfaleta-Minahonda", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Farfaleta-Minahonda", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			298, -- [11]
-			"Player-1385-08E3748D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaFarfaleta-Minahonda|r",
-			[51] = 1512631815,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [66]
-		{
-			"guys", -- [1]
-			"Addled-DefiasBrotherhood", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Addled", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			303, -- [11]
-			"Player-1096-067E2FDF", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffff468Addled|r",
-			[51] = 1512631843,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [67]
-		{
-			"there's a daily as well", -- [1]
-			"Addled-DefiasBrotherhood", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Addled", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			304, -- [11]
-			"Player-1096-067E2FDF", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffff468Addled|r",
-			[51] = 1512631847,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [68]
-		{
-			"have to kill the trtle over here", -- [1]
-			"Addled-DefiasBrotherhood", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Addled", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			308, -- [11]
-			"Player-1096-067E2FDF", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffff468Addled|r",
-			[51] = 1512631858,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [69]
-		{
-			"i dnt have it", -- [1]
-			"Farfaleta-Minahonda", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Farfaleta-Minahonda", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			309, -- [11]
-			"Player-1385-08E3748D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaFarfaleta-Minahonda|r",
-			[51] = 1512631866,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [70]
-		{
-			"kk go b", -- [1]
-			"Chiochan-Bloodscalp", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Chiochan-Bloodscalp", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			310, -- [11]
-			"Player-1091-04F9E2C1", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aChiochan-Bloodscalp|r",
-			[51] = 1512631870,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [71]
-		{
-			"i have it ", -- [1]
-			"Koozi-Ravencrest", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Koozi-Ravencrest", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			311, -- [11]
-			"Player-1329-0606133B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaKoozi-Ravencrest|r",
-			[51] = 1512631874,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [72]
-		{
-			"share ?", -- [1]
-			"Farfaleta-Minahonda", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Farfaleta-Minahonda", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			312, -- [11]
-			"Player-1385-08E3748D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaFarfaleta-Minahonda|r",
-			[51] = 1512631881,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [73]
-		{
-			"can u share?", -- [1]
-			"Farfaleta-Minahonda", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Farfaleta-Minahonda", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			313, -- [11]
-			"Player-1385-08E3748D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaFarfaleta-Minahonda|r",
-			[51] = 1512631895,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [74]
-		{
-			"|cffffff00|Hquest:42723:110|h[Eye of Azshara: A Tough Shell]|h|r", -- [1]
-			"Koozi-Ravencrest", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Koozi-Ravencrest", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			314, -- [11]
-			"Player-1329-0606133B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaKoozi-Ravencrest|r",
-			[51] = 1512631923,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [75]
-		{
-			"thanks", -- [1]
-			"Addled-DefiasBrotherhood", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Addled", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			318, -- [11]
-			"Player-1096-067E2FDF", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffff468Addled|r",
-			[51] = 1512631946,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [76]
-		{
-			"np", -- [1]
-			"Farfaleta-Minahonda", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Farfaleta-Minahonda", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			319, -- [11]
-			"Player-1385-08E3748D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaFarfaleta-Minahonda|r",
-			[51] = 1512631952,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [77]
-		{
-			"nah its a world quest", -- [1]
-			"Addled-DefiasBrotherhood", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Addled", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			320, -- [11]
-			"Player-1096-067E2FDF", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffff468Addled|r",
-			[51] = 1512631953,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [78]
-		{
-			"dont think you can share those?", -- [1]
-			"Addled-DefiasBrotherhood", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Addled", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			321, -- [11]
-			"Player-1096-067E2FDF", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffff468Addled|r",
-			[51] = 1512631965,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [79]
-		{
-			"oh okk", -- [1]
-			"Farfaleta-Minahonda", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Farfaleta-Minahonda", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			322, -- [11]
-			"Player-1385-08E3748D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaFarfaleta-Minahonda|r",
-			[51] = 1512631972,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [80]
-		{
-			"frost mages dont have elemental anymore?", -- [1]
-			"Farfaleta-Minahonda", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Farfaleta-Minahonda", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			324, -- [11]
-			"Player-1385-08E3748D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaFarfaleta-Minahonda|r",
-			[51] = 1512631981,
-			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [81]
-		{
-			"not with my talent", -- [1]
-			"Farfaleta-Minahonda", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Farfaleta-Minahonda", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			326, -- [11]
-			"Player-1385-08E3748D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaFarfaleta-Minahonda|r",
-			[51] = 1512631993,
-			[50] = "CHAT_MSG_WHISPER",
-		}, -- [82]
-		{
-			"it depens on the 1st talent", -- [1]
-			"Farfaleta-Minahonda", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Farfaleta-Minahonda", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			330, -- [11]
-			"Player-1385-08E3748D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaFarfaleta-Minahonda|r",
-			[51] = 1512632004,
-			[50] = "CHAT_MSG_WHISPER",
-		}, -- [83]
-		{
-			"ah :)", -- [1]
-			"Farfaleta-Minahonda", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Farfaleta-Minahonda", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			335, -- [11]
-			"Player-1385-08E3748D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaFarfaleta-Minahonda|r",
-			[51] = 1512632025,
-			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [84]
-		{
-			"if you have it you can see it in your map ", -- [1]
-			"Koozi-Ravencrest", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Koozi-Ravencrest", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			340, -- [11]
-			"Player-1329-0606133B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaKoozi-Ravencrest|r",
-			[51] = 1512632041,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [85]
-		{
-			"check it if u want", -- [1]
-			"Farfaleta-Minahonda", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Farfaleta-Minahonda", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			341, -- [11]
-			"Player-1385-08E3748D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaFarfaleta-Minahonda|r",
-			[51] = 1512632044,
-			[50] = "CHAT_MSG_WHISPER",
-		}, -- [86]
-		{
-			"ah, cool", -- [1]
-			"Farfaleta-Minahonda", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Farfaleta-Minahonda", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			343, -- [11]
-			"Player-1385-08E3748D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaFarfaleta-Minahonda|r",
-			[51] = 1512632075,
-			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [87]
-		{
-			"never played frost when i played mage since i hate pet management ;)", -- [1]
-			"Farfaleta-Minahonda", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Farfaleta-Minahonda", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			345, -- [11]
-			"Player-1385-08E3748D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaFarfaleta-Minahonda|r",
-			[51] = 1512632104,
-			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [88]
-		{
-			"jeje", -- [1]
-			"Farfaleta-Minahonda", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Farfaleta-Minahonda", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			348, -- [11]
-			"Player-1385-08E3748D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaFarfaleta-Minahonda|r",
-			[51] = 1512632116,
-			[50] = "CHAT_MSG_WHISPER",
-		}, -- [89]
-		{
-			"i had been offline for a year", -- [1]
-			"Farfaleta-Minahonda", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Farfaleta-Minahonda", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			349, -- [11]
-			"Player-1385-08E3748D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaFarfaleta-Minahonda|r",
-			[51] = 1512632134,
-			[50] = "CHAT_MSG_WHISPER",
-		}, -- [90]
-		{
-			"this is the instant 100", -- [1]
-			"Farfaleta-Minahonda", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Farfaleta-Minahonda", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			353, -- [11]
-			"Player-1385-08E3748D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaFarfaleta-Minahonda|r",
-			[51] = 1512632145,
-			[50] = "CHAT_MSG_WHISPER",
-		}, -- [91]
-		{
-			"gg", -- [1]
-			"Farfaleta-Minahonda", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Farfaleta-Minahonda", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			374, -- [11]
-			"Player-1385-08E3748D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaFarfaleta-Minahonda|r",
-			[51] = 1512632201,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [92]
-		{
-			"mge? ", -- [1]
-			"Koozi-Ravencrest", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Koozi-Ravencrest", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			375, -- [11]
-			"Player-1329-0606133B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaKoozi-Ravencrest|r",
-			[51] = 1512632207,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [93]
-		{
-			"gg", -- [1]
-			"Addled-DefiasBrotherhood", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Addled", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			376, -- [11]
-			"Player-1096-067E2FDF", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffff468Addled|r",
-			[51] = 1512632208,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [94]
-		{
-			"cya", -- [1]
-			"Addled-DefiasBrotherhood", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Addled", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			377, -- [11]
-			"Player-1096-067E2FDF", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffff468Addled|r",
-			[51] = 1512632212,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [95]
-		{
-			"see you", -- [1]
-			"Farfaleta-Minahonda", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Farfaleta-Minahonda", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			378, -- [11]
-			"Player-1385-08E3748D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaFarfaleta-Minahonda|r",
-			[51] = 1512632218,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [96]
-		{
-			"hi guys!", -- [1]
-			"Moxtremer-TarrenMill", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Moxtremer-TarrenMill", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			35, -- [11]
-			"Player-1084-0825F027", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Moxtremer-TarrenMill|r",
-			[51] = 1512712524,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [97]
-		{
-			"[FIS] Interrupted Blazing Infernal's |cff71d5ff|Hspell:205088:0|h[Blazing Hellfire]|h|r", -- [1]
-			"Moxtremer-TarrenMill", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Moxtremer-TarrenMill", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			42, -- [11]
-			"Player-1084-0825F027", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Moxtremer-TarrenMill|r",
-			[51] = 1512712589,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [98]
-		{
-			"not even goodmorning??", -- [1]
-			"Moxtremer-TarrenMill", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Moxtremer-TarrenMill", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			45, -- [11]
-			"Player-1084-0825F027", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Moxtremer-TarrenMill|r",
-			[51] = 1512712620,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [99]
-		{
-			"yoyo", -- [1]
-			"Nazek-AzjolNerub", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Nazek-AzjolNerub", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			46, -- [11]
-			"Player-1396-0664CA8E", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaNazek-AzjolNerub|r",
-			[51] = 1512712625,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [100]
-		{
 			"YES!!!! busy all night with this but this will finish pathfinder!!1", -- [1]
 			"Moxtremer-TarrenMill", -- [2]
 			"", -- [3]
@@ -2244,7 +44,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Moxtremer-TarrenMill|r",
 			[51] = 1512712734,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [101]
+		}, -- [1]
 		{
 			"nice", -- [1]
 			"Addled-DefiasBrotherhood", -- [2]
@@ -2266,7 +66,7 @@ ElvCharacterDB = {
 			[52] = "|cfffff468Addled|r",
 			[51] = 1512712752,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [102]
+		}, -- [2]
 		{
 			"gz man", -- [1]
 			"Addled-DefiasBrotherhood", -- [2]
@@ -2288,7 +88,7 @@ ElvCharacterDB = {
 			[52] = "|cfffff468Addled|r",
 			[51] = 1512712753,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [103]
+		}, -- [3]
 		{
 			"yeah!!! All !@#$ing night!!!", -- [1]
 			"Moxtremer-TarrenMill", -- [2]
@@ -2310,7 +110,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Moxtremer-TarrenMill|r",
 			[51] = 1512712770,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [104]
+		}, -- [4]
 		{
 			"gz ^^", -- [1]
 			"Nazek-AzjolNerub", -- [2]
@@ -2332,7 +132,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaNazek-AzjolNerub|r",
 			[51] = 1512712777,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [105]
+		}, -- [5]
 		{
 			"thx!!", -- [1]
 			"Moxtremer-TarrenMill", -- [2]
@@ -2354,7 +154,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Moxtremer-TarrenMill|r",
 			[51] = 1512712789,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [106]
+		}, -- [6]
 		{
 			"oh damn got second also :)", -- [1]
 			"Moxtremer-TarrenMill", -- [2]
@@ -2376,7 +176,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Moxtremer-TarrenMill|r",
 			[51] = 1512712846,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [107]
+		}, -- [7]
 		{
 			"BOUGHT PROJECTOR TO PLAY WOW ON MY WALL <3 TOMOROW HDTV CABLE AND I WILL PLAY LIKE A GOD :D", -- [1]
 			"Serialkilla-DefiasBrotherhood", -- [2]
@@ -2398,7 +198,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSerialkilla|r",
 			[51] = 1512713067,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [108]
+		}, -- [8]
 		{
 			"hahah very nice!!", -- [1]
 			"Moxtremer-TarrenMill", -- [2]
@@ -2420,7 +220,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Moxtremer-TarrenMill|r",
 			[51] = 1512713088,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [109]
+		}, -- [9]
 		{
 			"bb", -- [1]
 			"Serialkilla-DefiasBrotherhood", -- [2]
@@ -2442,7 +242,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSerialkilla|r",
 			[51] = 1512713226,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [110]
+		}, -- [10]
 		{
 			"thx guys!!", -- [1]
 			"Moxtremer-TarrenMill", -- [2]
@@ -2464,7 +264,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Moxtremer-TarrenMill|r",
 			[51] = 1512713228,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [111]
+		}, -- [11]
 		{
 			"yea", -- [1]
 			"Serialkilla-DefiasBrotherhood", -- [2]
@@ -2486,7 +286,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSerialkilla|r",
 			[51] = 1512713230,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [112]
+		}, -- [12]
 		{
 			"same dung pls", -- [1]
 			"Serialkilla-DefiasBrotherhood", -- [2]
@@ -2508,7 +308,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSerialkilla|r",
 			[51] = 1512713241,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [113]
+		}, -- [13]
 		{
 			"no i am finnaly done!! sorry!!", -- [1]
 			"Moxtremer-TarrenMill", -- [2]
@@ -2530,7 +330,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Moxtremer-TarrenMill|r",
 			[51] = 1512713249,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [114]
+		}, -- [14]
 		{
 			"gz man", -- [1]
 			"Addled-DefiasBrotherhood", -- [2]
@@ -2552,7 +352,7 @@ ElvCharacterDB = {
 			[52] = "|cfffff468Addled|r",
 			[51] = 1512713258,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [115]
+		}, -- [15]
 		{
 			"cya", -- [1]
 			"Addled-DefiasBrotherhood", -- [2]
@@ -2574,7 +374,7 @@ ElvCharacterDB = {
 			[52] = "|cfffff468Addled|r",
 			[51] = 1512713259,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [116]
+		}, -- [16]
 		{
 			"yeah", -- [1]
 			"Moxtremer-TarrenMill", -- [2]
@@ -2596,7 +396,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Moxtremer-TarrenMill|r",
 			[51] = 1512713263,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [117]
+		}, -- [17]
 		{
 			"bb", -- [1]
 			"Pirkkoh-Kor'gall", -- [2]
@@ -2618,7 +418,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddPirkkoh-Kor'gall|r",
 			[51] = 1512713268,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [118]
+		}, -- [18]
 		{
 			"how much reputation do u guys need?", -- [1]
 			"Pirkkoh-Kor'gall", -- [2]
@@ -2640,7 +440,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddPirkkoh-Kor'gall|r",
 			[51] = 1512713315,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [119]
+		}, -- [19]
 		{
 			"i am here for xp to reach 110", -- [1]
 			"Serialkilla-DefiasBrotherhood", -- [2]
@@ -2662,7 +462,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSerialkilla|r",
 			[51] = 1512713349,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [120]
+		}, -- [20]
 		{
 			"can u tank?", -- [1]
 			"Pirkkoh-Kor'gall", -- [2]
@@ -2684,7 +484,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddPirkkoh-Kor'gall|r",
 			[51] = 1512713370,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [121]
+		}, -- [21]
 		{
 			"would be faster que", -- [1]
 			"Pirkkoh-Kor'gall", -- [2]
@@ -2706,7 +506,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddPirkkoh-Kor'gall|r",
 			[51] = 1512713374,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [122]
+		}, -- [22]
 		{
 			"i can but am not good", -- [1]
 			"Serialkilla-DefiasBrotherhood", -- [2]
@@ -2728,7 +528,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSerialkilla|r",
 			[51] = 1512713380,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [123]
+		}, -- [23]
 		{
 			"its ok", -- [1]
 			"Pirkkoh-Kor'gall", -- [2]
@@ -2750,7 +550,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddPirkkoh-Kor'gall|r",
 			[51] = 1512713385,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [124]
+		}, -- [24]
 		{
 			"press 1, 2 and 3", -- [1]
 			"Pirkkoh-Kor'gall", -- [2]
@@ -2772,7 +572,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddPirkkoh-Kor'gall|r",
 			[51] = 1512713393,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [125]
+		}, -- [25]
 		{
 			"You! You killed daddy! Now me kill you!", -- [1]
 			"", -- [2]
@@ -2794,7 +594,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1512713753,
 			[50] = "CHAT_MSG_YELL",
-		}, -- [126]
+		}, -- [26]
 		{
 			"noooooooo", -- [1]
 			"Pirkkoh-Kor'gall", -- [2]
@@ -2815,6 +615,2206 @@ ElvCharacterDB = {
 			false, -- [17]
 			[52] = "|cff0070ddPirkkoh-Kor'gall|r",
 			[51] = 1512714088,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+		}, -- [27]
+		{
+			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			4, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513409913,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [28]
+		{
+			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			20, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513409989,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [29]
+		{
+			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			28, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513410050,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [30]
+		{
+			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			31, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513410110,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [31]
+		{
+			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			40, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513410172,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [32]
+		{
+			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			45, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513410232,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [33]
+		{
+			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			49, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513410295,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [34]
+		{
+			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			57, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513410389,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [35]
+		{
+			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			67, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513410456,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [36]
+		{
+			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			74, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513410523,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [37]
+		{
+			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			82, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513410626,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [38]
+		{
+			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			93, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513410779,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [39]
+		{
+			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			94, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513410849,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [40]
+		{
+			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			95, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513410932,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [41]
+		{
+			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			98, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513410992,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [42]
+		{
+			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			100, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513411059,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [43]
+		{
+			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			101, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513411136,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [44]
+		{
+			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			14665, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513500833,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [45]
+		{
+			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			14670, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513500896,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [46]
+		{
+			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			14676, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513500960,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [47]
+		{
+			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			14692, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513501067,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [48]
+		{
+			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			14701, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513501138,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [49]
+		{
+			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			14711, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513501704,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [50]
+		{
+			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			14712, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513501768,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [51]
+		{
+			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			14726, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513501848,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [52]
+		{
+			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			14728, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513501908,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [53]
+		{
+			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			14748, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513502062,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [54]
+		{
+			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			14763, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513502152,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [55]
+		{
+			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			14770, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513502291,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [56]
+		{
+			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			14773, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513502353,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [57]
+		{
+			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			14778, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513502436,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [58]
+		{
+			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			14782, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513502496,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [59]
+		{
+			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			14785, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513502625,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [60]
+		{
+			"5 shamans? what year is this?", -- [1]
+			"Ulcsham-Draenor", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Ulcsham-Draenor", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			14798, -- [11]
+			"Player-1403-06B41AEF", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff0070ddUlcsham-Draenor|r",
+			[51] = 1513502684,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [61]
+		{
+			"2020", -- [1]
+			"Othiel-Ragnaros", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Othiel-Ragnaros", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			14800, -- [11]
+			"Player-3682-0854B582", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaOthiel-Ragnaros|r",
+			[51] = 1513502718,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [62]
+		{
+			"2009", -- [1]
+			"Gobifiz-Ravenholdt", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Gobifiz-Ravenholdt", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			14801, -- [11]
+			"Player-1096-0756BF16", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff0070ddGobifiz-Ravenholdt|r",
+			[51] = 1513502720,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [63]
+		{
+			"shamans were never popular", -- [1]
+			"Othiel-Ragnaros", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Othiel-Ragnaros", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			14802, -- [11]
+			"Player-3682-0854B582", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaOthiel-Ragnaros|r",
+			[51] = 1513502724,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [64]
+		{
+			"ez and fun", -- [1]
+			"Aakke-Khadgar", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Aakke-Khadgar", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			14859, -- [11]
+			"Player-1080-00E9E870", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffffffffAakke-Khadgar|r",
+			[51] = 1513503165,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+		}, -- [65]
+		{
+			"none of us died", -- [1]
+			"Ulcsham-Draenor", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Ulcsham-Draenor", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			14862, -- [11]
+			"Player-1403-06B41AEF", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff0070ddUlcsham-Draenor|r",
+			[51] = 1513503182,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [66]
+		{
+			"the year of the shammy ", -- [1]
+			"Reinstorm-TarrenMill", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Reinstorm-TarrenMill", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			14875, -- [11]
+			"Player-1084-08480057", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff0070ddReinstorm-TarrenMill|r",
+			[51] = 1513503189,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [67]
+		{
+			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			14886, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513503213,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [68]
+		{
+			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			14898, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513503278,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [69]
+		{
+			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			14899, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513503340,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [70]
+		{
+			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			14900, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513503409,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [71]
+		{
+			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			14901, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513503505,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [72]
+		{
+			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			14903, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513503583,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [73]
+		{
+			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			14904, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513503653,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [74]
+		{
+			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			14905, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513503765,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [75]
+		{
+			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			14906, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513503877,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [76]
+		{
+			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			14907, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513503948,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [77]
+		{
+			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			14908, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513504008,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [78]
+		{
+			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			14909, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513504068,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [79]
+		{
+			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			14910, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513504136,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [80]
+		{
+			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			14911, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513504197,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [81]
+		{
+			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			14912, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513504273,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [82]
+		{
+			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			14913, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513504333,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [83]
+		{
+			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			14914, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513504395,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [84]
+		{
+			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			14915, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513504455,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [85]
+		{
+			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			14916, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513504529,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [86]
+		{
+			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			14918, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513504594,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [87]
+		{
+			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			14919, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513504659,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [88]
+		{
+			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			14920, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513504726,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [89]
+		{
+			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			14921, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513504786,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [90]
+		{
+			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			136, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513889661,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [91]
+		{
+			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			137, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513889721,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [92]
+		{
+			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Val'sharah", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Val'sharah", -- [9]
+			0, -- [10]
+			142, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1513889796,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [93]
+		{
+			"Just a fun guild looking to get more active, come join the banter, also have Discord/teamspeak 3 if you want to join", -- [1]
+			"Fumico-Ravenholdt", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Fumico-Ravenholdt", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			177, -- [11]
+			"Player-1096-07348B9A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaFumico-Ravenholdt|r",
+			[51] = 1513890400,
+			[50] = "CHAT_MSG_WHISPER",
+		}, -- [94]
+		{
+			"inc mine", -- [1]
+			"Olitivia-Genjuros", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Olitivia-Genjuros", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			69, -- [11]
+			"Player-3660-060D6A7D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffffffffOlitivia-Genjuros|r",
+			[51] = 1514055101,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [95]
+		{
+			"mine ok", -- [1]
+			"Olitivia-Genjuros", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Olitivia-Genjuros", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			70, -- [11]
+			"Player-3660-060D6A7D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffffffffOlitivia-Genjuros|r",
+			[51] = 1514055113,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [96]
+		{
+			"aoe lh flag", -- [1]
+			"Bujtar-Stormreaver", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Bujtar-Stormreaver", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			71, -- [11]
+			"Player-3656-052B6425", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8787edBujtar-Stormreaver|r",
+			[51] = 1514055125,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [97]
+		{
+			"we are inc", -- [1]
+			"Bujtar-Stormreaver", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Bujtar-Stormreaver", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			72, -- [11]
+			"Player-3656-052B6425", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8787edBujtar-Stormreaver|r",
+			[51] = 1514055126,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [98]
+		{
+			"mines", -- [1]
+			"Harkoop-AzjolNerub", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Harkoop-AzjolNerub", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			76, -- [11]
+			"Player-1396-08BEA01D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffaad372Harkoop-AzjolNerub|r",
+			[51] = 1514055158,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [99]
+		{
+			"mines safe", -- [1]
+			"Harkoop-AzjolNerub", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Harkoop-AzjolNerub", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			81, -- [11]
+			"Player-1396-08BEA01D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffaad372Harkoop-AzjolNerub|r",
+			[51] = 1514055191,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [100]
+		{
+			"dj evryone", -- [1]
+			"Dkarthas-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Dkarthas-Kazzak", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			108, -- [11]
+			"Player-1305-09630F13", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc41e3aDkarthas-Kazzak|r",
+			[51] = 1514055421,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [101]
+		{
+			"gj", -- [1]
+			"Dkarthas-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Dkarthas-Kazzak", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			116, -- [11]
+			"Player-1305-09630F13", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc41e3aDkarthas-Kazzak|r",
+			[51] = 1514055426,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [102]
+		{
+			"come top", -- [1]
+			"Aversión-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Aversión-Kazzak", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			104, -- [11]
+			"Player-1305-0970B392", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc41e3aAversión-Kazzak|r",
+			[51] = 1514096881,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [103]
+		{
+			"idiot team", -- [1]
+			"Aversión-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Aversión-Kazzak", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			128, -- [11]
+			"Player-1305-0970B392", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc41e3aAversión-Kazzak|r",
+			[51] = 1514096984,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [104]
+		{
+			"!@#$ u", -- [1]
+			"Glacierz-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Glacierz", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			133, -- [11]
+			"Player-1096-0606E78D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff3fc6eaGlacierz|r",
+			[51] = 1514097033,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [105]
+		{
+			"BET INC", -- [1]
+			"Deathfather-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Deathfather-Kazzak", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			106, -- [11]
+			"Player-1305-079281E1", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffff468Deathfather-Kazzak|r",
+			[51] = 1514193086,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [106]
+		{
+			"incs fr", -- [1]
+			"Lewan-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Lewan-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			131, -- [11]
+			"Player-3702-074CDEF5", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaLewan-ArgentDawn|r",
+			[51] = 1514193236,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+		}, -- [107]
+		{
+			"FR", -- [1]
+			"Lewan-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Lewan-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			132, -- [11]
+			"Player-3702-074CDEF5", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaLewan-ArgentDawn|r",
+			[51] = 1514193246,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+		}, -- [108]
+		{
+			"3 at fr", -- [1]
+			"Deathfather-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Deathfather-Kazzak", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			143, -- [11]
+			"Player-1305-079281E1", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffff468Deathfather-Kazzak|r",
+			[51] = 1514193292,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [109]
+		{
+			"4", -- [1]
+			"Deathfather-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Deathfather-Kazzak", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			144, -- [11]
+			"Player-1305-079281E1", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffff468Deathfather-Kazzak|r",
+			[51] = 1514193292,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [110]
+		{
+			"help mage tower", -- [1]
+			"Lewan-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Lewan-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			151, -- [11]
+			"Player-3702-074CDEF5", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaLewan-ArgentDawn|r",
+			[51] = 1514193327,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+		}, -- [111]
+		{
+			"get another tower", -- [1]
+			"Lewan-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Lewan-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			164, -- [11]
+			"Player-3702-074CDEF5", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaLewan-ArgentDawn|r",
+			[51] = 1514193375,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+		}, -- [112]
+		{
+			"dont cap", -- [1]
+			"Weedflickan-TwistingNether", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Weedflickan-TwistingNether", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			166, -- [11]
+			"Player-3674-0850262E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc41e3aWeedflickan-TwistingNether|r",
+			[51] = 1514193398,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [113]
+		{
+			"get mid", -- [1]
+			"Lewan-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Lewan-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			167, -- [11]
+			"Player-3702-074CDEF5", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaLewan-ArgentDawn|r",
+			[51] = 1514193403,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+		}, -- [114]
+		{
+			"Someone defend F", -- [1]
+			"Lewan-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Lewan-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			172, -- [11]
+			"Player-3702-074CDEF5", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaLewan-ArgentDawn|r",
+			[51] = 1514193435,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+		}, -- [115]
+		{
+			"watch FRR", -- [1]
+			"Deathfather-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Deathfather-Kazzak", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			174, -- [11]
+			"Player-1305-079281E1", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffff468Deathfather-Kazzak|r",
+			[51] = 1514193444,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [116]
+		{
+			"FR", -- [1]
+			"Lewan-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Lewan-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			175, -- [11]
+			"Player-3702-074CDEF5", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaLewan-ArgentDawn|r",
+			[51] = 1514193445,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+		}, -- [117]
+		{
+			"inc FRR", -- [1]
+			"Deathfather-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Deathfather-Kazzak", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			177, -- [11]
+			"Player-1305-079281E1", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffff468Deathfather-Kazzak|r",
+			[51] = 1514193450,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [118]
+		{
+			"GO FR SOMEONE ", -- [1]
+			"Lewan-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Lewan-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			180, -- [11]
+			"Player-3702-074CDEF5", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaLewan-ArgentDawn|r",
+			[51] = 1514193461,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+		}, -- [119]
+		{
+			"cap", -- [1]
+			"Weedflickan-TwistingNether", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Weedflickan-TwistingNether", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			181, -- [11]
+			"Player-3674-0850262E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc41e3aWeedflickan-TwistingNether|r",
+			[51] = 1514193464,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [120]
+		{
+			"BET", -- [1]
+			"Deathfather-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Deathfather-Kazzak", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			192, -- [11]
+			"Player-1305-079281E1", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffff468Deathfather-Kazzak|r",
+			[51] = 1514193517,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [121]
+		{
+			"get another tower", -- [1]
+			"Lewan-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Lewan-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			202, -- [11]
+			"Player-3702-074CDEF5", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaLewan-ArgentDawn|r",
+			[51] = 1514193580,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+		}, -- [122]
+		{
+			"fr", -- [1]
+			"Lewan-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Lewan-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			221, -- [11]
+			"Player-3702-074CDEF5", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaLewan-ArgentDawn|r",
+			[51] = 1514193655,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+		}, -- [123]
+		{
+			"FR", -- [1]
+			"Lewan-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Lewan-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			225, -- [11]
+			"Player-3702-074CDEF5", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaLewan-ArgentDawn|r",
+			[51] = 1514193674,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+		}, -- [124]
+		{
+			"good", -- [1]
+			"Lewan-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Lewan-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			229, -- [11]
+			"Player-3702-074CDEF5", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaLewan-ArgentDawn|r",
+			[51] = 1514193697,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+		}, -- [125]
+		{
+			"dont cap", -- [1]
+			"Lewan-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Lewan-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			232, -- [11]
+			"Player-3702-074CDEF5", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaLewan-ArgentDawn|r",
+			[51] = 1514193720,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+		}, -- [126]
+		{
+			"get mid", -- [1]
+			"Lewan-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Lewan-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			233, -- [11]
+			"Player-3702-074CDEF5", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaLewan-ArgentDawn|r",
+			[51] = 1514193724,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
 		}, -- [127]
 	},

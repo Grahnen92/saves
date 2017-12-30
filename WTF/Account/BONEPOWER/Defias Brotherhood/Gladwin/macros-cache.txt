@@ -14,6 +14,10 @@ VER 3 0100000000000008 "Blessing of sacr" "135966"
 #showtooltip
 /cast [target=mouseover,exists,nodead, help] Blessing of Sacrifice ; Blessing of Sacrifice
 END
+VER 3 010000000000000E "Cleanse" "135949"
+#showtooltip
+/cast [target=mouseover,exists,nodead,harm] [target=mouseover,exists,nodead, help] Cleanse
+END
 VER 3 010000000000000D "Flash Heal Self" "135907"
 #showtooltip
 /cast [target=player][]  Flash of Light
