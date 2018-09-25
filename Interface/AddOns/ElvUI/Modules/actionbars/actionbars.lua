@@ -1,4 +1,4 @@
-local E, L, V, P, G = unpack(select(2, ...)); --Inport: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
+local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 local AB = E:NewModule('ActionBars', 'AceHook-3.0', 'AceEvent-3.0');
 
 --Cache global variables
@@ -42,20 +42,15 @@ local VehicleExit = VehicleExit
 local NUM_ACTIONBAR_BUTTONS = NUM_ACTIONBAR_BUTTONS
 
 --Global variables that we don't need to cache, list them here for mikk's FindGlobals script
--- GLOBALS: LeaveVehicleButton, Minimap, SpellFlyout, SpellFlyoutHorizontalBackground
--- GLOBALS: SpellFlyoutVerticalBackground, IconIntroTracker, MultiCastActionBarFrame
--- GLOBALS: PetActionBarFrame, PossessBarFrame, OverrideActionBar, StanceBarFrame
--- GLOBALS: MultiBarBottomLeft, MultiBarBottomRight, MultiBarLeft, MultiBarRight
--- GLOBALS: ActionBarController, MainMenuBar, MainMenuExpBar, ReputationWatchBar
--- GLOBALS: MainMenuBarArtFrame, InterfaceOptionsCombatPanelActionButtonUseKeyDown
--- GLOBALS: InterfaceOptionsActionBarsPanelAlwaysShowActionBars
+-- GLOBALS: MainMenuBarArtFrame, PlayerTalentFrame, StanceBarFrame, PossessBarFrame, PetActionBarFrame
+-- GLOBALS: LeaveVehicleButton, StatusTrackingBarManager, MultiCastActionBarFrame
+-- GLOBALS: LOCK_ACTIONBAR, UIParent, Minimap, IconIntroTracker, MainMenuBar, OverrideActionBar, ActionBarController
+-- GLOBALS: SpellFlyout, SpellFlyoutBackgroundEnd, SpellFlyoutVerticalBackground, SpellFlyoutHorizontalBackground
+-- GLOBALS: MultiBarBottomRight, MultiBarBottomLeft, MultiBarLeft, MultiBarRight
 -- GLOBALS: InterfaceOptionsActionBarsPanelBottomRight, InterfaceOptionsActionBarsPanelBottomLeft
--- GLOBALS: InterfaceOptionsActionBarsPanelRight, InterfaceOptionsActionBarsPanelRightTwo
--- GLOBALS: InterfaceOptionsActionBarsPanelPickupActionKeyDropDownButton
--- GLOBALS: InterfaceOptionsActionBarsPanelLockActionBars, LOCK_ACTIONBAR
--- GLOBALS: InterfaceOptionsActionBarsPanelPickupActionKeyDropDown
--- GLOBALS: InterfaceOptionsStatusTextPanelXP, ArtifactWatchBar, HonorWatchBar
--- GLOBALS: PlayerTalentFrame, SpellFlyoutBackgroundEnd, UIParent
+-- GLOBALS: InterfaceOptionsActionBarsPanelRightTwo, InterfaceOptionsActionBarsPanelRight
+-- GLOBALS: InterfaceOptionsActionBarsPanelAlwaysShowActionBars, InterfaceOptionsActionBarsPanelPickupActionKeyDropDownButton
+-- GLOBALS: InterfaceOptionsActionBarsPanelLockActionBars, InterfaceOptionsActionBarsPanelPickupActionKeyDropDown
 
 local LAB = LibStub("LibActionButton-1.0-ElvUI")
 local LSM = LibStub("LibSharedMedia-3.0")
@@ -131,7 +126,7 @@ function AB:PositionAndSizeBar(barName)
 	local widthMult = self.db[barName].widthMult;
 	local heightMult = self.db[barName].heightMult;
 	local visibility = self.db[barName].visibility;
-	local bar = self["handledBars"][barName];
+	local bar = self.handledBars[barName];
 
 	bar.db = self.db[barName]
 	bar.db.position = nil; --Depreciated
@@ -404,18 +399,37 @@ function AB:CreateBar(id)
 		end
 	]]);
 
-	self["handledBars"]['bar'..id] = bar;
+	self.handledBars['bar'..id] = bar;
 	E:CreateMover(bar, 'ElvAB_'..id, L["Bar "]..id, nil, nil, nil,'ALL,ACTIONBARS')
 	self:PositionAndSizeBar('bar'..id);
 	return bar
 end
 
 function AB:PLAYER_REGEN_ENABLED()
-	self:UpdateButtonSettings()
+	if AB.NeedsUpdateButtonSettings then
+		self:UpdateButtonSettings()
+		AB.NeedsUpdateButtonSettings = nil
+	end
+	if AB.NeedsUpdateMicroBarVisibility then
+		self:UpdateMicroBarVisibility()
+		AB.NeedsUpdateMicroBarVisibility = nil
+	end
+	if AB.NeedsAdjustMaxStanceButtons then
+		AB:AdjustMaxStanceButtons(AB.NeedsAdjustMaxStanceButtons) --sometimes it holds the event, otherwise true. pass it before we nil it.
+		AB.NeedsAdjustMaxStanceButtons = nil
+	end
 	self:UnregisterEvent('PLAYER_REGEN_ENABLED')
 end
 
-local function Vehicle_OnEvent(self)
+local vehicle_CallOnEvent -- so we can call the local function inside of itself
+local function Vehicle_OnEvent(self, event)
+	if event == "PLAYER_REGEN_ENABLED" then
+		self:UnregisterEvent(event)
+	elseif InCombatLockdown() then
+		self:RegisterEvent('PLAYER_REGEN_ENABLED', vehicle_CallOnEvent)
+		return
+	end
+
 	if ( CanExitVehicle() ) and not E.db.general.minimap.icons.vehicleLeave.hide then
 		self:Show()
 		self:GetNormalTexture():SetVertexColor(1, 1, 1)
@@ -424,6 +438,7 @@ local function Vehicle_OnEvent(self)
 		self:Hide()
 	end
 end
+vehicle_CallOnEvent = Vehicle_OnEvent
 
 local function Vehicle_OnClick(self)
 	if ( UnitOnTaxi("player") ) then
@@ -482,17 +497,18 @@ function AB:ReassignBindings(event)
 	self:UnregisterEvent("PLAYER_REGEN_DISABLED")
 
 	if InCombatLockdown() then return end
-	for _, bar in pairs(self["handledBars"]) do
-		if not bar then return end
 
-		ClearOverrideBindings(bar)
-		for i = 1, #bar.buttons do
-			local button = (bar.bindButtons.."%d"):format(i)
-			local real_button = (bar:GetName().."Button%d"):format(i)
-			for k=1, select('#', GetBindingKey(button)) do
-				local key = select(k, GetBindingKey(button))
-				if key and key ~= "" then
-					SetOverrideBindingClick(bar, false, key, real_button)
+	for _, bar in pairs(self.handledBars) do
+		if bar then
+			ClearOverrideBindings(bar)
+			for i = 1, #bar.buttons do
+				local button = (bar.bindButtons.."%d"):format(i)
+				local real_button = (bar:GetName().."Button%d"):format(i)
+				for k=1, select('#', GetBindingKey(button)) do
+					local key = select(k, GetBindingKey(button))
+					if key and key ~= "" then
+						SetOverrideBindingClick(bar, false, key, real_button)
+					end
 				end
 			end
 		end
@@ -501,10 +517,11 @@ end
 
 function AB:RemoveBindings()
 	if InCombatLockdown() then return end
-	for _, bar in pairs(self["handledBars"]) do
-		if not bar then return end
 
-		ClearOverrideBindings(bar)
+	for _, bar in pairs(self.handledBars) do
+		if bar then
+			ClearOverrideBindings(bar)
+		end
 	end
 
 	self:RegisterEvent("PLAYER_REGEN_DISABLED", "ReassignBindings")
@@ -555,13 +572,18 @@ function AB:UpdateBar1Paging()
 end
 
 function AB:UpdateButtonSettingsForBar(barName)
-	local bar = self["handledBars"][barName]
+	local bar = self.handledBars[barName]
 	self:UpdateButtonConfig(bar, bar.bindButtons)
 end
 
 function AB:UpdateButtonSettings()
 	if E.private.actionbar.enable ~= true then return end
-	if InCombatLockdown() then self:RegisterEvent('PLAYER_REGEN_ENABLED'); return; end
+
+	if InCombatLockdown() then
+		AB.NeedsUpdateButtonSettings = true
+		self:RegisterEvent('PLAYER_REGEN_ENABLED')
+		return
+	end
 
 	for button, _ in pairs(self["handledbuttons"]) do
 		if button then
@@ -574,8 +596,11 @@ function AB:UpdateButtonSettings()
 
 	self:UpdatePetBindings()
 	self:UpdateStanceBindings()
-	for _, bar in pairs(self["handledBars"]) do
-		self:UpdateButtonConfig(bar, bar.bindButtons)
+
+	for _, bar in pairs(self.handledBars) do
+		if bar then
+			self:UpdateButtonConfig(bar, bar.bindButtons)
+		end
 	end
 
 	for i=1, 6 do
@@ -653,9 +678,11 @@ function AB:StyleButton(button, noBackdrop, useMasque)
 		shine:SetAllPoints()
 	end
 
-	if self.db.hotkeytext then
+	if self.db.hotkeytext or self.db.useRangeColorText then
 		hotkey:FontTemplate(LSM:Fetch("font", self.db.font), self.db.fontSize, self.db.fontOutline)
-		hotkey:SetTextColor(color.r, color.g, color.b)
+		if button.config and (button.config.outOfRangeColoring ~= "hotkey") then
+			button.HotKey:SetTextColor(color.r, color.g, color.b)
+		end
 	end
 
 	--Extra Action Button
@@ -674,6 +701,8 @@ function AB:StyleButton(button, noBackdrop, useMasque)
 	end
 
 	if(not self.handledbuttons[button]) then
+		button.cooldown.CooldownOverride = 'actionbar'
+
 		E:RegisterCooldown(button.cooldown)
 
 		self.handledbuttons[button] = true;
@@ -770,10 +799,6 @@ function AB:DisableBlizzard()
 	MultiBarLeft:SetParent(UIHider)
 	MultiBarRight:SetParent(UIHider)
 
-	--Look into what this does
-	ArtifactWatchBar:SetParent(UIHider)
-	HonorWatchBar:SetParent(UIHider)
-
 	-- Hide MultiBar Buttons, but keep the bars alive
 	for i=1,12 do
 		_G["ActionButton" .. i]:Hide()
@@ -818,10 +843,13 @@ function AB:DisableBlizzard()
 
 	MainMenuBar:EnableMouse(false)
 	MainMenuBar:SetAlpha(0)
-	MainMenuExpBar:UnregisterAllEvents()
-	MainMenuExpBar:Hide()
-	MainMenuExpBar:SetParent(UIHider)
+	MainMenuBar:SetScale(0.00001)
 
+	MicroButtonAndBagsBar:SetScale(0.00001)
+	MicroButtonAndBagsBar:EnableMouse(false)
+
+	-- This can taint
+	--[[
 	for i=1, MainMenuBar:GetNumChildren() do
 		local child = select(i, MainMenuBar:GetChildren())
 		if child then
@@ -830,15 +858,16 @@ function AB:DisableBlizzard()
 			child:SetParent(UIHider)
 		end
 	end
-
-	ReputationWatchBar:UnregisterAllEvents()
-	ReputationWatchBar:Hide()
-	ReputationWatchBar:SetParent(UIHider)
+	]]
 
 	MainMenuBarArtFrame:UnregisterEvent("ACTIONBAR_PAGE_CHANGED")
 	MainMenuBarArtFrame:UnregisterEvent("ADDON_LOADED")
 	MainMenuBarArtFrame:Hide()
 	MainMenuBarArtFrame:SetParent(UIHider)
+
+	StatusTrackingBarManager:EnableMouse(false)
+	StatusTrackingBarManager:UnregisterAllEvents()
+	StatusTrackingBarManager:Hide()
 
 	StanceBarFrame:UnregisterAllEvents()
 	StanceBarFrame:Hide()
@@ -880,29 +909,67 @@ function AB:DisableBlizzard()
 	end
 end
 
+function AB:ToggleCountDownNumbers(bar, button, cd)
+	if cd then -- ref: E:CreateCooldownTimer
+		local b = cd.GetParent and cd:GetParent()
+		if cd.timer and (b and b.config) then
+			-- update the new cooldown timer button config with the new setting
+			b.config.disableCountDownNumbers = not not E:ToggleBlizzardCooldownText(cd, cd.timer, true)
+		end
+	elseif button then -- ref: AB:UpdateButtonConfig
+		if (button.cooldown and button.cooldown.timer) and (bar and bar.buttonConfig) then
+			-- button.config will get updated from `button:UpdateConfig` in `AB:UpdateButtonConfig`
+			bar.buttonConfig.disableCountDownNumbers = not not E:ToggleBlizzardCooldownText(button.cooldown, button.cooldown.timer, true)
+		end
+	elseif bar then -- ref: E:UpdateCooldownOverride
+		if bar.buttons then
+			for _, btn in pairs(bar.buttons) do
+				if (btn and btn.config) and (btn.cooldown and btn.cooldown.timer) then
+					-- update the buttons config
+					btn.config.disableCountDownNumbers = not not E:ToggleBlizzardCooldownText(btn.cooldown, btn.cooldown.timer, true)
+				end
+			end
+			if bar.buttonConfig then
+				-- we can actually clear this variable because it wont get used when this code runs
+				bar.buttonConfig.disableCountDownNumbers = nil
+			end
+		end
+	end
+end
+
 function AB:UpdateButtonConfig(bar, buttonName)
-	if InCombatLockdown() then self:RegisterEvent('PLAYER_REGEN_ENABLED'); return; end
+	if InCombatLockdown() then
+		AB.NeedsUpdateButtonSettings = true
+		self:RegisterEvent('PLAYER_REGEN_ENABLED')
+		return
+	end
+
 	if not bar.buttonConfig then bar.buttonConfig = { hideElements = {}, colors = {} } end
 	bar.buttonConfig.hideElements.macro = not self.db.macrotext
 	bar.buttonConfig.hideElements.hotkey = not self.db.hotkeytext
 	bar.buttonConfig.showGrid = self.db["bar"..bar.id].showGrid
 	bar.buttonConfig.clickOnDown = self.db.keyDown
+	bar.buttonConfig.outOfRangeColoring = (self.db.useRangeColorText and 'hotkey') or 'button'
 	SetModifiedClick("PICKUPACTION", self.db.movementModifier)
 	bar.buttonConfig.colors.range = E:GetColorTable(self.db.noRangeColor)
 	bar.buttonConfig.colors.mana = E:GetColorTable(self.db.noPowerColor)
 	bar.buttonConfig.colors.usable = E:GetColorTable(self.db.usableColor)
 	bar.buttonConfig.colors.notUsable = E:GetColorTable(self.db.notUsableColor)
-	bar.buttonConfig.disableCountDownNumbers = E.private.cooldown.enable
 	bar.buttonConfig.useDrawBling = (self.db.hideCooldownBling ~= true)
 	bar.buttonConfig.useDrawSwipeOnCharges = self.db.useDrawSwipeOnCharges
 
 	for i, button in pairs(bar.buttons) do
+		AB:ToggleCountDownNumbers(bar, button)
+
 		bar.buttonConfig.keyBoundTarget = format(buttonName.."%d", i)
 		button.keyBoundTarget = bar.buttonConfig.keyBoundTarget
 		button.postKeybind = AB.FixKeybindText
 		button:SetAttribute("buttonlock", self.db.lockActionBars)
 		button:SetAttribute("checkselfcast", true)
 		button:SetAttribute("checkfocuscast", true)
+		if self.db.rightClickSelfCast then
+			button:SetAttribute("unit2", "player")
+		end
 
 		button:UpdateConfig(bar.buttonConfig)
 	end
@@ -1056,7 +1123,7 @@ end
 
 function AB:VehicleFix()
 	local barName = 'bar1'
-	local bar = self["handledBars"][barName]
+	local bar = self.handledBars[barName]
 	local buttonSpacing = E:Scale(self.db[barName].buttonspacing);
 	local backdropSpacing = E:Scale((self.db[barName].backdropSpacing or self.db[barName].buttonspacing))
 	local numButtons = self.db[barName].buttons;
@@ -1100,9 +1167,56 @@ local color
 function AB:LAB_ButtonUpdate(button)
 	color = AB.db.fontColor
 	button.Count:SetTextColor(color.r, color.g, color.b)
-	button.HotKey:SetTextColor(color.r, color.g, color.b)
+	if button.config and (button.config.outOfRangeColoring ~= "hotkey") then
+		button.HotKey:SetTextColor(color.r, color.g, color.b)
+	end
 end
 LAB.RegisterCallback(AB, "OnButtonUpdate", AB.LAB_ButtonUpdate)
+
+local function Saturate(cooldown)
+	cooldown:GetParent().icon:SetDesaturated(false)
+end
+
+local function OnCooldownUpdate(_, button, start, duration)
+	if not button._state_type == "action" then return; end
+
+	if start and duration > 1.5 then
+		button.saturationLocked = true --Lock any new actions that are created after we activated desaturation option
+		button.icon:SetDesaturated(true)
+
+		--Hook cooldown done and add colors back
+		if not button.onCooldownDoneHooked then
+			button.onCooldownDoneHooked = true
+			AB:HookScript(button.cooldown, "OnCooldownDone", Saturate)
+		end
+	else
+		button.icon:SetDesaturated(false)
+	end
+end
+
+function AB:ToggleDesaturation(value)
+	value = value or self.db.desaturateOnCooldown
+
+	if value then
+		LAB.RegisterCallback(AB, "OnCooldownUpdate", OnCooldownUpdate)
+		local start, duration
+		for button in pairs(LAB.actionButtons) do
+			button.saturationLocked = true
+			start, duration = button:GetCooldown()
+			OnCooldownUpdate(nil, button, start, duration)
+		end
+	else
+		LAB.UnregisterCallback(AB, "OnCooldownUpdate")
+		for button in pairs(LAB.actionButtons) do
+			button.saturationLocked = nil
+			button.icon:SetDesaturated(false)
+			if button.onCooldownDoneHooked then
+				AB:Unhook(button.cooldown, "OnCooldownDone")
+				button.onCooldownDoneHooked = nil
+			end
+		end
+	end
+end
 
 function AB:Initialize()
 	self.db = E.db.actionbar
@@ -1156,6 +1270,8 @@ function AB:Initialize()
 	LOCK_ACTIONBAR = (self.db.lockActionBars == true and "1" or "0") --Keep an eye on this, in case it taints
 
 	SpellFlyout:HookScript("OnShow", SetupFlyoutButton)
+
+	self:ToggleDesaturation()
 end
 
 local function InitializeCallback()

@@ -1,4 +1,4 @@
-local E, L, V, P, G = unpack(select(2, ...)); --Inport: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
+local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 local THREAT = E:NewModule('Threat', 'AceEvent-3.0');
 
 --Cache global variables
@@ -25,6 +25,8 @@ local UNKNOWN = UNKNOWN
 
 E.Threat = THREAT
 THREAT.list = {};
+
+local DT -- used to hold the DT module when we need it
 
 function THREAT:UpdatePosition()
 	if self.db.position == 'RIGHTCHAT' then
@@ -67,6 +69,14 @@ function THREAT:GetColor(unit)
 end
 
 function THREAT:Update()
+	if DT and DT.ShowingBGStats then
+		if self.bar:IsShown() then
+			self.bar:Hide()
+		end
+
+		return
+	end
+
 	local isInGroup, isInRaid, petExists = IsInGroup(), IsInRaid(), UnitExists('pet')
 	local _, status, percent = UnitDetailedThreatSituation('player', 'target')
 	if percent and percent > 0 and (isInGroup or petExists) then
@@ -138,6 +148,8 @@ function THREAT:ToggleEnable()
 end
 
 function THREAT:Initialize()
+	DT = E:GetModule('DataTexts')
+
 	self.db = E.db.general.threat
 
 	self.bar = CreateFrame('StatusBar', 'ElvUI_ThreatBar', UIParent)

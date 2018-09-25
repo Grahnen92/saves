@@ -2,6 +2,7 @@ local L = WeakAuras.L;
 
 local operator_types = WeakAuras.operator_types;
 local debuff_types = WeakAuras.debuff_types;
+local tooltip_count = WeakAuras.tooltip_count;
 local unit_types = WeakAuras.unit_types;
 local actual_unit_types_with_specific = WeakAuras.actual_unit_types_with_specific;
 local group_aura_name_info_types = WeakAuras.group_aura_name_info_types;
@@ -271,9 +272,6 @@ function WeakAuras.GetBuffTriggerOptions(data, trigger)
             spellId_tremove(trigger.spellIds, 1);
           end
         else
-          if(tonumber(v)) then
-            WeakAuras.ShowSpellIDDialog(trigger, v);
-          end
           trigger.names[1], trigger.spellIds[1] = WeakAuras.spellCache.CorrectAuraName(v);
         end
         WeakAuras.Add(data);
@@ -316,9 +314,6 @@ function WeakAuras.GetBuffTriggerOptions(data, trigger)
             spellId_tremove(trigger.spellIds, 2);
           end
         else
-          if(tonumber(v)) then
-            WeakAuras.ShowSpellIDDialog(trigger, v);
-          end
           trigger.names[2], trigger.spellIds[2] = WeakAuras.spellCache.CorrectAuraName(v);
         end
         WeakAuras.Add(data);
@@ -361,9 +356,6 @@ function WeakAuras.GetBuffTriggerOptions(data, trigger)
             spellId_tremove(trigger.spellIds, 3);
           end
         else
-          if(tonumber(v)) then
-            WeakAuras.ShowSpellIDDialog(trigger, v);
-          end
           trigger.names[3], trigger.spellIds[3] = WeakAuras.spellCache.CorrectAuraName(v);
         end
         WeakAuras.Add(data);
@@ -406,9 +398,6 @@ function WeakAuras.GetBuffTriggerOptions(data, trigger)
             spellId_tremove(trigger.spellIds, 4);
           end
         else
-          if(tonumber(v)) then
-            WeakAuras.ShowSpellIDDialog(trigger, v);
-          end
           trigger.names[4], trigger.spellIds[4] = WeakAuras.spellCache.CorrectAuraName(v);
         end
         WeakAuras.Add(data);
@@ -451,9 +440,6 @@ function WeakAuras.GetBuffTriggerOptions(data, trigger)
             spellId_tremove(trigger.spellIds, 5);
           end
         else
-          if(tonumber(v)) then
-            WeakAuras.ShowSpellIDDialog(trigger, v);
-          end
           trigger.names[5], trigger.spellIds[5] = WeakAuras.spellCache.CorrectAuraName(v);
         end
         WeakAuras.Add(data);
@@ -496,9 +482,6 @@ function WeakAuras.GetBuffTriggerOptions(data, trigger)
             spellId_tremove(trigger.spellIds, 6);
           end
         else
-          if(tonumber(v)) then
-            WeakAuras.ShowSpellIDDialog(trigger, v);
-          end
           trigger.names[6], trigger.spellIds[6] = WeakAuras.spellCache.CorrectAuraName(v);
         end
         WeakAuras.Add(data);
@@ -541,9 +524,6 @@ function WeakAuras.GetBuffTriggerOptions(data, trigger)
             spellId_tremove(trigger.spellIds, 7);
           end
         else
-          if(tonumber(v)) then
-            WeakAuras.ShowSpellIDDialog(trigger, v);
-          end
           trigger.names[7], trigger.spellIds[7] = WeakAuras.spellCache.CorrectAuraName(v);
         end
         WeakAuras.Add(data);
@@ -586,9 +566,6 @@ function WeakAuras.GetBuffTriggerOptions(data, trigger)
             spellId_tremove(trigger.spellIds, 8);
           end
         else
-          if(tonumber(v)) then
-            WeakAuras.ShowSpellIDDialog(trigger, v);
-          end
           trigger.names[8], trigger.spellIds[8] = WeakAuras.spellCache.CorrectAuraName(v);
         end
         WeakAuras.Add(data);
@@ -631,9 +608,6 @@ function WeakAuras.GetBuffTriggerOptions(data, trigger)
             spellId_tremove(trigger.spellIds, 9);
           end
         else
-          if(tonumber(v)) then
-            WeakAuras.ShowSpellIDDialog(trigger, v);
-          end
           trigger.names[9], trigger.spellIds[9] = WeakAuras.spellCache.CorrectAuraName(v);
         end
         WeakAuras.Add(data);
@@ -735,6 +709,28 @@ function WeakAuras.GetBuffTriggerOptions(data, trigger)
         WeakAuras.UpdateDisplayButton(data);
       end
     },
+    useGroupRole = {
+      type = "toggle",
+      name = '|TInterface\\OptionsFrame\\UI-OptionsFrame-NewFeatureIcon:0|t' .. L["Filter by Group Role"],
+      order = 47.1,
+      hidden = function() return not (trigger.type == "aura" and trigger.unit == "group"); end,
+    },
+    group_role = {
+      type = "select",
+      name = L["Group Role"],
+      values = WeakAuras.role_types,
+      hidden = function() return not (trigger.type == "aura" and trigger.unit == "group"); end,
+      disabled = function() return not trigger.useGroupRole; end,
+      get = function() return trigger.group_role; end,
+      order = 47.2
+    },
+    ignoreSelf = {
+      type = "toggle",
+      name = L["Ignore self"],
+      order = 47.3,
+      width = "double",
+      hidden = function() return not (trigger.type == "aura" and trigger.unit == "group"); end,
+    },
     groupclone = {
       type = "toggle",
       name = L["Show all matches (Auto-clone)"],
@@ -750,12 +746,12 @@ function WeakAuras.GetBuffTriggerOptions(data, trigger)
         end
         WeakAuras.Add(data);
       end,
-      order = 47.1
+      order = 47.4
     },
     name_info = {
       type = "select",
       name = L["Name Info"],
-      order = 47.3,
+      order = 47.5,
       hidden = function() return not (trigger.type == "aura" and trigger.unit == "group" and not trigger.groupclone); end,
       disabled = function() return not WeakAuras.CanShowNameInfo(data); end,
       get = function()
@@ -785,7 +781,7 @@ function WeakAuras.GetBuffTriggerOptions(data, trigger)
     hideAlone = {
       type = "toggle",
       name = L["Hide When Not In Group"],
-      order = 48,
+      order = 47.7,
       width = "double",
       hidden = function() return not (trigger.type == "aura" and trigger.unit == "group"); end,
     },
@@ -811,10 +807,18 @@ function WeakAuras.GetBuffTriggerOptions(data, trigger)
       hidden = function() return not (trigger.type == "aura" and trigger.fullscan) end,
       order = 55
     },
+    subcountCount = {
+      type = "select",
+      values = tooltip_count,
+      width = "double",
+      name = L["Use nth value from tooltip:"],
+      hidden = function() return not (trigger.type == "aura" and trigger.fullscan and trigger.subcount) end,
+      order = 55.5
+    },
     useRem = {
       type = "toggle",
       name = L["Remaining Time"],
-      hidden = function() return not (trigger.type == "aura" and not trigger.fullscan and trigger.unit ~= "multi"); end,
+      hidden = function() return not (trigger.type == "aura" and trigger.unit ~= "multi"); end,
       order = 56
     },
     remOperator = {
@@ -824,7 +828,7 @@ function WeakAuras.GetBuffTriggerOptions(data, trigger)
       width = "half",
       values = operator_types,
       disabled = function() return not trigger.useRem; end,
-      hidden = function() return not (trigger.type == "aura" and not trigger.fullscan and trigger.unit ~= "multi"); end,
+      hidden = function() return not (trigger.type == "aura" and trigger.unit ~= "multi"); end,
       get = function() return trigger.useRem and trigger.remOperator or nil end
     },
     rem = {
@@ -834,7 +838,7 @@ function WeakAuras.GetBuffTriggerOptions(data, trigger)
       order = 58,
       width = "half",
       disabled = function() return not trigger.useRem; end,
-      hidden = function() return not (trigger.type == "aura" and not trigger.fullscan and trigger.unit ~= "multi"); end,
+      hidden = function() return not (trigger.type == "aura" and trigger.unit ~= "multi"); end,
       get = function() return trigger.useRem and trigger.rem or nil end
     },
     useCount = {
@@ -896,18 +900,28 @@ function WeakAuras.GetBuffTriggerOptions(data, trigger)
       order = 70,
       hidden = function() return not (trigger.type == "aura"); end
     },
-    inverse = {
+    buffShowOn = {
+      type = "select",
+      name = L["Show On"],
+      values = WeakAuras.bufftrigger_progress_behavior_types,
+      order = 71,
+      get = function() return trigger.buffShowOn end,
+      hidden = function()
+        return not (trigger.type == "aura" and not(trigger.unit ~= "group" and trigger.fullscan and trigger.autoclone) and trigger.unit ~= "multi" and not(trigger.unit == "group" and not trigger.groupclone));
+      end
+    },
+    unitExists = {
       type = "toggle",
-      name = L["Inverse"],
-      desc = function()
-        if(trigger.unit == "group") then
-          return L["Show players that are |cFFFF0000not affected"];
-        else
-          return L["Activate when the given aura(s) |cFFFF0000can't|r be found"];
-        end
-      end,
-      order = 75,
-      hidden = function() return not (trigger.type == "aura" and not(trigger.unit ~= "group" and trigger.autoclone) and trigger.unit ~= "multi" and not(trigger.unit == "group" and not trigger.groupclone)); end
+      name = L["Show If Unit Is Invalid"],
+      order = 72,
+      width = "double",
+      hidden = function()
+        return not (trigger.type == "aura"
+          and not(trigger.unit ~= "group" and trigger.fullscan and trigger.autoclone)
+          and trigger.unit ~= "multi"
+          and trigger.unit ~= "group"
+          and trigger.unit ~= "player");
+      end
     }
   };
   return aura_options;

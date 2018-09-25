@@ -1,4 +1,4 @@
-local E, L, V, P, G = unpack(select(2, ...)); --Inport: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
+local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 local mod = E:GetModule('NamePlates')
 
 --Cache global variables
@@ -13,10 +13,10 @@ function mod:UpdateElement_Elite(frame)
 	if self.db.units[frame.UnitType].eliteIcon.enable then
 		local c = UnitClassification(frame.unit)
 		if c == 'elite' or c == "worldboss" then
-			icon:SetTexCoord(0, 0.15, 0.35, 0.63)
+			icon:SetTexCoord(0, 0.15, 0.25, 0.53)
 			icon:Show()
 		elseif c == 'rareelite' or c == 'rare' then
-			icon:SetTexCoord(0, 0.15, 0.63, 0.91)
+			icon:SetTexCoord(0, 0.15, 0.52, 0.84)
 			icon:Show()
 		else
 			icon:Hide()

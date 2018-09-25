@@ -1,0 +1,13 @@
+Bartender4: disabled
+ConsolePort: disabled
+ConsolePortBar: disabled
+ConsolePortAdvanced: disabled
+ConsolePortHelp: disabled
+ConsolePortLoader: disabled
+ConsolePortUI: disabled
+ConsolePortUI_Loot: disabled
+ConsolePortUI_Menu: disabled
+ConsolePortUI_NPC: disabled
+DynamicCam: disabled
+DBM-Challenges: disabled
+ElvUI_EverySecondCounts: disabled

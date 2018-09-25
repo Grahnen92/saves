@@ -1,6 +1,0 @@
-## Interface: 70300
-## Title: Console Port |cff69ccf0UI|r Loot
-## Notes: Replaces loot frame.
-## RequiredDeps: ConsolePortUI
-
-Frame.xml

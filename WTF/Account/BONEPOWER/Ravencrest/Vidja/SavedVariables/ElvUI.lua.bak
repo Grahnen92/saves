@@ -2,6 +2,6 @@
 ElvCharacterDB = {
 	["ChatEditHistory"] = {
 	},
-	["ChatLog"] = {
+	["ChatHistoryLog"] = {
 	},
 }

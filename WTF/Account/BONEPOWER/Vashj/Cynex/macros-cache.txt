@@ -1,65 +1,65 @@
-VER 3 010000000000000A "Avenger's Shield" "SPELL_HOLY_AVENGERSSHIELD"
+VER 3 0100000000000006 "Avenger's Heal" "SPELL_HOLY_AVENGERSSHIELD"
 #showtooltip
-/cast [target=mouseover,exists,nodead] Avenger's Shield; Avenger's Shield
+/cast [target=mouseover,exists,nodead,harm]  Avenger's Shield ; Avenger's Shield  [target=mouseover,exists,nodead, help] Avenger's Shield ; Avenger's Shield
 END
-VER 3 0100000000000003 "Cleanse" "SPELL_HOLY_PURIFY"
+VER 3 010000000000000A "Blessing of Free" "135968"
 #showtooltip
-/cast [target=mouseover,exists,nodead,help] Cleanse; Cleanse
+/cast  [target=mouseover,exists,nodead, help] Blessing of Freedom ; Blessing of Freedom
 END
-VER 3 0100000000000002 "DMG" "Ability_BullRush"
-/use Fezzik's Pocketwatch
-END
-VER 3 0100000000000009 "Eternal Flame" "INV_TORCH_THROWN"
+VER 3 0100000000000009 "Blessing of Prot" "135964"
 #showtooltip
-/cast [target=mouseover,exists,nodead,help] Eternal Flame; Eternal Flame
+/cast [target=mouseover,exists,nodead, help] Blessing of Protection ; Blessing of Protection
 END
-VER 3 0100000000000004 "Flash of Light" "SPELL_HOLY_FLASHHEAL"
+VER 3 0100000000000008 "Blessing of sacr" "135966"
 #showtooltip
-/cast [target=mouseover,exists,nodead,help] Flash of Light
-/cast [target=player] Flash of Light 
+/cast [target=mouseover,exists,nodead, help] Blessing of Sacrifice ; Blessing of Sacrifice
 END
-VER 3 010000000000000F "Hand of Freedom" "SPELL_HOLY_SEALOFVALOR"
+VER 3 010000000000000E "Cleanse" "135949"
 #showtooltip
-/cast [target=mouseover,exists,nodead,help] Hand of Freedom; 
-/cast [target=player] Hand of Freedom
+/cast [target=mouseover,exists,nodead,harm] [target=mouseover,exists,nodead, help] Cleanse
 END
-VER 3 0100000000000005 "Hand of Protect" "SPELL_HOLY_SEALOFPROTECTION"
+VER 3 0100000000000010 "Cleanse Toxins" "135953"
 #showtooltip
-/cast [target=mouseover,exists,nodead,help] Hand of Protection;
-/cast [target=player] Hand of Protection
+/cast [target=mouseover,exists,nodead,harm] [target=mouseover,exists,nodead, help] Cleanse Toxinsw
 END
-VER 3 0100000000000006 "Hand of Sacrific" "SPELL_HOLY_SEALOFSACRIFICE"
+VER 3 010000000000000D "Flash Heal Self" "135907"
 #showtooltip
-/cast [target=mouseover,exists,nodead,help] Hand of Sacrifice;
-/cast [target=player] Hand of Sacrifice
+/cast [target=player][]  Flash of Light
 END
-VER 3 010000000000000C "Holy Light" "SPELL_HOLY_SURGEOFLIGHT"
+VER 3 0100000000000001 "Flash/shock" "SPELL_HOLY_FLASHHEAL"
 #showtooltip
-/cast [target=mouseover,exists,nodead,help] Holy Light; 
-/cast [target=player] Holy Light
+/cast [target=mouseover,exists,nodead,harm]  Crusader Strike ; Crusader Strike  [target=mouseover,exists,nodead, help] Flash of Light ; Crusader Strike
 END
-VER 3 0100000000000010 "Holy Radiance" "SPELL_PALADIN_DIVINECIRCLE"
+VER 3 0100000000000002 "Holy Judgement" "SPELL_HOLY_SURGEOFLIGHT"
 #showtooltip
-/cast [target=mouseover,exists,nodead,help] Holy Radiance; 
-/cast [target=player] Holy Radiance
+/cast [target=mouseover,exists,nodead,harm]   Crusader Strike;  Crusader Strike [target=mouseover,exists,nodead, help] Holy Light ; Crusader Strike
 END
-VER 3 010000000000000E "Holy Shock" "SPELL_HOLY_SEARINGLIGHT"
+VER 3 0100000000000004 "Holy Shock" "SPELL_HOLY_SEARINGLIGHT"
 #showtooltip
-/cast [target=mouseover,exists,nodead] Holy Shock; Holy Shock
+/cast [target=mouseover,exists,nodead,harm]   Holy Shock;  Holy Shock [target=mouseover,exists,nodead, help] Holy Shock ; Holy Shock
 END
-VER 3 010000000000000B "Judgment" "SPELL_HOLY_RIGHTEOUSFURY"
+VER 3 0100000000000007 "Judgement" "135959"
 #showtooltip
-/cast [target=mouseover,exists,nodead] Judgment; Judgment
+/cast [target=mouseover,exists,nodead,harm]    Judgment;   Judgment [target=mouseover,exists,nodead, help] Judgment ; Judgment
 END
-VER 3 0100000000000008 "Sacred Shield" "ABILITY_PALADIN_BLESSEDMENDING"
+VER 3 010000000000000B "Lay On Hands" "135928"
 #showtooltip
-/cast [target=mouseover,exists,nodead,help] Sacred Shield; Sacred Shield
+/cast [target=mouseover,exists,nodead, help] Lay on Hands ; Lay on Hands
 END
-VER 3 0100000000000007 "Word of Glory" "INV_HELMET_96"
+VER 3 0100000000000003 "Light of Crusade" "ABILITY_PALADIN_LIGHTOFTHEMARTYR"
 #showtooltip
-/cast [target=mouseover,exists,nodead] Word of Glory; Word of Glory
+/cast [target=mouseover,exists,nodead,harm]    Judgment;   Judgment [target=mouseover,exists,nodead, help] Light of the Martyr ; Judgment
 END
-VER 3 0100000000000001 "zACH" "INV_Misc_QuestionMark"
-/Target zhachrod
-/cast flash of light
+VER 3 010000000000000F "Light of the pro" "236248"
+#showtooltip
+/cast [target=mouseover,exists,nodead, help] Light of the Protector ; Light of the Protector
+END
+VER 3 0100000000000005 "Shield Heal" "ABILITY_PALADIN_SHIELDOFVENGEANCE"
+#showtooltip
+/cast [target=mouseover,exists,nodead,harm]  Shield of the Righteous ; Shield of the Righteous  [target=mouseover,exists,nodead, help] Flash of Light ; Shield of the Righteous
+END
+VER 3 010000000000000C "Shield of Virtue" "135874"
+#showtooltip
+/cast Shield of Virtue
+/cast [target=mouseover,exists,nodead,harm]  Avenger's Shield ; Avenger's Shield  [target=mouseover,exists,nodead, help] Avenger's Shield ; Avenger's Shield
 END

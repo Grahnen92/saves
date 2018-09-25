@@ -1,974 +1,28 @@
 
 ElvCharacterDB = {
 	["ChatEditHistory"] = {
-		"/dance", -- [1]
-		"/s 7wa", -- [2]
-		"/Wa", -- [3]
-		"/Ec", -- [4]
-		"/i coming ramp", -- [5]
-		"/i need help", -- [6]
-		"/i help at their ramp!", -- [7]
-		"/reload", -- [8]
-		"/i fight at cart dammit!", -- [9]
-		"/i how is water?", -- [10]
-		"/TAUNT", -- [11]
-		"/2 Protection paladin looking for raiding guild!", -- [12]
-		"/1 Protection paladin looking for raiding guild!", -- [13]
-		"/i :(", -- [14]
-		"/cw Urania-DefiasBrotherhood ouch", -- [15]
-		"/i help", -- [16]
-		"/i tank", -- [17]
-		"/wa", -- [18]
-		"/help", -- [19]
-		"/i too bad", -- [20]
+		"/cw kroken yo!", -- [1]
+		" kan invita min pal nu om du har möjlighet", -- [2]
+		"/who nomred", -- [3]
+		" Gladwin", -- [4]
+		" what", -- [5]
+		" man måste inte vara på samma server, right?", -- [6]
+		" Yes", -- [7]
+		" mm är prot warren som är sugen på mythic", -- [8]
+		" får se om han hänkar", -- [9]
+		" hejhej", -- [10]
+		" min älsklingstjej", -- [11]
+		" puss", -- [12]
+		" muss", -- [13]
+		" murmelfnuss", -- [14]
+		" <333", -- [15]
+		" bästebejb", -- [16]
+		" mmptio", -- [17]
+		"/s lets go", -- [18]
+		"/bow", -- [19]
+		"/i whaat", -- [20]
 	},
 	["ChatHistoryLog"] = {
-		{
-			"Fel Strike on Plunge", -- [1]
-			"Plunge-Arathor", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Plunge-Arathor", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			64, -- [11]
-			"Player-1587-07BFA77A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaPlunge-Arathor|r",
-			[51] = 1513317478,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [1]
-		{
-			"Fel Strike on Plunge", -- [1]
-			"Plunge-Arathor", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Plunge-Arathor", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			65, -- [11]
-			"Player-1587-07BFA77A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaPlunge-Arathor|r",
-			[51] = 1513317490,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [2]
-		{
-			"Fel Strike on Plunge", -- [1]
-			"Plunge-Arathor", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Plunge-Arathor", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			66, -- [11]
-			"Player-1587-07BFA77A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaPlunge-Arathor|r",
-			[51] = 1513317510,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [3]
-		{
-			"my bad sorry", -- [1]
-			"Hülk-Bladefist", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Hülk-Bladefist", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			105, -- [11]
-			"Player-3657-05C97580", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dHülk-Bladefist|r",
-			[51] = 1513317778,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [4]
-		{
-			"Crackle on Rhaenyra", -- [1]
-			"Rhaenyra-Dentarg", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Rhaenyra-Dentarg", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			105, -- [11]
-			"Player-1084-084320C2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc41e3aRhaenyra-Dentarg|r",
-			[51] = 1513529397,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [5]
-		{
-			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Val'sharah", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Val'sharah", -- [9]
-			0, -- [10]
-			226, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1514099127,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [6]
-		{
-			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Val'sharah", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Val'sharah", -- [9]
-			0, -- [10]
-			228, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1514099205,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [7]
-		{
-			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Val'sharah", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Val'sharah", -- [9]
-			0, -- [10]
-			229, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1514099276,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [8]
-		{
-			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Val'sharah", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Val'sharah", -- [9]
-			0, -- [10]
-			230, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1514099465,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [9]
-		{
-			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Val'sharah", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Val'sharah", -- [9]
-			0, -- [10]
-			231, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1514100093,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [10]
-		{
-			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Val'sharah", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Val'sharah", -- [9]
-			0, -- [10]
-			232, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1514100171,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [11]
-		{
-			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Val'sharah", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Val'sharah", -- [9]
-			0, -- [10]
-			233, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1514100236,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [12]
-		{
-			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Val'sharah", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Val'sharah", -- [9]
-			0, -- [10]
-			700, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1514100712,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [13]
-		{
-			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Val'sharah", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Val'sharah", -- [9]
-			0, -- [10]
-			1103, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1514100776,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [14]
-		{
-			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Val'sharah", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Val'sharah", -- [9]
-			0, -- [10]
-			2233, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1514100951,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [15]
-		{
-			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Val'sharah", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Val'sharah", -- [9]
-			0, -- [10]
-			2733, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1514101028,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [16]
-		{
-			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Val'sharah", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Val'sharah", -- [9]
-			0, -- [10]
-			3120, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1514101089,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [17]
-		{
-			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Val'sharah", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Val'sharah", -- [9]
-			0, -- [10]
-			1, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1514114299,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [18]
-		{
-			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Val'sharah", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Val'sharah", -- [9]
-			0, -- [10]
-			9, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1514114433,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [19]
-		{
-			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Val'sharah", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Val'sharah", -- [9]
-			0, -- [10]
-			20, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1514114517,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [20]
-		{
-			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Val'sharah", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Val'sharah", -- [9]
-			0, -- [10]
-			31, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1514114582,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [21]
-		{
-			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Val'sharah", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Val'sharah", -- [9]
-			0, -- [10]
-			36, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1514114647,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [22]
-		{
-			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Val'sharah", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Val'sharah", -- [9]
-			0, -- [10]
-			46, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1514114714,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [23]
-		{
-			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Val'sharah", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Val'sharah", -- [9]
-			0, -- [10]
-			58, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1514114804,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [24]
-		{
-			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Val'sharah", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Val'sharah", -- [9]
-			0, -- [10]
-			61, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1514114864,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [25]
-		{
-			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Val'sharah", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Val'sharah", -- [9]
-			0, -- [10]
-			2, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1514148647,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [26]
-		{
-			"they are defending", -- [1]
-			"Dashootah-Silvermoon", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Dashootah-Silvermoon", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			73, -- [11]
-			"Player-3391-095AC702", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffaad372Dashootah-Silvermoon|r",
-			[51] = 1514149068,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [27]
-		{
-			"i guess we have to regrup.  1 tank + 2 eals with flag rest middle", -- [1]
-			"Onyxoohero-BurningLegion", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Onyxoohero-BurningLegion", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			91, -- [11]
-			"Player-3713-07E1109A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaOnyxoohero-BurningLegion|r",
-			[51] = 1514149278,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [28]
-		{
-			"protect flag", -- [1]
-			"Lorakh-Auchindoun", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Lorakh-Auchindoun", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			104, -- [11]
-			"Player-1597-0A51448D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aLorakh-Auchindoun|r",
-			[51] = 1514149403,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [29]
-		{
-			"all coming", -- [1]
-			"Lorakh-Auchindoun", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Lorakh-Auchindoun", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			105, -- [11]
-			"Player-1597-0A51448D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aLorakh-Auchindoun|r",
-			[51] = 1514149408,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [30]
-		{
-			"wow ", -- [1]
-			"Leymar-Silvermoon", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Leymar-Silvermoon", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			108, -- [11]
-			"Player-3391-09596F16", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffaad372Leymar-Silvermoon|r",
-			[51] = 1514149445,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [31]
-		{
-			"HEALP", -- [1]
-			"Leonide-DefiasBrotherhood", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Leonide", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			111, -- [11]
-			"Player-1096-07D772F2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaLeonide|r",
-			[51] = 1514149477,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [32]
-		{
-			"Just too short", -- [1]
-			"Leonide-DefiasBrotherhood", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Leonide", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			156, -- [11]
-			"Player-1096-07D772F2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaLeonide|r",
-			[51] = 1514149794,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [33]
-		{
-			"too bad", -- [1]
-			"Gladwin-DefiasBrotherhood", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Gladwin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			159, -- [11]
-			"Player-1096-077D398C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff48cbaGladwin|r",
-			[51] = 1514149806,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [34]
-		{
-			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Val'sharah", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Val'sharah", -- [9]
-			0, -- [10]
-			1, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1514190546,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [35]
-		{
-			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Val'sharah", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Val'sharah", -- [9]
-			0, -- [10]
-			3, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1514190609,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [36]
-		{
-			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Val'sharah", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Val'sharah", -- [9]
-			0, -- [10]
-			4, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1514190670,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [37]
-		{
-			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Val'sharah", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Val'sharah", -- [9]
-			0, -- [10]
-			5, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1514190756,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [38]
-		{
-			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Val'sharah", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Val'sharah", -- [9]
-			0, -- [10]
-			6, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1514190830,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [39]
-		{
-			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Val'sharah", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Val'sharah", -- [9]
-			0, -- [10]
-			7, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1514190903,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [40]
-		{
-			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Val'sharah", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Val'sharah", -- [9]
-			0, -- [10]
-			10, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1514190968,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [41]
-		{
-			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Val'sharah", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Val'sharah", -- [9]
-			0, -- [10]
-			12, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1514191030,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [42]
-		{
-			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Val'sharah", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Val'sharah", -- [9]
-			0, -- [10]
-			15, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1514191108,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [43]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -990,7 +44,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514191302,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [44]
+		}, -- [1]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -1012,7 +66,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514191374,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [45]
+		}, -- [2]
 		{
 			"|cffffff00The Traveler's Den is under attack!|r", -- [1]
 			"", -- [2]
@@ -1034,7 +88,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514191410,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [46]
+		}, -- [3]
 		{
 			"|cffffff00Lorlathil is under attack!|r", -- [1]
 			"", -- [2]
@@ -1056,7 +110,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514191412,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [47]
+		}, -- [4]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -1078,7 +132,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514191523,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [48]
+		}, -- [5]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -1100,7 +154,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514191598,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [49]
+		}, -- [6]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -1122,7 +176,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514191659,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [50]
+		}, -- [7]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -1144,7 +198,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514191722,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [51]
+		}, -- [8]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -1166,7 +220,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514191797,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [52]
+		}, -- [9]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -1188,7 +242,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514191918,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [53]
+		}, -- [10]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -1210,7 +264,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514191980,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [54]
+		}, -- [11]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -1232,7 +286,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514192040,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [55]
+		}, -- [12]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -1254,7 +308,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514193900,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [56]
+		}, -- [13]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -1276,7 +330,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514193977,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [57]
+		}, -- [14]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -1298,7 +352,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514194132,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [58]
+		}, -- [15]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -1320,7 +374,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514194194,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [59]
+		}, -- [16]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -1342,7 +396,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514194271,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [60]
+		}, -- [17]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -1364,7 +418,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514194331,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [61]
+		}, -- [18]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -1386,7 +440,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514194392,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [62]
+		}, -- [19]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -1408,7 +462,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514194454,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [63]
+		}, -- [20]
 		{
 			"orbs ", -- [1]
 			"Moonchi-Ragnaros", -- [2]
@@ -1430,7 +484,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Moonchi-Ragnaros|r",
 			[51] = 1514194730,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [64]
+		}, -- [21]
 		{
 			"just drew his First Blood!", -- [1]
 			"Bloodstars-BurningLegion", -- [2]
@@ -1452,7 +506,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dBloodstars-BurningLegion|r",
 			[51] = 1514194759,
 			[50] = "CHAT_MSG_EMOTE",
-		}, -- [65]
+		}, -- [22]
 		{
 			"is on Killing Spree!", -- [1]
 			"Bloodstars-BurningLegion", -- [2]
@@ -1474,7 +528,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dBloodstars-BurningLegion|r",
 			[51] = 1514194765,
 			[50] = "CHAT_MSG_EMOTE",
-		}, -- [66]
+		}, -- [23]
 		{
 			"dont just stack mid ffs ", -- [1]
 			"Moonchi-Ragnaros", -- [2]
@@ -1496,7 +550,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Moonchi-Ragnaros|r",
 			[51] = 1514194840,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [67]
+		}, -- [24]
 		{
 			"IM EDEAD :d", -- [1]
 			"Bloodstars-BurningLegion", -- [2]
@@ -1518,7 +572,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dBloodstars-BurningLegion|r",
 			[51] = 1514194842,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [68]
+		}, -- [25]
 		{
 			"kill the orb carriers", -- [1]
 			"Moonchi-Ragnaros", -- [2]
@@ -1540,7 +594,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Moonchi-Ragnaros|r",
 			[51] = 1514194854,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [69]
+		}, -- [26]
 		{
 			"is on Rampage!", -- [1]
 			"Bloodstars-BurningLegion", -- [2]
@@ -1562,7 +616,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dBloodstars-BurningLegion|r",
 			[51] = 1514195214,
 			[50] = "CHAT_MSG_EMOTE",
-		}, -- [70]
+		}, -- [27]
 		{
 			"center", -- [1]
 			"Holborne-Draenor", -- [2]
@@ -1584,7 +638,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aHolborne-Draenor|r",
 			[51] = 1514195254,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [71]
+		}, -- [28]
 		{
 			"is Dominating!", -- [1]
 			"Bloodstars-BurningLegion", -- [2]
@@ -1606,7 +660,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dBloodstars-BurningLegion|r",
 			[51] = 1514195302,
 			[50] = "CHAT_MSG_EMOTE",
-		}, -- [72]
+		}, -- [29]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -1628,7 +682,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514195380,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [73]
+		}, -- [30]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -1650,7 +704,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514214076,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [74]
+		}, -- [31]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -1672,7 +726,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514214137,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [75]
+		}, -- [32]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -1694,7 +748,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514214202,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [76]
+		}, -- [33]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -1716,7 +770,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514214264,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [77]
+		}, -- [34]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -1738,7 +792,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514214328,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [78]
+		}, -- [35]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -1760,7 +814,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514214411,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [79]
+		}, -- [36]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -1782,7 +836,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514214473,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [80]
+		}, -- [37]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -1804,7 +858,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514215377,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [81]
+		}, -- [38]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -1826,7 +880,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514215437,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [82]
+		}, -- [39]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -1848,7 +902,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514215497,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [83]
+		}, -- [40]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -1870,7 +924,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514215585,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [84]
+		}, -- [41]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -1892,7 +946,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514215823,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [85]
+		}, -- [42]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -1914,7 +968,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514215891,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [86]
+		}, -- [43]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -1936,7 +990,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514223365,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [87]
+		}, -- [44]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -1958,7 +1012,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514223497,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [88]
+		}, -- [45]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -1980,7 +1034,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514223609,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [89]
+		}, -- [46]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -2002,7 +1056,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514223675,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [90]
+		}, -- [47]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -2024,7 +1078,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514223746,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [91]
+		}, -- [48]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -2046,7 +1100,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514223817,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [92]
+		}, -- [49]
 		{
 			"|cffffff00Lorlathil is under attack!|r", -- [1]
 			"", -- [2]
@@ -2068,7 +1122,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514224016,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [93]
+		}, -- [50]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -2090,7 +1144,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514224088,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [94]
+		}, -- [51]
 		{
 			"|cffffff00The Traveler's Den is under attack!|r", -- [1]
 			"", -- [2]
@@ -2112,7 +1166,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514224097,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [95]
+		}, -- [52]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -2134,7 +1188,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514225259,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [96]
+		}, -- [53]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -2156,7 +1210,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514225320,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [97]
+		}, -- [54]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -2178,7 +1232,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514225382,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [98]
+		}, -- [55]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -2200,7 +1254,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514225446,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [99]
+		}, -- [56]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -2222,7 +1276,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514225514,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [100]
+		}, -- [57]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -2244,7 +1298,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514225579,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [101]
+		}, -- [58]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -2266,7 +1320,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514396985,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [102]
+		}, -- [59]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -2288,7 +1342,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514397050,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [103]
+		}, -- [60]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -2310,7 +1364,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514397163,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [104]
+		}, -- [61]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -2332,7 +1386,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514397223,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [105]
+		}, -- [62]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -2354,7 +1408,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514397306,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [106]
+		}, -- [63]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -2376,7 +1430,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514397452,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [107]
+		}, -- [64]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -2398,7 +1452,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514397517,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [108]
+		}, -- [65]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -2420,7 +1474,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514397581,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [109]
+		}, -- [66]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -2442,7 +1496,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514397645,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [110]
+		}, -- [67]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -2464,7 +1518,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514397785,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [111]
+		}, -- [68]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -2486,7 +1540,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514397876,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [112]
+		}, -- [69]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -2508,7 +1562,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514397957,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [113]
+		}, -- [70]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -2530,7 +1584,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514398020,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [114]
+		}, -- [71]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -2552,7 +1606,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514398085,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [115]
+		}, -- [72]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -2574,7 +1628,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514398148,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [116]
+		}, -- [73]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -2596,7 +1650,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514398210,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [117]
+		}, -- [74]
 		{
 			"help with efc", -- [1]
 			"Sniedze-Draenor", -- [2]
@@ -2618,7 +1672,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaSniedze-Draenor|r",
 			[51] = 1514398615,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [118]
+		}, -- [75]
 		{
 			"fk", -- [1]
 			"Everblazing-Aggra(Português)", -- [2]
@@ -2640,7 +1694,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaEverblazing-Aggra(Português)|r",
 			[51] = 1514398984,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [119]
+		}, -- [76]
 		{
 			"no way to win ", -- [1]
 			"Snipix-BurningLegion", -- [2]
@@ -2662,7 +1716,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Snipix-BurningLegion|r",
 			[51] = 1514398993,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [120]
+		}, -- [77]
 		{
 			"0 heal vs 2 ", -- [1]
 			"Snipix-BurningLegion", -- [2]
@@ -2684,7 +1738,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Snipix-BurningLegion|r",
 			[51] = 1514398997,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [121]
+		}, -- [78]
 		{
 			"makes some strange gestures.", -- [1]
 			"Ariyania-EmeraldDream", -- [2]
@@ -2706,7 +1760,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Ariyania-EmeraldDream|r",
 			[51] = 1514399152,
 			[50] = "CHAT_MSG_EMOTE",
-		}, -- [122]
+		}, -- [79]
 		{
 			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
 			"", -- [2]
@@ -2728,7 +1782,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514579410,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [123]
+		}, -- [80]
 		{
 			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
 			"", -- [2]
@@ -2750,7 +1804,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514579474,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [124]
+		}, -- [81]
 		{
 			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
 			"", -- [2]
@@ -2772,7 +1826,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514579547,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [125]
+		}, -- [82]
 		{
 			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
 			"", -- [2]
@@ -2794,7 +1848,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514579734,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [126]
+		}, -- [83]
 		{
 			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
 			"", -- [2]
@@ -2816,6 +1870,961 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514579804,
 			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [84]
+		{
+			"im dumb sorry XD", -- [1]
+			"Krotai-C'Thun", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Krotai-C'Thun", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			176, -- [11]
+			"Player-1381-0503FF0C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00ff96Krotai-C'Thun|r",
+			[51] = 1532459693,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [85]
+		{
+			"can you res?", -- [1]
+			"Krotai-C'Thun", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Krotai-C'Thun", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			182, -- [11]
+			"Player-1381-0503FF0C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00ff96Krotai-C'Thun|r",
+			[51] = 1532459701,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [86]
+		{
+			"thx", -- [1]
+			"Krotai-C'Thun", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Krotai-C'Thun", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			185, -- [11]
+			"Player-1381-0503FF0C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00ff96Krotai-C'Thun|r",
+			[51] = 1532459719,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [87]
+		{
+			"can you see them on the map?", -- [1]
+			"Gladwin-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"1. General - Darkshore", -- [4]
+			"Gladwin", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Darkshore", -- [9]
+			0, -- [10]
+			73, -- [11]
+			"Player-1096-077D398C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff48cbaGladwin|r",
+			[51] = 1532891535,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [88]
+		{
+			"can you invite me and show me the location? :)", -- [1]
+			"Rókaá-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Rókaá", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			83, -- [11]
+			"Player-1096-07BBF070", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffff7c0aRókaá|r",
+			[51] = 1532891590,
+			[50] = "CHAT_MSG_WHISPER_INFORM",
+		}, -- [89]
+		{
+			"its gone now ", -- [1]
+			"Rókaá-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Rókaá", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			86, -- [11]
+			"Player-1096-07BBF070", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffff7c0aRókaá|r",
+			[51] = 1532891598,
+			[50] = "CHAT_MSG_WHISPER",
+		}, -- [90]
+		{
+			"oh that's fast", -- [1]
+			"Rókaá-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Rókaá", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			87, -- [11]
+			"Player-1096-07BBF070", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffff7c0aRókaá|r",
+			[51] = 1532891606,
+			[50] = "CHAT_MSG_WHISPER_INFORM",
+		}, -- [91]
+		{
+			"is it noticable across the zone?", -- [1]
+			"Rókaá-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Rókaá", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			88, -- [11]
+			"Player-1096-07BBF070", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffff7c0aRókaá|r",
+			[51] = 1532891615,
+			[50] = "CHAT_MSG_WHISPER_INFORM",
+		}, -- [92]
+		{
+			"if your in the air yeah", -- [1]
+			"Rókaá-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Rókaá", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			89, -- [11]
+			"Player-1096-07BBF070", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffff7c0aRókaá|r",
+			[51] = 1532891629,
+			[50] = "CHAT_MSG_WHISPER",
+		}, -- [93]
+		{
+			"or do you have to be close when it happens", -- [1]
+			"Rókaá-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Rókaá", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			90, -- [11]
+			"Player-1096-07BBF070", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffff7c0aRókaá|r",
+			[51] = 1532891632,
+			[50] = "CHAT_MSG_WHISPER_INFORM",
+		}, -- [94]
+		{
+			"ah", -- [1]
+			"Rókaá-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Rókaá", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			91, -- [11]
+			"Player-1096-07BBF070", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffff7c0aRókaá|r",
+			[51] = 1532891635,
+			[50] = "CHAT_MSG_WHISPER_INFORM",
+		}, -- [95]
+		{
+			"i fly above the trees when my timer gets to 15 mins ", -- [1]
+			"Rókaá-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Rókaá", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			92, -- [11]
+			"Player-1096-07BBF070", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffff7c0aRókaá|r",
+			[51] = 1532891650,
+			[50] = "CHAT_MSG_WHISPER",
+		}, -- [96]
+		{
+			"kan invita min pal nu om du har möjlighet", -- [1]
+			"|Kf19|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			5, -- [11]
+			false, -- [12]
+			19, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc41e3aKroken|r",
+			[51] = 1533057887,
+			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
+		}, -- [97]
+		{
+			"Namn?", -- [1]
+			"|Kf19|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			8, -- [11]
+			false, -- [12]
+			19, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc41e3aKroken|r",
+			[51] = 1533057901,
+			[50] = "CHAT_MSG_BN_WHISPER",
+		}, -- [98]
+		{
+			"Gladwin", -- [1]
+			"|Kf19|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			10, -- [11]
+			false, -- [12]
+			19, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc41e3aKroken|r",
+			[51] = 1533057906,
+			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
+		}, -- [99]
+		{
+			"Not found", -- [1]
+			"|Kf19|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			11, -- [11]
+			false, -- [12]
+			19, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc41e3aKroken|r",
+			[51] = 1533057920,
+			[50] = "CHAT_MSG_BN_WHISPER",
+		}, -- [100]
+		{
+			"what", -- [1]
+			"|Kf19|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			15, -- [11]
+			false, -- [12]
+			19, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc41e3aKroken|r",
+			[51] = 1533057940,
+			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
+		}, -- [101]
+		{
+			"man måste inte vara på samma server, right?", -- [1]
+			"|Kf19|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			18, -- [11]
+			false, -- [12]
+			19, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc41e3aKroken|r",
+			[51] = 1533057947,
+			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
+		}, -- [102]
+		{
+			"hum", -- [1]
+			"|Kf19|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			21, -- [11]
+			false, -- [12]
+			19, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc41e3aKroken|r",
+			[51] = 1533057958,
+			[50] = "CHAT_MSG_BN_WHISPER",
+		}, -- [103]
+		{
+			"ska kolla", -- [1]
+			"|Kf19|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			22, -- [11]
+			false, -- [12]
+			19, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc41e3aKroken|r",
+			[51] = 1533057960,
+			[50] = "CHAT_MSG_BN_WHISPER",
+		}, -- [104]
+		{
+			"ska ej behövas", -- [1]
+			"|Kf19|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			24, -- [11]
+			false, -- [12]
+			19, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc41e3aKroken|r",
+			[51] = 1533057978,
+			[50] = "CHAT_MSG_BN_WHISPER",
+		}, -- [105]
+		{
+			"men ni ska migga eller?", -- [1]
+			"|Kf19|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			27, -- [11]
+			false, -- [12]
+			19, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc41e3aKroken|r",
+			[51] = 1533057997,
+			[50] = "CHAT_MSG_BN_WHISPER",
+		}, -- [106]
+		{
+			"Yes", -- [1]
+			"|Kf19|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			29, -- [11]
+			false, -- [12]
+			19, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc41e3aKroken|r",
+			[51] = 1533058011,
+			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
+		}, -- [107]
+		{
+			"goodi", -- [1]
+			"|Kf19|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			33, -- [11]
+			false, -- [12]
+			19, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc41e3aKroken|r",
+			[51] = 1533058067,
+			[50] = "CHAT_MSG_BN_WHISPER",
+		}, -- [108]
+		{
+			"Men jag säger igen. Vi är inte hardcore. Vi spelar för att ha kul och trevligt. Inte för att komma så långt som möjligt så snabbt som möjligt :)", -- [1]
+			"|Kf19|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			77, -- [11]
+			false, -- [12]
+			19, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc41e3aKroken|r",
+			[51] = 1533058631,
+			[50] = "CHAT_MSG_BN_WHISPER",
+		}, -- [109]
+		{
+			"bara så ni inte har fel förhoppningar", -- [1]
+			"|Kf19|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			78, -- [11]
+			false, -- [12]
+			19, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc41e3aKroken|r",
+			[51] = 1533058640,
+			[50] = "CHAT_MSG_BN_WHISPER",
+		}, -- [110]
+		{
+			"mm är prot warren som är sugen på mythic", -- [1]
+			"|Kf19|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			87, -- [11]
+			false, -- [12]
+			19, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc41e3aKroken|r",
+			[51] = 1533058735,
+			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
+		}, -- [111]
+		{
+			"får se om han hänkar", -- [1]
+			"|Kf19|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			88, -- [11]
+			false, -- [12]
+			19, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc41e3aKroken|r",
+			[51] = 1533058739,
+			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
+		}, -- [112]
+		{
+			"Okey Okey :) men säg till honom att vårat mål är såklart att komma till mytisk. Men chansen är lite mindre med våran guild än en hardcore guild :)", -- [1]
+			"|Kf19|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			94, -- [11]
+			false, -- [12]
+			19, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc41e3aKroken|r",
+			[51] = 1533058967,
+			[50] = "CHAT_MSG_BN_WHISPER",
+		}, -- [113]
+		{
+			"hejhej", -- [1]
+			"|Kf23|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2, -- [11]
+			false, -- [12]
+			23, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "Raptorbabez",
+			[51] = 1533147526,
+			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
+			[53] = "Raptorbabez",
+		}, -- [114]
+		{
+			"min älsklingstjej", -- [1]
+			"|Kf23|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			3, -- [11]
+			false, -- [12]
+			23, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "Raptorbabez",
+			[51] = 1533147532,
+			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
+			[53] = "Raptorbabez",
+		}, -- [115]
+		{
+			"puss", -- [1]
+			"|Kf23|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			4, -- [11]
+			false, -- [12]
+			23, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "Raptorbabez",
+			[51] = 1533147555,
+			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
+			[53] = "Raptorbabez",
+		}, -- [116]
+		{
+			"muss", -- [1]
+			"|Kf23|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			5, -- [11]
+			false, -- [12]
+			23, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "Raptorbabez",
+			[51] = 1533147568,
+			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
+			[53] = "Raptorbabez",
+		}, -- [117]
+		{
+			"murmelfnuss", -- [1]
+			"|Kf23|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			6, -- [11]
+			false, -- [12]
+			23, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "Raptorbabez",
+			[51] = 1533147575,
+			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
+			[53] = "Raptorbabez",
+		}, -- [118]
+		{
+			"puss", -- [1]
+			"|Kf23|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			126, -- [11]
+			false, -- [12]
+			23, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "Raptorbabez",
+			[51] = 1533148796,
+			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
+			[53] = "Raptorbabez",
+		}, -- [119]
+		{
+			"<333", -- [1]
+			"|Kf23|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			127, -- [11]
+			false, -- [12]
+			23, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "Raptorbabez",
+			[51] = 1533148801,
+			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
+			[53] = "Raptorbabez",
+		}, -- [120]
+		{
+			"bästebejb", -- [1]
+			"|Kf23|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			129, -- [11]
+			false, -- [12]
+			23, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "Raptorbabez",
+			[51] = 1533148807,
+			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
+			[53] = "Raptorbabez",
+		}, -- [121]
+		{
+			"mmptio", -- [1]
+			"|Kf23|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			131, -- [11]
+			false, -- [12]
+			23, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "Raptorbabez",
+			[51] = 1533148834,
+			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
+			[53] = "Raptorbabez",
+		}, -- [122]
+		{
+			"lets go", -- [1]
+			"Gladwin-DefiasBrotherhood", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Gladwin", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			171, -- [11]
+			"Player-1096-077D398C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaGladwin|r",
+			[51] = 1533236940,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [123]
+		{
+			"Tjena, har du inte miggat än :O", -- [1]
+			"|Kf20|k00000000000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			479, -- [11]
+			false, -- [12]
+			20, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc41e3aKroken|r",
+			[51] = 1533841536,
+			[50] = "CHAT_MSG_BN_WHISPER",
+		}, -- [124]
+		{
+			"|cffffff00Cleft of Shadow is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Orgrimmar", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Orgrimmar", -- [9]
+			0, -- [10]
+			557, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1533842162,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [125]
+		{
+			"|cffffff00Orgrimmar is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Orgrimmar", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Orgrimmar", -- [9]
+			0, -- [10]
+			18, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1533920702,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [126]
+		{
+			"whaat", -- [1]
+			"Gladwin-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Gladwin", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			140, -- [11]
+			"Player-1096-077D398C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaGladwin|r",
+			[51] = 1533922233,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [127]
 	},
 }

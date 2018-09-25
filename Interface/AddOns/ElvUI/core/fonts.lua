@@ -1,4 +1,4 @@
-local E, L, V, P, G = unpack(select(2, ...)); --Inport: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
+local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 local LSM = LibStub("LibSharedMedia-3.0")
 
 --Cache global variables
@@ -6,17 +6,7 @@ local LSM = LibStub("LibSharedMedia-3.0")
 local SetCVar = SetCVar
 
 --Global variables that we don't cache, list them here for the mikk's Find Globals script
--- GLOBALS: CHAT_FONT_HEIGHTS, UNIT_NAME_FONT, DAMAGE_TEXT_FONT, STANDARD_TEXT_FONT
--- GLOBALS: GameTooltipHeader, SystemFont_Shadow_Large_Outline, NumberFont_OutlineThick_Mono_Small
--- GLOBALS: NumberFont_Outline_Huge, NumberFont_Outline_Large, NumberFont_Outline_Med
--- GLOBALS: NumberFont_Shadow_Med, NumberFont_Shadow_Small, QuestFont, QuestFont_Large
--- GLOBALS: SystemFont_Large, GameFontNormalMed3, SystemFont_Shadow_Huge1, SystemFont_Med1
--- GLOBALS: SystemFont_Med3, SystemFont_OutlineThick_Huge2, SystemFont_Outline_Small
--- GLOBALS: SystemFont_Shadow_Large, SystemFont_Shadow_Med1, SystemFont_Shadow_Med3
--- GLOBALS: SystemFont_Shadow_Outline_Huge2, SystemFont_Shadow_Small, SystemFont_Small
--- GLOBALS: SystemFont_Tiny, Tooltip_Med,  Tooltip_Small, ZoneTextString, SubZoneTextString
--- GLOBALS: PVPInfoTextString, PVPArenaTextString, CombatTextFont, FriendsFont_Normal
--- GLOBALS: FriendsFont_Small, FriendsFont_Large, FriendsFont_UserText, GameFontHighlightMedium
+-- GLOBALS: CHAT_FONT_HEIGHTS, UNIT_NAME_FONT, DAMAGE_TEXT_FONT, STANDARD_TEXT_FONT, NORMALOFFSET, BIGOFFSET, SHADOWCOLOR
 
 local function SetFont(obj, font, size, style, sr, sg, sb, sa, sox, soy, r, g, b)
 	obj:SetFont(font, size, style)
@@ -77,6 +67,7 @@ function E:UpdateBlizzardFonts()
 		SetFont(SystemFont_Med3,                    NORMAL, self.db.general.fontSize*1.1)
 		SetFont(SystemFont_OutlineThick_Huge2,      NORMAL, 20, MONOCHROME.."THICKOUTLINE")
 		SetFont(SystemFont_Outline_Small,           NUMBER, self.db.general.fontSize, "OUTLINE")
+		SetFont(SystemFont_Shadow_Huge3,            NORMAL, 22, nil, SHADOWCOLOR, BIGOFFSET) -- FlightMap
 		SetFont(SystemFont_Shadow_Large,            NORMAL, 15)
 		SetFont(SystemFont_Shadow_Med1,             NORMAL, self.db.general.fontSize)
 		SetFont(SystemFont_Shadow_Med3,             NORMAL, self.db.general.fontSize*1.1)
@@ -131,5 +122,11 @@ function E:UpdateBlizzardFonts()
 		SetFont(Game13FontShadow,					NORMAL, 14)									 -- InspectPvpFrame
 		SetFont(NumberFontNormalSmall,				NORMAL, 11, "OUTLINE")						 -- Calendar, EncounterJournal
 		SetFont(GameFont_Gigantic,				NORMAL, 32, nil, SHADOWCOLOR, BIGOFFSET);		 -- Used at the install steps
+		-- 7.3.5
+		SetFont(Game16Font,							NORMAL, 16);								 -- Added in 7.3.5 used for ?
+		SetFont(Game46Font,							NORMAL, 46);								 -- Added in 7.3.5 used for ?
+		SetFont(DestinyFontMed,						NORMAL, 14);								 -- Added in 7.3.5 used for ?
+		SetFont(Fancy12Font,						NORMAL, 12);								 -- Added in 7.3.5 used for ?
+		SetFont(Fancy14Font,						NORMAL, 14);								 -- Added in 7.3.5 used for ?
 	end
 end

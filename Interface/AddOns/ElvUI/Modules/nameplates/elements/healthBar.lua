@@ -1,4 +1,4 @@
-local E, L, V, P, G = unpack(select(2, ...)); --Inport: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
+local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 local mod = E:GetModule('NamePlates')
 local LSM = LibStub("LibSharedMedia-3.0")
 
@@ -23,6 +23,7 @@ local UnitIsUnit = UnitIsUnit
 local UnitPlayerControlled = UnitPlayerControlled
 local UnitReaction = UnitReaction
 local RAID_CLASS_COLORS = RAID_CLASS_COLORS
+local C_Timer_After = C_Timer.After
 -- GLOBALS: CUSTOM_CLASS_COLORS
 
 function mod:UpdateElement_HealthColor(frame)
@@ -111,7 +112,10 @@ function mod:UpdateElement_HealthColor(frame)
 	end
 
 	if ( r ~= frame.HealthBar.r or g ~= frame.HealthBar.g or b ~= frame.HealthBar.b ) then
-		frame.HealthBar:SetStatusBarColor(r, g, b);
+		if not frame.HealthColorChanged then
+			frame.HealthBar:SetStatusBarColor(r, g, b);
+			frame.CutawayHealth:SetStatusBarColor(r * 1.5, g * 1.5, b * 1.5, 1);
+		end
 		frame.HealthBar.r, frame.HealthBar.g, frame.HealthBar.b = r, g, b;
 	end
 
@@ -123,15 +127,21 @@ function mod:UpdateElement_HealthColor(frame)
 	end
 end
 
-function mod:UpdateFillBar(frame, previousTexture, bar, amount)
-	if ( amount == 0 ) then
+function mod:UpdateFillBar(frame, previousTexture, bar, amount, inverted)
+	if amount == 0 then
 		bar:Hide();
 		return previousTexture;
 	end
 
 	bar:ClearAllPoints()
-	bar:Point("TOPLEFT", previousTexture, "TOPRIGHT");
-	bar:Point("BOTTOMLEFT", previousTexture, "BOTTOMRIGHT");
+
+	if inverted then
+		bar:Point("TOPRIGHT", previousTexture, "TOPRIGHT");
+		bar:Point("BOTTOMRIGHT", previousTexture, "BOTTOMRIGHT");
+	else
+		bar:Point("TOPLEFT", previousTexture, "TOPRIGHT");
+		bar:Point("BOTTOMLEFT", previousTexture, "BOTTOMRIGHT");
+	end
 
 	local totalWidth = frame:GetSize();
 	bar:SetWidth(totalWidth);
@@ -143,38 +153,44 @@ function mod:UpdateElement_HealPrediction(frame)
 	local unit = frame.displayedUnit or frame.unit
 	local myIncomingHeal = UnitGetIncomingHeals(unit, 'player') or 0
 	local allIncomingHeal = UnitGetIncomingHeals(unit) or 0
-	local totalAbsorb = UnitGetTotalAbsorbs(unit) or 0
-	local myCurrentHealAbsorb = UnitGetTotalHealAbsorbs(unit) or 0
+	local absorb = UnitGetTotalAbsorbs(unit) or 0
+	local healAbsorb = UnitGetTotalHealAbsorbs(unit) or 0
 	local health, maxHealth = UnitHealth(unit), UnitHealthMax(unit)
-
-	if(health < myCurrentHealAbsorb) then
-		myCurrentHealAbsorb = health
-	end
+	local otherIncomingHeal = 0
+	--local hasOverHealAbsorb = false
 
 	local maxOverflow = 1
-	if(health - myCurrentHealAbsorb + allIncomingHeal > maxHealth * maxOverflow) then
-		allIncomingHeal = maxHealth * maxOverflow - health + myCurrentHealAbsorb
-	end
+	if(healAbsorb > allIncomingHeal) then
+		healAbsorb = healAbsorb - allIncomingHeal
+		allIncomingHeal = 0
+		myIncomingHeal = 0
 
-	local otherIncomingHeal = 0
-	if(allIncomingHeal < myIncomingHeal) then
-		myIncomingHeal = allIncomingHeal
+		if(health < healAbsorb) then
+			--hasOverHealAbsorb = true
+			healAbsorb = health
+		end
 	else
-		otherIncomingHeal = allIncomingHeal - myIncomingHeal
-	end
+		allIncomingHeal = allIncomingHeal - healAbsorb
+		healAbsorb = 0
 
-	if(health - myCurrentHealAbsorb + allIncomingHeal + totalAbsorb >= maxHealth or health + totalAbsorb >= maxHealth) then
-		if(allIncomingHeal > myCurrentHealAbsorb) then
-			totalAbsorb = max(0, maxHealth - (health - myCurrentHealAbsorb + allIncomingHeal))
+		if(health + allIncomingHeal > maxHealth * maxOverflow) then
+			allIncomingHeal = maxHealth * maxOverflow - health
+		end
+
+		if(allIncomingHeal < myIncomingHeal) then
+			myIncomingHeal = allIncomingHeal
 		else
-			totalAbsorb = max(0, maxHealth - health)
+			otherIncomingHeal = allIncomingHeal - myIncomingHeal
 		end
 	end
 
-	if(myCurrentHealAbsorb > allIncomingHeal) then
-		myCurrentHealAbsorb = myCurrentHealAbsorb - allIncomingHeal
-	else
-		myCurrentHealAbsorb = 0
+	--local hasOverAbsorb = false
+	if(health + allIncomingHeal + absorb >= maxHealth) then
+		--[[if(absorb > 0) then
+			hasOverAbsorb = true
+		end]]
+
+		absorb = max(0, maxHealth - health - allIncomingHeal)
 	end
 
 	frame.PersonalHealPrediction:SetMinMaxValues(0, maxHealth)
@@ -185,26 +201,63 @@ function mod:UpdateElement_HealPrediction(frame)
 	frame.HealPrediction:SetValue(otherIncomingHeal)
 	frame.HealPrediction:Show()
 
-
 	frame.AbsorbBar:SetMinMaxValues(0, maxHealth)
-	frame.AbsorbBar:SetValue(totalAbsorb)
+	frame.AbsorbBar:SetValue(absorb)
 	frame.AbsorbBar:Show()
 
 	local previousTexture = frame.HealthBar:GetStatusBarTexture();
-	previousTexture = mod:UpdateFillBar(frame.HealthBar, previousTexture, frame.PersonalHealPrediction , myIncomingHeal);
+	mod:UpdateFillBar(frame.HealthBar, previousTexture, frame.HealAbsorbBar, healAbsorb, true);
+	previousTexture = mod:UpdateFillBar(frame.HealthBar, previousTexture, frame.PersonalHealPrediction, myIncomingHeal);
 	previousTexture = mod:UpdateFillBar(frame.HealthBar, previousTexture, frame.HealPrediction, allIncomingHeal);
-	previousTexture = mod:UpdateFillBar(frame.HealthBar, previousTexture, frame.AbsorbBar, totalAbsorb);
+	mod:UpdateFillBar(frame.HealthBar, previousTexture, frame.AbsorbBar, absorb);
 end
 
+function mod:UpdateElement_CutawayHealthFadeOut(frame)
+	local cutawayHealth = frame.CutawayHealth;
+	cutawayHealth.fading = true;
+	E:UIFrameFadeOut(cutawayHealth, self.db.cutawayHealthFadeOutTime, cutawayHealth:GetAlpha(), 0);
+	cutawayHealth.isPlaying = nil;
+end
 
 function mod:UpdateElement_MaxHealth(frame)
 	local maxHealth = UnitHealthMax(frame.displayedUnit);
 	frame.HealthBar:SetMinMaxValues(0, maxHealth)
+	frame.CutawayHealth:SetMinMaxValues(0, maxHealth)
+end
+
+local function CutawayHealthClosure(frame)
+	return function() mod:UpdateElement_CutawayHealthFadeOut(frame) end;
 end
 
 function mod:UpdateElement_Health(frame)
 	local health = UnitHealth(frame.displayedUnit);
 	local _, maxHealth = frame.HealthBar:GetMinMaxValues()
+
+	if self.db.cutawayHealth and not UnitIsTapDenied(frame.displayedUnit) then
+		local oldValue = frame.HealthBar:GetValue();
+		local change = oldValue - health;
+		if (change > 0 and not frame.CutawayHealth.isPlaying) then
+			local cutawayHealth = frame.CutawayHealth;
+			if (cutawayHealth.fading) then
+				E:UIFrameFadeRemoveFrame(cutawayHealth);
+			end
+			cutawayHealth.fading = false;
+			cutawayHealth:SetValue(oldValue);
+			cutawayHealth:SetAlpha(1);
+			if (not cutawayHealth.closure) then
+				cutawayHealth.closure = CutawayHealthClosure(frame);
+			end
+			C_Timer_After(self.db.cutawayHealthLength, cutawayHealth.closure);
+			cutawayHealth.isPlaying = true;
+			cutawayHealth:Show();
+		end
+	else
+		if frame.CutawayHealth.isPlaying then
+			frame.CutawayHealth.isPlaying = nil;
+			frame.CutawayHealth:SetScript('OnUpdate', nil);
+		end
+		frame.CutawayHealth:Hide();
+	end
 
 	frame.HealthBar:SetValue(health)
 	frame.FlashTexture:Point("TOPRIGHT", frame.HealthBar:GetStatusBarTexture(), "TOPRIGHT") --idk why this fixes this
@@ -219,6 +272,10 @@ end
 function mod:ConfigureElement_HealthBar(frame, configuring)
 	local healthBar = frame.HealthBar
 	local absorbBar = frame.AbsorbBar
+	local healAbsorbBar = frame.HealAbsorbBar
+	local otherHeals = frame.HealPrediction
+	local myHeals = frame.PersonalHealPrediction
+	local cutawayHealth = frame.CutawayHealth
 
 	--Position
 	healthBar:SetPoint("BOTTOM", frame, "BOTTOM", 0, self.db.units[frame.UnitType].castbar.height + 3)
@@ -229,16 +286,28 @@ function mod:ConfigureElement_HealthBar(frame, configuring)
 		healthBar:SetHeight(self.db.units[frame.UnitType].healthbar.height)
 		healthBar:SetWidth(self.db.units[frame.UnitType].healthbar.width)
 	end
+	cutawayHealth:SetAllPoints(healthBar);
 
 	--Texture
 	healthBar:SetStatusBarTexture(LSM:Fetch("statusbar", self.db.statusbar))
-	if(not configuring) and (self.db.units[frame.UnitType].healthbar.enable or frame.isTarget) then
+	cutawayHealth:SetStatusBarTexture(LSM:Fetch("statusbar", self.db.statusbar))
+
+	if (not configuring) and (self.db.units[frame.UnitType].healthbar.enable or frame.isTarget) then
 		healthBar:Show()
 	end
-	absorbBar:Hide()
+	if not configuring then
+		absorbBar:Hide()
+	end
 
 	healthBar.text:SetAllPoints(healthBar)
 	healthBar.text:SetFont(LSM:Fetch("font", self.db.healthFont), self.db.healthFontSize, self.db.healthFontOutline)
+
+	--Heal Prediction Colors
+	local c = self.db.healPrediction
+	myHeals:SetStatusBarColor(c.personal.r, c.personal.g, c.personal.b, c.personal.a)
+	otherHeals:SetStatusBarColor(c.others.r, c.others.g, c.others.b, c.others.a)
+	absorbBar:SetStatusBarColor(c.absorbs.r, c.absorbs.g, c.absorbs.b, c.absorbs.a)
+	healAbsorbBar:SetStatusBarColor(c.healAbsorbs.r, c.healAbsorbs.g, c.healAbsorbs.b, c.healAbsorbs.a)
 end
 
 function mod:ConstructElement_HealthBar(parent)
@@ -247,15 +316,19 @@ function mod:ConstructElement_HealthBar(parent)
 
 	parent.AbsorbBar = CreateFrame("StatusBar", "$parentAbsorbBar", frame)
 	parent.AbsorbBar:SetStatusBarTexture(LSM:Fetch("background", "ElvUI Blank"))
-	parent.AbsorbBar:SetStatusBarColor(1, 1, 0, 0.25)
+
+	parent.HealAbsorbBar = CreateFrame("StatusBar", "$parentHealAbsorbBar", frame)
+	parent.HealAbsorbBar:SetStatusBarTexture(LSM:Fetch("background", "ElvUI Blank"))
 
 	parent.HealPrediction = CreateFrame("StatusBar", "$parentHealPrediction", frame)
 	parent.HealPrediction:SetStatusBarTexture(LSM:Fetch("background", "ElvUI Blank"))
-	parent.HealPrediction:SetStatusBarColor(0, 1, 0, 0.25)
 
 	parent.PersonalHealPrediction = CreateFrame("StatusBar", "$parentPersonalHealPrediction", frame)
 	parent.PersonalHealPrediction:SetStatusBarTexture(LSM:Fetch("background", "ElvUI Blank"))
-	parent.PersonalHealPrediction:SetStatusBarColor(0, 1, 0.5, 0.25)
+
+	parent.CutawayHealth = CreateFrame("StatusBar", "$parentCutawayHealth", frame)
+	parent.CutawayHealth:SetStatusBarTexture(LSM:Fetch("background", "ElvUI Blank"))
+	parent.CutawayHealth:SetFrameLevel(frame:GetFrameLevel() - 1);
 
 	parent.FlashTexture = frame:CreateTexture(nil, "OVERLAY")
 	parent.FlashTexture:SetTexture(LSM:Fetch("background", "ElvUI Blank"))

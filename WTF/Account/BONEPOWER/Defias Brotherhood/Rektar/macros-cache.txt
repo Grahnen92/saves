@@ -31,6 +31,10 @@ END
 VER 3 010000000000000D "petmove" "463283"
 /petmoveto
 END
+VER 3 0100000000000012 "PlaceDemonCircle" "237559"
+/cancelaura Demonic Circle
+/cast Demonic Circle
+END
 VER 3 010000000000000E "Shield" "SPELL_SHADOW_DEMONICTACTICS"
 #showtooltip Sacrificial Pact
 /cast Sacrificial Pact

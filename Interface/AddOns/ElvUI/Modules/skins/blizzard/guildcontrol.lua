@@ -1,4 +1,4 @@
-local E, L, V, P, G = unpack(select(2, ...)); --Inport: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
+local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 local S = E:GetModule('Skins')
 
 --Cache global variables
@@ -21,6 +21,7 @@ local function LoadSkin()
 	GuildControlUI:SetTemplate("Transparent")
 	GuildControlUIRankBankFrameInset:StripTextures()
 	GuildControlUIRankBankFrameInsetScrollFrame:StripTextures()
+	S:HandleCloseButton(GuildControlUICloseButton)
 	S:HandleScrollBar(GuildControlUIRankBankFrameInsetScrollFrameScrollBar);
 
 	local function SkinGuildRanks()

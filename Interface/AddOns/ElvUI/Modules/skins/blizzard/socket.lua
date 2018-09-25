@@ -1,4 +1,4 @@
-local E, L, V, P, G = unpack(select(2, ...)); --Inport: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
+local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 local S = E:GetModule('Skins')
 
 --Cache global variables
@@ -17,6 +17,8 @@ local function LoadSkin()
 
 	local ItemSocketingFrame = _G["ItemSocketingFrame"]
 	ItemSocketingFrame:StripTextures()
+	ItemSocketingDescription:DisableDrawLayer("BORDER")
+	ItemSocketingDescription:DisableDrawLayer("BACKGROUND")
 	ItemSocketingFrame:SetTemplate("Transparent")
 	ItemSocketingFrameInset:Kill()
 	ItemSocketingScrollFrame:StripTextures()

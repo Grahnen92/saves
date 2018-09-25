@@ -1,0 +1,53 @@
+VER 3 0100000000000002 "Flash Heal" "SPELL_HOLY_FLASHHEAL"
+#showtooltip
+/cast [target=mouseover,exists,nodead,help] Flash Heal;
+/cast [target = player] Flash Heal
+END
+VER 3 0100000000000009 "Flash/Smite" "SPELL_HOLY_FLASHHEAL"
+#showtooltip
+/cast [target=mouseover,exists,nodead,harm]  Smite; Smite [target=mouseover,exists,nodead, help] Flash Heal ; Smite
+END
+VER 3 0100000000000003 "Heal" "SPELL_HOLY_GREATERHEAL"
+#showtooltip
+/cast [target=mouseover,exists,nodead,help] Heal;  
+/cast [target=player] ]Heal
+END
+VER 3 0100000000000005 "Leap of Faith" "PRIEST_SPELL_LEAPOFFAITH_A"
+#showtooltip
+/cast [target=mouseover,exists,nodead,help] Leap of Faith; Leap of Faith
+END
+VER 3 010000000000000A "Mind blast" "SPELL_SHADOW_UNHOLYFRENZY"
+#showtooltip
+/cast [target=mouseover,exists,nodead,harm]  Mind Blast;  Mind Blast [target=mouseover,exists,nodead, help] Flash Heal ; Mind Blast
+END
+VER 3 010000000000000B "Pain Suppression" "SPELL_HOLY_PAINSUPRESSION"
+#showtooltip
+/cast [target=mouseover,exists,nodead,help] Pain Suppression; 
+/cast [target=player] Pain Suppression
+END
+VER 3 0100000000000001 "Penance" "SPELL_HOLY_PENANCE"
+#showtooltip
+/cast [target=mouseover,exists,nodead] Penance;Penance
+END
+VER 3 010000000000000C "Plea/Pain" "1538777"
+#showtooltip
+/cast [target=mouseover,exists,nodead,harm]  Shadow Word:Pain; Shadow Word: Pain [target=mouseover,exists,nodead, help] Plea ; Shadow Word: Pain
+END
+VER 3 0100000000000004 "Prayer of Mendin" "SPELL_HOLY_PRAYEROFMENDINGTGA"
+#showtooltip
+/cast [target=mouseover,exists,nodead,help] Prayer of Mending
+/cast [target=player]  Prayer of Mending
+END
+VER 3 0100000000000008 "Purify" "SPELL_HOLY_DISPELMAGIC"
+#showtooltip Purify
+/cast [@mouseover,help,nodead][] Purify 
+END
+VER 3 0100000000000007 "PWS" "SPELL_HOLY_POWERWORDSHIELD"
+#showtooltip Power Word: Shield
+/cast [@mouseover] Power Word: Shield
+/cast [target=player] Power Word: Shield
+END
+VER 3 0100000000000006 "Shield" "SPELL_HOLY_POWERWORDSHIELD"
+#showtooltip
+/cast [target=mouseover,exists,nodead] Power Word: Shield; Power Word: Shield
+END

@@ -1,4 +1,4 @@
-local E, L, V, P, G = unpack(select(2, ...)); --Inport: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
+local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 local S = E:GetModule('Skins')
 
 --Cache global variables
@@ -31,10 +31,10 @@ local function LoadSkin()
 	end
 
 	QuestChoiceFrame:CreateBackdrop("Transparent")
-	S:HandleButton(QuestChoiceFrame.Option1.OptionButton)
-	S:HandleButton(QuestChoiceFrame.Option2.OptionButton)
-	S:HandleButton(QuestChoiceFrame.Option3.OptionButton)
-	S:HandleButton(QuestChoiceFrame.Option4.OptionButton)
+	S:HandleButton(QuestChoiceFrameOption1.OptionButtonsContainer.OptionButton1)
+	S:HandleButton(QuestChoiceFrameOption2.OptionButtonsContainer.OptionButton1)
+	S:HandleButton(QuestChoiceFrameOption3.OptionButtonsContainer.OptionButton1)
+	S:HandleButton(QuestChoiceFrameOption4.OptionButtonsContainer.OptionButton1)
 	S:HandleCloseButton(QuestChoiceFrame.CloseButton)
 	QuestChoiceFrame.CloseButton:SetFrameLevel(10)
 end
