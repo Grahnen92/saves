@@ -4,6 +4,12 @@ END
 VER 3 0000000000000019 "CatTotem" "132115"
 /cast Cat Form(Shapeshift)
 END
+VER 3 000000000000001F "Entangling Roots" "136100"
+/cast [target=mouseover,exists,nodead,harm]  Entangling Roots; Entangling Roots
+END
+VER 3 000000000000001E "Growl" "132270"
+/cast [target=mouseover,exists,nodead,harm]  Growl; Growl
+END
 VER 3 0000000000000012 "heal" "Ability_Creature_Poison_01"
 #showtooltip
 /cast [target=mouseover,exists,nodead,help] Healing Wave; Healing Wave
@@ -22,6 +28,9 @@ VER 3 0000000000000015 "mind blast" "SPELL_SHADOW_UNHOLYFRENZY"
 END
 VER 3 000000000000001D "Mouselock" "134239"
 /run if IsMouselooking() then MouselookStop() SetBinding("BUTTON1","CAMERAORSELECTORMOVE") SetBinding("BUTTON2","TURNORACTION") else MouselookStart() SetBinding("BUTTON1","STRAFELEFT") SetBinding("BUTTON2","STRAFERIGHT") end
+END
+VER 3 0000000000000020 "MouselookStart" "INV_MISC_QUESTIONMARK"
+/run [target=mouseover] MouselookStart()
 END
 VER 3 0000000000000017 "PulvRej" "1033490"
 #showtooltip

@@ -1,626 +1,74 @@
 
 ElvCharacterDB = {
 	["ChatEditHistory"] = {
-		" skulle joinat en hardcore guild", -- [1]
-		" men kalla fötter i sista sekund", -- [2]
-		" han bangade också", -- [3]
-		" får fortsätta pugga :)", -- [4]
-		" yo", -- [5]
-		" ska du med på m+ ?", -- [6]
-		" okok", -- [7]
-		" ska du med på en m+ eller?", -- [8]
-		" disc", -- [9]
-		" skulle du med på en mythic?", -- [10]
-		"/p yo", -- [11]
-		"/p ready", -- [12]
-		"/p gogo", -- [13]
-		"/p mage", -- [14]
-		"/p ress", -- [15]
-		" kör ni mythic?", -- [16]
-		" får jag va me? :)", -- [17]
-		"/cw Skrotis-TwistingNether Söker ni holy pals ? :)", -- [18]
-		"/cw Skrotis-TwistingNether oj, yes", -- [19]
-		" komma in på disc+", -- [20]
+		" cool", -- [1]
+		" ah :/", -- [2]
+		"/p disc", -- [3]
+		"/p cheers", -- [4]
+		"/p gogo", -- [5]
+		"/p brb toilet", -- [6]
+		"/p you can reset boss", -- [7]
+		"/p also", -- [8]
+		"/p we must respect necro", -- [9]
+		"/p if you get 35+ stacks you are almost unhealable", -- [10]
+		"/p cool indeed", -- [11]
+		"/p :/", -- [12]
+		"/who mollox", -- [13]
+		"/who lucid dream", -- [14]
+		"/cw Mollocks Hey, are you Mollox, GM of lucid dream? :)", -- [15]
+		"/cw Mollocks Saw your page on wowprogress and I am interested. ", -- [16]
+		"/cw Mollocks Holy paladin ", -- [17]
+		"/cw Mollocks That would be ok :) Could also play offspec/mage if you need that ", -- [18]
+		"/cw Mollocks Cool, will do it this evening. ", -- [19]
+		"/cw Mollocks Sure, Ill join tonight tho. Have to go to work!", -- [20]
 	},
 	["ChatHistoryLog"] = {
 		{
-			"|cffffff00The Commons is under attack!|r", -- [1]
-			"", -- [2]
+			"yes ", -- [1]
+			"Tigerw-TwistingNether", -- [2]
 			"", -- [3]
-			"3. LocalDefense - Ironforge", -- [4]
-			"", -- [5]
+			"", -- [4]
+			"Tigerw-TwistingNether", -- [5]
 			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Ironforge", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			752, -- [11]
-			false, -- [12]
+			885, -- [11]
+			"Player-3674-08D93555", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1537387346,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cffc69b6dTigerw-TwistingNether|r",
+			[51] = 1538236074,
+			[50] = "CHAT_MSG_PARTY",
 		}, -- [1]
 		{
-			"har ni bytt till ally ?", -- [1]
-			"|Kf10|k0000000000|k", -- [2]
+			"you can mount in here", -- [1]
+			"Tigerw-TwistingNether", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Tigerw-TwistingNether", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			48, -- [11]
-			false, -- [12]
-			10, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ganondordy|r",
-			[51] = 1537462583,
-			[50] = "CHAT_MSG_BN_WHISPER",
-			[53] = "Ganondordy",
-		}, -- [2]
-		{
-			"yes", -- [1]
-			"|Kf10|k0000000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			49, -- [11]
-			false, -- [12]
-			10, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ganondordy|r",
-			[51] = 1537462591,
-			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
-			[53] = "Ganondordy",
-		}, -- [3]
-		{
-			"men försöker refunda", -- [1]
-			"|Kf10|k0000000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			50, -- [11]
-			false, -- [12]
-			10, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ganondordy|r",
-			[51] = 1537462595,
-			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
-			[53] = "Ganondordy",
-		}, -- [4]
-		{
-			"i detta nu", -- [1]
-			"|Kf10|k0000000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			51, -- [11]
-			false, -- [12]
-			10, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ganondordy|r",
-			[51] = 1537462598,
-			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
-			[53] = "Ganondordy",
-		}, -- [5]
-		{
-			"vadårå ?", -- [1]
-			"|Kf10|k0000000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			52, -- [11]
-			false, -- [12]
-			10, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ganondordy|r",
-			[51] = 1537462602,
-			[50] = "CHAT_MSG_BN_WHISPER",
-			[53] = "Ganondordy",
-		}, -- [6]
-		{
-			"skulle joinat en hardcore guild", -- [1]
-			"|Kf10|k0000000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			53, -- [11]
-			false, -- [12]
-			10, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ganondordy|r",
-			[51] = 1537462615,
-			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
-			[53] = "Ganondordy",
-		}, -- [7]
-		{
-			"men kalla fötter i sista sekund", -- [1]
-			"|Kf10|k0000000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			54, -- [11]
-			false, -- [12]
-			10, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ganondordy|r",
-			[51] = 1537462620,
-			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
-			[53] = "Ganondordy",
-		}, -- [8]
-		{
-			"kalle då ?", -- [1]
-			"|Kf10|k0000000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			57, -- [11]
-			false, -- [12]
-			10, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ganondordy|r",
-			[51] = 1537462630,
-			[50] = "CHAT_MSG_BN_WHISPER",
-			[53] = "Ganondordy",
-		}, -- [9]
-		{
-			"han bangade också", -- [1]
-			"|Kf10|k0000000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			58, -- [11]
-			false, -- [12]
-			10, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ganondordy|r",
-			[51] = 1537462638,
-			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
-			[53] = "Ganondordy",
-		}, -- [10]
-		{
-			"haha", -- [1]
-			"|Kf10|k0000000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			59, -- [11]
-			false, -- [12]
-			10, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ganondordy|r",
-			[51] = 1537462643,
-			[50] = "CHAT_MSG_BN_WHISPER",
-			[53] = "Ganondordy",
-		}, -- [11]
-		{
-			"får fortsätta pugga :)", -- [1]
-			"|Kf10|k0000000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			61, -- [11]
-			false, -- [12]
-			10, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ganondordy|r",
-			[51] = 1537462696,
-			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
-			[53] = "Ganondordy",
-		}, -- [12]
-		{
-			"yo", -- [1]
-			"|Kf2|k00000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			11, -- [11]
-			false, -- [12]
-			2, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dtiger|r",
-			[51] = 1537722414,
-			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
-			[53] = "tiger",
-		}, -- [13]
-		{
-			"<Deadly Boss Mods> Tigerw is busy fighting against Mythic+ (7) - Overseer Korgus (17%, 4/5 people alive)", -- [1]
-			"|Kf2|k00000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			12, -- [11]
-			false, -- [12]
-			2, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dtiger|r",
-			[51] = 1537722414,
-			[50] = "CHAT_MSG_BN_WHISPER",
-			[53] = "tiger",
-		}, -- [14]
-		{
-			"ska du med på m+ ?", -- [1]
-			"|Kf2|k00000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			13, -- [11]
-			false, -- [12]
-			2, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dtiger|r",
-			[51] = 1537722418,
-			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
-			[53] = "tiger",
-		}, -- [15]
-		{
-			"<DBM> Tigerw has defeated Mythic+ (7) - Overseer Korgus! They have 3 total victories.", -- [1]
-			"|Kf2|k00000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			21, -- [11]
-			false, -- [12]
-			2, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dtiger|r",
-			[51] = 1537722454,
-			[50] = "CHAT_MSG_BN_WHISPER",
-			[53] = "tiger",
-		}, -- [16]
-		{
-			"har tele sen ska jag köra raid om 8 min", -- [1]
-			"|Kf2|k00000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			25, -- [11]
-			false, -- [12]
-			2, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dtiger|r",
-			[51] = 1537722547,
-			[50] = "CHAT_MSG_BN_WHISPER",
-			[53] = "tiger",
-		}, -- [17]
-		{
-			"okok", -- [1]
-			"|Kf2|k00000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			28, -- [11]
-			false, -- [12]
-			2, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "tiger",
-			[51] = 1537722576,
-			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
-			[53] = "tiger",
-		}, -- [18]
-		{
-			"ska du med på en m+ eller?", -- [1]
-			"|Kf2|k00000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			99, -- [11]
-			false, -- [12]
-			2, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dtiger|r",
-			[51] = 1537808152,
-			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
-			[53] = "tiger",
-		}, -- [19]
-		{
-			"aa sure", -- [1]
-			"|Kf2|k00000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			101, -- [11]
-			false, -- [12]
-			2, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dtiger|r",
-			[51] = 1537808165,
-			[50] = "CHAT_MSG_BN_WHISPER",
-			[53] = "tiger",
-		}, -- [20]
-		{
-			"ska köra raid 20.00 dock", -- [1]
-			"|Kf2|k00000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			103, -- [11]
-			false, -- [12]
-			2, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dtiger|r",
-			[51] = 1537808169,
-			[50] = "CHAT_MSG_BN_WHISPER",
-			[53] = "tiger",
-		}, -- [21]
-		{
-			"yes", -- [1]
-			"|Kf2|k00000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			107, -- [11]
-			false, -- [12]
-			2, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dtiger|r",
-			[51] = 1537808174,
-			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
-			[53] = "tiger",
-		}, -- [22]
-		{
-			"disc", -- [1]
-			"|Kf2|k00000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			111, -- [11]
-			false, -- [12]
-			2, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dtiger|r",
-			[51] = 1537808206,
-			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
-			[53] = "tiger",
-		}, -- [23]
-		{
-			"yo", -- [1]
-			"|Kf26|k00000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			118, -- [11]
-			false, -- [12]
-			26, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "isafo",
-			[51] = 1537808338,
-			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
-			[53] = "isafo",
-		}, -- [24]
-		{
-			"skulle du med på en mythic?", -- [1]
-			"|Kf26|k00000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			119, -- [11]
-			false, -- [12]
-			26, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "isafo",
-			[51] = 1537808343,
-			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
-			[53] = "isafo",
-		}, -- [25]
-		{
-			"Hey", -- [1]
-			"Prepthebull-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Prepthebull-Draenor", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			131, -- [11]
-			"Player-1403-06F4AB94", -- [12]
+			886, -- [11]
+			"Player-3674-08D93555", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc69b6dPrepthebull-Draenor|r",
-			[51] = 1537808535,
+			[52] = "|cffc69b6dTigerw-TwistingNether|r",
+			[51] = 1538236080,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [26]
+		}, -- [2]
 		{
-			"yo", -- [1]
+			"cool", -- [1]
 			"Gladwin-Kazzak", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -630,7 +78,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			132, -- [11]
+			887, -- [11]
 			"Player-1305-0A0A1F03", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -638,319 +86,946 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfff48cbaGladwin|r",
-			[51] = 1537808538,
+			[51] = 1538236084,
 			[50] = "CHAT_MSG_PARTY",
+		}, -- [3]
+		{
+			"want me to focus adds ?", -- [1]
+			"Elphenomenal-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Elphenomenal", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			888, -- [11]
+			"Player-1305-09F75351", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffff468Elphenomenal|r",
+			[51] = 1538236086,
+			[50] = "CHAT_MSG_PARTY_LEADER",
+		}, -- [4]
+		{
+			"all should", -- [1]
+			"Nyvoz-TarrenMill", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Nyvoz-TarrenMill", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			889, -- [11]
+			"Player-1084-07A8A5A7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8787edNyvoz-TarrenMill|r",
+			[51] = 1538236094,
+			[50] = "CHAT_MSG_PARTY",
+		}, -- [5]
+		{
+			"yea", -- [1]
+			"Zómbíe-TwistingNether", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Zómbíe-TwistingNether", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			890, -- [11]
+			"Player-3674-07AEE1C7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8787edZómbíe-TwistingNether|r",
+			[51] = 1538236096,
+			[50] = "CHAT_MSG_PARTY",
+		}, -- [6]
+		{
+			"dps", -- [1]
+			"Nyvoz-TarrenMill", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Nyvoz-TarrenMill", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			891, -- [11]
+			"Player-1084-07A8A5A7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8787edNyvoz-TarrenMill|r",
+			[51] = 1538236097,
+			[50] = "CHAT_MSG_PARTY",
+		}, -- [7]
+		{
+			"k", -- [1]
+			"Elphenomenal-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Elphenomenal", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			892, -- [11]
+			"Player-1305-09F75351", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffff468Elphenomenal|r",
+			[51] = 1538236099,
+			[50] = "CHAT_MSG_PARTY_LEADER",
+		}, -- [8]
+		{
+			"not focus, but kill so the boss can go somewhere", -- [1]
+			"Tigerw-TwistingNether", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Tigerw-TwistingNether", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			893, -- [11]
+			"Player-3674-08D93555", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc69b6dTigerw-TwistingNether|r",
+			[51] = 1538236101,
+			[50] = "CHAT_MSG_PARTY",
+		}, -- [9]
+		{
+			"without soaking adds", -- [1]
+			"Tigerw-TwistingNether", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Tigerw-TwistingNether", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			894, -- [11]
+			"Player-3674-08D93555", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc69b6dTigerw-TwistingNether|r",
+			[51] = 1538236106,
+			[50] = "CHAT_MSG_PARTY",
+		}, -- [10]
+		{
+			"locks got it i think", -- [1]
+			"Elphenomenal-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Elphenomenal", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			895, -- [11]
+			"Player-1305-09F75351", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffff468Elphenomenal|r",
+			[51] = 1538236106,
+			[50] = "CHAT_MSG_PARTY_LEADER",
+		}, -- [11]
+		{
+			"locks have ramp up tiem", -- [1]
+			"Zómbíe-TwistingNether", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Zómbíe-TwistingNether", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			896, -- [11]
+			"Player-3674-07AEE1C7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8787edZómbíe-TwistingNether|r",
+			[51] = 1538236110,
+			[50] = "CHAT_MSG_PARTY",
+		}, -- [12]
+		{
+			"I think the rogue should stay on boss", -- [1]
+			"Gladwin-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Gladwin", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			898, -- [11]
+			"Player-1305-0A0A1F03", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaGladwin|r",
+			[51] = 1538236112,
+			[50] = "CHAT_MSG_PARTY",
+		}, -- [13]
+		{
+			"no way ", -- [1]
+			"Zómbíe-TwistingNether", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Zómbíe-TwistingNether", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			900, -- [11]
+			"Player-3674-07AEE1C7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8787edZómbíe-TwistingNether|r",
+			[51] = 1538236119,
+			[50] = "CHAT_MSG_PARTY",
+		}, -- [14]
+		{
+			"that is what i do always", -- [1]
+			"Elphenomenal-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Elphenomenal", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			901, -- [11]
+			"Player-1305-09F75351", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffff468Elphenomenal|r",
+			[51] = 1538236120,
+			[50] = "CHAT_MSG_PARTY_LEADER",
+		}, -- [15]
+		{
+			"but i will focus add", -- [1]
+			"Elphenomenal-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Elphenomenal", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			902, -- [11]
+			"Player-1305-09F75351", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffff468Elphenomenal|r",
+			[51] = 1538236125,
+			[50] = "CHAT_MSG_PARTY_LEADER",
+		}, -- [16]
+		{
+			"help kill 1 or 2 alteast", -- [1]
+			"Nyvoz-TarrenMill", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Nyvoz-TarrenMill", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			903, -- [11]
+			"Player-1084-07A8A5A7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8787edNyvoz-TarrenMill|r",
+			[51] = 1538236130,
+			[50] = "CHAT_MSG_PARTY",
+		}, -- [17]
+		{
+			"we dont have that much burst as affli", -- [1]
+			"Nyvoz-TarrenMill", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Nyvoz-TarrenMill", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			904, -- [11]
+			"Player-1084-07A8A5A7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8787edNyvoz-TarrenMill|r",
+			[51] = 1538236138,
+			[50] = "CHAT_MSG_PARTY",
+		}, -- [18]
+		{
+			"mopunbt", -- [1]
+			"Elphenomenal-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Elphenomenal", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			905, -- [11]
+			"Player-1305-09F75351", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffff468Elphenomenal|r",
+			[51] = 1538236139,
+			[50] = "CHAT_MSG_PARTY_LEADER",
+		}, -- [19]
+		{
+			"oh nice ", -- [1]
+			"Elphenomenal-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Elphenomenal", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			945, -- [11]
+			"Player-1305-09F75351", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffff468Elphenomenal|r",
+			[51] = 1538236456,
+			[50] = "CHAT_MSG_PARTY_LEADER",
+		}, -- [20]
+		{
+			"ty for run guys, cya", -- [1]
+			"Nyvoz-TarrenMill", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Nyvoz-TarrenMill", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			948, -- [11]
+			"Player-1084-07A8A5A7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8787edNyvoz-TarrenMill|r",
+			[51] = 1538236466,
+			[50] = "CHAT_MSG_PARTY",
+		}, -- [21]
+		{
+			"at least somthing good for a bad run", -- [1]
+			"Elphenomenal-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Elphenomenal", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			949, -- [11]
+			"Player-1305-09F75351", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffff468Elphenomenal|r",
+			[51] = 1538236468,
+			[50] = "CHAT_MSG_PARTY_LEADER",
+		}, -- [22]
+		{
+			"cya", -- [1]
+			"Gladwin-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Gladwin", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			950, -- [11]
+			"Player-1305-0A0A1F03", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaGladwin|r",
+			[51] = 1538236469,
+			[50] = "CHAT_MSG_PARTY",
+		}, -- [23]
+		{
+			"thx guys", -- [1]
+			"Elphenomenal-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Elphenomenal", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			952, -- [11]
+			"Player-1305-09F75351", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffff468Elphenomenal|r",
+			[51] = 1538236470,
+			[50] = "CHAT_MSG_PARTY_LEADER",
+		}, -- [24]
+		{
+			"c u", -- [1]
+			"Elphenomenal-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Elphenomenal", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			955, -- [11]
+			"Player-1305-09F75351", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffff468Elphenomenal|r",
+			[51] = 1538236474,
+			[50] = "CHAT_MSG_PARTY_LEADER",
+		}, -- [25]
+		{
+			"yo", -- [1]
+			"|Kf2|k00000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1573, -- [11]
+			false, -- [12]
+			2, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc69b6dtiger|r",
+			[51] = 1538321491,
+			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
+			[53] = "tiger",
+		}, -- [26]
+		{
+			"spela nåt?", -- [1]
+			"|Kf2|k00000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1574, -- [11]
+			false, -- [12]
+			2, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc69b6dtiger|r",
+			[51] = 1538321493,
+			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
+			[53] = "tiger",
 		}, -- [27]
 		{
-			"hi", -- [1]
-			"Highstroke-TarrenMill", -- [2]
+			"är på att spela", -- [1]
+			"|Kf2|k00000|k", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Highstroke-TarrenMill", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			133, -- [11]
-			"Player-1084-07CE0EC5", -- [12]
-			0, -- [13]
+			1611, -- [11]
+			false, -- [12]
+			2, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3fc6eaHighstroke-TarrenMill|r",
-			[51] = 1537808563,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[52] = "|cffc69b6dtiger|r",
+			[51] = 1538321535,
+			[50] = "CHAT_MSG_BN_WHISPER",
+			[53] = "tiger",
 		}, -- [28]
 		{
-			"Hello", -- [1]
-			"Prepthebull-Draenor", -- [2]
+			"men ska köra raid 19", -- [1]
+			"|Kf2|k00000|k", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Prepthebull-Draenor", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			142, -- [11]
-			"Player-1403-06F4AB94", -- [12]
-			0, -- [13]
+			1615, -- [11]
+			false, -- [12]
+			2, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc69b6dPrepthebull-Draenor|r",
-			[51] = 1537808631,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cffc69b6dtiger|r",
+			[51] = 1538321538,
+			[50] = "CHAT_MSG_BN_WHISPER",
+			[53] = "tiger",
 		}, -- [29]
 		{
-			"hi", -- [1]
-			"Fállen-TwistingNether", -- [2]
+			"mythic?", -- [1]
+			"|Kf2|k00000|k", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Fállen-TwistingNether", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			143, -- [11]
-			"Player-3674-059F146B", -- [12]
-			0, -- [13]
+			1625, -- [11]
+			false, -- [12]
+			2, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffff468Fállen-TwistingNether|r",
-			[51] = 1537808639,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cffc69b6dtiger|r",
+			[51] = 1538321550,
+			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
+			[53] = "tiger",
 		}, -- [30]
 		{
-			"im at stone", -- [1]
-			"Fállen-TwistingNether", -- [2]
+			"missade att du skrev igår runt 20, sry", -- [1]
+			"|Kf2|k00000|k", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Fállen-TwistingNether", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			157, -- [11]
-			"Player-3674-059F146B", -- [12]
-			0, -- [13]
+			1628, -- [11]
+			false, -- [12]
+			2, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffff468Fállen-TwistingNether|r",
-			[51] = 1537808682,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cffc69b6dtiger|r",
+			[51] = 1538321554,
+			[50] = "CHAT_MSG_BN_WHISPER",
+			[53] = "tiger",
 		}, -- [31]
 		{
-			"omw", -- [1]
-			"Prepthebull-Draenor", -- [2]
+			"cool", -- [1]
+			"|Kf2|k00000|k", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Prepthebull-Draenor", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			158, -- [11]
-			"Player-1403-06F4AB94", -- [12]
-			0, -- [13]
+			1631, -- [11]
+			false, -- [12]
+			2, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc69b6dPrepthebull-Draenor|r",
-			[51] = 1537808688,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cffc69b6dtiger|r",
+			[51] = 1538321560,
+			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
+			[53] = "tiger",
 		}, -- [32]
 		{
-			"click me baby", -- [1]
-			"Fállen-TwistingNether", -- [2]
+			"var mitt i raid så såg inte", -- [1]
+			"|Kf2|k00000|k", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Fállen-TwistingNether", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			176, -- [11]
-			"Player-3674-059F146B", -- [12]
-			0, -- [13]
+			1632, -- [11]
+			false, -- [12]
+			2, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffff468Fállen-TwistingNether|r",
-			[51] = 1537808793,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cffc69b6dtiger|r",
+			[51] = 1538321560,
+			[50] = "CHAT_MSG_BN_WHISPER",
+			[53] = "tiger",
 		}, -- [33]
 		{
-			"ahh thats the spot ", -- [1]
-			"Fállen-TwistingNether", -- [2]
+			"det är hc på alliance ikväll", -- [1]
+			"|Kf2|k00000|k", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Fállen-TwistingNether", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			177, -- [11]
-			"Player-3674-059F146B", -- [12]
-			0, -- [13]
+			1641, -- [11]
+			false, -- [12]
+			2, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffff468Fállen-TwistingNether|r",
-			[51] = 1537808799,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cffc69b6dtiger|r",
+			[51] = 1538321569,
+			[50] = "CHAT_MSG_BN_WHISPER",
+			[53] = "tiger",
 		}, -- [34]
 		{
-			":D", -- [1]
-			"Fállen-TwistingNether", -- [2]
+			"ah :/", -- [1]
+			"|Kf2|k00000|k", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Fállen-TwistingNether", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			179, -- [11]
-			"Player-3674-059F146B", -- [12]
-			0, -- [13]
+			1650, -- [11]
+			false, -- [12]
+			2, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffff468Fállen-TwistingNether|r",
-			[51] = 1537808800,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cffc69b6dtiger|r",
+			[51] = 1538321588,
+			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
+			[53] = "tiger",
 		}, -- [35]
 		{
-			"touching you now", -- [1]
-			"Prepthebull-Draenor", -- [2]
+			"vi hinner väl köra 1-2 m+", -- [1]
+			"|Kf2|k00000|k", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Prepthebull-Draenor", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			182, -- [11]
-			"Player-1403-06F4AB94", -- [12]
-			0, -- [13]
+			1681, -- [11]
+			false, -- [12]
+			2, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc69b6dPrepthebull-Draenor|r",
-			[51] = 1537808820,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cffc69b6dtiger|r",
+			[51] = 1538321644,
+			[50] = "CHAT_MSG_BN_WHISPER",
+			[53] = "tiger",
 		}, -- [36]
 		{
-			"nothing in my pats....", -- [1]
-			"Fállen-TwistingNether", -- [2]
+			"disc", -- [1]
+			"Gladwin-Kazzak", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Fállen-TwistingNether", -- [5]
+			"Gladwin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			184, -- [11]
-			"Player-3674-059F146B", -- [12]
+			1902, -- [11]
+			"Player-1305-0A0A1F03", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffff468Fállen-TwistingNether|r",
-			[51] = 1537808828,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cfff48cbaGladwin|r",
+			[51] = 1538322008,
+			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [37]
 		{
-			"fall off....", -- [1]
-			"Fállen-TwistingNether", -- [2]
+			"kommer snart", -- [1]
+			"Tigerw-TwistingNether", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Fállen-TwistingNether", -- [5]
+			"Tigerw-TwistingNether", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			186, -- [11]
-			"Player-3674-059F146B", -- [12]
+			1904, -- [11]
+			"Player-3674-08D93555", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffff468Fállen-TwistingNether|r",
-			[51] = 1537808832,
+			[52] = "|cffc69b6dTigerw-TwistingNether|r",
+			[51] = 1538322014,
 			[50] = "CHAT_MSG_PARTY",
 		}, -- [38]
 		{
-			"just getting a sweater, freezing too death here", -- [1]
-			"Highstroke-TarrenMill", -- [2]
+			"tele", -- [1]
+			"Tigerw-TwistingNether", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Highstroke-TarrenMill", -- [5]
+			"Tigerw-TwistingNether", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			189, -- [11]
-			"Player-1084-07CE0EC5", -- [12]
+			1909, -- [11]
+			"Player-3674-08D93555", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3fc6eaHighstroke-TarrenMill|r",
-			[51] = 1537808875,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[52] = "|cffc69b6dTigerw-TwistingNether|r",
+			[51] = 1538322014,
+			[50] = "CHAT_MSG_PARTY",
 		}, -- [39]
 		{
-			"|cffa335ee|Hkeystone:158923:250:8:10:5:14:0|h[Keystone: Temple of Sethraliss (8)]|h|r  cancer", -- [1]
-			"Fállen-TwistingNether", -- [2]
+			"rdy", -- [1]
+			"Tigerw-TwistingNether", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Fállen-TwistingNether", -- [5]
+			"Tigerw-TwistingNether", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			197, -- [11]
-			"Player-3674-059F146B", -- [12]
+			2117, -- [11]
+			"Player-3674-08D93555", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffff468Fállen-TwistingNether|r",
-			[51] = 1537808903,
+			[52] = "|cffc69b6dTigerw-TwistingNether|r",
+			[51] = 1538322491,
 			[50] = "CHAT_MSG_PARTY",
 		}, -- [40]
 		{
-			"pew pew", -- [1]
-			"Fállen-TwistingNether", -- [2]
+			"r", -- [1]
+			"Ilyrana-DefiasBrotherhood", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Fállen-TwistingNether", -- [5]
+			"Ilyrana-DefiasBrotherhood", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			200, -- [11]
-			"Player-3674-059F146B", -- [12]
+			2119, -- [11]
+			"Player-1096-060686F4", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffff468Fállen-TwistingNether|r",
-			[51] = 1537808935,
+			[52] = "|cff8787edIlyrana-DefiasBrotherhood|r",
+			[51] = 1538322496,
 			[50] = "CHAT_MSG_PARTY",
 		}, -- [41]
 		{
-			"ready", -- [1]
+			"r", -- [1]
+			"Whatasave-Stormscale", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Whatasave-Stormscale", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2120, -- [11]
+			"Player-2073-067000AE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaWhatasave-Stormscale|r",
+			[51] = 1538322503,
+			[50] = "CHAT_MSG_PARTY",
+		}, -- [42]
+		{
+			"Interrupted Refreshment Vendor's |cff71d5ff|Hspell:268129:0|h[Kaja'Cola Refresher]|h|r!", -- [1]
+			"Theofrancken-Stormscale", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Theofrancken-Stormscale", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2153, -- [11]
+			"Player-2073-06629225", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8787edTheofrancken-Stormscale|r",
+			[51] = 1538322860,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [43]
+		{
+			"Interrupted Refreshment Vendor's |cff71d5ff|Hspell:268129:0|h[Kaja'Cola Refresher]|h|r!", -- [1]
+			"Theofrancken-Stormscale", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Theofrancken-Stormscale", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2160, -- [11]
+			"Player-2073-06629225", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8787edTheofrancken-Stormscale|r",
+			[51] = 1538322898,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [44]
+		{
+			"drink?", -- [1]
+			"Whatasave-Stormscale", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Whatasave-Stormscale", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2266, -- [11]
+			"Player-2073-067000AE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaWhatasave-Stormscale|r",
+			[51] = 1538323467,
+			[50] = "CHAT_MSG_PARTY",
+		}, -- [45]
+		{
+			"cheers", -- [1]
 			"Gladwin-Kazzak", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -960,7 +1035,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			201, -- [11]
+			2267, -- [11]
 			"Player-1305-0A0A1F03", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -968,119 +1043,141 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfff48cbaGladwin|r",
-			[51] = 1537808935,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [42]
-		{
-			"rc", -- [1]
-			"Fállen-TwistingNether", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Fállen-TwistingNether", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			202, -- [11]
-			"Player-3674-059F146B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffff468Fállen-TwistingNether|r",
-			[51] = 1537808938,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [43]
-		{
-			"g", -- [1]
-			"Fállen-TwistingNether", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Fállen-TwistingNether", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			203, -- [11]
-			"Player-3674-059F146B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffff468Fállen-TwistingNether|r",
-			[51] = 1537808939,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [44]
-		{
-			"i had shrine, pure aids in the dik", -- [1]
-			"Prepthebull-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Prepthebull-Draenor", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			205, -- [11]
-			"Player-1403-06F4AB94", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dPrepthebull-Draenor|r",
-			[51] = 1537808944,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [45]
-		{
-			"did it on +8", -- [1]
-			"Fállen-TwistingNether", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Fállen-TwistingNether", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			208, -- [11]
-			"Player-3674-059F146B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffff468Fállen-TwistingNether|r",
-			[51] = 1537808957,
-			[50] = "CHAT_MSG_PARTY",
+			[51] = 1538323474,
+			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [46]
 		{
-			":D", -- [1]
-			"Fállen-TwistingNether", -- [2]
-			"", -- [3]
+			"Raging Gaze on Gladwin", -- [1]
+			"Gladwin-Kazzak", -- [2]
+			"Orcish", -- [3]
 			"", -- [4]
-			"Fállen-TwistingNether", -- [5]
+			"Gladwin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			209, -- [11]
-			"Player-3674-059F146B", -- [12]
+			2270, -- [11]
+			"Player-1305-0A0A1F03", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffff468Fállen-TwistingNether|r",
-			[51] = 1537808957,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cfff48cbaGladwin|r",
+			[51] = 1538323481,
+			[50] = "CHAT_MSG_SAY",
 		}, -- [47]
+		{
+			"Raging Gaze on Gladwin", -- [1]
+			"Gladwin-Kazzak", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Gladwin", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2278, -- [11]
+			"Player-1305-0A0A1F03", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaGladwin|r",
+			[51] = 1538323504,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [48]
+		{
+			"Raging Gaze on Tigerw", -- [1]
+			"Tigerw-TwistingNether", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Tigerw-TwistingNether", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2285, -- [11]
+			"Player-3674-08D93555", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc69b6dTigerw-TwistingNether|r",
+			[51] = 1538323537,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [49]
+		{
+			"Raging Gaze on Tigerw", -- [1]
+			"Tigerw-TwistingNether", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Tigerw-TwistingNether", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2286, -- [11]
+			"Player-3674-08D93555", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc69b6dTigerw-TwistingNether|r",
+			[51] = 1538323537,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [50]
+		{
+			"Raging Gaze on Gladwin", -- [1]
+			"Gladwin-Kazzak", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Gladwin", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2288, -- [11]
+			"Player-1305-0A0A1F03", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaGladwin|r",
+			[51] = 1538323545,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [51]
+		{
+			"sry", -- [1]
+			"Gladwin-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Gladwin", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2306, -- [11]
+			"Player-1305-0A0A1F03", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaGladwin|r",
+			[51] = 1538323803,
+			[50] = "CHAT_MSG_PARTY_LEADER",
+		}, -- [52]
 		{
 			"gogo", -- [1]
 			"Gladwin-Kazzak", -- [2]
@@ -1092,7 +1189,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			210, -- [11]
+			2380, -- [11]
 			"Player-1305-0A0A1F03", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1100,231 +1197,121 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfff48cbaGladwin|r",
-			[51] = 1537808962,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [48]
-		{
-			"+ 7 ", -- [1]
-			"Fállen-TwistingNether", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Fállen-TwistingNether", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			212, -- [11]
-			"Player-3674-059F146B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffff468Fállen-TwistingNether|r",
-			[51] = 1537808972,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [49]
-		{
-			"mage", -- [1]
-			"Gladwin-Kazzak", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Gladwin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			239, -- [11]
-			"Player-1305-0A0A1F03", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff48cbaGladwin|r",
-			[51] = 1537809171,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [50]
-		{
-			"ress", -- [1]
-			"Gladwin-Kazzak", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Gladwin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			240, -- [11]
-			"Player-1305-0A0A1F03", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff48cbaGladwin|r",
-			[51] = 1537809172,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [51]
-		{
-			"Iron Gaze on Gladwin", -- [1]
-			"Gladwin-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Gladwin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			269, -- [11]
-			"Player-1305-0A0A1F03", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff48cbaGladwin|r",
-			[51] = 1537809339,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [52]
-		{
-			"who had in target has to go with him on bomb", -- [1]
-			"Fállen-TwistingNether", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Fállen-TwistingNether", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			278, -- [11]
-			"Player-3674-059F146B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffff468Fállen-TwistingNether|r",
-			[51] = 1537809354,
-			[50] = "CHAT_MSG_PARTY",
+			[51] = 1538324585,
+			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [53]
 		{
-			"Right", -- [1]
-			"Highstroke-TarrenMill", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Highstroke-TarrenMill", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			280, -- [11]
-			"Player-1084-07CE0EC5", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaHighstroke-TarrenMill|r",
-			[51] = 1537809365,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [54]
-		{
-			"Iron Gaze on Highstroke", -- [1]
-			"Highstroke-TarrenMill", -- [2]
+			"Azerite Heartseeker on Gladwin", -- [1]
+			"Gladwin-Kazzak", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Highstroke-TarrenMill", -- [5]
+			"Gladwin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			288, -- [11]
-			"Player-1084-07CE0EC5", -- [12]
+			2398, -- [11]
+			"Player-1305-0A0A1F03", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3fc6eaHighstroke-TarrenMill|r",
-			[51] = 1537809414,
+			[52] = "|cfff48cbaGladwin|r",
+			[51] = 1538324699,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [54]
+		{
+			"Drill Smash on Gladwin", -- [1]
+			"Gladwin-Kazzak", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Gladwin", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2400, -- [11]
+			"Player-1305-0A0A1F03", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaGladwin|r",
+			[51] = 1538324701,
 			[50] = "CHAT_MSG_SAY",
 		}, -- [55]
 		{
-			"Iron Gaze on Highstroke", -- [1]
-			"Highstroke-TarrenMill", -- [2]
+			"Azerite Heartseeker on Gladwin", -- [1]
+			"Gladwin-Kazzak", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Highstroke-TarrenMill", -- [5]
+			"Gladwin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			294, -- [11]
-			"Player-1084-07CE0EC5", -- [12]
+			2404, -- [11]
+			"Player-1305-0A0A1F03", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3fc6eaHighstroke-TarrenMill|r",
-			[51] = 1537809441,
+			[52] = "|cfff48cbaGladwin|r",
+			[51] = 1538324712,
 			[50] = "CHAT_MSG_SAY",
 		}, -- [56]
 		{
-			"Iron Gaze on Highstroke", -- [1]
-			"Highstroke-TarrenMill", -- [2]
+			"Drill Smash on Gladwin", -- [1]
+			"Gladwin-Kazzak", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Highstroke-TarrenMill", -- [5]
+			"Gladwin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			311, -- [11]
-			"Player-1084-07CE0EC5", -- [12]
+			2407, -- [11]
+			"Player-1305-0A0A1F03", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3fc6eaHighstroke-TarrenMill|r",
-			[51] = 1537809510,
+			[52] = "|cfff48cbaGladwin|r",
+			[51] = 1538324713,
 			[50] = "CHAT_MSG_SAY",
 		}, -- [57]
 		{
-			"Iron Gaze on Highstroke", -- [1]
-			"Highstroke-TarrenMill", -- [2]
+			"Azerite Heartseeker on Gladwin", -- [1]
+			"Gladwin-Kazzak", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Highstroke-TarrenMill", -- [5]
+			"Gladwin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			315, -- [11]
-			"Player-1084-07CE0EC5", -- [12]
+			2408, -- [11]
+			"Player-1305-0A0A1F03", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3fc6eaHighstroke-TarrenMill|r",
-			[51] = 1537809526,
+			[52] = "|cfff48cbaGladwin|r",
+			[51] = 1538324714,
 			[50] = "CHAT_MSG_SAY",
 		}, -- [58]
 		{
-			"Sighted Artillery on Gladwin", -- [1]
+			"Azerite Heartseeker on Gladwin", -- [1]
 			"Gladwin-Kazzak", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
@@ -1334,7 +1321,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			346, -- [11]
+			2412, -- [11]
 			"Player-1305-0A0A1F03", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1342,11 +1329,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfff48cbaGladwin|r",
-			[51] = 1537809645,
+			[51] = 1538324726,
 			[50] = "CHAT_MSG_SAY",
 		}, -- [59]
 		{
-			"Sighted Artillery on Gladwin", -- [1]
+			"Drill Smash on Gladwin", -- [1]
 			"Gladwin-Kazzak", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
@@ -1356,7 +1343,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			354, -- [11]
+			2415, -- [11]
 			"Player-1305-0A0A1F03", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1364,33 +1351,33 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfff48cbaGladwin|r",
-			[51] = 1537809678,
+			[51] = 1538324735,
 			[50] = "CHAT_MSG_SAY",
 		}, -- [60]
 		{
-			"Sighted Artillery on Gladwin", -- [1]
-			"Gladwin-Kazzak", -- [2]
+			"Azerite Heartseeker on Whatasave", -- [1]
+			"Whatasave-Stormscale", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Gladwin", -- [5]
+			"Whatasave-Stormscale", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			365, -- [11]
-			"Player-1305-0A0A1F03", -- [12]
+			2419, -- [11]
+			"Player-2073-067000AE", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff48cbaGladwin|r",
-			[51] = 1537809717,
+			[52] = "|cfff48cbaWhatasave-Stormscale|r",
+			[51] = 1538324753,
 			[50] = "CHAT_MSG_SAY",
 		}, -- [61]
 		{
-			"Sighted Artillery on Gladwin", -- [1]
+			"Homing Missile on Gladwin", -- [1]
 			"Gladwin-Kazzak", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
@@ -1400,7 +1387,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			377, -- [11]
+			2430, -- [11]
 			"Player-1305-0A0A1F03", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1408,121 +1395,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfff48cbaGladwin|r",
-			[51] = 1537809767,
+			[51] = 1538324808,
 			[50] = "CHAT_MSG_SAY",
 		}, -- [62]
 		{
-			"go go", -- [1]
-			"Fállen-TwistingNether", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Fállen-TwistingNether", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			384, -- [11]
-			"Player-3674-059F146B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffff468Fállen-TwistingNether|r",
-			[51] = 1537809806,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [63]
-		{
-			"that sucks", -- [1]
-			"Fállen-TwistingNether", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Fállen-TwistingNether", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			406, -- [11]
-			"Player-3674-059F146B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffff468Fállen-TwistingNether|r",
-			[51] = 1537809851,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [64]
-		{
-			"reset it fast", -- [1]
-			"Fállen-TwistingNether", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Fállen-TwistingNether", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			409, -- [11]
-			"Player-3674-059F146B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffff468Fállen-TwistingNether|r",
-			[51] = 1537809863,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [65]
-		{
-			"gj pulling the boss", -- [1]
-			"Tigerw-Sylvanas", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Tigerw-Sylvanas", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			412, -- [11]
-			"Player-3687-08D7052C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dTigerw-Sylvanas|r",
-			[51] = 1537809872,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [66]
-		{
-			"wasnt me -_-", -- [1]
-			"Fállen-TwistingNether", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Fállen-TwistingNether", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			418, -- [11]
-			"Player-3674-059F146B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffff468Fállen-TwistingNether|r",
-			[51] = 1537809895,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [67]
-		{
-			"Sighted Artillery on Gladwin", -- [1]
+			"Drill Smash on Gladwin", -- [1]
 			"Gladwin-Kazzak", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
@@ -1532,7 +1409,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			419, -- [11]
+			2431, -- [11]
 			"Player-1305-0A0A1F03", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1540,365 +1417,475 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfff48cbaGladwin|r",
-			[51] = 1537809929,
+			[51] = 1538324808,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [68]
+		}, -- [63]
 		{
-			"Sighted Artillery on Fállen", -- [1]
-			"Fállen-TwistingNether", -- [2]
+			"Homing Missile on Tigerw", -- [1]
+			"Tigerw-TwistingNether", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Fállen-TwistingNether", -- [5]
+			"Tigerw-TwistingNether", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			421, -- [11]
-			"Player-3674-059F146B", -- [12]
+			2435, -- [11]
+			"Player-3674-08D93555", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffff468Fállen-TwistingNether|r",
-			[51] = 1537809942,
+			[52] = "|cffc69b6dTigerw-TwistingNether|r",
+			[51] = 1538324829,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [69]
+		}, -- [64]
 		{
-			"oh well", -- [1]
-			"Fállen-TwistingNether", -- [2]
+			"Drill Smash on Tigerw", -- [1]
+			"Tigerw-TwistingNether", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Tigerw-TwistingNether", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2436, -- [11]
+			"Player-3674-08D93555", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc69b6dTigerw-TwistingNether|r",
+			[51] = 1538324829,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [65]
+		{
+			"Homing Missile on Gladwin", -- [1]
+			"Gladwin-Kazzak", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Gladwin", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2442, -- [11]
+			"Player-1305-0A0A1F03", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaGladwin|r",
+			[51] = 1538324853,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [66]
+		{
+			"Drill Smash on Gladwin", -- [1]
+			"Gladwin-Kazzak", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Gladwin", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2443, -- [11]
+			"Player-1305-0A0A1F03", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaGladwin|r",
+			[51] = 1538324853,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [67]
+		{
+			"3 chest and then +10?", -- [1]
+			"Lamiax-Mazrigos", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Fállen-TwistingNether", -- [5]
+			"Lamiax-Mazrigos", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			439, -- [11]
-			"Player-3674-059F146B", -- [12]
+			68, -- [11]
+			"Player-1388-0846AF2C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffff468Fállen-TwistingNether|r",
-			[51] = 1537810082,
+			[52] = "|cffa330c9Lamiax-Mazrigos|r",
+			[51] = 1538332851,
+			[50] = "CHAT_MSG_PARTY",
+		}, -- [68]
+		{
+			"hello", -- [1]
+			"Kittenpeach-Bloodhoof", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Kittenpeach-Bloodhoof", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			69, -- [11]
+			"Player-1080-05A54E50", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8787edKittenpeach-Bloodhoof|r",
+			[51] = 1538332852,
+			[50] = "CHAT_MSG_PARTY",
+		}, -- [69]
+		{
+			"lol", -- [1]
+			"Vænôm-Blackmoore", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Vænôm-Blackmoore", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			73, -- [11]
+			"Player-580-07B20CAA", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffff468Vænôm-Blackmoore|r",
+			[51] = 1538332858,
 			[50] = "CHAT_MSG_PARTY",
 		}, -- [70]
 		{
-			"no need to rush now....", -- [1]
-			"Fállen-TwistingNether", -- [2]
+			"brb toilet", -- [1]
+			"Gladwin-Kazzak", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Fállen-TwistingNether", -- [5]
+			"Gladwin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			442, -- [11]
-			"Player-3674-059F146B", -- [12]
+			89, -- [11]
+			"Player-1305-0A0A1F03", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffff468Fállen-TwistingNether|r",
-			[51] = 1537810089,
+			[52] = "|cfff48cbaGladwin|r",
+			[51] = 1538332882,
 			[50] = "CHAT_MSG_PARTY",
 		}, -- [71]
 		{
-			"FUK ME", -- [1]
-			"Fállen-TwistingNether", -- [2]
+			"lucky rogue", -- [1]
+			"Lamiax-Mazrigos", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Fállen-TwistingNether", -- [5]
+			"Lamiax-Mazrigos", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			453, -- [11]
-			"Player-3674-059F146B", -- [12]
+			175, -- [11]
+			"Player-1388-0846AF2C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffff468Fállen-TwistingNether|r",
-			[51] = 1537810191,
+			[52] = "|cffa330c9Lamiax-Mazrigos|r",
+			[51] = 1538333033,
 			[50] = "CHAT_MSG_PARTY",
 		}, -- [72]
 		{
-			"cristosu dumnezeului mati de boss", -- [1]
-			"Fállen-TwistingNether", -- [2]
+			"all azerite 370", -- [1]
+			"Lamiax-Mazrigos", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Fállen-TwistingNether", -- [5]
+			"Lamiax-Mazrigos", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			476, -- [11]
-			"Player-3674-059F146B", -- [12]
+			176, -- [11]
+			"Player-1388-0846AF2C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffff468Fállen-TwistingNether|r",
-			[51] = 1537810381,
+			[52] = "|cffa330c9Lamiax-Mazrigos|r",
+			[51] = 1538333041,
 			[50] = "CHAT_MSG_PARTY",
 		}, -- [73]
 		{
-			"Sighted Artillery on Gladwin", -- [1]
-			"Gladwin-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Gladwin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			508, -- [11]
-			"Player-1305-0A0A1F03", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff48cbaGladwin|r",
-			[51] = 1537810943,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [74]
-		{
-			"Sighted Artillery on Gladwin", -- [1]
-			"Gladwin-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Gladwin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			518, -- [11]
-			"Player-1305-0A0A1F03", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff48cbaGladwin|r",
-			[51] = 1537811000,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [75]
-		{
-			"Sighted Artillery on Highstroke", -- [1]
-			"Highstroke-TarrenMill", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Highstroke-TarrenMill", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			520, -- [11]
-			"Player-1084-07CE0EC5", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaHighstroke-TarrenMill|r",
-			[51] = 1537811012,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [76]
-		{
-			"can we just sap./sheeep", -- [1]
-			"Fállen-TwistingNether", -- [2]
+			"hehe", -- [1]
+			"Vænôm-Blackmoore", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Fállen-TwistingNether", -- [5]
+			"Vænôm-Blackmoore", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			523, -- [11]
-			"Player-3674-059F146B", -- [12]
+			179, -- [11]
+			"Player-580-07B20CAA", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffff468Fállen-TwistingNether|r",
-			[51] = 1537811026,
+			[52] = "|cfffff468Vænôm-Blackmoore|r",
+			[51] = 1538333046,
+			[50] = "CHAT_MSG_PARTY",
+		}, -- [74]
+		{
+			"not funny", -- [1]
+			"Lamiax-Mazrigos", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Lamiax-Mazrigos", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			180, -- [11]
+			"Player-1388-0846AF2C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa330c9Lamiax-Mazrigos|r",
+			[51] = 1538333052,
+			[50] = "CHAT_MSG_PARTY",
+		}, -- [75]
+		{
+			"dont need to raid :X", -- [1]
+			"Vænôm-Blackmoore", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Vænôm-Blackmoore", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			182, -- [11]
+			"Player-580-07B20CAA", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffff468Vænôm-Blackmoore|r",
+			[51] = 1538333063,
+			[50] = "CHAT_MSG_PARTY",
+		}, -- [76]
+		{
+			"no dbm --", -- [1]
+			"Lamiax-Mazrigos", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Lamiax-Mazrigos", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			183, -- [11]
+			"Player-1388-0846AF2C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa330c9Lamiax-Mazrigos|r",
+			[51] = 1538333064,
 			[50] = "CHAT_MSG_PARTY",
 		}, -- [77]
 		{
-			"can you do dps?", -- [1]
-			"Tigerw-Sylvanas", -- [2]
+			"lock what happened?", -- [1]
+			"Lamiax-Mazrigos", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Tigerw-Sylvanas", -- [5]
+			"Lamiax-Mazrigos", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			526, -- [11]
-			"Player-3687-08D7052C", -- [12]
+			242, -- [11]
+			"Player-1388-0846AF2C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc69b6dTigerw-Sylvanas|r",
-			[51] = 1537811053,
+			[52] = "|cffa330c9Lamiax-Mazrigos|r",
+			[51] = 1538333498,
 			[50] = "CHAT_MSG_PARTY",
 		}, -- [78]
 		{
-			"Sighted Artillery on Fállen", -- [1]
-			"Fállen-TwistingNether", -- [2]
+			"Unterbrochen Wellenformerin der Eisenfluträuber's |cff71d5ff|Hspell:257063:0|h[Brackwasserblitz]|h|r!", -- [1]
+			"Vænôm-Blackmoore", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Fállen-TwistingNether", -- [5]
+			"Vænôm-Blackmoore", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			528, -- [11]
-			"Player-3674-059F146B", -- [12]
+			270, -- [11]
+			"Player-580-07B20CAA", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffff468Fállen-TwistingNether|r",
-			[51] = 1537811056,
+			[52] = "|cfffff468Vænôm-Blackmoore|r",
+			[51] = 1538333659,
 			[50] = "CHAT_MSG_SAY",
 		}, -- [79]
 		{
-			"u mad bro?", -- [1]
-			"Fállen-TwistingNether", -- [2]
+			"you can reset boss", -- [1]
+			"Gladwin-Kazzak", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Fállen-TwistingNether", -- [5]
+			"Gladwin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			529, -- [11]
-			"Player-3674-059F146B", -- [12]
+			295, -- [11]
+			"Player-1305-0A0A1F03", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffff468Fállen-TwistingNether|r",
-			[51] = 1537811063,
+			[52] = "|cfff48cbaGladwin|r",
+			[51] = 1538333785,
 			[50] = "CHAT_MSG_PARTY",
 		}, -- [80]
 		{
-			"I was busy running from the bombs :p", -- [1]
-			"Highstroke-TarrenMill", -- [2]
+			"also", -- [1]
+			"Gladwin-Kazzak", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Highstroke-TarrenMill", -- [5]
+			"Gladwin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			530, -- [11]
-			"Player-1084-07CE0EC5", -- [12]
+			296, -- [11]
+			"Player-1305-0A0A1F03", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3fc6eaHighstroke-TarrenMill|r",
-			[51] = 1537811072,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[52] = "|cfff48cbaGladwin|r",
+			[51] = 1538333792,
+			[50] = "CHAT_MSG_PARTY",
 		}, -- [81]
 		{
-			"mobs are living approx 10 times as long as they should", -- [1]
-			"Tigerw-Sylvanas", -- [2]
+			"we must respect necro", -- [1]
+			"Gladwin-Kazzak", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Tigerw-Sylvanas", -- [5]
+			"Gladwin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			531, -- [11]
-			"Player-3687-08D7052C", -- [12]
+			297, -- [11]
+			"Player-1305-0A0A1F03", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc69b6dTigerw-Sylvanas|r",
-			[51] = 1537811076,
+			[52] = "|cfff48cbaGladwin|r",
+			[51] = 1538333796,
 			[50] = "CHAT_MSG_PARTY",
 		}, -- [82]
 		{
-			"killd me on sit", -- [1]
-			"Fállen-TwistingNether", -- [2]
+			"if you get 35+ stacks you are almost unhealable", -- [1]
+			"Gladwin-Kazzak", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Fállen-TwistingNether", -- [5]
+			"Gladwin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			532, -- [11]
-			"Player-3674-059F146B", -- [12]
+			299, -- [11]
+			"Player-1305-0A0A1F03", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffff468Fállen-TwistingNether|r",
-			[51] = 1537811076,
+			[52] = "|cfff48cbaGladwin|r",
+			[51] = 1538333812,
 			[50] = "CHAT_MSG_PARTY",
 		}, -- [83]
 		{
-			"all of you lower than tank on damage", -- [1]
-			"Tigerw-Sylvanas", -- [2]
+			"ok cool", -- [1]
+			"Qwixx-Bloodhoof", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Tigerw-Sylvanas", -- [5]
+			"Qwixx-Bloodhoof", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			533, -- [11]
-			"Player-3687-08D7052C", -- [12]
+			301, -- [11]
+			"Player-1080-07E8180C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc69b6dTigerw-Sylvanas|r",
-			[51] = 1537811082,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cffff7c0aQwixx-Bloodhoof|r",
+			[51] = 1538333825,
+			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [84]
 		{
-			"Putrid Waters on Gladwin", -- [1]
+			"cool indeed", -- [1]
 			"Gladwin-Kazzak", -- [2]
-			"Orcish", -- [3]
+			"", -- [3]
 			"", -- [4]
 			"Gladwin", -- [5]
 			"", -- [6]
@@ -1906,7 +1893,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			560, -- [11]
+			302, -- [11]
 			"Player-1305-0A0A1F03", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1914,253 +1901,407 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfff48cbaGladwin|r",
-			[51] = 1537811468,
-			[50] = "CHAT_MSG_SAY",
+			[51] = 1538333832,
+			[50] = "CHAT_MSG_PARTY",
 		}, -- [85]
 		{
-			"Putrid Waters on Fállen", -- [1]
-			"Fállen-TwistingNether", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Fállen-TwistingNether", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			579, -- [11]
-			"Player-3674-059F146B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffff468Fállen-TwistingNether|r",
-			[51] = 1537811564,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [86]
-		{
-			"Putrid Waters on Tigerw", -- [1]
-			"Tigerw-Sylvanas", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Tigerw-Sylvanas", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			580, -- [11]
-			"Player-3687-08D7052C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dTigerw-Sylvanas|r",
-			[51] = 1537811564,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [87]
-		{
-			"disp", -- [1]
-			"Fállen-TwistingNether", -- [2]
+			"well thanx for the run :D", -- [1]
+			"Qwixx-Bloodhoof", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Fállen-TwistingNether", -- [5]
+			"Qwixx-Bloodhoof", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			582, -- [11]
-			"Player-3674-059F146B", -- [12]
+			324, -- [11]
+			"Player-1080-07E8180C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffff468Fállen-TwistingNether|r",
-			[51] = 1537811573,
+			[52] = "|cffff7c0aQwixx-Bloodhoof|r",
+			[51] = 1538334115,
+			[50] = "CHAT_MSG_PARTY_LEADER",
+		}, -- [86]
+		{
+			":/", -- [1]
+			"Gladwin-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Gladwin", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			329, -- [11]
+			"Player-1305-0A0A1F03", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaGladwin|r",
+			[51] = 1538334122,
 			[50] = "CHAT_MSG_PARTY",
+		}, -- [87]
+		{
+			"Hey, are you Mollox, GM of lucid dream? :)", -- [1]
+			"Mollocks", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Mollocks", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			64, -- [11]
+			"Player-1305-0989DC48", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8787edMollocks|r",
+			[51] = 1538368370,
+			[50] = "CHAT_MSG_WHISPER_INFORM",
 		}, -- [88]
 		{
-			"Putrid Waters on Tigerw", -- [1]
-			"Tigerw-Sylvanas", -- [2]
-			"Orcish", -- [3]
+			"That's me", -- [1]
+			"Mollocks-Kazzak", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Tigerw-Sylvanas", -- [5]
+			"Mollocks", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			593, -- [11]
-			"Player-3687-08D7052C", -- [12]
+			65, -- [11]
+			"Player-1305-0989DC48", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc69b6dTigerw-Sylvanas|r",
-			[51] = 1537811626,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cff8787edMollocks|r",
+			[51] = 1538368382,
+			[50] = "CHAT_MSG_WHISPER",
 		}, -- [89]
 		{
-			"Putrid Waters on Fállen", -- [1]
-			"Fállen-TwistingNether", -- [2]
-			"Orcish", -- [3]
+			"Saw your page on wowprogress and I am interested. ", -- [1]
+			"Mollocks-Kazzak", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Fállen-TwistingNether", -- [5]
+			"Mollocks", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			594, -- [11]
-			"Player-3674-059F146B", -- [12]
+			66, -- [11]
+			"Player-1305-0989DC48", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffff468Fállen-TwistingNether|r",
-			[51] = 1537811626,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cff8787edMollocks|r",
+			[51] = 1538368439,
+			[50] = "CHAT_MSG_WHISPER_INFORM",
 		}, -- [90]
 		{
-			"Putrid Waters on Fállen", -- [1]
-			"Fállen-TwistingNether", -- [2]
-			"Orcish", -- [3]
+			"Ahhhh well hello friend, what role are you interested in joining up with?", -- [1]
+			"Mollocks-Kazzak", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Fállen-TwistingNether", -- [5]
+			"Mollocks", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			598, -- [11]
-			"Player-3674-059F146B", -- [12]
+			67, -- [11]
+			"Player-1305-0989DC48", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffff468Fállen-TwistingNether|r",
-			[51] = 1537811651,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cff8787edMollocks|r",
+			[51] = 1538368481,
+			[50] = "CHAT_MSG_WHISPER",
 		}, -- [91]
 		{
-			"Putrid Waters on Tigerw", -- [1]
-			"Tigerw-Sylvanas", -- [2]
-			"Orcish", -- [3]
+			"Holy paladin ", -- [1]
+			"Mollocks-Kazzak", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Tigerw-Sylvanas", -- [5]
+			"Mollocks", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			599, -- [11]
-			"Player-3687-08D7052C", -- [12]
+			68, -- [11]
+			"Player-1305-0989DC48", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc69b6dTigerw-Sylvanas|r",
-			[51] = 1537811651,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cff8787edMollocks|r",
+			[51] = 1538368489,
+			[50] = "CHAT_MSG_WHISPER_INFORM",
 		}, -- [92]
 		{
-			"Putrid Waters on Highstroke", -- [1]
-			"Highstroke-TarrenMill", -- [2]
-			"Orcish", -- [3]
+			"Our healing team is a bit full atm, would you mind playing in a rotation capacity?", -- [1]
+			"Mollocks-Kazzak", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Highstroke-TarrenMill", -- [5]
+			"Mollocks", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			607, -- [11]
-			"Player-1084-07CE0EC5", -- [12]
+			69, -- [11]
+			"Player-1305-0989DC48", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3fc6eaHighstroke-TarrenMill|r",
-			[51] = 1537811670,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cff8787edMollocks|r",
+			[51] = 1538368550,
+			[50] = "CHAT_MSG_WHISPER",
 		}, -- [93]
 		{
-			"Putrid Waters on Highstroke", -- [1]
-			"Highstroke-TarrenMill", -- [2]
-			"Orcish", -- [3]
+			"That would be ok :) Could also play offspec/mage if you need that ", -- [1]
+			"Mollocks-Kazzak", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Highstroke-TarrenMill", -- [5]
+			"Mollocks", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			615, -- [11]
-			"Player-1084-07CE0EC5", -- [12]
+			72, -- [11]
+			"Player-1305-0989DC48", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3fc6eaHighstroke-TarrenMill|r",
-			[51] = 1537811692,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cff8787edMollocks|r",
+			[51] = 1538368597,
+			[50] = "CHAT_MSG_WHISPER_INFORM",
 		}, -- [94]
 		{
-			"Putrid Waters on Fállen", -- [1]
-			"Fállen-TwistingNether", -- [2]
-			"Orcish", -- [3]
+			"Can work as well, just a headsup we do all the applications on our guild site atm, if you want to sign up please fill in an application and I'll look through it ", -- [1]
+			"Mollocks-Kazzak", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Fállen-TwistingNether", -- [5]
+			"Mollocks", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			618, -- [11]
-			"Player-3674-059F146B", -- [12]
+			73, -- [11]
+			"Player-1305-0989DC48", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffff468Fállen-TwistingNether|r",
-			[51] = 1537811716,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cff8787edMollocks|r",
+			[51] = 1538368636,
+			[50] = "CHAT_MSG_WHISPER",
 		}, -- [95]
 		{
-			"Putrid Waters on Highstroke", -- [1]
-			"Highstroke-TarrenMill", -- [2]
-			"Orcish", -- [3]
+			"lucid-dream-eu.com", -- [1]
+			"Mollocks-Kazzak", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Highstroke-TarrenMill", -- [5]
+			"Mollocks", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			619, -- [11]
-			"Player-1084-07CE0EC5", -- [12]
+			74, -- [11]
+			"Player-1305-0989DC48", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3fc6eaHighstroke-TarrenMill|r",
-			[51] = 1537811716,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cff8787edMollocks|r",
+			[51] = 1538368640,
+			[50] = "CHAT_MSG_WHISPER",
 		}, -- [96]
 		{
-			"Putrid Waters on Gladwin", -- [1]
+			"Cool, will do it this evening. ", -- [1]
+			"Mollocks-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Mollocks", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			75, -- [11]
+			"Player-1305-0989DC48", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8787edMollocks|r",
+			[51] = 1538368717,
+			[50] = "CHAT_MSG_WHISPER_INFORM",
+		}, -- [97]
+		{
+			"Awesome :D", -- [1]
+			"Mollocks-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Mollocks", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			76, -- [11]
+			"Player-1305-0989DC48", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8787edMollocks|r",
+			[51] = 1538368723,
+			[50] = "CHAT_MSG_WHISPER",
+		}, -- [98]
+		{
+			"If you want you can join up as a social in the meantime", -- [1]
+			"Mollocks-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Mollocks", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			78, -- [11]
+			"Player-1305-0989DC48", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8787edMollocks|r",
+			[51] = 1538368730,
+			[50] = "CHAT_MSG_WHISPER",
+		}, -- [99]
+		{
+			"You'd be welcome to our farm runs like that on Mondays as well", -- [1]
+			"Mollocks-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Mollocks", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			79, -- [11]
+			"Player-1305-0989DC48", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8787edMollocks|r",
+			[51] = 1538368739,
+			[50] = "CHAT_MSG_WHISPER",
+		}, -- [100]
+		{
+			"Sure, Ill join tonight tho. Have to go to work!", -- [1]
+			"Mollocks-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Mollocks", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			83, -- [11]
+			"Player-1305-0989DC48", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8787edMollocks|r",
+			[51] = 1538368797,
+			[50] = "CHAT_MSG_WHISPER_INFORM",
+		}, -- [101]
+		{
+			"<Deadly Boss Mods> Mollocks is busy fighting against Normal - Cragmaw the Infested (85%, 5/5 people alive)", -- [1]
+			"Mollocks-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Mollocks", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			84, -- [11]
+			"Player-1305-0989DC48", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8787edMollocks|r",
+			[51] = 1538368797,
+			[50] = "CHAT_MSG_WHISPER",
+		}, -- [102]
+		{
+			"Cya :)", -- [1]
+			"Mollocks-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Mollocks", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			86, -- [11]
+			"Player-1305-0989DC48", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8787edMollocks|r",
+			[51] = 1538368808,
+			[50] = "CHAT_MSG_WHISPER",
+		}, -- [103]
+		{
+			"Cannon Barrage on Gladwin", -- [1]
 			"Gladwin-Kazzak", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
@@ -2170,7 +2311,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			625, -- [11]
+			43, -- [11]
 			"Player-1305-0A0A1F03", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -2178,653 +2319,495 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfff48cbaGladwin|r",
-			[51] = 1537811737,
+			[51] = 1538417939,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [97]
-		{
-			"Putrid Waters on Highstroke", -- [1]
-			"Highstroke-TarrenMill", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Highstroke-TarrenMill", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			626, -- [11]
-			"Player-1084-07CE0EC5", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaHighstroke-TarrenMill|r",
-			[51] = 1537811737,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [98]
-		{
-			"Putrid Waters on Tigerw", -- [1]
-			"Tigerw-Sylvanas", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Tigerw-Sylvanas", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			630, -- [11]
-			"Player-3687-08D7052C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dTigerw-Sylvanas|r",
-			[51] = 1537811759,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [99]
-		{
-			"need more trash", -- [1]
-			"Prepthebull-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Prepthebull-Draenor", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			637, -- [11]
-			"Player-1403-06F4AB94", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dPrepthebull-Draenor|r",
-			[51] = 1537811789,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [100]
-		{
-			"rofl", -- [1]
-			"Fállen-TwistingNether", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Fállen-TwistingNether", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			638, -- [11]
-			"Player-3674-059F146B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffff468Fállen-TwistingNether|r",
-			[51] = 1537811794,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [101]
-		{
-			"99", -- [1]
-			"Highstroke-TarrenMill", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Highstroke-TarrenMill", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			648, -- [11]
-			"Player-1084-07CE0EC5", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaHighstroke-TarrenMill|r",
-			[51] = 1537811864,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [102]
-		{
-			"mda", -- [1]
-			"Fállen-TwistingNether", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Fállen-TwistingNether", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			654, -- [11]
-			"Player-3674-059F146B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffff468Fállen-TwistingNether|r",
-			[51] = 1537811938,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [103]
-		{
-			"fking week", -- [1]
-			"Fállen-TwistingNether", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Fállen-TwistingNether", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			659, -- [11]
-			"Player-3674-059F146B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffff468Fállen-TwistingNether|r",
-			[51] = 1537811948,
-			[50] = "CHAT_MSG_PARTY",
 		}, -- [104]
 		{
-			"gz all", -- [1]
-			"Fállen-TwistingNether", -- [2]
-			"", -- [3]
+			"Cannon Barrage on Gladwin", -- [1]
+			"Gladwin-Kazzak", -- [2]
+			"Orcish", -- [3]
 			"", -- [4]
-			"Fállen-TwistingNether", -- [5]
+			"Gladwin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			660, -- [11]
-			"Player-3674-059F146B", -- [12]
+			49, -- [11]
+			"Player-1305-0A0A1F03", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffff468Fállen-TwistingNether|r",
-			[51] = 1537811954,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cfff48cbaGladwin|r",
+			[51] = 1538417957,
+			[50] = "CHAT_MSG_SAY",
 		}, -- [105]
 		{
-			"kör ni mythic?", -- [1]
-			"|Kf15|k00000|k", -- [2]
-			"", -- [3]
+			"Cannon Barrage on Gladwin", -- [1]
+			"Gladwin-Kazzak", -- [2]
+			"Orcish", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Gladwin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			666, -- [11]
-			false, -- [12]
-			15, -- [13]
+			56, -- [11]
+			"Player-1305-0A0A1F03", -- [12]
+			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff0070ddJoNil|r",
-			[51] = 1537812037,
-			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
-			[53] = "JoNil",
+			[52] = "|cfff48cbaGladwin|r",
+			[51] = 1538417984,
+			[50] = "CHAT_MSG_SAY",
 		}, -- [106]
 		{
-			"får jag va me? :)", -- [1]
-			"|Kf15|k00000|k", -- [2]
-			"", -- [3]
+			"Cannon Barrage on Lezle", -- [1]
+			"Lezle-Kazzak", -- [2]
+			"Orcish", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Lezle", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			668, -- [11]
-			false, -- [12]
-			15, -- [13]
+			61, -- [11]
+			"Player-1305-09F89C92", -- [12]
+			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff0070ddJoNil|r",
-			[51] = 1537812041,
-			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
-			[53] = "JoNil",
+			[52] = "|cffa330c9Lezle|r",
+			[51] = 1538418023,
+			[50] = "CHAT_MSG_SAY",
 		}, -- [107]
 		{
-			"Söker ni holy pals ? :)", -- [1]
-			"Skrotis-TwistingNether", -- [2]
+			"Cannon Barrage on Gladwin", -- [1]
+			"Gladwin-Kazzak", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Skrotis-TwistingNether", -- [5]
+			"Gladwin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			687, -- [11]
-			"Player-3674-078DA052", -- [12]
+			62, -- [11]
+			"Player-1305-0A0A1F03", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffaad372Skrotis-TwistingNether|r",
-			[51] = 1537812203,
-			[50] = "CHAT_MSG_WHISPER_INFORM",
+			[52] = "|cfff48cbaGladwin|r",
+			[51] = 1538418023,
+			[50] = "CHAT_MSG_SAY",
 		}, -- [108]
 		{
-			"aaa men du e på kazzak ", -- [1]
-			"Skrotis-TwistingNether", -- [2]
-			"", -- [3]
+			"Cannon Barrage on Emerentia", -- [1]
+			"Emerentia-Kazzak", -- [2]
+			"Orcish", -- [3]
 			"", -- [4]
-			"Skrotis-TwistingNether", -- [5]
+			"Emerentia", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			690, -- [11]
-			"Player-3674-078DA052", -- [12]
+			63, -- [11]
+			"Player-1305-09F0D669", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffaad372Skrotis-TwistingNether|r",
-			[51] = 1537812219,
-			[50] = "CHAT_MSG_WHISPER",
+			[52] = "|cff3fc6eaEmerentia|r",
+			[51] = 1538418023,
+			[50] = "CHAT_MSG_SAY",
 		}, -- [109]
 		{
-			"oj, yes", -- [1]
-			"Skrotis-TwistingNether", -- [2]
+			"Cannon Barrage on Gladwin", -- [1]
+			"Gladwin-Kazzak", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Skrotis-TwistingNether", -- [5]
+			"Gladwin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			691, -- [11]
-			"Player-3674-078DA052", -- [12]
+			70, -- [11]
+			"Player-1305-0A0A1F03", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffaad372Skrotis-TwistingNether|r",
-			[51] = 1537812230,
-			[50] = "CHAT_MSG_WHISPER_INFORM",
+			[52] = "|cfff48cbaGladwin|r",
+			[51] = 1538418041,
+			[50] = "CHAT_MSG_SAY",
 		}, -- [110]
 		{
-			"kör ni mythic?", -- [1]
-			"|Kf26|k00000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			693, -- [11]
-			false, -- [12]
-			26, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9isafo|r",
-			[51] = 1537812391,
-			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
-			[53] = "isafo",
-		}, -- [111]
-		{
-			"komma in på disc+", -- [1]
-			"|Kf28|k00000000000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			715, -- [11]
-			false, -- [12]
-			28, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "Raptorbabez",
-			[51] = 1537812615,
-			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
-			[53] = "Raptorbabez",
-		}, -- [112]
-		{
-			"A Knot of Snakes on Ilyrana", -- [1]
-			"Ilyrana-DefiasBrotherhood", -- [2]
+			"Cannon Barrage on Lezle", -- [1]
+			"Lezle-Kazzak", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Ilyrana-DefiasBrotherhood", -- [5]
+			"Lezle", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1102, -- [11]
-			"Player-1096-060686F4", -- [12]
+			78, -- [11]
+			"Player-1305-09F89C92", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8787edIlyrana-DefiasBrotherhood|r",
-			[51] = 1537816235,
+			[52] = "|cffa330c9Lezle|r",
+			[51] = 1538418231,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [111]
+		{
+			"Fixate on Emerentia", -- [1]
+			"Emerentia-Kazzak", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Emerentia", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			81, -- [11]
+			"Player-1305-09F0D669", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff3fc6eaEmerentia|r",
+			[51] = 1538418248,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [112]
+		{
+			"Cannon Barrage on Emerentia", -- [1]
+			"Emerentia-Kazzak", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Emerentia", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			83, -- [11]
+			"Player-1305-09F0D669", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff3fc6eaEmerentia|r",
+			[51] = 1538418249,
 			[50] = "CHAT_MSG_SAY",
 		}, -- [113]
 		{
-			"A Knot of Snakes on Ilyrana", -- [1]
-			"Ilyrana-DefiasBrotherhood", -- [2]
+			"Cannon Barrage on Gladwin", -- [1]
+			"Gladwin-Kazzak", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Ilyrana-DefiasBrotherhood", -- [5]
+			"Gladwin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1124, -- [11]
-			"Player-1096-060686F4", -- [12]
+			86, -- [11]
+			"Player-1305-0A0A1F03", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8787edIlyrana-DefiasBrotherhood|r",
-			[51] = 1537816474,
+			[52] = "|cfff48cbaGladwin|r",
+			[51] = 1538418270,
 			[50] = "CHAT_MSG_SAY",
 		}, -- [114]
 		{
-			"A Knot of Snakes on Wakiz", -- [1]
-			"Wakiz-Kazzak", -- [2]
+			"Cannon Barrage on Gladwin", -- [1]
+			"Gladwin-Kazzak", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Wakiz", -- [5]
+			"Gladwin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1135, -- [11]
-			"Player-1305-09F259E9", -- [12]
+			90, -- [11]
+			"Player-1305-0A0A1F03", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff0070ddWakiz|r",
-			[51] = 1537816529,
+			[52] = "|cfff48cbaGladwin|r",
+			[51] = 1538418299,
 			[50] = "CHAT_MSG_SAY",
 		}, -- [115]
 		{
-			"A Knot of Snakes on Emerentia", -- [1]
-			"Emerentia-Kazzak", -- [2]
+			"Cannon Barrage on Lezle", -- [1]
+			"Lezle-Kazzak", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Emerentia", -- [5]
+			"Lezle", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1146, -- [11]
-			"Player-1305-09F0D669", -- [12]
+			91, -- [11]
+			"Player-1305-09F89C92", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3fc6eaEmerentia|r",
-			[51] = 1537816566,
+			[52] = "|cffa330c9Lezle|r",
+			[51] = 1538418299,
 			[50] = "CHAT_MSG_SAY",
 		}, -- [116]
 		{
-			"A Knot of Snakes on Wakiz", -- [1]
-			"Wakiz-Kazzak", -- [2]
+			"Cannon Barrage on Emerentia", -- [1]
+			"Emerentia-Kazzak", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Wakiz", -- [5]
+			"Emerentia", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1154, -- [11]
-			"Player-1305-09F259E9", -- [12]
+			92, -- [11]
+			"Player-1305-09F0D669", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff0070ddWakiz|r",
-			[51] = 1537816663,
+			[52] = "|cff3fc6eaEmerentia|r",
+			[51] = 1538418299,
 			[50] = "CHAT_MSG_SAY",
 		}, -- [117]
 		{
-			"A Knot of Snakes on Wakiz", -- [1]
-			"Wakiz-Kazzak", -- [2]
+			"Cannon Barrage on Emerentia", -- [1]
+			"Emerentia-Kazzak", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Wakiz", -- [5]
+			"Emerentia", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1165, -- [11]
-			"Player-1305-09F259E9", -- [12]
+			95, -- [11]
+			"Player-1305-09F0D669", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff0070ddWakiz|r",
-			[51] = 1537816729,
+			[52] = "|cff3fc6eaEmerentia|r",
+			[51] = 1538418317,
 			[50] = "CHAT_MSG_SAY",
 		}, -- [118]
 		{
-			"A Knot of Snakes on Ilyrana", -- [1]
-			"Ilyrana-DefiasBrotherhood", -- [2]
+			"Cannon Barrage on Gladwin", -- [1]
+			"Gladwin-Kazzak", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Ilyrana-DefiasBrotherhood", -- [5]
+			"Gladwin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1172, -- [11]
-			"Player-1096-060686F4", -- [12]
+			96, -- [11]
+			"Player-1305-0A0A1F03", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8787edIlyrana-DefiasBrotherhood|r",
-			[51] = 1537816768,
+			[52] = "|cfff48cbaGladwin|r",
+			[51] = 1538418317,
 			[50] = "CHAT_MSG_SAY",
 		}, -- [119]
 		{
-			"A Knot of Snakes on Wakiz", -- [1]
-			"Wakiz-Kazzak", -- [2]
+			"Cannon Barrage on Lezle", -- [1]
+			"Lezle-Kazzak", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Wakiz", -- [5]
+			"Lezle", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1178, -- [11]
-			"Player-1305-09F259E9", -- [12]
+			97, -- [11]
+			"Player-1305-09F89C92", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff0070ddWakiz|r",
-			[51] = 1537816778,
+			[52] = "|cffa330c9Lezle|r",
+			[51] = 1538418317,
 			[50] = "CHAT_MSG_SAY",
 		}, -- [120]
 		{
-			"A Knot of Snakes on Wakiz", -- [1]
-			"Wakiz-Kazzak", -- [2]
+			"Cannon Barrage on Emerentia", -- [1]
+			"Emerentia-Kazzak", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Wakiz", -- [5]
+			"Emerentia", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1183, -- [11]
-			"Player-1305-09F259E9", -- [12]
+			101, -- [11]
+			"Player-1305-09F0D669", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff0070ddWakiz|r",
-			[51] = 1537816804,
+			[52] = "|cff3fc6eaEmerentia|r",
+			[51] = 1538418342,
 			[50] = "CHAT_MSG_SAY",
 		}, -- [121]
 		{
-			"A Knot of Snakes on Ilyrana", -- [1]
-			"Ilyrana-DefiasBrotherhood", -- [2]
+			"Cannon Barrage on Gladwin", -- [1]
+			"Gladwin-Kazzak", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Ilyrana-DefiasBrotherhood", -- [5]
+			"Gladwin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1187, -- [11]
-			"Player-1096-060686F4", -- [12]
+			102, -- [11]
+			"Player-1305-0A0A1F03", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8787edIlyrana-DefiasBrotherhood|r",
-			[51] = 1537816814,
+			[52] = "|cfff48cbaGladwin|r",
+			[51] = 1538418342,
 			[50] = "CHAT_MSG_SAY",
 		}, -- [122]
 		{
-			"A Knot of Snakes on Wakiz", -- [1]
-			"Wakiz-Kazzak", -- [2]
+			"Cannon Barrage on Lezle", -- [1]
+			"Lezle-Kazzak", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Wakiz", -- [5]
+			"Lezle", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1200, -- [11]
-			"Player-1305-09F259E9", -- [12]
+			103, -- [11]
+			"Player-1305-09F89C92", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff0070ddWakiz|r",
-			[51] = 1537816982,
+			[52] = "|cffa330c9Lezle|r",
+			[51] = 1538418342,
 			[50] = "CHAT_MSG_SAY",
 		}, -- [123]
 		{
-			"A Knot of Snakes on Emerentia", -- [1]
-			"Emerentia-Kazzak", -- [2]
+			"Cannon Barrage on Gladwin", -- [1]
+			"Gladwin-Kazzak", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Emerentia", -- [5]
+			"Gladwin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1207, -- [11]
-			"Player-1305-09F0D669", -- [12]
+			108, -- [11]
+			"Player-1305-0A0A1F03", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3fc6eaEmerentia|r",
-			[51] = 1537817030,
+			[52] = "|cfff48cbaGladwin|r",
+			[51] = 1538418373,
 			[50] = "CHAT_MSG_SAY",
 		}, -- [124]
 		{
-			"A Knot of Snakes on Ilyrana", -- [1]
-			"Ilyrana-DefiasBrotherhood", -- [2]
+			"Cannon Barrage on Emerentia", -- [1]
+			"Emerentia-Kazzak", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Ilyrana-DefiasBrotherhood", -- [5]
+			"Emerentia", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1212, -- [11]
-			"Player-1096-060686F4", -- [12]
+			109, -- [11]
+			"Player-1305-09F0D669", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8787edIlyrana-DefiasBrotherhood|r",
-			[51] = 1537817047,
+			[52] = "|cff3fc6eaEmerentia|r",
+			[51] = 1538418373,
 			[50] = "CHAT_MSG_SAY",
 		}, -- [125]
 		{
-			"A Knot of Snakes on Emerentia", -- [1]
-			"Emerentia-Kazzak", -- [2]
+			"Cannon Barrage on Lezle", -- [1]
+			"Lezle-Kazzak", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Emerentia", -- [5]
+			"Lezle", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1220, -- [11]
-			"Player-1305-09F0D669", -- [12]
+			110, -- [11]
+			"Player-1305-09F89C92", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3fc6eaEmerentia|r",
-			[51] = 1537817085,
+			[52] = "|cffa330c9Lezle|r",
+			[51] = 1538418373,
 			[50] = "CHAT_MSG_SAY",
 		}, -- [126]
 		{
-			"A Knot of Snakes on Emerentia", -- [1]
+			"Fixate on Emerentia", -- [1]
 			"Emerentia-Kazzak", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
@@ -2834,7 +2817,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1224, -- [11]
+			112, -- [11]
 			"Player-1305-09F0D669", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -2842,7 +2825,7 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff3fc6eaEmerentia|r",
-			[51] = 1537817107,
+			[51] = 1538418384,
 			[50] = "CHAT_MSG_SAY",
 		}, -- [127]
 	},

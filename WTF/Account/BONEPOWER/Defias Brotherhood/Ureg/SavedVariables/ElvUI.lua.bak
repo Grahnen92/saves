@@ -1,166 +1,28 @@
 
 ElvCharacterDB = {
 	["ChatEditHistory"] = {
-		" sitter i kanalen", -- [1]
-		" yop", -- [2]
-		" va händer", -- [3]
-		" why?", -- [4]
-		" inte fått tag på han", -- [5]
-		" yo", -- [6]
-		" kul å se bossarna också", -- [7]
-		" ska du komma på druiden å skaffa lite gear?", -- [8]
-		" vart har du micke?", -- [9]
-		" han sa att de va raid idag", -- [10]
-		" vet ej, behöver gear på magen dock", -- [11]
-		" ja å bror kör", -- [12]
-		" Ska ni med mig å bror på nån hc eller nåt?", -- [13]
-		" Ska ni med mig å bror poå nån hc eller nåt?", -- [14]
-		" fel chat sry", -- [15]
-		" perfekt", -- [16]
-		" är din dh 120?", -- [17]
-		" men vi kan hänka en normal", -- [18]
-		" måste bara fixa quests i arathi", -- [19]
-		" fortsätt köa ni så hänkar vi efter", -- [20]
+		" inte fått tag på han", -- [1]
+		" yo", -- [2]
+		" kul å se bossarna också", -- [3]
+		" ska du komma på druiden å skaffa lite gear?", -- [4]
+		" vart har du micke?", -- [5]
+		" han sa att de va raid idag", -- [6]
+		" vet ej, behöver gear på magen dock", -- [7]
+		" ja å bror kör", -- [8]
+		" Ska ni med mig å bror på nån hc eller nåt?", -- [9]
+		" Ska ni med mig å bror poå nån hc eller nåt?", -- [10]
+		" fel chat sry", -- [11]
+		" perfekt", -- [12]
+		" är din dh 120?", -- [13]
+		" men vi kan hänka en normal", -- [14]
+		" måste bara fixa quests i arathi", -- [15]
+		" fortsätt köa ni så hänkar vi efter", -- [16]
+		"/cw Thanasia-EarthenRing where do you get the fresh meat?", -- [17]
+		"/cw Thanasia-EarthenRing me 2", -- [18]
+		"/cw Thanasia-EarthenRing thanks!", -- [19]
+		"/who mollox", -- [20]
 	},
 	["ChatHistoryLog"] = {
-		{
-			"perfekt", -- [1]
-			"|Kf26|k00000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			581, -- [11]
-			false, -- [12]
-			26, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9isafo|r",
-			[51] = 1537111446,
-			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
-			[53] = "isafo",
-		}, -- [1]
-		{
-			"ahde velat köra på min dh", -- [1]
-			"|Kf26|k00000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			582, -- [11]
-			false, -- [12]
-			26, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9isafo|r",
-			[51] = 1537111447,
-			[50] = "CHAT_MSG_BN_WHISPER",
-			[53] = "isafo",
-		}, -- [2]
-		{
-			"<DBM> Tigerlop has wiped on Mythic+ (4) - The Sand Queen at 27%. They have 1 total wipes on this difficulty.", -- [1]
-			"|Kf2|k00000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			587, -- [11]
-			false, -- [12]
-			2, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9tiger|r",
-			[51] = 1537111487,
-			[50] = "CHAT_MSG_BN_WHISPER",
-			[53] = "tiger",
-		}, -- [3]
-		{
-			"Men HC borde jag kanske byta till min priest", -- [1]
-			"|Kf26|k00000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			589, -- [11]
-			false, -- [12]
-			26, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9isafo|r",
-			[51] = 1537111489,
-			[50] = "CHAT_MSG_BN_WHISPER",
-			[53] = "isafo",
-		}, -- [4]
-		{
-			"är din dh 120?", -- [1]
-			"|Kf26|k00000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			590, -- [11]
-			false, -- [12]
-			26, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9isafo|r",
-			[51] = 1537111503,
-			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
-			[53] = "isafo",
-		}, -- [5]
-		{
-			"nä 118", -- [1]
-			"|Kf26|k00000|k", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			591, -- [11]
-			false, -- [12]
-			26, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9isafo|r",
-			[51] = 1537111513,
-			[50] = "CHAT_MSG_BN_WHISPER",
-			[53] = "isafo",
-		}, -- [6]
 		{
 			"Juste är låst till 120", -- [1]
 			"|Kf26|k00000|k", -- [2]
@@ -183,7 +45,7 @@ ElvCharacterDB = {
 			[51] = 1537111524,
 			[50] = "CHAT_MSG_BN_WHISPER",
 			[53] = "isafo",
-		}, -- [7]
+		}, -- [1]
 		{
 			"men vi kan hänka en normal", -- [1]
 			"|Kf26|k00000|k", -- [2]
@@ -206,7 +68,7 @@ ElvCharacterDB = {
 			[51] = 1537111546,
 			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
 			[53] = "isafo",
-		}, -- [8]
+		}, -- [2]
 		{
 			"ok", -- [1]
 			"|Kf26|k00000|k", -- [2]
@@ -229,7 +91,7 @@ ElvCharacterDB = {
 			[51] = 1537111555,
 			[50] = "CHAT_MSG_BN_WHISPER",
 			[53] = "isafo",
-		}, -- [9]
+		}, -- [3]
 		{
 			"måste bara fixa quests i arathi", -- [1]
 			"|Kf26|k00000|k", -- [2]
@@ -252,7 +114,7 @@ ElvCharacterDB = {
 			[51] = 1537111565,
 			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
 			[53] = "isafo",
-		}, -- [10]
+		}, -- [4]
 		{
 			"fortsätt köa ni så hänkar vi efter", -- [1]
 			"|Kf26|k00000|k", -- [2]
@@ -275,7 +137,7 @@ ElvCharacterDB = {
 			[51] = 1537111577,
 			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
 			[53] = "isafo",
-		}, -- [11]
+		}, -- [5]
 		{
 			"ok", -- [1]
 			"|Kf26|k00000|k", -- [2]
@@ -298,7 +160,7 @@ ElvCharacterDB = {
 			[51] = 1537111583,
 			[50] = "CHAT_MSG_BN_WHISPER",
 			[53] = "isafo",
-		}, -- [12]
+		}, -- [6]
 		{
 			"Skada: Damage for Jes Howlis (7): 21:44 (3 Min 6 Sec):", -- [1]
 			"Ilyrana-DefiasBrotherhood", -- [2]
@@ -320,7 +182,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edIlyrana|r",
 			[51] = 1537300168,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [13]
+		}, -- [7]
 		{
 			" 1. Ilyrana   904.1K (5795, 30.5%)", -- [1]
 			"Ilyrana-DefiasBrotherhood", -- [2]
@@ -342,7 +204,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edIlyrana|r",
 			[51] = 1537300168,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [14]
+		}, -- [8]
 		{
 			" 2. Ureg   657.7K (3985, 22.2%)", -- [1]
 			"Ilyrana-DefiasBrotherhood", -- [2]
@@ -364,7 +226,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edIlyrana|r",
 			[51] = 1537300168,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [15]
+		}, -- [9]
 		{
 			" 3. Tigerdr   597.8K (3214, 20.1%)", -- [1]
 			"Ilyrana-DefiasBrotherhood", -- [2]
@@ -386,7 +248,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edIlyrana|r",
 			[51] = 1537300168,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [16]
+		}, -- [10]
 		{
 			" 4. Wakiz   542.6K (4174, 18.3%)", -- [1]
 			"Ilyrana-DefiasBrotherhood", -- [2]
@@ -408,7 +270,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edIlyrana|r",
 			[51] = 1537300168,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [17]
+		}, -- [11]
 		{
 			" 5. Minso   266.3K (1594, 9.0%)", -- [1]
 			"Ilyrana-DefiasBrotherhood", -- [2]
@@ -430,7 +292,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edIlyrana|r",
 			[51] = 1537300168,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [18]
+		}, -- [12]
 		{
 			"|cffa335ee|Hitem:159266::::::::120:266::23:3:4779:1512:4786:::|h[Claw-Slit Brawler's Handwraps]|h|r någon?", -- [1]
 			"Ilyrana-DefiasBrotherhood", -- [2]
@@ -452,7 +314,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edIlyrana|r",
 			[51] = 1537300917,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [19]
+		}, -- [13]
 		{
 			"Skada: Damage for Current fight: 21:59 (2 Min 46 Sec):", -- [1]
 			"Ilyrana-DefiasBrotherhood", -- [2]
@@ -474,7 +336,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edIlyrana|r",
 			[51] = 1537300925,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [20]
+		}, -- [14]
 		{
 			" 1. Ureg   752.1K (4585, 24.8%)", -- [1]
 			"Ilyrana-DefiasBrotherhood", -- [2]
@@ -496,7 +358,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edIlyrana|r",
 			[51] = 1537300925,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [21]
+		}, -- [15]
 		{
 			" 2. Wakiz   746.8K (4581, 24.6%)", -- [1]
 			"Ilyrana-DefiasBrotherhood", -- [2]
@@ -518,7 +380,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edIlyrana|r",
 			[51] = 1537300925,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [22]
+		}, -- [16]
 		{
 			" 3. Tigerdr   601.8K (3647, 19.9%)", -- [1]
 			"Ilyrana-DefiasBrotherhood", -- [2]
@@ -540,7 +402,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edIlyrana|r",
 			[51] = 1537300925,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [23]
+		}, -- [17]
 		{
 			" 4. Ilyrana   582.8K (3553, 19.2%)", -- [1]
 			"Ilyrana-DefiasBrotherhood", -- [2]
@@ -562,7 +424,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edIlyrana|r",
 			[51] = 1537300925,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [24]
+		}, -- [18]
 		{
 			" 5. Minso   348.1K (2109, 11.5%)", -- [1]
 			"Ilyrana-DefiasBrotherhood", -- [2]
@@ -584,7 +446,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edIlyrana|r",
 			[51] = 1537300925,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [25]
+		}, -- [19]
 		{
 			"Explosive Burst on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -606,7 +468,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1537302046,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [26]
+		}, -- [20]
 		{
 			"Explosive Burst on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -628,7 +490,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1537302061,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [27]
+		}, -- [21]
 		{
 			"Explosive Burst on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -650,7 +512,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1537302069,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [28]
+		}, -- [22]
 		{
 			"Explosive Burst on Minso", -- [1]
 			"Minso-Kazzak", -- [2]
@@ -672,7 +534,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffMinso-Kazzak|r",
 			[51] = 1537302094,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [29]
+		}, -- [23]
 		{
 			"Explosive Burst on Minso", -- [1]
 			"Minso-Kazzak", -- [2]
@@ -694,7 +556,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffMinso-Kazzak|r",
 			[51] = 1537302110,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [30]
+		}, -- [24]
 		{
 			"Explosive Burst on Minso", -- [1]
 			"Minso-Kazzak", -- [2]
@@ -716,7 +578,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffMinso-Kazzak|r",
 			[51] = 1537302117,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [31]
+		}, -- [25]
 		{
 			"Deadeye on Minso", -- [1]
 			"Minso-Kazzak", -- [2]
@@ -738,7 +600,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffMinso-Kazzak|r",
 			[51] = 1537302131,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [32]
+		}, -- [26]
 		{
 			"Explosive Burst on Ilyrana", -- [1]
 			"Ilyrana-DefiasBrotherhood", -- [2]
@@ -760,7 +622,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edIlyrana|r",
 			[51] = 1537302334,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [33]
+		}, -- [27]
 		{
 			"Explosive Burst on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -782,7 +644,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1537302334,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [34]
+		}, -- [28]
 		{
 			"Deadeye on Minso", -- [1]
 			"Minso-Kazzak", -- [2]
@@ -804,7 +666,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffMinso-Kazzak|r",
 			[51] = 1537302345,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [35]
+		}, -- [29]
 		{
 			"Explosive Burst on Minso", -- [1]
 			"Minso-Kazzak", -- [2]
@@ -826,7 +688,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffMinso-Kazzak|r",
 			[51] = 1537302350,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [36]
+		}, -- [30]
 		{
 			"Explosive Burst on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -848,7 +710,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1537302350,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [37]
+		}, -- [31]
 		{
 			"Explosive Burst on Ilyrana", -- [1]
 			"Ilyrana-DefiasBrotherhood", -- [2]
@@ -870,7 +732,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edIlyrana|r",
 			[51] = 1537302350,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [38]
+		}, -- [32]
 		{
 			"Explosive Burst on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -892,7 +754,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1537302357,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [39]
+		}, -- [33]
 		{
 			"Explosive Burst on Ilyrana", -- [1]
 			"Ilyrana-DefiasBrotherhood", -- [2]
@@ -914,7 +776,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edIlyrana|r",
 			[51] = 1537302357,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [40]
+		}, -- [34]
 		{
 			"Explosive Burst on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -936,7 +798,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1537302372,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [41]
+		}, -- [35]
 		{
 			"Explosive Burst on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -958,7 +820,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1537302379,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [42]
+		}, -- [36]
 		{
 			"Explosive Burst on Ilyrana", -- [1]
 			"Ilyrana-DefiasBrotherhood", -- [2]
@@ -980,7 +842,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edIlyrana|r",
 			[51] = 1537302379,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [43]
+		}, -- [37]
 		{
 			"Deadeye on Minso", -- [1]
 			"Minso-Kazzak", -- [2]
@@ -1002,7 +864,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffMinso-Kazzak|r",
 			[51] = 1537302390,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [44]
+		}, -- [38]
 		{
 			"Explosive Burst on Minso", -- [1]
 			"Minso-Kazzak", -- [2]
@@ -1024,7 +886,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffMinso-Kazzak|r",
 			[51] = 1537302395,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [45]
+		}, -- [39]
 		{
 			"Explosive Burst on Minso", -- [1]
 			"Minso-Kazzak", -- [2]
@@ -1046,7 +908,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffMinso-Kazzak|r",
 			[51] = 1537302402,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [46]
+		}, -- [40]
 		{
 			"Explosive Burst on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -1068,7 +930,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1537302511,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [47]
+		}, -- [41]
 		{
 			"Explosive Burst on Minso", -- [1]
 			"Minso-Kazzak", -- [2]
@@ -1090,7 +952,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffMinso-Kazzak|r",
 			[51] = 1537302511,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [48]
+		}, -- [42]
 		{
 			"Deadeye on Ilyrana", -- [1]
 			"Ilyrana-DefiasBrotherhood", -- [2]
@@ -1112,7 +974,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edIlyrana|r",
 			[51] = 1537302521,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [49]
+		}, -- [43]
 		{
 			"Explosive Burst on Minso", -- [1]
 			"Minso-Kazzak", -- [2]
@@ -1134,7 +996,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffMinso-Kazzak|r",
 			[51] = 1537302526,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [50]
+		}, -- [44]
 		{
 			"Explosive Burst on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -1156,7 +1018,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1537302526,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [51]
+		}, -- [45]
 		{
 			"Explosive Burst on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -1178,7 +1040,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1537302630,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [52]
+		}, -- [46]
 		{
 			"Explosive Burst on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -1200,7 +1062,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1537302653,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [53]
+		}, -- [47]
 		{
 			"Deadeye on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -1222,7 +1084,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1537302667,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [54]
+		}, -- [48]
 		{
 			"Explosive Burst on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -1244,7 +1106,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1537302679,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [55]
+		}, -- [49]
 		{
 			"Explosive Burst on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -1266,7 +1128,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1537302702,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [56]
+		}, -- [50]
 		{
 			"Explosive Burst on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -1288,7 +1150,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1537302852,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [57]
+		}, -- [51]
 		{
 			"Explosive Burst on Minso", -- [1]
 			"Minso-Kazzak", -- [2]
@@ -1310,7 +1172,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffMinso-Kazzak|r",
 			[51] = 1537302852,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [58]
+		}, -- [52]
 		{
 			"Deadeye on Minso", -- [1]
 			"Minso-Kazzak", -- [2]
@@ -1332,7 +1194,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffMinso-Kazzak|r",
 			[51] = 1537302864,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [59]
+		}, -- [53]
 		{
 			"Explosive Burst on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -1354,7 +1216,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1537302875,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [60]
+		}, -- [54]
 		{
 			"Explosive Burst on Minso", -- [1]
 			"Minso-Kazzak", -- [2]
@@ -1376,7 +1238,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffMinso-Kazzak|r",
 			[51] = 1537302875,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [61]
+		}, -- [55]
 		{
 			"Explosive Burst on Minso", -- [1]
 			"Minso-Kazzak", -- [2]
@@ -1398,7 +1260,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffMinso-Kazzak|r",
 			[51] = 1537302890,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [62]
+		}, -- [56]
 		{
 			"Explosive Burst on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -1420,7 +1282,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1537302890,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [63]
+		}, -- [57]
 		{
 			"Explosive Burst on Minso", -- [1]
 			"Minso-Kazzak", -- [2]
@@ -1442,7 +1304,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffMinso-Kazzak|r",
 			[51] = 1537302897,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [64]
+		}, -- [58]
 		{
 			"Explosive Burst on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -1464,7 +1326,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1537302897,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [65]
+		}, -- [59]
 		{
 			"Explosive Burst on Minso", -- [1]
 			"Minso-Kazzak", -- [2]
@@ -1486,7 +1348,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffMinso-Kazzak|r",
 			[51] = 1537302920,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [66]
+		}, -- [60]
 		{
 			"Explosive Burst on Minso", -- [1]
 			"Minso-Kazzak", -- [2]
@@ -1508,7 +1370,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffMinso-Kazzak|r",
 			[51] = 1537302935,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [67]
+		}, -- [61]
 		{
 			"Explosive Burst on Minso", -- [1]
 			"Minso-Kazzak", -- [2]
@@ -1530,7 +1392,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffMinso-Kazzak|r",
 			[51] = 1537302942,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [68]
+		}, -- [62]
 		{
 			"Explosive Burst on Minso", -- [1]
 			"Minso-Kazzak", -- [2]
@@ -1552,7 +1414,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffMinso-Kazzak|r",
 			[51] = 1537302964,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [69]
+		}, -- [63]
 		{
 			"Explosive Burst on Minso", -- [1]
 			"Minso-Kazzak", -- [2]
@@ -1574,7 +1436,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffMinso-Kazzak|r",
 			[51] = 1537302990,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [70]
+		}, -- [64]
 		{
 			"Deadeye on Minso", -- [1]
 			"Minso-Kazzak", -- [2]
@@ -1596,7 +1458,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffMinso-Kazzak|r",
 			[51] = 1537303000,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [71]
+		}, -- [65]
 		{
 			"Explosive Burst on Minso", -- [1]
 			"Minso-Kazzak", -- [2]
@@ -1618,7 +1480,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffMinso-Kazzak|r",
 			[51] = 1537303006,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [72]
+		}, -- [66]
 		{
 			"Explosive Burst on Ilyrana", -- [1]
 			"Ilyrana-DefiasBrotherhood", -- [2]
@@ -1640,7 +1502,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edIlyrana|r",
 			[51] = 1537303117,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [73]
+		}, -- [67]
 		{
 			"Explosive Burst on Minso", -- [1]
 			"Minso-Kazzak", -- [2]
@@ -1662,7 +1524,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffMinso-Kazzak|r",
 			[51] = 1537303117,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [74]
+		}, -- [68]
 		{
 			"Explosive Burst on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -1684,7 +1546,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1537303117,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [75]
+		}, -- [69]
 		{
 			"Explosive Burst on Minso", -- [1]
 			"Minso-Kazzak", -- [2]
@@ -1706,7 +1568,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffMinso-Kazzak|r",
 			[51] = 1537303140,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [76]
+		}, -- [70]
 		{
 			"Explosive Burst on Ilyrana", -- [1]
 			"Ilyrana-DefiasBrotherhood", -- [2]
@@ -1728,7 +1590,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edIlyrana|r",
 			[51] = 1537303140,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [77]
+		}, -- [71]
 		{
 			"Explosive Burst on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -1750,7 +1612,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1537303140,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [78]
+		}, -- [72]
 		{
 			"Explosive Burst on Ilyrana", -- [1]
 			"Ilyrana-DefiasBrotherhood", -- [2]
@@ -1772,7 +1634,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edIlyrana|r",
 			[51] = 1537303155,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [79]
+		}, -- [73]
 		{
 			"Explosive Burst on Minso", -- [1]
 			"Minso-Kazzak", -- [2]
@@ -1794,7 +1656,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffMinso-Kazzak|r",
 			[51] = 1537303155,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [80]
+		}, -- [74]
 		{
 			"Explosive Burst on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -1816,7 +1678,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1537303155,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [81]
+		}, -- [75]
 		{
 			"Explosive Burst on Ilyrana", -- [1]
 			"Ilyrana-DefiasBrotherhood", -- [2]
@@ -1838,7 +1700,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edIlyrana|r",
 			[51] = 1537303162,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [82]
+		}, -- [76]
 		{
 			"Explosive Burst on Minso", -- [1]
 			"Minso-Kazzak", -- [2]
@@ -1860,7 +1722,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffMinso-Kazzak|r",
 			[51] = 1537303162,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [83]
+		}, -- [77]
 		{
 			"Explosive Burst on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -1882,7 +1744,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1537303162,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [84]
+		}, -- [78]
 		{
 			"Deadeye on Minso", -- [1]
 			"Minso-Kazzak", -- [2]
@@ -1904,7 +1766,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffMinso-Kazzak|r",
 			[51] = 1537303173,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [85]
+		}, -- [79]
 		{
 			"Explosive Burst on Minso", -- [1]
 			"Minso-Kazzak", -- [2]
@@ -1926,7 +1788,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffMinso-Kazzak|r",
 			[51] = 1537303178,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [86]
+		}, -- [80]
 		{
 			"Explosive Burst on Ilyrana", -- [1]
 			"Ilyrana-DefiasBrotherhood", -- [2]
@@ -1948,7 +1810,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edIlyrana|r",
 			[51] = 1537303178,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [87]
+		}, -- [81]
 		{
 			"Explosive Burst on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -1970,7 +1832,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1537303178,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [88]
+		}, -- [82]
 		{
 			"Explosive Burst on Ilyrana", -- [1]
 			"Ilyrana-DefiasBrotherhood", -- [2]
@@ -1992,7 +1854,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edIlyrana|r",
 			[51] = 1537303186,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [89]
+		}, -- [83]
 		{
 			"Explosive Burst on Minso", -- [1]
 			"Minso-Kazzak", -- [2]
@@ -2014,7 +1876,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffMinso-Kazzak|r",
 			[51] = 1537303186,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [90]
+		}, -- [84]
 		{
 			"Explosive Burst on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -2036,7 +1898,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1537303186,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [91]
+		}, -- [85]
 		{
 			"Deadeye on Ilyrana", -- [1]
 			"Ilyrana-DefiasBrotherhood", -- [2]
@@ -2058,7 +1920,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edIlyrana|r",
 			[51] = 1537303199,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [92]
+		}, -- [86]
 		{
 			"Explosive Burst on Minso", -- [1]
 			"Minso-Kazzak", -- [2]
@@ -2080,7 +1942,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffMinso-Kazzak|r",
 			[51] = 1537303211,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [93]
+		}, -- [87]
 		{
 			"Explosive Burst on Ilyrana", -- [1]
 			"Ilyrana-DefiasBrotherhood", -- [2]
@@ -2102,7 +1964,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edIlyrana|r",
 			[51] = 1537303211,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [94]
+		}, -- [88]
 		{
 			"Deadeye on Ilyrana", -- [1]
 			"Ilyrana-DefiasBrotherhood", -- [2]
@@ -2124,7 +1986,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edIlyrana|r",
 			[51] = 1537303221,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [95]
+		}, -- [89]
 		{
 			"Explosive Burst on Minso", -- [1]
 			"Minso-Kazzak", -- [2]
@@ -2146,7 +2008,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffMinso-Kazzak|r",
 			[51] = 1537303227,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [96]
+		}, -- [90]
 		{
 			"Explosive Burst on Ilyrana", -- [1]
 			"Ilyrana-DefiasBrotherhood", -- [2]
@@ -2168,7 +2030,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edIlyrana|r",
 			[51] = 1537303227,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [97]
+		}, -- [91]
 		{
 			"Explosive Burst on Minso", -- [1]
 			"Minso-Kazzak", -- [2]
@@ -2190,7 +2052,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffMinso-Kazzak|r",
 			[51] = 1537303234,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [98]
+		}, -- [92]
 		{
 			"Explosive Burst on Ilyrana", -- [1]
 			"Ilyrana-DefiasBrotherhood", -- [2]
@@ -2212,7 +2074,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edIlyrana|r",
 			[51] = 1537303234,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [99]
+		}, -- [93]
 		{
 			"Explosive Burst on Minso", -- [1]
 			"Minso-Kazzak", -- [2]
@@ -2234,7 +2096,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffMinso-Kazzak|r",
 			[51] = 1537303351,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [100]
+		}, -- [94]
 		{
 			"Explosive Burst on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -2256,7 +2118,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1537303351,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [101]
+		}, -- [95]
 		{
 			"Explosive Burst on Ilyrana", -- [1]
 			"Ilyrana-DefiasBrotherhood", -- [2]
@@ -2278,7 +2140,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edIlyrana|r",
 			[51] = 1537303351,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [102]
+		}, -- [96]
 		{
 			"Deadeye on Minso", -- [1]
 			"Minso-Kazzak", -- [2]
@@ -2300,7 +2162,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffMinso-Kazzak|r",
 			[51] = 1537303362,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [103]
+		}, -- [97]
 		{
 			"Explosive Burst on Minso", -- [1]
 			"Minso-Kazzak", -- [2]
@@ -2322,7 +2184,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffMinso-Kazzak|r",
 			[51] = 1537303374,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [104]
+		}, -- [98]
 		{
 			"Explosive Burst on Ilyrana", -- [1]
 			"Ilyrana-DefiasBrotherhood", -- [2]
@@ -2344,7 +2206,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edIlyrana|r",
 			[51] = 1537303374,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [105]
+		}, -- [99]
 		{
 			"Explosive Burst on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -2366,7 +2228,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1537303374,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [106]
+		}, -- [100]
 		{
 			"Deadeye on Ilyrana", -- [1]
 			"Ilyrana-DefiasBrotherhood", -- [2]
@@ -2388,7 +2250,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edIlyrana|r",
 			[51] = 1537303388,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [107]
+		}, -- [101]
 		{
 			"Explosive Burst on Minso", -- [1]
 			"Minso-Kazzak", -- [2]
@@ -2410,7 +2272,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffMinso-Kazzak|r",
 			[51] = 1537303400,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [108]
+		}, -- [102]
 		{
 			"Explosive Burst on Ilyrana", -- [1]
 			"Ilyrana-DefiasBrotherhood", -- [2]
@@ -2432,7 +2294,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edIlyrana|r",
 			[51] = 1537303400,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [109]
+		}, -- [103]
 		{
 			"Explosive Burst on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -2454,7 +2316,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1537303400,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [110]
+		}, -- [104]
 		{
 			"Explosive Burst on Tigerdr", -- [1]
 			"Tigerdr-Frostmane", -- [2]
@@ -2476,7 +2338,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aTigerdr-Frostmane|r",
 			[51] = 1537303415,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [111]
+		}, -- [105]
 		{
 			"Explosive Burst on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -2498,7 +2360,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1537303415,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [112]
+		}, -- [106]
 		{
 			"Explosive Burst on Minso", -- [1]
 			"Minso-Kazzak", -- [2]
@@ -2520,7 +2382,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffMinso-Kazzak|r",
 			[51] = 1537303415,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [113]
+		}, -- [107]
 		{
 			"Explosive Burst on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -2542,7 +2404,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1537303423,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [114]
+		}, -- [108]
 		{
 			"Explosive Burst on Minso", -- [1]
 			"Minso-Kazzak", -- [2]
@@ -2564,7 +2426,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffMinso-Kazzak|r",
 			[51] = 1537303423,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [115]
+		}, -- [109]
 		{
 			"Deadeye on Ilyrana", -- [1]
 			"Ilyrana-DefiasBrotherhood", -- [2]
@@ -2586,7 +2448,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edIlyrana|r",
 			[51] = 1537303436,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [116]
+		}, -- [110]
 		{
 			"Explosive Burst on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -2608,7 +2470,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1537303448,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [117]
+		}, -- [111]
 		{
 			"Explosive Burst on Minso", -- [1]
 			"Minso-Kazzak", -- [2]
@@ -2630,7 +2492,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffMinso-Kazzak|r",
 			[51] = 1537303448,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [118]
+		}, -- [112]
 		{
 			"Explosive Burst on Ilyrana", -- [1]
 			"Ilyrana-DefiasBrotherhood", -- [2]
@@ -2652,7 +2514,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edIlyrana|r",
 			[51] = 1537303448,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [119]
+		}, -- [113]
 		{
 			"Deadeye on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -2674,7 +2536,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1537303458,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [120]
+		}, -- [114]
 		{
 			"Explosive Burst on Minso", -- [1]
 			"Minso-Kazzak", -- [2]
@@ -2696,7 +2558,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffMinso-Kazzak|r",
 			[51] = 1537303464,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [121]
+		}, -- [115]
 		{
 			"Explosive Burst on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -2718,7 +2580,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1537303464,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [122]
+		}, -- [116]
 		{
 			"Explosive Burst on Ilyrana", -- [1]
 			"Ilyrana-DefiasBrotherhood", -- [2]
@@ -2740,7 +2602,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edIlyrana|r",
 			[51] = 1537303464,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [123]
+		}, -- [117]
 		{
 			"Explosive Burst on Minso", -- [1]
 			"Minso-Kazzak", -- [2]
@@ -2762,7 +2624,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffMinso-Kazzak|r",
 			[51] = 1537303471,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [124]
+		}, -- [118]
 		{
 			"Explosive Burst on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -2784,7 +2646,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1537303471,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [125]
+		}, -- [119]
 		{
 			"Deadeye on Ilyrana", -- [1]
 			"Ilyrana-DefiasBrotherhood", -- [2]
@@ -2806,7 +2668,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edIlyrana|r",
 			[51] = 1537303485,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [126]
+		}, -- [120]
 		{
 			"|cffa335ee|Hitem:159628::::::::120:104::23:3:4779:1512:4786:::|h[Kul Tiran Cannonball Runner]|h|r", -- [1]
 			"Tigerdr-Frostmane", -- [2]
@@ -2828,6 +2690,138 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aTigerdr-Frostmane|r",
 			[51] = 1537303507,
 			[50] = "CHAT_MSG_PARTY",
+		}, -- [121]
+		{
+			"where do you get the fresh meat?", -- [1]
+			"Thanasia-EarthenRing", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Thanasia-EarthenRing", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			58, -- [11]
+			"Player-1317-064F6467", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc41e3aThanasia-EarthenRing|r",
+			[51] = 1537851490,
+			[50] = "CHAT_MSG_WHISPER_INFORM",
+		}, -- [122]
+		{
+			"kill big ones", -- [1]
+			"Thanasia-EarthenRing", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Thanasia-EarthenRing", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			59, -- [11]
+			"Player-1317-064F6467", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc41e3aThanasia-EarthenRing|r",
+			[51] = 1537851502,
+			[50] = "CHAT_MSG_WHISPER",
+		}, -- [123]
+		{
+			"doesnt drop often :L(", -- [1]
+			"Thanasia-EarthenRing", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Thanasia-EarthenRing", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			65, -- [11]
+			"Player-1317-064F6467", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc41e3aThanasia-EarthenRing|r",
+			[51] = 1537851525,
+			[50] = "CHAT_MSG_WHISPER",
+		}, -- [124]
+		{
+			"done", -- [1]
+			"Thanasia-EarthenRing", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Thanasia-EarthenRing", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			79, -- [11]
+			"Player-1317-064F6467", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc41e3aThanasia-EarthenRing|r",
+			[51] = 1537851627,
+			[50] = "CHAT_MSG_WHISPER",
+		}, -- [125]
+		{
+			"me 2", -- [1]
+			"Thanasia-EarthenRing", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Thanasia-EarthenRing", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			80, -- [11]
+			"Player-1317-064F6467", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc41e3aThanasia-EarthenRing|r",
+			[51] = 1537851630,
+			[50] = "CHAT_MSG_WHISPER_INFORM",
+		}, -- [126]
+		{
+			"thanks!", -- [1]
+			"Thanasia-EarthenRing", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Thanasia-EarthenRing", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			81, -- [11]
+			"Player-1317-064F6467", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc41e3aThanasia-EarthenRing|r",
+			[51] = 1537851631,
+			[50] = "CHAT_MSG_WHISPER_INFORM",
 		}, -- [127]
 	},
 }

@@ -8,7 +8,7 @@ VER 3 0100000000000011 "Beacon" "135981"
 END
 VER 3 0100000000000012 "Beacon of Faith" "1030095"
 #showtooltip
-/cast [target=mouseover,exists,nodead, help] Beacon of Faith ; Beacon of Faith
+/cast [target=mouseover,exists,nodead, help] Beacon of Faith; Beacon of Faith
 END
 VER 3 010000000000000A "Blessing of Free" "135968"
 #showtooltip

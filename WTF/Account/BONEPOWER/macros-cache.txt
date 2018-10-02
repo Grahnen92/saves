@@ -29,6 +29,12 @@ END
 VER 3 000000000000001D "Mouselock" "134239"
 /run if IsMouselooking() then MouselookStop() SetBinding("BUTTON1","CAMERAORSELECTORMOVE") SetBinding("BUTTON2","TURNORACTION") else MouselookStart() SetBinding("BUTTON1","STRAFELEFT") SetBinding("BUTTON2","STRAFERIGHT") end
 END
+VER 3 0000000000000021 "MouselookEnd" "237444"
+/run MouselookStop()
+END
+VER 3 0000000000000020 "MouselookStart" "237443"
+/run MouselookStart()
+END
 VER 3 0000000000000017 "PulvRej" "1033490"
 #showtooltip
 /cast [target=mouseover,exists,nodead,help] Rejuvenation;  [target=mouseover,exists,nodead] Pulverize; Pulverize

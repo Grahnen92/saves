@@ -30,10 +30,6 @@ VER 3 0100000000000010 "Cleanse Toxins" "135953"
 #showtooltip
 /cast [target=mouseover,exists,nodead,harm] [target=mouseover,exists,nodead, help] Cleanse Toxins
 END
-VER 3 010000000000000D "Flash Heal Self" "135907"
-#showtooltip
-/cast [target=player][]  Flash of Light
-END
 VER 3 0100000000000001 "Flash/shock" "SPELL_HOLY_FLASHHEAL"
 #showtooltip
 /cast [target=mouseover,exists,nodead,harm]  Crusader Strike ; Crusader Strike  [target=mouseover,exists,nodead, help] Flash of Light ; Crusader Strike
