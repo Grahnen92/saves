@@ -6,17 +6,22 @@ Send ä
 Return
 
 <!RButton::RButton
+Return
 
-^F12::
+F12::
 Send {LButton up}
 Send ä
 MouseMove, 580, 670
-Return
+return
 
-^F11::
+F11::
 Send {LButton up}
 Send ä
 MouseMove, 960, 500
+return
+
+~F11 & LButton::
+~F12 & LButton::
 Return
 
 Pause::
