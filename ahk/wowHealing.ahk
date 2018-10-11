@@ -1,5 +1,5 @@
 #IfWinActive, World of Warcraft
-RButton::
+*RButton::
 Send å
 KeyWait, RButton
 Send ä
@@ -8,19 +8,25 @@ Return
 <!RButton::RButton
 Return
 
-F12::
+XButton1::F10
+Return
+XButton2::F9
+Return
+
+F11::
 Send {LButton up}
 Send ä
 MouseMove, 580, 670
 return
 
-F11::
+F12::
 Send {LButton up}
 Send ä
 MouseMove, 960, 500
 return
 
 ~F11 & LButton::
+Return
 ~F12 & LButton::
 Return
 

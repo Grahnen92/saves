@@ -36,11 +36,11 @@ DBM_AllSavedOptions = {
 		["ShowMinimapButton"] = false,
 		["MoviesSeen"] = {
 			[593] = true,
+			[706] = true,
 			[573] = true,
-			[1151] = true,
 			[323] = true,
 			[1004] = true,
-			[706] = true,
+			[1151] = true,
 		},
 		["ShowQueuePop"] = true,
 		["SpecialWarningFlashCol4"] = {

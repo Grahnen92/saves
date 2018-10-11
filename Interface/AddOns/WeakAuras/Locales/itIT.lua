@@ -64,6 +64,8 @@ L["%s total auras"] = "%s total auras"
 L["%s Trigger Function"] = "%s Trigger Function"
 --[[Translation missing --]]
 L["%s Untrigger Function"] = "%s Untrigger Function"
+--[[Translation missing --]]
+L["|cff9900ffWeakAuras EXPERIMENTAL Profiling Data:|r"] = "|cff9900ffWeakAuras EXPERIMENTAL Profiling Data:|r"
 L["<"] = "<"
 L["<="] = "<="
 L["="] = "="
@@ -140,6 +142,8 @@ L["Attach to End"] = "Attach to End"
 --[[Translation missing --]]
 L["Attach to Start"] = "Attach to Start"
 L["Attackable"] = "Attaccabile"
+--[[Translation missing --]]
+L["Attackable Target"] = "Attackable Target"
 L["Aura"] = "Aura"
 L["Aura Applied"] = "Aura applicata"
 L["Aura Applied Dose"] = "Parte di aura applicata"
@@ -390,8 +394,6 @@ L["Event"] = "Event"
 L["Event(s)"] = "Event(s)"
 --[[Translation missing --]]
 L["Every Frame"] = "Every Frame"
---[[Translation missing --]]
-L["EXPERIMENTAL Profiling Data:"] = "EXPERIMENTAL Profiling Data:"
 --[[Translation missing --]]
 L["Extend Outside"] = "Extend Outside"
 --[[Translation missing --]]
@@ -1101,6 +1103,8 @@ L["Swing Timer"] = "Swing Timer"
 L["System"] = "System"
 --[[Translation missing --]]
 L["Tabard"] = "Tabard"
+--[[Translation missing --]]
+L["Talent Selected"] = "Talent Selected"
 --[[Translation missing --]]
 L["Talent selected"] = "Talent selected"
 --[[Translation missing --]]

@@ -48,3 +48,6 @@ END
 VER 3 000000000000001A "TravelTotem" "132144"
 /cast Travel Form(Shapeshift)
 END
+VER 3 0000000000000022 "Trinket Heal" "523893"
+/use  [@mouseover] 14
+END

@@ -1,1414 +1,28 @@
 
 ElvCharacterDB = {
 	["ChatEditHistory"] = {
-		" ska du komma på druiden å skaffa lite gear?", -- [1]
-		" vart har du micke?", -- [2]
-		" han sa att de va raid idag", -- [3]
-		" vet ej, behöver gear på magen dock", -- [4]
-		" ja å bror kör", -- [5]
-		" Ska ni med mig å bror på nån hc eller nåt?", -- [6]
-		" Ska ni med mig å bror poå nån hc eller nåt?", -- [7]
-		" fel chat sry", -- [8]
-		" perfekt", -- [9]
-		" är din dh 120?", -- [10]
-		" men vi kan hänka en normal", -- [11]
-		" måste bara fixa quests i arathi", -- [12]
-		" fortsätt köa ni så hänkar vi efter", -- [13]
-		"/cw Thanasia-EarthenRing where do you get the fresh meat?", -- [14]
-		"/cw Thanasia-EarthenRing me 2", -- [15]
-		"/cw Thanasia-EarthenRing thanks!", -- [16]
-		"/who mollox", -- [17]
-		"/roll", -- [18]
-		"/cw Wakiz-Kazzak lol", -- [19]
-		"/cw Tigerdr-Frostmane lol", -- [20]
+		"/cw Thanasia-EarthenRing me 2", -- [1]
+		"/cw Thanasia-EarthenRing thanks!", -- [2]
+		"/who mollox", -- [3]
+		"/roll", -- [4]
+		"/cw Wakiz-Kazzak lol", -- [5]
+		"/cw Tigerdr-Frostmane lol", -- [6]
+		"/cw Veldanas-DefiasBrotherhood yes, mythic raiding", -- [7]
+		" jag känner att jag blir crazy", -- [8]
+		" venne", -- [9]
+		" får chilla :)", -- [10]
+		"/cry", -- [11]
+		"/thank", -- [12]
+		"/love", -- [13]
+		"/kiss", -- [14]
+		"/dance", -- [15]
+		" ne", -- [16]
+		" drar efter denna", -- [17]
+		"  /readycheck", -- [18]
+		"/p   /readycheck", -- [19]
+		"/i fight in courtyard", -- [20]
 	},
 	["ChatHistoryLog"] = {
-		{
-			"Explosive Burst on Ureg", -- [1]
-			"Ureg-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ureg", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			260, -- [11]
-			"Player-1096-077D61E7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaUreg|r",
-			[51] = 1537302334,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [1]
-		{
-			"Deadeye on Minso", -- [1]
-			"Minso-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Minso-Kazzak", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			264, -- [11]
-			"Player-1305-09F16362", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffMinso-Kazzak|r",
-			[51] = 1537302345,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [2]
-		{
-			"Explosive Burst on Minso", -- [1]
-			"Minso-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Minso-Kazzak", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			265, -- [11]
-			"Player-1305-09F16362", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffMinso-Kazzak|r",
-			[51] = 1537302350,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [3]
-		{
-			"Explosive Burst on Ureg", -- [1]
-			"Ureg-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ureg", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			266, -- [11]
-			"Player-1096-077D61E7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaUreg|r",
-			[51] = 1537302350,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [4]
-		{
-			"Explosive Burst on Ilyrana", -- [1]
-			"Ilyrana-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ilyrana", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			267, -- [11]
-			"Player-1096-060686F4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8787edIlyrana|r",
-			[51] = 1537302350,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [5]
-		{
-			"Explosive Burst on Ureg", -- [1]
-			"Ureg-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ureg", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			268, -- [11]
-			"Player-1096-077D61E7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaUreg|r",
-			[51] = 1537302357,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [6]
-		{
-			"Explosive Burst on Ilyrana", -- [1]
-			"Ilyrana-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ilyrana", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			269, -- [11]
-			"Player-1096-060686F4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8787edIlyrana|r",
-			[51] = 1537302357,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [7]
-		{
-			"Explosive Burst on Ureg", -- [1]
-			"Ureg-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ureg", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			272, -- [11]
-			"Player-1096-077D61E7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaUreg|r",
-			[51] = 1537302372,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [8]
-		{
-			"Explosive Burst on Ureg", -- [1]
-			"Ureg-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ureg", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			274, -- [11]
-			"Player-1096-077D61E7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaUreg|r",
-			[51] = 1537302379,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [9]
-		{
-			"Explosive Burst on Ilyrana", -- [1]
-			"Ilyrana-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ilyrana", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			275, -- [11]
-			"Player-1096-060686F4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8787edIlyrana|r",
-			[51] = 1537302379,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [10]
-		{
-			"Deadeye on Minso", -- [1]
-			"Minso-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Minso-Kazzak", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			282, -- [11]
-			"Player-1305-09F16362", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffMinso-Kazzak|r",
-			[51] = 1537302390,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [11]
-		{
-			"Explosive Burst on Minso", -- [1]
-			"Minso-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Minso-Kazzak", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			283, -- [11]
-			"Player-1305-09F16362", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffMinso-Kazzak|r",
-			[51] = 1537302395,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [12]
-		{
-			"Explosive Burst on Minso", -- [1]
-			"Minso-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Minso-Kazzak", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			284, -- [11]
-			"Player-1305-09F16362", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffMinso-Kazzak|r",
-			[51] = 1537302402,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [13]
-		{
-			"Explosive Burst on Ureg", -- [1]
-			"Ureg-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ureg", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			297, -- [11]
-			"Player-1096-077D61E7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaUreg|r",
-			[51] = 1537302511,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [14]
-		{
-			"Explosive Burst on Minso", -- [1]
-			"Minso-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Minso-Kazzak", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			298, -- [11]
-			"Player-1305-09F16362", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffMinso-Kazzak|r",
-			[51] = 1537302511,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [15]
-		{
-			"Deadeye on Ilyrana", -- [1]
-			"Ilyrana-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ilyrana", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			302, -- [11]
-			"Player-1096-060686F4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8787edIlyrana|r",
-			[51] = 1537302521,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [16]
-		{
-			"Explosive Burst on Minso", -- [1]
-			"Minso-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Minso-Kazzak", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			305, -- [11]
-			"Player-1305-09F16362", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffMinso-Kazzak|r",
-			[51] = 1537302526,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [17]
-		{
-			"Explosive Burst on Ureg", -- [1]
-			"Ureg-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ureg", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			306, -- [11]
-			"Player-1096-077D61E7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaUreg|r",
-			[51] = 1537302526,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [18]
-		{
-			"Explosive Burst on Ureg", -- [1]
-			"Ureg-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ureg", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			309, -- [11]
-			"Player-1096-077D61E7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaUreg|r",
-			[51] = 1537302630,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [19]
-		{
-			"Explosive Burst on Ureg", -- [1]
-			"Ureg-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ureg", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			313, -- [11]
-			"Player-1096-077D61E7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaUreg|r",
-			[51] = 1537302653,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [20]
-		{
-			"Deadeye on Ureg", -- [1]
-			"Ureg-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ureg", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			319, -- [11]
-			"Player-1096-077D61E7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaUreg|r",
-			[51] = 1537302667,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [21]
-		{
-			"Explosive Burst on Ureg", -- [1]
-			"Ureg-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ureg", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			321, -- [11]
-			"Player-1096-077D61E7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaUreg|r",
-			[51] = 1537302679,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [22]
-		{
-			"Explosive Burst on Ureg", -- [1]
-			"Ureg-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ureg", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			327, -- [11]
-			"Player-1096-077D61E7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaUreg|r",
-			[51] = 1537302702,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [23]
-		{
-			"Explosive Burst on Ureg", -- [1]
-			"Ureg-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ureg", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			333, -- [11]
-			"Player-1096-077D61E7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaUreg|r",
-			[51] = 1537302852,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [24]
-		{
-			"Explosive Burst on Minso", -- [1]
-			"Minso-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Minso-Kazzak", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			334, -- [11]
-			"Player-1305-09F16362", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffMinso-Kazzak|r",
-			[51] = 1537302852,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [25]
-		{
-			"Deadeye on Minso", -- [1]
-			"Minso-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Minso-Kazzak", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			338, -- [11]
-			"Player-1305-09F16362", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffMinso-Kazzak|r",
-			[51] = 1537302864,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [26]
-		{
-			"Explosive Burst on Ureg", -- [1]
-			"Ureg-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ureg", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			339, -- [11]
-			"Player-1096-077D61E7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaUreg|r",
-			[51] = 1537302875,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [27]
-		{
-			"Explosive Burst on Minso", -- [1]
-			"Minso-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Minso-Kazzak", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			340, -- [11]
-			"Player-1305-09F16362", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffMinso-Kazzak|r",
-			[51] = 1537302875,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [28]
-		{
-			"Explosive Burst on Minso", -- [1]
-			"Minso-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Minso-Kazzak", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			342, -- [11]
-			"Player-1305-09F16362", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffMinso-Kazzak|r",
-			[51] = 1537302890,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [29]
-		{
-			"Explosive Burst on Ureg", -- [1]
-			"Ureg-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ureg", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			343, -- [11]
-			"Player-1096-077D61E7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaUreg|r",
-			[51] = 1537302890,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [30]
-		{
-			"Explosive Burst on Minso", -- [1]
-			"Minso-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Minso-Kazzak", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			345, -- [11]
-			"Player-1305-09F16362", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffMinso-Kazzak|r",
-			[51] = 1537302897,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [31]
-		{
-			"Explosive Burst on Ureg", -- [1]
-			"Ureg-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ureg", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			346, -- [11]
-			"Player-1096-077D61E7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaUreg|r",
-			[51] = 1537302897,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [32]
-		{
-			"Explosive Burst on Minso", -- [1]
-			"Minso-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Minso-Kazzak", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			353, -- [11]
-			"Player-1305-09F16362", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffMinso-Kazzak|r",
-			[51] = 1537302920,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [33]
-		{
-			"Explosive Burst on Minso", -- [1]
-			"Minso-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Minso-Kazzak", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			355, -- [11]
-			"Player-1305-09F16362", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffMinso-Kazzak|r",
-			[51] = 1537302935,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [34]
-		{
-			"Explosive Burst on Minso", -- [1]
-			"Minso-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Minso-Kazzak", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			357, -- [11]
-			"Player-1305-09F16362", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffMinso-Kazzak|r",
-			[51] = 1537302942,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [35]
-		{
-			"Explosive Burst on Minso", -- [1]
-			"Minso-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Minso-Kazzak", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			361, -- [11]
-			"Player-1305-09F16362", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffMinso-Kazzak|r",
-			[51] = 1537302964,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [36]
-		{
-			"Explosive Burst on Minso", -- [1]
-			"Minso-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Minso-Kazzak", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			368, -- [11]
-			"Player-1305-09F16362", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffMinso-Kazzak|r",
-			[51] = 1537302990,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [37]
-		{
-			"Deadeye on Minso", -- [1]
-			"Minso-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Minso-Kazzak", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			371, -- [11]
-			"Player-1305-09F16362", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffMinso-Kazzak|r",
-			[51] = 1537303000,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [38]
-		{
-			"Explosive Burst on Minso", -- [1]
-			"Minso-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Minso-Kazzak", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			373, -- [11]
-			"Player-1305-09F16362", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffMinso-Kazzak|r",
-			[51] = 1537303006,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [39]
-		{
-			"Explosive Burst on Ilyrana", -- [1]
-			"Ilyrana-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ilyrana", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			388, -- [11]
-			"Player-1096-060686F4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8787edIlyrana|r",
-			[51] = 1537303117,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [40]
-		{
-			"Explosive Burst on Minso", -- [1]
-			"Minso-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Minso-Kazzak", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			389, -- [11]
-			"Player-1305-09F16362", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffMinso-Kazzak|r",
-			[51] = 1537303117,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [41]
-		{
-			"Explosive Burst on Ureg", -- [1]
-			"Ureg-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ureg", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			390, -- [11]
-			"Player-1096-077D61E7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaUreg|r",
-			[51] = 1537303117,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [42]
-		{
-			"Explosive Burst on Minso", -- [1]
-			"Minso-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Minso-Kazzak", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			394, -- [11]
-			"Player-1305-09F16362", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffMinso-Kazzak|r",
-			[51] = 1537303140,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [43]
-		{
-			"Explosive Burst on Ilyrana", -- [1]
-			"Ilyrana-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ilyrana", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			395, -- [11]
-			"Player-1096-060686F4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8787edIlyrana|r",
-			[51] = 1537303140,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [44]
-		{
-			"Explosive Burst on Ureg", -- [1]
-			"Ureg-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ureg", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			396, -- [11]
-			"Player-1096-077D61E7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaUreg|r",
-			[51] = 1537303140,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [45]
-		{
-			"Explosive Burst on Ilyrana", -- [1]
-			"Ilyrana-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ilyrana", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			398, -- [11]
-			"Player-1096-060686F4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8787edIlyrana|r",
-			[51] = 1537303155,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [46]
-		{
-			"Explosive Burst on Minso", -- [1]
-			"Minso-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Minso-Kazzak", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			399, -- [11]
-			"Player-1305-09F16362", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffMinso-Kazzak|r",
-			[51] = 1537303155,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [47]
-		{
-			"Explosive Burst on Ureg", -- [1]
-			"Ureg-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ureg", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			400, -- [11]
-			"Player-1096-077D61E7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaUreg|r",
-			[51] = 1537303155,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [48]
-		{
-			"Explosive Burst on Ilyrana", -- [1]
-			"Ilyrana-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ilyrana", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			402, -- [11]
-			"Player-1096-060686F4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8787edIlyrana|r",
-			[51] = 1537303162,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [49]
-		{
-			"Explosive Burst on Minso", -- [1]
-			"Minso-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Minso-Kazzak", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			403, -- [11]
-			"Player-1305-09F16362", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffMinso-Kazzak|r",
-			[51] = 1537303162,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [50]
-		{
-			"Explosive Burst on Ureg", -- [1]
-			"Ureg-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ureg", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			404, -- [11]
-			"Player-1096-077D61E7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaUreg|r",
-			[51] = 1537303162,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [51]
-		{
-			"Deadeye on Minso", -- [1]
-			"Minso-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Minso-Kazzak", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			408, -- [11]
-			"Player-1305-09F16362", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffMinso-Kazzak|r",
-			[51] = 1537303173,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [52]
-		{
-			"Explosive Burst on Minso", -- [1]
-			"Minso-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Minso-Kazzak", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			409, -- [11]
-			"Player-1305-09F16362", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffMinso-Kazzak|r",
-			[51] = 1537303178,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [53]
-		{
-			"Explosive Burst on Ilyrana", -- [1]
-			"Ilyrana-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ilyrana", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			410, -- [11]
-			"Player-1096-060686F4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8787edIlyrana|r",
-			[51] = 1537303178,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [54]
-		{
-			"Explosive Burst on Ureg", -- [1]
-			"Ureg-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ureg", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			411, -- [11]
-			"Player-1096-077D61E7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaUreg|r",
-			[51] = 1537303178,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [55]
-		{
-			"Explosive Burst on Ilyrana", -- [1]
-			"Ilyrana-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ilyrana", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			412, -- [11]
-			"Player-1096-060686F4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8787edIlyrana|r",
-			[51] = 1537303186,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [56]
-		{
-			"Explosive Burst on Minso", -- [1]
-			"Minso-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Minso-Kazzak", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			413, -- [11]
-			"Player-1305-09F16362", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffMinso-Kazzak|r",
-			[51] = 1537303186,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [57]
-		{
-			"Explosive Burst on Ureg", -- [1]
-			"Ureg-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ureg", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			414, -- [11]
-			"Player-1096-077D61E7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaUreg|r",
-			[51] = 1537303186,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [58]
-		{
-			"Deadeye on Ilyrana", -- [1]
-			"Ilyrana-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ilyrana", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			422, -- [11]
-			"Player-1096-060686F4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8787edIlyrana|r",
-			[51] = 1537303199,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [59]
-		{
-			"Explosive Burst on Minso", -- [1]
-			"Minso-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Minso-Kazzak", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			426, -- [11]
-			"Player-1305-09F16362", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffMinso-Kazzak|r",
-			[51] = 1537303211,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [60]
-		{
-			"Explosive Burst on Ilyrana", -- [1]
-			"Ilyrana-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ilyrana", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			427, -- [11]
-			"Player-1096-060686F4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8787edIlyrana|r",
-			[51] = 1537303211,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [61]
-		{
-			"Deadeye on Ilyrana", -- [1]
-			"Ilyrana-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ilyrana", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			431, -- [11]
-			"Player-1096-060686F4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8787edIlyrana|r",
-			[51] = 1537303221,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [62]
-		{
-			"Explosive Burst on Minso", -- [1]
-			"Minso-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Minso-Kazzak", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			432, -- [11]
-			"Player-1305-09F16362", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffMinso-Kazzak|r",
-			[51] = 1537303227,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [63]
 		{
 			"Explosive Burst on Ilyrana", -- [1]
 			"Ilyrana-DefiasBrotherhood", -- [2]
@@ -1430,7 +44,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edIlyrana|r",
 			[51] = 1537303227,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [64]
+		}, -- [1]
 		{
 			"Explosive Burst on Minso", -- [1]
 			"Minso-Kazzak", -- [2]
@@ -1452,7 +66,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffMinso-Kazzak|r",
 			[51] = 1537303234,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [65]
+		}, -- [2]
 		{
 			"Explosive Burst on Ilyrana", -- [1]
 			"Ilyrana-DefiasBrotherhood", -- [2]
@@ -1474,7 +88,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edIlyrana|r",
 			[51] = 1537303234,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [66]
+		}, -- [3]
 		{
 			"Explosive Burst on Minso", -- [1]
 			"Minso-Kazzak", -- [2]
@@ -1496,7 +110,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffMinso-Kazzak|r",
 			[51] = 1537303351,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [67]
+		}, -- [4]
 		{
 			"Explosive Burst on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -1518,7 +132,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1537303351,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [68]
+		}, -- [5]
 		{
 			"Explosive Burst on Ilyrana", -- [1]
 			"Ilyrana-DefiasBrotherhood", -- [2]
@@ -1540,7 +154,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edIlyrana|r",
 			[51] = 1537303351,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [69]
+		}, -- [6]
 		{
 			"Deadeye on Minso", -- [1]
 			"Minso-Kazzak", -- [2]
@@ -1562,7 +176,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffMinso-Kazzak|r",
 			[51] = 1537303362,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [70]
+		}, -- [7]
 		{
 			"Explosive Burst on Minso", -- [1]
 			"Minso-Kazzak", -- [2]
@@ -1584,7 +198,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffMinso-Kazzak|r",
 			[51] = 1537303374,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [71]
+		}, -- [8]
 		{
 			"Explosive Burst on Ilyrana", -- [1]
 			"Ilyrana-DefiasBrotherhood", -- [2]
@@ -1606,7 +220,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edIlyrana|r",
 			[51] = 1537303374,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [72]
+		}, -- [9]
 		{
 			"Explosive Burst on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -1628,7 +242,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1537303374,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [73]
+		}, -- [10]
 		{
 			"Deadeye on Ilyrana", -- [1]
 			"Ilyrana-DefiasBrotherhood", -- [2]
@@ -1650,7 +264,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edIlyrana|r",
 			[51] = 1537303388,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [74]
+		}, -- [11]
 		{
 			"Explosive Burst on Minso", -- [1]
 			"Minso-Kazzak", -- [2]
@@ -1672,7 +286,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffMinso-Kazzak|r",
 			[51] = 1537303400,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [75]
+		}, -- [12]
 		{
 			"Explosive Burst on Ilyrana", -- [1]
 			"Ilyrana-DefiasBrotherhood", -- [2]
@@ -1694,7 +308,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edIlyrana|r",
 			[51] = 1537303400,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [76]
+		}, -- [13]
 		{
 			"Explosive Burst on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -1716,7 +330,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1537303400,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [77]
+		}, -- [14]
 		{
 			"Explosive Burst on Tigerdr", -- [1]
 			"Tigerdr-Frostmane", -- [2]
@@ -1738,7 +352,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aTigerdr-Frostmane|r",
 			[51] = 1537303415,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [78]
+		}, -- [15]
 		{
 			"Explosive Burst on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -1760,7 +374,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1537303415,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [79]
+		}, -- [16]
 		{
 			"Explosive Burst on Minso", -- [1]
 			"Minso-Kazzak", -- [2]
@@ -1782,7 +396,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffMinso-Kazzak|r",
 			[51] = 1537303415,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [80]
+		}, -- [17]
 		{
 			"Explosive Burst on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -1804,7 +418,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1537303423,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [81]
+		}, -- [18]
 		{
 			"Explosive Burst on Minso", -- [1]
 			"Minso-Kazzak", -- [2]
@@ -1826,7 +440,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffMinso-Kazzak|r",
 			[51] = 1537303423,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [82]
+		}, -- [19]
 		{
 			"Deadeye on Ilyrana", -- [1]
 			"Ilyrana-DefiasBrotherhood", -- [2]
@@ -1848,7 +462,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edIlyrana|r",
 			[51] = 1537303436,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [83]
+		}, -- [20]
 		{
 			"Explosive Burst on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -1870,7 +484,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1537303448,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [84]
+		}, -- [21]
 		{
 			"Explosive Burst on Minso", -- [1]
 			"Minso-Kazzak", -- [2]
@@ -1892,7 +506,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffMinso-Kazzak|r",
 			[51] = 1537303448,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [85]
+		}, -- [22]
 		{
 			"Explosive Burst on Ilyrana", -- [1]
 			"Ilyrana-DefiasBrotherhood", -- [2]
@@ -1914,7 +528,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edIlyrana|r",
 			[51] = 1537303448,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [86]
+		}, -- [23]
 		{
 			"Deadeye on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -1936,7 +550,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1537303458,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [87]
+		}, -- [24]
 		{
 			"Explosive Burst on Minso", -- [1]
 			"Minso-Kazzak", -- [2]
@@ -1958,7 +572,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffMinso-Kazzak|r",
 			[51] = 1537303464,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [88]
+		}, -- [25]
 		{
 			"Explosive Burst on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -1980,7 +594,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1537303464,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [89]
+		}, -- [26]
 		{
 			"Explosive Burst on Ilyrana", -- [1]
 			"Ilyrana-DefiasBrotherhood", -- [2]
@@ -2002,7 +616,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edIlyrana|r",
 			[51] = 1537303464,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [90]
+		}, -- [27]
 		{
 			"Explosive Burst on Minso", -- [1]
 			"Minso-Kazzak", -- [2]
@@ -2024,7 +638,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffMinso-Kazzak|r",
 			[51] = 1537303471,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [91]
+		}, -- [28]
 		{
 			"Explosive Burst on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -2046,7 +660,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1537303471,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [92]
+		}, -- [29]
 		{
 			"Deadeye on Ilyrana", -- [1]
 			"Ilyrana-DefiasBrotherhood", -- [2]
@@ -2068,7 +682,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edIlyrana|r",
 			[51] = 1537303485,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [93]
+		}, -- [30]
 		{
 			"|cffa335ee|Hitem:159628::::::::120:104::23:3:4779:1512:4786:::|h[Kul Tiran Cannonball Runner]|h|r", -- [1]
 			"Tigerdr-Frostmane", -- [2]
@@ -2090,7 +704,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aTigerdr-Frostmane|r",
 			[51] = 1537303507,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [94]
+		}, -- [31]
 		{
 			"where do you get the fresh meat?", -- [1]
 			"Thanasia-EarthenRing", -- [2]
@@ -2112,7 +726,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aThanasia-EarthenRing|r",
 			[51] = 1537851490,
 			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [95]
+		}, -- [32]
 		{
 			"kill big ones", -- [1]
 			"Thanasia-EarthenRing", -- [2]
@@ -2134,7 +748,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aThanasia-EarthenRing|r",
 			[51] = 1537851502,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [96]
+		}, -- [33]
 		{
 			"doesnt drop often :L(", -- [1]
 			"Thanasia-EarthenRing", -- [2]
@@ -2156,7 +770,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aThanasia-EarthenRing|r",
 			[51] = 1537851525,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [97]
+		}, -- [34]
 		{
 			"done", -- [1]
 			"Thanasia-EarthenRing", -- [2]
@@ -2178,7 +792,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aThanasia-EarthenRing|r",
 			[51] = 1537851627,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [98]
+		}, -- [35]
 		{
 			"me 2", -- [1]
 			"Thanasia-EarthenRing", -- [2]
@@ -2200,7 +814,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aThanasia-EarthenRing|r",
 			[51] = 1537851630,
 			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [99]
+		}, -- [36]
 		{
 			"thanks!", -- [1]
 			"Thanasia-EarthenRing", -- [2]
@@ -2222,7 +836,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aThanasia-EarthenRing|r",
 			[51] = 1537851631,
 			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [100]
+		}, -- [37]
 		{
 			"Unstable Hex on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -2244,7 +858,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1538419654,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [101]
+		}, -- [38]
 		{
 			"Unstable Hex on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -2266,7 +880,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1538419664,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [102]
+		}, -- [39]
 		{
 			"Unstable Hex on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -2288,7 +902,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1538419788,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [103]
+		}, -- [40]
 		{
 			"Unstable Hex on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -2310,7 +924,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1538419925,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [104]
+		}, -- [41]
 		{
 			"Unstable Hex on Emerentia", -- [1]
 			"Emerentia-Kazzak", -- [2]
@@ -2332,7 +946,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaEmerentia-Kazzak|r",
 			[51] = 1538419925,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [105]
+		}, -- [42]
 		{
 			"3", -- [1]
 			"Emerentia-Kazzak", -- [2]
@@ -2354,7 +968,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaEmerentia-Kazzak|r",
 			[51] = 1538419927,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [106]
+		}, -- [43]
 		{
 			"2", -- [1]
 			"Emerentia-Kazzak", -- [2]
@@ -2376,7 +990,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaEmerentia-Kazzak|r",
 			[51] = 1538419928,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [107]
+		}, -- [44]
 		{
 			"1", -- [1]
 			"Emerentia-Kazzak", -- [2]
@@ -2398,7 +1012,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaEmerentia-Kazzak|r",
 			[51] = 1538419929,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [108]
+		}, -- [45]
 		{
 			"Unstable Hex on Emerentia", -- [1]
 			"Emerentia-Kazzak", -- [2]
@@ -2420,7 +1034,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaEmerentia-Kazzak|r",
 			[51] = 1538420113,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [109]
+		}, -- [46]
 		{
 			"3", -- [1]
 			"Emerentia-Kazzak", -- [2]
@@ -2442,7 +1056,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaEmerentia-Kazzak|r",
 			[51] = 1538420115,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [110]
+		}, -- [47]
 		{
 			"2", -- [1]
 			"Emerentia-Kazzak", -- [2]
@@ -2464,7 +1078,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaEmerentia-Kazzak|r",
 			[51] = 1538420116,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [111]
+		}, -- [48]
 		{
 			"1", -- [1]
 			"Emerentia-Kazzak", -- [2]
@@ -2486,7 +1100,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaEmerentia-Kazzak|r",
 			[51] = 1538420117,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [112]
+		}, -- [49]
 		{
 			"Pursuit on Emerentia", -- [1]
 			"Emerentia-Kazzak", -- [2]
@@ -2508,7 +1122,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaEmerentia-Kazzak|r",
 			[51] = 1538421042,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [113]
+		}, -- [50]
 		{
 			"Pursuit on Tigerdr", -- [1]
 			"Tigerdr-Frostmane", -- [2]
@@ -2530,7 +1144,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aTigerdr-Frostmane|r",
 			[51] = 1538421119,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [114]
+		}, -- [51]
 		{
 			"Pursuit on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -2552,7 +1166,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1538421246,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [115]
+		}, -- [52]
 		{
 			"sån jävla cirkus", -- [1]
 			"Tigerdr-Frostmane", -- [2]
@@ -2574,7 +1188,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aTigerdr-Frostmane|r",
 			[51] = 1538421623,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [116]
+		}, -- [53]
 		{
 			"jag dör", -- [1]
 			"Tigerdr-Frostmane", -- [2]
@@ -2596,7 +1210,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aTigerdr-Frostmane|r",
 			[51] = 1538421626,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [117]
+		}, -- [54]
 		{
 			"har dödat world boss + coin + 2 här och en coin", -- [1]
 			"Tigerdr-Frostmane", -- [2]
@@ -2618,7 +1232,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aTigerdr-Frostmane|r",
 			[51] = 1538422821,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [118]
+		}, -- [55]
 		{
 			"blir inge loot", -- [1]
 			"Tigerdr-Frostmane", -- [2]
@@ -2640,7 +1254,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aTigerdr-Frostmane|r",
 			[51] = 1538422823,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [119]
+		}, -- [56]
 		{
 			"vill bara ha 320 fmllll", -- [1]
 			"Tigerdr-Frostmane", -- [2]
@@ -2662,7 +1276,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aTigerdr-Frostmane|r",
 			[51] = 1538422832,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [120]
+		}, -- [57]
 		{
 			"lol", -- [1]
 			"Wakiz-Kazzak", -- [2]
@@ -2684,7 +1298,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddWakiz-Kazzak|r",
 			[51] = 1538422834,
 			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [121]
+		}, -- [58]
 		{
 			"lol", -- [1]
 			"Tigerdr-Frostmane", -- [2]
@@ -2706,7 +1320,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aTigerdr-Frostmane|r",
 			[51] = 1538422840,
 			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [122]
+		}, -- [59]
 		{
 			"Unstable Hex on Emerentia", -- [1]
 			"Emerentia-Kazzak", -- [2]
@@ -2728,7 +1342,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaEmerentia-Kazzak|r",
 			[51] = 1538423193,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [123]
+		}, -- [60]
 		{
 			"3", -- [1]
 			"Emerentia-Kazzak", -- [2]
@@ -2750,7 +1364,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaEmerentia-Kazzak|r",
 			[51] = 1538423195,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [124]
+		}, -- [61]
 		{
 			"2", -- [1]
 			"Emerentia-Kazzak", -- [2]
@@ -2772,7 +1386,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaEmerentia-Kazzak|r",
 			[51] = 1538423196,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [125]
+		}, -- [62]
 		{
 			"1", -- [1]
 			"Emerentia-Kazzak", -- [2]
@@ -2794,7 +1408,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaEmerentia-Kazzak|r",
 			[51] = 1538423197,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [126]
+		}, -- [63]
 		{
 			"Unstable Hex on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -2816,6 +1430,1405 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1538423198,
 			[50] = "CHAT_MSG_SAY",
+		}, -- [64]
+		{
+			"Hi there, looking for guild?", -- [1]
+			"Veldanas-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Veldanas", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			787, -- [11]
+			"Player-1096-0822C6C5", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaVeldanas|r",
+			[51] = 1538505250,
+			[50] = "CHAT_MSG_WHISPER",
+		}, -- [65]
+		{
+			"yes, mythic raiding", -- [1]
+			"Veldanas-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Veldanas", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			788, -- [11]
+			"Player-1096-0822C6C5", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaVeldanas|r",
+			[51] = 1538505259,
+			[50] = "CHAT_MSG_WHISPER_INFORM",
+		}, -- [66]
+		{
+			"jag känner att jag blir crazy", -- [1]
+			"|Kf2|k00000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			808, -- [11]
+			false, -- [12]
+			2, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffff7c0atiger|r",
+			[51] = 1538505702,
+			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
+			[53] = "tiger",
+		}, -- [67]
+		{
+			"haha", -- [1]
+			"|Kf2|k00000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			809, -- [11]
+			false, -- [12]
+			2, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffff7c0atiger|r",
+			[51] = 1538505705,
+			[50] = "CHAT_MSG_BN_WHISPER",
+			[53] = "tiger",
+		}, -- [68]
+		{
+			"varför?", -- [1]
+			"|Kf2|k00000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			810, -- [11]
+			false, -- [12]
+			2, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffff7c0atiger|r",
+			[51] = 1538505707,
+			[50] = "CHAT_MSG_BN_WHISPER",
+			[53] = "tiger",
+		}, -- [69]
+		{
+			"venne", -- [1]
+			"|Kf2|k00000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			811, -- [11]
+			false, -- [12]
+			2, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffff7c0atiger|r",
+			[51] = 1538505721,
+			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
+			[53] = "tiger",
+		}, -- [70]
+		{
+			"får chilla :)", -- [1]
+			"|Kf2|k00000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			812, -- [11]
+			false, -- [12]
+			2, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffff7c0atiger|r",
+			[51] = 1538505724,
+			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
+			[53] = "tiger",
+		}, -- [71]
+		{
+			"|cff0070dd|Hitem:159851::::::::120:264::13:2:1683:4927:::|h[Honorable Combatant's Shield of the Peerless]|h|r", -- [1]
+			"Wakiz-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Wakiz-Kazzak", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			831, -- [11]
+			"Player-1305-09F259E9", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff0070ddWakiz-Kazzak|r",
+			[51] = 1538506287,
+			[50] = "CHAT_MSG_PARTY",
+		}, -- [72]
+		{
+			"|cff0070dd|Hitem:152837::::::::120:264::13:2:1683:4927:::|h[Precision Attitude Adjuster of the Peerless]|h|r", -- [1]
+			"Wakiz-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Wakiz-Kazzak", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			832, -- [11]
+			"Player-1305-09F259E9", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff0070ddWakiz-Kazzak|r",
+			[51] = 1538506295,
+			[50] = "CHAT_MSG_PARTY",
+		}, -- [73]
+		{
+			"det är över", -- [1]
+			"|Kf2|k00000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1048, -- [11]
+			false, -- [12]
+			2, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffff7c0atiger|r",
+			[51] = 1538509083,
+			[50] = "CHAT_MSG_BN_WHISPER",
+			[53] = "tiger",
+		}, -- [74]
+		{
+			"<Deadly Boss Mods> Ureg is busy fighting against Mythic+ (3) - Council o' Captains (59% (1/2 Bosses Defeated), 1/5 people alive)", -- [1]
+			"|Kf2|k00000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1049, -- [11]
+			false, -- [12]
+			2, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffff7c0atiger|r",
+			[51] = 1538509084,
+			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
+			[53] = "tiger",
+		}, -- [75]
+		{
+			"<DBM> Ureg has wiped on Mythic+ (3) - Council o' Captains at 59% (1/2 Bosses Defeated)", -- [1]
+			"|Kf2|k00000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1051, -- [11]
+			false, -- [12]
+			2, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffff7c0atiger|r",
+			[51] = 1538509098,
+			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
+			[53] = "tiger",
+		}, -- [76]
+		{
+			"Shark Toss on Tigerdr", -- [1]
+			"Tigerdr-Frostmane", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Tigerdr-Frostmane", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1093, -- [11]
+			"Player-1300-09FDE2CA", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffff7c0aTigerdr-Frostmane|r",
+			[51] = 1538510294,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [77]
+		{
+			"Shark Toss on Ureg", -- [1]
+			"Ureg-DefiasBrotherhood", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Ureg", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1095, -- [11]
+			"Player-1096-077D61E7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff3fc6eaUreg|r",
+			[51] = 1538510398,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [78]
+		{
+			"Shark Toss on Ureg", -- [1]
+			"Ureg-DefiasBrotherhood", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Ureg", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1096, -- [11]
+			"Player-1096-077D61E7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff3fc6eaUreg|r",
+			[51] = 1538510459,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [79]
+		{
+			"asså jag orkar inte", -- [1]
+			"|Kf2|k00000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1107, -- [11]
+			false, -- [12]
+			2, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffff7c0atiger|r",
+			[51] = 1538510587,
+			[50] = "CHAT_MSG_BN_WHISPER",
+			[53] = "tiger",
+		}, -- [80]
+		{
+			"ne", -- [1]
+			"|Kf2|k00000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1108, -- [11]
+			false, -- [12]
+			2, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffff7c0atiger|r",
+			[51] = 1538510591,
+			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
+			[53] = "tiger",
+		}, -- [81]
+		{
+			"drar efter denna", -- [1]
+			"|Kf2|k00000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1109, -- [11]
+			false, -- [12]
+			2, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffff7c0atiger|r",
+			[51] = 1538510598,
+			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
+			[53] = "tiger",
+		}, -- [82]
+		{
+			"klockan är 23 innan vi är klara", -- [1]
+			"|Kf2|k00000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1111, -- [11]
+			false, -- [12]
+			2, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffff7c0atiger|r",
+			[51] = 1538510599,
+			[50] = "CHAT_MSG_BN_WHISPER",
+			[53] = "tiger",
+		}, -- [83]
+		{
+			"Ricocheting Throw on Emerentia", -- [1]
+			"Emerentia-Kazzak", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Emerentia-Kazzak", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1112, -- [11]
+			"Player-1305-09F0D669", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff3fc6eaEmerentia-Kazzak|r",
+			[51] = 1538510626,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [84]
+		{
+			" /readycheck", -- [1]
+			"|Kf2|k00000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1114, -- [11]
+			false, -- [12]
+			2, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffff7c0atiger|r",
+			[51] = 1538510703,
+			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
+			[53] = "tiger",
+		}, -- [85]
+		{
+			"  /readycheck", -- [1]
+			"Ureg-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Ureg", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1115, -- [11]
+			"Player-1096-077D61E7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff3fc6eaUreg|r",
+			[51] = 1538510707,
+			[50] = "CHAT_MSG_PARTY",
+		}, -- [86]
+		{
+			"Shark Toss on Tigerdr", -- [1]
+			"Tigerdr-Frostmane", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Tigerdr-Frostmane", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1117, -- [11]
+			"Player-1300-09FDE2CA", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffff7c0aTigerdr-Frostmane|r",
+			[51] = 1538510741,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [87]
+		{
+			"Shark Toss on Tigerdr", -- [1]
+			"Tigerdr-Frostmane", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Tigerdr-Frostmane", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1120, -- [11]
+			"Player-1300-09FDE2CA", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffff7c0aTigerdr-Frostmane|r",
+			[51] = 1538510794,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [88]
+		{
+			"Shark Toss on Tigerdr", -- [1]
+			"Tigerdr-Frostmane", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Tigerdr-Frostmane", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1122, -- [11]
+			"Player-1300-09FDE2CA", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffff7c0aTigerdr-Frostmane|r",
+			[51] = 1538510848,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [89]
+		{
+			"Shark Toss on Ureg", -- [1]
+			"Ureg-DefiasBrotherhood", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Ureg", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1123, -- [11]
+			"Player-1096-077D61E7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff3fc6eaUreg|r",
+			[51] = 1538510902,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [90]
+		{
+			"Shark Toss on Ureg", -- [1]
+			"Ureg-DefiasBrotherhood", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Ureg", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1125, -- [11]
+			"Player-1096-077D61E7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff3fc6eaUreg|r",
+			[51] = 1538510929,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [91]
+		{
+			"Cannon Barrage on Ureg", -- [1]
+			"Ureg-DefiasBrotherhood", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Ureg", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1149, -- [11]
+			"Player-1096-077D61E7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff3fc6eaUreg|r",
+			[51] = 1538511772,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [92]
+		{
+			"Cannon Barrage on Tigerdr", -- [1]
+			"Tigerdr-Frostmane", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Tigerdr-Frostmane", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1159, -- [11]
+			"Player-1300-09FDE2CA", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffff7c0aTigerdr-Frostmane|r",
+			[51] = 1538511855,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [93]
+		{
+			"Cannon Barrage on Ureg", -- [1]
+			"Ureg-DefiasBrotherhood", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Ureg", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1161, -- [11]
+			"Player-1096-077D61E7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff3fc6eaUreg|r",
+			[51] = 1538511855,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [94]
+		{
+			"Cannon Barrage on Tigerdr", -- [1]
+			"Tigerdr-Frostmane", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Tigerdr-Frostmane", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1165, -- [11]
+			"Player-1300-09FDE2CA", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffff7c0aTigerdr-Frostmane|r",
+			[51] = 1538511874,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [95]
+		{
+			"Cannon Barrage on Ureg", -- [1]
+			"Ureg-DefiasBrotherhood", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Ureg", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1167, -- [11]
+			"Player-1096-077D61E7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff3fc6eaUreg|r",
+			[51] = 1538511874,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [96]
+		{
+			"Cannon Barrage on Ureg", -- [1]
+			"Ureg-DefiasBrotherhood", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Ureg", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1171, -- [11]
+			"Player-1096-077D61E7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff3fc6eaUreg|r",
+			[51] = 1538511894,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [97]
+		{
+			"Cannon Barrage on Emerentia", -- [1]
+			"Emerentia-Kazzak", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Emerentia-Kazzak", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1174, -- [11]
+			"Player-1305-09F0D669", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff3fc6eaEmerentia-Kazzak|r",
+			[51] = 1538511928,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [98]
+		{
+			"Cannon Barrage on Ureg", -- [1]
+			"Ureg-DefiasBrotherhood", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Ureg", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1175, -- [11]
+			"Player-1096-077D61E7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff3fc6eaUreg|r",
+			[51] = 1538511928,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [99]
+		{
+			"get middle ", -- [1]
+			"Magusor-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Magusor-Kazzak", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			102, -- [11]
+			"Player-1305-053676D6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff3fc6eaMagusor-Kazzak|r",
+			[51] = 1538564752,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [100]
+		{
+			"said anakin", -- [1]
+			"Kirurgi-TwistingNether", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Kirurgi-TwistingNether", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			141, -- [11]
+			"Player-3674-05A43902", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffffffffKirurgi-TwistingNether|r",
+			[51] = 1538565024,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [101]
+		{
+			"take the circle of elements ? ", -- [1]
+			"Magusor-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Magusor-Kazzak", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			148, -- [11]
+			"Player-1305-053676D6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff3fc6eaMagusor-Kazzak|r",
+			[51] = 1538565102,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [102]
+		{
+			"Just lust at circle", -- [1]
+			"Kuriokaze-Balnazzar", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Kuriokaze-Balnazzar", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			157, -- [11]
+			"Player-1598-068B3231", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00ff96Kuriokaze-Balnazzar|r",
+			[51] = 1538565238,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [103]
+		{
+			"get to the middle all ", -- [1]
+			"Magusor-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Magusor-Kazzak", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			170, -- [11]
+			"Player-1305-053676D6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff3fc6eaMagusor-Kazzak|r",
+			[51] = 1538565347,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [104]
+		{
+			"1 more demo", -- [1]
+			"Kuriokaze-Balnazzar", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Kuriokaze-Balnazzar", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			172, -- [11]
+			"Player-1598-068B3231", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00ff96Kuriokaze-Balnazzar|r",
+			[51] = 1538565354,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [105]
+		{
+			"k good", -- [1]
+			"Kuriokaze-Balnazzar", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Kuriokaze-Balnazzar", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			176, -- [11]
+			"Player-1598-068B3231", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00ff96Kuriokaze-Balnazzar|r",
+			[51] = 1538565371,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [106]
+		{
+			"bring the boss to the open plz", -- [1]
+			"Kirurgi-TwistingNether", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Kirurgi-TwistingNether", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			197, -- [11]
+			"Player-3674-05A43902", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffffffffKirurgi-TwistingNether|r",
+			[51] = 1538565722,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [107]
+		{
+			"some people come newstead ", -- [1]
+			"Kaldeera-Draenor", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Kaldeera-Draenor", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			94, -- [11]
+			"Player-1403-0640814B", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc41e3aKaldeera-Draenor|r",
+			[51] = 1538591371,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [108]
+		{
+			"BL?", -- [1]
+			"Sangor-Aggramar", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Sangor-Aggramar", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			179, -- [11]
+			"Player-1325-03C60E59", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8787edSangor-Aggramar|r",
+			[51] = 1538592147,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [109]
+		{
+			"|cffffff00Xibala is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Zuldazar", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Zuldazar", -- [9]
+			0, -- [10]
+			199, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1538592706,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [110]
+		{
+			"|cffffff00The Sliver is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Zuldazar", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Zuldazar", -- [9]
+			0, -- [10]
+			200, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1538592746,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [111]
+		{
+			"|cffffff00The Sliver is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Zuldazar", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Zuldazar", -- [9]
+			0, -- [10]
+			201, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1538592953,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [112]
+		{
+			"plz take newstead after lamber", -- [1]
+			"Drbloody-Sunstrider", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Drbloody-Sunstrider", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			216, -- [11]
+			"Player-1598-06F25435", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff3fc6eaDrbloody-Sunstrider|r",
+			[51] = 1538593340,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [113]
+		{
+			"i ll bring 100 iron to wipe them fast", -- [1]
+			"Drbloody-Sunstrider", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Drbloody-Sunstrider", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			219, -- [11]
+			"Player-1598-06F25435", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff3fc6eaDrbloody-Sunstrider|r",
+			[51] = 1538593358,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [114]
+		{
+			"come newstead", -- [1]
+			"Drbloody-Sunstrider", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Drbloody-Sunstrider", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			267, -- [11]
+			"Player-1598-06F25435", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff3fc6eaDrbloody-Sunstrider|r",
+			[51] = 1538593653,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [115]
+		{
+			"i have 100 iron so if we take newstead every thing will be easy and fast", -- [1]
+			"Drbloody-Sunstrider", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Drbloody-Sunstrider", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			272, -- [11]
+			"Player-1598-06F25435", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff3fc6eaDrbloody-Sunstrider|r",
+			[51] = 1538593686,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [116]
+		{
+			"need more demos", -- [1]
+			"Gnas-TheMaelstrom", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Gnas-TheMaelstrom", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			408, -- [11]
+			"Player-1596-0A08B05A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff0070ddGnas-TheMaelstrom|r",
+			[51] = 1538594710,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+		}, -- [117]
+		{
+			"need 1 more demo", -- [1]
+			"Gnas-TheMaelstrom", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Gnas", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			412, -- [11]
+			"Player-1596-0A08B05A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff0070ddGnas-TheMaelstrom|r",
+			[51] = 1538594755,
+			[50] = "CHAT_MSG_RAID_WARNING",
+		}, -- [118]
+		{
+			"nvm", -- [1]
+			"Gnas-TheMaelstrom", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Gnas", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			413, -- [11]
+			"Player-1596-0A08B05A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff0070ddGnas-TheMaelstrom|r",
+			[51] = 1538594760,
+			[50] = "CHAT_MSG_RAID_WARNING",
+		}, -- [119]
+		{
+			"kick", -- [1]
+			"Corebreak-Magtheridon", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Corebreak-Magtheridon", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			420, -- [11]
+			"Player-3681-093C8850", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff0070ddCorebreak-Magtheridon|r",
+			[51] = 1538594960,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [120]
+		{
+			"afk", -- [1]
+			"Corebreak-Magtheridon", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Corebreak-Magtheridon", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			421, -- [11]
+			"Player-3681-093C8850", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff0070ddCorebreak-Magtheridon|r",
+			[51] = 1538594961,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [121]
+		{
+			"KICK PLZ", -- [1]
+			"Corebreak-Magtheridon", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Corebreak-Magtheridon", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			422, -- [11]
+			"Player-3681-093C8850", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff0070ddCorebreak-Magtheridon|r",
+			[51] = 1538594972,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [122]
+		{
+			"1 more", -- [1]
+			"Corebreak-Magtheridon", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Corebreak-Magtheridon", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			433, -- [11]
+			"Player-3681-093C8850", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff0070ddCorebreak-Magtheridon|r",
+			[51] = 1538595010,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [123]
+		{
+			"fight in courtyard", -- [1]
+			"Ureg-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Ureg", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			434, -- [11]
+			"Player-1096-077D61E7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff3fc6eaUreg|r",
+			[51] = 1538595010,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [124]
+		{
+			"kick", -- [1]
+			"Corebreak-Magtheridon", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Corebreak-Magtheridon", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			435, -- [11]
+			"Player-3681-093C8850", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff0070ddCorebreak-Magtheridon|r",
+			[51] = 1538595011,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [125]
+		{
+			"plz", -- [1]
+			"Corebreak-Magtheridon", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Corebreak-Magtheridon", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			436, -- [11]
+			"Player-3681-093C8850", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff0070ddCorebreak-Magtheridon|r",
+			[51] = 1538595012,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [126]
+		{
+			"GET INSIDE", -- [1]
+			"Gnas-TheMaelstrom", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Gnas", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			454, -- [11]
+			"Player-1596-0A08B05A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff0070ddGnas-TheMaelstrom|r",
+			[51] = 1538595068,
+			[50] = "CHAT_MSG_RAID_WARNING",
 		}, -- [127]
 	},
 }

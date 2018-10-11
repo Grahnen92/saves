@@ -41,6 +41,8 @@ local L = WeakAuras.L
 	L["Charge Tracking"] = "可用次数充能追踪"
 	L["cooldown"] = "冷却"
 	L["Cooldown Tracking"] = "冷却追踪"
+	--[[Translation missing --]]
+	L["Create Auras"] = "Create Auras"
 	L["Debuffs"] = "减益"
 	L["Enchants"] = "附魔"
 	L["General"] = "总体"
@@ -50,7 +52,11 @@ local L = WeakAuras.L
 	L["Highlight while buffed."] = "获得增益效果时高亮"
 	L["Highlight while debuffed, red when out of range."] = "获得减益效果时高亮，超出范围变红显示"
 	L["Highlight while debuffed."] = "获得减益效果时高亮"
+	--[[Translation missing --]]
+	L["Hold CTRL to create multiple auras at once"] = "Hold CTRL to create multiple auras at once"
 	L["Keeps existing triggers intact"] = "保持现存触发器完整"
+	--[[Translation missing --]]
+	L["Next"] = "Next"
 	L["On Procc Trinkets (Buff)"] = "当饰品增益效果触发"
 	L["On Use Trinkets (Buff)"] = "当饰品增益效果被使用"
 	L["On Use Trinkets (CD)"] = "当饰品正在冷却中"
@@ -93,7 +99,6 @@ local L = WeakAuras.L
 	L["Show Totem and Charge Information"] = "显示图腾和可用次数充能信息"
 	L["Specific Azerite Traits"] = "特性艾泽里特特质"
 	L["Stagger"] = "眩晕"
-	L["Totems"] = "图腾（复数）"
 	L["Track the charge and proc, highlight while proc is active, turns red when out of range, blue on insufficient resources."] = "追踪可用次数充能和触发，当触发时高亮显示，超出距离时变红显示，资源不足时变蓝显示"
 	L["Tracks the charge and the buff, highlight while the buff is active, blue on insufficient resources."] = "追踪可用次数和增益效果，当增益效果激活时高亮，当没有足够资源是变蓝显示"
 	L["Tracks the charge and the debuff, highlight while the debuff is active, blue on insufficient resources."] = "追踪可用次数和减益效果，当减益效果激活时高亮，当没有足够资源是变蓝显示"

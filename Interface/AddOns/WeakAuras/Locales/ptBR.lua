@@ -40,6 +40,8 @@ L["%s total auras"] = "%s auras totais"
 L["%s Trigger Function"] = "%s Função de gatilho"
 --[[Translation missing --]]
 L["%s Untrigger Function"] = "%s Untrigger Function"
+--[[Translation missing --]]
+L["|cff9900ffWeakAuras EXPERIMENTAL Profiling Data:|r"] = "|cff9900ffWeakAuras EXPERIMENTAL Profiling Data:|r"
 L["<"] = "<"
 L["<="] = "<="
 L["="] = "="
@@ -54,7 +56,8 @@ L["20 Man Raid"] = "Raide de 20 jogadores"
 L["25 Man Raid"] = "Raide de 25 jogadores"
 L["40 Man Raid"] = "Raide de 40 jogadores"
 L["5 Man Dungeon"] = "Masmorra de 5 jogadores"
-L["A WeakAura just tried to use a forbidden function but has been blocked from doing so. Please check your auras!"] = "Uma WeakAura tentou usar uma função proibida, mas foi bloqueada. Por favor, confira suas auras!"
+--[[Translation missing --]]
+L["A WeakAura just tried to use a forbidden function but has been blocked from doing so. Please check your auras!"] = "A WeakAura just tried to use a forbidden function but has been blocked from doing so. Please check your auras!"
 L["Absorb"] = "Absorver"
 --[[Translation missing --]]
 L["Absorb Display"] = "Absorb Display"
@@ -95,6 +98,8 @@ L["Attach to End"] = "Attach to End"
 --[[Translation missing --]]
 L["Attach to Start"] = "Attach to Start"
 L["Attackable"] = "Atacável"
+--[[Translation missing --]]
+L["Attackable Target"] = "Attackable Target"
 L["Aura"] = "Aura"
 L["Aura Applied"] = "Aura Aplicada"
 L["Aura Applied Dose"] = "Dose de Aura Aplicada"
@@ -325,8 +330,6 @@ L["Evade"] = "Evade"
 L["Event"] = "Evento"
 L["Event(s)"] = "Evento(s)"
 L["Every Frame"] = "Todo Frame"
---[[Translation missing --]]
-L["EXPERIMENTAL Profiling Data:"] = "EXPERIMENTAL Profiling Data:"
 --[[Translation missing --]]
 L["Extend Outside"] = "Extend Outside"
 L["Extra Amount"] = "Quantidade Extra"
@@ -922,6 +925,8 @@ L["Swing Timer"] = "Tempo de balanço"
 L["System"] = "System"
 --[[Translation missing --]]
 L["Tabard"] = "Tabard"
+--[[Translation missing --]]
+L["Talent Selected"] = "Talent Selected"
 --[[Translation missing --]]
 L["Talent selected"] = "Talent selected"
 L["Talent Specialization"] = "Especialização de talentos"

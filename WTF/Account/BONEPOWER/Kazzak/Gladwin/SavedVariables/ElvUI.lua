@@ -1,74 +1,118 @@
 
 ElvCharacterDB = {
 	["ChatEditHistory"] = {
-		" cool", -- [1]
-		" ah :/", -- [2]
-		"/p disc", -- [3]
-		"/p cheers", -- [4]
-		"/p gogo", -- [5]
-		"/p brb toilet", -- [6]
-		"/p you can reset boss", -- [7]
-		"/p also", -- [8]
-		"/p we must respect necro", -- [9]
-		"/p if you get 35+ stacks you are almost unhealable", -- [10]
-		"/p cool indeed", -- [11]
-		"/p :/", -- [12]
-		"/who mollox", -- [13]
-		"/who lucid dream", -- [14]
-		"/cw Mollocks Hey, are you Mollox, GM of lucid dream? :)", -- [15]
-		"/cw Mollocks Saw your page on wowprogress and I am interested. ", -- [16]
-		"/cw Mollocks Holy paladin ", -- [17]
-		"/cw Mollocks That would be ok :) Could also play offspec/mage if you need that ", -- [18]
-		"/cw Mollocks Cool, will do it this evening. ", -- [19]
-		"/cw Mollocks Sure, Ill join tonight tho. Have to go to work!", -- [20]
+		"/cw Shankwan-ChamberofAspects https://raider.io/characters/eu/kazzak/Gladwin", -- [1]
+		"/cw Shankwan-ChamberofAspects +8", -- [2]
+		"/cw Shankwan-ChamberofAspects toldagor +7 currently", -- [3]
+		"/p yo", -- [4]
+		"/p brb", -- [5]
+		"/p hey", -- [6]
+		"/p careful here", -- [7]
+		"/p shouldn't jave ressed", -- [8]
+		"/p sry", -- [9]
+		"/p we should cc", -- [10]
+		"/p not me", -- [11]
+		"/p outside", -- [12]
+		"/p we could place a stone and let you hs", -- [13]
+		"/p are you red?", -- [14]
+		"/p ah right", -- [15]
+		"/p I should have respecced before instance", -- [16]
+		"/p drinking", -- [17]
+		"/p throw up a stone", -- [18]
+		"/p yes", -- [19]
+		"/p nah im out", -- [20]
 	},
 	["ChatHistoryLog"] = {
 		{
-			"yes ", -- [1]
-			"Tigerw-TwistingNether", -- [2]
+			"Anyone for KR3?", -- [1]
+			"Mollocks-Kazzak", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Tigerw-TwistingNether", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			885, -- [11]
-			"Player-3674-08D93555", -- [12]
+			1712, -- [11]
+			"Player-1305-0989DC48", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc69b6dTigerw-TwistingNether|r",
-			[51] = 1538236074,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cff8787edMollocks|r",
+			[51] = 1538823938,
+			[50] = "CHAT_MSG_GUILD",
 		}, -- [1]
 		{
-			"you can mount in here", -- [1]
-			"Tigerw-TwistingNether", -- [2]
+			"%s has earned the achievement |cffffff00|Hachievement:650:Player-1305-0A0182E1:1:10:6:18:4294967295:4294967295:4294967295:4294967295|h[Underbog]|h|r!", -- [1]
+			"Mumínballe-Kazzak", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Tigerw-TwistingNether", -- [5]
+			"Mumínballe", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			886, -- [11]
-			"Player-3674-08D93555", -- [12]
+			1733, -- [11]
+			"Player-1305-0A0182E1", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc69b6dTigerw-TwistingNether|r",
-			[51] = 1538236080,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cff0070ddMumínballe|r",
+			[51] = 1538823975,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [2]
 		{
-			"cool", -- [1]
+			"hmm", -- [1]
+			"Zeunk-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1737, -- [11]
+			"Player-1305-09F7496F", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc69b6dZeunk|r",
+			[51] = 1538823979,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [3]
+		{
+			"%s has earned the achievement |cffffff00|Hachievement:973:Player-1305-0A0FA82F:1:10:6:18:4294967295:4294967295:4294967295:4294967295|h[5 Daily Quests Completed]|h|r!", -- [1]
+			"Nayfi-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Nayfi", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1937, -- [11]
+			"Player-1305-0A0FA82F", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffffffffNayfi|r",
+			[51] = 1538824415,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+		}, -- [4]
+		{
+			"oh wait", -- [1]
 			"Gladwin-Kazzak", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -78,7 +122,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			887, -- [11]
+			2063, -- [11]
 			"Player-1305-0A0A1F03", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -86,429 +130,385 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfff48cbaGladwin|r",
-			[51] = 1538236084,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [3]
-		{
-			"want me to focus adds ?", -- [1]
-			"Elphenomenal-Kazzak", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Elphenomenal", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			888, -- [11]
-			"Player-1305-09F75351", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffff468Elphenomenal|r",
-			[51] = 1538236086,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [4]
-		{
-			"all should", -- [1]
-			"Nyvoz-TarrenMill", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Nyvoz-TarrenMill", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			889, -- [11]
-			"Player-1084-07A8A5A7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8787edNyvoz-TarrenMill|r",
-			[51] = 1538236094,
+			[51] = 1538824658,
 			[50] = "CHAT_MSG_PARTY",
 		}, -- [5]
 		{
-			"yea", -- [1]
-			"Zómbíe-TwistingNether", -- [2]
+			"+2 ?", -- [1]
+			"Gladwin-Kazzak", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Zómbíe-TwistingNether", -- [5]
+			"Gladwin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			890, -- [11]
-			"Player-3674-07AEE1C7", -- [12]
+			2064, -- [11]
+			"Player-1305-0A0A1F03", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8787edZómbíe-TwistingNether|r",
-			[51] = 1538236096,
+			[52] = "|cfff48cbaGladwin|r",
+			[51] = 1538824661,
 			[50] = "CHAT_MSG_PARTY",
 		}, -- [6]
 		{
-			"dps", -- [1]
-			"Nyvoz-TarrenMill", -- [2]
+			"ye come on man quick one", -- [1]
+			"Acronym-Zenedar", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Nyvoz-TarrenMill", -- [5]
+			"Acronym-Zenedar", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			891, -- [11]
-			"Player-1084-07A8A5A7", -- [12]
+			2069, -- [11]
+			"Player-3657-091CD8D7", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8787edNyvoz-TarrenMill|r",
-			[51] = 1538236097,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cffa330c9Acronym-Zenedar|r",
+			[51] = 1538824667,
+			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [7]
 		{
-			"k", -- [1]
-			"Elphenomenal-Kazzak", -- [2]
+			"dont be mad", -- [1]
+			"Acronym-Zenedar", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Elphenomenal", -- [5]
+			"Acronym-Zenedar", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			892, -- [11]
-			"Player-1305-09F75351", -- [12]
+			2070, -- [11]
+			"Player-3657-091CD8D7", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffff468Elphenomenal|r",
-			[51] = 1538236099,
+			[52] = "|cffa330c9Acronym-Zenedar|r",
+			[51] = 1538824669,
 			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [8]
 		{
-			"not focus, but kill so the boss can go somewhere", -- [1]
-			"Tigerw-TwistingNether", -- [2]
+			"sry, misread", -- [1]
+			"Gladwin-Kazzak", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Tigerw-TwistingNether", -- [5]
+			"Gladwin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			893, -- [11]
-			"Player-3674-08D93555", -- [12]
+			2074, -- [11]
+			"Player-1305-0A0A1F03", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc69b6dTigerw-TwistingNether|r",
-			[51] = 1538236101,
+			[52] = "|cfff48cbaGladwin|r",
+			[51] = 1538824672,
 			[50] = "CHAT_MSG_PARTY",
 		}, -- [9]
 		{
-			"without soaking adds", -- [1]
-			"Tigerw-TwistingNether", -- [2]
+			"WOW MAN", -- [1]
+			"Acronym-Zenedar", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Tigerw-TwistingNether", -- [5]
+			"Acronym-Zenedar", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			894, -- [11]
-			"Player-3674-08D93555", -- [12]
+			2076, -- [11]
+			"Player-3657-091CD8D7", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc69b6dTigerw-TwistingNether|r",
-			[51] = 1538236106,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cffa330c9Acronym-Zenedar|r",
+			[51] = 1538824677,
+			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [10]
 		{
-			"locks got it i think", -- [1]
-			"Elphenomenal-Kazzak", -- [2]
+			"gl guys!", -- [1]
+			"Gladwin-Kazzak", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Elphenomenal", -- [5]
+			"Gladwin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			895, -- [11]
-			"Player-1305-09F75351", -- [12]
+			2078, -- [11]
+			"Player-1305-0A0A1F03", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffff468Elphenomenal|r",
-			[51] = 1538236106,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[52] = "|cfff48cbaGladwin|r",
+			[51] = 1538824678,
+			[50] = "CHAT_MSG_PARTY",
 		}, -- [11]
 		{
-			"locks have ramp up tiem", -- [1]
-			"Zómbíe-TwistingNether", -- [2]
+			"you know your shit?", -- [1]
+			"Shankwan-ChamberofAspects", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Zómbíe-TwistingNether", -- [5]
+			"Shankwan-ChamberofAspects", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			896, -- [11]
-			"Player-3674-07AEE1C7", -- [12]
+			2162, -- [11]
+			"Player-1307-09FC7DC4", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8787edZómbíe-TwistingNether|r",
-			[51] = 1538236110,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cfffff468Shankwan-ChamberofAspects|r",
+			[51] = 1538824870,
+			[50] = "CHAT_MSG_WHISPER",
 		}, -- [12]
 		{
-			"I think the rogue should stay on boss", -- [1]
-			"Gladwin-Kazzak", -- [2]
-			"", -- [3]
+			"I'd say so :)", -- [1]
+			"Shankwan-ChamberofAspects", -- [2]
+			"Orcish", -- [3]
 			"", -- [4]
-			"Gladwin", -- [5]
+			"Shankwan-ChamberofAspects", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			898, -- [11]
-			"Player-1305-0A0A1F03", -- [12]
+			2172, -- [11]
+			"Player-1307-09FC7DC4", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff48cbaGladwin|r",
-			[51] = 1538236112,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cfffff468Shankwan-ChamberofAspects|r",
+			[51] = 1538824886,
+			[50] = "CHAT_MSG_WHISPER_INFORM",
 		}, -- [13]
 		{
-			"no way ", -- [1]
-			"Zómbíe-TwistingNether", -- [2]
+			"whats ur highest key?", -- [1]
+			"Shankwan-ChamberofAspects", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Zómbíe-TwistingNether", -- [5]
+			"Shankwan-ChamberofAspects", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			900, -- [11]
-			"Player-3674-07AEE1C7", -- [12]
+			2177, -- [11]
+			"Player-1307-09FC7DC4", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8787edZómbíe-TwistingNether|r",
-			[51] = 1538236119,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cfffff468Shankwan-ChamberofAspects|r",
+			[51] = 1538824897,
+			[50] = "CHAT_MSG_WHISPER",
 		}, -- [14]
 		{
-			"that is what i do always", -- [1]
-			"Elphenomenal-Kazzak", -- [2]
+			"can link/", -- [1]
+			"Shankwan-ChamberofAspects", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Elphenomenal", -- [5]
+			"Shankwan-ChamberofAspects", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			901, -- [11]
-			"Player-1305-09F75351", -- [12]
+			2178, -- [11]
+			"Player-1307-09FC7DC4", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffff468Elphenomenal|r",
-			[51] = 1538236120,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[52] = "|cfffff468Shankwan-ChamberofAspects|r",
+			[51] = 1538824899,
+			[50] = "CHAT_MSG_WHISPER",
 		}, -- [15]
 		{
-			"but i will focus add", -- [1]
-			"Elphenomenal-Kazzak", -- [2]
-			"", -- [3]
+			"https://raider.io/characters/eu/kazzak/Gladwin", -- [1]
+			"Shankwan-ChamberofAspects", -- [2]
+			"Orcish", -- [3]
 			"", -- [4]
-			"Elphenomenal", -- [5]
+			"Shankwan-ChamberofAspects", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			902, -- [11]
-			"Player-1305-09F75351", -- [12]
+			2188, -- [11]
+			"Player-1307-09FC7DC4", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffff468Elphenomenal|r",
-			[51] = 1538236125,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[52] = "|cfffff468Shankwan-ChamberofAspects|r",
+			[51] = 1538824913,
+			[50] = "CHAT_MSG_WHISPER_INFORM",
 		}, -- [16]
 		{
-			"help kill 1 or 2 alteast", -- [1]
-			"Nyvoz-TarrenMill", -- [2]
-			"", -- [3]
+			"+8", -- [1]
+			"Shankwan-ChamberofAspects", -- [2]
+			"Orcish", -- [3]
 			"", -- [4]
-			"Nyvoz-TarrenMill", -- [5]
+			"Shankwan-ChamberofAspects", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			903, -- [11]
-			"Player-1084-07A8A5A7", -- [12]
+			2194, -- [11]
+			"Player-1307-09FC7DC4", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8787edNyvoz-TarrenMill|r",
-			[51] = 1538236130,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cfffff468Shankwan-ChamberofAspects|r",
+			[51] = 1538824917,
+			[50] = "CHAT_MSG_WHISPER_INFORM",
 		}, -- [17]
 		{
-			"we dont have that much burst as affli", -- [1]
-			"Nyvoz-TarrenMill", -- [2]
-			"", -- [3]
+			"toldagor +7 currently", -- [1]
+			"Shankwan-ChamberofAspects", -- [2]
+			"Orcish", -- [3]
 			"", -- [4]
-			"Nyvoz-TarrenMill", -- [5]
+			"Shankwan-ChamberofAspects", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			904, -- [11]
-			"Player-1084-07A8A5A7", -- [12]
+			2199, -- [11]
+			"Player-1307-09FC7DC4", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8787edNyvoz-TarrenMill|r",
-			[51] = 1538236138,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cfffff468Shankwan-ChamberofAspects|r",
+			[51] = 1538824922,
+			[50] = "CHAT_MSG_WHISPER_INFORM",
 		}, -- [18]
 		{
-			"mopunbt", -- [1]
-			"Elphenomenal-Kazzak", -- [2]
+			"%s has earned the achievement |cffffff00|Hachievement:648:Player-1305-0A0182E1:1:10:6:18:4294967295:4294967295:4294967295:4294967295|h[The Blood Furnace]|h|r!", -- [1]
+			"Mumínballe-Kazzak", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Elphenomenal", -- [5]
+			"Mumínballe", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			905, -- [11]
-			"Player-1305-09F75351", -- [12]
+			2234, -- [11]
+			"Player-1305-0A0182E1", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffff468Elphenomenal|r",
-			[51] = 1538236139,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[52] = "|cff0070ddMumínballe|r",
+			[51] = 1538824995,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [19]
 		{
-			"oh nice ", -- [1]
-			"Elphenomenal-Kazzak", -- [2]
+			"%s has earned the achievement |cffffff00|Hachievement:1176:Player-1305-0A0FA82F:1:10:6:18:4294967295:4294967295:4294967295:4294967295|h[Got My Mind On My Money]|h|r!", -- [1]
+			"Nayfi-Kazzak", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Elphenomenal", -- [5]
+			"Nayfi", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			945, -- [11]
-			"Player-1305-09F75351", -- [12]
+			2325, -- [11]
+			"Player-1305-0A0FA82F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffff468Elphenomenal|r",
-			[51] = 1538236456,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[52] = "|cffffffffNayfi|r",
+			[51] = 1538825186,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [20]
 		{
-			"ty for run guys, cya", -- [1]
-			"Nyvoz-TarrenMill", -- [2]
+			"%s has earned the achievement |cffffff00|Hachievement:12900:Player-1305-062B648D:1:10:6:18:4294967295:4294967295:4294967295:4294967295|h[Honor Level 20]|h|r!", -- [1]
+			"Stefmeister-Kazzak", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Nyvoz-TarrenMill", -- [5]
+			"Stefmeister", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			948, -- [11]
-			"Player-1084-07A8A5A7", -- [12]
+			2369, -- [11]
+			"Player-1305-062B648D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8787edNyvoz-TarrenMill|r",
-			[51] = 1538236466,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cfffff468Stefmeister|r",
+			[51] = 1538825245,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [21]
 		{
-			"at least somthing good for a bad run", -- [1]
-			"Elphenomenal-Kazzak", -- [2]
+			"damn gratz", -- [1]
+			"Zeunk-Kazzak", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Elphenomenal", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			949, -- [11]
-			"Player-1305-09F75351", -- [12]
+			2384, -- [11]
+			"Player-1305-09F7496F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffff468Elphenomenal|r",
-			[51] = 1538236468,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[52] = "|cffc69b6dZeunk|r",
+			[51] = 1538825274,
+			[50] = "CHAT_MSG_GUILD",
 		}, -- [22]
 		{
-			"cya", -- [1]
+			"yo", -- [1]
 			"Gladwin-Kazzak", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -518,7 +518,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			950, -- [11]
+			2420, -- [11]
 			"Player-1305-0A0A1F03", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -526,217 +526,210 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfff48cbaGladwin|r",
-			[51] = 1538236469,
+			[51] = 1538825339,
 			[50] = "CHAT_MSG_PARTY",
 		}, -- [23]
 		{
-			"thx guys", -- [1]
-			"Elphenomenal-Kazzak", -- [2]
+			"brb", -- [1]
+			"Gladwin-Kazzak", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Elphenomenal", -- [5]
+			"Gladwin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			952, -- [11]
-			"Player-1305-09F75351", -- [12]
+			2425, -- [11]
+			"Player-1305-0A0A1F03", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffff468Elphenomenal|r",
-			[51] = 1538236470,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[52] = "|cfff48cbaGladwin|r",
+			[51] = 1538825344,
+			[50] = "CHAT_MSG_PARTY",
 		}, -- [24]
 		{
-			"c u", -- [1]
-			"Elphenomenal-Kazzak", -- [2]
+			"%s has earned the achievement |cffffff00|Hachievement:245:Player-1305-06A55EDC:1:10:6:18:4294967295:4294967295:4294967295:4294967295|h[That Takes Class]|h|r!", -- [1]
+			"Zekroma-Kazzak", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Elphenomenal", -- [5]
+			"Zekroma", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			955, -- [11]
-			"Player-1305-09F75351", -- [12]
+			2468, -- [11]
+			"Player-1305-06A55EDC", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffff468Elphenomenal|r",
-			[51] = 1538236474,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[52] = "|cffc69b6dZekroma|r",
+			[51] = 1538825416,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [25]
 		{
-			"yo", -- [1]
-			"|Kf2|k00000|k", -- [2]
+			"hello", -- [1]
+			"Kyma-Cho’gall", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Kyma-Cho’gall", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1573, -- [11]
-			false, -- [12]
-			2, -- [13]
+			2552, -- [11]
+			"Player-1336-06720F1B", -- [12]
+			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc69b6dtiger|r",
-			[51] = 1538321491,
-			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
-			[53] = "tiger",
+			[52] = "|cfff48cbaKyma-Cho’gall|r",
+			[51] = 1538825569,
+			[50] = "CHAT_MSG_PARTY",
 		}, -- [26]
 		{
-			"spela nåt?", -- [1]
-			"|Kf2|k00000|k", -- [2]
+			"hello", -- [1]
+			"Adelie-Wrathbringer", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Adelie-Wrathbringer", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1574, -- [11]
-			false, -- [12]
-			2, -- [13]
+			2553, -- [11]
+			"Player-578-082398C9", -- [12]
+			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc69b6dtiger|r",
-			[51] = 1538321493,
-			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
-			[53] = "tiger",
+			[52] = "|cff8787edAdelie-Wrathbringer|r",
+			[51] = 1538825571,
+			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [27]
 		{
-			"är på att spela", -- [1]
-			"|Kf2|k00000|k", -- [2]
+			"hey", -- [1]
+			"Gladwin-Kazzak", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Gladwin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1611, -- [11]
-			false, -- [12]
-			2, -- [13]
+			2577, -- [11]
+			"Player-1305-0A0A1F03", -- [12]
+			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc69b6dtiger|r",
-			[51] = 1538321535,
-			[50] = "CHAT_MSG_BN_WHISPER",
-			[53] = "tiger",
+			[52] = "|cfff48cbaGladwin|r",
+			[51] = 1538825619,
+			[50] = "CHAT_MSG_PARTY",
 		}, -- [28]
 		{
-			"men ska köra raid 19", -- [1]
-			"|Kf2|k00000|k", -- [2]
+			"brb", -- [1]
+			"Adelie-Wrathbringer", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Adelie-Wrathbringer", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1615, -- [11]
-			false, -- [12]
-			2, -- [13]
+			2617, -- [11]
+			"Player-578-082398C9", -- [12]
+			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc69b6dtiger|r",
-			[51] = 1538321538,
-			[50] = "CHAT_MSG_BN_WHISPER",
-			[53] = "tiger",
+			[52] = "|cff8787edAdelie-Wrathbringer|r",
+			[51] = 1538825714,
+			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [29]
 		{
-			"mythic?", -- [1]
-			"|Kf2|k00000|k", -- [2]
+			"%s has earned the achievement |cffffff00|Hachievement:12733:Player-1305-0A08E99D:1:10:6:18:4294967295:4294967295:4294967295:4294967295|h[Professional Zandalari Master]|h|r!", -- [1]
+			"Izvunzelidan-Kazzak", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Izvunzelidan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1625, -- [11]
-			false, -- [12]
-			2, -- [13]
+			2635, -- [11]
+			"Player-1305-0A08E99D", -- [12]
+			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc69b6dtiger|r",
-			[51] = 1538321550,
-			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
-			[53] = "tiger",
+			[52] = "|cffa330c9Izvunzelidan|r",
+			[51] = 1538825748,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [30]
 		{
-			"missade att du skrev igår runt 20, sry", -- [1]
-			"|Kf2|k00000|k", -- [2]
+			"%s has earned the achievement |cffffff00|Hachievement:12947:Player-1305-062B648D:1:10:6:18:4294967295:4294967295:4294967295:4294967295|h[Azerothian Diplomat]|h|r!", -- [1]
+			"Stefmeister-Kazzak", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Stefmeister", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1628, -- [11]
-			false, -- [12]
-			2, -- [13]
+			2700, -- [11]
+			"Player-1305-062B648D", -- [12]
+			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc69b6dtiger|r",
-			[51] = 1538321554,
-			[50] = "CHAT_MSG_BN_WHISPER",
-			[53] = "tiger",
+			[52] = "|cfffff468Stefmeister|r",
+			[51] = 1538825896,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [31]
 		{
-			"cool", -- [1]
-			"|Kf2|k00000|k", -- [2]
+			"%s has earned the achievement |cffffff00|Hachievement:12989:Player-1305-062B648D:1:10:6:18:4294967295:4294967295:4294967295:4294967295|h[Battle for Azeroth Pathfinder, Part One]|h|r!", -- [1]
+			"Stefmeister-Kazzak", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Stefmeister", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1631, -- [11]
-			false, -- [12]
-			2, -- [13]
+			2701, -- [11]
+			"Player-1305-062B648D", -- [12]
+			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc69b6dtiger|r",
-			[51] = 1538321560,
-			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
-			[53] = "tiger",
+			[52] = "|cfffff468Stefmeister|r",
+			[51] = 1538825896,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [32]
 		{
-			"var mitt i raid så såg inte", -- [1]
-			"|Kf2|k00000|k", -- [2]
+			"gratz", -- [1]
+			"Zeunk-Kazzak", -- [2]
 			"", -- [3]
 			"", -- [4]
 			"", -- [5]
@@ -745,67 +738,218 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1632, -- [11]
-			false, -- [12]
-			2, -- [13]
+			2702, -- [11]
+			"Player-1305-09F7496F", -- [12]
+			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc69b6dtiger|r",
-			[51] = 1538321560,
-			[50] = "CHAT_MSG_BN_WHISPER",
-			[53] = "tiger",
+			[52] = "|cffc69b6dZeunk|r",
+			[51] = 1538825903,
+			[50] = "CHAT_MSG_GUILD",
 		}, -- [33]
 		{
-			"det är hc på alliance ikväll", -- [1]
-			"|Kf2|k00000|k", -- [2]
+			"wipe", -- [1]
+			"Spens-BurningLegion", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Spens-BurningLegion", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1641, -- [11]
-			false, -- [12]
-			2, -- [13]
+			2710, -- [11]
+			"Player-3713-0924D981", -- [12]
+			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc69b6dtiger|r",
-			[51] = 1538321569,
-			[50] = "CHAT_MSG_BN_WHISPER",
-			[53] = "tiger",
+			[52] = "|cffc69b6dSpens-BurningLegion|r",
+			[51] = 1538825985,
+			[50] = "CHAT_MSG_PARTY",
 		}, -- [34]
 		{
-			"ah :/", -- [1]
-			"|Kf2|k00000|k", -- [2]
+			"wipe it", -- [1]
+			"Spens-BurningLegion", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Spens-BurningLegion", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1650, -- [11]
-			false, -- [12]
-			2, -- [13]
+			2714, -- [11]
+			"Player-3713-0924D981", -- [12]
+			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc69b6dtiger|r",
-			[51] = 1538321588,
-			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
-			[53] = "tiger",
+			[52] = "|cffc69b6dSpens-BurningLegion|r",
+			[51] = 1538825990,
+			[50] = "CHAT_MSG_PARTY",
 		}, -- [35]
 		{
-			"vi hinner väl köra 1-2 m+", -- [1]
-			"|Kf2|k00000|k", -- [2]
+			"Interrompu |cff71d5ff|Hspell:269973:0|h[Frisson mortel]|h|r sur Féticheur portelombre", -- [1]
+			"Kyma-Cho’gall", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Kyma-Cho’gall", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2728, -- [11]
+			"Player-1336-06720F1B", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaKyma-Cho’gall|r",
+			[51] = 1538826185,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [36]
+		{
+			"Interrompu |cff71d5ff|Hspell:269973:0|h[Frisson mortel]|h|r sur Féticheur portelombre", -- [1]
+			"Kyma-Cho’gall", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Kyma-Cho’gall", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2729, -- [11]
+			"Player-1336-06720F1B", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaKyma-Cho’gall|r",
+			[51] = 1538826219,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [37]
+		{
+			"%s has earned the achievement |cffffff00|Hachievement:649:Player-1305-0A0182E1:1:10:6:18:4294967295:4294967295:4294967295:4294967295|h[The Slave Pens]|h|r!", -- [1]
+			"Mumínballe-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Mumínballe", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2731, -- [11]
+			"Player-1305-0A0182E1", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff0070ddMumínballe|r",
+			[51] = 1538826230,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+		}, -- [38]
+		{
+			"Interrompu |cff71d5ff|Hspell:269972:0|h[Salve de Traits de l’ombre]|h|r sur Féticheur portelombre", -- [1]
+			"Kyma-Cho’gall", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Kyma-Cho’gall", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2732, -- [11]
+			"Player-1336-06720F1B", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaKyma-Cho’gall|r",
+			[51] = 1538826294,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [39]
+		{
+			"Interrompu |cff71d5ff|Hspell:269973:0|h[Frisson mortel]|h|r sur Féticheur portelombre", -- [1]
+			"Kyma-Cho’gall", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Kyma-Cho’gall", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2733, -- [11]
+			"Player-1336-06720F1B", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaKyma-Cho’gall|r",
+			[51] = 1538826307,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [40]
+		{
+			"Interrompu |cff71d5ff|Hspell:269973:0|h[Frisson mortel]|h|r sur Féticheur portelombre", -- [1]
+			"Kyma-Cho’gall", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Kyma-Cho’gall", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2734, -- [11]
+			"Player-1336-06720F1B", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaKyma-Cho’gall|r",
+			[51] = 1538826312,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [41]
+		{
+			"Interrompu |cff71d5ff|Hspell:269972:0|h[Salve de Traits de l’ombre]|h|r sur Féticheur portelombre", -- [1]
+			"Kyma-Cho’gall", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Kyma-Cho’gall", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2736, -- [11]
+			"Player-1336-06720F1B", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaKyma-Cho’gall|r",
+			[51] = 1538826320,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [42]
+		{
+			"Hi!", -- [1]
+			"Alterra-Kazzak", -- [2]
 			"", -- [3]
 			"", -- [4]
 			"", -- [5]
@@ -814,330 +958,637 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1681, -- [11]
-			false, -- [12]
-			2, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dtiger|r",
-			[51] = 1538321644,
-			[50] = "CHAT_MSG_BN_WHISPER",
-			[53] = "tiger",
-		}, -- [36]
-		{
-			"disc", -- [1]
-			"Gladwin-Kazzak", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Gladwin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1902, -- [11]
-			"Player-1305-0A0A1F03", -- [12]
+			2746, -- [11]
+			"Player-1305-071B80F4", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff48cbaGladwin|r",
-			[51] = 1538322008,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [37]
-		{
-			"kommer snart", -- [1]
-			"Tigerw-TwistingNether", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Tigerw-TwistingNether", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1904, -- [11]
-			"Player-3674-08D93555", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dTigerw-TwistingNether|r",
-			[51] = 1538322014,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [38]
-		{
-			"tele", -- [1]
-			"Tigerw-TwistingNether", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Tigerw-TwistingNether", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1909, -- [11]
-			"Player-3674-08D93555", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dTigerw-TwistingNether|r",
-			[51] = 1538322014,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [39]
-		{
-			"rdy", -- [1]
-			"Tigerw-TwistingNether", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Tigerw-TwistingNether", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2117, -- [11]
-			"Player-3674-08D93555", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dTigerw-TwistingNether|r",
-			[51] = 1538322491,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [40]
-		{
-			"r", -- [1]
-			"Ilyrana-DefiasBrotherhood", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Ilyrana-DefiasBrotherhood", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2119, -- [11]
-			"Player-1096-060686F4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8787edIlyrana-DefiasBrotherhood|r",
-			[51] = 1538322496,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [41]
-		{
-			"r", -- [1]
-			"Whatasave-Stormscale", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Whatasave-Stormscale", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2120, -- [11]
-			"Player-2073-067000AE", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff48cbaWhatasave-Stormscale|r",
-			[51] = 1538322503,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [42]
-		{
-			"Interrupted Refreshment Vendor's |cff71d5ff|Hspell:268129:0|h[Kaja'Cola Refresher]|h|r!", -- [1]
-			"Theofrancken-Stormscale", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Theofrancken-Stormscale", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2153, -- [11]
-			"Player-2073-06629225", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8787edTheofrancken-Stormscale|r",
-			[51] = 1538322860,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cff0070ddAlterra|r",
+			[51] = 1538826408,
+			[50] = "CHAT_MSG_GUILD",
 		}, -- [43]
 		{
-			"Interrupted Refreshment Vendor's |cff71d5ff|Hspell:268129:0|h[Kaja'Cola Refresher]|h|r!", -- [1]
-			"Theofrancken-Stormscale", -- [2]
-			"Orcish", -- [3]
+			"ey", -- [1]
+			"Zeunk-Kazzak", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Theofrancken-Stormscale", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2160, -- [11]
-			"Player-2073-06629225", -- [12]
+			2748, -- [11]
+			"Player-1305-09F7496F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8787edTheofrancken-Stormscale|r",
-			[51] = 1538322898,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffc69b6dZeunk|r",
+			[51] = 1538826413,
+			[50] = "CHAT_MSG_GUILD",
 		}, -- [44]
 		{
-			"drink?", -- [1]
-			"Whatasave-Stormscale", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Whatasave-Stormscale", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2266, -- [11]
-			"Player-2073-067000AE", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff48cbaWhatasave-Stormscale|r",
-			[51] = 1538323467,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [45]
-		{
-			"cheers", -- [1]
-			"Gladwin-Kazzak", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Gladwin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2267, -- [11]
-			"Player-1305-0A0A1F03", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff48cbaGladwin|r",
-			[51] = 1538323474,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [46]
-		{
-			"Raging Gaze on Gladwin", -- [1]
-			"Gladwin-Kazzak", -- [2]
+			"Spit Gold on Canubizka", -- [1]
+			"Canubizka-Thunderhorn", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Gladwin", -- [5]
+			"Canubizka-Thunderhorn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2270, -- [11]
-			"Player-1305-0A0A1F03", -- [12]
+			2751, -- [11]
+			"Player-1313-0998DE48", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff48cbaGladwin|r",
-			[51] = 1538323481,
+			[52] = "|cffa330c9Canubizka-Thunderhorn|r",
+			[51] = 1538826419,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [45]
+		{
+			"3", -- [1]
+			"Canubizka-Thunderhorn", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Canubizka-Thunderhorn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2752, -- [11]
+			"Player-1313-0998DE48", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa330c9Canubizka-Thunderhorn|r",
+			[51] = 1538826425,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [46]
+		{
+			"2", -- [1]
+			"Canubizka-Thunderhorn", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Canubizka-Thunderhorn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2753, -- [11]
+			"Player-1313-0998DE48", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa330c9Canubizka-Thunderhorn|r",
+			[51] = 1538826426,
 			[50] = "CHAT_MSG_SAY",
 		}, -- [47]
 		{
-			"Raging Gaze on Gladwin", -- [1]
-			"Gladwin-Kazzak", -- [2]
-			"Orcish", -- [3]
+			"Hey there", -- [1]
+			"Khode-Kazzak", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Gladwin", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2278, -- [11]
-			"Player-1305-0A0A1F03", -- [12]
+			2754, -- [11]
+			"Player-1305-0989DCDA", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff48cbaGladwin|r",
-			[51] = 1538323504,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cff00ff96Khode|r",
+			[51] = 1538826429,
+			[50] = "CHAT_MSG_GUILD",
 		}, -- [48]
 		{
-			"Raging Gaze on Tigerw", -- [1]
-			"Tigerw-TwistingNether", -- [2]
+			"Spit Gold on Adelie", -- [1]
+			"Adelie-Wrathbringer", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Tigerw-TwistingNether", -- [5]
+			"Adelie-Wrathbringer", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2285, -- [11]
-			"Player-3674-08D93555", -- [12]
+			2755, -- [11]
+			"Player-578-082398C9", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc69b6dTigerw-TwistingNether|r",
-			[51] = 1538323537,
+			[52] = "|cff8787edAdelie-Wrathbringer|r",
+			[51] = 1538826430,
 			[50] = "CHAT_MSG_SAY",
 		}, -- [49]
 		{
-			"Raging Gaze on Tigerw", -- [1]
-			"Tigerw-TwistingNether", -- [2]
-			"Orcish", -- [3]
+			"ayy", -- [1]
+			"Hajrii-Kazzak", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Tigerw-TwistingNether", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2286, -- [11]
-			"Player-3674-08D93555", -- [12]
+			2756, -- [11]
+			"Player-1305-09C70DB1", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc69b6dTigerw-TwistingNether|r",
-			[51] = 1538323537,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffc69b6dHajrii|r",
+			[51] = 1538826433,
+			[50] = "CHAT_MSG_GUILD",
 		}, -- [50]
 		{
-			"Raging Gaze on Gladwin", -- [1]
-			"Gladwin-Kazzak", -- [2]
+			"Hellow", -- [1]
+			"Mollocks-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2757, -- [11]
+			"Player-1305-0989DC48", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8787edMollocks|r",
+			[51] = 1538826437,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [51]
+		{
+			"Baaaa", -- [1]
+			"Mumínballe-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2758, -- [11]
+			"Player-1305-0A0182E1", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff0070ddMumínballe|r",
+			[51] = 1538826451,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [52]
+		{
+			":/", -- [1]
+			"Khode-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2759, -- [11]
+			"Player-1305-0989DCDA", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00ff96Khode|r",
+			[51] = 1538826462,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [53]
+		{
+			"Spit Gold on Canubizka", -- [1]
+			"Canubizka-Thunderhorn", -- [2]
 			"Orcish", -- [3]
+			"", -- [4]
+			"Canubizka-Thunderhorn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2760, -- [11]
+			"Player-1313-0998DE48", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa330c9Canubizka-Thunderhorn|r",
+			[51] = 1538826464,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [54]
+		{
+			"How you enjoying Shaman moo?", -- [1]
+			"Alterra-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2761, -- [11]
+			"Player-1305-071B80F4", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff0070ddAlterra|r",
+			[51] = 1538826468,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [55]
+		{
+			"morning :D", -- [1]
+			"Mumínballe-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2762, -- [11]
+			"Player-1305-0A0182E1", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff0070ddMumínballe|r",
+			[51] = 1538826471,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [56]
+		{
+			"Spit Gold on Spens", -- [1]
+			"Spens-BurningLegion", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Spens-BurningLegion", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2763, -- [11]
+			"Player-3713-0924D981", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc69b6dSpens-BurningLegion|r",
+			[51] = 1538826474,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [57]
+		{
+			"Alterra, dont heal mumin tomorrow night", -- [1]
+			"Khode-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2765, -- [11]
+			"Player-1305-0989DCDA", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00ff96Khode|r",
+			[51] = 1538826485,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [58]
+		{
+			"lol played shaman long befor pala :P", -- [1]
+			"Mumínballe-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2766, -- [11]
+			"Player-1305-0A0182E1", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff0070ddMumínballe|r",
+			[51] = 1538826489,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [59]
+		{
+			"why not ?", -- [1]
+			"Mumínballe-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2767, -- [11]
+			"Player-1305-0A0182E1", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff0070ddMumínballe|r",
+			[51] = 1538826498,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [60]
+		{
+			"It can be arranged... ", -- [1]
+			"Alterra-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2768, -- [11]
+			"Player-1305-071B80F4", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff0070ddAlterra|r",
+			[51] = 1538826500,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [61]
+		{
+			"But, yes, why? ", -- [1]
+			"Alterra-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2770, -- [11]
+			"Player-1305-071B80F4", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff0070ddAlterra|r",
+			[51] = 1538826506,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [62]
+		{
+			"I HAVENT DONE ANYTHING YET :P", -- [1]
+			"Mumínballe-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2771, -- [11]
+			"Player-1305-0A0182E1", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff0070ddMumínballe|r",
+			[51] = 1538826508,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [63]
+		{
+			"he was being Mumin to me yesterday", -- [1]
+			"Khode-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2774, -- [11]
+			"Player-1305-0989DCDA", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00ff96Khode|r",
+			[51] = 1538826542,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [64]
+		{
+			"I DID say SOrry :OI", -- [1]
+			"Mumínballe-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2776, -- [11]
+			"Player-1305-0A0182E1", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff0070ddMumínballe|r",
+			[51] = 1538826556,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [65]
+		{
+			"and it wasent me! its was the uder me !", -- [1]
+			"Mumínballe-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2777, -- [11]
+			"Player-1305-0A0182E1", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff0070ddMumínballe|r",
+			[51] = 1538826569,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [66]
+		{
+			"The pink one?", -- [1]
+			"Alterra-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2778, -- [11]
+			"Player-1305-071B80F4", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff0070ddAlterra|r",
+			[51] = 1538826630,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [67]
+		{
+			"no the 3 onew", -- [1]
+			"Mumínballe-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2779, -- [11]
+			"Player-1305-0A0182E1", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff0070ddMumínballe|r",
+			[51] = 1538826639,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [68]
+		{
+			"Heheheh", -- [1]
+			"Khode-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2780, -- [11]
+			"Player-1305-0989DCDA", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00ff96Khode|r",
+			[51] = 1538826649,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [69]
+		{
+			"w8 btw what did the uder me do yester day?", -- [1]
+			"Mumínballe-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2783, -- [11]
+			"Player-1305-0A0182E1", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff0070ddMumínballe|r",
+			[51] = 1538826775,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [70]
+		{
+			"?", -- [1]
+			"Mumínballe-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2785, -- [11]
+			"Player-1305-0A0182E1", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff0070ddMumínballe|r",
+			[51] = 1538826821,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [71]
+		{
+			"careful here", -- [1]
+			"Gladwin-Kazzak", -- [2]
+			"", -- [3]
 			"", -- [4]
 			"Gladwin", -- [5]
 			"", -- [6]
@@ -1145,7 +1596,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2288, -- [11]
+			2790, -- [11]
 			"Player-1305-0A0A1F03", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1153,9 +1604,97 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfff48cbaGladwin|r",
-			[51] = 1538323545,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [51]
+			[51] = 1538826889,
+			[50] = "CHAT_MSG_PARTY",
+		}, -- [72]
+		{
+			"fuck", -- [1]
+			"Adelie-Wrathbringer", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Adelie-Wrathbringer", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2796, -- [11]
+			"Player-578-082398C9", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8787edAdelie-Wrathbringer|r",
+			[51] = 1538826953,
+			[50] = "CHAT_MSG_PARTY_LEADER",
+		}, -- [73]
+		{
+			"ty", -- [1]
+			"Adelie-Wrathbringer", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Adelie-Wrathbringer", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2797, -- [11]
+			"Player-578-082398C9", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8787edAdelie-Wrathbringer|r",
+			[51] = 1538826960,
+			[50] = "CHAT_MSG_PARTY_LEADER",
+		}, -- [74]
+		{
+			"r", -- [1]
+			"Adelie-Wrathbringer", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Adelie-Wrathbringer", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2798, -- [11]
+			"Player-578-082398C9", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8787edAdelie-Wrathbringer|r",
+			[51] = 1538826978,
+			[50] = "CHAT_MSG_PARTY_LEADER",
+		}, -- [75]
+		{
+			"shouldn't jave ressed", -- [1]
+			"Gladwin-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Gladwin", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2800, -- [11]
+			"Player-1305-0A0A1F03", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaGladwin|r",
+			[51] = 1538826990,
+			[50] = "CHAT_MSG_PARTY",
+		}, -- [76]
 		{
 			"sry", -- [1]
 			"Gladwin-Kazzak", -- [2]
@@ -1167,7 +1706,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2306, -- [11]
+			2801, -- [11]
 			"Player-1305-0A0A1F03", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1175,649 +1714,99 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfff48cbaGladwin|r",
-			[51] = 1538323803,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [52]
-		{
-			"gogo", -- [1]
-			"Gladwin-Kazzak", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Gladwin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2380, -- [11]
-			"Player-1305-0A0A1F03", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff48cbaGladwin|r",
-			[51] = 1538324585,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [53]
-		{
-			"Azerite Heartseeker on Gladwin", -- [1]
-			"Gladwin-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Gladwin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2398, -- [11]
-			"Player-1305-0A0A1F03", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff48cbaGladwin|r",
-			[51] = 1538324699,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [54]
-		{
-			"Drill Smash on Gladwin", -- [1]
-			"Gladwin-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Gladwin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2400, -- [11]
-			"Player-1305-0A0A1F03", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff48cbaGladwin|r",
-			[51] = 1538324701,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [55]
-		{
-			"Azerite Heartseeker on Gladwin", -- [1]
-			"Gladwin-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Gladwin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2404, -- [11]
-			"Player-1305-0A0A1F03", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff48cbaGladwin|r",
-			[51] = 1538324712,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [56]
-		{
-			"Drill Smash on Gladwin", -- [1]
-			"Gladwin-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Gladwin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2407, -- [11]
-			"Player-1305-0A0A1F03", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff48cbaGladwin|r",
-			[51] = 1538324713,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [57]
-		{
-			"Azerite Heartseeker on Gladwin", -- [1]
-			"Gladwin-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Gladwin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2408, -- [11]
-			"Player-1305-0A0A1F03", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff48cbaGladwin|r",
-			[51] = 1538324714,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [58]
-		{
-			"Azerite Heartseeker on Gladwin", -- [1]
-			"Gladwin-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Gladwin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2412, -- [11]
-			"Player-1305-0A0A1F03", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff48cbaGladwin|r",
-			[51] = 1538324726,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [59]
-		{
-			"Drill Smash on Gladwin", -- [1]
-			"Gladwin-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Gladwin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2415, -- [11]
-			"Player-1305-0A0A1F03", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff48cbaGladwin|r",
-			[51] = 1538324735,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [60]
-		{
-			"Azerite Heartseeker on Whatasave", -- [1]
-			"Whatasave-Stormscale", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Whatasave-Stormscale", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2419, -- [11]
-			"Player-2073-067000AE", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff48cbaWhatasave-Stormscale|r",
-			[51] = 1538324753,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [61]
-		{
-			"Homing Missile on Gladwin", -- [1]
-			"Gladwin-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Gladwin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2430, -- [11]
-			"Player-1305-0A0A1F03", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff48cbaGladwin|r",
-			[51] = 1538324808,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [62]
-		{
-			"Drill Smash on Gladwin", -- [1]
-			"Gladwin-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Gladwin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2431, -- [11]
-			"Player-1305-0A0A1F03", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff48cbaGladwin|r",
-			[51] = 1538324808,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [63]
-		{
-			"Homing Missile on Tigerw", -- [1]
-			"Tigerw-TwistingNether", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Tigerw-TwistingNether", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2435, -- [11]
-			"Player-3674-08D93555", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dTigerw-TwistingNether|r",
-			[51] = 1538324829,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [64]
-		{
-			"Drill Smash on Tigerw", -- [1]
-			"Tigerw-TwistingNether", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Tigerw-TwistingNether", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2436, -- [11]
-			"Player-3674-08D93555", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dTigerw-TwistingNether|r",
-			[51] = 1538324829,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [65]
-		{
-			"Homing Missile on Gladwin", -- [1]
-			"Gladwin-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Gladwin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2442, -- [11]
-			"Player-1305-0A0A1F03", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff48cbaGladwin|r",
-			[51] = 1538324853,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [66]
-		{
-			"Drill Smash on Gladwin", -- [1]
-			"Gladwin-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Gladwin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2443, -- [11]
-			"Player-1305-0A0A1F03", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff48cbaGladwin|r",
-			[51] = 1538324853,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [67]
-		{
-			"3 chest and then +10?", -- [1]
-			"Lamiax-Mazrigos", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Lamiax-Mazrigos", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			68, -- [11]
-			"Player-1388-0846AF2C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Lamiax-Mazrigos|r",
-			[51] = 1538332851,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [68]
-		{
-			"hello", -- [1]
-			"Kittenpeach-Bloodhoof", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Kittenpeach-Bloodhoof", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			69, -- [11]
-			"Player-1080-05A54E50", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8787edKittenpeach-Bloodhoof|r",
-			[51] = 1538332852,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [69]
-		{
-			"lol", -- [1]
-			"Vænôm-Blackmoore", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Vænôm-Blackmoore", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			73, -- [11]
-			"Player-580-07B20CAA", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffff468Vænôm-Blackmoore|r",
-			[51] = 1538332858,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [70]
-		{
-			"brb toilet", -- [1]
-			"Gladwin-Kazzak", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Gladwin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			89, -- [11]
-			"Player-1305-0A0A1F03", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff48cbaGladwin|r",
-			[51] = 1538332882,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [71]
-		{
-			"lucky rogue", -- [1]
-			"Lamiax-Mazrigos", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Lamiax-Mazrigos", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			175, -- [11]
-			"Player-1388-0846AF2C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Lamiax-Mazrigos|r",
-			[51] = 1538333033,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [72]
-		{
-			"all azerite 370", -- [1]
-			"Lamiax-Mazrigos", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Lamiax-Mazrigos", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			176, -- [11]
-			"Player-1388-0846AF2C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Lamiax-Mazrigos|r",
-			[51] = 1538333041,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [73]
-		{
-			"hehe", -- [1]
-			"Vænôm-Blackmoore", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Vænôm-Blackmoore", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			179, -- [11]
-			"Player-580-07B20CAA", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffff468Vænôm-Blackmoore|r",
-			[51] = 1538333046,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [74]
-		{
-			"not funny", -- [1]
-			"Lamiax-Mazrigos", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Lamiax-Mazrigos", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			180, -- [11]
-			"Player-1388-0846AF2C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Lamiax-Mazrigos|r",
-			[51] = 1538333052,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [75]
-		{
-			"dont need to raid :X", -- [1]
-			"Vænôm-Blackmoore", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Vænôm-Blackmoore", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			182, -- [11]
-			"Player-580-07B20CAA", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffff468Vænôm-Blackmoore|r",
-			[51] = 1538333063,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [76]
-		{
-			"no dbm --", -- [1]
-			"Lamiax-Mazrigos", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Lamiax-Mazrigos", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			183, -- [11]
-			"Player-1388-0846AF2C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Lamiax-Mazrigos|r",
-			[51] = 1538333064,
+			[51] = 1538826994,
 			[50] = "CHAT_MSG_PARTY",
 		}, -- [77]
 		{
-			"lock what happened?", -- [1]
-			"Lamiax-Mazrigos", -- [2]
+			"%s has earned the achievement |cffffff00|Hachievement:505:Player-1305-0A0182E1:1:10:6:18:4294967295:4294967295:4294967295:4294967295|h[250 Quests Completed]|h|r!", -- [1]
+			"Mumínballe-Kazzak", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Lamiax-Mazrigos", -- [5]
+			"Mumínballe", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			242, -- [11]
-			"Player-1388-0846AF2C", -- [12]
+			2804, -- [11]
+			"Player-1305-0A0182E1", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa330c9Lamiax-Mazrigos|r",
-			[51] = 1538333498,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cff0070ddMumínballe|r",
+			[51] = 1538827089,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [78]
 		{
-			"Unterbrochen Wellenformerin der Eisenfluträuber's |cff71d5ff|Hspell:257063:0|h[Brackwasserblitz]|h|r!", -- [1]
-			"Vænôm-Blackmoore", -- [2]
-			"Orcish", -- [3]
+			"Hardcore.", -- [1]
+			"Alterra-Kazzak", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Vænôm-Blackmoore", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			270, -- [11]
-			"Player-580-07B20CAA", -- [12]
+			2807, -- [11]
+			"Player-1305-071B80F4", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffff468Vænôm-Blackmoore|r",
-			[51] = 1538333659,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cff0070ddAlterra|r",
+			[51] = 1538827119,
+			[50] = "CHAT_MSG_GUILD",
 		}, -- [79]
 		{
-			"you can reset boss", -- [1]
-			"Gladwin-Kazzak", -- [2]
+			"ye", -- [1]
+			"Mumínballe-Kazzak", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Gladwin", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			295, -- [11]
-			"Player-1305-0A0A1F03", -- [12]
+			2813, -- [11]
+			"Player-1305-0A0182E1", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff48cbaGladwin|r",
-			[51] = 1538333785,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cff0070ddMumínballe|r",
+			[51] = 1538827176,
+			[50] = "CHAT_MSG_GUILD",
 		}, -- [80]
 		{
-			"also", -- [1]
-			"Gladwin-Kazzak", -- [2]
+			"%s has earned the achievement |cffffff00|Hachievement:653:Player-1305-0A0182E1:1:10:6:18:4294967295:4294967295:4294967295:4294967295|h[Sethekk Halls]|h|r!", -- [1]
+			"Mumínballe-Kazzak", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Gladwin", -- [5]
+			"Mumínballe", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			296, -- [11]
-			"Player-1305-0A0A1F03", -- [12]
+			2817, -- [11]
+			"Player-1305-0A0182E1", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff48cbaGladwin|r",
-			[51] = 1538333792,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cff0070ddMumínballe|r",
+			[51] = 1538827217,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [81]
 		{
-			"we must respect necro", -- [1]
+			"we should cc", -- [1]
 			"Gladwin-Kazzak", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1827,7 +1816,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			297, -- [11]
+			2828, -- [11]
 			"Player-1305-0A0A1F03", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1835,55 +1824,33 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfff48cbaGladwin|r",
-			[51] = 1538333796,
+			[51] = 1538827291,
 			[50] = "CHAT_MSG_PARTY",
 		}, -- [82]
 		{
-			"if you get 35+ stacks you are almost unhealable", -- [1]
-			"Gladwin-Kazzak", -- [2]
+			"someone rep-mount?", -- [1]
+			"Adelie-Wrathbringer", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Gladwin", -- [5]
+			"Adelie-Wrathbringer", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			299, -- [11]
-			"Player-1305-0A0A1F03", -- [12]
+			2830, -- [11]
+			"Player-578-082398C9", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff48cbaGladwin|r",
-			[51] = 1538333812,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cff8787edAdelie-Wrathbringer|r",
+			[51] = 1538827312,
+			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [83]
 		{
-			"ok cool", -- [1]
-			"Qwixx-Bloodhoof", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Qwixx-Bloodhoof", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			301, -- [11]
-			"Player-1080-07E8180C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aQwixx-Bloodhoof|r",
-			[51] = 1538333825,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [84]
-		{
-			"cool indeed", -- [1]
+			"not me", -- [1]
 			"Gladwin-Kazzak", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -1893,7 +1860,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			302, -- [11]
+			2831, -- [11]
 			"Player-1305-0A0A1F03", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1901,319 +1868,341 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfff48cbaGladwin|r",
-			[51] = 1538333832,
+			[51] = 1538827324,
+			[50] = "CHAT_MSG_PARTY",
+		}, -- [84]
+		{
+			"where can you mount", -- [1]
+			"Canubizka-Thunderhorn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Canubizka-Thunderhorn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2832, -- [11]
+			"Player-1313-0998DE48", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa330c9Canubizka-Thunderhorn|r",
+			[51] = 1538827330,
 			[50] = "CHAT_MSG_PARTY",
 		}, -- [85]
 		{
-			"well thanx for the run :D", -- [1]
-			"Qwixx-Bloodhoof", -- [2]
+			"outside", -- [1]
+			"Gladwin-Kazzak", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Qwixx-Bloodhoof", -- [5]
+			"Gladwin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			324, -- [11]
-			"Player-1080-07E8180C", -- [12]
+			2833, -- [11]
+			"Player-1305-0A0A1F03", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffff7c0aQwixx-Bloodhoof|r",
-			[51] = 1538334115,
-			[50] = "CHAT_MSG_PARTY_LEADER",
+			[52] = "|cfff48cbaGladwin|r",
+			[51] = 1538827336,
+			[50] = "CHAT_MSG_PARTY",
 		}, -- [86]
 		{
-			":/", -- [1]
-			"Gladwin-Kazzak", -- [2]
+			"good point", -- [1]
+			"Adelie-Wrathbringer", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Gladwin", -- [5]
+			"Adelie-Wrathbringer", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			329, -- [11]
-			"Player-1305-0A0A1F03", -- [12]
+			2834, -- [11]
+			"Player-578-082398C9", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff48cbaGladwin|r",
-			[51] = 1538334122,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cff8787edAdelie-Wrathbringer|r",
+			[51] = 1538827338,
+			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [87]
 		{
-			"Hey, are you Mollox, GM of lucid dream? :)", -- [1]
-			"Mollocks", -- [2]
+			"ill mount when we die next time\\", -- [1]
+			"Canubizka-Thunderhorn", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Mollocks", -- [5]
+			"Canubizka-Thunderhorn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			64, -- [11]
-			"Player-1305-0989DC48", -- [12]
+			2835, -- [11]
+			"Player-1313-0998DE48", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8787edMollocks|r",
-			[51] = 1538368370,
-			[50] = "CHAT_MSG_WHISPER_INFORM",
+			[52] = "|cffa330c9Canubizka-Thunderhorn|r",
+			[51] = 1538827349,
+			[50] = "CHAT_MSG_PARTY",
 		}, -- [88]
 		{
-			"That's me", -- [1]
-			"Mollocks-Kazzak", -- [2]
+			"we could place a stone and let you hs", -- [1]
+			"Gladwin-Kazzak", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Mollocks", -- [5]
+			"Gladwin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			65, -- [11]
-			"Player-1305-0989DC48", -- [12]
+			2836, -- [11]
+			"Player-1305-0A0A1F03", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8787edMollocks|r",
-			[51] = 1538368382,
-			[50] = "CHAT_MSG_WHISPER",
+			[52] = "|cfff48cbaGladwin|r",
+			[51] = 1538827350,
+			[50] = "CHAT_MSG_PARTY",
 		}, -- [89]
 		{
-			"Saw your page on wowprogress and I am interested. ", -- [1]
-			"Mollocks-Kazzak", -- [2]
+			"yeah, let's", -- [1]
+			"Adelie-Wrathbringer", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Mollocks", -- [5]
+			"Adelie-Wrathbringer", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			66, -- [11]
-			"Player-1305-0989DC48", -- [12]
+			2837, -- [11]
+			"Player-578-082398C9", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8787edMollocks|r",
-			[51] = 1538368439,
-			[50] = "CHAT_MSG_WHISPER_INFORM",
+			[52] = "|cff8787edAdelie-Wrathbringer|r",
+			[51] = 1538827357,
+			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [90]
 		{
-			"Ahhhh well hello friend, what role are you interested in joining up with?", -- [1]
-			"Mollocks-Kazzak", -- [2]
+			"are you red?", -- [1]
+			"Gladwin-Kazzak", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Mollocks", -- [5]
+			"Gladwin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			67, -- [11]
-			"Player-1305-0989DC48", -- [12]
+			2838, -- [11]
+			"Player-1305-0A0A1F03", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8787edMollocks|r",
-			[51] = 1538368481,
-			[50] = "CHAT_MSG_WHISPER",
+			[52] = "|cfff48cbaGladwin|r",
+			[51] = 1538827366,
+			[50] = "CHAT_MSG_PARTY",
 		}, -- [91]
 		{
-			"Holy paladin ", -- [1]
-			"Mollocks-Kazzak", -- [2]
+			"i cant cc theyre undead", -- [1]
+			"Canubizka-Thunderhorn", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Mollocks", -- [5]
+			"Canubizka-Thunderhorn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			68, -- [11]
-			"Player-1305-0989DC48", -- [12]
+			2839, -- [11]
+			"Player-1313-0998DE48", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8787edMollocks|r",
-			[51] = 1538368489,
-			[50] = "CHAT_MSG_WHISPER_INFORM",
+			[52] = "|cffa330c9Canubizka-Thunderhorn|r",
+			[51] = 1538827371,
+			[50] = "CHAT_MSG_PARTY",
 		}, -- [92]
 		{
-			"Our healing team is a bit full atm, would you mind playing in a rotation capacity?", -- [1]
-			"Mollocks-Kazzak", -- [2]
+			"only boots", -- [1]
+			"Adelie-Wrathbringer", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Mollocks", -- [5]
+			"Adelie-Wrathbringer", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			69, -- [11]
-			"Player-1305-0989DC48", -- [12]
+			2840, -- [11]
+			"Player-578-082398C9", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8787edMollocks|r",
-			[51] = 1538368550,
-			[50] = "CHAT_MSG_WHISPER",
+			[52] = "|cff8787edAdelie-Wrathbringer|r",
+			[51] = 1538827371,
+			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [93]
 		{
-			"That would be ok :) Could also play offspec/mage if you need that ", -- [1]
-			"Mollocks-Kazzak", -- [2]
+			"ah right", -- [1]
+			"Gladwin-Kazzak", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Mollocks", -- [5]
+			"Gladwin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			72, -- [11]
-			"Player-1305-0989DC48", -- [12]
+			2843, -- [11]
+			"Player-1305-0A0A1F03", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8787edMollocks|r",
-			[51] = 1538368597,
-			[50] = "CHAT_MSG_WHISPER_INFORM",
+			[52] = "|cfff48cbaGladwin|r",
+			[51] = 1538827388,
+			[50] = "CHAT_MSG_PARTY",
 		}, -- [94]
 		{
-			"Can work as well, just a headsup we do all the applications on our guild site atm, if you want to sign up please fill in an application and I'll look through it ", -- [1]
-			"Mollocks-Kazzak", -- [2]
+			"I should have respecced before instance", -- [1]
+			"Gladwin-Kazzak", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Mollocks", -- [5]
+			"Gladwin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			73, -- [11]
-			"Player-1305-0989DC48", -- [12]
+			2844, -- [11]
+			"Player-1305-0A0A1F03", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8787edMollocks|r",
-			[51] = 1538368636,
-			[50] = "CHAT_MSG_WHISPER",
+			[52] = "|cfff48cbaGladwin|r",
+			[51] = 1538827397,
+			[50] = "CHAT_MSG_PARTY",
 		}, -- [95]
 		{
-			"lucid-dream-eu.com", -- [1]
-			"Mollocks-Kazzak", -- [2]
+			"yeah", -- [1]
+			"Canubizka-Thunderhorn", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Mollocks", -- [5]
+			"Canubizka-Thunderhorn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			74, -- [11]
-			"Player-1305-0989DC48", -- [12]
+			2845, -- [11]
+			"Player-1313-0998DE48", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8787edMollocks|r",
-			[51] = 1538368640,
-			[50] = "CHAT_MSG_WHISPER",
+			[52] = "|cffa330c9Canubizka-Thunderhorn|r",
+			[51] = 1538827403,
+			[50] = "CHAT_MSG_PARTY",
 		}, -- [96]
 		{
-			"Cool, will do it this evening. ", -- [1]
-			"Mollocks-Kazzak", -- [2]
+			"we can fear or something", -- [1]
+			"Canubizka-Thunderhorn", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Mollocks", -- [5]
+			"Canubizka-Thunderhorn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			75, -- [11]
-			"Player-1305-0989DC48", -- [12]
+			2846, -- [11]
+			"Player-1313-0998DE48", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8787edMollocks|r",
-			[51] = 1538368717,
-			[50] = "CHAT_MSG_WHISPER_INFORM",
+			[52] = "|cffa330c9Canubizka-Thunderhorn|r",
+			[51] = 1538827425,
+			[50] = "CHAT_MSG_PARTY",
 		}, -- [97]
 		{
-			"Awesome :D", -- [1]
-			"Mollocks-Kazzak", -- [2]
-			"", -- [3]
+			"Interrompu |cff71d5ff|Hspell:270493:0|h[Trait du spectre]|h|r sur Prêtre maléficieur spectral", -- [1]
+			"Kyma-Cho’gall", -- [2]
+			"Orcish", -- [3]
 			"", -- [4]
-			"Mollocks", -- [5]
+			"Kyma-Cho’gall", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			76, -- [11]
-			"Player-1305-0989DC48", -- [12]
+			2856, -- [11]
+			"Player-1336-06720F1B", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8787edMollocks|r",
-			[51] = 1538368723,
-			[50] = "CHAT_MSG_WHISPER",
+			[52] = "|cfff48cbaKyma-Cho’gall|r",
+			[51] = 1538827670,
+			[50] = "CHAT_MSG_SAY",
 		}, -- [98]
 		{
-			"If you want you can join up as a social in the meantime", -- [1]
-			"Mollocks-Kazzak", -- [2]
+			"drinking", -- [1]
+			"Gladwin-Kazzak", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Mollocks", -- [5]
+			"Gladwin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			78, -- [11]
-			"Player-1305-0989DC48", -- [12]
+			2857, -- [11]
+			"Player-1305-0A0A1F03", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8787edMollocks|r",
-			[51] = 1538368730,
-			[50] = "CHAT_MSG_WHISPER",
+			[52] = "|cfff48cbaGladwin|r",
+			[51] = 1538827707,
+			[50] = "CHAT_MSG_PARTY",
 		}, -- [99]
 		{
-			"You'd be welcome to our farm runs like that on Mondays as well", -- [1]
+			"%s has earned the achievement |cffffff00|Hachievement:12848:Player-1305-0989DC48:1:10:6:18:4294967295:4294967295:4294967295:4294967295|h[Kings' Rest]|h|r!", -- [1]
 			"Mollocks-Kazzak", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -2223,7 +2212,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			79, -- [11]
+			2858, -- [11]
 			"Player-1305-0989DC48", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -2231,79 +2220,79 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff8787edMollocks|r",
-			[51] = 1538368739,
-			[50] = "CHAT_MSG_WHISPER",
+			[51] = 1538827713,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [100]
 		{
-			"Sure, Ill join tonight tho. Have to go to work!", -- [1]
-			"Mollocks-Kazzak", -- [2]
-			"", -- [3]
+			"Interrompu |cff71d5ff|Hspell:270493:0|h[Trait du spectre]|h|r sur Prêtre maléficieur spectral", -- [1]
+			"Kyma-Cho’gall", -- [2]
+			"Orcish", -- [3]
 			"", -- [4]
-			"Mollocks", -- [5]
+			"Kyma-Cho’gall", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			83, -- [11]
-			"Player-1305-0989DC48", -- [12]
+			2860, -- [11]
+			"Player-1336-06720F1B", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8787edMollocks|r",
-			[51] = 1538368797,
-			[50] = "CHAT_MSG_WHISPER_INFORM",
+			[52] = "|cfff48cbaKyma-Cho’gall|r",
+			[51] = 1538827721,
+			[50] = "CHAT_MSG_SAY",
 		}, -- [101]
 		{
-			"<Deadly Boss Mods> Mollocks is busy fighting against Normal - Cragmaw the Infested (85%, 5/5 people alive)", -- [1]
-			"Mollocks-Kazzak", -- [2]
+			"%s has earned the achievement |cffffff00|Hachievement:229:Player-1305-0A0C3D3B:1:10:6:18:4294967295:4294967295:4294967295:4294967295|h[The Grim Reaper]|h|r!", -- [1]
+			"Hardmän-Kazzak", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Mollocks", -- [5]
+			"Hardmän", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			84, -- [11]
-			"Player-1305-0989DC48", -- [12]
+			2864, -- [11]
+			"Player-1305-0A0C3D3B", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8787edMollocks|r",
-			[51] = 1538368797,
-			[50] = "CHAT_MSG_WHISPER",
+			[52] = "|cffc69b6dHardmän|r",
+			[51] = 1538827731,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [102]
 		{
-			"Cya :)", -- [1]
-			"Mollocks-Kazzak", -- [2]
+			"now im read", -- [1]
+			"Adelie-Wrathbringer", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Mollocks", -- [5]
+			"Adelie-Wrathbringer", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			86, -- [11]
-			"Player-1305-0989DC48", -- [12]
+			2869, -- [11]
+			"Player-578-082398C9", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8787edMollocks|r",
-			[51] = 1538368808,
-			[50] = "CHAT_MSG_WHISPER",
+			[52] = "|cff8787edAdelie-Wrathbringer|r",
+			[51] = 1538827768,
+			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [103]
 		{
-			"Cannon Barrage on Gladwin", -- [1]
+			"throw up a stone", -- [1]
 			"Gladwin-Kazzak", -- [2]
-			"Orcish", -- [3]
+			"", -- [3]
 			"", -- [4]
 			"Gladwin", -- [5]
 			"", -- [6]
@@ -2311,7 +2300,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			43, -- [11]
+			2870, -- [11]
 			"Player-1305-0A0A1F03", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -2319,35 +2308,35 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfff48cbaGladwin|r",
-			[51] = 1538417939,
-			[50] = "CHAT_MSG_SAY",
+			[51] = 1538827779,
+			[50] = "CHAT_MSG_PARTY",
 		}, -- [104]
 		{
-			"Cannon Barrage on Gladwin", -- [1]
-			"Gladwin-Kazzak", -- [2]
-			"Orcish", -- [3]
+			"you can use this to port me back, right?", -- [1]
+			"Adelie-Wrathbringer", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Gladwin", -- [5]
+			"Adelie-Wrathbringer", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			49, -- [11]
-			"Player-1305-0A0A1F03", -- [12]
+			2871, -- [11]
+			"Player-578-082398C9", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff48cbaGladwin|r",
-			[51] = 1538417957,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cff8787edAdelie-Wrathbringer|r",
+			[51] = 1538827789,
+			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [105]
 		{
-			"Cannon Barrage on Gladwin", -- [1]
+			"yes", -- [1]
 			"Gladwin-Kazzak", -- [2]
-			"Orcish", -- [3]
+			"", -- [3]
 			"", -- [4]
 			"Gladwin", -- [5]
 			"", -- [6]
@@ -2355,7 +2344,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			56, -- [11]
+			2872, -- [11]
 			"Player-1305-0A0A1F03", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -2363,277 +2352,277 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfff48cbaGladwin|r",
-			[51] = 1538417984,
-			[50] = "CHAT_MSG_SAY",
+			[51] = 1538827795,
+			[50] = "CHAT_MSG_PARTY",
 		}, -- [106]
 		{
-			"Cannon Barrage on Lezle", -- [1]
-			"Lezle-Kazzak", -- [2]
-			"Orcish", -- [3]
+			"ty", -- [1]
+			"Adelie-Wrathbringer", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Lezle", -- [5]
+			"Adelie-Wrathbringer", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			61, -- [11]
-			"Player-1305-09F89C92", -- [12]
+			2875, -- [11]
+			"Player-578-082398C9", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa330c9Lezle|r",
-			[51] = 1538418023,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cff8787edAdelie-Wrathbringer|r",
+			[51] = 1538827892,
+			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [107]
 		{
-			"Cannon Barrage on Gladwin", -- [1]
-			"Gladwin-Kazzak", -- [2]
-			"Orcish", -- [3]
+			"i'm at the start? :O ", -- [1]
+			"Adelie-Wrathbringer", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Gladwin", -- [5]
+			"Adelie-Wrathbringer", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			62, -- [11]
-			"Player-1305-0A0A1F03", -- [12]
+			2876, -- [11]
+			"Player-578-082398C9", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff48cbaGladwin|r",
-			[51] = 1538418023,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cff8787edAdelie-Wrathbringer|r",
+			[51] = 1538827901,
+			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [108]
 		{
-			"Cannon Barrage on Emerentia", -- [1]
-			"Emerentia-Kazzak", -- [2]
-			"Orcish", -- [3]
+			"ppl used this to skip maybe", -- [1]
+			"Canubizka-Thunderhorn", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Emerentia", -- [5]
+			"Canubizka-Thunderhorn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			63, -- [11]
-			"Player-1305-09F0D669", -- [12]
+			2877, -- [11]
+			"Player-1313-0998DE48", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3fc6eaEmerentia|r",
-			[51] = 1538418023,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffa330c9Canubizka-Thunderhorn|r",
+			[51] = 1538827942,
+			[50] = "CHAT_MSG_PARTY",
 		}, -- [109]
 		{
-			"Cannon Barrage on Gladwin", -- [1]
-			"Gladwin-Kazzak", -- [2]
-			"Orcish", -- [3]
+			"take the fly .....", -- [1]
+			"Kyma-Cho’gall", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Gladwin", -- [5]
+			"Kyma-Cho’gall", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			70, -- [11]
-			"Player-1305-0A0A1F03", -- [12]
+			2878, -- [11]
+			"Player-1336-06720F1B", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff48cbaGladwin|r",
-			[51] = 1538418041,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cfff48cbaKyma-Cho’gall|r",
+			[51] = 1538827942,
+			[50] = "CHAT_MSG_PARTY",
 		}, -- [110]
 		{
-			"Cannon Barrage on Lezle", -- [1]
-			"Lezle-Kazzak", -- [2]
-			"Orcish", -- [3]
+			"ty", -- [1]
+			"Adelie-Wrathbringer", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Lezle", -- [5]
+			"Adelie-Wrathbringer", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			78, -- [11]
-			"Player-1305-09F89C92", -- [12]
+			2888, -- [11]
+			"Player-578-082398C9", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa330c9Lezle|r",
-			[51] = 1538418231,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cff8787edAdelie-Wrathbringer|r",
+			[51] = 1538828035,
+			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [111]
 		{
-			"Fixate on Emerentia", -- [1]
-			"Emerentia-Kazzak", -- [2]
+			"Interrompu |cff71d5ff|Hspell:270493:0|h[Trait du spectre]|h|r sur Prêtre maléficieur spectral", -- [1]
+			"Kyma-Cho’gall", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Emerentia", -- [5]
+			"Kyma-Cho’gall", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			81, -- [11]
-			"Player-1305-09F0D669", -- [12]
+			2891, -- [11]
+			"Player-1336-06720F1B", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3fc6eaEmerentia|r",
-			[51] = 1538418248,
+			[52] = "|cfff48cbaKyma-Cho’gall|r",
+			[51] = 1538828037,
 			[50] = "CHAT_MSG_SAY",
 		}, -- [112]
 		{
-			"Cannon Barrage on Emerentia", -- [1]
-			"Emerentia-Kazzak", -- [2]
+			"Interrompu |cff71d5ff|Hspell:270493:0|h[Trait du spectre]|h|r sur Prêtre maléficieur spectral", -- [1]
+			"Kyma-Cho’gall", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Emerentia", -- [5]
+			"Kyma-Cho’gall", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			83, -- [11]
-			"Player-1305-09F0D669", -- [12]
+			2903, -- [11]
+			"Player-1336-06720F1B", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3fc6eaEmerentia|r",
-			[51] = 1538418249,
+			[52] = "|cfff48cbaKyma-Cho’gall|r",
+			[51] = 1538828063,
 			[50] = "CHAT_MSG_SAY",
 		}, -- [113]
 		{
-			"Cannon Barrage on Gladwin", -- [1]
-			"Gladwin-Kazzak", -- [2]
-			"Orcish", -- [3]
+			"*sigh*", -- [1]
+			"Adelie-Wrathbringer", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Gladwin", -- [5]
+			"Adelie-Wrathbringer", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			86, -- [11]
-			"Player-1305-0A0A1F03", -- [12]
+			2926, -- [11]
+			"Player-578-082398C9", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff48cbaGladwin|r",
-			[51] = 1538418270,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cff8787edAdelie-Wrathbringer|r",
+			[51] = 1538828148,
+			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [114]
 		{
-			"Cannon Barrage on Gladwin", -- [1]
-			"Gladwin-Kazzak", -- [2]
-			"Orcish", -- [3]
+			"these people, why not just finish it", -- [1]
+			"Adelie-Wrathbringer", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Gladwin", -- [5]
+			"Adelie-Wrathbringer", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			90, -- [11]
-			"Player-1305-0A0A1F03", -- [12]
+			2939, -- [11]
+			"Player-578-082398C9", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff48cbaGladwin|r",
-			[51] = 1538418299,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cff8787edAdelie-Wrathbringer|r",
+			[51] = 1538828160,
+			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [115]
 		{
-			"Cannon Barrage on Lezle", -- [1]
-			"Lezle-Kazzak", -- [2]
-			"Orcish", -- [3]
+			"care to do this on +7=", -- [1]
+			"Adelie-Wrathbringer", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Lezle", -- [5]
+			"Adelie-Wrathbringer", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			91, -- [11]
-			"Player-1305-09F89C92", -- [12]
+			2964, -- [11]
+			"Player-578-082398C9", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa330c9Lezle|r",
-			[51] = 1538418299,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cff8787edAdelie-Wrathbringer|r",
+			[51] = 1538828196,
+			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [116]
 		{
-			"Cannon Barrage on Emerentia", -- [1]
-			"Emerentia-Kazzak", -- [2]
-			"Orcish", -- [3]
+			"?", -- [1]
+			"Adelie-Wrathbringer", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Emerentia", -- [5]
+			"Adelie-Wrathbringer", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			92, -- [11]
-			"Player-1305-09F0D669", -- [12]
+			2965, -- [11]
+			"Player-578-082398C9", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3fc6eaEmerentia|r",
-			[51] = 1538418299,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cff8787edAdelie-Wrathbringer|r",
+			[51] = 1538828198,
+			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [117]
 		{
-			"Cannon Barrage on Emerentia", -- [1]
-			"Emerentia-Kazzak", -- [2]
-			"Orcish", -- [3]
+			"i'd queue again", -- [1]
+			"Adelie-Wrathbringer", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Emerentia", -- [5]
+			"Adelie-Wrathbringer", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			95, -- [11]
-			"Player-1305-09F0D669", -- [12]
+			2969, -- [11]
+			"Player-578-082398C9", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3fc6eaEmerentia|r",
-			[51] = 1538418317,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cff8787edAdelie-Wrathbringer|r",
+			[51] = 1538828202,
+			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [118]
 		{
-			"Cannon Barrage on Gladwin", -- [1]
+			"nah im out", -- [1]
 			"Gladwin-Kazzak", -- [2]
-			"Orcish", -- [3]
+			"", -- [3]
 			"", -- [4]
 			"Gladwin", -- [5]
 			"", -- [6]
@@ -2641,7 +2630,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			96, -- [11]
+			3003, -- [11]
 			"Player-1305-0A0A1F03", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -2649,184 +2638,184 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cfff48cbaGladwin|r",
-			[51] = 1538418317,
-			[50] = "CHAT_MSG_SAY",
+			[51] = 1538828247,
+			[50] = "CHAT_MSG_PARTY",
 		}, -- [119]
 		{
-			"Cannon Barrage on Lezle", -- [1]
-			"Lezle-Kazzak", -- [2]
-			"Orcish", -- [3]
+			"sry", -- [1]
+			"Gladwin-Kazzak", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Lezle", -- [5]
+			"Gladwin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			97, -- [11]
-			"Player-1305-09F89C92", -- [12]
+			3004, -- [11]
+			"Player-1305-0A0A1F03", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa330c9Lezle|r",
-			[51] = 1538418317,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cfff48cbaGladwin|r",
+			[51] = 1538828248,
+			[50] = "CHAT_MSG_PARTY",
 		}, -- [120]
 		{
-			"Cannon Barrage on Emerentia", -- [1]
-			"Emerentia-Kazzak", -- [2]
-			"Orcish", -- [3]
+			"%s has earned the achievement |cffffff00|Hachievement:12504:Player-1305-0A0FA82F:1:10:6:18:4294967295:4294967295:4294967295:4294967295|h[The Temple of Sethraliss]|h|r!", -- [1]
+			"Nayfi-Kazzak", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Emerentia", -- [5]
+			"Nayfi", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			101, -- [11]
-			"Player-1305-09F0D669", -- [12]
+			3026, -- [11]
+			"Player-1305-0A0FA82F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3fc6eaEmerentia|r",
-			[51] = 1538418342,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffffffffNayfi|r",
+			[51] = 1538828279,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [121]
 		{
-			"Cannon Barrage on Gladwin", -- [1]
-			"Gladwin-Kazzak", -- [2]
-			"Orcish", -- [3]
+			"Any DPS wanna do some 3s?", -- [1]
+			"Mollocks-Kazzak", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Gladwin", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			102, -- [11]
-			"Player-1305-0A0A1F03", -- [12]
+			3041, -- [11]
+			"Player-1305-0989DC48", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff48cbaGladwin|r",
-			[51] = 1538418342,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cff8787edMollocks|r",
+			[51] = 1538828307,
+			[50] = "CHAT_MSG_GUILD",
 		}, -- [122]
 		{
-			"Cannon Barrage on Lezle", -- [1]
-			"Lezle-Kazzak", -- [2]
-			"Orcish", -- [3]
+			"rated?", -- [1]
+			"Hajrii-Kazzak", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Lezle", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			103, -- [11]
-			"Player-1305-09F89C92", -- [12]
+			3054, -- [11]
+			"Player-1305-09C70DB1", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa330c9Lezle|r",
-			[51] = 1538418342,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffc69b6dHajrii|r",
+			[51] = 1538828324,
+			[50] = "CHAT_MSG_GUILD",
 		}, -- [123]
 		{
-			"Cannon Barrage on Gladwin", -- [1]
-			"Gladwin-Kazzak", -- [2]
-			"Orcish", -- [3]
+			"Mhm", -- [1]
+			"Mollocks-Kazzak", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Gladwin", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			108, -- [11]
-			"Player-1305-0A0A1F03", -- [12]
+			3056, -- [11]
+			"Player-1305-0989DC48", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff48cbaGladwin|r",
-			[51] = 1538418373,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cff8787edMollocks|r",
+			[51] = 1538828329,
+			[50] = "CHAT_MSG_GUILD",
 		}, -- [124]
 		{
-			"Cannon Barrage on Emerentia", -- [1]
-			"Emerentia-Kazzak", -- [2]
-			"Orcish", -- [3]
+			"yeah sure in a bit, gotta go say hi to the fam real quick", -- [1]
+			"Hajrii-Kazzak", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Emerentia", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			109, -- [11]
-			"Player-1305-09F0D669", -- [12]
+			3066, -- [11]
+			"Player-1305-09C70DB1", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3fc6eaEmerentia|r",
-			[51] = 1538418373,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffc69b6dHajrii|r",
+			[51] = 1538828346,
+			[50] = "CHAT_MSG_GUILD",
 		}, -- [125]
 		{
-			"Cannon Barrage on Lezle", -- [1]
-			"Lezle-Kazzak", -- [2]
-			"Orcish", -- [3]
+			"%s has earned the achievement |cffffff00|Hachievement:3776:Player-1305-062B648D:1:10:6:18:4294967295:4294967295:4294967295:4294967295|h[Isle of Conquest Victory]|h|r!", -- [1]
+			"Stefmeister-Kazzak", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Lezle", -- [5]
+			"Stefmeister", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			110, -- [11]
-			"Player-1305-09F89C92", -- [12]
+			3095, -- [11]
+			"Player-1305-062B648D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa330c9Lezle|r",
-			[51] = 1538418373,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cfffff468Stefmeister|r",
+			[51] = 1538828394,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [126]
 		{
-			"Fixate on Emerentia", -- [1]
-			"Emerentia-Kazzak", -- [2]
-			"Orcish", -- [3]
+			"%s has earned the achievement |cffffff00|Hachievement:12546:Player-1305-075EE5B4:1:10:7:18:4294967295:4294967295:4294967295:4294967295|h[Superior]|h|r!", -- [1]
+			"Skelzor-Kazzak", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Emerentia", -- [5]
+			"Skelzor", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			112, -- [11]
-			"Player-1305-09F0D669", -- [12]
+			41, -- [11]
+			"Player-1305-075EE5B4", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3fc6eaEmerentia|r",
-			[51] = 1538418384,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cfffff468Skelzor|r",
+			[51] = 1538891261,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [127]
 	},
 }

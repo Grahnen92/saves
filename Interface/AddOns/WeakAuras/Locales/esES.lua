@@ -64,6 +64,8 @@ L["%s total auras"] = "%s total auras"
 L["%s Trigger Function"] = "%s Trigger Function"
 --[[Translation missing --]]
 L["%s Untrigger Function"] = "%s Untrigger Function"
+--[[Translation missing --]]
+L["|cff9900ffWeakAuras EXPERIMENTAL Profiling Data:|r"] = "|cff9900ffWeakAuras EXPERIMENTAL Profiling Data:|r"
 L["<"] = "<"
 L["<="] = "<="
 L["="] = "="
@@ -124,6 +126,8 @@ L["Attach to End"] = "Attach to End"
 --[[Translation missing --]]
 L["Attach to Start"] = "Attach to Start"
 L["Attackable"] = "Atacable"
+--[[Translation missing --]]
+L["Attackable Target"] = "Attackable Target"
 L["Aura"] = "Aura"
 L["Aura Applied"] = "Aura Aplicada"
 L["Aura Applied Dose"] = "Aura Aplicada Dosis"
@@ -322,8 +326,6 @@ L["Evade"] = "Evadir"
 L["Event"] = "Evento"
 L["Event(s)"] = "Evento(s)"
 L["Every Frame"] = "Cada Uno de los Marcos"
---[[Translation missing --]]
-L["EXPERIMENTAL Profiling Data:"] = "EXPERIMENTAL Profiling Data:"
 --[[Translation missing --]]
 L["Extend Outside"] = "Extend Outside"
 L["Extra Amount"] = "Cantidad Adicional"
@@ -840,6 +842,8 @@ L["Swing Timer"] = "Temporizador de Golpes"
 L["System"] = "System"
 --[[Translation missing --]]
 L["Tabard"] = "Tabard"
+--[[Translation missing --]]
+L["Talent Selected"] = "Talent Selected"
 L["Talent selected"] = "Talento seleccionado"
 L["Talent Specialization"] = "Especialización de Talentos"
 L["Tank"] = "Tanque"
