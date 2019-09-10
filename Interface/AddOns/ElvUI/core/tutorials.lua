@@ -1,16 +1,13 @@
 local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
+local Skins = E:GetModule('Skins')
 
---Cache global variables
 --Lua functions
 local _G = _G
-
 --WoW API / Variables
 local CreateFrame = CreateFrame
 local DISABLE = DISABLE
 local HIDE = HIDE
-
---Global variables that we don't cache, list them here for the mikk's Find Globals script
--- GLOBALS: UIParent, ElvUITutorialWindow
+-- GLOBALS: ElvUITutorialWindow
 
 E.TutorialList = {
 	L["For technical support visit us at http://www.tukui.org."],
@@ -51,7 +48,7 @@ function E:SetPrevTutorial()
 end
 
 function E:SpawnTutorialFrame()
-	local f = CreateFrame("Frame", "ElvUITutorialWindow", UIParent)
+	local f = CreateFrame("Frame", "ElvUITutorialWindow", E.UIParent)
 	f:SetFrameStrata("DIALOG")
 	f:SetToplevel(true)
 	f:SetClampedToScreen(true)
@@ -60,10 +57,8 @@ function E:SpawnTutorialFrame()
 	f:SetTemplate('Transparent')
 	f:Hide()
 
-	local S = E:GetModule('Skins')
-
 	local header = CreateFrame('Button', nil, f)
-	header:SetTemplate('Default', true)
+	header:SetTemplate(nil, true)
 	header:Width(120); header:Height(25)
 	header:Point("CENTER", f, 'TOP')
 	header:SetFrameLevel(header:GetFrameLevel() + 2)
@@ -84,28 +79,28 @@ function E:SpawnTutorialFrame()
 	f.disableButton = CreateFrame("CheckButton", f:GetName()..'DisableButton', f, "OptionsCheckButtonTemplate")
 	_G[f.disableButton:GetName() .. "Text"]:SetText(DISABLE)
 	f.disableButton:Point("BOTTOMLEFT")
-	S:HandleCheckBox(f.disableButton)
+	Skins:HandleCheckBox(f.disableButton)
 	f.disableButton:SetScript("OnShow", function(self) self:SetChecked(E.db.hideTutorial) end)
 
 	f.disableButton:SetScript("OnClick", function(self) E.db.hideTutorial = self:GetChecked() end)
 
 	f.hideButton = CreateFrame("Button", f:GetName()..'HideButton', f, "OptionsButtonTemplate")
 	f.hideButton:Point("BOTTOMRIGHT", -5, 5)
-	S:HandleButton(f.hideButton)
+	Skins:HandleButton(f.hideButton)
 	_G[f.hideButton:GetName() .. "Text"]:SetText(HIDE)
 	f.hideButton:SetScript("OnClick", function(self) E:StaticPopupSpecial_Hide(self:GetParent()) end)
 
 	f.nextButton = CreateFrame("Button", f:GetName()..'NextButton', f, "OptionsButtonTemplate")
 	f.nextButton:Point("RIGHT", f.hideButton, 'LEFT', -4, 0)
 	f.nextButton:Width(20)
-	S:HandleButton(f.nextButton)
+	Skins:HandleButton(f.nextButton)
 	_G[f.nextButton:GetName() .. "Text"]:SetText('>')
 	f.nextButton:SetScript("OnClick", function() E:SetNextTutorial() end)
 
 	f.prevButton = CreateFrame("Button", f:GetName()..'PrevButton', f, "OptionsButtonTemplate")
 	f.prevButton:Point("RIGHT", f.nextButton, 'LEFT', -4, 0)
 	f.prevButton:Width(20)
-	S:HandleButton(f.prevButton)
+	Skins:HandleButton(f.prevButton)
 	_G[f.prevButton:GetName() .. "Text"]:SetText('<')
 	f.prevButton:SetScript("OnClick", function() E:SetPrevTutorial() end)
 

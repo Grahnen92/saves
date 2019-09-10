@@ -4,22 +4,19 @@ local _, ns = ...
 local ElvUF = ns.oUF
 assert(ElvUF, "ElvUI was unable to locate oUF.")
 
---Cache global variables
 --Lua functions
+local _G = _G
 --WoW API / Variables
 local CreateFrame = CreateFrame
 local GetInstanceInfo = GetInstanceInfo
 local InCombatLockdown = InCombatLockdown
-local IsInInstance = IsInInstance
 local RegisterStateDriver = RegisterStateDriver
 local UnregisterStateDriver = UnregisterStateDriver
-
---Global variables that we don't cache, list them here for mikk's FindGlobals script
--- GLOBALS: UnitFrame_OnEnter, UnitFrame_OnLeave, ElvUF_Raid
+-- GLOBALS: ElvUF_Raid
 
 function UF:Construct_RaidFrames()
-	self:SetScript('OnEnter', UnitFrame_OnEnter)
-	self:SetScript('OnLeave', UnitFrame_OnLeave)
+	self:SetScript('OnEnter', _G.UnitFrame_OnEnter)
+	self:SetScript('OnLeave', _G.UnitFrame_OnLeave)
 
 	self.RaisedElementParent = CreateFrame('Frame', nil, self)
 	self.RaisedElementParent.TextureParent = CreateFrame('Frame', nil, self.RaisedElementParent)
@@ -30,6 +27,8 @@ function UF:Construct_RaidFrames()
 	self.Power = UF:Construct_PowerBar(self, true, true, 'LEFT')
 	self.Power.frequentUpdates = false;
 
+	--self.PowerPrediction = UF:Construct_PowerPrediction(self)
+
 	self.Portrait3D = UF:Construct_Portrait(self, 'model')
 	self.Portrait2D = UF:Construct_Portrait(self, 'texture')
 
@@ -38,26 +37,21 @@ function UF:Construct_RaidFrames()
 	self.Debuffs = UF:Construct_Debuffs(self)
 	self.AuraWatch = UF:Construct_AuraWatch(self)
 	self.RaidDebuffs = UF:Construct_RaidDebuffs(self)
-	self.DebuffHighlight = UF:Construct_DebuffHighlight(self)
-	self.ResurrectIndicator = UF:Construct_ResurrectionIcon(self)
-	self.GroupRoleIndicator = UF:Construct_RoleIcon(self)
-	self.RaidRoleFramesAnchor = UF:Construct_RaidRoleFrames(self)
+	--self.DebuffHighlight = UF:Construct_DebuffHighlight(self)
 	self.MouseGlow = UF:Construct_MouseGlow(self)
-	self.PhaseIndicator = UF:Construct_PhaseIcon(self)
 	self.TargetGlow = UF:Construct_TargetGlow(self)
 
-	self.ThreatIndicator = UF:Construct_Threat(self)
 	self.RaidTargetIndicator = UF:Construct_RaidIcon(self)
 	self.ReadyCheckIndicator = UF:Construct_ReadyCheckIcon(self)
-	self.HealthPrediction = UF:Construct_HealComm(self)
-	self.Range = UF:Construct_Range(self)
+	--self.Fader = UF:Construct_Fader()
+	self.Cutaway = UF:Construct_Cutaway(self)
+
 	self.customTexts = {}
 	self.InfoPanel = UF:Construct_InfoPanel(self)
 
+	self.unitframeType = "raid"
 	UF:Update_StatusBars()
 	UF:Update_FontStrings()
-
-	self.unitframeType = "raid"
 
 	return self
 end
@@ -72,12 +66,10 @@ function UF:RaidSmartVisibility(event)
 
 	if not InCombatLockdown() then
 		self.isInstanceForced = nil
-		local inInstance, instanceType = IsInInstance()
-		if(inInstance and (instanceType == 'raid' or instanceType == 'pvp')) then
-			local _, _, _, _, maxPlayers, _, _, instanceMapID = GetInstanceInfo()
-
-			if UF.instanceMapIDs[instanceMapID] then
-				maxPlayers = UF.instanceMapIDs[instanceMapID]
+		local _, instanceType, _, _, maxPlayers, _, _, instanceID = GetInstanceInfo()
+		if instanceType == 'raid' or instanceType == 'pvp' then
+			if UF.instanceMapIDs[instanceID] then
+				maxPlayers = UF.instanceMapIDs[instanceID]
 			end
 
 			UnregisterStateDriver(self, "visibility")
@@ -116,11 +108,11 @@ function UF:Update_RaidHeader(header, db)
 		headerHolder:ClearAllPoints()
 		headerHolder:Point("BOTTOMLEFT", E.UIParent, "BOTTOMLEFT", 4, 195)
 
-		E:CreateMover(headerHolder, headerHolder:GetName()..'Mover', L["Raid Frames"], nil, nil, nil, 'ALL,RAID')
+		E:CreateMover(headerHolder, headerHolder:GetName()..'Mover', L["Raid Frames"], nil, nil, nil, 'ALL,RAID', nil, 'unitframe,raid,generalGroup')
 
 		headerHolder:RegisterEvent("PLAYER_ENTERING_WORLD")
 		headerHolder:RegisterEvent("ZONE_CHANGED_NEW_AREA")
-		headerHolder:SetScript("OnEvent", UF['RaidSmartVisibility'])
+		headerHolder:SetScript("OnEvent", UF.RaidSmartVisibility)
 		headerHolder.positioned = true;
 	end
 
@@ -186,11 +178,11 @@ function UF:Update_RaidFrames(frame, db)
 	--Power
 	UF:Configure_Power(frame)
 
+	-- Power Predicition
+	--UF:Configure_PowerPrediction(frame)
+
 	--Portrait
 	UF:Configure_Portrait(frame)
-
-	--Threat
-	UF:Configure_Threat(frame)
 
 	--Auras
 	UF:EnableDisable_Auras(frame)
@@ -203,23 +195,14 @@ function UF:Update_RaidFrames(frame, db)
 	--Raid Icon
 	UF:Configure_RaidIcon(frame)
 
-	-- Resurrect Icon
-	UF:Configure_ResurrectionIcon(frame)
-
 	--Debuff Highlight
-	UF:Configure_DebuffHighlight(frame)
-
-	--Role Icon
-	UF:Configure_RoleIcon(frame)
+	--UF:Configure_DebuffHighlight(frame)
 
 	--OverHealing
-	UF:Configure_HealComm(frame)
+	--UF:Configure_HealComm(frame)
 
-	--Raid Roles
-	UF:Configure_RaidRoleIcons(frame)
-
-	--Range
-	UF:Configure_Range(frame)
+	--Fader
+	--UF:Configure_Fader(frame)
 
 	--Buff Indicators
 	UF:UpdateAuraWatch(frame)
@@ -230,10 +213,10 @@ function UF:Update_RaidFrames(frame, db)
 	--CustomTexts
 	UF:Configure_CustomTexts(frame)
 
-	-- PhaseIndicator
-	UF:Configure_PhaseIcon(frame)
+	--Cutaway
+	UF:Configure_Cutaway(frame)
 
 	frame:UpdateAllElements("ElvUI_UpdateAllElements")
 end
 
-UF['headerstoload']['raid'] = true
+UF.headerstoload.raid = true

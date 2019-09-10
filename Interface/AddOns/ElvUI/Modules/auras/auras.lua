@@ -1,29 +1,23 @@
 local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
-local A = E:NewModule('Auras', 'AceHook-3.0', 'AceEvent-3.0');
-local LSM = LibStub("LibSharedMedia-3.0")
+local A = E:GetModule('Auras')
+local LSM = E.Libs.LSM
 
---Cache global variables
 --Lua functions
-local GetTime = GetTime
+local _G = _G
+local floor, format, tinsert = floor, format, tinsert
 local select, unpack = select, unpack
-local tinsert = table.insert
-local floor = math.floor
-local format = string.format
 --WoW API / Variables
 local CreateFrame = CreateFrame
-local RegisterStateDriver = RegisterStateDriver
-local RegisterAttributeDriver = RegisterAttributeDriver
-local GetWeaponEnchantInfo = GetWeaponEnchantInfo
-local UnitAura = UnitAura
-local GetItemQualityColor = GetItemQualityColor
 local GetInventoryItemQuality = GetInventoryItemQuality
 local GetInventoryItemTexture = GetInventoryItemTexture
+local GetItemQualityColor = GetItemQualityColor
+local GetTime = GetTime
+local GetWeaponEnchantInfo = GetWeaponEnchantInfo
+local RegisterAttributeDriver = RegisterAttributeDriver
+local RegisterStateDriver = RegisterStateDriver
+local UnitAura = UnitAura
 
---Global variables that we don't cache, list them here for mikk's FindGlobals script
--- GLOBALS: BuffFrame, TemporaryEnchantFrame, DebuffTypeColor, Minimap, MMHolder
--- GLOBALS: LeftMiniPanel, InterfaceOptionsFrameCategoriesButton12
-
-local Masque = LibStub("Masque", true)
+local Masque = E.Masque
 local MasqueGroupBuffs = Masque and Masque:Group("ElvUI", "Buffs")
 local MasqueGroupDebuffs = Masque and Masque:Group("ElvUI", "Debuffs")
 
@@ -90,7 +84,7 @@ function A:UpdateTime(elapsed)
 		end
 
 		self.timeLeft = nil
-		self.time:SetText("")
+		self.time:SetText('')
 		self:SetScript("OnUpdate", nil)
 	else
 		local timeColors, timeThreshold = (self.timerOptions and self.timerOptions.timeColors) or E.TimeColors, (self.timerOptions and self.timerOptions.timeThreshold) or E.db.cooldown.threshold
@@ -136,7 +130,7 @@ function A:CreateIcon(button)
 	button.time:Point("TOP", button, 'BOTTOM', 1 + self.db.timeXOffset, 0 + self.db.timeYOffset)
 
 	button.highlight = button:CreateTexture(nil, "HIGHLIGHT")
-	button.highlight:SetColorTexture(1, 1, 1, 0.45)
+	button.highlight:SetTexture(1, 1, 1, 0.45)
 	button.highlight:SetInside()
 
 	E:SetUpAnimGroup(button)
@@ -149,8 +143,8 @@ function A:CreateIcon(button)
 		button.CooldownOverride = 'auras'
 		button.isRegisteredCooldown = true
 
-		if not E.RegisteredCooldowns['auras'] then E.RegisteredCooldowns['auras'] = {} end
-		tinsert(E.RegisteredCooldowns['auras'], button)
+		if not E.RegisteredCooldowns.auras then E.RegisteredCooldowns.auras = {} end
+		tinsert(E.RegisteredCooldowns.auras, button)
 	end
 
 	if button.timerOptions and button.timerOptions.fontOptions and button.timerOptions.fontOptions.enable then
@@ -188,7 +182,7 @@ function A:CreateIcon(button)
 			end
 			MasqueGroupBuffs:ReSkin()
 		else
-			button:SetTemplate('Default')
+			button:SetTemplate()
 		end
 	elseif auraType == "HARMFUL" then
 		if MasqueGroupDebuffs and E.private.auras.masque.debuffs then
@@ -198,7 +192,7 @@ function A:CreateIcon(button)
 			end
 			MasqueGroupDebuffs:ReSkin()
 		else
-			button:SetTemplate('Default')
+			button:SetTemplate()
 		end
 	end
 end
@@ -222,18 +216,18 @@ function A:UpdateAura(button, index)
 			A.UpdateTime(button, 0)
 		else
 			button.timeLeft = nil
-			button.time:SetText("")
+			button.time:SetText('')
 			button:SetScript("OnUpdate", nil)
 		end
 
 		if count and (count > 1) then
 			button.count:SetText(count)
 		else
-			button.count:SetText("")
+			button.count:SetText('')
 		end
 
 		if filter == "HARMFUL" then
-			local color = DebuffTypeColor[dtype or ""]
+			local color = _G.DebuffTypeColor[dtype or ""]
 			button:SetBackdropBorderColor(color.r, color.g, color.b)
 		else
 			button:SetBackdropBorderColor(unpack(E.media.bordercolor))
@@ -269,7 +263,7 @@ function A:UpdateTempEnchant(button, index)
 		button.offset = nil
 		button.timeLeft = nil
 		button:SetScript("OnUpdate", nil)
-		button.time:SetText("")
+		button.time:SetText('')
 	end
 end
 
@@ -277,7 +271,7 @@ function A:CooldownText_Update(button)
 	if not button then return end
 
 	-- cooldown override settings
-	button.alwaysEnabled = true
+	button.forceEnabled = true
 
 	if not button.timerOptions then
 		button.timerOptions = {}
@@ -286,8 +280,8 @@ function A:CooldownText_Update(button)
 	button.timerOptions.reverseToggle = self.db.cooldown.reverse
 	button.timerOptions.hideBlizzard = self.db.cooldown.hideBlizzard
 
-	if self.db.cooldown.override and E.TimeColors['auras'] then
-		button.timerOptions.timeColors, button.timerOptions.timeThreshold = E.TimeColors['auras'], self.db.cooldown.thresholdd
+	if self.db.cooldown.override and E.TimeColors.auras then
+		button.timerOptions.timeColors, button.timerOptions.timeThreshold = E.TimeColors.auras, self.db.cooldown.thresholdd
 	else
 		button.timerOptions.timeColors, button.timerOptions.timeThreshold = nil, nil
 	end
@@ -357,7 +351,7 @@ function A:UpdateHeader(header)
 	local child = select(index, header:GetChildren())
 	while child do
 		if (floor(child:GetWidth() * 100 + 0.5) / 100) ~= db.size then
-			child:SetSize(db.size, db.size)
+			child:Size(db.size, db.size)
 		end
 
 		child.auraType = auraType -- used to update cooldown text
@@ -412,21 +406,21 @@ end
 
 function A:Initialize()
 	if E.private.auras.disableBlizzard then
-		BuffFrame:Kill()
-		TemporaryEnchantFrame:Kill()
+		_G.BuffFrame:Kill()
+		_G.TemporaryEnchantFrame:Kill()
 	end
 
 	if not E.private.auras.enable then return end
 
+	self.Initialized = true
 	self.db = E.db.auras
-
 	self.BuffFrame = self:CreateAuraHeader("HELPFUL")
-	self.BuffFrame:Point("TOPRIGHT", MMHolder, "TOPLEFT", -(6 + E.Border), -E.Border - E.Spacing)
-	E:CreateMover(self.BuffFrame, "BuffsMover", L["Player Buffs"])
+	self.BuffFrame:Point("TOPRIGHT", _G.MMHolder, "TOPLEFT", -(6 + E.Border), -E.Border - E.Spacing)
+	E:CreateMover(self.BuffFrame, "BuffsMover", L["Player Buffs"], nil, nil, nil, nil, nil, 'auras,buffs')
 
 	self.DebuffFrame = self:CreateAuraHeader("HARMFUL")
-	self.DebuffFrame:Point("BOTTOMRIGHT", MMHolder, "BOTTOMLEFT", -(6 + E.Border), E.Border + E.Spacing)
-	E:CreateMover(self.DebuffFrame, "DebuffsMover", L["Player Debuffs"])
+	self.DebuffFrame:Point("BOTTOMRIGHT", _G.MMHolder, "BOTTOMLEFT", -(6 + E.Border), E.Border + E.Spacing)
+	E:CreateMover(self.DebuffFrame, "DebuffsMover", L["Player Debuffs"], nil, nil, nil, nil, nil, 'auras,debuffs')
 
 	if Masque then
 		if MasqueGroupBuffs then A.BuffsMasqueGroup = MasqueGroupBuffs end
@@ -434,8 +428,4 @@ function A:Initialize()
 	end
 end
 
-local function InitializeCallback()
-	A:Initialize()
-end
-
-E:RegisterModule(A:GetName(), InitializeCallback)
+E:RegisterModule(A:GetName())

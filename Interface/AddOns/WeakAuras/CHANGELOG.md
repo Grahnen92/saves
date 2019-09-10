@@ -1,18 +1,30 @@
-# [2.8.1](https://github.com/WeakAuras/WeakAuras2/tree/2.8.1) (2018-10-02)
+# [2.14.5](https://github.com/WeakAuras/WeakAuras2/tree/2.14.5) (2019-08-27)
 
-[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/2.8.0...2.8.1)
+[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/2.14.4...2.14.5)
 
 ## Highlights
 
- We fixed a bug where conditions were not properly resetting when auras got unloaded. 
+ - Let's call this the Reloe and Causese release
+- Bulk editing very large groups is now way faster
+- Your usual round of bug fixes 
 
 ## Commits
 
-Causese (1):
+InfusOnWoW (3):
 
-- fixed a trait that is no longer a buff on player
+- Pause dynamic groups in setAll
+- Text: Run custom text function in Update
+- Fix sorting of DynamicGroups
 
-Infus (1):
+Stanzilla (2):
 
-- Fix Conditions not resetting on unloading auras
+- update opdeps for LibClassicCasterino
+- don't watch rune cooldowns on classic
+
+mrbuds (4):
+
+- fix options for unsuported regions
+- fix import of unsupported region
+- add region.Update for "fallback" regionType
+- bossmod triggers: fix arithmetic error if state.extend is nil fix #1625
 

@@ -4,230 +4,141 @@ local S = E:GetModule('Skins')
 --Cache global variables
 --Lua functions
 local _G = _G
-local pairs, select, unpack = pairs, select, unpack
+local unpack = unpack
 --WoW API / Variables
-local CreateFrame = CreateFrame
-local hooksecurefunc = hooksecurefunc
-local InCombatLockdown = InCombatLockdown
---Global variables that we don't cache, list them here for mikk's FindGlobals script
--- GLOBALS: SpellBookFrame_UpdateSkillLineTabs, SPELLS_PER_PAGE, MAX_SKILLLINE_TABS
+local SpellBook_GetCurrentPage = SpellBook_GetCurrentPage
+local BOOKTYPE_SPELL = BOOKTYPE_SPELL
+local MAX_SKILLLINE_TABS = MAX_SKILLLINE_TABS
 
 local function LoadSkin()
 	if E.private.skins.blizzard.enable ~= true or E.private.skins.blizzard.spellbook ~= true then return end
 
-	S:HandleCloseButton(SpellBookFrameCloseButton)
+	local SpellBookFrame = _G.SpellBookFrame
+	S:HandlePortraitFrame(SpellBookFrame, true)
+	SpellBookFrame.backdrop:Point('TOPLEFT', 10, -12)
+	SpellBookFrame.backdrop:Point('BOTTOMRIGHT', -31, 75)
 
-	local SpellBookFrame = _G["SpellBookFrame"]
-	SpellBookFrame:SetTemplate("Transparent")
+	_G.SpellBookSpellIconsFrame:StripTextures(true)
+	_G.SpellBookSideTabsFrame:StripTextures(true)
+	_G.SpellBookPageNavigationFrame:StripTextures(true)
 
-	local StripAllTextures = {
-		"SpellBookFrame",
-		"SpellBookFrameInset",
-		"SpellBookSpellIconsFrame",
-		"SpellBookSideTabsFrame",
-		"SpellBookPageNavigationFrame",
-	}
+	_G.SpellBookPageText:SetTextColor(1, 1, 1)
+	_G.SpellBookPageText:Point('BOTTOM', _G.SpellBookFrame, 'BOTTOM', -4, 88)
 
-	for _, object in pairs(StripAllTextures) do
-		_G[object]:StripTextures()
+	S:HandleNextPrevButton(_G.SpellBookPrevPageButton)
+	_G.SpellBookPrevPageButton:Point('BOTTOMRIGHT', _G.SpellBookFrame, 'BOTTOMRIGHT', -68, 80)
+	_G.SpellBookPrevPageButton:Size(24)
+
+	S:HandleNextPrevButton(_G.SpellBookNextPageButton)
+	_G.SpellBookNextPageButton:Point('TOPLEFT', _G.SpellBookPrevPageButton, 'TOPLEFT', 30, 0)
+	_G.SpellBookNextPageButton:Size(24)
+
+	S:HandleCloseButton(_G.SpellBookCloseButton)
+
+	for i = 1, 3 do
+		local tab = _G['SpellBookFrameTabButton'..i]
+
+		tab:GetNormalTexture():SetTexture(nil)
+		tab:GetDisabledTexture():SetTexture(nil)
+
+		S:HandleTab(tab)
+
+		tab.backdrop:Point('TOPLEFT', 14, E.PixelMode and -17 or -19)
+		tab.backdrop:Point('BOTTOMRIGHT', -14, 19)
 	end
 
-	if E.global.general.disableTutorialButtons then
-		SpellBookFrameTutorialButton:Kill()
-	end
+	-- Spell Buttons
+	for i = 1, SPELLS_PER_PAGE do
+		local button = _G['SpellButton'..i]
+		local icon = _G['SpellButton'..i..'IconTexture']
+		local cooldown = _G['SpellButton'..i..'Cooldown']
+		local highlight = _G['SpellButton'..i..'Highlight']
 
-	local pagebackdrop = CreateFrame("Frame", nil, SpellBookFrame)
-	pagebackdrop:SetTemplate("Default")
-	pagebackdrop:Point("TOPLEFT", SpellBookPage1, "TOPLEFT", -2, 2)
-	pagebackdrop:Point("BOTTOMRIGHT", SpellBookFrame, "BOTTOMRIGHT", -8, 4)
-	SpellBookFrame.pagebackdrop = pagebackdrop
-
-	for i=1, 2 do
-		_G['SpellBookPage'..i]:SetParent(pagebackdrop)
-		_G['SpellBookPage'..i]:SetDrawLayer('BACKGROUND', 3)
-	end
-
-	S:HandleNextPrevButton(SpellBookPrevPageButton)
-	S:HandleNextPrevButton(SpellBookNextPageButton)
-
-	--Skin SpellButtons
-	local function SpellButtons(self, first)
-		for i=1, SPELLS_PER_PAGE do
-			local button = _G["SpellButton"..i]
-			local icon = _G["SpellButton"..i.."IconTexture"]
-
-			if not InCombatLockdown() then
-				button:SetFrameLevel(SpellBookFrame:GetFrameLevel() + 5)
-			end
-
-			if first then
-				--button:StripTextures()
-				for i=1, button:GetNumRegions() do
-					local region = select(i, button:GetRegions())
-					if region:GetObjectType() == "Texture" then
-						if region ~= button.FlyoutArrow and region ~= button.GlyphIcon and region ~= button.GlyphActivate
-						  and region ~= button.AbilityHighlight and region ~= button.SpellHighlightTexture then
-							region:SetTexture(nil)
-						end
-					end
-				end
-			end
-
-			if _G["SpellButton"..i.."Highlight"] then
-				_G["SpellButton"..i.."Highlight"]:SetColorTexture(1, 1, 1, 0.3)
-				_G["SpellButton"..i.."Highlight"]:ClearAllPoints()
-				_G["SpellButton"..i.."Highlight"]:SetAllPoints(icon)
-			end
-
-			--Button texture for bars not on AB
-			if button.SpellHighlightTexture then
-				button.SpellHighlightTexture:SetColorTexture(0.8, 0.8, 0, 0.6)
-				if icon then
-					button.SpellHighlightTexture:SetOutside(button.backdrop)
-				end
-				E:Flash(button.SpellHighlightTexture, 1, true)
-			end
-
-			if button.shine then
-				button.shine:ClearAllPoints()
-				button.shine:Point('TOPLEFT', button, 'TOPLEFT', -3, 3)
-				button.shine:Point('BOTTOMRIGHT', button, 'BOTTOMRIGHT', 3, -3)
-			end
-
-			if icon then
-				icon:SetTexCoord(unpack(E.TexCoords))
-				icon:ClearAllPoints()
-				icon:SetAllPoints()
-
-				if not button.backdrop then
-					E:RegisterCooldown(_G["SpellButton"..i.."Cooldown"])
-					button:CreateBackdrop("Default", true)
+		for i = 1, button:GetNumRegions() do
+			local region = select(i, button:GetRegions())
+			if region:GetObjectType() == 'Texture' then
+				if region:GetTexture() ~= 'Interface\\Buttons\\ActionBarFlyoutButton' then
+					region:SetTexture(nil)
 				end
 			end
 		end
-	end
-	SpellButtons(nil, true)
-	hooksecurefunc("SpellButton_UpdateButton", SpellButtons)
 
-	-- needs review
-	local function SkinTab(tab)
-		-- Avoid a lua error when using the character boost. The spells are learned through "combat training" and are not ready to be skinned.
-		-- sometimes this needs to be done again; i think it has to do with leveling up, maybe, im not 100% sure.
-		local normTex = tab:GetNormalTexture()
-		if normTex then
-			normTex:SetTexCoord(unpack(E.TexCoords))
-			normTex:SetInside()
-		end
+		button:CreateBackdrop('Default', true)
+		button.backdrop:SetFrameLevel(button.backdrop:GetFrameLevel() - 1)
 
-		if tab.isSkinned then return; end
+		button.SpellSubName:SetTextColor(0.6, 0.6, 0.6)
 
-		tab:StripTextures()
-		tab.pushed = true;
-		tab:CreateBackdrop("Default")
-		tab.backdrop:SetAllPoints()
-		tab:StyleButton(true)
-		hooksecurefunc(tab:GetHighlightTexture(), "SetTexture", function(self, texPath)
-			if texPath ~= nil then
-				self:SetPushedTexture(nil);
-			end
-		end)
+		button.bg = CreateFrame('Frame', nil, button)
+		button.bg:CreateBackdrop('Transparent', true)
+		button.bg:Point('TOPLEFT', -7, 9)
+		button.bg:Point('BOTTOMRIGHT', 116, -10)
+		button.bg:SetFrameLevel(button.bg:GetFrameLevel() - 2)
 
-		hooksecurefunc(tab:GetCheckedTexture(), "SetTexture", function(self, texPath)
-			if texPath ~= nil then
-				self:SetHighlightTexture(nil);
-			end
-		end)
+		icon:SetTexCoord(unpack(E.TexCoords))
 
-		local point, relatedTo, point2, _, y = tab:GetPoint()
-		tab:Point(point, relatedTo, point2, 1, y)
-
-		tab.isSkinned = true
-	end
-
-	local function SkinSkillLine()
-		for i=1, MAX_SKILLLINE_TABS do
-			local tab = _G["SpellBookSkillLineTab"..i]
-			SkinTab(tab)
-		end
-	end
-	hooksecurefunc("SpellBookFrame_UpdateSkillLineTabs", SkinSkillLine)
-	SpellBookFrame_UpdateSkillLineTabs() --This update fixes issue with tab textures being empty on first show
-
-	--Profession Tab
-	local professionbuttons = {
-		"PrimaryProfession1SpellButtonTop",
-		"PrimaryProfession1SpellButtonBottom",
-		"PrimaryProfession2SpellButtonTop",
-		"PrimaryProfession2SpellButtonBottom",
-		"SecondaryProfession1SpellButtonLeft",
-		"SecondaryProfession1SpellButtonRight",
-		"SecondaryProfession2SpellButtonLeft",
-		"SecondaryProfession2SpellButtonRight",
-		"SecondaryProfession3SpellButtonLeft",
-		"SecondaryProfession3SpellButtonRight",
-	}
-
-	local professionheaders = {
-		"PrimaryProfession1",
-		"PrimaryProfession2",
-		"SecondaryProfession1",
-		"SecondaryProfession2",
-		"SecondaryProfession3",
-	}
-
-	for _, header in pairs(professionheaders) do
-		_G[header.."Missing"]:SetTextColor(1, 1, 0)
-		_G[header].missingText:SetTextColor(0, 0, 0)
-	end
-
-	for _, button in pairs(professionbuttons) do
-		button = _G[button]
-		button:StripTextures()
-		button:SetTemplate("Transparent")
-		button.iconTexture:SetTexCoord(unpack(E.TexCoords))
-		button.iconTexture:SetInside()
-		button.highlightTexture:SetInside()
-
-		if button == _G[professionbuttons[2]] then
-			button:Point("TOPLEFT", _G[professionbuttons[1]], "BOTTOMLEFT", 0, -2)
-		elseif button == _G[professionbuttons[4]] then
-			button:Point("TOPLEFT", _G[professionbuttons[3]], "BOTTOMLEFT", 0, -2)
-		end
-
-		hooksecurefunc(button.highlightTexture, "SetTexture", function(self, texture)
-			if texture == "Interface\\Buttons\\ButtonHilight-Square" then
+		highlight:SetAllPoints()
+		hooksecurefunc(highlight, 'SetTexture', function(self, texture)
+			if texture == 'Interface\\Buttons\\ButtonHilight-Square' or texture == 'Interface\\Buttons\\UI-PassiveHighlight' then
 				self:SetColorTexture(1, 1, 1, 0.3)
 			end
 		end)
+
+		E:RegisterCooldown(cooldown)
 	end
 
-	local professionstatusbars = {
-		"PrimaryProfession1StatusBar",
-		"PrimaryProfession2StatusBar",
-		"SecondaryProfession1StatusBar",
-		"SecondaryProfession2StatusBar",
-		"SecondaryProfession3StatusBar",
-	}
+	_G.SpellButton1:Point('TOPLEFT', _G.SpellBookSpellIconsFrame, 'TOPLEFT', 24, -55)
+	_G.SpellButton2:Point('TOPLEFT', _G.SpellButton1, 'TOPLEFT', 168, 0)
+	_G.SpellButton3:Point('TOPLEFT', _G.SpellButton1, 'BOTTOMLEFT', 0, -23)
+	_G.SpellButton4:Point('TOPLEFT', _G.SpellButton3, 'TOPLEFT', 168, 0)
+	_G.SpellButton5:Point('TOPLEFT', _G.SpellButton3, 'BOTTOMLEFT', 0, -23)
+	_G.SpellButton6:Point('TOPLEFT', _G.SpellButton5, 'TOPLEFT', 168, 0)
+	_G.SpellButton7:Point('TOPLEFT', _G.SpellButton5, 'BOTTOMLEFT', 0, -23)
+	_G.SpellButton8:Point('TOPLEFT', _G.SpellButton7, 'TOPLEFT', 168, 0)
+	_G.SpellButton9:Point('TOPLEFT', _G.SpellButton7, 'BOTTOMLEFT', 0, -23)
+	_G.SpellButton10:Point('TOPLEFT', _G.SpellButton9, 'TOPLEFT', 168, 0)
+	_G.SpellButton11:Point('TOPLEFT', _G.SpellButton9, 'BOTTOMLEFT', 0, -23)
+	_G.SpellButton12:Point('TOPLEFT', _G.SpellButton11, 'TOPLEFT', 168, 0)
 
-	for _, statusbar in pairs(professionstatusbars) do
-		statusbar = _G[statusbar]
-		statusbar:StripTextures()
-		statusbar:SetStatusBarTexture(E["media"].normTex)
-		E:RegisterStatusBar(statusbar)
-		statusbar:SetStatusBarColor(0, 220/255, 0)
-		statusbar:CreateBackdrop("Default")
+	hooksecurefunc('SpellButton_UpdateButton', function(self)
+		local spellName = _G[self:GetName()..'SpellName']
+		local r = spellName:GetTextColor()
 
-		statusbar.rankText:ClearAllPoints()
-		statusbar.rankText:Point("CENTER")
+		if r < 0.8 then
+			spellName:SetTextColor(0.6, 0.6, 0.6)
+		end
+	end)
+
+	for i = 1, MAX_SKILLLINE_TABS do
+		local tab = _G['SpellBookSkillLineTab'..i]
+		local flash = _G['SpellBookSkillLineTab'..i..'Flash']
+
+		tab:StripTextures()
+		tab:SetTemplate()
+		tab:StyleButton(nil, true)
+		tab:SetTemplate('Default', true)
+		tab.pushed = true
+
+		tab:GetNormalTexture():SetInside()
+		tab:GetNormalTexture():SetTexCoord(unpack(E.TexCoords))
+
+		if i == 1 then
+			tab:Point('TOPLEFT', _G.SpellBookSideTabsFrame, 'TOPRIGHT', -32, -70)
+		end
+
+		hooksecurefunc(tab:GetHighlightTexture(), 'SetTexture', function(self, texPath)
+			if texPath ~= nil then
+				self:SetPushedTexture(nil)
+			end
+		end)
+
+		hooksecurefunc(tab:GetCheckedTexture(), 'SetTexture', function(self, texPath)
+			if texPath ~= nil then
+				self:SetHighlightTexture(nil)
+			end
+		end)
+
+		flash:Kill()
 	end
-
-	--Bottom Tabs
-	for i = 1, 5 do
-		S:HandleTab(_G["SpellBookFrameTabButton"..i])
-	end
-
-	SpellBookFrameTabButton1:ClearAllPoints()
-	SpellBookFrameTabButton1:Point('TOPLEFT', SpellBookFrame, 'BOTTOMLEFT', 0, 2)
 end
 
-S:AddCallback("Spellbook", LoadSkin)
+S:AddCallback('Spellbook', LoadSkin)

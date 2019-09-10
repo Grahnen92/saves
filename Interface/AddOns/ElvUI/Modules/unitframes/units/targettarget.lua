@@ -4,32 +4,28 @@ local _, ns = ...
 local ElvUF = ns.oUF
 assert(ElvUF, "ElvUI was unable to locate oUF.")
 
---Cache global variables
 --Lua functions
 local _G = _G
-local tinsert = table.insert
+local tinsert = tinsert
 
 function UF:Construct_TargetTargetFrame(frame)
 	frame.Health = self:Construct_HealthBar(frame, true, true, 'RIGHT')
-
 	frame.Power = self:Construct_PowerBar(frame, true, true, 'LEFT')
-
+	--frame.PowerPrediction = self:Construct_PowerPrediction(frame)
 	frame.Name = self:Construct_NameText(frame)
-
 	frame.Portrait3D = self:Construct_Portrait(frame, 'model')
 	frame.Portrait2D = self:Construct_Portrait(frame, 'texture')
-
 	frame.Buffs = self:Construct_Buffs(frame)
 	frame.RaidTargetIndicator = self:Construct_RaidIcon(frame)
 	frame.Debuffs = self:Construct_Debuffs(frame)
-	frame.Range = self:Construct_Range(frame)
-	frame.ThreatIndicator = self:Construct_Threat(frame)
 	frame.InfoPanel = self:Construct_InfoPanel(frame)
 	frame.MouseGlow = self:Construct_MouseGlow(frame)
 	frame.TargetGlow = self:Construct_TargetGlow(frame)
+	--frame.Fader = self:Construct_Fader()
 	frame.customTexts = {}
+
 	frame:Point('BOTTOM', E.UIParent, 'BOTTOM', 0, 75) --Set to default position
-	E:CreateMover(frame, frame:GetName()..'Mover', L["TargetTarget Frame"], nil, nil, nil, 'ALL,SOLO')
+	E:CreateMover(frame, frame:GetName()..'Mover', L["TargetTarget Frame"], nil, nil, nil, 'ALL,SOLO', nil, 'unitframe,targettarget,generalGroup')
 
 	frame.unitframeType = "targettarget"
 end
@@ -81,19 +77,19 @@ function UF:Update_TargetTargetFrame(frame, db)
 	--Power
 	UF:Configure_Power(frame)
 
+	--Power Predicition
+	--UF:Configure_PowerPrediction(frame)
+
 	--Portrait
 	UF:Configure_Portrait(frame)
-
-	--Threat
-	UF:Configure_Threat(frame)
 
 	--Auras
 	UF:EnableDisable_Auras(frame)
 	UF:Configure_Auras(frame, 'Buffs')
 	UF:Configure_Auras(frame, 'Debuffs')
 
-	--Range
-	UF:Configure_Range(frame)
+	--Fader
+	--UF:Configure_Fader(frame)
 
 	--Raid Icon
 	UF:Configure_RaidIcon(frame)
@@ -101,8 +97,8 @@ function UF:Update_TargetTargetFrame(frame, db)
 	--CustomTexts
 	UF:Configure_CustomTexts(frame)
 
-	E:SetMoverSnapOffset(frame:GetName()..'Mover', -(12 + self.db['units'].player.castbar.height))
+	E:SetMoverSnapOffset(frame:GetName()..'Mover', -(12 + self.db.units.player.castbar.height))
 	frame:UpdateAllElements("ElvUI_UpdateAllElements")
 end
 
-tinsert(UF['unitstoload'], 'targettarget')
+tinsert(UF.unitstoload, 'targettarget')

@@ -1,33 +1,25 @@
 local E, L, V, P, G = unpack(select(2, ...)); --Engine
 
---Cache global variables
 --Lua functions
-local print, unpack, select = print, unpack, select
-local lower = string.lower
+local unpack = unpack
+local strlower = string.lower
 --WoW API / Variables
-local GetSpellInfo = GetSpellInfo
-local IsPlayerSpell, UnitClass = IsPlayerSpell, UnitClass
-
-local function SpellName(id)
-	local name = GetSpellInfo(id)
-	if not name then
-		print('|cff1784d1ElvUI:|r SpellID is not valid: '..id..'. Please check for an updated version, if none exists report to ElvUI author.')
-		return 'Impale'
-	else
-		return name
-	end
-end
+local IsPlayerSpell = IsPlayerSpell
 
 local function Defaults(priorityOverride)
-	return {['enable'] = true, ['priority'] = priorityOverride or 0, ['stackThreshold'] = 0}
+	return {
+		enable = true,
+		priority = priorityOverride or 0,
+		stackThreshold = 0
+	}
 end
 
 G.unitframe.aurafilters = {};
 
 -- These are debuffs that are some form of CC
-G.unitframe.aurafilters['CCDebuffs'] = {
-	['type'] = 'Whitelist',
-	['spells'] = {
+G.unitframe.aurafilters.CCDebuffs = {
+	type = 'Whitelist',
+	spells = {
 	--Death Knight
 		[47476]  = Defaults(2), -- Strangulate
 		[108194] = Defaults(4), -- Asphyxiate UH
@@ -56,7 +48,6 @@ G.unitframe.aurafilters['CCDebuffs'] = {
 		[208618] = Defaults(3), -- Illidan's Grasp (Afterward)
 		[213491] = Defaults(4), -- Demonic Trample (it's this one or the other)
 		[208645] = Defaults(4), -- Demonic Trample
-		[200166] = Defaults(4), -- Metamorphosis
 	--Druid
 		[81261]  = Defaults(2), -- Solar Beam
 		[5211]   = Defaults(4), -- Mighty Bash
@@ -69,10 +60,10 @@ G.unitframe.aurafilters['CCDebuffs'] = {
 		[45334]  = Defaults(1), -- Immobilized
 		[102359] = Defaults(1), -- Mass Entanglement
 		[339]    = Defaults(1), -- Entangling Roots
+		[2637]   = Defaults(1), -- Hibernate
 	--Hunter
 		[202933] = Defaults(2), -- Spider Sting (it's this one or the other)
 		[233022] = Defaults(2), -- Spider Sting
-		[224729] = Defaults(4), -- Bursting Shot
 		[213691] = Defaults(4), -- Scatter Shot
 		[19386]  = Defaults(3), -- Wyvern Sting
 		[3355]   = Defaults(3), -- Freezing Trap
@@ -131,12 +122,11 @@ G.unitframe.aurafilters['CCDebuffs'] = {
 		[605]    = Defaults(5), -- Mind Control
 		[8122]   = Defaults(3), -- Psychic Scream
 		[15487]  = Defaults(2), -- Silence
-		[199683] = Defaults(2), -- Last Word
+		[64044]  = Defaults(1), -- Psychic Horror
 	--Rogue
 		[2094]   = Defaults(4), -- Blind
 		[6770]   = Defaults(4), -- Sap
 		[1776]   = Defaults(4), -- Gouge
-		[199743] = Defaults(4), -- Parley
 		[1330]   = Defaults(2), -- Garrote - Silence
 		[207777] = Defaults(2), -- Dismantle
 		[199804] = Defaults(4), -- Between the Eyes
@@ -165,7 +155,6 @@ G.unitframe.aurafilters['CCDebuffs'] = {
 		[710]    = Defaults(5), -- Banish
 		[6789]   = Defaults(3), -- Mortal Coil
 		[118699] = Defaults(3), -- Fear
-		[5484]   = Defaults(3), -- Howl of Terror
 		[6358]   = Defaults(3), -- Seduction (Succub)
 		[171017] = Defaults(4), -- Meteor Strike (Infernal)
 		[22703]  = Defaults(4), -- Infernal Awakening (Infernal CD)
@@ -180,17 +169,17 @@ G.unitframe.aurafilters['CCDebuffs'] = {
 		[199085] = Defaults(4), -- Warpath
 		[105771] = Defaults(1), -- Charge
 		[199042] = Defaults(1), -- Thunderstruck
+		[236077] = Defaults(2), -- Disarm
 	--Racial
-		[155145] = Defaults(2), -- Arcane Torrent
 		[20549]  = Defaults(4), -- War Stomp
 		[107079] = Defaults(4), -- Quaking Palm
 	},
 }
 
 -- These are buffs that can be considered "protection" buffs
-G.unitframe.aurafilters['TurtleBuffs'] = {
-	['type'] = 'Whitelist',
-	['spells'] = {
+G.unitframe.aurafilters.TurtleBuffs = {
+	type = 'Whitelist',
+	spells = {
 	--Death Knight
 		[48707]  = Defaults(), -- Anti-Magic Shell
 		[81256]  = Defaults(), -- Dancing Rune Weapon
@@ -317,9 +306,9 @@ G.unitframe.aurafilters['TurtleBuffs'] = {
 	},
 }
 
-G.unitframe.aurafilters['PlayerBuffs'] = {
-	['type'] = 'Whitelist',
-	['spells'] = {
+G.unitframe.aurafilters.PlayerBuffs = {
+	type = 'Whitelist',
+	spells = {
 	--Death Knight
 		[48707]  = Defaults(), -- Anti-Magic Shell
 		[81256]  = Defaults(), -- Dancing Rune Weapon
@@ -600,9 +589,9 @@ G.unitframe.aurafilters['PlayerBuffs'] = {
 }
 
 -- Buffs that really we dont need to see
-G.unitframe.aurafilters['Blacklist'] = {
-	['type'] = 'Blacklist',
-	['spells'] = {
+G.unitframe.aurafilters.Blacklist = {
+	type = 'Blacklist',
+	spells = {
 		[36900]  = Defaults(), -- Soul Split: Evil!
 		[36901]  = Defaults(), -- Soul Split: Good
 		[36893]  = Defaults(), -- Transporter Malfunction
@@ -638,9 +627,9 @@ G.unitframe.aurafilters['Blacklist'] = {
 	This should be a list of important buffs that we always want to see when they are active
 	bloodlust, paladin hand spells, raid cooldowns, etc..
 ]]
-G.unitframe.aurafilters['Whitelist'] = {
-	['type'] = 'Whitelist',
-	['spells'] = {
+G.unitframe.aurafilters.Whitelist = {
+	type = 'Whitelist',
+	spells = {
 		[31821]  = Defaults(), -- Devotion Aura
 		[2825]   = Defaults(), -- Bloodlust
 		[32182]  = Defaults(), -- Heroism
@@ -654,17 +643,19 @@ G.unitframe.aurafilters['Whitelist'] = {
 }
 
 -- RAID DEBUFFS: This should be pretty self explainitory
-G.unitframe.aurafilters['RaidDebuffs'] = {
-	['type'] = 'Whitelist',
-	['spells'] = {
+G.unitframe.aurafilters.RaidDebuffs = {
+	type = 'Whitelist',
+	spells = {
 	-- Mythic+ Dungeons
 		[209858] = Defaults(), -- Necrotic
 		[226512] = Defaults(), -- Sanguine
 		[240559] = Defaults(), -- Grievous
 		[240443] = Defaults(), -- Bursting
 		[196376] = Defaults(), -- Grievous Tear
+		[288388] = Defaults(), -- Reap Soul
+		[288694] = Defaults(), -- Shadow Smash
 
-		--BFA Dungeons
+	--BFA Dungeons
 		--Freehold
 		[258323] = Defaults(), -- Infected Wound
 		[257775] = Defaults(), -- Plague Step
@@ -725,7 +716,8 @@ G.unitframe.aurafilters['RaidDebuffs'] = {
 		[258313] = Defaults(), -- Handcuff
 		[259711] = Defaults(), -- Lockdown
 		[256198] = Defaults(), -- Azerite Rounds: Incendiary
-		[256101] = Defaults(), -- Explosive Burst
+		[256101] = Defaults(), -- Explosive Burst (mythic)
+		[256105] = Defaults(), -- Explosive Burst (mythic+)
 		[256044] = Defaults(), -- Deadeye
 		[256474] = Defaults(), -- Heartstopper Venom
 
@@ -750,6 +742,7 @@ G.unitframe.aurafilters['RaidDebuffs'] = {
 		[265881] = Defaults(), -- Decaying Touch
 		[261438] = Defaults(), -- Wasting Strike
 		[268202] = Defaults(), -- Death Lens
+		[278456] = Defaults(), -- Infest
 
 		-- Atal'Dazar
 		[252781] = Defaults(), -- Unstable Hex
@@ -787,6 +780,7 @@ G.unitframe.aurafilters['RaidDebuffs'] = {
 		[272388] = Defaults(), -- Shadow Barrage
 		[271640] = Defaults(), -- Dark Revelation
 		[268796] = Defaults(), -- Impaling Spear
+		[268419] = Defaults(), -- Gale Slash
 
 		--Motherlode
 		[263074] = Defaults(), -- Festering Bite
@@ -877,8 +871,9 @@ G.unitframe.aurafilters['RaidDebuffs'] = {
 		-- Zul
 		[273365] = Defaults(), -- Dark Revelation
 		[273434] = Defaults(), -- Pit of Despair
-		[274195] = Defaults(), -- Corrupted Blood
+		--[274195] = Defaults(), -- Corrupted Blood
 		[272018] = Defaults(), -- Absorbed in Darkness
+		[274358] = Defaults(), -- Rupturing Blood
 
 		-- Zek'voz, Herald of N'zoth
 		[265237] = Defaults(), -- Shatter
@@ -896,6 +891,111 @@ G.unitframe.aurafilters['RaidDebuffs'] = {
 		[267430] = Defaults(), -- Torment
 		[263235] = Defaults(), -- Blood Feast
 		[270287] = Defaults(), -- Blighted Ground
+
+	-- Siege of Zuldazar
+		-- Ra'wani Kanae/Frida Ironbellows
+		[283573] = Defaults(), -- Sacred Blade
+		[283617] = Defaults(), -- Wave of Light
+		[283651] = Defaults(), -- Blinding Faith
+		[284595] = Defaults(), -- Penance
+		[283582] = Defaults(), -- Consecration
+
+		-- Grong
+		[285998] = Defaults(), -- Ferocious Roar
+		[283069] = Defaults(), -- Megatomic Fire
+		[285671] = Defaults(), -- Crushed
+		[285875] = Defaults(), -- Rending Bite
+		--[282010] = Defaults(), -- Shaken
+
+		-- Jaina
+		[285253] = Defaults(), -- Ice Shard
+		[287993] = Defaults(), -- Chilling Touch
+		[287365] = Defaults(), -- Searing Pitch
+		[288038] = Defaults(), -- Marked Target
+		[285254] = Defaults(), -- Avalanche
+		[287626] = Defaults(), -- Grasp of Frost
+		[287490] = Defaults(), -- Frozen Solid
+		[287199] = Defaults(), -- Ring of Ice
+		[288392] = Defaults(), -- Vengeful Seas
+
+		-- Stormwall Blockade
+		[284369] = Defaults(), -- Sea Storm
+		[284410] = Defaults(), -- Tempting Song
+		[284405] = Defaults(), -- Tempting Song
+		[284121] = Defaults(), -- Thunderous Boom
+		[286680] = Defaults(), -- Roiling Tides
+
+		-- Opulence
+		[286501] = Defaults(), -- Creeping Blaze
+		[283610] = Defaults(), -- Crush
+		[289383] = Defaults(), -- Chaotic Displacement
+		[285479] = Defaults(), -- Flame Jet
+		[283063] = Defaults(), -- Flames of Punishment
+		[283507] = Defaults(), -- Volatile Charge
+
+		-- King Rastakhan
+		[284995] = Defaults(), -- Zombie Dust
+		[285349] = Defaults(), -- Plague of Fire
+		[285044] = Defaults(), -- Toad Toxin
+		[284831] = Defaults(), -- Scorching Detonation
+		[289858] = Defaults(), -- Crushed
+		[284662] = Defaults(), -- Seal of Purification
+		[284676] = Defaults(), -- Seal of Purification
+		[285178] = Defaults(), -- Serpent's Breath
+		[285010] = Defaults(), -- Poison Toad Slime
+
+		-- Jadefire Masters
+		[282037] = Defaults(), -- Rising Flames
+		[284374] = Defaults(), -- Magma Trap
+		[285632] = Defaults(), -- Stalking
+		[288151] = Defaults(), -- Tested
+		[284089] = Defaults(), -- Successful Defense
+		[286988] = Defaults(), -- Searing Embers
+
+		-- Mekkatorque
+		[288806] = Defaults(), -- Gigavolt Blast
+		[289023] = Defaults(), -- Enormous
+		[286646] = Defaults(), -- Gigavolt Charge
+		[288939] = Defaults(), -- Gigavolt Radiation
+		[284168] = Defaults(), -- Shrunk
+		[286516] = Defaults(), -- Anti-Tampering Shock
+		[286480] = Defaults(), -- Anti-Tampering Shock
+		[284214] = Defaults(), -- Trample
+
+		-- Conclave of the Chosen
+		[284663] = Defaults(), -- Bwonsamdi's Wrath
+		[282444] = Defaults(), -- Lacerating Claws
+		[282592] = Defaults(), -- Bleeding Wounds
+		[282209] = Defaults(), -- Mark of Prey
+		[285879] = Defaults(), -- Mind Wipe
+		[282135] = Defaults(), -- Crawling Hex
+		[286060] = Defaults(), -- Cry of the Fallen
+		[282447] = Defaults(), -- Kimbul's Wrath
+		[282834] = Defaults(), -- Kimbul's Wrath
+		[286811] = Defaults(), -- Akunda's Wrath
+		[286838] = Defaults(), -- Static Orb
+
+	--Crucible of Storms
+		--The Restless Cabal
+		[282386] = Defaults(), -- Aphotic Blast
+		[282384] = Defaults(), -- Shear Mind
+		[282566] = Defaults(), -- Promises of Power
+		[282561] = Defaults(), -- Dark Herald
+		[282432] = Defaults(), -- Crushing Doubt
+		[282589] = Defaults(), -- Mind Scramble
+		[292826] = Defaults(), -- Mind Scramble
+
+		--Fa'thuul the Feared
+		[284851] = Defaults(), -- Touch of the End
+		[286459] = Defaults(), -- Feedback: Void
+		[286457] = Defaults(), -- Feedback: Ocean
+		[286458] = Defaults(), -- Feedback: Storm
+		[285367] = Defaults(), -- Piercing Gaze of N'Zoth
+		[284733] = Defaults(), -- Embrace of the Void
+		[284722] = Defaults(), -- Umbral Shell
+		[285345] = Defaults(), -- Maddening Eyes of N'Zoth
+		[285477] = Defaults(), -- Obscurity
+		[285652] = Defaults(), -- Insatiable Torment
 	},
 }
 
@@ -904,13 +1004,14 @@ G.unitframe.aurafilters['RaidDebuffs'] = {
 	Buffs that are provided by NPCs in raid or other PvE content.
 	This can be buffs put on other enemies or on players.
 ]]
-G.unitframe.aurafilters['RaidBuffsElvUI'] = {
-	['type'] = 'Whitelist',
-	['spells'] = {
+G.unitframe.aurafilters.RaidBuffsElvUI = {
+	type = 'Whitelist',
+	spells = {
 		--Mythic/Mythic+
 		[209859] = Defaults(), -- Bolster
 		[178658] = Defaults(), -- Raging
 		[226510] = Defaults(), -- Sanguine
+		[277242] = Defaults(), -- Symbiote of G'huun (Infested)
 
 		--Raids
 	},
@@ -930,9 +1031,22 @@ local function ClassBuff(id, point, color, anyUnit, onlyShowMissing, style, disp
 		r2, g2, b2 = unpack(textColor)
 	end
 
-	return {["enabled"] = true, ["id"] = id, ["point"] = point, ["color"] = {["r"] = r, ["g"] = g, ["b"] = b},
-	["anyUnit"] = anyUnit, ["onlyShowMissing"] = onlyShowMissing, ['style'] = style or 'coloredIcon', ['displayText'] = displayText or false, ['decimalThreshold'] = decimalThreshold or 5,
-	['textColor'] = {["r"] = r2, ["g"] = g2, ["b"] = b2}, ['textThreshold'] = textThreshold or -1, ['xOffset'] = xOffset or 0, ['yOffset'] = yOffset or 0, ["sizeOverride"] = sizeOverride or 0}
+	return {
+		enabled = true,
+		id = id,
+		point = point,
+		color = {r = r, g = g, b = b},
+		anyUnit = anyUnit,
+		onlyShowMissing = onlyShowMissing,
+		style = style or 'coloredIcon',
+		displayText = displayText or false,
+		decimalThreshold = decimalThreshold or 5,
+		textColor = {r = r2, g = g2, b = b2},
+		textThreshold = textThreshold or -1,
+		xOffset = xOffset or 0,
+		yOffset = yOffset or 0,
+		sizeOverride = sizeOverride or 0
+	}
 end
 
 G.unitframe.buffwatch = {
@@ -942,6 +1056,7 @@ G.unitframe.buffwatch = {
 		[41635]  = ClassBuff(41635, "BOTTOMRIGHT", {0.2, 0.7, 0.2}),     -- Prayer of Mending
 		[193065] = ClassBuff(193065, "BOTTOMRIGHT", {0.54, 0.21, 0.78}), -- Masochism
 		[139]    = ClassBuff(139, "BOTTOMLEFT", {0.4, 0.7, 0.2}),        -- Renew
+		[6788]   = ClassBuff(6788, "BOTTOMLEFT", {0.89, 0.1, 0.1}),       -- Weakened Soul
 		[17]     = ClassBuff(17, "TOPLEFT", {0.7, 0.7, 0.7}, true),      -- Power Word: Shield
 		[47788]  = ClassBuff(47788, "LEFT", {0.86, 0.45, 0}, true),      -- Guardian Spirit
 		[33206]  = ClassBuff(33206, "LEFT", {0.47, 0.35, 0.74}, true),   -- Pain Suppression
@@ -965,6 +1080,7 @@ G.unitframe.buffwatch = {
 		[1044]   = ClassBuff(1044, "BOTTOMRIGHT", {0.89, 0.45, 0}, true),  -- Hand of Freedom
 		[6940]   = ClassBuff(6940, "BOTTOMRIGHT", {0.89, 0.1, 0.1}, true), -- Hand of Sacrifice
 		[223306] = ClassBuff(223306, 'BOTTOMLEFT', {0.7, 0.7, 0.3}),       -- Bestow Faith
+		[287280] = ClassBuff(287280, 'TOPLEFT', {0.2, 0.8, 0.2}),          -- Glimmer of Light (Artifact HoT)
 	},
 	SHAMAN = {
 		[61295]  = ClassBuff(61295, "TOPRIGHT", {0.7, 0.3, 0.7}),   	 -- Riptide
@@ -987,7 +1103,7 @@ G.unitframe.buffwatch = {
 		-- Warlock Pets
 		[193396] = ClassBuff(193396, 'TOPRIGHT', {0.6, 0.2, 0.8}, true), -- Demonic Empowerment
 		-- Hunter Pets
-		[19615] = ClassBuff(19615, 'TOPLEFT', {0.89, 0.09, 0.05}, true), -- Frenzy
+		[272790] = ClassBuff(272790, 'TOPLEFT', {0.89, 0.09, 0.05}, true), -- Frenzy
 		[136]   = ClassBuff(136, 'TOPRIGHT', {0.2, 0.8, 0.2}, true)      -- Mend Pet
 	},
 	HUNTER = {}, --Keep even if it's an empty table, so a reference to G.unitframe.buffwatch[E.myclass][SomeValue] doesn't trigger error
@@ -998,45 +1114,45 @@ G.unitframe.buffwatch = {
 }
 
 -- Profile specific BuffIndicator
-P['unitframe']['filters'] = {
-	['buffwatch'] = {},
+P.unitframe.filters = {
+	buffwatch = {},
 }
 
 -- List of spells to display ticks
 G.unitframe.ChannelTicks = {
 	-- Warlock
-	[SpellName(198590)] = 6, -- Drain Soul
-	[SpellName(755)]    = 6, -- Health Funnel
+	[198590] = 6, -- Drain Soul
+	[755]    = 6, -- Health Funnel
+	[234153] = 6, -- Drain Life
 	-- Priest
-	[SpellName(64843)]  = 4, -- Divine Hymn
-	[SpellName(15407)]  = 4, -- Mind Flay
+	[64843]  = 4, -- Divine Hymn
+	[15407]  = 4, -- Mind Flay
+	[48045] = 5, -- Mind Sear
 	-- Mage
-	[SpellName(5143)]   = 5,  -- Arcane Missiles
-	[SpellName(12051)]  = 3,  -- Evocation
-	[SpellName(205021)] = 10, -- Ray of Frost
+	[5143]   = 5,  -- Arcane Missiles
+	[12051]  = 3,  -- Evocation
+	[205021] = 10, -- Ray of Frost
 	--Druid
-	[SpellName(740)]    = 4, -- Tranquility
+	[740]    = 4, -- Tranquility
 }
 
 local f = CreateFrame("Frame")
 f:RegisterEvent("PLAYER_ENTERING_WORLD")
-f:RegisterEvent("PLAYER_TALENT_UPDATE")
 f:SetScript("OnEvent", function()
-	local class = select(2, UnitClass("player"))
-	if lower(class) ~= "priest" then return; end
+	if strlower(E.myclass) ~= "priest" then return end
 
 	local penanceTicks = IsPlayerSpell(193134) and 4 or 3
-	E.global.unitframe.ChannelTicks[SpellName(47540)] = penanceTicks --Penance
+	E.global.unitframe.ChannelTicks[47540] = penanceTicks --Penance
 end)
 
 G.unitframe.ChannelTicksSize = {
 	-- Warlock
-	[SpellName(198590)] = 1, -- Drain Soul
+	[198590] = 1, -- Drain Soul
 }
 
 -- Spells Effected By Haste
 G.unitframe.HastedChannelTicks = {
-	[SpellName(205021)] = true, -- Ray of Frost
+	[205021] = true, -- Ray of Frost
 }
 
 -- This should probably be the same as the whitelist filter + any personal class ones that may be important to watch
@@ -1053,20 +1169,20 @@ G.unitframe.DebuffHighlightColors = {
 
 G.unitframe.specialFilters = {
 	-- Whitelists
-	['Boss'] = true,
-	['Personal'] = true,
-	['nonPersonal'] = true,
-	['CastByUnit'] = true,
-	['notCastByUnit'] = true,
-	['Dispellable'] = true,
-	['notDispellable'] = true,
-	['CastByNPC'] = true,
-	['CastByPlayers'] = true,
+	Boss = true,
+	Personal = true,
+	nonPersonal = true,
+	CastByUnit = true,
+	notCastByUnit = true,
+	Dispellable = true,
+	notDispellable = true,
+	CastByNPC = true,
+	CastByPlayers = true,
 
 	-- Blacklists
-	['blockNonPersonal'] = true,
-	['blockCastByPlayers'] = true,
-	['blockNoDuration'] = true,
-	['blockDispellable'] = true,
-	['blockNotDispellable'] = true,
+	blockNonPersonal = true,
+	blockCastByPlayers = true,
+	blockNoDuration = true,
+	blockDispellable = true,
+	blockNotDispellable = true,
 };

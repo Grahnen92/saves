@@ -1,23 +1,19 @@
 local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 local UF = E:GetModule('UnitFrames');
 
---Cache global variables
 local _G = _G
 --Lua functions
 local pairs = pairs
 local select = select
 local assert = assert
-local tinsert = table.insert
+local tinsert = tinsert
 --WoW API / Variables
 local CreateFrame = CreateFrame
-local UnitIsUnit = UnitIsUnit
-local UnitReaction = UnitReaction
-local UnitIsPlayer = UnitIsPlayer
 local UnitClass = UnitClass
 local UnitExists = UnitExists
-local RAID_CLASS_COLORS = RAID_CLASS_COLORS
-local FACTION_BAR_COLORS = FACTION_BAR_COLORS
--- GLOBALS: CUSTOM_CLASS_COLORS
+local UnitIsPlayer = UnitIsPlayer
+local UnitIsUnit = UnitIsUnit
+local UnitReaction = UnitReaction
 
 function UF:FrameGlow_MouseOnUnit(frame)
 	if frame and frame:IsVisible() and UnitExists('mouseover') then
@@ -107,7 +103,7 @@ function UF:FrameGlow_PositionGlow(frame, mainGlow, powerGlow)
 	local power = frame.Power and frame.Power.backdrop
 	local health = frame.Health and frame.Health.backdrop
 	local portrait = (frame.USE_PORTRAIT and not frame.USE_PORTRAIT_OVERLAY) and (frame.Portrait and frame.Portrait.backdrop)
-	local offset = (E.PixelMode and E.mult*3) or E.mult*4 -- edgeSize is 3
+	local offset = (E.PixelMode and 3) or 4 -- edgeSize is 3
 
 	mainGlow:ClearAllPoints()
 	mainGlow:Point('TOPLEFT', (frame.ORIENTATION == "LEFT" and portrait) or health, -offset, offset)
@@ -143,14 +139,14 @@ end
 
 function UF:FrameGlow_CreateGlow(frame, mouse)
 	-- Main Glow to wrap the health frame to it's best ability
-	frame:CreateShadow('Default')
+	frame:CreateShadow()
 	local mainGlow = frame.shadow
 	mainGlow:SetFrameStrata('BACKGROUND')
 	mainGlow:Hide()
 	frame.shadow = nil
 
 	-- Secondary Glow for power frame when using power offset or mini power
-	frame:CreateShadow('Default')
+	frame:CreateShadow()
 	local powerGlow = frame.shadow
 	powerGlow:SetFrameStrata('BACKGROUND')
 	powerGlow:Hide()
@@ -198,13 +194,13 @@ function UF:FrameGlow_SetGlowColor(glow, unit, which)
 		if isPlayer then
 			local _, class = UnitClass(unit)
 			if class then
-				local color = CUSTOM_CLASS_COLORS and CUSTOM_CLASS_COLORS[class] or RAID_CLASS_COLORS[class]
+				local color = _G.CUSTOM_CLASS_COLORS and _G.CUSTOM_CLASS_COLORS[class] or _G.RAID_CLASS_COLORS[class]
 				if color then
 					r, g, b = color.r, color.g, color.b
 				end
 			end
 		elseif reaction then
-			local color = FACTION_BAR_COLORS[reaction]
+			local color = _G.FACTION_BAR_COLORS[reaction]
 			if color then
 				r, g, b = color.r, color.g, color.b
 			end
@@ -409,11 +405,6 @@ function UF:FrameGlow_UpdateFrames()
 
 	-- focus, focustarget, pet, pettarget, player, target, targettarget, targettargettarget
 	for unit in pairs(self.units) do
-		UF:FrameGlow_ConfigureGlow(self[unit], unit, dbTexture)
-	end
-
-	-- arena{1-5}, boss{1-5}
-	for unit in pairs(self.groupunits) do
 		UF:FrameGlow_ConfigureGlow(self[unit], unit, dbTexture)
 	end
 

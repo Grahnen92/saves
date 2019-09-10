@@ -1,14 +1,10 @@
 local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 local DT = E:GetModule('DataTexts')
 
---Cache global variables
 --Lua functions
-local join = string.join
---WoW API / Variables
-local ToggleFrame = ToggleFrame
-
---Global variables that we don't cache, list them here for mikk's FindGlobals script
--- GLOBALS: WorldMapFrame
+local _G = _G
+local strjoin = strjoin
+local InCombatLockdown = InCombatLockdown
 
 local displayString = ""
 local inRestrictedArea = false
@@ -24,25 +20,24 @@ local function Update(self, elapsed)
 	end
 end
 
-local function OnEvent(self)
-	E:MapInfo_Update()
-
+local function OnEvent(panel)
 	if E.MapInfo.x and E.MapInfo.y then
 		inRestrictedArea = false
-		self.text:SetFormattedText(displayString, E.MapInfo.xText or 0, E.MapInfo.yText or 0)
+		panel.text:SetFormattedText(displayString, E.MapInfo.xText or 0, E.MapInfo.yText or 0)
 	else
 		inRestrictedArea = true
-		self.text:SetText("N/A")
+		panel.text:SetText('')
 	end
 end
 
 local function Click()
-	ToggleFrame(WorldMapFrame)
+	if InCombatLockdown() then _G.UIErrorsFrame:AddMessage(E.InfoColor.._G.ERR_NOT_IN_COMBAT) return end
+	_G.ToggleFrame(_G.WorldMapFrame)
 end
 
 local function ValueColorUpdate(hex)
-	displayString = join("", hex, "%.2f|r", " , ", hex, "%.2f|r")
+	displayString = strjoin("", hex, "%.2f|r", " , ", hex, "%.2f|r")
 end
-E['valueColorUpdateFuncs'][ValueColorUpdate] = true
+E.valueColorUpdateFuncs[ValueColorUpdate] = true
 
-DT:RegisterDatatext('Coords', {"ZONE_CHANGED","ZONE_CHANGED_INDOORS","ZONE_CHANGED_NEW_AREA"}, OnEvent, Update, Click, nil, nil, L["Coords"])
+DT:RegisterDatatext('Coords', {"LOADING_SCREEN_DISABLED","ZONE_CHANGED","ZONE_CHANGED_INDOORS","ZONE_CHANGED_NEW_AREA"}, OnEvent, Update, Click, nil, nil, L["Coords"], E.MapInfo)

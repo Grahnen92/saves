@@ -4,36 +4,27 @@ local _, ns = ...
 local ElvUF = ns.oUF
 assert(ElvUF, "ElvUI was unable to locate oUF.")
 
---Cache global variables
 --Lua functions
 local _G = _G
 local tinsert = tinsert
 local max = math.max
 --WoW API / Variables
 local CreateFrame = CreateFrame
+local CastingBarFrame_OnLoad = CastingBarFrame_OnLoad
+local CastingBarFrame_SetUnit = CastingBarFrame_SetUnit
 local MAX_COMBO_POINTS = MAX_COMBO_POINTS
-
---Global variables that we don't cache, list them here for mikk's FindGlobals script
 -- GLOBALS: ElvUF_Target
 
 function UF:Construct_PlayerFrame(frame)
-	frame.ThreatIndicator = self:Construct_Threat(frame)
-
 	frame.Health = self:Construct_HealthBar(frame, true, true, 'RIGHT')
 	frame.Health.frequentUpdates = true;
-
 	frame.Power = self:Construct_PowerBar(frame, true, true, 'LEFT')
 	frame.Power.frequentUpdates = true;
-
 	frame.Name = self:Construct_NameText(frame)
-
 	frame.Portrait3D = self:Construct_Portrait(frame, 'model')
 	frame.Portrait2D = self:Construct_Portrait(frame, 'texture')
-
 	frame.Buffs = self:Construct_Buffs(frame)
-
 	frame.Debuffs = self:Construct_Debuffs(frame)
-
 	frame.Castbar = self:Construct_Castbar(frame, L["Player Castbar"])
 
 	--Create a holder frame all "classbars" can be positioned into
@@ -45,35 +36,21 @@ function UF:Construct_PlayerFrame(frame)
 	frame.ClassBar = 'ClassPower'
 
 	--Some classes need another set of different classbars.
-	if E.myclass == "DEATHKNIGHT" then
-		frame.Runes = self:Construct_DeathKnightResourceBar(frame)
-		frame.ClassBar = 'Runes'
-	elseif E.myclass == "DRUID" then
-		frame.AdditionalPower = self:Construct_AdditionalPowerBar(frame)
-	elseif E.myclass == "MONK" then
-		frame.Stagger = self:Construct_Stagger(frame)
-	elseif E.myclass == 'PRIEST' then
-		frame.AdditionalPower = self:Construct_AdditionalPowerBar(frame)
-	elseif E.myclass == 'SHAMAN' then
-		frame.AdditionalPower = self:Construct_AdditionalPowerBar(frame)
-	end
 
+	--frame.PowerPrediction = self:Construct_PowerPrediction(frame) -- must be AFTER Power & AdditionalPower
 	frame.MouseGlow = self:Construct_MouseGlow(frame)
 	frame.TargetGlow = self:Construct_TargetGlow(frame)
 	frame.RaidTargetIndicator = self:Construct_RaidIcon(frame)
 	frame.RestingIndicator = self:Construct_RestingIndicator(frame)
 	frame.CombatIndicator = self:Construct_CombatIndicator(frame)
-	frame.PvPText = self:Construct_PvPIndicator(frame)
-	frame.DebuffHighlight = self:Construct_DebuffHighlight(frame)
-	frame.HealthPrediction = self:Construct_HealComm(frame)
+	--frame.HealthPrediction = self:Construct_HealComm(frame)
 	frame.AuraBars = self:Construct_AuraBarHeader(frame)
 	frame.InfoPanel = self:Construct_InfoPanel(frame)
-	frame.PvPIndicator = self:Construct_PvPIcon(frame)
-	frame.CombatFade = true
+	--frame.Fader = self:Construct_Fader()
 	frame.customTexts = {}
 
 	frame:Point('BOTTOMLEFT', E.UIParent, 'BOTTOM', -413, 68) --Set to default position
-	E:CreateMover(frame, frame:GetName()..'Mover', L["Player Frame"], nil, nil, nil, 'ALL,SOLO')
+	E:CreateMover(frame, frame:GetName()..'Mover', L["Player Frame"], nil, nil, nil, 'ALL,SOLO', nil, 'unitframe,player,generalGroup')
 
 	frame.unitframeType = "player"
 end
@@ -128,14 +105,14 @@ function UF:Update_PlayerFrame(frame, db)
 
 	UF:Configure_InfoPanel(frame)
 
-	--Threat
-	UF:Configure_Threat(frame)
-
 	--Rest Icon
 	UF:Configure_RestingIndicator(frame)
 
 	--Combat Icon
 	UF:Configure_CombatIndicator(frame)
+
+	--Resource Bars
+	UF:Configure_ClassBar(frame)
 
 	--Health
 	UF:Configure_HealthBar(frame)
@@ -143,11 +120,11 @@ function UF:Update_PlayerFrame(frame, db)
 	--Name
 	UF:UpdateNameSettings(frame)
 
-	--PvP
-	UF:Configure_PVPIndicator(frame)
-
 	--Power
 	UF:Configure_Power(frame)
+
+	-- Power Predicition
+	--UF:Configure_PowerPrediction(frame)
 
 	--Portrait
 	UF:Configure_Portrait(frame)
@@ -158,26 +135,22 @@ function UF:Update_PlayerFrame(frame, db)
 	UF:Configure_Auras(frame, 'Debuffs')
 
 	--Castbar
+	frame:DisableElement('Castbar')
 	UF:Configure_Castbar(frame)
 
-	--Resource Bars
-	UF:Configure_ClassBar(frame)
-
-	--Combat Fade
-	if db.combatfade and not frame:IsElementEnabled('CombatFade') then
-		frame:EnableElement('CombatFade')
-	elseif not db.combatfade and frame:IsElementEnabled('CombatFade') then
-		frame:DisableElement('CombatFade')
+	if (not db.enable and not E.private.unitframe.disabledBlizzardFrames.player) then
+		CastingBarFrame_OnLoad(_G.CastingBarFrame, 'player', true, false)
+		CastingBarFrame_OnLoad(_G.PetCastingBarFrame)
+	elseif not db.enable and E.private.unitframe.disabledBlizzardFrames.player or (db.enable and not db.castbar.enable) then
+		CastingBarFrame_SetUnit(_G.CastingBarFrame, nil)
+		CastingBarFrame_SetUnit(_G.PetCastingBarFrame, nil)
 	end
 
-	--Debuff Highlight
-	UF:Configure_DebuffHighlight(frame)
-
-	--Raid Icon
-	UF:Configure_RaidIcon(frame)
+	--Fader
+	--UF:Configure_Fader(frame)
 
 	--OverHealing
-	UF:Configure_HealComm(frame)
+	--UF:Configure_HealComm(frame)
 
 	--AuraBars
 	UF:Configure_AuraBars(frame)
@@ -187,9 +160,6 @@ function UF:Update_PlayerFrame(frame, db)
 		UF:Configure_AuraBars(ElvUF_Target)
 	end
 
-	--PvP & Prestige Icon
-	UF:Configure_PVPIcon(frame)
-
 	--CustomTexts
 	UF:Configure_CustomTexts(frame)
 
@@ -197,22 +167,4 @@ function UF:Update_PlayerFrame(frame, db)
 	frame:UpdateAllElements("ElvUI_UpdateAllElements")
 end
 
-tinsert(UF['unitstoload'], 'player')
-
---Bugfix: Classbar is not updated correctly on initial login ( http://git.tukui.org/Elv/elvui/issues/987 )
---ToggleResourceBar(bars) is called before the classbar has been updated, so we call it manually once.
-local function UpdateClassBar()
-	local frame = _G["ElvUF_Player"]
-	if frame and frame.ClassBar then
-		frame:UpdateElement(frame.ClassBar)
-		UF.ToggleResourceBar(frame[frame.ClassBar])
-	end
-end
-
-local f = CreateFrame("Frame")
-f:RegisterEvent("PLAYER_ENTERING_WORLD")
-f:SetScript("OnEvent", function(self, event)
-	self:UnregisterEvent(event)
-	if not E.db.unitframe.units.player.enable then return end
-	UpdateClassBar()
-end)
+tinsert(UF.unitstoload, 'player')

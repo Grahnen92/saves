@@ -4,22 +4,18 @@ local _, ns = ...
 local ElvUF = ns.oUF
 assert(ElvUF, "ElvUI was unable to locate oUF.")
 
---Cache global variables
 --Lua functions
 local _G = _G
 --WoW API / Variables
 local CreateFrame = CreateFrame
+local GetInstanceInfo = GetInstanceInfo
 local InCombatLockdown = InCombatLockdown
-local IsInInstance = IsInInstance
 local RegisterStateDriver = RegisterStateDriver
 local UnregisterStateDriver = UnregisterStateDriver
 
---Global variables that we don't cache, list them here for mikk's FindGlobals script
--- GLOBALS: UnitFrame_OnEnter, UnitFrame_OnLeave
-
 function UF:Construct_PartyFrames()
-	self:SetScript('OnEnter', UnitFrame_OnEnter)
-	self:SetScript('OnLeave', UnitFrame_OnLeave)
+	self:SetScript('OnEnter', _G.UnitFrame_OnEnter)
+	self:SetScript('OnLeave', _G.UnitFrame_OnLeave)
 
 	self.RaisedElementParent = CreateFrame('Frame', nil, self)
 	self.RaisedElementParent.TextureParent = CreateFrame('Frame', nil, self.RaisedElementParent)
@@ -32,6 +28,8 @@ function UF:Construct_PartyFrames()
 		self.MouseGlow = UF:Construct_MouseGlow(self)
 		self.TargetGlow = UF:Construct_TargetGlow(self)
 		self.Name = UF:Construct_NameText(self)
+		self.RaidTargetIndicator = UF:Construct_RaidIcon(self)
+
 		self.originalParent = self:GetParent()
 
 		self.childType = "pet"
@@ -44,6 +42,7 @@ function UF:Construct_PartyFrames()
 		self.Health = UF:Construct_HealthBar(self, true, true, 'RIGHT')
 		self.Power = UF:Construct_PowerBar(self, true, true, 'LEFT')
 		self.Power.frequentUpdates = false;
+		--self.PowerPrediction = UF:Construct_PowerPrediction(self)
 
 		self.Portrait3D = UF:Construct_Portrait(self, 'model')
 		self.Portrait2D = UF:Construct_Portrait(self, 'texture')
@@ -53,18 +52,14 @@ function UF:Construct_PartyFrames()
 		self.Debuffs = UF:Construct_Debuffs(self)
 		self.AuraWatch = UF:Construct_AuraWatch(self)
 		self.RaidDebuffs = UF:Construct_RaidDebuffs(self)
-		self.DebuffHighlight = UF:Construct_DebuffHighlight(self)
-		self.ResurrectIndicator = UF:Construct_ResurrectionIcon(self)
-		self.GroupRoleIndicator = UF:Construct_RoleIcon(self)
-		self.RaidRoleFramesAnchor = UF:Construct_RaidRoleFrames(self)
+		--self.DebuffHighlight = UF:Construct_DebuffHighlight(self)
 		self.MouseGlow = UF:Construct_MouseGlow(self)
-		self.PhaseIndicator = UF:Construct_PhaseIcon(self)
 		self.TargetGlow = UF:Construct_TargetGlow(self)
-		self.ThreatIndicator = UF:Construct_Threat(self)
 		self.RaidTargetIndicator = UF:Construct_RaidIcon(self)
 		self.ReadyCheckIndicator = UF:Construct_ReadyCheckIcon(self)
-		self.HealthPrediction = UF:Construct_HealComm(self)
+		--self.HealthPrediction = UF:Construct_HealComm(self)
 		self.customTexts = {}
+
 		self.Sparkle = CreateFrame("Frame", nil, self)
 		self.Sparkle:SetAllPoints(self.Health)
 		self.Castbar = UF:Construct_Castbar(self)
@@ -72,10 +67,8 @@ function UF:Construct_PartyFrames()
 		self.unitframeType = "party"
 	end
 
-	self.Range = UF:Construct_Range(self)
-
-	UF:Update_StatusBars()
-	UF:Update_FontStrings()
+	--self.Fader = UF:Construct_Fader()
+	self.Cutaway = UF:Construct_Cutaway(self)
 
 	return self
 end
@@ -90,12 +83,12 @@ function UF:Update_PartyHeader(header, db)
 		headerHolder:ClearAllPoints()
 		headerHolder:Point("BOTTOMLEFT", E.UIParent, "BOTTOMLEFT", 4, 195)
 
-		E:CreateMover(headerHolder, headerHolder:GetName()..'Mover', L["Party Frames"], nil, nil, nil, 'ALL,PARTY,ARENA')
+		E:CreateMover(headerHolder, headerHolder:GetName()..'Mover', L["Party Frames"], nil, nil, nil, 'ALL,PARTY', nil, 'unitframe,party,generalGroup')
 		headerHolder.positioned = true;
 
 		headerHolder:RegisterEvent("PLAYER_ENTERING_WORLD")
 		headerHolder:RegisterEvent("ZONE_CHANGED_NEW_AREA")
-		headerHolder:SetScript("OnEvent", UF['PartySmartVisibility'])
+		headerHolder:SetScript("OnEvent", UF.PartySmartVisibility)
 	end
 
 	UF.PartySmartVisibility(headerHolder)
@@ -106,14 +99,17 @@ function UF:PartySmartVisibility(event)
 		self.blockVisibilityChanges = false
 		return
 	end
-	local inInstance, instanceType = IsInInstance()
-	if event == "PLAYER_REGEN_ENABLED" then self:UnregisterEvent("PLAYER_REGEN_ENABLED") end
+
+	if event == "PLAYER_REGEN_ENABLED" then
+		self:UnregisterEvent("PLAYER_REGEN_ENABLED")
+	end
 
 	if not InCombatLockdown() then
-		if inInstance and (instanceType == "raid" or instanceType == "pvp") then
+		local _, instanceType = GetInstanceInfo()
+		if instanceType == "raid" or instanceType == "pvp" then
 			UnregisterStateDriver(self, "visibility")
-			self:Hide()
 			self.blockVisibilityChanges = true
+			self:Hide()
 		elseif self.db.visibility then
 			RegisterStateDriver(self, "visibility", self.db.visibility)
 			self.blockVisibilityChanges = false
@@ -205,6 +201,8 @@ function UF:Update_PartyFrames(frame, db)
 		--Health
 		UF:Configure_HealthBar(frame)
 
+		UF:Configure_RaidIcon(frame)
+
 		--Name
 		UF:UpdateNameSettings(frame, frame.childType)
 	else
@@ -217,13 +215,9 @@ function UF:Update_PartyFrames(frame, db)
 
 		UF:UpdateNameSettings(frame)
 
-		UF:Configure_PhaseIcon(frame)
-
 		UF:Configure_Power(frame)
 
 		UF:Configure_Portrait(frame)
-
-		UF:Configure_Threat(frame)
 
 		UF:EnableDisable_Auras(frame)
 		UF:Configure_Auras(frame, 'Buffs')
@@ -235,15 +229,9 @@ function UF:Update_PartyFrames(frame, db)
 
 		UF:Configure_RaidIcon(frame)
 
-		UF:Configure_ResurrectionIcon(frame)
+	--	UF:Configure_DebuffHighlight(frame)
 
-		UF:Configure_DebuffHighlight(frame)
-
-		UF:Configure_RoleIcon(frame)
-
-		UF:Configure_HealComm(frame)
-
-		UF:Configure_RaidRoleIcons(frame)
+	--	UF:Configure_HealComm(frame)
 
 		UF:UpdateAuraWatch(frame)
 
@@ -252,9 +240,13 @@ function UF:Update_PartyFrames(frame, db)
 		UF:Configure_CustomTexts(frame)
 	end
 
-	UF:Configure_Range(frame)
+	--Fader
+	--UF:Configure_Fader(frame)
+
+	--Cutaway
+	UF:Configure_Cutaway(frame)
 
 	frame:UpdateAllElements("ElvUI_UpdateAllElements")
 end
 
-UF['headerstoload']['party'] = {nil, 'ELVUI_UNITPET, ELVUI_UNITTARGET'}
+UF.headerstoload.party = {nil, 'ELVUI_UNITPET, ELVUI_UNITTARGET'}

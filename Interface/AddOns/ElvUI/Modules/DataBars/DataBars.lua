@@ -1,19 +1,20 @@
 local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
-local mod = E:NewModule("DataBars", 'AceEvent-3.0')
-E.DataBars = mod
+local mod = E:GetModule('DataBars')
 
---Cache global variables
+--Lua functions
+local _G = _G
 --WoW API / Variables
+local CreateFrame = CreateFrame
 local GetExpansionLevel = GetExpansionLevel
 local MAX_PLAYER_LEVEL_TABLE = MAX_PLAYER_LEVEL_TABLE
---Global variables that we don't cache, list them here for mikk's FindGlobals script
--- GLOBALS: GameTooltip, ElvUI_ExperienceBar, ElvUI_ReputationBar, ElvUI_ArtifactBar, ElvUI_HonorBar, CreateFrame
+-- GLOBALS: ElvUI_ExperienceBar, ElvUI_ReputationBar, ElvUI_ArtifactBar, ElvUI_HonorBar, ElvUI_AzeriteBar
 
 function mod:OnLeave()
-	if (self == ElvUI_ExperienceBar and mod.db.experience.mouseover) or (self == ElvUI_ReputationBar and mod.db.reputation.mouseover) or (self == ElvUI_ArtifactBar and mod.db.artifact.mouseover) or (self == ElvUI_HonorBar and mod.db.honor.mouseover) or (self == ElvUI_AzeriteBar and mod.db.azerite.mouseover) then
+	if (self == ElvUI_ExperienceBar and mod.db.experience.mouseover) or (self == ElvUI_ReputationBar and mod.db.reputation.mouseover) then
 		E:UIFrameFadeOut(self, 1, self:GetAlpha(), 0)
 	end
-	GameTooltip:Hide()
+
+	_G.GameTooltip:Hide()
 end
 
 function mod:CreateBar(name, onEnter, onClick, ...)
@@ -21,7 +22,7 @@ function mod:CreateBar(name, onEnter, onClick, ...)
 	bar:Point(...)
 	bar:SetScript('OnEnter', onEnter)
 	bar:SetScript('OnLeave', mod.OnLeave)
-	bar:SetScript("OnClick", onClick)
+	bar:SetScript('OnMouseDown', onClick)
 	bar:SetFrameStrata('LOW')
 	bar:SetTemplate('Transparent')
 	bar:Hide()
@@ -42,40 +43,25 @@ end
 function mod:UpdateDataBarDimensions()
 	self:UpdateExperienceDimensions()
 	self:UpdateReputationDimensions()
-	--self:UpdateArtifactDimensions()
-	self:UpdateHonorDimensions()
-	self:UpdateAzeriteDimensions()
 end
 
 function mod:PLAYER_LEVEL_UP(level)
-	local maxLevel = MAX_PLAYER_LEVEL_TABLE[GetExpansionLevel()];
+	local maxLevel = MAX_PLAYER_LEVEL_TABLE[GetExpansionLevel()]
 	if (level ~= maxLevel or not self.db.experience.hideAtMaxLevel) and self.db.experience.enable then
 		self:UpdateExperience("PLAYER_LEVEL_UP", level)
 	else
 		self.expBar:Hide()
 	end
-
-	if(self.db.honor.enable) then
-		self:UpdateHonor("PLAYER_LEVEL_UP", level)
-	else
-		self.honorBar:Hide()
-	end
 end
 
 function mod:Initialize()
+	self.Initialized = true
 	self.db = E.db.databars
 
 	self:LoadExperienceBar()
 	self:LoadReputationBar()
-	self:LoadHonorBar()
-	--self:LoadArtifactBar()
-	self:LoadAzeriteBar()
 
 	self:RegisterEvent("PLAYER_LEVEL_UP")
 end
 
-local function InitializeCallback()
-	mod:Initialize()
-end
-
-E:RegisterModule(mod:GetName(), InitializeCallback)
+E:RegisterModule(mod:GetName())

@@ -4,21 +4,22 @@ local S = E:GetModule('Skins')
 --Cache global variables
 --Lua functions
 local _G = _G
---WoW API / Variables
-
---Global variables that we don't cache, list them here for mikk's FindGlobals script
--- GLOBALS:
 
 local function LoadSkin()
 	if E.private.skins.blizzard.enable ~= true or E.private.skins.blizzard.taxi ~= true then return end
 
-	local TaxiFrame = _G["TaxiFrame"]
-	TaxiFrame:StripTextures()
-	TaxiFrame:CreateBackdrop("Transparent")
-	_G["TaxiRouteMap"]:CreateBackdrop("Default")
-	_G["TaxiRouteMap"].backdrop.backdropTexture:Hide()
+	local TaxiFrame = _G.TaxiFrame
+	TaxiFrame:CreateBackdrop('Transparent')
+	TaxiFrame.backdrop:Point('TOPLEFT', 11, -12)
+	TaxiFrame.backdrop:Point('BOTTOMRIGHT', -34, 75)
 
-	S:HandleCloseButton(TaxiFrame.CloseButton)
+	TaxiFrame:StripTextures()
+
+	_G.TaxiPortrait:Kill()
+
+	S:HandleCloseButton(_G.TaxiCloseButton)
+
+	_G.TaxiRouteMap:CreateBackdrop('Default')
 end
 
-S:AddCallback("Taxi", LoadSkin)
+S:AddCallback('Taxi', LoadSkin)

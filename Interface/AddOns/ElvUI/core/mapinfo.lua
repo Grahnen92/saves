@@ -1,6 +1,6 @@
 local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 
---Cache global variables
+--Lua functions
 local select = select
 local pairs = pairs
 --WoW API / Variables
@@ -10,12 +10,15 @@ local CreateFrame = CreateFrame
 local UnitPosition = UnitPosition
 local GetUnitSpeed = GetUnitSpeed
 local CreateVector2D = CreateVector2D
+local GetRealZoneText = GetRealZoneText
+local GetMinimapZoneText = GetMinimapZoneText
 local C_Map_GetMapInfo = C_Map.GetMapInfo
 local C_Map_GetBestMapForUnit = C_Map.GetBestMapForUnit
 local C_Map_GetWorldPosFromMapPos = C_Map.GetWorldPosFromMapPos
 local MapUtil = MapUtil
 
 E.MapInfo = {}
+
 function E:MapInfo_Update()
 	local mapID = C_Map_GetBestMapForUnit("player")
 
@@ -26,6 +29,8 @@ function E:MapInfo_Update()
 
 	E.MapInfo.mapID = mapID or nil
 	E.MapInfo.zoneText = (mapID and E:GetZoneText(mapID)) or nil
+	E.MapInfo.subZoneText = GetMinimapZoneText() or nil
+	E.MapInfo.realZoneText = GetRealZoneText() or nil
 
 	local continent = mapID and MapUtil.GetMapParentInfo(mapID, Enum.UIMapType.Continent, true)
 	E.MapInfo.continentParentMapID = (continent and continent.parentMapID) or nil
@@ -55,11 +60,7 @@ function E:MapInfo_CoordsStopWatching()
 end
 
 function E:MapInfo_CoordsStop(event)
-	if event == "CRITERIA_UPDATE" then
-		if not E.MapInfo.coordsFalling then return end -- stop if we weren't falling
-		if (GetUnitSpeed('player') or 0) > 0 then return end -- we are still moving!
-		E.MapInfo.coordsFalling = nil -- we were falling!
-	elseif (event == "PLAYER_STOPPED_MOVING" or event == "PLAYER_CONTROL_GAINED") and IsFalling() then
+	if (event == "PLAYER_STOPPED_MOVING" or event == "PLAYER_CONTROL_GAINED") and IsFalling() then
 		E.MapInfo.coordsFalling = true
 		return
 	end
@@ -143,21 +144,21 @@ function E:GetZoneText(mapID)
 
 	local continent, zoneName = ZoneIDToContinentName[mapID]
 	if continent and continent == "Outland" then
-		if E.MapInfo.name == localizedMapNames["Nagrand"] or E.MapInfo.name == "Nagrand"  then
-			zoneName = localizedMapNames["Nagrand"].." ("..localizedMapNames["Outland"]..")"
+		if E.MapInfo.name == localizedMapNames.Nagrand or E.MapInfo.name == "Nagrand"  then
+			zoneName = localizedMapNames.Nagrand.." ("..localizedMapNames.Outland..")"
 		elseif E.MapInfo.name == localizedMapNames["Shadowmoon Valley"] or E.MapInfo.name == "Shadowmoon Valley"  then
-			zoneName = localizedMapNames["Shadowmoon Valley"].." ("..localizedMapNames["Outland"]..")"
+			zoneName = localizedMapNames["Shadowmoon Valley"].." ("..localizedMapNames.Outland..")"
 		end
 	end
 
 	return zoneName or E.MapInfo.name
 end
 
-E:RegisterEvent("CRITERIA_UPDATE", "MapInfo_CoordsStop") -- when the player goes into an animation (landing)
 E:RegisterEvent("PLAYER_STARTED_MOVING", "MapInfo_CoordsStart")
 E:RegisterEvent("PLAYER_STOPPED_MOVING", "MapInfo_CoordsStop")
 E:RegisterEvent("PLAYER_CONTROL_LOST", "MapInfo_CoordsStart")
 E:RegisterEvent("PLAYER_CONTROL_GAINED", "MapInfo_CoordsStop")
-E:RegisterEvent("ZONE_CHANGED_NEW_AREA", "MapInfo_Update")
-E:RegisterEvent("ZONE_CHANGED_INDOORS", "MapInfo_Update")
-E:RegisterEvent("ZONE_CHANGED", "MapInfo_Update")
+E:RegisterEventForObject("LOADING_SCREEN_DISABLED", E.MapInfo, E.MapInfo_Update)
+E:RegisterEventForObject("ZONE_CHANGED_NEW_AREA", E.MapInfo, E.MapInfo_Update)
+E:RegisterEventForObject("ZONE_CHANGED_INDOORS", E.MapInfo, E.MapInfo_Update)
+E:RegisterEventForObject("ZONE_CHANGED", E.MapInfo, E.MapInfo_Update)

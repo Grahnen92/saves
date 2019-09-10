@@ -35,6 +35,14 @@ the unit.
 local _, ns = ...
 local oUF = ns.oUF
 
+-- ElvUI block
+local UnitIsUnit = UnitIsUnit
+local UnitGUID = UnitGUID
+local UnitIsConnected = UnitIsConnected
+local UnitIsVisible = UnitIsVisible
+local SetPortraitTexture = SetPortraitTexture
+-- end block
+
 local function Update(self, event, unit)
 	if(not unit or not UnitIsUnit(self.unit, unit)) then return end
 
@@ -110,7 +118,7 @@ local function Enable(self, unit)
 
 		self:RegisterEvent('UNIT_MODEL_CHANGED', Path)
 		self:RegisterEvent('UNIT_PORTRAIT_UPDATE', Path)
-		self:RegisterEvent('PORTRAITS_UPDATED', Path)
+		self:RegisterEvent('PORTRAITS_UPDATED', Path, true)
 		self:RegisterEvent('UNIT_CONNECTION', Path)
 
 		-- The quest log uses PARTY_MEMBER_{ENABLE,DISABLE} to handle updating of

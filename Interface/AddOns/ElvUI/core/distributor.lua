@@ -1,11 +1,12 @@
 local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
-local D = E:NewModule('Distributor', "AceEvent-3.0","AceTimer-3.0","AceComm-3.0","AceSerializer-3.0")
-local LibCompress = LibStub:GetLibrary("LibCompress")
-local LibBase64 = LibStub("LibBase64-1.0-ElvUI")
+local D = E:GetModule('Distributor')
+local LibCompress = E.Libs.Compress
+local LibBase64 = E.Libs.Base64
 
---Cache global variables
+--Lua functions
+local _G = _G
 local tonumber, type, gsub, pcall, loadstring = tonumber, type, gsub, pcall, loadstring
-local len, format, split, find = string.len, string.format, string.split, string.find
+local len, format, split, find = strlen, format, strsplit, strfind
 --WoW API / Variables
 local CreateFrame = CreateFrame
 local IsInRaid, UnitInRaid = IsInRaid, UnitInRaid
@@ -13,9 +14,7 @@ local IsInGroup, UnitInParty = IsInGroup, UnitInParty
 local LE_PARTY_CATEGORY_HOME = LE_PARTY_CATEGORY_HOME
 local LE_PARTY_CATEGORY_INSTANCE = LE_PARTY_CATEGORY_INSTANCE
 local ACCEPT, CANCEL, YES, NO = ACCEPT, CANCEL, YES, NO
-
---Global variables that we don't cache, list them here for the mikk"s Find Globals script
--- GLOBALS: LibStub, UIParent, ElvDB, ElvPrivateDB, ReloadUI
+-- GLOBALS: ElvDB, ElvPrivateDB
 
 ----------------------------------
 -- CONSTANTS
@@ -31,12 +30,13 @@ local Downloads = {}
 local Uploads = {}
 
 function D:Initialize()
+	self.Initialized = true
 	self:RegisterComm(REQUEST_PREFIX)
 	self:RegisterEvent("CHAT_MSG_ADDON")
 
-	self.statusBar = CreateFrame("StatusBar", "ElvUI_Download", UIParent)
+	self.statusBar = CreateFrame("StatusBar", "ElvUI_Download", E.UIParent)
 	E:RegisterStatusBar(self.statusBar)
-	self.statusBar:CreateBackdrop('Default')
+	self.statusBar:CreateBackdrop()
 	self.statusBar:SetStatusBarTexture(E.media.normTex)
 	self.statusBar:SetStatusBarColor(0.95, 0.15, 0.15)
 	self.statusBar:Size(250, 18)
@@ -118,7 +118,7 @@ function D:OnCommReceived(prefix, msg, dist, sender)
 			textString = format(L["%s is attempting to share his filters with you. Would you like to accept the request?"], sender)
 		end
 
-		E.PopupDialogs['DISTRIBUTOR_RESPONSE'] = {
+		E.PopupDialogs.DISTRIBUTOR_RESPONSE = {
 			text = textString,
 			OnAccept = function()
 				self.statusBar:SetMinMaxValues(0, length)
@@ -175,19 +175,19 @@ function D:OnCommReceived(prefix, msg, dist, sender)
 					ElvDB.profiles[profileKey] = data
 				else
 					textString = format(L["Profile download complete from %s, but the profile %s already exists. Change the name or else it will overwrite the existing profile."], sender, profileKey)
-					E.PopupDialogs['DISTRIBUTOR_CONFIRM'] = {
+					E.PopupDialogs.DISTRIBUTOR_CONFIRM = {
 						text = textString,
 						button1 = ACCEPT,
 						hasEditBox = 1,
 						editBoxWidth = 350,
 						maxLetters = 127,
-						OnAccept = function(self)
-							ElvDB.profiles[self.editBox:GetText()] = data
-							LibStub("AceAddon-3.0"):GetAddon("ElvUI").data:SetProfile(self.editBox:GetText())
-							E:UpdateAll(true)
+						OnAccept = function(popup)
+							ElvDB.profiles[popup.editBox:GetText()] = data
+							E.Libs.AceAddon:GetAddon("ElvUI").data:SetProfile(popup.editBox:GetText())
+							E:StaggeredUpdateAll(nil, true)
 							Downloads[sender] = nil
 						end,
-						OnShow = function(self) self.editBox:SetText(profileKey) self.editBox:SetFocus() end,
+						OnShow = function(popup) popup.editBox:SetText(profileKey) popup.editBox:SetFocus() end,
 						timeout = 0,
 						exclusive = 1,
 						whileDead = 1,
@@ -201,14 +201,14 @@ function D:OnCommReceived(prefix, msg, dist, sender)
 				end
 			end
 
-			E.PopupDialogs['DISTRIBUTOR_CONFIRM'] = {
+			E.PopupDialogs.DISTRIBUTOR_CONFIRM = {
 				text = textString,
 				OnAccept = function()
 					if profileKey == "global" then
 						E:CopyTable(ElvDB.global, data)
-						E:UpdateAll(true)
+						E:StaggeredUpdateAll(nil, true)
 					else
-						LibStub("AceAddon-3.0"):GetAddon("ElvUI").data:SetProfile(profileKey)
+						E.Libs.AceAddon:GetAddon("ElvUI").data:SetProfile(profileKey)
 					end
 					Downloads[sender] = nil
 				end,
@@ -237,6 +237,36 @@ function D:OnCommReceived(prefix, msg, dist, sender)
 	end
 end
 
+--Keys that should not be exported
+local blacklistedKeys = {
+	profile = {
+		general = {
+			numberPrefixStyle = true,
+		},
+		chat = {
+			hideVoiceButtons = true,
+		},
+	},
+	private = {},
+	global = {
+		general = {
+			UIScale = true,
+			locale = true,
+			version = true,
+			eyefinity = true,
+			ignoreScalePopup = true,
+			disableTutorialButtons = true,
+			showMissingTalentAlert = true,
+		},
+		chat = {
+			classColorMentionExcludedNames = true,
+		},
+		unitframe = {
+			spellRangeCheck = true,
+		},
+	},
+}
+
 local function GetProfileData(profileType)
 	if not profileType or type(profileType) ~= "string" then
 		E:Print("Bad argument #1 to 'GetProfileData' (string expected)")
@@ -257,6 +287,7 @@ local function GetProfileData(profileType)
 		--This makes the table huge, and will cause the WoW client to lock up for several seconds.
 		--We compare against the default table and remove all duplicates from our table. The table is now much smaller.
 		profileData = E:RemoveTableDuplicates(profileData, P)
+		profileData = E:FilterTableFromBlacklist(profileData, blacklistedKeys.profile)
 
 	elseif profileType == "private" then
 		local privateProfileKey = E.myname..' - '..E.myrealm
@@ -264,28 +295,30 @@ local function GetProfileData(profileType)
 
 		profileData = E:CopyTable(profileData, ElvPrivateDB.profiles[privateProfileKey])
 		profileData = E:RemoveTableDuplicates(profileData, V)
+		profileData = E:FilterTableFromBlacklist(profileData, blacklistedKeys.private)
 
 	elseif profileType == "global" then
 		profileKey = "global"
 
 		profileData = E:CopyTable(profileData, ElvDB.global)
 		profileData = E:RemoveTableDuplicates(profileData, G)
+		profileData = E:FilterTableFromBlacklist(profileData, blacklistedKeys.global)
 
 	elseif profileType == "filters" then
 		profileKey = "filters"
 
-		profileData["unitframe"] = {}
-		profileData["unitframe"]["aurafilters"] = {}
-		profileData["unitframe"]["aurafilters"] = E:CopyTable(profileData["unitframe"]["aurafilters"], ElvDB.global.unitframe.aurafilters)
-		profileData["unitframe"]["buffwatch"] = {}
-		profileData["unitframe"]["buffwatch"] = E:CopyTable(profileData["unitframe"]["buffwatch"], ElvDB.global.unitframe.buffwatch)
+		profileData.unitframe = {}
+		profileData.unitframe.aurafilters = {}
+		profileData.unitframe.aurafilters = E:CopyTable(profileData.unitframe.aurafilters, ElvDB.global.unitframe.aurafilters)
+		profileData.unitframe.buffwatch = {}
+		profileData.unitframe.buffwatch = E:CopyTable(profileData.unitframe.buffwatch, ElvDB.global.unitframe.buffwatch)
 		profileData = E:RemoveTableDuplicates(profileData, G)
 	elseif profileType == "styleFilters" then
 		profileKey = "styleFilters"
 
-		profileData["nameplate"] = {}
-		profileData["nameplate"]["filters"] = {}
-		profileData["nameplate"]["filters"] = E:CopyTable(profileData["nameplate"]["filters"], ElvDB.global.nameplate.filters)
+		profileData.nameplate = {}
+		profileData.nameplate.filters = {}
+		profileData.nameplate.filters = E:CopyTable(profileData.nameplate.filters, ElvDB.global.nameplate.filters)
 		profileData = E:RemoveTableDuplicates(profileData, G)
 	end
 
@@ -344,15 +377,15 @@ function D:GetImportStringType(dataString)
 end
 
 function D:Decode(dataString)
-	local profileInfo, profileType, profileKey, profileData, message
+	local profileInfo, profileType, profileKey, profileData
 	local stringType = self:GetImportStringType(dataString)
 
 	if stringType == "Base64" then
 		local decodedData = LibBase64:Decode(dataString)
-		local decompressedData, message = LibCompress:Decompress(decodedData)
+		local decompressedData, decompressedMessage = LibCompress:Decompress(decodedData)
 
 		if not decompressedData then
-			E:Print("Error decompressing data:", message)
+			E:Print("Error decompressing data:", decompressedMessage)
 			return
 		end
 
@@ -390,13 +423,12 @@ function D:Decode(dataString)
 		profileDataAsString = gsub(profileDataAsString, "\124\124", "\124") --Remove escape pipe characters
 		profileType, profileKey = E:SplitString(profileInfo, "::")
 
+		local profileMessage
 		local profileToTable = loadstring(format("%s %s", "return", profileDataAsString))
-		if profileToTable then
-			message, profileData = pcall(profileToTable)
-		end
+		if profileToTable then profileMessage, profileData = pcall(profileToTable) end
 
 		if not profileData or type(profileData) ~= "table" then
-			E:Print("Error converting lua string to table:", message)
+			E:Print("Error converting lua string to table:", profileMessage)
 			return
 		end
 	end
@@ -410,6 +442,7 @@ local function SetImportedProfile(profileType, profileKey, profileData, force)
 	D.profileData = nil
 
 	if profileType == "profile" then
+		profileData = E:FilterTableFromBlacklist(profileData, blacklistedKeys.profile) --Remove unwanted options from import
 		if not ElvDB.profiles[profileKey] or force then
 			if force and E.data.keys.profile == profileKey then
 				--Overwriting an active profile doesn't update when calling SetProfile
@@ -429,11 +462,13 @@ local function SetImportedProfile(profileType, profileKey, profileData, force)
 			return
 		end
 	elseif profileType == "private" then
-		local profileKey = ElvPrivateDB.profileKeys[E.myname..' - '..E.myrealm]
-		ElvPrivateDB.profiles[profileKey] = profileData
+		profileData = E:FilterTableFromBlacklist(profileData, blacklistedKeys.private) --Remove unwanted options from import
+		local pfKey = ElvPrivateDB.profileKeys[E.myname..' - '..E.myrealm]
+		ElvPrivateDB.profiles[pfKey] = profileData
 		E:StaticPopup_Show('IMPORT_RL')
 
 	elseif profileType == "global" then
+		profileData = E:FilterTableFromBlacklist(profileData, blacklistedKeys.global) --Remove unwanted options from import
 		E:CopyTable(ElvDB.global, profileData)
 		E:StaticPopup_Show('IMPORT_RL')
 
@@ -444,7 +479,7 @@ local function SetImportedProfile(profileType, profileKey, profileData, force)
 	end
 
 	--Update all ElvUI modules
-	E:UpdateAll(true)
+	E:StaggeredUpdateAll(nil, true)
 end
 
 function D:ExportProfile(profileType, exportFormat)
@@ -473,38 +508,38 @@ function D:ImportProfile(dataString)
 	return true
 end
 
-E.PopupDialogs['DISTRIBUTOR_SUCCESS'] = {
+E.PopupDialogs.DISTRIBUTOR_SUCCESS = {
 	text = L["Your profile was successfully recieved by the player."],
 	whileDead = 1,
 	hideOnEscape = 1,
-	button1 = OKAY,
+	button1 = _G.OKAY,
 }
 
-E.PopupDialogs['DISTRIBUTOR_WAITING'] = {
+E.PopupDialogs.DISTRIBUTOR_WAITING = {
 	text = L["Profile request sent. Waiting for response from player."],
 	whileDead = 1,
 	hideOnEscape = 1,
 	timeout = 35,
 }
 
-E.PopupDialogs['DISTRIBUTOR_REQUEST_DENIED'] = {
+E.PopupDialogs.DISTRIBUTOR_REQUEST_DENIED = {
 	text = L["Request was denied by user."],
 	whileDead = 1,
 	hideOnEscape = 1,
-	button1 = OKAY,
+	button1 = _G.OKAY,
 }
 
-E.PopupDialogs['DISTRIBUTOR_FAILED'] = {
+E.PopupDialogs.DISTRIBUTOR_FAILED = {
 	text = L["Lord! It's a miracle! The download up and vanished like a fart in the wind! Try Again!"],
 	whileDead = 1,
 	hideOnEscape = 1,
-	button1 = OKAY,
+	button1 = _G.OKAY,
 }
 
-E.PopupDialogs['DISTRIBUTOR_RESPONSE'] = {}
-E.PopupDialogs['DISTRIBUTOR_CONFIRM'] = {}
+E.PopupDialogs.DISTRIBUTOR_RESPONSE = {}
+E.PopupDialogs.DISTRIBUTOR_CONFIRM = {}
 
-E.PopupDialogs['IMPORT_PROFILE_EXISTS'] = {
+E.PopupDialogs.IMPORT_PROFILE_EXISTS = {
 	text = L["The profile you tried to import already exists. Choose a new name or accept to overwrite the existing profile."],
 	button1 = ACCEPT,
 	button2 = CANCEL,
@@ -531,19 +566,15 @@ E.PopupDialogs['IMPORT_PROFILE_EXISTS'] = {
 	preferredIndex = 3
 }
 
-E.PopupDialogs["IMPORT_RL"] = {
+E.PopupDialogs.IMPORT_RL = {
 	text = L["You have imported settings which may require a UI reload to take effect. Reload now?"],
 	button1 = ACCEPT,
 	button2 = CANCEL,
-	OnAccept = ReloadUI,
+	OnAccept = _G.ReloadUI,
 	timeout = 0,
 	whileDead = 1,
 	hideOnEscape = false,
 	preferredIndex = 3
 }
 
-local function InitializeCallback()
-	D:Initialize()
-end
-
-E:RegisterModule(D:GetName(), InitializeCallback)
+E:RegisterModule(D:GetName())

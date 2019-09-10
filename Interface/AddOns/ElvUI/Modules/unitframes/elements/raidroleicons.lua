@@ -1,9 +1,7 @@
 local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 local UF = E:GetModule('UnitFrames');
 
---Cache global variables
 --Lua functions
-
 --WoW API / Variables
 local CreateFrame = CreateFrame
 
@@ -34,7 +32,7 @@ function UF:Configure_RaidRoleIcons(frame)
 
 		raidRoleFrameAnchor:ClearAllPoints()
 		if frame.db.raidRoleIcons.position == 'TOPLEFT' then
-			raidRoleFrameAnchor:Point('LEFT', frame.Health, 'TOPLEFT', 2, 0)
+			raidRoleFrameAnchor:Point('LEFT', frame, 'TOPLEFT', 2, 0)
 		else
 			raidRoleFrameAnchor:Point('RIGHT', frame, 'TOPRIGHT', -2, 0)
 		end

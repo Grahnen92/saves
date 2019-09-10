@@ -4,45 +4,36 @@ local _, ns = ...
 local ElvUF = ns.oUF
 assert(ElvUF, "ElvUI was unable to locate oUF.")
 
---Cache global variables
 --Lua functions
 local _G = _G
-local tinsert = table.insert
+local tinsert = tinsert
 --WoW API / Variables
 local IsAddOnLoaded = IsAddOnLoaded
 
 function UF:Construct_TargetFrame(frame)
 	frame.Health = self:Construct_HealthBar(frame, true, true, 'RIGHT')
 	frame.Health.frequentUpdates = true;
-
 	frame.Power = self:Construct_PowerBar(frame, true, true, 'LEFT')
 	frame.Power.frequentUpdates = true;
-
 	frame.Name = self:Construct_NameText(frame)
-
 	frame.Portrait3D = self:Construct_Portrait(frame, 'model')
 	frame.Portrait2D = self:Construct_Portrait(frame, 'texture')
-
 	frame.Buffs = self:Construct_Buffs(frame)
-
 	frame.Debuffs = self:Construct_Debuffs(frame)
-	frame.ThreatIndicator = self:Construct_Threat(frame)
-	frame.Castbar = self:Construct_Castbar(frame, L["Target Castbar"])
-	frame.Castbar.SafeZone = nil
-	frame.Castbar.LatencyTexture:Hide()
+	--frame.Castbar = self:Construct_Castbar(frame, L["Target Castbar"])
+	--frame.Castbar.SafeZone = nil
+	--frame.Castbar.LatencyTexture:Hide()
 	frame.RaidTargetIndicator = self:Construct_RaidIcon(frame)
-	frame.HealthPrediction = self:Construct_HealComm(frame)
-	frame.DebuffHighlight = self:Construct_DebuffHighlight(frame)
+--	frame.HealthPrediction = self:Construct_HealComm(frame)
+--	frame.DebuffHighlight = self:Construct_DebuffHighlight(frame)
 	frame.InfoPanel = self:Construct_InfoPanel(frame)
 	frame.MouseGlow = self:Construct_MouseGlow(frame)
 	frame.TargetGlow = self:Construct_TargetGlow(frame)
 	frame.AuraBars = self:Construct_AuraBarHeader(frame)
-	frame.Range = self:Construct_Range(frame)
-	frame.PhaseIndicator = self:Construct_PhaseIcon(frame)
-	frame.PvPIndicator = self:Construct_PvPIcon(frame)
+	--frame.Fader = self:Construct_Fader()
 	frame.customTexts = {}
 	frame:Point('BOTTOMRIGHT', E.UIParent, 'BOTTOM', 413, 68)
-	E:CreateMover(frame, frame:GetName()..'Mover', L["Target Frame"], nil, nil, nil, 'ALL,SOLO')
+	E:CreateMover(frame, frame:GetName()..'Mover', L["Target Frame"], nil, nil, nil, 'ALL,SOLO', nil, 'unitframe,target,generalGroup')
 
 	frame.unitframeType = "target"
 end
@@ -105,37 +96,28 @@ function UF:Update_TargetFrame(frame, db)
 	--Portrait
 	UF:Configure_Portrait(frame)
 
-	--Threat
-	UF:Configure_Threat(frame)
-
 	--Auras
 	UF:EnableDisable_Auras(frame)
 	UF:Configure_Auras(frame, 'Buffs')
 	UF:Configure_Auras(frame, 'Debuffs')
 
 	--Castbar
-	UF:Configure_Castbar(frame)
+	--UF:Configure_Castbar(frame)
+
+	--Fader
+	--UF:Configure_Fader(frame)
 
 	--Debuff Highlight
-	UF:Configure_DebuffHighlight(frame)
+	--UF:Configure_DebuffHighlight(frame)
 
 	--OverHealing
-	UF:Configure_HealComm(frame)
+	--UF:Configure_HealComm(frame)
 
 	--Raid Icon
 	UF:Configure_RaidIcon(frame)
 
 	--AuraBars
 	UF:Configure_AuraBars(frame)
-
-	--Range
-	UF:Configure_Range(frame)
-
-	-- PhaseIndicator
-	UF:Configure_PhaseIcon(frame)
-
-	--PvP & Prestige Icon
-	UF:Configure_PVPIcon(frame)
 
 	--CustomTexts
 	UF:Configure_CustomTexts(frame)
@@ -144,4 +126,4 @@ function UF:Update_TargetFrame(frame, db)
 	frame:UpdateAllElements("ElvUI_UpdateAllElements")
 end
 
-tinsert(UF['unitstoload'], 'target')
+tinsert(UF.unitstoload, 'target')

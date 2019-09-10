@@ -1,98 +1,93 @@
 local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
-local UF = E:NewModule('UnitFrames', 'AceTimer-3.0', 'AceEvent-3.0', 'AceHook-3.0');
-local LSM = LibStub("LibSharedMedia-3.0");
-UF.LSM = LSM
+local UF = E:GetModule('UnitFrames');
+local LSM = E.Libs.LSM
+UF.LSM = E.Libs.LSM
 
---Cache global variables
 --Lua functions
 local _G = _G
 local select, pairs, type, unpack, assert, tostring = select, pairs, type, unpack, assert, tostring
-local min = math.min
-local tinsert = table.insert
-local find, gsub, format = string.find, string.gsub, string.format
+local min = min
+local tinsert = tinsert
+local strfind, gsub, format = strfind, gsub, format
 --WoW API / Variables
-local hooksecurefunc = hooksecurefunc
-local CreateFrame = CreateFrame
-local IsAddOnLoaded = IsAddOnLoaded
-local UnitFrame_OnEnter = UnitFrame_OnEnter
-local UnitFrame_OnLeave = UnitFrame_OnLeave
-local IsInInstance = IsInInstance
-local InCombatLockdown = InCombatLockdown
 local CompactRaidFrameManager_GetSetting = CompactRaidFrameManager_GetSetting
 local CompactRaidFrameManager_SetSetting = CompactRaidFrameManager_SetSetting
-local GetInstanceInfo = GetInstanceInfo
-local UnregisterStateDriver = UnregisterStateDriver
-local RegisterStateDriver = RegisterStateDriver
-local UnregisterAttributeDriver = UnregisterAttributeDriver
 local CompactRaidFrameManager_UpdateShown = CompactRaidFrameManager_UpdateShown
+local CreateFrame = CreateFrame
+local GetInstanceInfo = GetInstanceInfo
+local hooksecurefunc = hooksecurefunc
+local InCombatLockdown = InCombatLockdown
+local IsAddOnLoaded = IsAddOnLoaded
+local RegisterStateDriver = RegisterStateDriver
+local SetCVar = SetCVar
+local UnitFrame_OnEnter = UnitFrame_OnEnter
+local UnitFrame_OnLeave = UnitFrame_OnLeave
+local UnregisterAttributeDriver = UnregisterAttributeDriver
+local UnregisterStateDriver = UnregisterStateDriver
 local CompactRaidFrameContainer = CompactRaidFrameContainer
-local MAX_RAID_MEMBERS = MAX_RAID_MEMBERS
-local MAX_BOSS_FRAMES = MAX_BOSS_FRAMES
 
---Global variables that we don't cache, list them here for mikk's FindGlobals script
--- GLOBALS: UIParent, ElvCharacterDB, ElvUF_Parent, oUF_RaidDebuffs, CompactRaidFrameManager
--- GLOBALS: PlayerFrame, RuneFrame, PetFrame, TargetFrame, ComboFrame, FocusFrame
--- GLOBALS: FocusFrameToT, TargetFrameToT, CompactUnitFrameProfiles, PartyMemberBackground
-
+local C_NamePlate_GetNamePlateForUnit = C_NamePlate.GetNamePlateForUnit
+-- GLOBALS: ElvUF_Parent
 
 local _, ns = ...
 local ElvUF = ns.oUF
 assert(ElvUF, "ElvUI was unable to locate oUF.")
 
-UF['headerstoload'] = {}
-UF['unitgroupstoload'] = {}
-UF['unitstoload'] = {}
+UF.headerstoload = {}
+UF.unitgroupstoload = {}
+UF.unitstoload = {}
 
-UF['groupPrototype'] = {}
-UF['headerPrototype'] = {}
-UF['headers'] = {}
-UF['groupunits'] = {}
-UF['units'] = {}
+UF.groupPrototype = {}
+UF.headerPrototype = {}
+UF.headers = {}
+UF.groupunits = {}
+UF.units = {}
 
-UF['statusbars'] = {}
-UF['fontstrings'] = {}
-UF['badHeaderPoints'] = {
+UF.statusbars = {}
+UF.fontstrings = {}
+UF.badHeaderPoints = {
 	['TOP'] = 'BOTTOM',
 	['LEFT'] = 'RIGHT',
 	['BOTTOM'] = 'TOP',
 	['RIGHT'] = 'LEFT',
 }
 
-UF["headerFunctions"] = {}
-
-UF['classMaxResourceBar'] = {
+UF.headerFunctions = {}
+UF.classMaxResourceBar = {
 	['DEATHKNIGHT'] = 6,
 	['PALADIN'] = 5,
 	['WARLOCK'] = 5,
 	['MONK'] = 6,
 	['MAGE'] = 4,
-	['ROGUE'] = 10,
+	['ROGUE'] = 6,
 	["DRUID"] = 5
 }
 
-UF['instanceMapIDs'] = {
-	[30] = 40, -- Alterac Valley
-	[489] = 10, -- Warsong Gulch
-	[529] = 15, -- Arathi Basin
-	[566] = 15, -- Eye of the Storm
-	[607] = 15, -- Strand of the Ancients
-	[628] = 40, -- Isle of Conquest
-	[726] = 10, -- Twin Peaks
-	[727] = 10, -- Silvershard Mines [STVDiamondMineBG]
-	[761] = 10, -- The Battle for Gilneas [GilneasBattleground2]
-	[968] = 10, -- Rated Eye of the Storm
-	[998] = 10, -- Temple of Kotmogu
-	[1105] = 15, -- Deepwind Gourge [GoldRush]
-	[1280] = 40, -- Tarren Mill vs Southshore [HillsbradFoothillsBG]
-	[1681] = 15, -- Arathi Blizzard [ArathiBasinWinter]
-	[1803] = 10, -- Seething Shore [AzeriteBG]
-	--[1715] = 5, -- Battle for Blackrock Mountain
-	--do not have enough information on this one yet, going to store the instanceID for now.
+UF.instanceMapIDs = {
+	[30]   = 40, -- Alterac Valley
+	[489]  = 10, -- Classic Warsong Gulch
+	[529]  = 15, -- Classic Arathi Basin
+	[566]  = 15, -- Eye of the Storm
+	[607]  = 15, -- Strand of the Ancients
+	[628]  = 40, -- Isle of Conquest
+	[726]  = 10, -- Twin Peaks
+	[727]  = 10, -- Silvershard Mines
+	[761]  = 10, -- The Battle for Gilneas
+	[968]  = 10, -- Rated Eye of the Storm
+	[998]  = 10, -- Temple of Kotmogu
+	[1105] = 15, -- Deepwind Gorge
+	[1280] = 40, -- Southshore vs Tarren Mill
+	[1681] = 15, -- Arathi Basin Winter
+	[1803] = 10, -- Seething Shore
+	[2106] = 10, -- Warsong Gulch
+	[2107] = 15, -- Arathi Basin
+	[2118] = 40, -- Battle for Wintergrasp
+	[3358] = 15, -- Arathi Basin (NEW - Only Brawl?)
 }
 
-UF['headerGroupBy'] = {
+UF.headerGroupBy = {
 	['CLASS'] = function(header)
-		header:SetAttribute("groupingOrder", "DEATHKNIGHT,DRUID,HUNTER,MAGE,PALADIN,PRIEST,SHAMAN,WARLOCK,WARRIOR,MONK")
+		header:SetAttribute("groupingOrder", "DEATHKNIGHT,DEMONHUNTER,DRUID,HUNTER,MAGE,PALADIN,PRIEST,ROGUE,SHAMAN,WARLOCK,WARRIOR,MONK")
 		header:SetAttribute('sortMethod', 'NAME')
 		header:SetAttribute("groupBy", 'CLASS')
 	end,
@@ -106,6 +101,11 @@ UF['headerGroupBy'] = {
 		header:SetAttribute('sortMethod', 'NAME')
 		header:SetAttribute("groupBy", 'ASSIGNEDROLE')
 	end,
+	['ROLE2'] = function(header)
+		header:SetAttribute("groupingOrder", "TANK,DAMAGER,HEALER,NONE")
+		header:SetAttribute('sortMethod', 'NAME')
+		header:SetAttribute("groupBy", 'ASSIGNEDROLE')
+	end,
 	['NAME'] = function(header)
 		header:SetAttribute("groupingOrder", "1,2,3,4,5,6,7,8")
 		header:SetAttribute('sortMethod', 'NAME')
@@ -115,6 +115,11 @@ UF['headerGroupBy'] = {
 		header:SetAttribute("groupingOrder", "1,2,3,4,5,6,7,8")
 		header:SetAttribute('sortMethod', 'INDEX')
 		header:SetAttribute("groupBy", 'GROUP')
+	end,
+	['CLASSROLE'] = function(header)
+		header:SetAttribute("groupingOrder", "DEATHKNIGHT,WARRIOR,DEMONHUNTER,ROGUE,MONK,PALADIN,DRUID,SHAMAN,HUNTER,PRIEST,MAGE,WARLOCK")
+		header:SetAttribute('sortMethod', 'NAME')
+		header:SetAttribute("groupBy", 'CLASS')
 	end,
 	['PETNAME'] = function(header)
 		header:SetAttribute("groupingOrder", "1,2,3,4,5,6,7,8")
@@ -234,8 +239,6 @@ function UF:ConvertGroupDB(group)
 	end
 end
 
-
-
 function UF:Construct_UF(frame, unit)
 	frame:SetScript('OnEnter', UnitFrame_OnEnter)
 	frame:SetScript('OnLeave', UnitFrame_OnLeave)
@@ -256,18 +259,16 @@ function UF:Construct_UF(frame, unit)
 	frame.RaisedElementParent.TextureParent = CreateFrame('Frame', nil, frame.RaisedElementParent)
 	frame.RaisedElementParent:SetFrameLevel(frame:GetFrameLevel() + 100)
 
-	if not self['groupunits'][unit] then
+	if not self.groupunits[unit] then
 		local stringTitle = E:StringTitle(unit)
 		if stringTitle:find('target') then
 			stringTitle = gsub(stringTitle, 'target', 'Target')
 		end
 		self["Construct_"..stringTitle.."Frame"](self, frame, unit)
 	else
-		UF["Construct_"..E:StringTitle(self['groupunits'][unit]).."Frames"](self, frame, unit)
+		UF["Construct_"..E:StringTitle(self.groupunits[unit]).."Frames"](self, frame, unit)
 	end
 
-	self:Update_StatusBars()
-	self:Update_FontStrings()
 	return frame
 end
 
@@ -284,15 +285,15 @@ end
 function UF:GetPositionOffset(position, offset)
 	if not offset then offset = 2; end
 	local x, y = 0, 0
-	if find(position, 'LEFT') then
+	if strfind(position, 'LEFT') then
 		x = offset
-	elseif find(position, 'RIGHT') then
+	elseif strfind(position, 'RIGHT') then
 		x = -offset
 	end
 
-	if find(position, 'TOP') then
+	if strfind(position, 'TOP') then
 		y = -offset
-	elseif find(position, 'BOTTOM') then
+	elseif strfind(position, 'BOTTOM') then
 		y = offset
 	end
 
@@ -307,9 +308,9 @@ function UF:GetAuraOffset(p1, p2)
 		x = 3
 	end
 
-	if find(p1, 'TOP') and find(p2, 'BOTTOM') then
+	if strfind(p1, 'TOP') and strfind(p2, 'BOTTOM') then
 		y = -1
-	elseif find(p1, 'BOTTOM') and find(p2, 'TOP') then
+	elseif strfind(p1, 'BOTTOM') and strfind(p2, 'TOP') then
 		y = 1
 	end
 
@@ -324,11 +325,7 @@ function UF:GetAuraAnchorFrame(frame, attachTo, isConflict)
 	if isConflict or attachTo == 'FRAME' then
 		return frame
 	elseif attachTo == 'TRINKET' then
-		if select(2, IsInInstance()) == "arena" then
-			return frame.Trinket
-		else
-			return frame.PVPSpecIcon
-		end
+		return frame.PVPSpecIcon
 	elseif attachTo == 'BUFFS' then
 		return frame.Buffs
 	elseif attachTo == 'DEBUFFS' then
@@ -352,77 +349,104 @@ end
 function UF:UpdateColors()
 	local db = self.db.colors
 
-	local good = E:GetColorTable(db.reaction.GOOD)
-	local bad = E:GetColorTable(db.reaction.BAD)
-	local neutral = E:GetColorTable(db.reaction.NEUTRAL)
+	ElvUF.colors.tapped = E:SetColorTable(ElvUF.colors.tapped, db.tapped)
+	ElvUF.colors.disconnected = E:SetColorTable(ElvUF.colors.disconnected, db.disconnected)
+	ElvUF.colors.health = E:SetColorTable(ElvUF.colors.health, db.health)
+	ElvUF.colors.power.MANA = E:SetColorTable(ElvUF.colors.power.MANA, db.power.MANA)
+	ElvUF.colors.power.RAGE = E:SetColorTable(ElvUF.colors.power.RAGE, db.power.RAGE)
+	ElvUF.colors.power.FOCUS = E:SetColorTable(ElvUF.colors.power.FOCUS, db.power.FOCUS)
+	ElvUF.colors.power.ENERGY = E:SetColorTable(ElvUF.colors.power.ENERGY, db.power.ENERGY)
+	ElvUF.colors.power.RUNIC_POWER = E:SetColorTable(ElvUF.colors.power.RUNIC_POWER, db.power.RUNIC_POWER)
+	ElvUF.colors.power.PAIN = E:SetColorTable(ElvUF.colors.power.PAIN, db.power.PAIN)
+	ElvUF.colors.power.FURY = E:SetColorTable(ElvUF.colors.power.FURY, db.power.FURY)
+	ElvUF.colors.power.LUNAR_POWER = E:SetColorTable(ElvUF.colors.power.LUNAR_POWER, db.power.LUNAR_POWER)
+	ElvUF.colors.power.INSANITY = E:SetColorTable(ElvUF.colors.power.INSANITY, db.power.INSANITY)
+	ElvUF.colors.power.MAELSTROM = E:SetColorTable(ElvUF.colors.power.MAELSTROM, db.power.MAELSTROM)
 
-	ElvUF.colors.tapped = E:GetColorTable(db.tapped)
-	ElvUF.colors.disconnected = E:GetColorTable(db.disconnected)
-	ElvUF.colors.health = E:GetColorTable(db.health)
-	ElvUF.colors.power.MANA = E:GetColorTable(db.power.MANA)
-	ElvUF.colors.power.RAGE = E:GetColorTable(db.power.RAGE)
-	ElvUF.colors.power.FOCUS = E:GetColorTable(db.power.FOCUS)
-	ElvUF.colors.power.ENERGY = E:GetColorTable(db.power.ENERGY)
-	ElvUF.colors.power.RUNIC_POWER = E:GetColorTable(db.power.RUNIC_POWER)
-	ElvUF.colors.power.PAIN = E:GetColorTable(db.power.PAIN)
-	ElvUF.colors.power.FURY = E:GetColorTable(db.power.FURY)
-	ElvUF.colors.power.LUNAR_POWER = E:GetColorTable(db.power.LUNAR_POWER)
-	ElvUF.colors.power.INSANITY = E:GetColorTable(db.power.INSANITY)
-	ElvUF.colors.power.MAELSTROM = E:GetColorTable(db.power.MAELSTROM)
-
-	ElvUF.colors.ComboPoints = {}
-	ElvUF.colors.ComboPoints[1] = E:GetColorTable(db.classResources.comboPoints[1])
-	ElvUF.colors.ComboPoints[2] = E:GetColorTable(db.classResources.comboPoints[2])
-	ElvUF.colors.ComboPoints[3] = E:GetColorTable(db.classResources.comboPoints[3])
+	if not ElvUF.colors.ComboPoints then ElvUF.colors.ComboPoints = {} end
+	ElvUF.colors.ComboPoints[1] = E:SetColorTable(ElvUF.colors.ComboPoints[1], db.classResources.comboPoints[1])
+	ElvUF.colors.ComboPoints[2] = E:SetColorTable(ElvUF.colors.ComboPoints[2], db.classResources.comboPoints[2])
+	ElvUF.colors.ComboPoints[3] = E:SetColorTable(ElvUF.colors.ComboPoints[3], db.classResources.comboPoints[3])
 
 	--Monk, Mage, Paladin and Warlock, Death Knight
-	ElvUF.colors.ClassBars = {}
-	ElvUF.colors.ClassBars.MONK = {}
-	ElvUF.colors.ClassBars.PALADIN = E:GetColorTable(db.classResources.PALADIN)
-	ElvUF.colors.ClassBars.MAGE = E:GetColorTable(db.classResources.MAGE)
-	ElvUF.colors.ClassBars.MONK[1] = E:GetColorTable(db.classResources.MONK[1])
-	ElvUF.colors.ClassBars.MONK[2] = E:GetColorTable(db.classResources.MONK[2])
-	ElvUF.colors.ClassBars.MONK[3] = E:GetColorTable(db.classResources.MONK[3])
-	ElvUF.colors.ClassBars.MONK[4] = E:GetColorTable(db.classResources.MONK[4])
-	ElvUF.colors.ClassBars.MONK[5] = E:GetColorTable(db.classResources.MONK[5])
-	ElvUF.colors.ClassBars.MONK[6] = E:GetColorTable(db.classResources.MONK[6])
-	ElvUF.colors.ClassBars.DEATHKNIGHT = E:GetColorTable(db.classResources.DEATHKNIGHT)
-	ElvUF.colors.ClassBars.WARLOCK = E:GetColorTable(db.classResources.WARLOCK)
+	if not ElvUF.colors.ClassBars then ElvUF.colors.ClassBars = {} end
+	if not ElvUF.colors.ClassBars.MONK then ElvUF.colors.ClassBars.MONK = {} end
+	ElvUF.colors.ClassBars.PALADIN = E:SetColorTable(ElvUF.colors.ClassBars.PALADIN, db.classResources.PALADIN)
+	ElvUF.colors.ClassBars.MAGE = E:SetColorTable(ElvUF.colors.ClassBars.MAGE, db.classResources.MAGE)
+	ElvUF.colors.ClassBars.MONK[1] = E:SetColorTable(ElvUF.colors.ClassBars.MONK[1], db.classResources.MONK[1])
+	ElvUF.colors.ClassBars.MONK[2] = E:SetColorTable(ElvUF.colors.ClassBars.MONK[2], db.classResources.MONK[2])
+	ElvUF.colors.ClassBars.MONK[3] = E:SetColorTable(ElvUF.colors.ClassBars.MONK[3], db.classResources.MONK[3])
+	ElvUF.colors.ClassBars.MONK[4] = E:SetColorTable(ElvUF.colors.ClassBars.MONK[4], db.classResources.MONK[4])
+	ElvUF.colors.ClassBars.MONK[5] = E:SetColorTable(ElvUF.colors.ClassBars.MONK[5], db.classResources.MONK[5])
+	ElvUF.colors.ClassBars.MONK[6] = E:SetColorTable(ElvUF.colors.ClassBars.MONK[6], db.classResources.MONK[6])
+	ElvUF.colors.ClassBars.DEATHKNIGHT = E:SetColorTable(ElvUF.colors.ClassBars.DEATHKNIGHT, db.classResources.DEATHKNIGHT)
+	ElvUF.colors.ClassBars.WARLOCK = E:SetColorTable(ElvUF.colors.ClassBars.WARLOCK, db.classResources.WARLOCK)
 
-	ElvUF.colors.reaction[1] = bad
-	ElvUF.colors.reaction[2] = bad
-	ElvUF.colors.reaction[3] = bad
-	ElvUF.colors.reaction[4] = neutral
-	ElvUF.colors.reaction[5] = good
-	ElvUF.colors.reaction[6] = good
-	ElvUF.colors.reaction[7] = good
-	ElvUF.colors.reaction[8] = good
-	ElvUF.colors.smooth = {1, 0, 0,	1, 1, 0, unpack(E:GetColorTable(db.health))}
+	-- these are just holders.. to maintain and update tables
+	if not ElvUF.colors.reaction.good then ElvUF.colors.reaction.good = {} end
+	if not ElvUF.colors.reaction.bad then ElvUF.colors.reaction.bad = {} end
+	if not ElvUF.colors.reaction.neutral then ElvUF.colors.reaction.neutral = {} end
+	ElvUF.colors.reaction.good = E:SetColorTable(ElvUF.colors.reaction.good, db.reaction.GOOD)
+	ElvUF.colors.reaction.bad = E:SetColorTable(ElvUF.colors.reaction.bad, db.reaction.BAD)
+	ElvUF.colors.reaction.neutral = E:SetColorTable(ElvUF.colors.reaction.neutral, db.reaction.NEUTRAL)
 
-	ElvUF.colors.castColor = E:GetColorTable(db.castColor)
-	ElvUF.colors.castNoInterrupt = E:GetColorTable(db.castNoInterrupt)
+	if not ElvUF.colors.smoothHealth then ElvUF.colors.smoothHealth = {} end
+	ElvUF.colors.smoothHealth = E:SetColorTable(ElvUF.colors.smoothHealth, db.health)
 
-	ElvUF.colors.DebuffHighlight = {}
-	ElvUF.colors.DebuffHighlight["Magic"] = E:GetColorTable(db.debuffHighlight.Magic)
-	ElvUF.colors.DebuffHighlight["Curse"] = E:GetColorTable(db.debuffHighlight.Curse)
-	ElvUF.colors.DebuffHighlight["Disease"] = E:GetColorTable(db.debuffHighlight.Disease)
-	ElvUF.colors.DebuffHighlight["Poison"] = E:GetColorTable(db.debuffHighlight.Poison)
+	if not ElvUF.colors.smooth then ElvUF.colors.smooth = {1, 0, 0,	1, 1, 0} end
+	-- end
+
+	ElvUF.colors.reaction[1] = ElvUF.colors.reaction.bad
+	ElvUF.colors.reaction[2] = ElvUF.colors.reaction.bad
+	ElvUF.colors.reaction[3] = ElvUF.colors.reaction.bad
+	ElvUF.colors.reaction[4] = ElvUF.colors.reaction.neutral
+	ElvUF.colors.reaction[5] = ElvUF.colors.reaction.good
+	ElvUF.colors.reaction[6] = ElvUF.colors.reaction.good
+	ElvUF.colors.reaction[7] = ElvUF.colors.reaction.good
+	ElvUF.colors.reaction[8] = ElvUF.colors.reaction.good
+	ElvUF.colors.smooth[7] = ElvUF.colors.smoothHealth[1]
+	ElvUF.colors.smooth[8] = ElvUF.colors.smoothHealth[2]
+	ElvUF.colors.smooth[9] = ElvUF.colors.smoothHealth[3]
+
+	ElvUF.colors.castColor = E:SetColorTable(ElvUF.colors.castColor, db.castColor)
+	ElvUF.colors.castNoInterrupt = E:SetColorTable(ElvUF.colors.castNoInterrupt, db.castNoInterrupt)
+
+	if not ElvUF.colors.DebuffHighlight then ElvUF.colors.DebuffHighlight = {} end
+	ElvUF.colors.DebuffHighlight.Magic = E:SetColorTable(ElvUF.colors.DebuffHighlight.Magic, db.debuffHighlight.Magic)
+	ElvUF.colors.DebuffHighlight.Curse = E:SetColorTable(ElvUF.colors.DebuffHighlight.Curse, db.debuffHighlight.Curse)
+	ElvUF.colors.DebuffHighlight.Disease = E:SetColorTable(ElvUF.colors.DebuffHighlight.Disease, db.debuffHighlight.Disease)
+	ElvUF.colors.DebuffHighlight.Poison = E:SetColorTable(ElvUF.colors.DebuffHighlight.Poison, db.debuffHighlight.Poison)
 end
 
 function UF:Update_StatusBars()
 	local statusBarTexture = LSM:Fetch("statusbar", self.db.statusbar)
-	for statusbar in pairs(UF['statusbars']) do
-		if statusbar and statusbar:GetObjectType() == 'StatusBar' and not statusbar.isTransparent then
-			statusbar:SetStatusBarTexture(statusBarTexture)
-			if statusbar.texture then statusbar.texture = statusBarTexture end --Update .texture on oUF Power element
-		elseif statusbar and statusbar:GetObjectType() == 'Texture' then
-			statusbar:SetTexture(statusBarTexture)
+	for statusbar in pairs(UF.statusbars) do
+		if statusbar then
+			local useBlank = statusbar.isTransparent
+			if statusbar.parent then useBlank = statusbar.parent.isTransparent end
+			if statusbar:IsObjectType('StatusBar') then
+				if not useBlank then
+					statusbar:SetStatusBarTexture(statusBarTexture)
+					if statusbar.texture then statusbar.texture = statusBarTexture end --Update .texture on oUF Power element
+				end
+			elseif statusbar:IsObjectType('Texture') then
+				statusbar:SetTexture(statusBarTexture)
+			end
+
+			UF:Update_StatusBar(statusbar.bg or statusbar.BG, (not useBlank and statusBarTexture) or E.media.blankTex)
 		end
 	end
 end
 
-function UF:Update_StatusBar(bar)
-	bar:SetStatusBarTexture(LSM:Fetch("statusbar", self.db.statusbar))
+function UF:Update_StatusBar(statusbar, texture)
+	if not statusbar then return end
+	if not texture then texture = LSM:Fetch("statusbar", self.db.statusbar) end
+
+	if statusbar:IsObjectType('StatusBar') then
+		statusbar:SetStatusBarTexture(texture)
+	elseif statusbar:IsObjectType('Texture') then
+		statusbar:SetTexture(texture)
+	end
 end
 
 function UF:Update_FontString(object)
@@ -431,25 +455,74 @@ end
 
 function UF:Update_FontStrings()
 	local stringFont = LSM:Fetch("font", self.db.font)
-	for font in pairs(UF['fontstrings']) do
+	for font in pairs(UF.fontstrings) do
 		font:FontTemplate(stringFont, self.db.fontSize, self.db.fontOutline)
 	end
 end
 
+function UF:Construct_Fader()
+	return { UpdateRange = UF.UpdateRange }
+end
+
+function UF:Configure_Fader(frame)
+	if frame.db and frame.db.enable and (frame.db.fader and frame.db.fader.enable) then
+		if not frame:IsElementEnabled('Fader') then
+			frame:EnableElement('Fader')
+		end
+
+		frame.Fader:SetOption('Hover', frame.db.fader.hover)
+		frame.Fader:SetOption('Combat', frame.db.fader.combat)
+		frame.Fader:SetOption('PlayerTarget', frame.db.fader.playertarget)
+		frame.Fader:SetOption('Focus', frame.db.fader.focus)
+		frame.Fader:SetOption('Health', frame.db.fader.health)
+		frame.Fader:SetOption('Power', frame.db.fader.power)
+		frame.Fader:SetOption('Vehicle', frame.db.fader.vehicle)
+		frame.Fader:SetOption('Casting', frame.db.fader.casting)
+		frame.Fader:SetOption('MinAlpha', frame.db.fader.minAlpha)
+		frame.Fader:SetOption('MaxAlpha', frame.db.fader.maxAlpha)
+
+		if frame ~= _G.ElvUF_Player then
+			frame.Fader:SetOption('Range', frame.db.fader.range)
+			frame.Fader:SetOption('UnitTarget', frame.db.fader.unittarget)
+		end
+
+		frame.Fader:SetOption('Smooth', (frame.db.fader.smooth > 0 and frame.db.fader.smooth) or nil)
+		frame.Fader:SetOption('Delay', (frame.db.fader.delay > 0 and frame.db.fader.delay) or nil)
+
+		frame.Fader:ClearTimers()
+		frame.Fader.configTimer = E:ScheduleTimer(frame.Fader.ForceUpdate, 0.25, frame.Fader, true)
+	elseif frame:IsElementEnabled('Fader') then
+		frame:DisableElement('Fader')
+		E:UIFrameFadeIn(frame, 1, frame:GetAlpha(), 1)
+	end
+end
+
 function UF:Configure_FontString(obj)
-	UF['fontstrings'][obj] = true
+	UF.fontstrings[obj] = true
 	obj:FontTemplate() --This is temporary.
 end
 
 function UF:Update_AllFrames()
 	if InCombatLockdown() then self:RegisterEvent('PLAYER_REGEN_ENABLED'); return end
-	if E.private["unitframe"].enable ~= true then return; end
+	if E.private.unitframe.enable ~= true then return; end
 	self:UpdateColors()
 	self:Update_FontStrings()
 	self:Update_StatusBars()
 
-	for unit in pairs(self['units']) do
-		if self.db['units'][unit].enable then
+	for unit in pairs(self.units) do
+		if self.db.units[unit].enable then
+			self[unit]:Update()
+			self[unit]:Enable()
+			E:EnableMover(self[unit].mover:GetName())
+		else
+			self[unit]:Update()
+			self[unit]:Disable()
+			E:DisableMover(self[unit].mover:GetName())
+		end
+	end
+
+	for unit, group in pairs(self.groupunits) do
+		if self.db.units[group].enable then
 			self[unit]:Enable()
 			self[unit]:Update()
 			E:EnableMover(self[unit].mover:GetName())
@@ -459,18 +532,7 @@ function UF:Update_AllFrames()
 		end
 	end
 
-	for unit, group in pairs(self['groupunits']) do
-		if self.db['units'][group].enable then
-			self[unit]:Enable()
-			self[unit]:Update()
-			E:EnableMover(self[unit].mover:GetName())
-		else
-			self[unit]:Disable()
-			E:DisableMover(self[unit].mover:GetName())
-		end
-	end
-
-	self:UpdateAllHeaders()
+	UF:UpdateAllHeaders()
 end
 
 function UF:CreateAndUpdateUFGroup(group, numGroup)
@@ -480,31 +542,36 @@ function UF:CreateAndUpdateUFGroup(group, numGroup)
 		local unit = group..i
 		local frameName = E:StringTitle(unit)
 		frameName = frameName:gsub('t(arget)', 'T%1')
-		if not self[unit] then
-			self['groupunits'][unit] = group;
-			self[unit] = ElvUF:Spawn(unit, 'ElvUF_'..frameName)
-			self[unit].index = i
-			self[unit]:SetParent(ElvUF_Parent)
-			self[unit]:SetID(i)
+		local frame = self[unit]
+
+		if not frame then
+			self.groupunits[unit] = group;
+			frame = ElvUF:Spawn(unit, 'ElvUF_'..frameName)
+			frame.index = i
+			frame:SetParent(ElvUF_Parent)
+			frame:SetID(i)
+			self[unit] = frame
 		end
 
 		frameName = E:StringTitle(group)
 		frameName = frameName:gsub('t(arget)', 'T%1')
-		self[unit].Update = function()
-			UF["Update_"..E:StringTitle(frameName).."Frames"](self, self[unit], self.db['units'][group])
+		frame.Update = function()
+			UF["Update_"..E:StringTitle(frameName).."Frames"](self, frame, self.db.units[group])
 		end
 
-		if self.db['units'][group].enable then
-			self[unit]:Enable()
-			self[unit].Update()
+		if self.db.units[group].enable then
+			frame:Enable()
 
-			if self[unit].isForced then
-				self:ForceShow(self[unit])
+			frame.Update()
+
+			if frame.isForced then
+				self:ForceShow(frame)
 			end
-			E:EnableMover(self[unit].mover:GetName())
+			E:EnableMover(frame.mover:GetName())
 		else
-			self[unit]:Disable()
-			E:DisableMover(self[unit].mover:GetName())
+			frame:Disable()
+
+			E:DisableMover(frame.mover:GetName())
 		end
 	end
 end
@@ -555,7 +622,7 @@ function UF.groupPrototype:Configure_Groups(self)
 
 			if not group.isForced then
 				if not group.initialized then
-					group:SetAttribute("startingIndex", db.raidWideSorting and (-min(numGroups * (db.groupsPerRowCol * 5), MAX_RAID_MEMBERS) + 1) or -4)
+					group:SetAttribute("startingIndex", db.raidWideSorting and (-min(numGroups * (db.groupsPerRowCol * 5), _G.MAX_RAID_MEMBERS) + 1) or -4)
 					group:Show()
 					group.initialized = true
 				end
@@ -649,15 +716,15 @@ function UF.groupPrototype:Configure_Groups(self)
 		self:GetScript("OnSizeChanged")(self) --Mover size is not updated if frame is hidden, so call an update manually
 	end
 
-	self:SetSize(width - db.horizontalSpacing -groupSpacing, height - db.verticalSpacing -groupSpacing)
+	self:Size(width - db.horizontalSpacing -groupSpacing, height - db.verticalSpacing -groupSpacing)
 end
 
 function UF.groupPrototype:Update(self)
 	local group = self.groupName
 
-	UF[group].db = UF.db['units'][group]
+	UF[group].db = UF.db.units[group]
 	for i=1, #self.groups do
-		self.groups[i].db = UF.db['units'][group]
+		self.groups[i].db = UF.db.units[group]
 		self.groups[i]:Update()
 	end
 end
@@ -691,7 +758,7 @@ end
 
 function UF.headerPrototype:Update(isForced)
 	local group = self.groupName
-	local db = UF.db['units'][group]
+	local db = UF.db.units[group]
 	UF["Update_"..E:StringTitle(group).."Header"](UF, self, db, isForced)
 
 	local i = 1
@@ -741,7 +808,7 @@ end
 
 function UF:CreateHeader(parent, groupFilter, overrideName, template, groupName, headerTemplate)
 	local group = parent.groupName or groupName
-	local db = UF.db['units'][group]
+	local db = UF.db.units[group]
 	ElvUF:SetActiveStyle("ElvUF_"..E:StringTitle(group))
 	local header = ElvUF:SpawnHeader(overrideName, headerTemplate, nil,
 			'oUF-initialConfigFunction', ("self:SetWidth(%d); self:SetHeight(%d);"):format(db.width, db.height),
@@ -764,7 +831,7 @@ end
 
 function UF:CreateAndUpdateHeaderGroup(group, groupFilter, template, headerUpdate, headerTemplate)
 	if InCombatLockdown() then self:RegisterEvent('PLAYER_REGEN_ENABLED'); return end
-	local db = self.db['units'][group]
+	local db = self.db.units[group]
 	local raidFilter = UF.db.smartRaidFilter
 	local numGroups = db.numGroups
 	if(raidFilter and numGroups and (self[group] and not self[group].blockVisibilityChanges)) then
@@ -778,7 +845,7 @@ function UF:CreateAndUpdateHeaderGroup(group, groupFilter, template, headerUpdat
 
 			if maxPlayers > 0 then
 				numGroups = E:Round(maxPlayers/5)
-				E:Print(group, "Forcing maxGroups to: "..numGroups.." because maxPlayers is: "..maxPlayers)
+				--E:Print(group, "Forcing maxGroups to: "..numGroups.." because maxPlayers is: "..maxPlayers)
 			end
 		end
 	end
@@ -794,16 +861,16 @@ function UF:CreateAndUpdateHeaderGroup(group, groupFilter, template, headerUpdat
 			self[group].groupName = group
 			self[group].template = self[group].template or template
 			self[group].headerTemplate = self[group].headerTemplate or headerTemplate
-			if not UF["headerFunctions"][group] then UF["headerFunctions"][group] = {} end
+			if not UF.headerFunctions[group] then UF.headerFunctions[group] = {} end
 			for k, v in pairs(self.groupPrototype) do
-				UF["headerFunctions"][group][k] = v
+				UF.headerFunctions[group][k] = v
 			end
 		else
 			self[group] = self:CreateHeader(ElvUF_Parent, groupFilter, "ElvUF_"..E:StringTitle(group), template, group, headerTemplate)
 		end
 
 		self[group].db = db
-		self['headers'][group] = self[group]
+		self.headers[group] = self[group]
 		self[group]:Show()
 	end
 
@@ -820,16 +887,16 @@ function UF:CreateAndUpdateHeaderGroup(group, groupFilter, template, headerUpdat
 			end
 		end
 
-		UF["headerFunctions"][group]:AdjustVisibility(self[group])
+		UF.headerFunctions[group]:AdjustVisibility(self[group])
 
 		if headerUpdate or not self[group].mover then
-			UF["headerFunctions"][group]:Configure_Groups(self[group])
+			UF.headerFunctions[group]:Configure_Groups(self[group])
 			if not self[group].isForced and not self[group].blockVisibilityChanges then
 				RegisterStateDriver(self[group], "visibility", db.visibility)
 			end
 		else
-			UF["headerFunctions"][group]:Configure_Groups(self[group])
-			UF["headerFunctions"][group]:Update(self[group])
+			UF.headerFunctions[group]:Configure_Groups(self[group])
+			UF.headerFunctions[group]:Update(self[group])
 		end
 
 		if(db.enable) then
@@ -847,9 +914,9 @@ function UF:CreateAndUpdateHeaderGroup(group, groupFilter, template, headerUpdat
 	else
 		self[group].db = db
 
-		if not UF["headerFunctions"][group] then UF["headerFunctions"][group] = {} end
-		UF["headerFunctions"][group]["Update"] = function()
-			local db = UF.db['units'][group]
+		if not UF.headerFunctions[group] then UF.headerFunctions[group] = {} end
+		UF.headerFunctions[group].Update = function()
+			local db = UF.db.units[group]
 			if db.enable ~= true then
 				UnregisterAttributeDriver(UF[group], "state-visibility")
 				UF[group]:Hide()
@@ -862,14 +929,14 @@ function UF:CreateAndUpdateHeaderGroup(group, groupFilter, template, headerUpdat
 
 			for i=1, UF[group]:GetNumChildren() do
 				local child = select(i, UF[group]:GetChildren())
-				UF["Update_"..E:StringTitle(group).."Frames"](UF, child, UF.db['units'][group])
+				UF["Update_"..E:StringTitle(group).."Frames"](UF, child, UF.db.units[group])
 
 				if _G[child:GetName()..'Target'] then
-					UF["Update_"..E:StringTitle(group).."Frames"](UF, _G[child:GetName()..'Target'], UF.db['units'][group])
+					UF["Update_"..E:StringTitle(group).."Frames"](UF, _G[child:GetName()..'Target'], UF.db.units[group])
 				end
 
 				if _G[child:GetName()..'Pet'] then
-					UF["Update_"..E:StringTitle(group).."Frames"](UF, _G[child:GetName()..'Pet'], UF.db['units'][group])
+					UF["Update_"..E:StringTitle(group).."Frames"](UF, _G[child:GetName()..'Pet'], UF.db.units[group])
 				end
 			end
 
@@ -879,7 +946,7 @@ function UF:CreateAndUpdateHeaderGroup(group, groupFilter, template, headerUpdat
 		if headerUpdate then
 			UF["Update_"..E:StringTitle(group).."Header"](self, self[group], db)
 		else
-			UF["headerFunctions"][group]:Update(self[group])
+			UF.headerFunctions[group]:Update(self[group])
 		end
 	end
 end
@@ -897,40 +964,41 @@ function UF:CreateAndUpdateUF(unit)
 	frameName = frameName:gsub('t(arget)', 'T%1')
 	if not self[unit] then
 		self[unit] = ElvUF:Spawn(unit, 'ElvUF_'..frameName)
-		self['units'][unit] = unit
+		self.units[unit] = unit
 	end
 
 	self[unit].Update = function()
-		UF["Update_"..frameName.."Frame"](self, self[unit], self.db['units'][unit])
+		UF["Update_"..frameName.."Frame"](self, self[unit], self.db.units[unit])
 	end
 
 	if self[unit]:GetParent() ~= ElvUF_Parent then
 		self[unit]:SetParent(ElvUF_Parent)
 	end
 
-	if self.db['units'][unit].enable then
+	if self.db.units[unit].enable then
 		self[unit]:Enable()
 		self[unit].Update()
 		E:EnableMover(self[unit].mover:GetName())
 	else
+		self[unit].Update()
 		self[unit]:Disable()
 		E:DisableMover(self[unit].mover:GetName())
 	end
 end
 
 function UF:LoadUnits()
-	for _, unit in pairs(self['unitstoload']) do
+	for _, unit in pairs(self.unitstoload) do
 		self:CreateAndUpdateUF(unit)
 	end
-	self['unitstoload'] = nil
+	self.unitstoload = nil
 
-	for group, groupOptions in pairs(self['unitgroupstoload']) do
+	for group, groupOptions in pairs(self.unitgroupstoload) do
 		local numGroup, template = unpack(groupOptions)
 		self:CreateAndUpdateUFGroup(group, numGroup, template)
 	end
-	self['unitgroupstoload'] = nil
+	self.unitgroupstoload = nil
 
-	for group, groupOptions in pairs(self['headerstoload']) do
+	for group, groupOptions in pairs(self.headerstoload) do
 		local groupFilter, template, headerTemplate
 		if type(groupOptions) == 'table' then
 			groupFilter, template, headerTemplate = unpack(groupOptions)
@@ -938,12 +1006,12 @@ function UF:LoadUnits()
 
 		self:CreateAndUpdateHeaderGroup(group, groupFilter, template, nil, headerTemplate)
 	end
-	self['headerstoload'] = nil
+	self.headerstoload = nil
 end
 
 function UF:RegisterRaidDebuffIndicator()
 	local _, instanceType = IsInInstance();
-	local ORD = ns.oUF_RaidDebuffs or oUF_RaidDebuffs
+	local ORD = ns.oUF_RaidDebuffs or _G.oUF_RaidDebuffs
 	if ORD then
 		ORD:ResetDebuffData()
 
@@ -970,15 +1038,15 @@ function UF:UpdateAllHeaders(event)
 		self:UnregisterEvent('PLAYER_REGEN_ENABLED')
 	end
 
-	if E.private["unitframe"]["disabledBlizzardFrames"].party then
+	if E.private.unitframe.disabledBlizzardFrames.party then
 		ElvUF:DisableBlizzard('party')
 	end
 
 	self:RegisterRaidDebuffIndicator()
 
 	local smartRaidFilterEnabled = self.db.smartRaidFilter
-	for group, header in pairs(self['headers']) do
-		UF["headerFunctions"][group]:Update(header)
+	for group, header in pairs(self.headers) do
+		UF.headerFunctions[group]:Update(header)
 
 		local shouldUpdateHeader
 		if header.numGroups == nil or smartRaidFilterEnabled then
@@ -997,7 +1065,7 @@ end
 
 local function HideRaid()
 	if InCombatLockdown() then return end
-	CompactRaidFrameManager:Kill()
+	_G.CompactRaidFrameManager:Kill()
 	local compact_raid = CompactRaidFrameManager_GetSetting("IsShown")
 	if compact_raid and compact_raid ~= "0" then
 		CompactRaidFrameManager_SetSetting("IsShown", "0")
@@ -1005,14 +1073,14 @@ local function HideRaid()
 end
 
 function UF:DisableBlizzard()
-	if (not E.private["unitframe"]["disabledBlizzardFrames"].raid) and (not E.private["unitframe"]["disabledBlizzardFrames"].party) then return; end
+	if (not E.private.unitframe.disabledBlizzardFrames.raid) and (not E.private.unitframe.disabledBlizzardFrames.party) then return; end
 	if not CompactRaidFrameManager_UpdateShown then
 		E:StaticPopup_Show("WARNING_BLIZZARD_ADDONS")
 	else
-		if not CompactRaidFrameManager.hookedHide then
+		if not _G.CompactRaidFrameManager.hookedHide then
 			hooksecurefunc("CompactRaidFrameManager_UpdateShown", HideRaid)
-			CompactRaidFrameManager:HookScript('OnShow', HideRaid)
-			CompactRaidFrameManager.hookedHide = true
+			_G.CompactRaidFrameManager:HookScript('OnShow', HideRaid)
+			_G.CompactRaidFrameManager.hookedHide = true
 		end
 		CompactRaidFrameContainer:UnregisterAllEvents()
 
@@ -1020,120 +1088,98 @@ function UF:DisableBlizzard()
 	end
 end
 
-local hiddenParent = CreateFrame("Frame")
+local hiddenParent = CreateFrame("Frame", nil, _G.UIParent)
+hiddenParent:SetAllPoints()
 hiddenParent:Hide()
-
 local HandleFrame = function(baseName)
 	local frame
-	if(type(baseName) == 'string') then
+	if (type(baseName) == 'string') then
 		frame = _G[baseName]
 	else
 		frame = baseName
 	end
 
-	if(frame) then
+	if (frame) then
 		frame:UnregisterAllEvents()
 		frame:Hide()
 
 		-- Keep frame hidden without causing taint
 		frame:SetParent(hiddenParent)
 
-		local health = frame.healthbar
-		if(health) then
+		local health = frame.healthBar or frame.healthbar
+		if (health) then
 			health:UnregisterAllEvents()
 		end
 
 		local power = frame.manabar
-		if(power) then
+		if (power) then
 			power:UnregisterAllEvents()
 		end
 
-		local spell = frame.spellbar
-		if(spell) then
+		local spell = frame.castBar or frame.spellbar
+		if (spell) then
 			spell:UnregisterAllEvents()
 		end
 
 		local altpowerbar = frame.powerBarAlt
-		if(altpowerbar) then
+		if (altpowerbar) then
 			altpowerbar:UnregisterAllEvents()
+		end
+
+		local buffFrame = frame.BuffFrame
+		if (buffFrame) then
+			buffFrame:UnregisterAllEvents()
 		end
 	end
 end
 
 function ElvUF:DisableBlizzard(unit)
-	if(not unit) or InCombatLockdown() then return end
+	if(not unit) then return end
 
-	if(unit == 'player') and E.private["unitframe"]["disabledBlizzardFrames"].player then
+	if (unit == 'player') and E.private.unitframe.disabledBlizzardFrames.player then
+		local PlayerFrame = _G.PlayerFrame
 		HandleFrame(PlayerFrame)
 
 		-- For the damn vehicle support:
-		PlayerFrame:RegisterUnitEvent('UNIT_ENTERING_VEHICLE', "player")
-		PlayerFrame:RegisterUnitEvent('UNIT_ENTERED_VEHICLE', "player")
-		PlayerFrame:RegisterUnitEvent('UNIT_EXITING_VEHICLE', "player")
-		PlayerFrame:RegisterUnitEvent('UNIT_EXITED_VEHICLE', "player")
 		PlayerFrame:RegisterEvent('PLAYER_ENTERING_WORLD')
 
 		-- User placed frames don't animate
+		PlayerFrame:SetMovable(true)
 		PlayerFrame:SetUserPlaced(true)
 		PlayerFrame:SetDontSavePosition(true)
-		RuneFrame:SetParent(PlayerFrame)
-	elseif(unit == 'pet') and E.private["unitframe"]["disabledBlizzardFrames"].player then
-		HandleFrame(PetFrame)
-	elseif(unit == 'target') and E.private["unitframe"]["disabledBlizzardFrames"].target then
-		HandleFrame(TargetFrame)
-		HandleFrame(ComboFrame)
-	elseif(unit == 'focus') and E.private["unitframe"]["disabledBlizzardFrames"].focus then
-		HandleFrame(FocusFrame)
-		HandleFrame(FocusFrameToT)
-	elseif(unit == 'targettarget') and E.private["unitframe"]["disabledBlizzardFrames"].target then
-		HandleFrame(TargetFrameToT)
-	elseif(unit:match'(boss)%d?$' == 'boss') and E.private["unitframe"]["disabledBlizzardFrames"].boss then
-		local id = unit:match'boss(%d)'
-		if(id) then
-			HandleFrame('Boss' .. id .. 'TargetFrame')
-		else
-			for i=1, MAX_BOSS_FRAMES do
-				HandleFrame(('Boss%dTargetFrame'):format(i))
-			end
-		end
-	elseif(unit:match'(party)%d?$' == 'party') and E.private["unitframe"]["disabledBlizzardFrames"].party then
-		local id = unit:match'party(%d)'
-		if(id) then
+	elseif (unit == 'pet') and E.private.unitframe.disabledBlizzardFrames.player then
+		HandleFrame(_G.PetFrame)
+	elseif (unit == 'target') and E.private.unitframe.disabledBlizzardFrames.target then
+		HandleFrame(_G.TargetFrame)
+		HandleFrame(_G.ComboFrame)
+	elseif (unit == 'focus') and E.private.unitframe.disabledBlizzardFrames.focus then
+		HandleFrame(_G.FocusFrame)
+		HandleFrame(_G.TargetofFocusFrame)
+	elseif (unit == 'targettarget') and E.private.unitframe.disabledBlizzardFrames.target then
+		HandleFrame(_G.TargetFrameToT)
+	elseif (unit:match('party%d?$')) and E.private.unitframe.disabledBlizzardFrames.party then
+		local id = unit:match('party(%d)')
+		if (id) then
 			HandleFrame('PartyMemberFrame' .. id)
 		else
 			for i=1, 4 do
 				HandleFrame(('PartyMemberFrame%d'):format(i))
 			end
 		end
-		HandleFrame(PartyMemberBackground)
-	elseif(unit:match'(arena)%d?$' == 'arena') and E.private["unitframe"]["disabledBlizzardFrames"].arena then
-		local id = unit:match'arena(%d)'
-
-		if(id) then
-			HandleFrame('ArenaEnemyFrame' .. id)
-			HandleFrame('ArenaPrepFrame'..id)
-			HandleFrame('ArenaEnemyFrame'..id..'PetFrame')
-		else
-			for i=1, 5 do
-				HandleFrame(('ArenaEnemyFrame%d'):format(i))
-				HandleFrame(('ArenaPrepFrame%d'):format(i))
-				HandleFrame(('ArenaEnemyFrame%dPetFrame'):format(i))
-			end
+		HandleFrame(_G.PartyMemberBackground)
+	elseif (unit:match('nameplate%d+$')) then
+		local frame = C_NamePlate_GetNamePlateForUnit(unit)
+		if (frame and frame.UnitFrame) then
+			HandleFrame(frame.UnitFrame)
 		end
 	end
-end
-
-function UF:ADDON_LOADED(_, addon)
-	if addon ~= 'Blizzard_ArenaUI' then return; end
-	ElvUF:DisableBlizzard('arena')
-	self:UnregisterEvent("ADDON_LOADED");
 end
 
 local hasEnteredWorld = false
 function UF:PLAYER_ENTERING_WORLD()
 	if not hasEnteredWorld then
 		--We only want to run Update_AllFrames once when we first log in or /reload
-		self:Update_AllFrames()
+		UF:Update_AllFrames()
 		hasEnteredWorld = true
 	else
 		local _, instanceType = IsInInstance()
@@ -1144,19 +1190,15 @@ function UF:PLAYER_ENTERING_WORLD()
 	end
 end
 
-function UF:UnitFrameThreatIndicator_Initialize(_, unitFrame)
-	unitFrame:UnregisterAllEvents() --Arena Taint Fix
-end
-
 function UF:ResetUnitSettings(unit)
-	E:CopyTable(self.db['units'][unit], P['unitframe']['units'][unit]);
+	E:CopyTable(self.db.units[unit], P.unitframe.units[unit]);
 
-	if self.db['units'][unit].buffs and self.db['units'][unit].buffs.sizeOverride then
-		self.db['units'][unit].buffs.sizeOverride = P.unitframe.units[unit].buffs.sizeOverride or 0
+	if self.db.units[unit].buffs and self.db.units[unit].buffs.sizeOverride then
+		self.db.units[unit].buffs.sizeOverride = P.unitframe.units[unit].buffs.sizeOverride or 0
 	end
 
-	if self.db['units'][unit].debuffs and self.db['units'][unit].debuffs.sizeOverride then
-		self.db['units'][unit].debuffs.sizeOverride = P.unitframe.units[unit].debuffs.sizeOverride or 0
+	if self.db.units[unit].debuffs and self.db.units[unit].debuffs.sizeOverride then
+		self.db.units[unit].debuffs.sizeOverride = P.unitframe.units[unit].debuffs.sizeOverride or 0
 	end
 
 	self:Update_AllFrames()
@@ -1186,7 +1228,7 @@ local allowPass = {
 }
 
 function UF:MergeUnitSettings(fromUnit, toUnit, isGroupUnit)
-	local db = self.db['units']
+	local db = self.db.units
 	local filter = ignoreSettings
 	if isGroupUnit then
 		filter = ignoreSettingsGroup
@@ -1227,100 +1269,121 @@ function UF:MergeUnitSettings(fromUnit, toUnit, isGroupUnit)
 	self:Update_AllFrames()
 end
 
-local function updateColor(self, r, g, b)
-	if not self.isTransparent then return end
-	if self.backdrop then
-		local _, _, _, a = self.backdrop:GetBackdropColor()
-		self.backdrop:SetBackdropColor(r * 0.58, g * 0.58, b * 0.58, a)
-	elseif self:GetParent().template then
-		local _, _, _, a = self:GetParent():GetBackdropColor()
-		self:GetParent():SetBackdropColor(r * 0.58, g * 0.58, b * 0.58, a)
+function UF:UpdateBackdropTextureColor(r, g, b)
+	local m = 0.35
+	local n = self.isTransparent and (m * 2) or m
+
+	if self.invertColors then
+		local nn = n;n=m;m=nn
 	end
 
-	if self.bg and self.bg:GetObjectType() == 'Texture' and not self.bg.multiplier then
-		self.bg:SetColorTexture(r * 0.35, g * 0.35, b * 0.35)
+	if self.isTransparent then
+		if self.backdrop then
+			local _, _, _, a = E:GetBackdropColor(self.backdrop)
+			self.backdrop:SetBackdropColor(r * n, g * n, b * n, a)
+		else
+			local parent = self:GetParent()
+			if parent and parent.template then
+				local _, _, _, a = E:GetBackdropColor(parent)
+				parent:SetBackdropColor(r * n, g * n, b * n, a)
+			end
+		end
+	end
+
+	local bg = self.bg or self.BG
+	if bg and bg:IsObjectType('Texture') and not bg.multiplier then
+		if self.custom_backdrop then
+			bg:SetVertexColor(self.custom_backdrop.r, self.custom_backdrop.g, self.custom_backdrop.b)
+		else
+			bg:SetVertexColor(r * m, g * m, b * m)
+		end
 	end
 end
 
-function UF:ToggleTransparentStatusBar(isTransparent, statusBar, backdropTex, adjustBackdropPoints, invertBackdropTex)
-	statusBar.isTransparent = isTransparent
+function UF:UpdatePredictionStatusBar(prediction, parent, name)
+	if not (prediction and parent) then return end
+	local texture = (not parent.isTransparent and parent:GetStatusBarTexture():GetTexture()) or E.media.blankTex
+	if name == "Health" then
+		UF:Update_StatusBar(prediction.myBar, texture)
+		UF:Update_StatusBar(prediction.otherBar, texture)
+		UF:Update_StatusBar(prediction.absorbBar, texture)
+		UF:Update_StatusBar(prediction.healAbsorbBar, texture)
+		UF:Update_StatusBar(prediction.overAbsorb, texture)
+		UF:Update_StatusBar(prediction.overHealAbsorb, texture)
+	elseif name == "Power" then
+		UF:Update_StatusBar(prediction.mainBar, texture)
+	end
+end
 
-	local statusBarTex = statusBar:GetStatusBarTexture()
-	local statusBarOrientation = statusBar:GetOrientation()
-	if isTransparent then
-		if statusBar.backdrop then
-			statusBar.backdrop:SetTemplate("Transparent", nil, nil, nil, true)
-			statusBar.backdrop.ignoreUpdates = true
-		elseif statusBar:GetParent().template then
-			statusBar:GetParent():SetTemplate("Transparent", nil, nil, nil, true)
-			statusBar:GetParent().ignoreUpdates = true
-		end
-
-		statusBar:SetStatusBarTexture(0, 0, 0, 0)
-		if statusBar.texture then statusBar.texture = statusBar:GetStatusBarTexture() end --Needed for Power element
-
-		backdropTex:ClearAllPoints()
-		if statusBarOrientation == 'VERTICAL' then
-			backdropTex:Point("TOPLEFT", statusBar, "TOPLEFT")
-			backdropTex:Point("BOTTOMLEFT", statusBarTex, "TOPLEFT")
-			backdropTex:Point("BOTTOMRIGHT", statusBarTex, "TOPRIGHT")
+function UF:SetStatusBarBackdropPoints(statusBar, statusBarTex, backdropTex, statusBarOrientation, reverseFill)
+	backdropTex:ClearAllPoints()
+	if statusBarOrientation == 'VERTICAL' then
+		backdropTex:Point("TOPLEFT", statusBar, "TOPLEFT")
+		backdropTex:Point("BOTTOMLEFT", statusBarTex, "TOPLEFT")
+		backdropTex:Point("BOTTOMRIGHT", statusBarTex, "TOPRIGHT")
+	else
+		if reverseFill then
+			backdropTex:Point("TOPRIGHT", statusBarTex, "TOPLEFT")
+			backdropTex:Point("BOTTOMRIGHT", statusBarTex, "BOTTOMLEFT")
+			backdropTex:Point("BOTTOMLEFT", statusBar, "BOTTOMLEFT")
 		else
 			backdropTex:Point("TOPLEFT", statusBarTex, "TOPRIGHT")
 			backdropTex:Point("BOTTOMLEFT", statusBarTex, "BOTTOMRIGHT")
 			backdropTex:Point("BOTTOMRIGHT", statusBar, "BOTTOMRIGHT")
 		end
+	end
+end
 
-		if invertBackdropTex then
-			backdropTex:Show()
+function UF:ToggleTransparentStatusBar(isTransparent, statusBar, backdropTex, adjustBackdropPoints, invertColors, reverseFill)
+	statusBar.isTransparent = isTransparent
+	statusBar.invertColors = invertColors
+	statusBar.backdropTex = backdropTex
+
+	local statusBarTex = statusBar:GetStatusBarTexture()
+	local statusBarOrientation = statusBar:GetOrientation()
+
+	if not statusBar.hookedColor then
+		hooksecurefunc(statusBar, "SetStatusBarColor", UF.UpdateBackdropTextureColor)
+		statusBar.hookedColor = true
+	end
+
+	if isTransparent then
+		if statusBar.backdrop then
+			statusBar.backdrop:SetTemplate("Transparent", nil, nil, nil, true)
+		elseif statusBar:GetParent().template then
+			statusBar:GetParent():SetTemplate("Transparent", nil, nil, nil, true)
 		end
 
-		if not invertBackdropTex and not statusBar.hookedColor then
-			hooksecurefunc(statusBar, "SetStatusBarColor", updateColor)
-			statusBar.hookedColor = true
-		end
+		statusBar:SetStatusBarTexture(0, 0, 0, 0)
+		UF:Update_StatusBar(statusBar.bg or statusBar.BG, E.media.blankTex)
 
-		if backdropTex.multiplier then
-			backdropTex.multiplier = 0.25
-		end
+		if statusBar.texture then statusBar.texture = statusBar:GetStatusBarTexture() end --Needed for Power element
+
+		UF:SetStatusBarBackdropPoints(statusBar, statusBarTex, backdropTex, statusBarOrientation, reverseFill)
 	else
 		if statusBar.backdrop then
-			statusBar.backdrop:SetTemplate("Default", nil, nil, not statusBar.PostCastStart and self.thinBorders, true)
-			statusBar.backdrop.ignoreUpdates = nil
+			statusBar.backdrop:SetTemplate(nil, nil, nil, not statusBar.PostCastStart and self.thinBorders, true)
 		elseif statusBar:GetParent().template then
-			statusBar:GetParent():SetTemplate("Default", nil, nil, self.thinBorders, true)
-			statusBar:GetParent().ignoreUpdates = nil
+			statusBar:GetParent():SetTemplate(nil, nil, nil, self.thinBorders, true)
 		end
-		statusBar:SetStatusBarTexture(LSM:Fetch("statusbar", self.db.statusbar))
+
+		local texture = LSM:Fetch("statusbar", self.db.statusbar)
+		statusBar:SetStatusBarTexture(texture)
+		UF:Update_StatusBar(statusBar.bg or statusBar.BG, texture)
+
 		if statusBar.texture then statusBar.texture = statusBar:GetStatusBarTexture() end
 
 		if adjustBackdropPoints then
-			backdropTex:ClearAllPoints()
-			if statusBarOrientation == 'VERTICAL' then
-				backdropTex:Point("TOPLEFT", statusBar, "TOPLEFT")
-				backdropTex:Point("BOTTOMLEFT", statusBarTex, "TOPLEFT")
-				backdropTex:Point("BOTTOMRIGHT", statusBarTex, "TOPRIGHT")
-			else
-				backdropTex:Point("TOPLEFT", statusBarTex, "TOPRIGHT")
-				backdropTex:Point("BOTTOMLEFT", statusBarTex, "BOTTOMRIGHT")
-				backdropTex:Point("BOTTOMRIGHT", statusBar, "BOTTOMRIGHT")
-			end
-		end
-
-		if invertBackdropTex then
-			backdropTex:Hide()
-		end
-
-		if backdropTex.multiplier then
-			backdropTex.multiplier = 0.25
+			UF:SetStatusBarBackdropPoints(statusBar, statusBarTex, backdropTex, statusBarOrientation, reverseFill)
 		end
 	end
 end
 
 function UF:Initialize()
-	self.db = E.db["unitframe"]
+	self.db = E.db.unitframe
 	self.thinBorders = self.db.thinBorders or E.PixelMode
-	if E.private["unitframe"].enable ~= true then return; end
-	E.UnitFrames = UF;
+	if E.private.unitframe.enable ~= true then return end
+	self.Initialized = true
 
 	local ElvUF_Parent = CreateFrame('Frame', 'ElvUF_Parent', E.UIParent, 'SecureHandlerStateTemplate');
 	ElvUF_Parent:SetFrameStrata("LOW")
@@ -1335,46 +1398,37 @@ function UF:Initialize()
 	self:RegisterEvent('PLAYER_ENTERING_WORLD')
 
 	--InterfaceOptionsFrameCategoriesButton9:SetScale(0.0001)
-	--[[if E.private["unitframe"]["disabledBlizzardFrames"].arena and E.private["unitframe"]["disabledBlizzardFrames"].focus and E.private["unitframe"]["disabledBlizzardFrames"].party then
+	--[[if E.private.unitframe.disabledBlizzardFrames.arena and E.private.unitframe.disabledBlizzardFrames.focus and E.private.unitframe.disabledBlizzardFrames.party then
 		InterfaceOptionsFrameCategoriesButton10:SetScale(0.0001)
 	end
 
-	if E.private["unitframe"]["disabledBlizzardFrames"].target then
+	if E.private.unitframe.disabledBlizzardFrames.target then
 		InterfaceOptionsCombatPanelTargetOfTarget:SetScale(0.0001)
 		InterfaceOptionsCombatPanelTargetOfTarget:SetAlpha(0)
 	end]]
 
-	if E.private["unitframe"]["disabledBlizzardFrames"].party and E.private["unitframe"]["disabledBlizzardFrames"].raid then
+	if E.private.unitframe.disabledBlizzardFrames.party and E.private.unitframe.disabledBlizzardFrames.raid then
 		self:DisableBlizzard()
 		--InterfaceOptionsFrameCategoriesButton11:SetScale(0.0001)
 
 		self:RegisterEvent('GROUP_ROSTER_UPDATE', 'DisableBlizzard')
-		UIParent:UnregisterEvent('GROUP_ROSTER_UPDATE') --This may fuck shit up.. we'll see...
+		_G.UIParent:UnregisterEvent('GROUP_ROSTER_UPDATE') --This may fuck shit up.. we'll see...
 	else
-		CompactUnitFrameProfiles:RegisterEvent('VARIABLES_LOADED')
+		_G.CompactUnitFrameProfiles:RegisterEvent('VARIABLES_LOADED')
 	end
 
-	if (not E.private["unitframe"]["disabledBlizzardFrames"].party) and (not E.private["unitframe"]["disabledBlizzardFrames"].raid) then
+	if (not E.private.unitframe.disabledBlizzardFrames.party) and (not E.private.unitframe.disabledBlizzardFrames.raid) then
 		E.RaidUtility.Initialize = E.noop
 	end
 
-	if E.private["unitframe"]["disabledBlizzardFrames"].arena then
-		self:SecureHook('UnitFrameThreatIndicator_Initialize')
-
-		if not IsAddOnLoaded('Blizzard_ArenaUI') then
-			self:RegisterEvent('ADDON_LOADED')
-		else
-			ElvUF:DisableBlizzard('arena')
-		end
-	end
-
-	local ORD = ns.oUF_RaidDebuffs or oUF_RaidDebuffs
-	if not ORD then return end
-	ORD.ShowDispellableDebuff = true
-	ORD.FilterDispellableDebuff = true
-	ORD.MatchBySpellName = false
-
 	self:UpdateRangeCheckSpells()
+
+	local ORD = ns.oUF_RaidDebuffs or _G.oUF_RaidDebuffs
+	if ORD then
+		ORD.ShowDispellableDebuff = true
+		ORD.FilterDispellableDebuff = true
+		ORD.MatchBySpellName = false
+	end
 end
 
 local function InitializeCallback()

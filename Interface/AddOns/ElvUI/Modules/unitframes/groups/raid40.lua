@@ -4,23 +4,19 @@ local _, ns = ...
 local ElvUF = ns.oUF
 assert(ElvUF, "ElvUI was unable to locate oUF.")
 
---Cache global variables
 --Lua functions
+local _G = _G
 --WoW API / Variables
 local CreateFrame = CreateFrame
 local GetInstanceInfo = GetInstanceInfo
 local InCombatLockdown = InCombatLockdown
-local IsInInstance = IsInInstance
 local RegisterStateDriver = RegisterStateDriver
 local UnregisterStateDriver = UnregisterStateDriver
-
---Global variables that we don't cache, list them here for mikk's FindGlobals script
--- GLOBALS: UnitFrame_OnEnter, UnitFrame_OnLeave, ElvUF_Raid40
+-- GLOBALS: ElvUF_Raid40
 
 function UF:Construct_Raid40Frames()
-	self:SetScript('OnEnter', UnitFrame_OnEnter)
-	self:SetScript('OnLeave', UnitFrame_OnLeave)
-
+	self:SetScript('OnEnter', _G.UnitFrame_OnEnter)
+	self:SetScript('OnLeave', _G.UnitFrame_OnLeave)
 
 	self.RaisedElementParent = CreateFrame('Frame', nil, self)
 	self.RaisedElementParent.TextureParent = CreateFrame('Frame', nil, self.RaisedElementParent)
@@ -31,6 +27,8 @@ function UF:Construct_Raid40Frames()
 	self.Power = UF:Construct_PowerBar(self, true, true, 'LEFT')
 	self.Power.frequentUpdates = false;
 
+	--self.PowerPrediction = UF:Construct_PowerPrediction(self)
+
 	self.Portrait3D = UF:Construct_Portrait(self, 'model')
 	self.Portrait2D = UF:Construct_Portrait(self, 'texture')
 
@@ -39,25 +37,21 @@ function UF:Construct_Raid40Frames()
 	self.Debuffs = UF:Construct_Debuffs(self)
 	self.AuraWatch = UF:Construct_AuraWatch(self)
 	self.RaidDebuffs = UF:Construct_RaidDebuffs(self)
-	self.DebuffHighlight = UF:Construct_DebuffHighlight(self)
-	self.ResurrectIndicator = UF:Construct_ResurrectionIcon(self)
-	self.GroupRoleIndicator = UF:Construct_RoleIcon(self)
-	self.RaidRoleFramesAnchor = UF:Construct_RaidRoleFrames(self)
-	self.PhaseIndicator = UF:Construct_PhaseIcon(self)
+	--self.DebuffHighlight = UF:Construct_DebuffHighlight(self)
 	self.MouseGlow = UF:Construct_MouseGlow(self)
 	self.TargetGlow = UF:Construct_TargetGlow(self)
 	self.InfoPanel = UF:Construct_InfoPanel(self)
-	self.ThreatIndicator = UF:Construct_Threat(self)
 	self.RaidTargetIndicator = UF:Construct_RaidIcon(self)
 	self.ReadyCheckIndicator = UF:Construct_ReadyCheckIcon(self)
-	self.HealthPrediction = UF:Construct_HealComm(self)
-	self.Range = UF:Construct_Range(self)
+	--self.Fader = UF:Construct_Fader()
+	self.Cutaway = UF:Construct_Cutaway(self)
+
 	self.customTexts = {}
+
+	self.unitframeType = "raid40"
 
 	UF:Update_StatusBars()
 	UF:Update_FontStrings()
-
-	self.unitframeType = "raid40"
 
 	return self
 end
@@ -67,35 +61,37 @@ function UF:Raid40SmartVisibility(event)
 		self.blockVisibilityChanges = false
 		return
 	end
-	local inInstance, instanceType = IsInInstance()
 
-	if event == "PLAYER_REGEN_ENABLED" then self:UnregisterEvent("PLAYER_REGEN_ENABLED") end
+	if event == "PLAYER_REGEN_ENABLED" then
+		self:UnregisterEvent("PLAYER_REGEN_ENABLED")
+	end
 
 	if not InCombatLockdown() then
 		self.isInstanceForced = nil
-		if(inInstance and (instanceType == 'raid' or instanceType == 'pvp')) then
-			local _, _, _, _, maxPlayers, _, _, instanceMapID = GetInstanceInfo()
-
-			if UF.instanceMapIDs[instanceMapID] then
-				maxPlayers = UF.instanceMapIDs[instanceMapID]
+		local _, instanceType, _, _, maxPlayers, _, _, instanceID = GetInstanceInfo()
+		if instanceType == 'raid' or instanceType == 'pvp' then
+			if UF.instanceMapIDs[instanceID] then
+				maxPlayers = UF.instanceMapIDs[instanceID]
 			end
 
 			UnregisterStateDriver(self, "visibility")
 
 			if(maxPlayers == 40) then
-				self:Show()
-				self.isInstanceForced = true
 				self.blockVisibilityChanges = false
+				self.isInstanceForced = true
+				self:Show()
+
 				if(ElvUF_Raid40.numGroups ~= E:Round(maxPlayers/5) and event) then
 					UF:CreateAndUpdateHeaderGroup('raid40')
 				end
 			else
-				self:Hide()
 				self.blockVisibilityChanges = true
+				self:Hide()
 			end
 		elseif self.db.visibility then
 			RegisterStateDriver(self, "visibility", self.db.visibility)
 			self.blockVisibilityChanges = false
+
 			if(ElvUF_Raid40.numGroups ~= self.db.numGroups) then
 				UF:CreateAndUpdateHeaderGroup('raid40')
 			end
@@ -116,11 +112,11 @@ function UF:Update_Raid40Header(header, db)
 		headerHolder:ClearAllPoints()
 		headerHolder:Point("BOTTOMLEFT", E.UIParent, "BOTTOMLEFT", 4, 195)
 
-		E:CreateMover(headerHolder, headerHolder:GetName()..'Mover', L["Raid-40 Frames"], nil, nil, nil, 'ALL,RAID')
+		E:CreateMover(headerHolder, headerHolder:GetName()..'Mover', L["Raid-40 Frames"], nil, nil, nil, 'ALL,RAID', nil, 'unitframe,raid40,generalGroup')
 
 		headerHolder:RegisterEvent("PLAYER_ENTERING_WORLD")
 		headerHolder:RegisterEvent("ZONE_CHANGED_NEW_AREA")
-		headerHolder:SetScript("OnEvent", UF['Raid40SmartVisibility'])
+		headerHolder:SetScript("OnEvent", UF.Raid40SmartVisibility)
 		headerHolder.positioned = true;
 	end
 
@@ -186,11 +182,11 @@ function UF:Update_Raid40Frames(frame, db)
 	--Power
 	UF:Configure_Power(frame)
 
+	-- Power Predicition
+	--UF:Configure_PowerPrediction(frame)
+
 	--Portrait
 	UF:Configure_Portrait(frame)
-
-	--Threat
-	UF:Configure_Threat(frame)
 
 	--Auras
 	UF:EnableDisable_Auras(frame)
@@ -203,23 +199,14 @@ function UF:Update_Raid40Frames(frame, db)
 	--Raid Icon
 	UF:Configure_RaidIcon(frame)
 
-	-- Resurrect Icon
-	UF:Configure_ResurrectionIcon(frame)
-
 	--Debuff Highlight
-	UF:Configure_DebuffHighlight(frame)
-
-	--Role Icon
-	UF:Configure_RoleIcon(frame)
+	--UF:Configure_DebuffHighlight(frame)
 
 	--OverHealing
-	UF:Configure_HealComm(frame)
+	--UF:Configure_HealComm(frame)
 
-	--Raid Roles
-	UF:Configure_RaidRoleIcons(frame)
-
-	--Range
-	UF:Configure_Range(frame)
+	--Fader
+	--UF:Configure_Fader(frame)
 
 	--Buff Indicators
 	UF:UpdateAuraWatch(frame)
@@ -230,10 +217,10 @@ function UF:Update_Raid40Frames(frame, db)
 	--CustomTexts
 	UF:Configure_CustomTexts(frame)
 
-	-- PhaseIndicator
-	UF:Configure_PhaseIcon(frame)
+	--Cutaway
+	UF:Configure_Cutaway(frame)
 
 	frame:UpdateAllElements("ElvUI_UpdateAllElements")
 end
 
-UF['headerstoload']['raid40'] = true
+UF.headerstoload.raid40 = true

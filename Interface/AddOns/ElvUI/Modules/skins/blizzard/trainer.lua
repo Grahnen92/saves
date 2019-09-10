@@ -1,87 +1,97 @@
 local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
-local S = E:GetModule('Skins')
+local S = E:GetModule('Skins');
 
 --Cache global variables
 --Lua functions
 local _G = _G
-local pairs, unpack = pairs, unpack
+local unpack = unpack
+local find = string.find
 --WoW API / Variables
-
---Global variables that we don't cache, list them here for mikk's FindGlobals script
--- GLOBALS:
+local hooksecurefunc = hooksecurefunc
 
 local function LoadSkin()
 	if E.private.skins.blizzard.enable ~= true or E.private.skins.blizzard.trainer ~= true then return end
 
-	--Class Trainer Frame
-	local StripAllTextures = {
-		"ClassTrainerFrame",
-		"ClassTrainerScrollFrameScrollChild",
-		"ClassTrainerFrameSkillStepButton",
-		"ClassTrainerFrameBottomInset",
-		"ClassTrainerFrameInset",
-	}
+	ClassTrainerFrame:StripTextures(true)
+	ClassTrainerFrame:CreateBackdrop('Transparent')
+	ClassTrainerFrame.backdrop:Point('TOPLEFT', 10, -11)
+	ClassTrainerFrame.backdrop:Point('BOTTOMRIGHT', -32, 74)
 
-	local buttons = {
-		"ClassTrainerTrainButton",
-	}
 
-	local KillTextures = {
-		"ClassTrainerFramePortrait",
-		"ClassTrainerScrollFrameScrollBarBG",
-		"ClassTrainerScrollFrameScrollBarTop",
-		"ClassTrainerScrollFrameScrollBarBottom",
-		"ClassTrainerScrollFrameScrollBarMiddle",
-	}
+	ClassTrainerExpandButtonFrame:StripTextures()
 
-	local ClassTrainerFrame = _G["ClassTrainerFrame"]
-	for i= 1, #ClassTrainerFrame.scrollFrame.buttons do
-		local button = _G["ClassTrainerScrollFrameButton"..i]
-		button:StripTextures()
-		button:StyleButton()
-		button.icon:SetTexCoord(unpack(E.TexCoords))
-		button:CreateBackdrop()
-		button.backdrop:SetOutside(button.icon)
-		button.icon:SetParent(button.backdrop)
-		button.selectedTex:SetColorTexture(1, 1, 1, 0.3)
-		button.selectedTex:SetInside()
+	S:HandleDropDownBox(ClassTrainerFrameFilterDropDown)
+	ClassTrainerFrameFilterDropDown:Point('TOPRIGHT', -40, -64)
+
+	ClassTrainerListScrollFrame:StripTextures()
+	S:HandleScrollBar(ClassTrainerListScrollFrameScrollBar)
+
+	ClassTrainerDetailScrollFrame:StripTextures()
+	S:HandleScrollBar(ClassTrainerDetailScrollFrameScrollBar)
+
+	ClassTrainerSkillIcon:StripTextures()
+
+	ClassTrainerCancelButton:Kill()
+
+	S:HandleButton(ClassTrainerTrainButton)
+	ClassTrainerTrainButton:Point('BOTTOMRIGHT', -38, 80)
+
+	S:HandleCloseButton(ClassTrainerFrameCloseButton)
+
+	hooksecurefunc('ClassTrainer_SetSelection', function()
+		local skillIcon = ClassTrainerSkillIcon:GetNormalTexture()
+		if skillIcon then
+			skillIcon:SetInside()
+			skillIcon:SetTexCoord(unpack(E.TexCoords))
+
+			ClassTrainerSkillIcon:SetTemplate('Default')
+		end
+	end)
+
+	for i = 1, CLASS_TRAINER_SKILLS_DISPLAYED do
+		local button = _G['ClassTrainerSkill'..i]
+		local highlight = _G['ClassTrainerSkill'..i..'Highlight']
+
+		button:SetNormalTexture('Interface\\AddOns\\ElvUI\\media\\textures\\PlusMinusButton')
+		button.SetNormalTexture = E.noop
+		button:GetNormalTexture():Size(14)
+
+		highlight:SetTexture('')
+		highlight.SetTexture = E.noop
+
+		hooksecurefunc(button, 'SetNormalTexture', function(self, texture)
+			if find(texture, 'MinusButton') then
+				self:GetNormalTexture():SetTexCoord(0.545, 0.975, 0.085, 0.925)
+			elseif find(texture, 'PlusButton') then
+				self:GetNormalTexture():SetTexCoord(0.045, 0.475, 0.085, 0.925)
+			else
+				self:GetNormalTexture():SetTexCoord(0, 0, 0, 0)
+			end
+		end)
 	end
 
-	S:HandleScrollBar(ClassTrainerScrollFrameScrollBar, 5)
+	ClassTrainerCollapseAllButton:SetNormalTexture('Interface\\AddOns\\ElvUI\\media\\textures\\PlusMinusButton')
+	ClassTrainerCollapseAllButton.SetNormalTexture = E.noop
+	ClassTrainerCollapseAllButton:GetNormalTexture():SetPoint('LEFT', 3, 2)
+	ClassTrainerCollapseAllButton:GetNormalTexture():Size(15)
 
-	for _, object in pairs(StripAllTextures) do
-		_G[object]:StripTextures()
-	end
+	ClassTrainerCollapseAllButton:SetHighlightTexture('')
+	ClassTrainerCollapseAllButton.SetHighlightTexture = E.noop
 
-	for _, texture in pairs(KillTextures) do
-		_G[texture]:Kill()
-	end
+	ClassTrainerCollapseAllButton:SetDisabledTexture('Interface\\AddOns\\ElvUI\\media\\textures\\PlusMinusButton')
+	ClassTrainerCollapseAllButton.SetDisabledTexture = E.noop
+	ClassTrainerCollapseAllButton:GetDisabledTexture():SetPoint('LEFT', 3, 2)
+	ClassTrainerCollapseAllButton:GetDisabledTexture():Size(15)
+	ClassTrainerCollapseAllButton:GetDisabledTexture():SetTexCoord(0.045, 0.475, 0.085, 0.925)
+	ClassTrainerCollapseAllButton:GetDisabledTexture():SetDesaturated(true)
 
-	for i = 1, #buttons do
-		_G[buttons[i]]:StripTextures()
-		S:HandleButton(_G[buttons[i]])
-	end
-
-	S:HandleDropDownBox(ClassTrainerFrameFilterDropDown, 155)
-
-	ClassTrainerFrame:SetHeight(ClassTrainerFrame:GetHeight() + 5)
-	ClassTrainerFrame:CreateBackdrop("Transparent")
-	ClassTrainerFrame.backdrop:Point("TOPLEFT", ClassTrainerFrame, "TOPLEFT")
-	ClassTrainerFrame.backdrop:Point("BOTTOMRIGHT", ClassTrainerFrame, "BOTTOMRIGHT")
-	S:HandleCloseButton(ClassTrainerFrameCloseButton,ClassTrainerFrame)
-	ClassTrainerFrameSkillStepButton.icon:SetTexCoord(unpack(E.TexCoords))
-	ClassTrainerFrameSkillStepButton:CreateBackdrop("Default")
-	ClassTrainerFrameSkillStepButton.backdrop:SetOutside(ClassTrainerFrameSkillStepButton.icon)
-	ClassTrainerFrameSkillStepButton.icon:SetParent(ClassTrainerFrameSkillStepButton.backdrop)
-	ClassTrainerFrameSkillStepButtonHighlight:SetColorTexture(1,1,1,0.3)
-	ClassTrainerFrameSkillStepButton.selectedTex:SetColorTexture(1,1,1,0.3)
-
-	ClassTrainerStatusBar:StripTextures()
-	ClassTrainerStatusBar:SetStatusBarTexture(E["media"].normTex)
-	ClassTrainerStatusBar:CreateBackdrop("Default")
-	ClassTrainerStatusBar.rankText:ClearAllPoints()
-	ClassTrainerStatusBar.rankText:Point("CENTER", ClassTrainerStatusBar, "CENTER")
-	E:RegisterStatusBar(ClassTrainerStatusBar)
+	hooksecurefunc(ClassTrainerCollapseAllButton, 'SetNormalTexture', function(self, texture)
+		if find(texture, 'MinusButton') then
+			self:GetNormalTexture():SetTexCoord(0.545, 0.975, 0.085, 0.925)
+		else
+			self:GetNormalTexture():SetTexCoord(0.045, 0.475, 0.085, 0.925)
+		end
+	end)
 end
 
-S:AddCallbackForAddon("Blizzard_TrainerUI", "Trainer", LoadSkin)
+S:AddCallbackForAddon('Blizzard_TrainerUI', 'Trainer', LoadSkin)

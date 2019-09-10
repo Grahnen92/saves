@@ -1,5 +1,5 @@
 local _, ns = ...
-local oUF = oUF or ns.oUF
+local oUF = _G.oUF or ns.oUF
 if not oUF then return end
 
 local playerClass = select(2,UnitClass("player"))
@@ -10,14 +10,6 @@ local CanDispel = {
 	DRUID = { Magic = false, Curse = true, Poison = true, Disease = false },
 	MONK = { Magic = false, Poison = true, Disease = true },
 	MAGE = { Curse = true },
-}
-
-local blackList = {
-	[GetSpellInfo(140546)] = true, --Fully Mutated
-	[GetSpellInfo(136184)] = true, --Thick Bones
-	[GetSpellInfo(136186)] = true, --Clear mind
-	[GetSpellInfo(136182)] = true, --Improved Synapses
-	[GetSpellInfo(136180)] = true, --Keen Eyesight
 }
 
 local dispellist = CanDispel[playerClass] or {}
@@ -36,7 +28,7 @@ local function GetDebuffType(unit, filter, filterTable)
 
 		if(filterTable and filterSpell and filterSpell.enable) then
 			return debufftype, texture, true, filterSpell.style, filterSpell.color
-		elseif debufftype and (not filter or (filter and dispellist[debufftype])) and not blackList[name] then
+		elseif debufftype and (not filter or (filter and dispellist[debufftype])) then
 			return debufftype, texture
 		end
 		i = i + 1
@@ -152,9 +144,7 @@ local function Disable(object)
 end
 
 local f = CreateFrame("Frame")
-f:RegisterEvent("PLAYER_TALENT_UPDATE")
 f:RegisterEvent("CHARACTER_POINTS_CHANGED")
-f:RegisterEvent("PLAYER_SPECIALIZATION_CHANGED")
 f:SetScript("OnEvent", CheckSpec)
 
 oUF:AddElement('DebuffHighlight', Update, Enable, Disable)
