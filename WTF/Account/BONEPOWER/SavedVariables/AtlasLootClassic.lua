@@ -1,23 +1,18 @@
 
 AtlasLootClassicDB = {
-	["global"] = {
-		["__addonrevision"] = 1010008,
-	},
 	["profileKeys"] = {
 		["Tråla - Dreadmist"] = "Tråla - Dreadmist",
-		["Skreva - Dreadmist"] = "Skreva - Dreadmist",
 		["Ärlig - Dreadmist"] = "Ärlig - Dreadmist",
+		["Skreva - Dreadmist"] = "Skreva - Dreadmist",
 		["Gladwin - Dreadmist"] = "Gladwin - Dreadmist",
+	},
+	["global"] = {
+		["__addonrevision"] = 1010008,
 	},
 	["profiles"] = {
 		["Tråla - Dreadmist"] = {
 		},
-		["Skreva - Dreadmist"] = {
-		},
 		["Ärlig - Dreadmist"] = {
-			["minimap"] = {
-				["minimapPos"] = 187.630831665984,
-			},
 			["GUI"] = {
 				["point"] = {
 					nil, -- [1]
@@ -34,6 +29,11 @@ AtlasLootClassicDB = {
 					0, -- [5]
 				},
 			},
+			["minimap"] = {
+				["minimapPos"] = 187.630831665984,
+			},
+		},
+		["Skreva - Dreadmist"] = {
 		},
 		["Gladwin - Dreadmist"] = {
 			["minimap"] = {
@@ -49,8 +49,8 @@ AtlasLootClassicDB = {
 				},
 				["selected"] = {
 					nil, -- [1]
-					"Gnomeregan", -- [2]
-					6, -- [3]
+					"ScarletMonasteryCathedral", -- [2]
+					2, -- [3]
 					1, -- [4]
 					0, -- [5]
 				},
