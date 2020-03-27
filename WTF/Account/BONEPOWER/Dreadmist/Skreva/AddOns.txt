@@ -1,5 +1,0 @@
-ElvUI: enabled
-ElvUI_OptionsUI: enabled
-WeakAurasCompanion: enabled
-WeaponSwingTimer: disabled
-Questie: enabled
