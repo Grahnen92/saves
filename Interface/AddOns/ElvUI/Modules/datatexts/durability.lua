@@ -1,20 +1,19 @@
 local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 local DT = E:GetModule('DataTexts')
 
---Cache global variables
 --Lua functions
-local pairs = pairs
-local format, join = string.format, string.join
+local _G = _G
+local format, strjoin, pairs = format, strjoin, pairs
 --WoW API / Variables
-local GetInventorySlotInfo = GetInventorySlotInfo
 local GetInventoryItemDurability = GetInventoryItemDurability
+local GetInventorySlotInfo = GetInventorySlotInfo
 local ToggleCharacter = ToggleCharacter
 local DURABILITY = DURABILITY
+local InCombatLockdown = InCombatLockdown
 
-local displayString = ""
+local displayString, lastPanel = ""
 local tooltipString = "%d%%"
 local totalDurability = 0
-local current, max, lastPanel
 local invDurability = {}
 local slots = {
 	["SecondaryHandSlot"] = L["Offhand"],
@@ -35,7 +34,7 @@ local function OnEvent(self)
 
 	for index, value in pairs(slots) do
 		local slot = GetInventorySlotInfo(index)
-		current, max = GetInventoryItemDurability(slot)
+		local current, max = GetInventoryItemDurability(slot)
 
 		if current then
 			invDurability[value] = (current/max)*100
@@ -50,6 +49,7 @@ local function OnEvent(self)
 end
 
 local function Click()
+	if InCombatLockdown() then _G.UIErrorsFrame:AddMessage(E.InfoColor.._G.ERR_NOT_IN_COMBAT) return end
 	ToggleCharacter("PaperDollFrame")
 end
 
@@ -64,12 +64,12 @@ local function OnEnter(self)
 end
 
 local function ValueColorUpdate(hex)
-	displayString = join("", DURABILITY, ": ", hex, "%d%%|r")
+	displayString = strjoin("", DURABILITY, ": ", hex, "%d%%|r")
 
 	if lastPanel ~= nil then
 		OnEvent(lastPanel, 'ELVUI_COLOR_UPDATE')
 	end
 end
-E['valueColorUpdateFuncs'][ValueColorUpdate] = true
+E.valueColorUpdateFuncs[ValueColorUpdate] = true
 
 DT:RegisterDatatext('Durability', {'PLAYER_ENTERING_WORLD', "UPDATE_INVENTORY_DURABILITY", "MERCHANT_SHOW"}, OnEvent, nil, Click, OnEnter, nil, DURABILITY)

@@ -1,0 +1,102 @@
+
+FarmHudDB = {
+	["tracking^134153"] = "client",
+	["cardinalpoints_color2"] = {
+		1, -- [1]
+		0.82, -- [2]
+		0, -- [3]
+		0.7, -- [4]
+	},
+	["tracking^136456"] = "client",
+	["tracking^136465"] = "client",
+	["tracking^132328"] = "client",
+	["coords_radius"] = 0.51,
+	["tracking^136457"] = "client",
+	["tracking^136464"] = "client",
+	["tracking^135942"] = "client",
+	["tracking^1064187"] = "client",
+	["rotation"] = true,
+	["tracking^136025"] = "client",
+	["hud_size"] = 0.7000000000000001,
+	["tracking^132275"] = "client",
+	["coords_show"] = false,
+	["tracking^457292"] = "client",
+	["showDummy"] = false,
+	["gathercircle_show"] = false,
+	["tracking^136453"] = "client",
+	["tracking^132320"] = "client",
+	["buttons_buttom"] = false,
+	["tracking^237607"] = "client",
+	["time_show"] = false,
+	["time_color"] = {
+		1, -- [1]
+		0.82, -- [2]
+		0, -- [3]
+		0.7, -- [4]
+	},
+	["tracking^136217"] = "client",
+	["time_radius"] = 0.48,
+	["time_local"] = true,
+	["background_alpha"] = 0,
+	["cardinalpoints_show"] = false,
+	["tracking^1598183"] = "client",
+	["time_server"] = true,
+	["tracking^524052"] = "client",
+	["cardinalpoints_color1"] = {
+		1, -- [1]
+		0.82, -- [2]
+		0, -- [3]
+		0.7, -- [4]
+	},
+	["tracking^136458"] = "client",
+	["hud_scale"] = 1,
+	["tracking^136463"] = "client",
+	["gathercircle_color"] = {
+		0, -- [1]
+		1, -- [2]
+		0, -- [3]
+		0.5, -- [4]
+	},
+	["tracking^1863940"] = "client",
+	["SuperTrackedQuest"] = true,
+	["tracking^524051"] = "client",
+	["mouseoverinfo_color"] = {
+		1, -- [1]
+		0.8196078431372549, -- [2]
+		0, -- [3]
+		0.1373449563980103, -- [4]
+	},
+	["buttons_show"] = true,
+	["tracking^135861"] = "client",
+	["tracking^136466"] = "client",
+	["tracking^613074"] = "client",
+	["cardinalpoints_radius"] = 0.4350000000000001,
+	["buttons_bottom"] = true,
+	["coords_color"] = {
+		1, -- [1]
+		0.82, -- [2]
+		0, -- [3]
+		0.7, -- [4]
+	},
+	["time_bottom"] = false,
+	["holdKeyForMouseOn"] = "_none",
+	["MinimapIcon"] = {
+		["minimapPos"] = 180.4407306417298,
+		["radius"] = 80,
+		["hide"] = false,
+	},
+	["tracking^136459"] = "client",
+	["buttons_radius"] = 0.765,
+	["tracking^136142"] = "client",
+	["tracking^133939"] = "client",
+	["tracking^535616"] = "false",
+	["coords_bottom"] = false,
+	["QuestArrowInfoMsg"] = false,
+	["buttons_alpha"] = 0.6000000000000001,
+	["player_dot"] = "white",
+	["tracking^136454"] = "client",
+	["tracking^535615"] = "client",
+	["showDummyBg"] = true,
+	["tracking^136452"] = "client",
+	["text_scale"] = 1,
+}

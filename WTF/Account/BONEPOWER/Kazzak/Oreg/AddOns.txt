@@ -1,0 +1,14 @@
+RCLootCouncil: disabled
+Skada: enabled
+DBM-AntorusBurningThrone: disabled
+DBM-Argus: disabled
+DBM-BrokenIsles: disabled
+DBM-EmeraldNightmare: disabled
+DBM-Party-Legion: disabled
+DBM-EternalPalace: disabled
+DBM-Nighthold: disabled
+DBM-TombofSargeras: disabled
+DBM-TrialofValor: disabled
+ElvUI_VerticalBars: disabled
+OPie_Classic: disabled
+Plater: disabled

@@ -1,28 +1,16 @@
 local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 local S = E:GetModule('Skins')
 
---Cache global variables
---Lua functions
+local _G = _G
 
---WoW API / Variables
+function S:Blizzard_AzeriteUI()
+	if not (E.private.skins.blizzard.enable and E.private.skins.blizzard.AzeriteUI) then return end
 
---Global variables that we don't cache, list them here for mikk's FindGlobals script
--- GLOBALS:
-
-local function LoadSkin()
-	if E.private.skins.blizzard.enable ~= true or E.private.skins.blizzard.AzeriteUI ~= true then return end
-
-	AzeriteEmpoweredItemUI:StripTextures()
-	AzeriteEmpoweredItemUI.BorderFrame:StripTextures()
-	AzeriteEmpoweredItemUIPortrait:Hide()
-	AzeriteEmpoweredItemUIPortraitFrame:Hide()
-	AzeriteEmpoweredItemUITopBorder:Hide()
-	AzeriteEmpoweredItemUI.ClipFrame.BackgroundFrame.Bg:Hide()
-	AzeriteEmpoweredItemUI.ClipFrame.BackgroundFrame.KeyOverlay.Shadow:Hide()
-
-	AzeriteEmpoweredItemUI:CreateBackdrop("Transparent")
-
-	S:HandleCloseButton(AzeriteEmpoweredItemUICloseButton)
+	_G.AzeriteEmpoweredItemUI:StripTextures()
+	_G.AzeriteEmpoweredItemUIPortrait:Hide()
+	_G.AzeriteEmpoweredItemUI.ClipFrame.BackgroundFrame.Bg:Hide()
+	_G.AzeriteEmpoweredItemUI:CreateBackdrop("Transparent")
+	S:HandleCloseButton(_G.AzeriteEmpoweredItemUICloseButton)
 end
 
-S:AddCallbackForAddon("Blizzard_AzeriteUI", "AzeriteUI", LoadSkin)
+S:AddCallbackForAddon('Blizzard_AzeriteUI')

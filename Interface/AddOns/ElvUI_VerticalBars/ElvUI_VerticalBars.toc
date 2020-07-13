@@ -1,0 +1,5 @@
+## Interface: 80100
+## Author: bonepower
+## Version: 1.0
+## Title: ElvUIVerticalBars
+VerticalBars.lua

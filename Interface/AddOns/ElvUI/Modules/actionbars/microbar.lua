@@ -1,23 +1,21 @@
 local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
-local AB = E:GetModule('ActionBars');
+local AB = E:GetModule('ActionBars')
 
---Cache global variables
 --Lua functions
 local _G = _G
+local pairs = pairs
 local assert = assert
+local unpack = unpack
 --WoW API / Variables
 local CreateFrame = CreateFrame
 local C_StorePublic_IsEnabled = C_StorePublic.IsEnabled
 local UpdateMicroButtonsParent = UpdateMicroButtonsParent
+local GetCurrentRegionName = GetCurrentRegionName
 local RegisterStateDriver = RegisterStateDriver
 local InCombatLockdown = InCombatLockdown
+-- GLOBALS: ElvUI_MicroBar
 
---Global variables that we don't cache, list them here for mikk's FindGlobals script
--- GLOBALS: ElvUI_MicroBar, MainMenuBarPerformanceBar, MainMenuMicroButton
--- GLOBALS: MICRO_BUTTONS, CharacterMicroButton, GuildMicroButtonTabard
--- GLOBALS: GuildMicroButton, MicroButtonPortrait, CollectionsMicroButtonAlert
-
-local function onLeave()
+local function onLeaveBar()
 	if AB.db.microbar.mouseover then
 		E:UIFrameFadeOut(ElvUI_MicroBar, 0.2, ElvUI_MicroBar:GetAlpha(), 0)
 	end
@@ -29,7 +27,7 @@ local function onUpdate(self, elapsed)
 		if not self:IsMouseOver() then
 			self.IsMouseOvered = nil
 			self:SetScript("OnUpdate", nil)
-			onLeave()
+			onLeaveBar()
 		end
 		watcher = 0
 	else
@@ -37,11 +35,21 @@ local function onUpdate(self, elapsed)
 	end
 end
 
-local function onEnter()
+local function onEnter(button)
 	if AB.db.microbar.mouseover and not ElvUI_MicroBar.IsMouseOvered then
 		ElvUI_MicroBar.IsMouseOvered = true
 		ElvUI_MicroBar:SetScript("OnUpdate", onUpdate)
 		E:UIFrameFadeIn(ElvUI_MicroBar, 0.2, ElvUI_MicroBar:GetAlpha(), AB.db.microbar.alpha)
+	end
+
+	if button.backdrop and button:IsEnabled() then
+		button.backdrop:SetBackdropBorderColor(unpack(E.media.rgbvaluecolor))
+	end
+end
+
+local function onLeave(button)
+	if button.backdrop and button:IsEnabled() then
+		button.backdrop:SetBackdropBorderColor(unpack(E.media.bordercolor))
 	end
 end
 
@@ -55,18 +63,19 @@ function AB:HandleMicroButton(button)
 	local f = CreateFrame("Frame", nil, button)
 	f:SetFrameLevel(1)
 	f:SetFrameStrata("BACKGROUND")
-	f:SetTemplate("Default", true)
+	f:SetTemplate(nil, true)
 	f:SetOutside(button)
 	button.backdrop = f
 
 	button:SetParent(ElvUI_MicroBar)
 	button:GetHighlightTexture():Kill()
 	button:HookScript('OnEnter', onEnter)
+	button:HookScript('OnLeave', onLeave)
 	button:SetHitRectInsets(0, 0, 0, 0)
 
 	if button.Flash then
 		button.Flash:SetInside()
-		button.Flash:SetTexture(nil)
+		button.Flash:SetTexture()
 	end
 
 	pushed:SetTexCoord(0.22, 0.81, 0.26, 0.82)
@@ -82,16 +91,16 @@ function AB:HandleMicroButton(button)
 end
 
 function AB:MainMenuMicroButton_SetNormal()
-	MainMenuBarPerformanceBar:Point("TOPLEFT", MainMenuMicroButton, "TOPLEFT", 9, -36);
+	_G.MainMenuBarPerformanceBar:Point("TOPLEFT", _G.MainMenuMicroButton, "TOPLEFT", 9, -36)
 end
 
 function AB:MainMenuMicroButton_SetPushed()
-	MainMenuBarPerformanceBar:Point("TOPLEFT", MainMenuMicroButton, "TOPLEFT", 8, -37);
+	_G.MainMenuBarPerformanceBar:Point("TOPLEFT", _G.MainMenuMicroButton, "TOPLEFT", 8, -37)
 end
 
 function AB:UpdateMicroButtonsParent()
-	for i=1, #MICRO_BUTTONS do
-		_G[MICRO_BUTTONS[i]]:SetParent(ElvUI_MicroBar);
+	for _, x in pairs(_G.MICRO_BUTTONS) do
+		_G[x]:SetParent(ElvUI_MicroBar)
 	end
 end
 
@@ -115,7 +124,7 @@ function AB:UpdateMicroBarVisibility()
 		visibility = visibility:gsub('[\n\r]','')
 	end
 
-	RegisterStateDriver(ElvUI_MicroBar.visibility, "visibility", (self.db.microbar.enabled and visibility) or "hide");
+	RegisterStateDriver(ElvUI_MicroBar.visibility, "visibility", (self.db.microbar.enabled and visibility) or "hide")
 end
 
 function AB:UpdateMicroPositionDimensions()
@@ -126,21 +135,21 @@ function AB:UpdateMicroPositionDimensions()
 	local offset = E:Scale(E.PixelMode and 1 or 3)
 	local spacing = E:Scale(offset + self.db.microbar.buttonSpacing)
 
-	for i=1, #MICRO_BUTTONS-1 do
-		local button = _G[__buttonIndex[i]] or _G[MICRO_BUTTONS[i]]
-		local lastColumnButton = i-self.db.microbar.buttonsPerRow;
-		lastColumnButton = _G[__buttonIndex[lastColumnButton]] or _G[MICRO_BUTTONS[lastColumnButton]]
+	for i=1, #_G.MICRO_BUTTONS-1 do
+		local button = _G[__buttonIndex[i]] or _G[_G.MICRO_BUTTONS[i]]
+		local lastColumnButton = i-self.db.microbar.buttonsPerRow
+		lastColumnButton = _G[__buttonIndex[lastColumnButton]] or _G[_G.MICRO_BUTTONS[lastColumnButton]]
 
-		button:Size(self.db.microbar.buttonSize, self.db.microbar.buttonSize * 1.4);
-		button:ClearAllPoints();
+		button:Size(self.db.microbar.buttonSize, self.db.microbar.buttonSize * 1.4)
+		button:ClearAllPoints()
 
 		if prevButton == ElvUI_MicroBar then
 			button:Point('TOPLEFT', prevButton, 'TOPLEFT', offset, -offset)
 		elseif (i - 1) % self.db.microbar.buttonsPerRow == 0 then
-			button:Point('TOP', lastColumnButton, 'BOTTOM', 0, -spacing);
+			button:Point('TOP', lastColumnButton, 'BOTTOM', 0, -spacing)
 			numRows = numRows + 1
 		else
-			button:Point('LEFT', prevButton, 'RIGHT', spacing, 0);
+			button:Point('LEFT', prevButton, 'RIGHT', spacing, 0)
 		end
 
 		prevButton = button
@@ -152,8 +161,8 @@ function AB:UpdateMicroPositionDimensions()
 		ElvUI_MicroBar:SetAlpha(self.db.microbar.alpha)
 	end
 
-	AB.MicroWidth = (((_G["CharacterMicroButton"]:GetWidth() + spacing) * self.db.microbar.buttonsPerRow) - spacing) + (offset * 2)
-	AB.MicroHeight = (((_G["CharacterMicroButton"]:GetHeight() + spacing) * numRows) - spacing) + (offset * 2)
+	AB.MicroWidth = (((_G.CharacterMicroButton:GetWidth() + spacing) * self.db.microbar.buttonsPerRow) - spacing) + (offset * 2)
+	AB.MicroHeight = (((_G.CharacterMicroButton:GetHeight() + spacing) * numRows) - spacing) + (offset * 2)
 	ElvUI_MicroBar:Size(AB.MicroWidth, AB.MicroHeight)
 
 	if ElvUI_MicroBar.mover then
@@ -168,11 +177,11 @@ function AB:UpdateMicroPositionDimensions()
 end
 
 function AB:UpdateMicroButtons()
+	local GuildMicroButton = _G.GuildMicroButton
+	local GuildMicroButtonTabard = _G.GuildMicroButtonTabard
 	GuildMicroButtonTabard:SetInside(GuildMicroButton)
-
 	GuildMicroButtonTabard.background:SetInside(GuildMicroButton)
 	GuildMicroButtonTabard.background:SetTexCoord(0.17, 0.87, 0.5, 0.908)
-
 	GuildMicroButtonTabard.emblem:ClearAllPoints()
 	GuildMicroButtonTabard.emblem:Point("TOPLEFT", GuildMicroButton, "TOPLEFT", 4, -4)
 	GuildMicroButtonTabard.emblem:Point("BOTTOMRIGHT", GuildMicroButton, "BOTTOMRIGHT", -4, 8)
@@ -189,12 +198,12 @@ function AB:SetupMicroBar()
 	microBar.visibility:SetScript("OnShow", function() microBar:Show() end)
 	microBar.visibility:SetScript("OnHide", function() microBar:Hide() end)
 
-	E.FrameLocks["ElvUI_MicroBar"] = true;
-	for i=1, #MICRO_BUTTONS do
-		self:HandleMicroButton(_G[MICRO_BUTTONS[i]])
+	E.FrameLocks.ElvUI_MicroBar = true
+	for _, x in pairs(_G.MICRO_BUTTONS) do
+		self:HandleMicroButton(_G[x])
 	end
 
-	MicroButtonPortrait:SetInside(CharacterMicroButton.backdrop)
+	_G.MicroButtonPortrait:SetInside(_G.CharacterMicroButton.backdrop)
 
 	self:SecureHook('MainMenuMicroButton_SetPushed')
 	self:SecureHook('MainMenuMicroButton_SetNormal')
@@ -204,7 +213,18 @@ function AB:SetupMicroBar()
 	UpdateMicroButtonsParent(microBar)
 	self:MainMenuMicroButton_SetNormal()
 	self:UpdateMicroPositionDimensions()
-	MainMenuBarPerformanceBar:Kill()
-	CollectionsMicroButtonAlert:Kill()
-	E:CreateMover(microBar, 'MicrobarMover', L["Micro Bar"], nil, nil, nil, 'ALL,ACTIONBARS');
+
+	-- With this method we might don't taint anything. Instead of using :Kill()
+	_G.MainMenuBarPerformanceBar:SetAlpha(0)
+	_G.MainMenuBarPerformanceBar:SetScale(0.00001)
+
+	_G.CollectionsMicroButtonAlert:EnableMouse(false)
+	_G.CollectionsMicroButtonAlert:SetAlpha(0)
+	_G.CollectionsMicroButtonAlert:SetScale(0.00001)
+
+	_G.CharacterMicroButtonAlert:EnableMouse(false)
+	_G.CharacterMicroButtonAlert:SetAlpha(0)
+	_G.CharacterMicroButtonAlert:SetScale(0.00001)
+
+	E:CreateMover(microBar, 'MicrobarMover', L["Micro Bar"], nil, nil, nil, 'ALL,ACTIONBARS', nil, 'actionbar,microbar')
 end

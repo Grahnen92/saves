@@ -1,0 +1,4 @@
+Skada: enabled
+ElvUI_VerticalBars: disabled
+OPie_Classic: disabled
+Plater: disabled

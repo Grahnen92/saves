@@ -1,17 +1,14 @@
 local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 local S = E:GetModule('Skins')
 
---Cache global variables
 --Lua functions
 local _G = _G
-local pairs, select, unpack = pairs, select, unpack
+local pairs, unpack = pairs, unpack
 --WoW API / Variables
 local hooksecurefunc = hooksecurefunc
---Global variables that we don't cache, list them here for mikk's FindGlobals script
--- GLOBALS:
 
-local function LoadSkin()
-	if E.private.skins.blizzard.enable ~= true or E.private.skins.blizzard.voidstorage ~= true then return end
+function S:Blizzard_VoidStorageUI()
+	if not (E.private.skins.blizzard.enable and E.private.skins.blizzard.voidstorage) then return end
 
 	local StripAllTextures = {
 		"VoidStorageBorderFrame",
@@ -27,87 +24,50 @@ local function LoadSkin()
 		_G[object]:StripTextures()
 	end
 
-	local VoidStorageFrame = _G["VoidStorageFrame"]
-	for i=1, 2 do
+	local VoidStorageFrame = _G.VoidStorageFrame
+	for i = 1, 2 do
 		local tab = VoidStorageFrame["Page"..i]
-		tab:DisableDrawLayer("BACKGROUND")
+		S:HandleButton(tab)
 		tab:StyleButton(nil, true)
-		tab:GetNormalTexture():SetTexCoord(unpack(E.TexCoords))
+		S:HandleIcon(tab:GetNormalTexture())
 		tab:GetNormalTexture():SetInside()
-		tab:SetTemplate()
 	end
 
-	VoidStoragePurchaseFrame:SetFrameStrata('DIALOG')
+	VoidStorageFrame:StripTextures()
 	VoidStorageFrame:SetTemplate("Transparent")
-	VoidStoragePurchaseFrame:SetTemplate("Default")
-	VoidStorageFrameMarbleBg:Kill()
-	VoidStorageFrameLines:Kill()
-	select(2, VoidStorageFrame:GetRegions()):Kill()
 
-	S:HandleButton(VoidStoragePurchaseButton)
-	S:HandleButton(VoidStorageHelpBoxButton)
-	S:HandleButton(VoidStorageTransferButton)
+	VoidStorageFrame.Page1:SetNormalTexture("Interface\\Icons\\INV_Enchant_EssenceCosmicGreater")
+	VoidStorageFrame.Page1:Point("LEFT", "$parent", "TOPRIGHT", 1, -60)
 
-	S:HandleCloseButton(VoidStorageBorderFrame.CloseButton)
-	VoidItemSearchBox:CreateBackdrop("Overlay")
-	VoidItemSearchBox.backdrop:Point("TOPLEFT", 10, -1)
-	VoidItemSearchBox.backdrop:Point("BOTTOMRIGHT", 4, 1)
+	VoidStorageFrame.Page2:SetNormalTexture("Interface\\Icons\\INV_Enchant_EssenceArcaneLarge")
 
-	for i = 1, 9 do
-		local button_d = _G["VoidStorageDepositButton"..i]
-		local button_w = _G["VoidStorageWithdrawButton"..i]
-		local icon_d = _G["VoidStorageDepositButton"..i.."IconTexture"]
-		local icon_w = _G["VoidStorageWithdrawButton"..i.."IconTexture"]
+	_G.VoidStoragePurchaseFrame:SetFrameStrata('DIALOG')
+	_G.VoidStoragePurchaseFrame:SetTemplate()
 
-		_G["VoidStorageDepositButton"..i.."Bg"]:Hide()
-		_G["VoidStorageWithdrawButton"..i.."Bg"]:Hide()
+	S:HandleButton(_G.VoidStoragePurchaseButton)
+	S:HandleButton(_G.VoidStorageTransferButton)
 
-		button_d:StyleButton()
-		button_d:SetTemplate()
-		hooksecurefunc(button_d.IconBorder, 'SetVertexColor', function(self, r, g, b)
-			self:GetParent():SetBackdropBorderColor(r,g,b)
-			self:SetTexture("")
-		end)
-		hooksecurefunc(button_d.IconBorder, 'Hide', function(self)
-			self:GetParent():SetBackdropBorderColor(unpack(E.media.bordercolor))
-		end)
+	S:HandleCloseButton(_G.VoidStorageBorderFrame.CloseButton)
 
-		button_w:StyleButton()
-		button_w:SetTemplate()
-		hooksecurefunc(button_w.IconBorder, 'SetVertexColor', function(self, r, g, b)
-			self:GetParent():SetBackdropBorderColor(r,g,b)
-			self:SetTexture("")
-		end)
-		hooksecurefunc(button_w.IconBorder, 'Hide', function(self)
-			self:GetParent():SetBackdropBorderColor(unpack(E.media.bordercolor))
-		end)
+	S:HandleEditBox(_G.VoidItemSearchBox)
 
-		icon_d:SetTexCoord(unpack(E.TexCoords))
-		icon_d:SetInside()
-
-		icon_w:SetTexCoord(unpack(E.TexCoords))
-		icon_w:SetInside()
-	end
-
-	for i = 1, 80 do
-		local button = _G["VoidStorageStorageButton"..i]
-		local icon = _G["VoidStorageStorageButton"..i.."IconTexture"]
-
-		_G["VoidStorageStorageButton"..i.."Bg"]:Hide()
-
-		button:StyleButton()
-		button:SetTemplate()
-
-		icon:SetTexCoord(unpack(E.TexCoords))
-		icon:SetInside()
-		hooksecurefunc(button.IconBorder, 'SetVertexColor', function(self, r, g, b)
-			self:GetParent():SetBackdropBorderColor(r,g,b)
-			self:SetTexture("")
-		end)
-		hooksecurefunc(button.IconBorder, 'Hide', function(self)
-			self:GetParent():SetBackdropBorderColor(unpack(E.media.bordercolor))
-		end)
+	for StorageType, NumSlots  in pairs({ ['Deposit'] = 9, ['Withdraw'] = 9, ['Storage'] = 80 }) do
+		for i = 1, NumSlots do
+			local Button = _G["VoidStorage"..StorageType.."Button"..i]
+			Button:StripTextures()
+			Button:SetTemplate()
+			Button:StyleButton()
+			S:HandleIcon(Button.icon)
+			Button.icon:SetInside()
+			Button.IconBorder:SetAlpha(0)
+			hooksecurefunc(Button.IconBorder, 'SetVertexColor', function(_, r, g, b)
+				Button:SetBackdropBorderColor(r, g, b)
+			end)
+			hooksecurefunc(Button.IconBorder, 'Hide', function()
+				Button:SetBackdropBorderColor(unpack(E.media.bordercolor))
+			end)
+		end
 	end
 end
 
-S:AddCallbackForAddon("Blizzard_VoidStorageUI", "VoidStorage", LoadSkin)
+S:AddCallbackForAddon('Blizzard_VoidStorageUI')

@@ -1,0 +1,5 @@
+VER 3 0100000000000001 "PresenceOfMind" "136031"
+#showtooltip
+/cast Presence of Mind
+/cast Arcane Blast
+END

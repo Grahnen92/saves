@@ -3,48 +3,26 @@ ElvCharacterDB = {
 	["ChatEditHistory"] = {
 		"/i I probably want it :)", -- [1]
 		"/dance", -- [2]
-		"/reload", -- [3]
-		"/raid have you guys been waiting for long?", -- [4]
-		"/raid res? :)", -- [5]
-		"/cw Reaperx-ArgentDawn z3", -- [6]
-		"/i never been here before btw", -- [7]
-		"/i So I might not know what Im doing :p", -- [8]
-		"/i shouldn't there be a boss here?", -- [9]
-		"/i ^^", -- [10]
-		"/i thanks guys½", -- [11]
-		"/i cya", -- [12]
-		"/raid where the heck is the portal?", -- [13]
-		"/raid ress? :)", -- [14]
-		"/raid nvm", -- [15]
-		"/s HEY", -- [16]
-		"/dbm", -- [17]
-		"/elvui", -- [18]
-		"/wa", -- [19]
-		"/s bb", -- [20]
+		"/raid have you guys been waiting for long?", -- [3]
+		"/raid res? :)", -- [4]
+		"/cw Reaperx-ArgentDawn z3", -- [5]
+		"/i never been here before btw", -- [6]
+		"/i So I might not know what Im doing :p", -- [7]
+		"/i shouldn't there be a boss here?", -- [8]
+		"/i ^^", -- [9]
+		"/i thanks guys½", -- [10]
+		"/i cya", -- [11]
+		"/raid where the heck is the portal?", -- [12]
+		"/raid ress? :)", -- [13]
+		"/raid nvm", -- [14]
+		"/s HEY", -- [15]
+		"/dbm", -- [16]
+		"/elvui", -- [17]
+		"/wa", -- [18]
+		"/s bb", -- [19]
+		"/reload", -- [20]
 	},
 	["ChatHistoryLog"] = {
-		{
-			"|cffa335ee|Hitem:134524::::::::110:72::2:3:1726:1522:3336:::|h[Band of the Wyrm Matron]|h|r anyone want?", -- [1]
-			"Seraphmaan-TarrenMill", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Seraphmaan-TarrenMill", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			125, -- [11]
-			"Player-1084-084C9566", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dSeraphmaan-TarrenMill|r",
-			[51] = 1514462208,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [1]
 		{
 			"|cffffff00Nightwatcher's Perch is under attack!|r", -- [1]
 			"", -- [2]
@@ -66,7 +44,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514462288,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [2]
+		}, -- [1]
 		{
 			"|cffffff00Felblaze Ingress is under attack!|r", -- [1]
 			"", -- [2]
@@ -88,7 +66,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1514463452,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [3]
+		}, -- [2]
 		{
 			"assist flag carriers pls", -- [1]
 			"Sénténcéd-TwistingNether", -- [2]
@@ -110,7 +88,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSénténcéd-TwistingNether|r",
 			[51] = 1514492913,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [4]
+		}, -- [3]
 		{
 			"ASSIST THEM", -- [1]
 			"Sénténcéd-TwistingNether", -- [2]
@@ -132,7 +110,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSénténcéd-TwistingNether|r",
 			[51] = 1514492999,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [5]
+		}, -- [4]
 		{
 			"kill disc priest", -- [1]
 			"Jyffe-Kazzak", -- [2]
@@ -154,7 +132,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aJyffe-Kazzak|r",
 			[51] = 1514578141,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [6]
+		}, -- [5]
 		{
 			"Mindi", -- [1]
 			"Jyffe-Kazzak", -- [2]
@@ -176,7 +154,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aJyffe-Kazzak|r",
 			[51] = 1514578149,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [7]
+		}, -- [6]
 		{
 			"makes some strange gestures.", -- [1]
 			"Olmär-Blackmoore", -- [2]
@@ -198,7 +176,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddOlmär-Blackmoore|r",
 			[51] = 1514578226,
 			[50] = "CHAT_MSG_EMOTE",
-		}, -- [8]
+		}, -- [7]
 		{
 			"makes some strange gestures.", -- [1]
 			"Olmär-Blackmoore", -- [2]
@@ -220,7 +198,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddOlmär-Blackmoore|r",
 			[51] = 1514578233,
 			[50] = "CHAT_MSG_EMOTE",
-		}, -- [9]
+		}, -- [8]
 		{
 			"nindi zerg", -- [1]
 			"Jyffe-Kazzak", -- [2]
@@ -242,7 +220,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aJyffe-Kazzak|r",
 			[51] = 1514578420,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [10]
+		}, -- [9]
 		{
 			"water", -- [1]
 			"Jyffe-Kazzak", -- [2]
@@ -264,7 +242,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aJyffe-Kazzak|r",
 			[51] = 1514578638,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [11]
+		}, -- [10]
 		{
 			"can we push together", -- [1]
 			"Drpwn-TarrenMill", -- [2]
@@ -286,7 +264,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddDrpwn-TarrenMill|r",
 			[51] = 1514578688,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [12]
+		}, -- [11]
 		{
 			"pls", -- [1]
 			"Drpwn-TarrenMill", -- [2]
@@ -308,7 +286,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddDrpwn-TarrenMill|r",
 			[51] = 1514578689,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [13]
+		}, -- [12]
 		{
 			"stop going pve rambo 1v10", -- [1]
 			"Drpwn-TarrenMill", -- [2]
@@ -330,7 +308,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddDrpwn-TarrenMill|r",
 			[51] = 1514578696,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [14]
+		}, -- [13]
 		{
 			"meet fc", -- [1]
 			"Jyffe-Kazzak", -- [2]
@@ -352,7 +330,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aJyffe-Kazzak|r",
 			[51] = 1514578696,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [15]
+		}, -- [14]
 		{
 			"they ahve 2 in def", -- [1]
 			"Jyffe-Kazzak", -- [2]
@@ -374,7 +352,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aJyffe-Kazzak|r",
 			[51] = 1514578744,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [16]
+		}, -- [15]
 		{
 			"makes some strange gestures.", -- [1]
 			"Olmär-Blackmoore", -- [2]
@@ -396,7 +374,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddOlmär-Blackmoore|r",
 			[51] = 1514578834,
 			[50] = "CHAT_MSG_EMOTE",
-		}, -- [17]
+		}, -- [16]
 		{
 			"soz", -- [1]
 			"Kyliée-Ravencrest", -- [2]
@@ -418,7 +396,7 @@ ElvCharacterDB = {
 			[52] = "|cfffff468Kyliée-Ravencrest|r",
 			[51] = 1514922832,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [18]
+		}, -- [17]
 		{
 			"can i give it to you ", -- [1]
 			"Kyliée-Ravencrest", -- [2]
@@ -440,7 +418,7 @@ ElvCharacterDB = {
 			[52] = "|cfffff468Kyliée-Ravencrest|r",
 			[51] = 1514922842,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [19]
+		}, -- [18]
 		{
 			"some how", -- [1]
 			"Kyliée-Ravencrest", -- [2]
@@ -462,7 +440,7 @@ ElvCharacterDB = {
 			[52] = "|cfffff468Kyliée-Ravencrest|r",
 			[51] = 1514922844,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [20]
+		}, -- [19]
 		{
 			"?", -- [1]
 			"Kyliée-Ravencrest", -- [2]
@@ -484,7 +462,7 @@ ElvCharacterDB = {
 			[52] = "|cfffff468Kyliée-Ravencrest|r",
 			[51] = 1514922845,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [21]
+		}, -- [20]
 		{
 			"i will call mine", -- [1]
 			"Sparkz-Karazhan", -- [2]
@@ -506,7 +484,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aSparkz-Karazhan|r",
 			[51] = 1514923971,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [22]
+		}, -- [21]
 		{
 			"ty", -- [1]
 			"Sparkz-Karazhan", -- [2]
@@ -528,7 +506,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aSparkz-Karazhan|r",
 			[51] = 1514924105,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [23]
+		}, -- [22]
 		{
 			"gg ", -- [1]
 			"Lellanna-BurningLegion", -- [2]
@@ -550,7 +528,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dLellanna-BurningLegion|r",
 			[51] = 1514924594,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [24]
+		}, -- [23]
 		{
 			"most of you just stay like idiots and do nothing... gg morons", -- [1]
 			"Lellanna-BurningLegion", -- [2]
@@ -572,7 +550,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dLellanna-BurningLegion|r",
 			[51] = 1514924629,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [25]
+		}, -- [24]
 		{
 			"too hard winXD", -- [1]
 			"Mooncry-Karazhan", -- [2]
@@ -594,7 +572,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aMooncry-Karazhan|r",
 			[51] = 1514924633,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [26]
+		}, -- [25]
 		{
 			"1vs 0  heals ", -- [1]
 			"Hârd-Kazzak", -- [2]
@@ -616,7 +594,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dHârd-Kazzak|r",
 			[51] = 1515181284,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [27]
+		}, -- [26]
 		{
 			"lel", -- [1]
 			"Hârd-Kazzak", -- [2]
@@ -638,7 +616,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dHârd-Kazzak|r",
 			[51] = 1515181292,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [28]
+		}, -- [27]
 		{
 			"can we at least try to go for flag?", -- [1]
 			"Garjzla-Ragnaros", -- [2]
@@ -660,7 +638,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaGarjzla-Ragnaros|r",
 			[51] = 1515181659,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [29]
+		}, -- [28]
 		{
 			"hete premade groups in a random bg", -- [1]
 			"Groaxss-Ragnaros", -- [2]
@@ -682,7 +660,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dGroaxss-Ragnaros|r",
 			[51] = 1515181759,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [30]
+		}, -- [29]
 		{
 			"How it's going pvers ? ", -- [1]
 			"Hârd-Kazzak", -- [2]
@@ -704,7 +682,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dHârd-Kazzak|r",
 			[51] = 1515181992,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [31]
+		}, -- [30]
 		{
 			"Is it harder than avoiding  fire under legs ?", -- [1]
 			"Hârd-Kazzak", -- [2]
@@ -726,7 +704,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dHârd-Kazzak|r",
 			[51] = 1515182004,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [32]
+		}, -- [31]
 		{
 			"Interrupted |cff71d5ff|Hspell:247320:0|h[Searing Gaze]|h|r on Occularus", -- [1]
 			"Thetormented-ChamberofAspects", -- [2]
@@ -748,7 +726,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaThetormented-ChamberofAspects|r",
 			[51] = 1515341596,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [33]
+		}, -- [32]
 		{
 			"Interrupted |cff71d5ff|Hspell:247320:0|h[Searing Gaze]|h|r on Occularus", -- [1]
 			"Thetormented-ChamberofAspects", -- [2]
@@ -770,7 +748,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaThetormented-ChamberofAspects|r",
 			[51] = 1515341604,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [34]
+		}, -- [33]
 		{
 			"|cff71d5ff|Hspell:114052:0|h[Ascendance]|h|r activated!", -- [1]
 			"Eluvia-Pozzodell'Eternità", -- [2]
@@ -792,7 +770,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddEluvia-Pozzodell'Eternità|r",
 			[51] = 1517082558,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [35]
+		}, -- [34]
 		{
 			"|cff71d5ff|Hspell:114052:0|h[Ascendance]|h|r faded!", -- [1]
 			"Eluvia-Pozzodell'Eternità", -- [2]
@@ -814,7 +792,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddEluvia-Pozzodell'Eternità|r",
 			[51] = 1517082565,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [36]
+		}, -- [35]
 		{
 			"have you guys been waiting for long?", -- [1]
 			"Orek-DefiasBrotherhood", -- [2]
@@ -836,7 +814,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dOrek|r",
 			[51] = 1517083040,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [37]
+		}, -- [36]
 		{
 			"weeks", -- [1]
 			"Saransa-Draenor", -- [2]
@@ -858,7 +836,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffSaransa-Draenor|r",
 			[51] = 1517083050,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [38]
+		}, -- [37]
 		{
 			"WhoLusted: Jinzho-Eredar cast |cff71d5ff|Hspell:80353:0|h[Искажение времени]|h|r!!!", -- [1]
 			"Синдарк-СвежевательДуш", -- [2]
@@ -880,7 +858,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dСиндарк-СвежевательДуш|r",
 			[51] = 1517083834,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [39]
+		}, -- [38]
 		{
 			"Seed of Destruction on Giobolus", -- [1]
 			"Giobolus-Kazzak", -- [2]
@@ -902,7 +880,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dGiobolus-Kazzak|r",
 			[51] = 1517084092,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [40]
+		}, -- [39]
 		{
 			"KappaPride", -- [1]
 			"Tkp-Kazzak", -- [2]
@@ -924,7 +902,7 @@ ElvCharacterDB = {
 			[52] = "|cfffff468Tkp-Kazzak|r",
 			[51] = 1518718007,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [41]
+		}, -- [40]
 		{
 			"res? :)", -- [1]
 			"Orek-DefiasBrotherhood", -- [2]
@@ -946,7 +924,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dOrek|r",
 			[51] = 1518762776,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [42]
+		}, -- [41]
 		{
 			"z3", -- [1]
 			"Reaperx-ArgentDawn", -- [2]
@@ -968,7 +946,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aReaperx-ArgentDawn|r",
 			[51] = 1518762796,
 			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [43]
+		}, -- [42]
 		{
 			"|cffffff00Cordana's Apex is under attack!|r", -- [1]
 			"", -- [2]
@@ -990,7 +968,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1518847843,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [44]
+		}, -- [43]
 		{
 			"|cffffff00Cordana's Apex is under attack!|r", -- [1]
 			"", -- [2]
@@ -1012,7 +990,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1518847906,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [45]
+		}, -- [44]
 		{
 			"|cffffff00Cordana's Apex is under attack!|r", -- [1]
 			"", -- [2]
@@ -1034,7 +1012,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1518848416,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [46]
+		}, -- [45]
 		{
 			"|cffffff00Cordana's Apex is under attack!|r", -- [1]
 			"", -- [2]
@@ -1056,7 +1034,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1518848478,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [47]
+		}, -- [46]
 		{
 			"|cffffff00Cordana's Apex is under attack!|r", -- [1]
 			"", -- [2]
@@ -1078,7 +1056,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1518848546,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [48]
+		}, -- [47]
 		{
 			"|cffffff00Cordana's Apex is under attack!|r", -- [1]
 			"", -- [2]
@@ -1100,7 +1078,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1518848645,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [49]
+		}, -- [48]
 		{
 			"|cffffff00Cordana's Apex is under attack!|r", -- [1]
 			"", -- [2]
@@ -1122,7 +1100,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1518848723,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [50]
+		}, -- [49]
 		{
 			"|cffffff00Cordana's Apex is under attack!|r", -- [1]
 			"", -- [2]
@@ -1144,7 +1122,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1518848799,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [51]
+		}, -- [50]
 		{
 			"|cffffff00Cordana's Apex is under attack!|r", -- [1]
 			"", -- [2]
@@ -1166,7 +1144,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1518848859,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [52]
+		}, -- [51]
 		{
 			"|cffffff00Cordana's Apex is under attack!|r", -- [1]
 			"", -- [2]
@@ -1188,7 +1166,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1518848919,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [53]
+		}, -- [52]
 		{
 			"|cffffff00Cordana's Apex is under attack!|r", -- [1]
 			"", -- [2]
@@ -1210,7 +1188,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1518848981,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [54]
+		}, -- [53]
 		{
 			"Wind Shear - |cff71d5ff|Hspell:248133:0|h[Stygian Blast]|h|r (Rift Warden)", -- [1]
 			"Corbic-Twilight'sHammer", -- [2]
@@ -1232,7 +1210,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddCorbic-Twilight'sHammer|r",
 			[51] = 1518849544,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [55]
+		}, -- [54]
 		{
 			"never been here before btw", -- [1]
 			"Orek-DefiasBrotherhood", -- [2]
@@ -1254,7 +1232,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dOrek|r",
 			[51] = 1518849637,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [56]
+		}, -- [55]
 		{
 			"So I might not know what Im doing :p", -- [1]
 			"Orek-DefiasBrotherhood", -- [2]
@@ -1276,7 +1254,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dOrek|r",
 			[51] = 1518849649,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [57]
+		}, -- [56]
 		{
 			"shouldn't there be a boss here?", -- [1]
 			"Orek-DefiasBrotherhood", -- [2]
@@ -1298,7 +1276,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dOrek|r",
 			[51] = 1518849655,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [58]
+		}, -- [57]
 		{
 			"follow", -- [1]
 			"Grimtoos-TarrenMill", -- [2]
@@ -1320,7 +1298,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffGrimtoos-TarrenMill|r",
 			[51] = 1518849656,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [59]
+		}, -- [58]
 		{
 			"void tear", -- [1]
 			"Corbic-Twilight'sHammer", -- [2]
@@ -1342,7 +1320,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddCorbic-Twilight'sHammer|r",
 			[51] = 1518849682,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [60]
+		}, -- [59]
 		{
 			"back", -- [1]
 			"Grimtoos-TarrenMill", -- [2]
@@ -1364,7 +1342,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffGrimtoos-TarrenMill|r",
 			[51] = 1518849885,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [61]
+		}, -- [60]
 		{
 			"Wind Shear - |cff71d5ff|Hspell:245585:0|h[Void Diffusion]|h|r (Shadowguard Conjurer)", -- [1]
 			"Corbic-Twilight'sHammer", -- [2]
@@ -1386,7 +1364,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddCorbic-Twilight'sHammer|r",
 			[51] = 1518849985,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [62]
+		}, -- [61]
 		{
 			"Wind Shear - |cff71d5ff|Hspell:245522:0|h[Entropic Mist]|h|r (Shadowguard Voidbender)", -- [1]
 			"Corbic-Twilight'sHammer", -- [2]
@@ -1408,7 +1386,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddCorbic-Twilight'sHammer|r",
 			[51] = 1518850011,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [63]
+		}, -- [62]
 		{
 			"Wind Shear - |cff71d5ff|Hspell:248239:0|h[Dark Splice]|h|r (Grand Shadow-Weaver)", -- [1]
 			"Corbic-Twilight'sHammer", -- [2]
@@ -1430,7 +1408,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddCorbic-Twilight'sHammer|r",
 			[51] = 1518850044,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [64]
+		}, -- [63]
 		{
 			"Wind Shear - |cff71d5ff|Hspell:244750:0|h[Dark Blast]|h|r (Viceroy Nezhar)", -- [1]
 			"Corbic-Twilight'sHammer", -- [2]
@@ -1452,7 +1430,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddCorbic-Twilight'sHammer|r",
 			[51] = 1518850084,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [65]
+		}, -- [64]
 		{
 			"^^", -- [1]
 			"Orek-DefiasBrotherhood", -- [2]
@@ -1474,7 +1452,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dOrek|r",
 			[51] = 1518850255,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [66]
+		}, -- [65]
 		{
 			"thanks guys½", -- [1]
 			"Orek-DefiasBrotherhood", -- [2]
@@ -1496,7 +1474,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dOrek|r",
 			[51] = 1518850261,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [67]
+		}, -- [66]
 		{
 			"cya", -- [1]
 			"Orek-DefiasBrotherhood", -- [2]
@@ -1518,7 +1496,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dOrek|r",
 			[51] = 1518850263,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [68]
+		}, -- [67]
 		{
 			"casually flips his |Hitem:44430|h|cff0070dd[Titanium Seal of Dalaran]|r|h.", -- [1]
 			"Legimos-Quel'Thalas", -- [2]
@@ -1540,7 +1518,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaLegimos-Quel'Thalas|r",
 			[51] = 1518851142,
 			[50] = "CHAT_MSG_EMOTE",
-		}, -- [69]
+		}, -- [68]
 		{
 			"We have 4 tanks, and none of them has aggro", -- [1]
 			"Styggåfeit-Ragnaros", -- [2]
@@ -1562,7 +1540,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Styggåfeit-Ragnaros|r",
 			[51] = 1518856955,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [70]
+		}, -- [69]
 		{
 			"Interrupted Occularus's |cff71d5ff|Hspell:247320:0|h[Searing Gaze]|h|r!", -- [1]
 			"Noisekick-Zul'jin", -- [2]
@@ -1584,7 +1562,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Noisekick-Zul'jin|r",
 			[51] = 1518856957,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [71]
+		}, -- [70]
 		{
 			"where the heck is the portal?", -- [1]
 			"Orek-DefiasBrotherhood", -- [2]
@@ -1606,7 +1584,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dOrek|r",
 			[51] = 1519194594,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [72]
+		}, -- [71]
 		{
 			"Interrupted Shadowsworn Heretic's |cff71d5ff|Hspell:249700:0|h[Shadow Pact]|h|r!", -- [1]
 			"Vrex-TwistingNether", -- [2]
@@ -1628,7 +1606,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dVrex-TwistingNether|r",
 			[51] = 1519236227,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [73]
+		}, -- [72]
 		{
 			"Interrupted Wicked Corruptor's |cff71d5ff|Hspell:15472:0|h[Shadow Bolt]|h|r!", -- [1]
 			"Canyonero-Eredar", -- [2]
@@ -1650,7 +1628,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aCanyonero-Eredar|r",
 			[51] = 1519237069,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [74]
+		}, -- [73]
 		{
 			"que", -- [1]
 			"Howaboutahug-Kazzak", -- [2]
@@ -1672,7 +1650,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffHowaboutahug-Kazzak|r",
 			[51] = 1519282970,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [75]
+		}, -- [74]
 		{
 			"we might need more players :) please queue us ^^", -- [1]
 			"Holyshift-Daggerspine", -- [2]
@@ -1694,7 +1672,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaHolyshift-Daggerspine|r",
 			[51] = 1519282983,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [76]
+		}, -- [75]
 		{
 			"Interrupted Felflame Invader's |cff71d5ff|Hspell:253609:0|h[Fel Fireball]|h|r!", -- [1]
 			"Zewaluch-Ysondre", -- [2]
@@ -1716,7 +1694,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddZewaluch-Ysondre|r",
 			[51] = 1519369224,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [77]
+		}, -- [76]
 		{
 			"ress? :)", -- [1]
 			"Orek-DefiasBrotherhood", -- [2]
@@ -1738,7 +1716,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dOrek|r",
 			[51] = 1519626794,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [78]
+		}, -- [77]
 		{
 			"nvm", -- [1]
 			"Orek-DefiasBrotherhood", -- [2]
@@ -1760,7 +1738,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dOrek|r",
 			[51] = 1519626801,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [79]
+		}, -- [78]
 		{
 			"|cffffff00Whisperwind's Citadel is under attack!|r", -- [1]
 			"", -- [2]
@@ -1782,7 +1760,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1519667296,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [80]
+		}, -- [79]
 		{
 			"|cffffff00Whisperwind's Citadel is under attack!|r", -- [1]
 			"", -- [2]
@@ -1804,7 +1782,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1519667360,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [81]
+		}, -- [80]
 		{
 			"|cffffff00Whisperwind's Citadel is under attack!|r", -- [1]
 			"", -- [2]
@@ -1826,7 +1804,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1519667441,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [82]
+		}, -- [81]
 		{
 			"|cffffff00Whisperwind's Citadel is under attack!|r", -- [1]
 			"", -- [2]
@@ -1848,7 +1826,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1519667553,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [83]
+		}, -- [82]
 		{
 			"|cffffff00Whisperwind's Citadel is under attack!|r", -- [1]
 			"", -- [2]
@@ -1870,7 +1848,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1519667626,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [84]
+		}, -- [83]
 		{
 			"Interrupted Shadowsworn Betrayer's |cff71d5ff|Hspell:249700:0|h[Shadow Pact]|h|r!", -- [1]
 			"Molley-Kazzak", -- [2]
@@ -1892,7 +1870,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aMolley-Kazzak|r",
 			[51] = 1519884561,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [85]
+		}, -- [84]
 		{
 			"|cff71d5ff|Hspell:77761:0|h[Rugido de estampida]|h|r activated.", -- [1]
 			"Torososo-Uldum", -- [2]
@@ -1914,7 +1892,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aTorososo-Uldum|r",
 			[51] = 1519884644,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [86]
+		}, -- [85]
 		{
 			"wtf you doing ?", -- [1]
 			"Betræyer-Stormscale", -- [2]
@@ -1936,7 +1914,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Betræyer-Stormscale|r",
 			[51] = 1520180439,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [87]
+		}, -- [86]
 		{
 			"come kill this !@#$ and get over ffs", -- [1]
 			"Betræyer-Stormscale", -- [2]
@@ -1958,7 +1936,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Betræyer-Stormscale|r",
 			[51] = 1520180446,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [88]
+		}, -- [87]
 		{
 			"Interrupted |cff71d5ff|Hspell:248133:0|h[Stygian Blast]|h|r on Rift Warden", -- [1]
 			"Betræyer-Stormscale", -- [2]
@@ -1980,7 +1958,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Betræyer-Stormscale|r",
 			[51] = 1520180496,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [89]
+		}, -- [88]
 		{
 			"Interrupted |cff71d5ff|Hspell:248133:0|h[Stygian Blast]|h|r on Rift Warden", -- [1]
 			"Betræyer-Stormscale", -- [2]
@@ -2002,7 +1980,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Betræyer-Stormscale|r",
 			[51] = 1520180529,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [90]
+		}, -- [89]
 		{
 			"Interrupted |cff71d5ff|Hspell:245601:0|h[Umbral Bolt]|h|r on Shadowguard Conjurer", -- [1]
 			"Betræyer-Stormscale", -- [2]
@@ -2024,7 +2002,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Betræyer-Stormscale|r",
 			[51] = 1520180637,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [91]
+		}, -- [90]
 		{
 			"Interrupted |cff71d5ff|Hspell:248239:0|h[Dark Splice]|h|r on Grand Shadow-Weaver", -- [1]
 			"Betræyer-Stormscale", -- [2]
@@ -2046,7 +2024,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Betræyer-Stormscale|r",
 			[51] = 1520180675,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [92]
+		}, -- [91]
 		{
 			"Interrupted |cff71d5ff|Hspell:245522:0|h[Entropic Mist]|h|r on Shadowguard Voidbender", -- [1]
 			"Betræyer-Stormscale", -- [2]
@@ -2068,7 +2046,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Betræyer-Stormscale|r",
 			[51] = 1520180679,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [93]
+		}, -- [92]
 		{
 			"Interrupted |cff71d5ff|Hspell:244750:0|h[Dark Blast]|h|r on Viceroy Nezhar", -- [1]
 			"Betræyer-Stormscale", -- [2]
@@ -2090,7 +2068,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Betræyer-Stormscale|r",
 			[51] = 1520180717,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [94]
+		}, -- [93]
 		{
 			"WhoLusted: Saellir-TwistingNether cast |cff71d5ff|Hspell:80353:0|h[Time Warp]|h|r!!!", -- [1]
 			"Tûneth-Kazzak", -- [2]
@@ -2112,7 +2090,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Tûneth-Kazzak|r",
 			[51] = 1520540580,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [95]
+		}, -- [94]
 		{
 			"WhoLusted: Raïjïn cast |cff71d5ff|Hspell:2825:0|h[Bloodlust]|h|r!!!", -- [1]
 			"Tûneth-Kazzak", -- [2]
@@ -2134,7 +2112,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Tûneth-Kazzak|r",
 			[51] = 1520540591,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [96]
+		}, -- [95]
 		{
 			"WhoLusted: Yennow-Frostwolf cast |cff71d5ff|Hspell:80353:0|h[Time Warp]|h|r!!!", -- [1]
 			"Tûneth-Kazzak", -- [2]
@@ -2156,7 +2134,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Tûneth-Kazzak|r",
 			[51] = 1520540621,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [97]
+		}, -- [96]
 		{
 			"WhoLusted: Greenpower-Garona cast |cff71d5ff|Hspell:2825:0|h[Bloodlust]|h|r!!!", -- [1]
 			"Tûneth-Kazzak", -- [2]
@@ -2178,7 +2156,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Tûneth-Kazzak|r",
 			[51] = 1520540637,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [98]
+		}, -- [97]
 		{
 			"Saat der Zerstörung auf Rathangor", -- [1]
 			"Rathangor-Nathrezim", -- [2]
@@ -2200,7 +2178,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aRathangor-Nathrezim|r",
 			[51] = 1520540658,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [99]
+		}, -- [98]
 		{
 			"WhoLusted: Cluster-Ysera cast |cff71d5ff|Hspell:2825:0|h[Bloodlust]|h|r!!!", -- [1]
 			"Tûneth-Kazzak", -- [2]
@@ -2222,7 +2200,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Tûneth-Kazzak|r",
 			[51] = 1520540669,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [100]
+		}, -- [99]
 		{
 			"Seed of Destruction on Helgarad", -- [1]
 			"Helgarad-Ragnaros", -- [2]
@@ -2244,7 +2222,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddHelgarad-Ragnaros|r",
 			[51] = 1520540734,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [101]
+		}, -- [100]
 		{
 			"Seed of Destruction on Zunoa", -- [1]
 			"Zunoa-Gorgonnash", -- [2]
@@ -2266,7 +2244,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aZunoa-Gorgonnash|r",
 			[51] = 1520540756,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [102]
+		}, -- [101]
 		{
 			"someone go heal", -- [1]
 			"Larthes-Ragnaros", -- [2]
@@ -2288,7 +2266,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Larthes-Ragnaros|r",
 			[51] = 1521179430,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [103]
+		}, -- [102]
 		{
 			"no one able to heal??", -- [1]
 			"Fumavo-Draenor", -- [2]
@@ -2310,7 +2288,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aFumavo-Draenor|r",
 			[51] = 1521179433,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [104]
+		}, -- [103]
 		{
 			"i think we're all settled.", -- [1]
 			"Venereum-Draenor", -- [2]
@@ -2332,7 +2310,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaVenereum-Draenor|r",
 			[51] = 1521179447,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [105]
+		}, -- [104]
 		{
 			"im not... got 0 traits on healer weap", -- [1]
 			"Fumavo-Draenor", -- [2]
@@ -2354,7 +2332,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aFumavo-Draenor|r",
 			[51] = 1521179452,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [106]
+		}, -- [105]
 		{
 			"remember to soak greens", -- [1]
 			"Hoppu-Dentarg", -- [2]
@@ -2376,7 +2354,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aHoppu-Dentarg|r",
 			[51] = 1521179497,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [107]
+		}, -- [106]
 		{
 			"WhoLusted: Кляст-СтражСмерти cast |cff71d5ff|Hspell:80353:0|h[Time Warp]|h|r!!!", -- [1]
 			"Praada-Kazzak", -- [2]
@@ -2398,7 +2376,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaPraada-Kazzak|r",
 			[51] = 1521179606,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [108]
+		}, -- [107]
 		{
 			"soak", -- [1]
 			"Nerilith-Kilrogg", -- [2]
@@ -2420,7 +2398,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffNerilith-Kilrogg|r",
 			[51] = 1521179812,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [109]
+		}, -- [108]
 		{
 			"soak the balls", -- [1]
 			"Nerilith-Kilrogg", -- [2]
@@ -2442,7 +2420,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffNerilith-Kilrogg|r",
 			[51] = 1521179820,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [110]
+		}, -- [109]
 		{
 			"HEY", -- [1]
 			"Orek-DefiasBrotherhood", -- [2]
@@ -2464,7 +2442,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dOrek|r",
 			[51] = 1521697047,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [111]
+		}, -- [110]
 		{
 			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
 			"", -- [2]
@@ -2486,7 +2464,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1521698339,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [112]
+		}, -- [111]
 		{
 			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
 			"", -- [2]
@@ -2508,7 +2486,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1521698408,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [113]
+		}, -- [112]
 		{
 			"|cff71d5ff|Hspell:77764:0|h[Stampeding Roar]|h|r !!!", -- [1]
 			"Caspi-Kazzak", -- [2]
@@ -2530,7 +2508,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aCaspi-Kazzak|r",
 			[51] = 1521880741,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [114]
+		}, -- [113]
 		{
 			"Freezing Trap on Soulgaze Inquisitor removed by Alizyzz-Frostwhisper's |cff71d5ff|Hspell:132467:0|h[Chi Wave]|h|r", -- [1]
 			"Sthalia-Balnazzar", -- [2]
@@ -2552,7 +2530,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaSthalia-Balnazzar|r",
 			[51] = 1521880891,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [115]
+		}, -- [114]
 		{
 			"WhoLusted: Nyhler-Bloodscalp cast |cff71d5ff|Hspell:2825:0|h[Bloodlust]|h|r!!!", -- [1]
 			"Caspi-Kazzak", -- [2]
@@ -2574,7 +2552,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aCaspi-Kazzak|r",
 			[51] = 1521881032,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [116]
+		}, -- [115]
 		{
 			"taunt", -- [1]
 			"Haur-Moonglade", -- [2]
@@ -2596,7 +2574,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dHaur-Moonglade|r",
 			[51] = 1521881064,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [117]
+		}, -- [116]
 		{
 			"Interrupted Hellblaze Temptress's |cff71d5ff|Hspell:237391:0|h[Alluring Aroma]|h|r!", -- [1]
 			"Myerai-DefiasBrotherhood", -- [2]
@@ -2618,7 +2596,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Myerai|r",
 			[51] = 1522655237,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [118]
+		}, -- [117]
 		{
 			"[FIS] Interrupted Felborne Botanist's |cff71d5ff|Hspell:237578:0|h[Fel Bolt]|h|r", -- [1]
 			"Darrel-Quel'Thalas", -- [2]
@@ -2640,7 +2618,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aDarrel-Quel'Thalas|r",
 			[51] = 1522655274,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [119]
+		}, -- [118]
 		{
 			"[FIS] Interrupted Felborne Botanist's |cff71d5ff|Hspell:237578:0|h[Fel Bolt]|h|r", -- [1]
 			"Darrel-Quel'Thalas", -- [2]
@@ -2662,7 +2640,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aDarrel-Quel'Thalas|r",
 			[51] = 1522655352,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [120]
+		}, -- [119]
 		{
 			"|cffffff00Whisperwind's Citadel is under attack!|r", -- [1]
 			"", -- [2]
@@ -2684,7 +2662,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1524681016,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [121]
+		}, -- [120]
 		{
 			"|cffffff00Whisperwind's Citadel is under attack!|r", -- [1]
 			"", -- [2]
@@ -2706,7 +2684,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1524681101,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [122]
+		}, -- [121]
 		{
 			"|cffffff00Whisperwind's Citadel is under attack!|r", -- [1]
 			"", -- [2]
@@ -2728,7 +2706,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1524681406,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [123]
+		}, -- [122]
 		{
 			"|cffffff00Whisperwind's Citadel is under attack!|r", -- [1]
 			"", -- [2]
@@ -2750,7 +2728,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1524681469,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [124]
+		}, -- [123]
 		{
 			"|cffffff00Deliverance Point is under attack!|r", -- [1]
 			"", -- [2]
@@ -2772,7 +2750,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1531161780,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [125]
+		}, -- [124]
 		{
 			"thx mate bye", -- [1]
 			"Lylkizi-DefiasBrotherhood", -- [2]
@@ -2794,7 +2772,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edLylkizi|r",
 			[51] = 1531331275,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [126]
+		}, -- [125]
 		{
 			"bb", -- [1]
 			"Orek-DefiasBrotherhood", -- [2]
@@ -2816,6 +2794,28 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dOrek|r",
 			[51] = 1531331279,
 			[50] = "CHAT_MSG_SAY",
+		}, -- [126]
+		{
+			"WTS Ny’alotha Heroic/ Mythic; N'Zoth Heroic/ Mythic; BFA Keystone Conqueror 12x10+ in time; M10+ -17+in time – ready to start", -- [1]
+			"Dasijan-Ravenholdt", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Dasijan-Ravenholdt", -- [5]
+			"DND", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			9, -- [11]
+			"Player-1096-08CB38DA", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcDasijan-Ravenholdt|r",
+			[51] = 1587464422,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [127]
 	},
 }

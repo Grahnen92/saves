@@ -1,0 +1,4 @@
+VER 3 0100000000000001 "Infernal strike" "1344650"
+#showtooltip
+/cast [@cursor] Infernal Strike
+END

@@ -10,3 +10,4 @@ ConsolePortUI_Menu: disabled
 ConsolePortUI_NPC: disabled
 DynamicCam: disabled
 DBM-Challenges: disabled
+OPie_Classic: disabled

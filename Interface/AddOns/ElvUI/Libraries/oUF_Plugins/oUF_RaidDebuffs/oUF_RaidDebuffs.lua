@@ -1,23 +1,30 @@
-local E, L, DF = unpack(select(2, ...)) -- Import Functions/Constants, Config, Locales
 local _, ns = ...
 local oUF = ns.oUF or oUF
 
+local _G = _G
 local addon = {}
 ns.oUF_RaidDebuffs = addon
-oUF_RaidDebuffs = ns.oUF_RaidDebuffs
+_G.oUF_RaidDebuffs = ns.oUF_RaidDebuffs
 if not _G.oUF_RaidDebuffs then
 	_G.oUF_RaidDebuffs = addon
 end
 
+local format, floor = format, floor
+local type, pairs, wipe = type, pairs, wipe
+
+local GetActiveSpecGroup = GetActiveSpecGroup
+local GetSpecialization = GetSpecialization
+local GetSpellInfo = GetSpellInfo
+local GetTime = GetTime
+local UnitAura = UnitAura
+local UnitCanAttack = UnitCanAttack
+local UnitIsCharmed = UnitIsCharmed
+
 local debuff_data = {}
 addon.DebuffData = debuff_data
-
-
 addon.ShowDispellableDebuff = true
 addon.FilterDispellableDebuff = true
 addon.MatchBySpellName = false
-
-
 addon.priority = 10
 
 local function add(spell, priority, stackThreshold)
@@ -37,11 +44,7 @@ function addon:RegisterDebuffs(t)
 	for spell, value in pairs(t) do
 		if type(t[spell]) == 'boolean' then
 			local oldValue = t[spell]
-			t[spell] = {
-				['enable'] = oldValue,
-				['priority'] = 0,
-				['stackThreshold'] = 0
-			}
+			t[spell] = { enable = oldValue, priority = 0, stackThreshold = 0 }
 		else
 			if t[spell].enable then
 				add(spell, t[spell].priority, t[spell].stackThreshold)
@@ -186,7 +189,7 @@ local function UpdateDebuff(self, name, icon, count, debuffType, duration, endTi
 			end
 		end
 
-		if spellId and select(1, unpack(ElvUI)).ReverseTimer[spellId] then
+		if spellId and _G.ElvUI[1].ReverseTimer[spellId] then
 			f.reverse = true
 		else
 			f.reverse = nil
@@ -231,7 +234,7 @@ local blackList = {
 
 local function Update(self, event, unit)
 	if unit ~= self.unit then return end
-	local _name, _icon, _count, _dtype, _duration, _endTime, _spellId
+	local _name, _icon, _count, _dtype, _duration, _endTime, _spellId, _
 	local _priority, priority = 0, 0
 	local _stackThreshold = 0
 
@@ -293,30 +296,30 @@ local function Update(self, event, unit)
 	UpdateDebuff(self, _name, _icon, _count, _dtype, _duration, _endTime, _spellId, _stackThreshold)
 
 	--Reset the DispellPriority
-	DispellPriority = {
-		['Magic']	= 4,
-		['Curse']	= 3,
-		['Disease']	= 2,
-		['Poison']	= 1,
-	}
+	DispellPriority['Magic'] = 4
+	DispellPriority['Curse'] = 3
+	DispellPriority['Disease'] = 2
+	DispellPriority['Poison'] = 1
 end
 
-
 local function Enable(self)
+	self:RegisterEvent("PLAYER_TALENT_UPDATE", CheckSpec, true)
+	self:RegisterEvent("CHARACTER_POINTS_CHANGED", CheckSpec, true)
+
 	if self.RaidDebuffs then
 		self:RegisterEvent('UNIT_AURA', Update)
+
 		return true
 	end
-	--Need to run these always
-	self:RegisterEvent("PLAYER_TALENT_UPDATE", CheckSpec)
-	self:RegisterEvent("CHARACTER_POINTS_CHANGED", CheckSpec)
 end
 
 local function Disable(self)
 	if self.RaidDebuffs then
 		self:UnregisterEvent('UNIT_AURA', Update)
+
 		self.RaidDebuffs:Hide()
 	end
+
 	self:UnregisterEvent("PLAYER_TALENT_UPDATE", CheckSpec)
 	self:UnregisterEvent("CHARACTER_POINTS_CHANGED", CheckSpec)
 end

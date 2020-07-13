@@ -36,7 +36,6 @@ VER 3 0100000000000006 "Regrowth" "SPELL_NATURE_RESISTNATURE"
 END
 VER 3 0100000000000001 "Rejuvenation" "SPELL_NATURE_REJUVENATION"
 #showtooltip
-Rejuvenation
 /cast [target=mouseover,exists,nodead,harm]  Sunfire; Sunfire [target=mouseover,exists,nodead, help] Rejuvenation ; Sunfire
 END
 VER 3 0100000000000010 "Remove Corruptio" "135952"
@@ -52,7 +51,6 @@ VER 3 0100000000000002 "Speed" "ABILITY_DRUID_DASH"
 END
 VER 3 0100000000000005 "Swiftmend" "INV_RELICS_IDOLOFREJUVENATION"
 #showtooltip
-Swiftmend
 /cast [target=mouseover,exists,nodead,harm]  Shred; Shred [target=mouseover,exists,nodead, help] Swiftmend ; Shred
 END
 VER 3 010000000000000F "TrashGrowth" "451161"

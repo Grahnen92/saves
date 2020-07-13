@@ -15,7 +15,7 @@ VER 3 0100000000000011 "MangleHeal" "132135"
 /cast [target=mouseover,exists,nodead,help] Rejuvenation; Mangle
 END
 VER 3 0100000000000012 "MoonHealing" "136096"
-/cast [target=mouseover,exists,nodead,harm]  MoonFire; MoonFire [target=mouseover,exists,nodead, help] Healing Touch ; MoonFire
+/cast [target=mouseover,exists,nodead,harm]  MoonFire; MoonFire [target=mouseover,exists,nodead, help] Regrowth ; MoonFire
 END
 VER 3 010000000000000B "Nature's Cure" "ABILITY_SHAMAN_CLEANSESPIRIT"
 #showtooltip

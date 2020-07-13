@@ -1,3 +1,6 @@
+VER 3 0100000000000003 "Death and Decay" "136144"
+/cast [@cursor] Death and Decay
+END
 VER 3 0100000000000001 "Gnaw" "SPELL_SHADOW_TELEPORT"
 /cast Gnaw
 END

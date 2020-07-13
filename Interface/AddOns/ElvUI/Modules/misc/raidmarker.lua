@@ -1,10 +1,9 @@
 --Credit Baudzilla
 local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
-local M = E:GetModule('Misc');
+local M = E:GetModule('Misc')
 
---Cache global variables
 --Lua functions
-local sin, cos = math.sin, math.cos
+local sin, cos, rad = math.sin, math.cos, rad -- sin~=math.sin, cos~=math.cos, rad==math.rad; why? who knows? :P
 --WoW API / Variables
 local CreateFrame = CreateFrame
 local GetNumGroupMembers = GetNumGroupMembers
@@ -17,11 +16,9 @@ local PlaySound = PlaySound
 local SetRaidTarget = SetRaidTarget
 local SetRaidTargetIconTexture = SetRaidTargetIconTexture
 local UIErrorsFrame = UIErrorsFrame
-
---Global variables that we don't cache, list them here for mikk's FindGlobals script
 -- GLOBALS: RaidMark_HotkeyPressed
 
-local ButtonIsDown;
+local ButtonIsDown
 
 function M:RaidMarkCanMark()
 	if not self.RaidMarkFrame then return false; end
@@ -82,10 +79,11 @@ function M:RaidMarkButton_OnClick(arg1)
 	self:GetParent():Hide();
 end
 
+local ANG_RAD = rad(360) / 7
 function M:LoadRaidMarker()
 	local marker = CreateFrame("Frame", nil, E.UIParent);
 	marker:EnableMouse(true);
-	marker:SetSize(100, 100);
+	marker:Size(100, 100);
 	marker:SetFrameStrata("DIALOG");
 
 	for i = 1, 8 do
@@ -103,7 +101,7 @@ function M:LoadRaidMarker()
 		if i == 8 then
 			button:Point("CENTER");
 		else
-			local angle = 360 / 7 * i;
+			local angle = ANG_RAD * (i - 1)
 			button:Point("CENTER", sin(angle) * 60, cos(angle) * 60);
 		end
 	end

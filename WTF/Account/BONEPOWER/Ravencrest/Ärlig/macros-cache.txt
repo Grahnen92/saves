@@ -1,0 +1,17 @@
+VER 3 0100000000000002 "CS1" "135856"
+#showtooltip
+/cast [@arena1] Counterspell; Counterspell
+END
+VER 3 0100000000000003 "CS2" "135856"
+#showtooltip
+/cast [@arena2] Counterspell
+END
+VER 3 0100000000000004 "CS3" "135856"
+#showtooltip
+/cast [@arena3] Counterspell
+END
+VER 3 0100000000000001 "PresenceOfMind" "136031"
+#showtooltip
+/cast Presence of Mind
+/cast Arcane Blast
+END

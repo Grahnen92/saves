@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("BoralusTrash", "DBM-Party-BfA", 5)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 17762 $"):sub(12, -3))
+mod:SetRevision("20200211040655")
 --mod:SetModelID(47785)
 mod:SetZone()
 
@@ -24,6 +24,7 @@ local specWarnSlobberKnocker		= mod:NewSpecialWarningDodge(256627, "Tank", nil, 
 local specWarnSingingSteel			= mod:NewSpecialWarningDodge(256709, "Tank", nil, nil, 1, 2)
 local specWarnCrushingSlam			= mod:NewSpecialWarningDodge(272711, "Tank", nil, nil, 1, 2)
 local specWarnTrample				= mod:NewSpecialWarningDodge(272874, nil, nil, nil, 2, 2)
+local specWarnBroadside				= mod:NewSpecialWarningDodge(268260, nil, nil, nil, 2, 2)
 local specWarnSavageTempest			= mod:NewSpecialWarningRun(257170, nil, nil, nil, 4, 2)--can tank run out too? or does it follow tank
 local specWarnSightedArt			= mod:NewSpecialWarningYou(272421, nil, nil, nil, 1, 2)
 local yellSightedArt				= mod:NewYell(272421)
@@ -72,24 +73,23 @@ end
 function mod:SPELL_AURA_APPLIED(args)
 	if not self.Options.Enabled then return end
 	local spellId = args.spellId
-	if spellId == 256957 and self:IsValidWarning(args.sourceGUID) then
+	if spellId == 256957 and self:IsValidWarning(args.sourceGUID) and not args:IsDestTypePlayer() then
 		specWarnWatertightShellDispel:CombinedShow(1, args.destName)
-		specWarnWatertightShellDispel:CancelVoice()
 		specWarnWatertightShellDispel:ScheduleVoice(1, "helpdispel")
-	elseif spellId == 257168 and self:IsValidWarning(args.sourceGUID) then
+	elseif spellId == 257168 and self:IsValidWarning(args.sourceGUID) and self:CheckDispelFilter() then
 		specWarnCursedSlash:Show(args.destName)
 		specWarnCursedSlash:Play("helpdispel")
 	elseif spellId == 272421 and args:IsPlayer() then
 		specWarnSightedArt:Show()
 		specWarnSightedArt:Play("targetyou")
 		yellSightedArt:Yell()
-	elseif spellId == 272571 and args:IsDestTypePlayer() then
+	elseif spellId == 272571 and args:IsDestTypePlayer() and self:CheckDispelFilter() then
 		specWarnChokingWatersDispel:Show(args.destName)
 		specWarnChokingWatersDispel:Play("helpdispel")
 	elseif spellId == 272888 and self:IsValidWarning(args.sourceGUID) then
 		specWarnFerocity:Show(args.destName)
 		specWarnFerocity:Play("helpdispel")
-		
+
 	end
 end
 
@@ -115,6 +115,11 @@ function mod:UNIT_SPELLCAST_START(uId, _, spellId)
 		if self:IsValidWarning(guid, uId) then
 			self:SendSync("CrushingSlam")
 		end
+	elseif spellId == 268260 then
+		local guid = UnitGUID(uId)
+		if self:IsValidWarning(guid, uId) then
+			self:SendSync("Broadside")
+		end
 	end
 end
 
@@ -125,5 +130,8 @@ function mod:OnSync(msg)
 	elseif msg == "CrushingSlam" and self:AntiSpam(2.5, 2) then
 		specWarnCrushingSlam:Show()
 		specWarnCrushingSlam:Play("shockwave")
+	elseif msg == "Broadside" then
+		specWarnBroadside:Show()
+		specWarnBroadside:Play("watchstep")
 	end
 end

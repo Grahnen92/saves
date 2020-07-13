@@ -4,27 +4,20 @@ local _, ns = ...
 local ElvUF = ns.oUF
 assert(ElvUF, "ElvUI was unable to locate oUF.")
 
---Cache global variables
 --Lua functions
 local _G = _G
-local tinsert = table.insert
-
---Global variables that we don't cache, list them here for mikk's FindGlobals script
+local tinsert = tinsert
 -- GLOBALS: ElvUF_Target
 
 function UF:Construct_FocusFrame(frame)
 	frame.Health = self:Construct_HealthBar(frame, true, true, 'RIGHT')
-	frame.Health.frequentUpdates = true;
-
 	frame.Power = self:Construct_PowerBar(frame, true, true, 'LEFT')
-
+	frame.Power.frequentUpdates = true
+	frame.PowerPrediction = self:Construct_PowerPrediction(frame)
 	frame.Name = self:Construct_NameText(frame)
-
 	frame.Portrait3D = self:Construct_Portrait(frame, 'model')
 	frame.Portrait2D = self:Construct_Portrait(frame, 'texture')
-
 	frame.Buffs = self:Construct_Buffs(frame)
-
 	frame.Castbar = self:Construct_Castbar(frame, L["Focus Castbar"])
 	frame.Castbar.SafeZone = nil
 	frame.Castbar.LatencyTexture:Hide()
@@ -32,15 +25,17 @@ function UF:Construct_FocusFrame(frame)
 	frame.Debuffs = self:Construct_Debuffs(frame)
 	frame.HealthPrediction = self:Construct_HealComm(frame)
 	frame.AuraBars = self:Construct_AuraBarHeader(frame)
-	frame.Range = self:Construct_Range(frame)
 	frame.ThreatIndicator = self:Construct_Threat(frame)
 	frame.MouseGlow = self:Construct_MouseGlow(frame)
 	frame.TargetGlow = self:Construct_TargetGlow(frame)
 	frame.InfoPanel = self:Construct_InfoPanel(frame)
+	frame.DebuffHighlight = self:Construct_DebuffHighlight(frame)
+	frame.Fader = self:Construct_Fader()
+	frame.Cutaway = self:Construct_Cutaway(frame)
 
 	frame.customTexts = {}
 	frame:Point('BOTTOMRIGHT', ElvUF_Target, 'TOPRIGHT', 0, 220)
-	E:CreateMover(frame, frame:GetName()..'Mover', L["Focus Frame"], nil, nil, nil, 'ALL,SOLO')
+	E:CreateMover(frame, frame:GetName()..'Mover', L["Focus Frame"], nil, nil, nil, 'ALL,SOLO', nil, 'unitframe,individualUnits,focus,generalGroup')
 
 	frame.unitframeType = "focus"
 end
@@ -57,7 +52,7 @@ function UF:Update_FocusFrame(frame, db)
 		frame.POWERBAR_DETACHED = db.power.detachFromFrame
 		frame.USE_INSET_POWERBAR = not frame.POWERBAR_DETACHED and db.power.width == 'inset' and frame.USE_POWERBAR
 		frame.USE_MINI_POWERBAR = (not frame.POWERBAR_DETACHED and db.power.width == 'spaced' and frame.USE_POWERBAR)
-		frame.USE_POWERBAR_OFFSET = db.power.offset ~= 0 and frame.USE_POWERBAR and not frame.POWERBAR_DETACHED
+		frame.USE_POWERBAR_OFFSET = (db.power.width == 'offset' and db.power.offset ~= 0) and frame.USE_POWERBAR and not frame.POWERBAR_DETACHED
 		frame.POWERBAR_OFFSET = frame.USE_POWERBAR_OFFSET and db.power.offset or 0
 
 		frame.POWERBAR_HEIGHT = not frame.USE_POWERBAR and 0 or db.power.height
@@ -75,7 +70,6 @@ function UF:Update_FocusFrame(frame, db)
 		frame.VARIABLES_SET = true
 	end
 
-	frame.Portrait = frame.Portrait or (db.portrait.style == '2D' and frame.Portrait2D or frame.Portrait3D)
 	frame:RegisterForClicks(self.db.targetOnMouseDown and 'AnyDown' or 'AnyUp')
 	frame.colors = ElvUF.colors
 	frame:Size(frame.UNIT_WIDTH, frame.UNIT_HEIGHT)
@@ -90,6 +84,9 @@ function UF:Update_FocusFrame(frame, db)
 	--Power
 	UF:Configure_Power(frame)
 
+	--Power Predicition
+	UF:Configure_PowerPrediction(frame)
+
 	--Portrait
 	UF:Configure_Portrait(frame)
 
@@ -98,10 +95,13 @@ function UF:Update_FocusFrame(frame, db)
 
 	--Auras
 	UF:EnableDisable_Auras(frame)
-	UF:Configure_Auras(frame, 'Buffs')
-	UF:Configure_Auras(frame, 'Debuffs')
+	UF:Configure_AllAuras(frame)
 
+	--Castbar
 	UF:Configure_Castbar(frame)
+
+	--Fader
+	UF:Configure_Fader(frame)
 
 	--OverHealing
 	UF:Configure_HealComm(frame)
@@ -112,13 +112,16 @@ function UF:Update_FocusFrame(frame, db)
 	--AuraBars
 	UF:Configure_AuraBars(frame)
 
-	--Range
-	UF:Configure_Range(frame)
+	--Cutaway
+	UF:Configure_Cutaway(frame)
 
 	--CustomTexts
 	UF:Configure_CustomTexts(frame)
 
+	--Debuff Highlight
+	UF:Configure_DebuffHighlight(frame)
+
 	frame:UpdateAllElements("ElvUI_UpdateAllElements")
 end
 
-tinsert(UF['unitstoload'], 'focus')
+tinsert(UF.unitstoload, 'focus')

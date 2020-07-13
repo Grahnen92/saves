@@ -1,8 +1,6 @@
 local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
-local TOTEMS = E:NewModule('Totems', 'AceEvent-3.0');
-E.TotemBar = TOTEMS
+local TOTEMS = E:GetModule('Totems')
 
---Cache global variables
 --Lua functions
 local _G = _G
 local unpack = unpack
@@ -12,15 +10,10 @@ local GetTotemInfo = GetTotemInfo
 local CooldownFrame_Set = CooldownFrame_Set
 local MAX_TOTEMS = MAX_TOTEMS
 
---Global variables that we don't cache, list them here for mikk's FindGlobals script
--- GLOBALS: LeftChatPanel
-
 function TOTEMS:Update()
-	local _, button, startTime, duration, icon
-
 	for i=1, MAX_TOTEMS do
-		button = _G["TotemFrameTotem"..i];
-		_, _, startTime, duration, icon = GetTotemInfo(button.slot);
+		local button = _G["TotemFrameTotem"..i];
+		local _, _, startTime, duration, icon = GetTotemInfo(button.slot);
 
 		if button:IsShown() then
 			self.bar[i]:Show()
@@ -36,22 +29,9 @@ function TOTEMS:Update()
 	end
 end
 
-function TOTEMS:ToggleEnable()
-	if self.db.enable then
-		self.bar:Show()
-		self:RegisterEvent('PLAYER_TOTEM_UPDATE', 'Update')
-		self:RegisterEvent('PLAYER_ENTERING_WORLD', 'Update')
-		self:Update()
-		E:EnableMover('TotemBarMover')
-	else
-		self.bar:Hide()
-		self:UnregisterEvent('PLAYER_TOTEM_UPDATE')
-		self:UnregisterEvent('PLAYER_ENTERING_WORLD')
-		E:DisableMover('TotemBarMover')
-	end
-end
-
 function TOTEMS:PositionAndSize()
+	if not E.private.general.totemBar then return end
+
 	for i=1, MAX_TOTEMS do
 		local button = self.bar[i]
 		local prevButton = self.bar[i-1]
@@ -91,21 +71,25 @@ function TOTEMS:PositionAndSize()
 		self.bar:Height(self.db.size*(MAX_TOTEMS) + self.db.spacing*(MAX_TOTEMS) + self.db.spacing)
 		self.bar:Width(self.db.size + self.db.spacing*2)
 	end
+
 	self:Update()
 end
 
-
 function TOTEMS:Initialize()
+	self.Initialized = true
+
+	if not E.private.general.totemBar then return end
+
 	self.db = E.db.general.totems
 
 	local bar = CreateFrame('Frame', 'ElvUI_TotemBar', E.UIParent)
-	bar:Point('TOPLEFT', LeftChatPanel, 'TOPRIGHT', 14, 0)
-	self.bar = bar;
+	bar:Point('TOPLEFT', _G.LeftChatPanel, 'TOPRIGHT', 14, 0)
+	self.bar = bar
 
 	for i=1, MAX_TOTEMS do
 		local frame = CreateFrame('Button', bar:GetName()..'Totem'..i, bar)
 		frame:SetID(i)
-		frame:SetTemplate('Default')
+		frame:SetTemplate()
 		frame:StyleButton()
 		frame:Hide()
 		frame.holder = CreateFrame('Frame', nil, frame)
@@ -113,8 +97,8 @@ function TOTEMS:Initialize()
 		frame.holder:SetAllPoints()
 
 		frame.iconTexture = frame:CreateTexture(nil, 'ARTWORK')
-		frame.iconTexture:SetInside()
 		frame.iconTexture:SetTexCoord(unpack(E.TexCoords))
+		frame.iconTexture:SetInside()
 
 		frame.cooldown = CreateFrame('Cooldown', frame:GetName()..'Cooldown', frame, 'CooldownFrameTemplate')
 		frame.cooldown:SetReverse(true)
@@ -125,12 +109,10 @@ function TOTEMS:Initialize()
 
 	self:PositionAndSize()
 
-	E:CreateMover(bar, 'TotemBarMover', L["Class Totems"]);
-	self:ToggleEnable()
+	self:RegisterEvent('PLAYER_TOTEM_UPDATE', 'Update')
+	self:RegisterEvent('PLAYER_ENTERING_WORLD', 'Update')
+
+	E:CreateMover(bar, 'TotemBarMover', L["Class Totems"], nil, nil, nil, nil, nil, 'general,totems');
 end
 
-local function InitializeCallback()
-	TOTEMS:Initialize()
-end
-
-E:RegisterModule(TOTEMS:GetName(), InitializeCallback)
+E:RegisterModule(TOTEMS:GetName())

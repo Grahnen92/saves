@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(2127, "DBM-Party-BfA", 10, 1001)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 17777 $"):sub(12, -3))
+mod:SetRevision("20200211040655")
 mod:SetCreatureID(131863)
 mod:SetEncounterID(2115)
 mod:SetZone()
@@ -21,7 +21,7 @@ local warnTenderize					= mod:NewCountAnnounce(264923, 2)
 local specWarnServant				= mod:NewSpecialWarningSwitch(264931, nil, nil, nil, 1, 2)
 local specWarnTenderize				= mod:NewSpecialWarningDodge(264923, nil, nil, nil, 1, 2)
 local specWarnRottenExpulsion		= mod:NewSpecialWarningDodge(264694, nil, nil, nil, 1, 2)
-local specWarnGTFO					= mod:NewSpecialWarningGTFO(264698, nil, nil, nil, 1, 2)
+local specWarnGTFO					= mod:NewSpecialWarningGTFO(264698, nil, nil, nil, 1, 8)
 
 --local timerServantCD				= mod:NewNextTimer(13, 264931, nil, nil, nil, 1, nil, DBM_CORE_DAMAGE_ICON)
 --local timerTenderizeCD				= mod:NewNextTimer(29.2, 264923, nil, nil, nil, 3)--Timer for first in each set of 3
@@ -38,23 +38,20 @@ function mod:OnCombatStart(delay)
 	--timerTenderizeCD:Start(-delay)--Also 29.2
 end
 
-function mod:OnCombatEnd()
---	if self.Options.RangeFrame then
---		DBM.RangeCheck:Hide()
---	end
-end
-
 function mod:SPELL_CAST_START(args)
 	local spellId = args.spellId
 	if spellId == 264931 then
-		specWarnServant:Show()
-		specWarnServant:Play("killmob")
+		local bossHealth = self:GetBossHP(args.sourceGUID)
+		if bossHealth and bossHealth >= 10 then--Only warn to switch to add if boss above 10%, else ignore them
+			specWarnServant:Show()
+			specWarnServant:Play("killmob")
+		end
 		--timerServantCD:Start()
 	elseif spellId == 264923 then
 		self.vb.tenderizeCount = self.vb.tenderizeCount + 1
 		if self.vb.tenderizeCount == 1 then
 			specWarnTenderize:Show()
-			specWarnTenderize:Play("watchstep")
+			specWarnTenderize:Play("shockwave")
 			--timerTenderizeCD:Start()
 		else
 			warnTenderize:Show(self.vb.tenderizeCount)
@@ -69,35 +66,10 @@ function mod:SPELL_CAST_START(args)
 	end
 end
 
---[[
-function mod:SPELL_AURA_APPLIED(args)
-	local spellId = args.spellId
-	if spellId == 194966 then
-	
-	end
-end
---mod.SPELL_AURA_APPLIED_DOSE = mod.SPELL_AURA_APPLIED
---]]
-
 function mod:SPELL_DAMAGE(_, _, _, _, destGUID, _, _, _, spellId)
 	if spellId == 264698 and destGUID == UnitGUID("player") and self:AntiSpam(2, 4) then
 		specWarnGTFO:Show()
-		specWarnGTFO:Play("runaway")
+		specWarnGTFO:Play("watchfeet")
 	end
 end
 mod.SPELL_MISSED = mod.SPELL_DAMAGE
-
---[[
-function mod:UNIT_DIED(args)
-	local cid = self:GetCIDFromGUID(args.destGUID)
-	if cid == 124396 then
-		
-	end
-end
-
---Tenderize Aura-280030-npc:131863 = pull:25.1
-function mod:UNIT_SPELLCAST_SUCCEEDED(uId, _, spellId)
-	if spellId == 257939 then
-	end
-end
---]]

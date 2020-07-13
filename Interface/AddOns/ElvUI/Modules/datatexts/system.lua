@@ -1,12 +1,9 @@
 local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 local DT = E:GetModule('DataTexts')
 
---Cache global variables
 --Lua functions
 local select, collectgarbage = select, collectgarbage
-local sort, wipe = table.sort, wipe
-local floor = math.floor
-local format = string.format
+local sort, wipe, floor, format = sort, wipe, floor, format
 --WoW API / Variables
 local GetAddOnCPUUsage = GetAddOnCPUUsage
 local GetAddOnInfo = GetAddOnInfo
@@ -21,6 +18,7 @@ local GetNetStats = GetNetStats
 local GetNumAddOns = GetNumAddOns
 local IsAddOnLoaded = IsAddOnLoaded
 local IsShiftKeyDown = IsShiftKeyDown
+local IsModifierKeyDown = IsModifierKeyDown
 local ResetCPUUsage = ResetCPUUsage
 local UpdateAddOnCPUUsage = UpdateAddOnCPUUsage
 local UpdateAddOnMemoryUsage = UpdateAddOnMemoryUsage
@@ -35,14 +33,12 @@ local statusColors = {
 	"|cffD80909"
 }
 
-local enteredFrame = false;
+local enteredFrame = false
 local bandwidthString = "%.2f Mbps"
 local percentageString = "%.2f%%"
 local homeLatencyString = "%d ms"
 local kiloByteString = "%d kb"
 local megaByteString = "%.2f mb"
-local totalMemory = 0
-local bandwidth = 0
 
 local function formatMem(memory)
 	local mult = 10^1
@@ -80,23 +76,23 @@ local function UpdateMemory()
 	-- Update the memory usages of the addons
 	UpdateAddOnMemoryUsage()
 	-- Load memory usage in table
-	totalMemory = 0
+	local totalMemory = 0
 	for i = 1, #memoryTable do
 		memoryTable[i][3] = GetAddOnMemoryUsage(memoryTable[i][1])
 		totalMemory = totalMemory + memoryTable[i][3]
 	end
 	-- Sort the table to put the largest addon on top
 	sort(memoryTable, sortByMemoryOrCPU)
+	return totalMemory
 end
 
 local function UpdateCPU()
 	--Update the CPU usages of the addons
 	UpdateAddOnCPUUsage()
 	-- Load cpu usage in table
-	local addonCPU
 	local totalCPU = 0
 	for i = 1, #cpuTable do
-		addonCPU = GetAddOnCPUUsage(cpuTable[i][1])
+		local addonCPU = GetAddOnCPUUsage(cpuTable[i][1])
 		cpuTable[i][3] = addonCPU
 		totalCPU = totalCPU + addonCPU
 	end
@@ -108,25 +104,27 @@ local function UpdateCPU()
 end
 
 local function Click()
-	collectgarbage("collect");
-	ResetCPUUsage();
+	if IsModifierKeyDown() then
+		collectgarbage("collect")
+		ResetCPUUsage()
+	end
 end
 
 local ipTypes = {"IPv4", "IPv6"}
-local ipTypeHome, ipTypeWorld
-local cpuProfiling
 local function OnEnter(self)
-	enteredFrame = true;
-	cpuProfiling = GetCVar("scriptProfile") == "1"
+	enteredFrame = true
+	local cpuProfiling = GetCVar("scriptProfile") == "1"
 	DT:SetupTooltip(self)
 
-	UpdateMemory()
-	bandwidth = GetAvailableBandwidth()
+	local totalMemory = UpdateMemory()
+	local bandwidth = GetAvailableBandwidth()
+	local _, _, homePing, worldPing = GetNetStats()
 
-	DT.tooltip:AddDoubleLine(L["Home Latency:"], format(homeLatencyString, select(3, GetNetStats())), 0.69, 0.31, 0.31,0.84, 0.75, 0.65)
+	DT.tooltip:AddDoubleLine(L["Home Latency:"], format(homeLatencyString, homePing), 0.69, 0.31, 0.31,0.84, 0.75, 0.65)
+	DT.tooltip:AddDoubleLine(L["World Latency:"], format(homeLatencyString, worldPing), 0.69, 0.31, 0.31,0.84, 0.75, 0.65)
 
 	if GetCVarBool("useIPv6") then
-		ipTypeHome, ipTypeWorld = GetNetIpTypes();
+		local ipTypeHome, ipTypeWorld = GetNetIpTypes()
 		DT.tooltip:AddDoubleLine(L["Home Protocol:"], ipTypes[ipTypeHome or 0] or UNKNOWN, 0.69, 0.31, 0.31,0.84, 0.75, 0.65)
 		DT.tooltip:AddDoubleLine(L["World Protocol:"], ipTypes[ipTypeWorld or 0] or UNKNOWN, 0.69, 0.31, 0.31,0.84, 0.75, 0.65)
 	end
@@ -144,26 +142,22 @@ local function OnEnter(self)
 		DT.tooltip:AddDoubleLine(L["Total CPU:"], format(homeLatencyString, totalCPU), 0.69, 0.31, 0.31,0.84, 0.75, 0.65)
 	end
 
-	local red, green, ele
+	DT.tooltip:AddLine(" ")
 	if IsShiftKeyDown() or not cpuProfiling then
-		DT.tooltip:AddLine(" ")
 		for i = 1, #memoryTable do
-			ele = memoryTable[i]
+			local ele = memoryTable[i]
 			if ele and IsAddOnLoaded(ele[1]) then
-				red = ele[3] / totalMemory
-				green = 1 - red
+				local red = ele[3] / totalMemory
+				local green = 1 - red
 				DT.tooltip:AddDoubleLine(ele[2], formatMem(ele[3]), 1, 1, 1, red, green + .5, 0)
 			end
 		end
-	end
-
-	if cpuProfiling and not IsShiftKeyDown() then
-		DT.tooltip:AddLine(" ")
+	else
 		for i = 1, #cpuTable do
-			ele = cpuTable[i]
+			local ele = cpuTable[i]
 			if ele and IsAddOnLoaded(ele[1]) then
-				red = ele[3] / totalCPU
-				green = 1 - red
+				local red = ele[3] / totalCPU
+				local green = 1 - red
 				DT.tooltip:AddDoubleLine(ele[2], format(homeLatencyString, ele[3]), 1, 1, 1, red, green + .5, 0)
 			end
 		end
@@ -171,11 +165,12 @@ local function OnEnter(self)
 		DT.tooltip:AddLine(L["(Hold Shift) Memory Usage"])
 	end
 
+	DT.tooltip:AddLine(L["(Modifer Click) Collect Garbage"])
 	DT.tooltip:Show()
 end
 
 local function OnLeave()
-	enteredFrame = false;
+	enteredFrame = false
 	DT.tooltip:Hide()
 end
 

@@ -1,10 +1,8 @@
 local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 local DT = E:GetModule('DataTexts')
 
---Cache global variables
 --Lua functions
-local pairs = pairs
-local format = string.format
+local pairs, format = pairs, format
 --WoW API / Variables
 local GetCurrencyInfo = GetCurrencyInfo
 local GetCurrencyListInfo = GetCurrencyListInfo
@@ -55,7 +53,7 @@ local function AddCurrencyNameToIndex(name)
 		local currencyName = GetCurrencyListInfo(index)
 		if currencyName == name then
 			CurrencyListNameToIndex[name] = index
-			break;
+			break
 		end
 	end
 end

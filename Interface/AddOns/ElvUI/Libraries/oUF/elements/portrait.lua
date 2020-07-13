@@ -35,10 +35,16 @@ the unit.
 local _, ns = ...
 local oUF = ns.oUF
 
+-- ElvUI block
+local UnitIsUnit = UnitIsUnit
+local UnitGUID = UnitGUID
+local UnitIsConnected = UnitIsConnected
+local UnitIsVisible = UnitIsVisible
+local SetPortraitTexture = SetPortraitTexture
+-- end block
+
 local function Update(self, event, unit)
 	if(not unit or not UnitIsUnit(self.unit, unit)) then return end
-
-	local element = self.Portrait
 
 	--[[ Callback: Portrait:PreUpdate(unit)
 	Called before the element has been updated.
@@ -46,34 +52,35 @@ local function Update(self, event, unit)
 	* self - the Portrait element
 	* unit - the unit for which the update has been triggered (string)
 	--]]
+
+	local element = self.Portrait
 	if(element.PreUpdate) then element:PreUpdate(unit) end
 
-	local modelUpdated = false -- ElvUI
 	local guid = UnitGUID(unit)
 	local isAvailable = UnitIsConnected(unit) and UnitIsVisible(unit)
-	if(event ~= 'OnUpdate' or element.guid ~= guid or element.state ~= isAvailable) then
-		if(element:IsObjectType('PlayerModel')) then
-			if(not isAvailable) then
+	element.stateChanged = event ~= 'OnUpdate' or element.guid ~= guid or element.state ~= isAvailable
+	if element.stateChanged then -- ElvUI changed
+		element.playerModel = element:IsObjectType('PlayerModel')
+		element.state = isAvailable
+		element.guid = guid
+
+		if element.playerModel then
+			if not isAvailable then
 				element:SetCamDistanceScale(0.25)
 				element:SetPortraitZoom(0)
 				element:SetPosition(0, 0, 0.25)
 				element:ClearModel()
 				element:SetModel([[Interface\Buttons\TalkToMeQuestionMark.m2]])
-				modelUpdated = true -- ElvUI
 			else
 				element:SetCamDistanceScale(1)
 				element:SetPortraitZoom(1)
 				element:SetPosition(0, 0, 0)
 				element:ClearModel()
 				element:SetUnit(unit)
-				modelUpdated = true -- ElvUI
 			end
-		else
+		elseif not element.customTexture then -- ElvUI changed
 			SetPortraitTexture(element, unit)
 		end
-
-		element.guid = guid
-		element.state = isAvailable
 	end
 
 	--[[ Callback: Portrait:PostUpdate(unit)
@@ -83,7 +90,7 @@ local function Update(self, event, unit)
 	* unit - the unit for which the update has been triggered (string)
 	--]]
 	if(element.PostUpdate) then
-		return element:PostUpdate(unit, event, modelUpdated) -- changed by ElvUI
+		return element:PostUpdate(unit, event)
 	end
 end
 
@@ -110,7 +117,7 @@ local function Enable(self, unit)
 
 		self:RegisterEvent('UNIT_MODEL_CHANGED', Path)
 		self:RegisterEvent('UNIT_PORTRAIT_UPDATE', Path)
-		self:RegisterEvent('PORTRAITS_UPDATED', Path)
+		self:RegisterEvent('PORTRAITS_UPDATED', Path, true)
 		self:RegisterEvent('UNIT_CONNECTION', Path)
 
 		-- The quest log uses PARTY_MEMBER_{ENABLE,DISABLE} to handle updating of

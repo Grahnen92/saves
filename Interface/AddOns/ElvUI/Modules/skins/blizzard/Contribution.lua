@@ -1,23 +1,23 @@
 local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 local S = E:GetModule('Skins')
 
---Cache global variables
 --Lua functions
+local _G = _G
 local unpack = unpack
 --WoW API / Variables
 local hooksecurefunc = hooksecurefunc
---Global variables that we don't cache, list them here for mikk's FindGlobals script
--- GLOBALS:
 
-local function LoadSkin()
-	if E.private.skins.blizzard.enable ~= true or E.private.skins.blizzard.Contribution ~= true then return end
+function S:Blizzard_Contribution()
+	if not (E.private.skins.blizzard.enable and E.private.skins.blizzard.Contribution) then return end
 
 	--Main Frame
+	local ContributionCollectionFrame = _G.ContributionCollectionFrame
 	S:HandleCloseButton(ContributionCollectionFrame.CloseButton)
 	ContributionCollectionFrame.CloseButton.CloseButtonBackground:SetAlpha(0)
 
 	if E.private.skins.blizzard.tooltip then
 		--Reward Tooltip
+		local ContributionBuffTooltip = _G.ContributionBuffTooltip
 		ContributionBuffTooltip:StripTextures()
 		ContributionBuffTooltip:SetTemplate("Transparent")
 		ContributionBuffTooltip:CreateBackdrop()
@@ -27,26 +27,27 @@ local function LoadSkin()
 		ContributionBuffTooltip.backdrop:SetOutside(ContributionBuffTooltip.Icon)
 	end
 
-	hooksecurefunc(ContributionMixin, "SetupContributeButton", function(self)
+	local ContributionMixin = _G.ContributionMixin
+	hooksecurefunc(ContributionMixin, "SetupContributeButton", function(s)
 		-- Skin the Contribute Buttons
-		if (not self.isSkinned) then
-			S:HandleButton(self.ContributeButton)
-			self.isSkinned = true
+		if (not s.isSkinned) then
+			S:HandleButton(s.ContributeButton)
+			s.isSkinned = true
 		end
 
 		-- Skin the StatusBar
-		local statusBar = self.Status
+		local statusBar = s.Status
 		if statusBar and not statusBar.isSkinned then
 			statusBar:StripTextures()
 			E:RegisterStatusBar(statusBar)
-			statusBar:CreateBackdrop('Default')
+			statusBar:CreateBackdrop()
 			statusBar.isSkinned = true
 		end
 	end)
 
 	--Skin the reward icons
-	hooksecurefunc(ContributionMixin, "AddReward", function(self, _, rewardID)
-		local reward = self:FindOrAcquireReward(rewardID);
+	hooksecurefunc(ContributionMixin, "AddReward", function(s, _, rewardID)
+		local reward = s:FindOrAcquireReward(rewardID);
 		if (reward and not reward.isSkinned) then
 			reward:SetFrameLevel(5)
 			reward:CreateBackdrop()
@@ -60,4 +61,4 @@ local function LoadSkin()
 	end)
 end
 
-S:AddCallbackForAddon("Blizzard_Contribution", "Contribution", LoadSkin)
+S:AddCallbackForAddon('Blizzard_Contribution')

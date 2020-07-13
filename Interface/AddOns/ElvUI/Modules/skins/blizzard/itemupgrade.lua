@@ -1,42 +1,53 @@
 local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 local S = E:GetModule('Skins')
 
---Cache global variables
 --Lua functions
 local _G = _G
 local unpack = unpack
 --WoW API / Variables
-local GetItemUpgradeItemInfo = GetItemUpgradeItemInfo
 local hooksecurefunc = hooksecurefunc
---Global variables that we don't cache, list them here for mikk's FindGlobals script
--- GLOBALS:
+local GetItemUpgradeItemInfo = GetItemUpgradeItemInfo
+local BAG_ITEM_QUALITY_COLORS = BAG_ITEM_QUALITY_COLORS
 
-local function LoadSkin()
-	if E.private.skins.blizzard.enable ~= true or E.private.skins.blizzard.itemUpgrade ~= true then return end
+function S:Blizzard_ItemUpgradeUI()
+	if not (E.private.skins.blizzard.enable and E.private.skins.blizzard.itemUpgrade) then return end
 
-	local ItemUpgradeFrame = _G["ItemUpgradeFrame"]
-	ItemUpgradeFrame:StripTextures()
-	ItemUpgradeFrame:SetTemplate('Transparent')
-	--ItemUpgradeFrameShadows:Kill()
-	--ItemUpgradeFrameInset:Kill()
+	local ItemUpgradeFrame = _G.ItemUpgradeFrame
+	S:HandlePortraitFrame(ItemUpgradeFrame, true)
 
-	S:HandleCloseButton(ItemUpgradeFrameCloseButton)
+	local ItemButton = ItemUpgradeFrame.ItemButton
+	ItemButton:CreateBackdrop()
+	ItemButton.backdrop:SetAllPoints()
+	ItemButton.Frame:SetTexture("")
+	ItemButton:SetPushedTexture("")
+	S:HandleItemButton(ItemButton)
 
-	S:HandleItemButton(ItemUpgradeFrame.ItemButton, true)
+	local Highlight = ItemButton:GetHighlightTexture()
+	Highlight:SetColorTexture(1, 1, 1, .25)
 
 	hooksecurefunc('ItemUpgradeFrame_Update', function()
-		if GetItemUpgradeItemInfo() then
-			ItemUpgradeFrame.ItemButton.IconTexture:SetAlpha(1)
-			ItemUpgradeFrame.ItemButton.IconTexture:SetTexCoord(unpack(E.TexCoords))
+		local icon, _, quality = GetItemUpgradeItemInfo()
+		if icon then
+			ItemButton.IconTexture:SetTexCoord(unpack(E.TexCoords))
+			local color = BAG_ITEM_QUALITY_COLORS[quality or 1]
+			ItemButton.backdrop:SetBackdropBorderColor(color.r, color.g, color.b)
 		else
-			ItemUpgradeFrame.ItemButton.IconTexture:SetAlpha(0)
+			ItemButton.IconTexture:SetTexture("")
+			ItemButton.backdrop:SetBackdropBorderColor(0, 0, 0)
 		end
 	end)
 
-	ItemUpgradeFrameMoneyFrame:StripTextures()
-	S:HandleButton(ItemUpgradeFrameUpgradeButton, true)
+	local TextFrame = ItemUpgradeFrame.TextFrame
+	TextFrame:StripTextures()
+	TextFrame:CreateBackdrop('Transparent')
+	TextFrame.backdrop:Point("TOPLEFT", ItemButton.IconTexture, "TOPRIGHT", 3, E.mult)
+	TextFrame.backdrop:Point("BOTTOMRIGHT", -6, 2)
+
+	_G.ItemUpgradeFrameMoneyFrame:StripTextures()
+	S:HandleIcon(_G.ItemUpgradeFrameMoneyFrame.Currency.icon)
+	S:HandleButton(_G.ItemUpgradeFrameUpgradeButton, true)
 	ItemUpgradeFrame.FinishedGlow:Kill()
 	ItemUpgradeFrame.ButtonFrame:DisableDrawLayer('BORDER')
 end
 
-S:AddCallbackForAddon("Blizzard_ItemUpgradeUI", "ItemUpgrade", LoadSkin)
+S:AddCallbackForAddon('Blizzard_ItemUpgradeUI')

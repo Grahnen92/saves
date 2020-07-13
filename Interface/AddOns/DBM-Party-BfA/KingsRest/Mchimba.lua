@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(2171, "DBM-Party-BfA", 3, 1041)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 17732 $"):sub(12, -3))
+mod:SetRevision("20200211040655")
 mod:SetCreatureID(134993)
 mod:SetEncounterID(2142)
 mod:SetZone()
@@ -11,14 +11,13 @@ mod:RegisterCombat("combat")
 mod:RegisterEventsInCombat(
 	"SPELL_AURA_APPLIED 267618 267702",
 	"SPELL_AURA_REMOVED 267702",
-	"SPELL_CAST_START 267639 267763",
+	"SPELL_CAST_START 267639 267763 267702",
 	"SPELL_CAST_SUCCESS 267618",
 	"SPELL_PERIODIC_DAMAGE 267874",
 	"SPELL_PERIODIC_MISSED 267874",
 	"CHAT_MSG_RAID_BOSS_EMOTE"
 )
 
---TODO, longer pulls for more timers
 local specWarnBurnCorruption		= mod:NewSpecialWarningRun(267639, "Melee", nil, nil, 4, 2)
 local specWarnDrainFluids			= mod:NewSpecialWarningYou(267618, nil, nil, 2, 1, 2)
 local specWarnDrainFluidsTarget		= mod:NewSpecialWarningTarget(267618, "Healer", nil, nil, 1, 2)
@@ -26,24 +25,17 @@ local specWarnEntomb				= mod:NewSpecialWarningYou(267702, nil, nil, nil, 1, 2)
 local yellEntomb					= mod:NewYell(267702)
 local specWarnEntombOther			= mod:NewSpecialWarningSwitch(267702, nil, nil, nil, 1, 2)
 local specWarnWretchedDischarge		= mod:NewSpecialWarningInterrupt(267763, "HasInterrupt", nil, nil, 1, 2)
-local specWarnGTFO					= mod:NewSpecialWarningGTFO(267874, nil, nil, nil, 1, 2)
+local specWarnGTFO					= mod:NewSpecialWarningGTFO(267874, nil, nil, nil, 1, 8)
 
-local timerBurnCorruptionCD			= mod:NewCDTimer(13, 267639, nil, "Melee", nil, 2, nil, DBM_CORE_TANK_ICON..DBM_CORE_DEADLY_ICON)
-local timerDrainFluidsCD			= mod:NewCDTimer(13, 267618, nil, nil, nil, 3)
-local timerEntombCD					= mod:NewCDTimer(13, 267702, nil, nil, nil, 3)
+local timerBurnCorruptionCD			= mod:NewCDTimer(15.8, 267639, nil, "Melee", nil, 2, nil, DBM_CORE_TANK_ICON..DBM_CORE_DEADLY_ICON)
+local timerDrainFluidsCD			= mod:NewCDTimer(17, 267618, nil, nil, nil, 3)
+local timerEntombCD					= mod:NewCDTimer(60, 267702, nil, nil, nil, 3)
 
---mod:AddRangeFrameOption(5, 194966)
 
 function mod:OnCombatStart(delay)
 	timerBurnCorruptionCD:Start(10.8-delay)
 	timerDrainFluidsCD:Start(17.6-delay)--SUCCESS
 	timerEntombCD:Start(26.5-delay)
-end
-
-function mod:OnCombatEnd()
---	if self.Options.RangeFrame then
---		DBM.RangeCheck:Hide()
---	end
 end
 
 function mod:SPELL_AURA_APPLIED(args)
@@ -63,15 +55,13 @@ function mod:SPELL_AURA_APPLIED(args)
 		timerEntombCD:Stop()
 	end
 end
---mod.SPELL_AURA_APPLIED_DOSE = mod.SPELL_AURA_APPLIED
 
 function mod:SPELL_AURA_REMOVED(args)
 	local spellId = args.spellId
 	if spellId == 267702 then
 		--Resume normal boss behavior
-		timerBurnCorruptionCD:Start(10.6)
-		timerDrainFluidsCD:Start(17.6)--SUCCESS
-		--timerEntombCD:Start()
+		timerBurnCorruptionCD:Start(10)
+		timerDrainFluidsCD:Start(17)--SUCCESS
 	end
 end
 
@@ -80,24 +70,26 @@ function mod:SPELL_CAST_START(args)
 	if spellId == 267639 then
 		specWarnBurnCorruption:Show()
 		specWarnBurnCorruption:Play("justrun")
-		--timerBurnCorruptionCD:Start()
+		timerBurnCorruptionCD:Start()
 	elseif spellId == 267763 and self:CheckInterruptFilter(args.sourceGUID, false, true) then
 		specWarnWretchedDischarge:Show(args.sourceName)
 		specWarnWretchedDischarge:Play("kickcast")
+	elseif spellId == 267702 then
+		timerEntombCD:Start()
 	end
 end
 
 function mod:SPELL_CAST_SUCCESS(args)
 	local spellId = args.spellId
-	if spellId == 267618 then
-		--timerDrainFluidsCD:Start()
+	if spellId == 267618 and self:AntiSpam(3, 1) then
+		timerDrainFluidsCD:Start()
 	end
 end
 
 function mod:SPELL_PERIODIC_DAMAGE(_, _, _, _, destGUID, _, _, _, spellId)
 	if spellId == 267874 and destGUID == UnitGUID("player") and self:AntiSpam(2, 4) then
 		specWarnGTFO:Show()
-		specWarnGTFO:Play("runaway")
+		specWarnGTFO:Play("watchfeet")
 	end
 end
 mod.SPELL_PERIODIC_MISSED = mod.SPELL_PERIODIC_DAMAGE
@@ -116,17 +108,3 @@ function mod:CHAT_MSG_RAID_BOSS_EMOTE(msg, _, _, _, targetname)
 		end
 	end
 end
-
---[[
-function mod:UNIT_DIED(args)
-	local cid = self:GetCIDFromGUID(args.destGUID)
-	if cid == 124396 then
-		
-	end
-end
-
-function mod:UNIT_SPELLCAST_SUCCEEDED(uId, _, spellId)
-	if spellId == 257939 then
-	end
-end
---]]

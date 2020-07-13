@@ -1,0 +1,6 @@
+ElvUI_VerticalBars: disabled
+FarmHud: disabled
+ElvUI: enabled
+ElvUI_OptionsUI: enabled
+Plater: disabled
+OPie_Classic: disabled

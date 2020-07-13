@@ -1,38 +1,33 @@
 local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 local S = E:GetModule('Skins')
 
---Cache global variables
 --Lua functions
 local _G = _G
-local unpack = unpack
+local ipairs, unpack = ipairs, unpack
 --WoW API / Variables
-local GetNumSockets = GetNumSockets
 local GetSocketTypes = GetSocketTypes
 local hooksecurefunc = hooksecurefunc
---Global variables that we don't cache, list them here for mikk's FindGlobals script
--- GLOBALS: MAX_NUM_SOCKETS, GEM_TYPE_INFO
 
-local function LoadSkin()
-	if E.private.skins.blizzard.enable ~= true or E.private.skins.blizzard.socket ~= true then return end
+function S:Blizzard_ItemSocketingUI()
+	if not (E.private.skins.blizzard.enable and E.private.skins.blizzard.socket) then return end
 
-	local ItemSocketingFrame = _G["ItemSocketingFrame"]
-	ItemSocketingFrame:StripTextures()
-	ItemSocketingDescription:DisableDrawLayer("BORDER")
-	ItemSocketingDescription:DisableDrawLayer("BACKGROUND")
-	ItemSocketingFrame:SetTemplate("Transparent")
-	ItemSocketingFrameInset:Kill()
-	ItemSocketingScrollFrame:StripTextures()
-	ItemSocketingScrollFrame:CreateBackdrop("Transparent")
-	S:HandleScrollBar(ItemSocketingScrollFrameScrollBar, 2)
+	local ItemSocketingFrame = _G.ItemSocketingFrame
+	S:HandlePortraitFrame(ItemSocketingFrame, true)
 
-	for i = 1, MAX_NUM_SOCKETS  do
+	_G.ItemSocketingDescription:DisableDrawLayer("BORDER")
+	_G.ItemSocketingDescription:DisableDrawLayer("BACKGROUND")
+	_G.ItemSocketingScrollFrame:StripTextures()
+	_G.ItemSocketingScrollFrame:CreateBackdrop("Transparent")
+	S:HandleScrollBar(_G.ItemSocketingScrollFrameScrollBar, 2)
+
+	for i = 1, _G.MAX_NUM_SOCKETS  do
 		local button = _G[("ItemSocketingSocket%d"):format(i)]
 		local button_bracket = _G[("ItemSocketingSocket%dBracketFrame"):format(i)]
 		local button_bg = _G[("ItemSocketingSocket%dBackground"):format(i)]
 		local button_icon = _G[("ItemSocketingSocket%dIconTexture"):format(i)]
 		button:StripTextures()
 		button:StyleButton(false)
-		button:SetTemplate("Default", true)
+		button:SetTemplate(nil, true)
 		button_bracket:Kill()
 		button_bg:Kill()
 		button_icon:SetTexCoord(unpack(E.TexCoords))
@@ -40,21 +35,17 @@ local function LoadSkin()
 	end
 
 	hooksecurefunc("ItemSocketingFrame_Update", function()
-		local numSockets = GetNumSockets();
-		for i=1, numSockets do
-			local button = _G[("ItemSocketingSocket%d"):format(i)]
+		for i, socket in ipairs(_G.ItemSocketingFrame.Sockets) do
 			local gemColor = GetSocketTypes(i)
-			local color = GEM_TYPE_INFO[gemColor]
-			button:SetBackdropColor(color.r, color.g, color.b, 0.15)
-			button:SetBackdropBorderColor(color.r, color.g, color.b)
+			local color = E.GemTypeInfo[gemColor]
+			socket:SetBackdropBorderColor(color.r, color.g, color.b)
 		end
 	end)
 
-	ItemSocketingFramePortrait:Kill()
-	ItemSocketingSocketButton:ClearAllPoints()
-	ItemSocketingSocketButton:Point("BOTTOMRIGHT", ItemSocketingFrame, "BOTTOMRIGHT", -5, 5)
-	S:HandleButton(ItemSocketingSocketButton)
-	S:HandleCloseButton(ItemSocketingFrameCloseButton)
+	_G.ItemSocketingFramePortrait:Kill()
+	_G.ItemSocketingSocketButton:ClearAllPoints()
+	_G.ItemSocketingSocketButton:Point("BOTTOMRIGHT", ItemSocketingFrame, "BOTTOMRIGHT", -5, 5)
+	S:HandleButton(_G.ItemSocketingSocketButton)
 end
 
-S:AddCallbackForAddon("Blizzard_ItemSocketingUI", "ItemSocket", LoadSkin)
+S:AddCallbackForAddon('Blizzard_ItemSocketingUI')

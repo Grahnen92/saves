@@ -1,17 +1,16 @@
 local mod	= DBM:NewMod("SotSTrash", "DBM-Party-BfA", 4)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 17760 $"):sub(12, -3))
+mod:SetRevision("20200211040655")
 --mod:SetModelID(47785)
 mod:SetZone()
 
 mod.isTrashMod = true
 
 mod:RegisterEvents(
-	"SPELL_CAST_START 268030 267973 268391 268239 268309 276268 267977 268050 268027 274437 268184 276292 274631 268211 268273 268322 268317 268375 276767",
-	"SPELL_AURA_APPLIED 268375 268322 268214 276297 276767",
+	"SPELL_CAST_START 268030 267973 268391 268239 268309 276268 267977 268050 268027 274437 268184 276292 268211 268273 268322 268317 268375 276767",
+	"SPELL_AURA_APPLIED 268375 268322 268214 276297 276767 274631",
 	"SPELL_AURA_REMOVED 276297"
---	"SPELL_CAST_SUCCESS"
 )
 
 --TODO, Colossal Slam-268348? START
@@ -85,12 +84,9 @@ function mod:SPELL_CAST_START(args)
 	elseif spellId == 268184 and self:AntiSpam(4, 7) then
 		specWarnMinorSwiftness:Show()
 		specWarnMinorSwiftness:Play("moveboss")
-	elseif spellId == 276292 and self:AntiSpam(4, 8) then
+	elseif spellId == 276292 and self:AntiSpam(5, 8) then
 		specWarnWhirlingSlam:Show()
 		specWarnWhirlingSlam:Play("justrun")
-	elseif spellId == 274631 and self:AntiSpam(4, 9) then
-		specWarnBlessingofIrontides:Show()
-		specWarnBlessingofIrontides:Play("justrun")
 	elseif spellId == 268211 and self:AntiSpam(4, 10) then
 		specWarnMinorReinforcement:Show()
 		specWarnMinorReinforcement:Play("moveboss")
@@ -126,7 +122,7 @@ function mod:SPELL_AURA_APPLIED(args)
 			specWarnConsumingVoidStop:Show(args.destName)
 			specWarnConsumingVoidStop:Play("stopattack")
 		end
-	elseif spellId == 268322 and args:IsDestTypePlayer() and self:AntiSpam(2, 3) then
+	elseif spellId == 268322 and args:IsDestTypePlayer() and self:CheckDispelFilter() and self:AntiSpam(2, 3) then
 		specWarnTouchofDrowned:Show(args.destName)
 		specWarnTouchofDrowned:Play("helpdispel")
 	elseif spellId == 268214 then
@@ -142,6 +138,9 @@ function mod:SPELL_AURA_APPLIED(args)
 			specWarnVoidSeed:ScheduleVoice(8, "runout")
 			yellVoidSeed:Countdown(12)
 		end
+	elseif spellId == 274631 and self:AntiSpam(4, 9) then
+		specWarnBlessingofIrontides:Show()
+		specWarnBlessingofIrontides:Play("justrun")
 	end
 end
 
@@ -156,13 +155,3 @@ function mod:SPELL_AURA_REMOVED(args)
 		end
 	end
 end
-
---[[
-function mod:SPELL_CAST_SUCCESS(args)
-	if not self.Options.Enabled then return end
-	local spellId = args.spellId
-	if spellId == 200343 then
-
-	end
-end
---]]

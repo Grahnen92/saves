@@ -34,3 +34,7 @@ DBM-TombofSargeras: disabled
 DBM-TrialofValor: disabled
 DBM-Uldir: disabled
 DBM-WorldEvents: enabled
+ElvUI_VerticalBars: disabled
+ExRT: enabled
+OPie_Classic: disabled
+Plater: disabled

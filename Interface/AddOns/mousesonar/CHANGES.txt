@@ -1,0 +1,210 @@
+commit fb9eb144922a9153041a6a492cfe59c2e800fe07
+Author: rainbowdashx <born_to_kill_666@hotmail.com>
+Date:   Sat Jan 18 19:52:40 2020 +0100
+
+    wow version 8.3
+
+commit 69c6aed4d66cb0d35ef6cd1c307f19a851f40063
+Author: rainbowdashx <born_to_kill_666@hotmail.com>
+Date:   Wed Sep 25 19:18:30 2019 +0200
+
+    Bump version
+
+commit ec5a7a77c33e00355d7d74afdab184765711ef51
+Author: rainbowdashx <born_to_kill_666@hotmail.com>
+Date:   Sun Jul 28 17:51:47 2019 +0200
+
+    Bump Version 8.2.0
+
+commit 783fdea9df62794c5cf75fda6ecf3f27b00207ad
+Author: rainbowdashx <born_to_kill_666@hotmail.com>
+Date:   Wed Jun 26 13:05:58 2019 +0200
+
+    bump version
+
+commit 9f88cdd96441a8002cebba5fc4320dc8e469ccc5
+Author: rainbowdashx <born_to_kill_666@hotmail.com>
+Date:   Wed Apr 24 16:58:26 2019 +0200
+
+    bump version
+
+commit 7e2333cf3c63ce53888247ee2aef2cf8c19ff50b
+Author: rainbowdashx <born_to_kill_666@hotmail.com>
+Date:   Wed Apr 24 16:53:14 2019 +0200
+
+    bump version
+
+commit 8e84092db7273c3f8641ea7bc77bf6c81dcbd753
+Author: rainbowdashx <born_to_kill_666@hotmail.com>
+Date:   Fri Aug 10 21:51:36 2018 +0200
+
+    Added Hollow Circle Option | Added Smaller Scale Value
+
+commit 8f61e518e16c0021bb37a78534f8e7c7782c71a8
+Author: rainbowdashx <born_to_kill_666@hotmail.com>
+Date:   Thu Jul 19 16:57:49 2018 +0200
+
+    Tag Bfa
+
+commit 126b8a9812ba8e8bc23270e46e8f325822b51cf8
+Author: rainbowdashx <born_to_kill_666@hotmail.com>
+Date:   Wed Aug 30 13:28:00 2017 +0200
+
+    toc 7.3
+
+commit 4a26c58b3f9978b478a9a0b42a4ad69c7cc84bcd
+Author: rainbowdashx <born_to_kill_666@hotmail.com>
+Date:   Fri May 12 21:11:16 2017 +0200
+
+    Rename Binding
+
+commit b3adef29fc17fb1d28ace62404d215bc08a09761
+Author: rainbowdashx <born_to_kill_666@hotmail.com>
+Date:   Thu Mar 30 21:43:09 2017 +0200
+
+    Version 7.2
+
+commit 40b91af3119aff459ead24a8f9a9c18ff5719c96
+Author: rainbowdashx <born_to_kill_666@hotmail.com>
+Date:   Tue Mar 21 09:39:51 2017 +0100
+
+    show circle bypass for options
+
+commit 4e364facf6ab0828041cf19d5bce07a5661fb40a
+Author: Thex <thex-pieddroit@hotmail.com>
+Date:   Mon Mar 20 22:45:23 2017 +0100
+
+    Fixed color picker's color preview
+
+commit 4e364facf6ab0828041cf19d5bce07a5661fb40a
+Author: Thex <thex-pieddroit@hotmail.com>
+Date:   Mon Mar 20 22:45:23 2017 +0100
+
+    Fixed color picker's color preview
+
+commit 351623f6e8276819a00397a0d56548aa90490e27
+Author: Thex <thex-pieddroit@hotmail.com>
+Date:   Mon Mar 20 22:29:10 2017 +0100
+
+    Fixed settings saving + fixed minor settings toggling issues
+    
+    Turns out, the fake ternary operator doesn't quite work with booleans, which makes sense
+
+commit e52f36e5ddfeb3c1953ee4259115a3fd1821117c
+Author: rainbowdashx <born_to_kill_666@hotmail.com>
+Date:   Mon Mar 20 19:21:38 2017 +0100
+
+    --whitespace
+
+commit 2dc6b354d209c5dce3d8704ced304974792d27fb
+Author: rainbowdashx <born_to_kill_666@hotmail.com>
+Date:   Mon Mar 20 16:18:06 2017 +0100
+
+    added color picker
+
+commit f9268a4515d9fc52e904c33c959ea17f7253cd8c
+Author: rainbowdashx <born_to_kill_666@hotmail.com>
+Date:   Mon Mar 20 14:25:54 2017 +0100
+
+    .toc 70100
+
+commit 7842cf17ad851f1ae37b6aad9750cce78a7d85ee
+Author: Thex <thex-pieddroit@hotmail.com>
+Date:   Mon Mar 20 11:57:41 2017 +0100
+
+    Merged remote master with Enhancement
+
+commit 7842cf17ad851f1ae37b6aad9750cce78a7d85ee
+Author: Thex <thex-pieddroit@hotmail.com>
+Date:   Mon Mar 20 11:57:41 2017 +0100
+
+    Merged remote master with Enhancement
+
+commit 0536a318b8078b3dd36ecff661dd03e57b7a8d5d
+Author: Thex <thex-pieddroit@hotmail.com>
+Date:   Mon Mar 20 11:54:01 2017 +0100
+
+    Added ability to make the circle always visible
+
+commit 45c510322615665aca253c52096cddb1de0bc990
+Author: rainbowdashx <born_to_kill_666@hotmail.com>
+Date:   Mon Mar 20 11:45:31 2017 +0100
+
+    trigger webhook
+
+commit 70014eb83bf19a65661f71bc383ad98bfa62cb14
+Author: rainbowdashx <born_to_kill_666@hotmail.com>
+Date:   Mon Mar 20 11:23:57 2017 +0100
+
+    trigger webhook
+
+commit 48b8660ac296752808c2fc504b2cfc97025d660c
+Author: rainbowdashx <born_to_kill_666@hotmail.com>
+Date:   Mon Mar 20 11:07:41 2017 +0100
+
+    wip
+
+commit 752ef374ec734b802506e802015662e4aaa68ee1
+Author: Thex <thex-pieddroit@hotmail.com>
+Date:   Sun Mar 19 00:15:49 2017 +0100
+
+    Added ability to change the starting alpha value of the circle
+
+commit 752ef374ec734b802506e802015662e4aaa68ee1
+Author: Thex <thex-pieddroit@hotmail.com>
+Date:   Sun Mar 19 00:15:49 2017 +0100
+
+    Added ability to change the starting alpha value of the circle
+
+commit 17155bd6f26509af4117c8691169b73b978a911f
+Author: Thex <thex-pieddroit@hotmail.com>
+Date:   Sun Mar 19 00:15:49 2017 +0100
+
+    Added ability to enable it only when in raid group
+
+commit 42cb7692ed3cb38ede991b544e275dc0bac34a63
+Author: Thex <thex-pieddroit@hotmail.com>
+Date:   Sun Mar 19 00:03:31 2017 +0100
+
+    Added ability to deactivate pulse
+
+commit c6d8597e701b836fcd7359ea4c2a7e33ac20e628
+Author: Thex <thex-pieddroit@hotmail.com>
+Date:   Sun Mar 19 00:00:03 2017 +0100
+
+    Refactored
+    
+    - Removed unused stuff
+    - Improved concistency (naming, whitespaces, parameters order..)
+    - Improved performances by removing unnecessary computations and function calls
+
+commit a8f13c3bfbdb832fa8a2eb9fa2f68392e34dff4d
+Author: rainbowdashx <born_to_kill_666@hotmail.com>
+Date:   Sat Aug 20 13:59:04 2016 +0200
+
+    legion 7.0
+
+commit b29f68d0f3c98d1b40c66b86f4ba83b7711b3cb5
+Author: rainbowdashx <born_to_kill_666@hotmail.com>
+Date:   Sun Oct 25 09:00:05 2015 +0100
+
+    -toc file
+
+commit b724fe3f100b749d387c014c8e1f289ef57bcb36
+Author: rainbowdashx <born_to_kill_666@hotmail.com>
+Date:   Sun Oct 25 07:51:29 2015 +0100
+
+    v a0.2
+
+commit ab175be156293e1160eeb54e82974aa687d61c52
+Author: rainbowdashx <born_to_kill_666@hotmail.com>
+Date:   Sun Oct 25 07:18:37 2015 +0100
+
+    v a0.1
+
+commit b68bd2bce9962cc7a324bcbcb81b7ee2e11a82c9
+Author: rainbowdashx <born_to_kill_666@hotmail.com>
+Date:   Mon Aug 10 16:10:20 2015 +0200
+
+    init
+

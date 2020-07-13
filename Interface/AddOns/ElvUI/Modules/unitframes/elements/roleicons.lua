@@ -1,14 +1,13 @@
 local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 local UF = E:GetModule('UnitFrames');
 
---Cache global variables
 --Lua functions
-local random = math.random
+local random = random
 --WoW API / Variables
-local GetNumBattlefieldScores = GetNumBattlefieldScores
-local GetBattlefieldScore = GetBattlefieldScore
-local IsInInstance = IsInInstance
 local GetUnitName = GetUnitName
+local GetInstanceInfo = GetInstanceInfo
+local GetBattlefieldScore = GetBattlefieldScore
+local GetNumBattlefieldScores = GetNumBattlefieldScores
 local UnitGroupRolesAssigned = UnitGroupRolesAssigned
 local UnitIsConnected = UnitIsConnected
 
@@ -23,9 +22,9 @@ function UF:Construct_RoleIcon(frame)
 end
 
 local roleIconTextures = {
-	TANK = [[Interface\AddOns\ElvUI\media\textures\tank.tga]],
-	HEALER = [[Interface\AddOns\ElvUI\media\textures\healer.tga]],
-	DAMAGER = [[Interface\AddOns\ElvUI\media\textures\dps.tga]]
+	TANK = E.Media.Textures.Tank,
+	HEALER = E.Media.Textures.Healer,
+	DAMAGER = E.Media.Textures.DPS
 }
 
 --From http://forums.wowace.com/showpost.php?p=325677&postcount=5
@@ -60,10 +59,9 @@ function UF:UpdateRoleIcon(event)
 		return
 	end
 
-	local isInstance, instanceType = IsInInstance()
 	local role
-
-	if isInstance and instanceType == "pvp" then
+	local _, instanceType = GetInstanceInfo()
+	if instanceType == "pvp" then
 		local name = GetUnitName(self.unit, true)
 		local index = GetBattleFieldIndexFromUnitName(name)
 		if index then

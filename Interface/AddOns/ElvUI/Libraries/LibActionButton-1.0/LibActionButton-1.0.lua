@@ -1,5 +1,5 @@
 --[[
-Copyright (c) 2010-2017, Hendrik "nevcairiel" Leppkes <h.leppkes@gmail.com>
+Copyright (c) 2010-2019, Hendrik "nevcairiel" Leppkes <h.leppkes@gmail.com>
 
 All rights reserved.
 
@@ -26,41 +26,30 @@ PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
 LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
 NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-
 ]]
 
 local MAJOR_VERSION = "LibActionButton-1.0-ElvUI"
-local MINOR_VERSION = 15
+local MINOR_VERSION = 19 -- the real minor version is 74
 
 if not LibStub then error(MAJOR_VERSION .. " requires LibStub.") end
 local lib, oldversion = LibStub:NewLibrary(MAJOR_VERSION, MINOR_VERSION)
 if not lib then return end
 
--- Lua functions
-local _G = _G
 local type, error, tostring, tonumber, assert, select = type, error, tostring, tonumber, assert, select
 local setmetatable, wipe, unpack, pairs, next = setmetatable, wipe, unpack, pairs, next
 local str_match, format, tinsert, tremove = string.match, format, tinsert, tremove
-local C_ToyBox = C_ToyBox
 
--- Global vars/functions that we don't upvalue since they might get hooked, or upgraded
--- List them here for Mikk's FindGlobals script
--- Note: No WoW API function get upvalued to allow proper interaction with any addons that try to hook them.
--- GLOBALS: LibStub, CreateFrame, InCombatLockdown, ClearCursor, GetCursorInfo, GameTooltip, GameTooltip_SetDefaultAnchor
--- GLOBALS: GetBindingKey, GetBindingText, SetBinding, SetBindingClick, GetCVar, GetMacroInfo
--- GLOBALS: PickupAction, PickupItem, PickupMacro, PickupPetAction, PickupSpell, PickupCompanion, PickupEquipmentSet
--- GLOBALS: CooldownFrame_SetTimer, UIParent, IsSpellOverlayed, SpellFlyout, GetMouseFocus, SetClampedTextureRotation
--- GLOBALS: GetActionInfo, GetActionTexture, HasAction, GetActionText, GetActionCount, GetActionCooldown, IsAttackAction
--- GLOBALS: IsAutoRepeatAction, IsEquippedAction, IsCurrentAction, IsConsumableAction, IsUsableAction, IsStackableAction, IsActionInRange
--- GLOBALS: GetSpellLink, GetMacroSpell, GetSpellTexture, GetSpellCount, GetSpellCooldown, IsAttackSpell, IsCurrentSpell
--- GLOBALS: FindSpellBookSlotBySpellID, IsUsableSpell, IsConsumableSpell, IsSpellInRange, IsAutoRepeatSpell
--- GLOBALS: GetItemIcon, GetItemCount, GetItemCooldown, IsEquippedItem, IsCurrentItem, IsUsableItem, IsConsumableItem, IsItemInRange
--- GLOBALS: GetActionCharges, IsItemAction, GetSpellCharges
--- GLOBALS: RANGE_INDICATOR, ATTACK_BUTTON_FLASH_TIME, TOOLTIP_UPDATE_TIME
--- GLOBALS: ZoneAbilityFrame, HasZoneAbility, GetLastZoneAbilitySpellTexture
-
--- GLOBALS: GetCVarBool, IsAltKeyDown, IsControlKeyDown, IsShiftKeyDown, COOLDOWN_TYPE_NORMAL, COOLDOWN_TYPE_LOSS_OF_CONTROL
--- GLOBALS: GetSpellInfo, FlyoutHasSpell, GetModifiedClick, GetActionLossOfControlCooldown, CooldownFrame_Set
+-- GLOBALS: ATTACK_BUTTON_FLASH_TIME, C_ToyBox, ClearCursor, COOLDOWN_TYPE_LOSS_OF_CONTROL, COOLDOWN_TYPE_NORMAL
+-- GLOBALS: CooldownFrame_Set, CreateFrame, FindSpellBookSlotBySpellID, FlyoutHasSpell, GameTooltip, GameTooltip_SetDefaultAnchor
+-- GLOBALS: GetActionCharges, GetActionCooldown, GetActionCount, GetActionInfo, GetActionLossOfControlCooldown, GetActionText
+-- GLOBALS: GetActionTexture, GetBindingKey, GetBindingText, GetCursorInfo, GetCVar, GetCVarBool, GetItemCooldown, GetItemCount
+-- GLOBALS: GetItemIcon, GetLastZoneAbilitySpellTexture, GetMacroInfo, GetMacroSpell, GetModifiedClick, GetMouseFocus, GetSpellCharges
+-- GLOBALS: GetSpellCooldown, GetSpellCount, GetSpellInfo, GetSpellTexture, HasAction, HasZoneAbility, InCombatLockdown, IsActionInRange
+-- GLOBALS: IsAltKeyDown, IsAttackAction, IsAttackSpell, IsAutoRepeatAction, IsAutoRepeatSpell, IsConsumableAction, IsConsumableItem
+-- GLOBALS: IsConsumableSpell, IsControlKeyDown, IsCurrentAction, IsCurrentItem, IsCurrentSpell, IsEquippedAction, IsEquippedItem
+-- GLOBALS: IsItemAction, IsItemInRange, IsShiftKeyDown, IsSpellInRange, IsSpellOverlayed, IsStackableAction, IsUsableAction, IsUsableItem
+-- GLOBALS: IsUsableSpell, LibStub, PickupAction, PickupCompanion, PickupEquipmentSet, PickupItem, PickupMacro, PickupPetAction, PickupSpell
+-- GLOBALS: RANGE_INDICATOR, SetBinding, SetBindingClick, SetClampedTextureRotation, SpellFlyout, TOOLTIP_UPDATE_TIME, UIParent, ZoneAbilityFrame
 
 local KeyBound = LibStub("LibKeyBound-1.0", true)
 local CBH = LibStub("CallbackHandler-1.0")
@@ -178,6 +167,8 @@ function lib:CreateButton(id, name, header, config)
 	local button = setmetatable(CreateFrame("CheckButton", name, header, "SecureActionButtonTemplate, ActionButtonTemplate"), Generic_MT)
 	button:RegisterForDrag("LeftButton", "RightButton")
 	button:RegisterForClicks("AnyUp")
+	button.cooldown:SetFrameStrata(button:GetFrameStrata())
+	button.cooldown:SetFrameLevel(button:GetFrameLevel() + 1)
 
 	-- Frame Scripts
 	button:SetScript("OnEnter", Generic.OnEnter)
@@ -1277,17 +1268,20 @@ local function StartChargeCooldown(parent, chargeStart, chargeDuration, chargeMo
 			cooldown = CreateFrame("Cooldown", "LAB10ChargeCooldown"..lib.NumChargeCooldowns, parent, "CooldownFrameTemplate");
 			cooldown:SetScript("OnCooldownDone", EndChargeCooldown)
 			cooldown:SetHideCountdownNumbers(true)
+			cooldown:SetDrawBling(false)
+
+			lib.callbacks:Fire("OnChargeCreated", parent, cooldown)
 		end
 		cooldown:SetParent(parent)
 		cooldown:SetAllPoints(parent)
-		cooldown:SetFrameStrata("TOOLTIP")
+		cooldown:SetFrameStrata(parent:GetFrameStrata())
+		cooldown:SetFrameLevel(parent:GetFrameLevel() + 1)
 		cooldown:Show()
 		parent.chargeCooldown = cooldown
 		cooldown.parent = parent
 	end
+
 	-- set cooldown
-	parent.chargeCooldown:SetDrawBling(parent.config.useDrawBling and (parent.chargeCooldown:GetEffectiveAlpha() > 0.5))
-	parent.chargeCooldown:SetDrawSwipe(parent.config.useDrawSwipeOnCharges)
 	CooldownFrame_Set(parent.chargeCooldown, chargeStart, chargeDuration, true, true, chargeModRate)
 
 	-- update charge cooldown skin when masque is used
@@ -1301,8 +1295,14 @@ local function StartChargeCooldown(parent, chargeStart, chargeDuration, chargeMo
 end
 
 local function OnCooldownDone(self)
-	self:SetScript("OnCooldownDone", nil)
-	UpdateCooldown(self:GetParent())
+	local button = self:GetParent()
+	if (self.currentCooldownType == COOLDOWN_TYPE_NORMAL) and button.locStart and (button.locStart > 0) then
+		UpdateCooldown(button)
+	elseif button.chargeCooldown then
+		button.chargeCooldown:SetDrawSwipe(button.config.useDrawSwipeOnCharges)
+	end
+
+	lib.callbacks:Fire("OnCooldownDone", button, self)
 end
 
 function UpdateCooldown(self)
@@ -1311,6 +1311,9 @@ function UpdateCooldown(self)
 	local charges, maxCharges, chargeStart, chargeDuration, chargeModRate = self:GetCharges()
 
 	self.cooldown:SetDrawBling(self.config.useDrawBling and (self.cooldown:GetEffectiveAlpha() > 0.5))
+	self.cooldown:SetScript("OnCooldownDone", OnCooldownDone)
+	self.cooldown.locStart = locStart
+	self.cooldown.locDuration = locDuration
 
 	if (locStart + locDuration) > (start + duration) then
 		if self.cooldown.currentCooldownType ~= COOLDOWN_TYPE_LOSS_OF_CONTROL then
@@ -1319,6 +1322,7 @@ function UpdateCooldown(self)
 			self.cooldown:SetHideCountdownNumbers(true)
 			self.cooldown.currentCooldownType = COOLDOWN_TYPE_LOSS_OF_CONTROL
 		end
+
 		CooldownFrame_Set(self.cooldown, locStart, locDuration, true, true, modRate)
 	else
 		if self.cooldown.currentCooldownType ~= COOLDOWN_TYPE_NORMAL then
@@ -1327,15 +1331,15 @@ function UpdateCooldown(self)
 			self.cooldown:SetHideCountdownNumbers(self.config.disableCountDownNumbers)
 			self.cooldown.currentCooldownType = COOLDOWN_TYPE_NORMAL
 		end
-		if locStart > 0 then
-			self.cooldown:SetScript("OnCooldownDone", OnCooldownDone)
-		end
 
 		if charges and maxCharges and charges > 0 and charges < maxCharges then
 			StartChargeCooldown(self, chargeStart, chargeDuration, chargeModRate)
+
+			self.chargeCooldown:SetDrawSwipe(duration <= 0 and self.config.useDrawSwipeOnCharges)
 		elseif self.chargeCooldown then
 			EndChargeCooldown(self.chargeCooldown)
 		end
+
 		CooldownFrame_Set(self.cooldown, start, duration, enable, false, modRate)
 	end
 	lib.callbacks:Fire("OnCooldownUpdate", self, start, duration, enable, modRate)
@@ -1364,6 +1368,7 @@ end
 function UpdateTooltip(self)
 	if GameTooltip:IsForbidden() then return end
 	if (GetCVar("UberTooltips") == "1") then
+		GameTooltip:ClearAllPoints();
 		GameTooltip_SetDefaultAnchor(GameTooltip, self);
 	else
 		GameTooltip:SetOwner(self, "ANCHOR_RIGHT");
@@ -1449,6 +1454,26 @@ end)
 
 hooksecurefunc("ClearNewActionHighlight", function(action, preventIdenticalActionsFromClearing)
 	ClearNewActionHighlight(action, preventIdenticalActionsFromClearing, nil)
+end)
+
+local function UpdateSpellHighlight(self, shown)
+	if ( shown ) then
+		self.SpellHighlightTexture:Show();
+		self.SpellHighlightAnim:Play();
+	else
+		self.SpellHighlightTexture:Hide();
+		self.SpellHighlightAnim:Stop();
+	end
+end
+
+hooksecurefunc("SharedActionButton_RefreshSpellHighlight", function(self)
+	if ( self.SpellHighlightTexture and self.SpellHighlightAnim ) then
+		for button in next, ButtonRegistry do
+			if button._state_type == "action" then
+				UpdateSpellHighlight(button, GetOnBarHighlightMark(button._state_action))
+			end
+		end
+	end
 end)
 
 function UpdateNewAction(self)

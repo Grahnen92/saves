@@ -4,10 +4,10 @@ if UnitFactionGroup("player") == "Alliance" then
 else--Horde
 	dungeonID, creatureID = 2212, 137374--Lion's Roar
 end
-local mod	= DBM:NewMod(dungeonID, "DBM-Azeroth-BfA", nil, 1028)
+local mod	= DBM:NewMod(dungeonID, "DBM-Azeroth-BfA", 3, 1028)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 17672 $"):sub(12, -3))
+mod:SetRevision("20200211040655")
 mod:SetCreatureID(creatureID)--Dooms Howl 138122, Lion's Roar 137374
 --mod:SetEncounterID(encounterID)
 mod:SetReCombatTime(20)
@@ -34,22 +34,22 @@ local warnSiegeMode					= mod:NewSpellAnnounce(271223)
 local warnDemoCannon				= mod:NewTargetNoFilterAnnounce(271246, 2, nil, false)--Not part of global filter, in case healer wants to turn it on for heal targets
 
 --Mobile
-local specWarnShatteringPulse		= mod:NewSpecialWarningSpell(271163, "Tank", nil, nil, 1, 2)
+local specWarnShatteringPulse		= mod:NewSpecialWarningSpell(271163, "Tank", nil, 3, 1, 2)
 --Siege
-local specWarnEverybodyOut			= mod:NewSpecialWarningSwitch(271280, "-Healer", nil, nil, 1, 2)
+local specWarnDoomsHowlEngineer		= mod:NewSpecialWarningSwitch("ej18702", "-Healer", nil, nil, 1, 2)
+local specWarnLionsHowlEngineer		= mod:NewSpecialWarningSwitch("ej18682", "-Healer", nil, nil, 1, 2)
 local specWarnFieldRepair			= mod:NewSpecialWarningInterrupt(271797, "HasInterrupt", nil, nil, 1, 2)
-local specWarnSentry				= mod:NewSpecialWarningMove(271783, "Tank", nil, nil, 1, 2)
---local specWarnGTFO				= mod:NewSpecialWarningGTFO(238028, nil, nil, nil, 1, 2)
+local specWarnSentry				= mod:NewSpecialWarningMove(271783, false, nil, 2, 1, 2)
+--local specWarnGTFO				= mod:NewSpecialWarningGTFO(238028, nil, nil, nil, 1, 8)
 
 --Mobile
-local timerShatteringPulseCD		= mod:NewCDTimer(20.9, 271163, nil, "Tank", nil, 5)
+local timerShatteringPulseCD		= mod:NewCDTimer(20, 271163, nil, "Tank", nil, 5)
 local timerMortarShotCD				= mod:NewCDTimer(10, 271164, nil, nil, nil, 3)
 local timerFlameExhaustsCD			= mod:NewCDTimer(12.1, 277598, nil, nil, nil, 3)
 local timerSiegeUpCD				= mod:NewCDTimer(84.5, 271223, nil, nil, nil, 6)--84.5-86.2
 --Siege
 local timerSiegeUp					= mod:NewBuffActiveTimer(64, 271223, nil, nil, nil, 6)--64-66
 local timerDemoCannonCD				= mod:NewCDTimer(5.8, 271246, nil, false, nil, 5, nil, DBM_CORE_HEALER_ICON)
-
 
 mod:AddRangeFrameOption(8, 271192)
 mod:AddNamePlateOption("NPAuraOnSentry", 271783)
@@ -95,9 +95,14 @@ function mod:SPELL_CAST_SUCCESS(args)
 	if spellId == 271246 then
 		timerDemoCannonCD:Start()
 	elseif spellId == 271280 then
-		specWarnEverybodyOut:Show()
-		specWarnEverybodyOut:Play("killmob")
-	elseif spellId == 271797 and self:CheckInterruptFilter(args.sourceGUID, false, true) then
+		if creatureID == 138122 then--Alliance
+			specWarnDoomsHowlEngineer:Show()
+			specWarnDoomsHowlEngineer:Play("killmob")
+		else
+			specWarnLionsHowlEngineer:Show()
+			specWarnLionsHowlEngineer:Play("killmob")
+		end
+	elseif spellId == 271797 and self:CheckInterruptFilter(args.sourceGUID, false, true, true) then
 		specWarnFieldRepair:Show(args.sourceName)
 		specWarnFieldRepair:Play("kickcast")
 	elseif spellId == 271783 and self:AntiSpam(3, 2) then
@@ -147,23 +152,6 @@ function mod:SPELL_AURA_REMOVED(args)
 		end
 	end
 end
-
---[[
-function mod:SPELL_PERIODIC_DAMAGE(_, _, _, _, destGUID, _, _, _, spellId)
-	if spellId == 228007 and destGUID == UnitGUID("player") and self:AntiSpam(2, 1) then
-		specWarnGTFO:Show()
-		specWarnGTFO:Play("runaway")
-	end
-end
-mod.SPELL_PERIODIC_MISSED = mod.SPELL_PERIODIC_DAMAGE
-
-function mod:UNIT_DIED(args)
-	local cid = self:GetCIDFromGUID(args.destGUID)
-	if cid == 124396 then
-		
-	end
-end
---]]
 
 function mod:UNIT_SPELLCAST_SUCCEEDED(uId, _, spellId)
 	if spellId == 271164 and self:AntiSpam(5, 1) then

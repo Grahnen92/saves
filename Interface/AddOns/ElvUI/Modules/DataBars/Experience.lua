@@ -1,21 +1,18 @@
 local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
-local mod = E:GetModule('DataBars');
-local LSM = LibStub("LibSharedMedia-3.0")
+local mod = E:GetModule('DataBars')
+local LSM = E.Libs.LSM
 
---Cache global variables
 --Lua functions
+local _G = _G
 local format = format
 local min = min
 --WoW API / Variables
 local GetPetExperience, UnitXP, UnitXPMax = GetPetExperience, UnitXP, UnitXPMax
-local UnitLevel = UnitLevel
 local IsXPUserDisabled, GetXPExhaustion = IsXPUserDisabled, GetXPExhaustion
 local GetExpansionLevel = GetExpansionLevel
 local MAX_PLAYER_LEVEL_TABLE = MAX_PLAYER_LEVEL_TABLE
 local InCombatLockdown = InCombatLockdown
-
---Global variables that we don't cache, list them here for mikk's FindGlobals script
--- GLOBALS: GameTooltip, LeftChatPanel, CreateFrame
+local CreateFrame = CreateFrame
 
 function mod:GetXP(unit)
 	if(unit == 'pet') then
@@ -29,12 +26,12 @@ function mod:UpdateExperience(event)
 	if not mod.db.experience.enable then return end
 
 	local bar = self.expBar
-	local hideXP = ((UnitLevel('player') == MAX_PLAYER_LEVEL_TABLE[GetExpansionLevel()] and self.db.experience.hideAtMaxLevel) or IsXPUserDisabled())
 
-	if hideXP or (event == "PLAYER_REGEN_DISABLED" and self.db.experience.hideInCombat) then
+	if (self.db.experience.hideAtMaxLevel and E.mylevel == MAX_PLAYER_LEVEL_TABLE[GetExpansionLevel()]) or IsXPUserDisabled() or
+		(self.db.experience.hideInCombat and (event == "PLAYER_REGEN_DISABLED" or InCombatLockdown())) then
 		E:DisableMover(self.expBar.mover:GetName())
 		bar:Hide()
-	elseif not hideXP and (not self.db.experience.hideInCombat or not InCombatLockdown()) then
+	else
 		E:EnableMover(self.expBar.mover:GetName())
 		bar:Show()
 
@@ -46,8 +43,9 @@ function mod:UpdateExperience(event)
 
 		local cur, max = self:GetXP('player')
 		if max <= 0 then max = 1 end
+
 		bar.statusBar:SetMinMaxValues(0, max)
-		bar.statusBar:SetValue(cur - 1 >= 0 and cur - 1 or 0)
+		-- bar.statusBar:SetValue(cur - 1 >= 0 and cur - 1 or 0) -- this is set twice here for some reason
 		bar.statusBar:SetValue(cur)
 
 		local rested = GetXPExhaustion()
@@ -99,9 +97,11 @@ function mod:UpdateExperience(event)
 end
 
 function mod:ExperienceBar_OnEnter()
+	local GameTooltip = _G.GameTooltip
 	if mod.db.experience.mouseover then
 		E:UIFrameFadeIn(self, 0.4, self:GetAlpha(), 1)
 	end
+
 	GameTooltip:ClearLines()
 	GameTooltip:SetOwner(self, 'ANCHOR_CURSOR', 0, -4)
 
@@ -110,19 +110,17 @@ function mod:ExperienceBar_OnEnter()
 	GameTooltip:AddLine(L["Experience"])
 	GameTooltip:AddLine(' ')
 
-	GameTooltip:AddDoubleLine(L["XP:"], format(' %d / %d (%d%%)', cur, max, cur/max * 100), 1, 1, 1)
-	GameTooltip:AddDoubleLine(L["Remaining:"], format(' %d (%d%% - %d '..L["Bars"]..')', max - cur, (max - cur) / max * 100, 20 * (max - cur) / max), 1, 1, 1)
+	GameTooltip:AddDoubleLine(L["XP:"], format(' %d / %d (%d%%)', cur, max, E:Round(cur/max * 100)), 1, 1, 1)
+	GameTooltip:AddDoubleLine(L["Remaining:"], format(' %d (%d%% - %d '..L["Bars"]..')', max - cur, E:Round((max - cur) / max * 100), 20 * (max - cur) / max), 1, 1, 1)
 
 	if rested then
-		GameTooltip:AddDoubleLine(L["Rested:"], format('+%d (%d%%)', rested, rested / max * 100), 1, 1, 1)
+		GameTooltip:AddDoubleLine(L["Rested:"], format('+%d (%d%%)', rested, E:Round(rested / max * 100)), 1, 1, 1)
 	end
 
 	GameTooltip:Show()
 end
 
-function mod:ExperienceBar_OnClick()
-
-end
+function mod:ExperienceBar_OnClick() end
 
 function mod:UpdateExperienceDimensions()
 	self.expBar:Width(self.db.experience.width)
@@ -151,8 +149,8 @@ function mod:UpdateExperienceDimensions()
 end
 
 function mod:EnableDisable_ExperienceBar()
-	local maxLevel = MAX_PLAYER_LEVEL_TABLE[GetExpansionLevel()];
-	if (UnitLevel('player') ~= maxLevel or not self.db.experience.hideAtMaxLevel) and self.db.experience.enable then
+	local maxLevel = MAX_PLAYER_LEVEL_TABLE[GetExpansionLevel()]
+	if (E.mylevel ~= maxLevel or not self.db.experience.hideAtMaxLevel) and self.db.experience.enable then
 		self:RegisterEvent('PLAYER_XP_UPDATE', 'UpdateExperience')
 		self:RegisterEvent("DISABLE_XP_GAIN", 'UpdateExperience')
 		self:RegisterEvent("ENABLE_XP_GAIN", 'UpdateExperience')
@@ -172,7 +170,7 @@ function mod:EnableDisable_ExperienceBar()
 end
 
 function mod:LoadExperienceBar()
-	self.expBar = self:CreateBar('ElvUI_ExperienceBar', self.ExperienceBar_OnEnter, self.ExperienceBar_OnClick, 'LEFT', LeftChatPanel, 'RIGHT', -E.Border + E.Spacing*3, 0)
+	self.expBar = self:CreateBar('ElvUI_ExperienceBar', self.ExperienceBar_OnEnter, self.ExperienceBar_OnClick, 'LEFT', _G.LeftChatPanel, 'RIGHT', -E.Border + E.Spacing*3, 0)
 	self.expBar.statusBar:SetStatusBarColor(0, 0.4, 1, .8)
 	self.expBar.rested = CreateFrame('StatusBar', nil, self.expBar)
 	self.expBar.rested:SetInside()
@@ -188,6 +186,6 @@ function mod:LoadExperienceBar()
 
 	self:UpdateExperienceDimensions()
 
-	E:CreateMover(self.expBar, "ExperienceBarMover", L["Experience Bar"])
+	E:CreateMover(self.expBar, "ExperienceBarMover", L["Experience Bar"], nil, nil, nil, nil, nil, 'databars,experience')
 	self:EnableDisable_ExperienceBar()
 end

@@ -1,25 +1,49 @@
-local E, L, DF = unpack(select(2, ...))
-local B = E:GetModule('Blizzard');
+local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
+local B = E:GetModule('Blizzard')
 
---No point caching anything here, but list them here for mikk's FindGlobals script
--- GLOBALS: hooksecurefunc, VehicleSeatIndicator, MinimapCluster, _G, VehicleSeatMover
+local _G = _G
+local hooksecurefunc = hooksecurefunc
+local GetVehicleUIIndicator = GetVehicleUIIndicator
+local GetVehicleUIIndicatorSeat = GetVehicleUIIndicatorSeat
+local VehicleSeatIndicator_SetUpVehicle = VehicleSeatIndicator_SetUpVehicle
 
-function B:PositionVehicleFrame()
-	local function VehicleSeatIndicator_SetPosition(_,_, parent)
-		if (parent == "MinimapCluster") or (parent == _G["MinimapCluster"]) then
-			VehicleSeatIndicator:ClearAllPoints()
+local function VehicleSeatIndicator_SetPosition(_,_, parent)
+	if parent == "MinimapCluster" or parent == _G.MinimapCluster then
+		_G.VehicleSeatIndicator:ClearAllPoints()
+		_G.VehicleSeatIndicator:Point("TOPLEFT", _G.VehicleSeatMover, "TOPLEFT", 0, 0)
+	end
+end
 
-			if VehicleSeatMover then
-				VehicleSeatIndicator:SetPoint("TOPLEFT", VehicleSeatMover, "TOPLEFT", 0, 0)
-			else
-				VehicleSeatIndicator:SetPoint("TOPLEFT", E.UIParent, "TOPLEFT", 22, -45)
-				E:CreateMover(VehicleSeatIndicator, "VehicleSeatMover", L["Vehicle Seat Frame"])
-			end
-
-			VehicleSeatIndicator:SetScale(0.8)
+local function VehicleSetUp(vehicleID)
+	_G.VehicleSeatIndicator:Size(E.db.general.vehicleSeatIndicatorSize, E.db.general.vehicleSeatIndicatorSize)
+	local _, numSeatIndicators = GetVehicleUIIndicator(vehicleID)
+	if numSeatIndicators then
+		for i = 1, numSeatIndicators do
+			local button = _G["VehicleSeatIndicatorButton"..i]
+			button:Size(E.db.general.vehicleSeatIndicatorSize / 4, E.db.general.vehicleSeatIndicatorSize / 4)
+			local _, xOffset, yOffset = GetVehicleUIIndicatorSeat(vehicleID, i)
+			button:ClearAllPoints()
+			button:Point("CENTER", button:GetParent(), "TOPLEFT", xOffset * E.db.general.vehicleSeatIndicatorSize, -yOffset * E.db.general.vehicleSeatIndicatorSize)
 		end
 	end
-	hooksecurefunc(VehicleSeatIndicator,"SetPoint", VehicleSeatIndicator_SetPosition)
+end
 
-	VehicleSeatIndicator:Point('TOPLEFT', Minimap, 'TOPLEFT', 2, 2) -- initialize mover
+function B:UpdateVehicleFrame()
+	VehicleSeatIndicator_SetUpVehicle(_G.VehicleSeatIndicator.currSkin)
+end
+
+function B:PositionVehicleFrame()
+	local VehicleSeatIndicator = _G.VehicleSeatIndicator
+	if not VehicleSeatIndicator.PositionVehicleFrameHooked then
+		hooksecurefunc(VehicleSeatIndicator, 'SetPoint', VehicleSeatIndicator_SetPosition)
+		hooksecurefunc('VehicleSeatIndicator_SetUpVehicle', VehicleSetUp)
+		E:CreateMover(VehicleSeatIndicator, "VehicleSeatMover", L["Vehicle Seat Frame"], nil, nil, nil, nil, nil, 'general,blizzUIImprovements')
+		VehicleSeatIndicator.PositionVehicleFrameHooked = true
+	end
+
+	VehicleSeatIndicator:Size(E.db.general.vehicleSeatIndicatorSize, E.db.general.vehicleSeatIndicatorSize)
+
+    if VehicleSeatIndicator.currSkin then
+		VehicleSetUp(VehicleSeatIndicator.currSkin)
+    end
 end

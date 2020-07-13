@@ -1,31 +1,27 @@
 local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 local DT = E:GetModule('DataTexts')
 
---Cache global variables
 --Lua functions
-local format = string.format
-local tsort = table.sort
+local _G = _G
+local format, sort = format, sort
 --WoW API / Variables
-local C_GarrisonGetBuildings = C_Garrison.GetBuildings
-local C_GarrisonGetInProgressMissions = C_Garrison.GetInProgressMissions
-local C_GarrisonGetLandingPageShipmentInfo = C_Garrison.GetLandingPageShipmentInfo
-local C_GarrisonRequestLandingPageShipmentInfo = C_Garrison.RequestLandingPageShipmentInfo
-local C_Garrison_HasGarrison = C_Garrison.HasGarrison
 local GetCurrencyInfo = GetCurrencyInfo
 local GetMouseFocus = GetMouseFocus
 local HideUIPanel = HideUIPanel
 local ShowGarrisonLandingPage = ShowGarrisonLandingPage
+local C_Garrison_HasGarrison = C_Garrison.HasGarrison
+local C_GarrisonGetBuildings = C_Garrison.GetBuildings
+local C_GarrisonGetInProgressMissions = C_Garrison.GetInProgressMissions
+local C_GarrisonGetLandingPageShipmentInfo = C_Garrison.GetLandingPageShipmentInfo
+local C_GarrisonRequestLandingPageShipmentInfo = C_Garrison.RequestLandingPageShipmentInfo
 local GARRISON_LANDING_SHIPMENT_COUNT = GARRISON_LANDING_SHIPMENT_COUNT
-local COMPLETE = COMPLETE
-local LE_GARRISON_TYPE_6_0 = LE_GARRISON_TYPE_6_0
 local LE_FOLLOWER_TYPE_GARRISON_6_0 = LE_FOLLOWER_TYPE_GARRISON_6_0
 local LE_FOLLOWER_TYPE_SHIPYARD_6_2 = LE_FOLLOWER_TYPE_SHIPYARD_6_2
+local LE_GARRISON_TYPE_6_0 = LE_GARRISON_TYPE_6_0
+local InCombatLockdown = InCombatLockdown
 
---Global variables that we don't cache, list them here for mikk's FindGlobals script
--- GLOBALS: GarrisonLandingPage
-
-local GARRISON_CURRENCY = 824
 local OIL_CURRENCY = 1101
+local GARRISON_CURRENCY = 824
 local GARRISON_ICON = format("|T%s:16:16:0:0:64:64:4:60:4:60|t", select(3, GetCurrencyInfo(GARRISON_CURRENCY)))
 local OIL_ICON = format("|T%s:16:16:0:0:64:64:4:60:4:60|t", select(3, GetCurrencyInfo(OIL_CURRENCY)))
 
@@ -38,19 +34,19 @@ local function OnEnter(self, _, noUpdate)
 
 	if(not noUpdate) then
 		DT.tooltip:Hide()
-		C_GarrisonRequestLandingPageShipmentInfo();
+		C_GarrisonRequestLandingPageShipmentInfo()
 		return
 	end
 
 	--Buildings
-	local buildings = C_GarrisonGetBuildings(LE_GARRISON_TYPE_6_0);
+	local buildings = C_GarrisonGetBuildings(LE_GARRISON_TYPE_6_0)
 	local numBuildings = #buildings
 	local hasBuilding = false
 	if(numBuildings > 0) then
 		for i = 1, #buildings do
-			local buildingID = buildings[i].buildingID;
+			local buildingID = buildings[i].buildingID
 			if ( buildingID ) then
-				local name, _, _, shipmentsReady, shipmentsTotal = C_GarrisonGetLandingPageShipmentInfo(buildingID);
+				local name, _, _, shipmentsReady, shipmentsTotal = C_GarrisonGetLandingPageShipmentInfo(buildingID)
 				if ( name and shipmentsReady and shipmentsTotal ) then
 					if(hasBuilding == false) then
 						DT.tooltip:AddLine(L["Building(s) Report:"])
@@ -64,11 +60,11 @@ local function OnEnter(self, _, noUpdate)
 	end
 
 	--Missions
-	local inProgressMissions = {};
+	local inProgressMissions = {}
 	C_GarrisonGetInProgressMissions(inProgressMissions, LE_FOLLOWER_TYPE_GARRISON_6_0)
 	local numMissions = #inProgressMissions
 	if(numMissions > 0) then
-		tsort(inProgressMissions, sortFunction) --Sort by time left, lowest first
+		sort(inProgressMissions, sortFunction) --Sort by time left, lowest first
 
 		if(numBuildings > 0) then
 			DT.tooltip:AddLine(" ")
@@ -83,7 +79,7 @@ local function OnEnter(self, _, noUpdate)
 			end
 
 			if(timeLeft and timeLeft == "0") then
-				DT.tooltip:AddDoubleLine(mission.name, COMPLETE, r, g, b, 0, 1, 0)
+				DT.tooltip:AddDoubleLine(mission.name, _G.COMPLETE, r, g, b, 0, 1, 0)
 			else
 				DT.tooltip:AddDoubleLine(mission.name, mission.timeLeft, r, g, b)
 			end
@@ -91,11 +87,11 @@ local function OnEnter(self, _, noUpdate)
 	end
 
 	--Naval Missions
-	local inProgressShipMissions = {};
+	local inProgressShipMissions = {}
 	C_GarrisonGetInProgressMissions(inProgressShipMissions, LE_FOLLOWER_TYPE_SHIPYARD_6_2)
 	local numShipMissions = #inProgressShipMissions
 	if(numShipMissions > 0) then
-		tsort(inProgressShipMissions, sortFunction) --Sort by time left, lowest first
+		sort(inProgressShipMissions, sortFunction) --Sort by time left, lowest first
 
 		if(numBuildings > 0 or numMissions > 0) then
 			DT.tooltip:AddLine(" ")
@@ -110,7 +106,7 @@ local function OnEnter(self, _, noUpdate)
 			end
 
 			if(timeLeft and timeLeft == "0") then
-				DT.tooltip:AddDoubleLine(mission.name, COMPLETE, r, g, b, 0, 1, 0)
+				DT.tooltip:AddDoubleLine(mission.name, _G.COMPLETE, r, g, b, 0, 1, 0)
 			else
 				DT.tooltip:AddDoubleLine(mission.name, mission.timeLeft, r, g, b)
 			end
@@ -124,22 +120,23 @@ local function OnEnter(self, _, noUpdate)
 	end
 end
 
-
-local garrisonType = LE_GARRISON_TYPE_6_0;
+local garrisonType = LE_GARRISON_TYPE_6_0
 
 local function OnClick()
+	if InCombatLockdown() then _G.UIErrorsFrame:AddMessage(E.InfoColor.._G.ERR_NOT_IN_COMBAT) return end
 	if not (C_Garrison_HasGarrison(garrisonType)) then
-		return;
+		return
 	end
 
-	local isShown = GarrisonLandingPage and GarrisonLandingPage:IsShown();
+	local GarrisonLandingPage = _G.GarrisonLandingPage
+	local isShown = GarrisonLandingPage and GarrisonLandingPage:IsShown()
 	if (not isShown) then
-		ShowGarrisonLandingPage(garrisonType);
+		ShowGarrisonLandingPage(garrisonType)
 	elseif (GarrisonLandingPage) then
-		local currentGarrType = GarrisonLandingPage.garrTypeID;
-		HideUIPanel(GarrisonLandingPage);
+		local currentGarrType = GarrisonLandingPage.garrTypeID
+		HideUIPanel(GarrisonLandingPage)
 		if (currentGarrType ~= garrisonType) then
-			ShowGarrisonLandingPage(garrisonType);
+			ShowGarrisonLandingPage(garrisonType)
 		end
 	end
 end

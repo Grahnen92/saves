@@ -1,30 +1,25 @@
-local E, L, DF = unpack(select(2, ...))
-local B = E:GetModule('Blizzard');
+local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
+local B = E:GetModule('Blizzard')
 
---Cache global variables
 --Lua functions
-local min = math.min
+local _G = _G
+local min = min
 --WoW API / Variables
-local hooksecurefunc = hooksecurefunc
-local GetScreenWidth = GetScreenWidth
+local CreateFrame = CreateFrame
+local GetInstanceInfo = GetInstanceInfo
 local GetScreenHeight = GetScreenHeight
-
---Global variables that we don't cache, list them here for mikk's FindGlobals script
--- GLOBALS: ObjectiveTrackerFrame, ObjectiveFrameMover, ObjectiveTrackerBonusRewardsFrame
-
-local ObjectiveFrameHolder = CreateFrame("Frame", "ObjectiveFrameHolder", E.UIParent)
-ObjectiveFrameHolder:Width(130)
-ObjectiveFrameHolder:Height(22)
-ObjectiveFrameHolder:Point('TOPRIGHT', E.UIParent, 'TOPRIGHT', -135, -300)
+local GetScreenWidth = GetScreenWidth
+local hooksecurefunc = hooksecurefunc
+local RegisterStateDriver = RegisterStateDriver
 
 function B:SetObjectiveFrameHeight()
-	local top = ObjectiveTrackerFrame:GetTop() or 0
+	local top = _G.ObjectiveTrackerFrame:GetTop() or 0
 	local screenHeight = GetScreenHeight()
 	local gapFromTop = screenHeight - top
 	local maxHeight = screenHeight - gapFromTop
 	local objectiveFrameHeight = min(maxHeight, E.db.general.objectiveFrameHeight)
 
-	ObjectiveTrackerFrame:Height(objectiveFrameHeight)
+	_G.ObjectiveTrackerFrame:Height(objectiveFrameHeight)
 end
 
 local function IsFramePositionedLeft(frame)
@@ -33,14 +28,30 @@ local function IsFramePositionedLeft(frame)
 	local positionedLeft = false
 
 	if x and x < (screenWidth / 2) then
-		positionedLeft = true;
+		positionedLeft = true
 	end
 
-	return positionedLeft;
+	return positionedLeft
+end
+
+function B:SetObjectiveFrameAutoHide()
+	if not _G.ObjectiveTrackerFrame.AutoHider then return; end --Kaliel's Tracker prevents B:MoveObjectiveFrame() from executing
+	if E.db.general.objectiveFrameAutoHide then
+		RegisterStateDriver(_G.ObjectiveTrackerFrame.AutoHider, "objectiveHider", "[@arena1,exists][@arena2,exists][@arena3,exists][@arena4,exists][@arena5,exists][@boss1,exists][@boss2,exists][@boss3,exists][@boss4,exists] 1;0")
+	else
+		RegisterStateDriver(_G.ObjectiveTrackerFrame.AutoHider, "objectiveHider", "0")
+	end
 end
 
 function B:MoveObjectiveFrame()
-	E:CreateMover(ObjectiveFrameHolder, 'ObjectiveFrameMover', L["Objective Frame"])
+	local ObjectiveFrameHolder = CreateFrame("Frame", "ObjectiveFrameHolder", E.UIParent)
+	ObjectiveFrameHolder:Width(130)
+	ObjectiveFrameHolder:Height(22)
+	ObjectiveFrameHolder:Point('TOPRIGHT', E.UIParent, 'TOPRIGHT', -135, -300)
+
+	E:CreateMover(ObjectiveFrameHolder, 'ObjectiveFrameMover', L["Objective Frame"], nil, nil, nil, nil, nil, 'general,objectiveFrameGroup')
+	local ObjectiveFrameMover = _G.ObjectiveFrameMover
+	local ObjectiveTrackerFrame = _G.ObjectiveTrackerFrame
 	ObjectiveFrameHolder:SetAllPoints(ObjectiveFrameMover)
 
 	ObjectiveTrackerFrame:ClearAllPoints()
@@ -48,22 +59,44 @@ function B:MoveObjectiveFrame()
 	B:SetObjectiveFrameHeight()
 	ObjectiveTrackerFrame:SetClampedToScreen(false)
 
-	local function ObjectiveTrackerFrame_SetPosition(_,_, parent)
-		if parent ~= ObjectiveFrameHolder then
-			ObjectiveTrackerFrame:ClearAllPoints()
-			ObjectiveTrackerFrame:SetPoint('TOP', ObjectiveFrameHolder, 'TOP')
-		end
+	ObjectiveTrackerFrame:SetMovable(true)
+
+	if ObjectiveTrackerFrame:IsMovable() then
+		ObjectiveTrackerFrame:SetUserPlaced(true) -- UIParent.lua line 3090 stops it from being moved <3
 	end
-	hooksecurefunc(ObjectiveTrackerFrame,"SetPoint", ObjectiveTrackerFrame_SetPosition)
+
+	ObjectiveTrackerFrame:ClearAllPoints()
+	ObjectiveTrackerFrame:Point('TOP', ObjectiveFrameHolder, 'TOP')
+
 
 	local function RewardsFrame_SetPosition(block)
-		local rewardsFrame = ObjectiveTrackerBonusRewardsFrame;
-		rewardsFrame:ClearAllPoints();
+		local rewardsFrame = _G.ObjectiveTrackerBonusRewardsFrame
+		rewardsFrame:ClearAllPoints()
 		if E.db.general.bonusObjectivePosition == "RIGHT" or (E.db.general.bonusObjectivePosition == "AUTO" and IsFramePositionedLeft(ObjectiveTrackerFrame)) then
-			rewardsFrame:Point("TOPLEFT", block, "TOPRIGHT", -10, -4);
+			rewardsFrame:Point("TOPLEFT", block, "TOPRIGHT", -10, -4)
 		else
-			rewardsFrame:Point("TOPRIGHT", block, "TOPLEFT", 10, -4);
+			rewardsFrame:Point("TOPRIGHT", block, "TOPLEFT", 10, -4)
 		end
 	end
 	hooksecurefunc("BonusObjectiveTracker_AnimateReward", RewardsFrame_SetPosition)
+
+	ObjectiveTrackerFrame.AutoHider = CreateFrame('Frame', nil, _G.ObjectiveTrackerFrame, 'SecureHandlerStateTemplate')
+	ObjectiveTrackerFrame.AutoHider:SetAttribute("_onstate-objectiveHider", [[
+		if newstate == 1 then
+			self:Hide()
+		else
+			self:Show()
+		end
+	]])
+
+	ObjectiveTrackerFrame.AutoHider:SetScript("OnHide", function()
+		local _, _, difficultyID = GetInstanceInfo()
+		if difficultyID and difficultyID ~= 8 then
+			_G.ObjectiveTracker_Collapse()
+		end
+	end)
+
+	ObjectiveTrackerFrame.AutoHider:SetScript("OnShow", _G.ObjectiveTracker_Expand)
+
+	self:SetObjectiveFrameAutoHide()
 end

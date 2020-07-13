@@ -1,42 +1,37 @@
 local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 local S = E:GetModule('Skins')
 
---Cache global variables
 --Lua functions
 local _G = _G
 local pairs = pairs
 --WoW API / Variables
 local hooksecurefunc = hooksecurefunc
---Global variables that we don't cache, list them here for mikk's FindGlobals script
--- GLOBALS:
 
-local function LoadSkin()
-	if E.private.skins.blizzard.enable ~= true or E.private.skins.blizzard.tabard ~= true then return end
+function S:TabardFrame()
+	if not (E.private.skins.blizzard.enable and E.private.skins.blizzard.tabard) then return end
 
-	local TabardFrame = _G["TabardFrame"]
-	TabardFrame:StripTextures(true)
-	TabardFrame:SetTemplate("Transparent")
-	TabardModel:CreateBackdrop("Default")
-	S:HandleButton(TabardFrameCancelButton)
-	S:HandleButton(TabardFrameAcceptButton)
-	S:HandleCloseButton(TabardFrameCloseButton)
-	S:HandleRotateButton(TabardCharacterModelRotateLeftButton)
-	S:HandleRotateButton(TabardCharacterModelRotateRightButton)
-	TabardFrameCostFrame:StripTextures()
-	TabardFrameCustomizationFrame:StripTextures()
-	TabardFrameInset:Kill()
-	TabardFrameMoneyInset:Kill()
-	TabardFrameMoneyBg:StripTextures()
+	local TabardFrame = _G.TabardFrame
+	S:HandlePortraitFrame(TabardFrame, true)
+
+	S:HandleButton(_G.TabardFrameCancelButton)
+	S:HandleButton(_G.TabardFrameAcceptButton)
+	S:HandleRotateButton(_G.TabardCharacterModelRotateLeftButton)
+	S:HandleRotateButton(_G.TabardCharacterModelRotateRightButton)
+
+	_G.TabardModel:CreateBackdrop()
+	_G.TabardFrameCostFrame:StripTextures()
+	_G.TabardFrameCustomizationFrame:StripTextures()
+	_G.TabardFrameMoneyInset:Kill()
+	_G.TabardFrameMoneyBg:StripTextures()
 
 	--Add Tabard Emblem back
 	local emblemFrames = {
-		"TabardFrameEmblemTopRight",
-		"TabardFrameEmblemBottomRight",
-		"TabardFrameEmblemTopLeft",
-		"TabardFrameEmblemBottomLeft",
+		_G.TabardFrameEmblemTopRight,
+		_G.TabardFrameEmblemBottomRight,
+		_G.TabardFrameEmblemTopLeft,
+		_G.TabardFrameEmblemBottomLeft,
 	}
-	for _, f in pairs(emblemFrames) do
-		local frame = _G[f]
+	for _, frame in pairs(emblemFrames) do
 		frame:SetParent(TabardFrame)
 		frame.Show = nil
 		frame:Show()
@@ -57,19 +52,19 @@ local function LoadSkin()
 		end
 	end
 
-	TabardCharacterModelRotateLeftButton:Point("BOTTOMLEFT", 4, 4)
-	TabardCharacterModelRotateRightButton:Point("TOPLEFT", TabardCharacterModelRotateLeftButton, "TOPRIGHT", 4, 0)
-	hooksecurefunc(TabardCharacterModelRotateLeftButton, "SetPoint", function(self, point, _, _, xOffset, yOffset)
+	_G.TabardCharacterModelRotateLeftButton:Point("BOTTOMLEFT", 4, 4)
+	_G.TabardCharacterModelRotateRightButton:Point("TOPLEFT", _G.TabardCharacterModelRotateLeftButton, "TOPRIGHT", 4, 0)
+	hooksecurefunc(_G.TabardCharacterModelRotateLeftButton, "SetPoint", function(s, point, _, _, xOffset, yOffset)
 		if point ~= "BOTTOMLEFT" or xOffset ~= 4 or yOffset ~= 4 then
-			self:SetPoint("BOTTOMLEFT", 4, 4)
+			s:SetPoint("BOTTOMLEFT", 4, 4)
 		end
 	end)
 
-	hooksecurefunc(TabardCharacterModelRotateRightButton, "SetPoint", function(self, point, _, _, xOffset, yOffset)
+	hooksecurefunc(_G.TabardCharacterModelRotateRightButton, "SetPoint", function(s, point, _, _, xOffset, yOffset)
 		if point ~= "TOPLEFT" or xOffset ~= 4 or yOffset ~= 0 then
-			self:SetPoint("TOPLEFT", TabardCharacterModelRotateLeftButton, "TOPRIGHT", 4, 0)
+			s:SetPoint("TOPLEFT", _G.TabardCharacterModelRotateLeftButton, "TOPRIGHT", 4, 0)
 		end
 	end)
 end
 
-S:AddCallback("Tabard", LoadSkin)
+S:AddCallback('TabardFrame')

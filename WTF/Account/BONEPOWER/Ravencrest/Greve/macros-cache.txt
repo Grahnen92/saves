@@ -1,0 +1,19 @@
+VER 3 0100000000000001 "Death and Decay" "136144"
+/cast [@cursor] Death and Decay
+END
+VER 3 0100000000000004 "DeathGrip" "237532"
+#showtooltip
+/cast [@mouseover,harm,nodead][@focus,harm,nodead][@target]Death Grip
+END
+VER 3 0100000000000005 "Gorefiendsgrasp" "538767"
+#showtooltip
+/cast [@mouseover,harm,nodead][@player]Gorefiend's Grasp
+END
+VER 3 0100000000000002 "PetAttack" "132152"
+#showtooltip
+/petattack
+END
+VER 3 0100000000000003 "PetPassive" "132267"
+#showtooltip
+/petpassive
+END

@@ -1,40 +1,33 @@
 local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
-local THREAT = E:NewModule('Threat', 'AceEvent-3.0');
+local THREAT = E:GetModule('Threat')
+local DT = E:GetModule('DataTexts')
 
---Cache global variables
 --Lua functions
-local pairs, select = pairs, select
-local twipe = table.wipe
+local _G = _G
+local pairs, select, wipe = pairs, select, wipe
 --WoW API / Variables
 local CreateFrame = CreateFrame
-local UnitReaction = UnitReaction
-local UnitClass = UnitClass
-local UnitIsPlayer = UnitIsPlayer
-local IsInGroup, IsInRaid = IsInGroup, IsInRaid
-local UnitExists = UnitExists
-local UnitName = UnitName
-local UnitIsUnit = UnitIsUnit
-local UnitDetailedThreatSituation = UnitDetailedThreatSituation
 local GetThreatStatusColor = GetThreatStatusColor
-local RAID_CLASS_COLORS = RAID_CLASS_COLORS
+local IsInGroup, IsInRaid = IsInGroup, IsInRaid
+local UnitClass = UnitClass
+local UnitDetailedThreatSituation = UnitDetailedThreatSituation
+local UnitExists = UnitExists
+local UnitIsPlayer = UnitIsPlayer
+local UnitIsUnit = UnitIsUnit
+local UnitName = UnitName
+local UnitReaction = UnitReaction
 local UNKNOWN = UNKNOWN
+-- GLOBALS: ElvUF
 
---Global variables that we don't cache, list them here for mikk's FindGlobals script
--- GLOBALS: RightChatDataPanel, LeftChatDataPanel, ElvUF, UIParent
--- GLOBALS: CUSTOM_CLASS_COLORS
-
-E.Threat = THREAT
-THREAT.list = {};
-
-local DT -- used to hold the DT module when we need it
+THREAT.list = {}
 
 function THREAT:UpdatePosition()
 	if self.db.position == 'RIGHTCHAT' then
-		self.bar:SetInside(RightChatDataPanel)
-		self.bar:SetParent(RightChatDataPanel)
+		self.bar:SetInside(_G.RightChatDataPanel)
+		self.bar:SetParent(_G.RightChatDataPanel)
 	else
-		self.bar:SetInside(LeftChatDataPanel)
-		self.bar:SetParent(LeftChatDataPanel)
+		self.bar:SetInside(_G.LeftChatDataPanel)
+		self.bar:SetParent(_G.LeftChatDataPanel)
 	end
 
 	self.bar.text:FontTemplate(nil, self.db.textSize)
@@ -57,11 +50,11 @@ function THREAT:GetColor(unit)
 	local unitReaction = UnitReaction(unit, 'player')
 	local _, unitClass = UnitClass(unit)
 	if (UnitIsPlayer(unit)) then
-		local class = CUSTOM_CLASS_COLORS and CUSTOM_CLASS_COLORS[unitClass] or RAID_CLASS_COLORS[unitClass]
+		local class = E:ClassColor(unitClass)
 		if not class then return 194, 194, 194 end
 		return class.r*255, class.g*255, class.b*255
 	elseif (unitReaction) then
-		local reaction = ElvUF['colors'].reaction[unitReaction]
+		local reaction = ElvUF.colors.reaction[unitReaction]
 		return reaction[1]*255, reaction[2]*255, reaction[3]*255
 	else
 		return 194, 194, 194
@@ -85,7 +78,7 @@ function THREAT:Update()
 		if percent == 100 then
 			--Build threat list
 			if petExists then
-				self.list['pet'] = select(3, UnitDetailedThreatSituation('pet', 'target'))
+				self.list.pet = select(3, UnitDetailedThreatSituation('pet', 'target'))
 			end
 
 			if isInRaid then
@@ -107,7 +100,7 @@ function THREAT:Update()
 				local r, g, b = self:GetColor(largestUnit)
 				self.bar.text:SetFormattedText(L["ABOVE_THREAT_FORMAT"], name, percent, leadPercent, r, g, b, UnitName(largestUnit) or UNKNOWN)
 
-				if E.role == 'Tank' then
+				if E.myrole == 'TANK' then
 					self.bar:SetStatusBarColor(0, 0.839, 0)
 					self.bar:SetValue(leadPercent)
 				else
@@ -128,7 +121,7 @@ function THREAT:Update()
 		self.bar:Hide()
 	end
 
-	twipe(self.list)
+	wipe(self.list)
 end
 
 function THREAT:ToggleEnable()
@@ -148,15 +141,14 @@ function THREAT:ToggleEnable()
 end
 
 function THREAT:Initialize()
-	DT = E:GetModule('DataTexts')
-
+	self.Initialized = true
 	self.db = E.db.general.threat
 
-	self.bar = CreateFrame('StatusBar', 'ElvUI_ThreatBar', UIParent)
-	self.bar:SetStatusBarTexture(E['media'].normTex)
+	self.bar = CreateFrame('StatusBar', 'ElvUI_ThreatBar', E.UIParent)
+	self.bar:SetStatusBarTexture(E.media.normTex)
 	E:RegisterStatusBar(self.bar)
 	self.bar:SetMinMaxValues(0, 100)
-	self.bar:CreateBackdrop('Default')
+	self.bar:CreateBackdrop(nil, true)
 
 	self.bar.text = self.bar:CreateFontString(nil, 'OVERLAY')
 	self.bar.text:FontTemplate(nil, self.db.textSize, self.db.textOutline)
@@ -166,8 +158,4 @@ function THREAT:Initialize()
 	self:ToggleEnable()
 end
 
-local function InitializeCallback()
-	THREAT:Initialize()
-end
-
-E:RegisterModule(THREAT:GetName(), InitializeCallback)
+E:RegisterModule(THREAT:GetName())

@@ -1,40 +1,57 @@
 local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 local S = E:GetModule('Skins')
 
---Cache global variables
 --Lua functions
+local _G = _G
+local select = select
 
---WoW API / Variables
+function S:Blizzard_AlliedRacesUI()
+	if not (E.private.skins.blizzard.enable and E.private.skins.blizzard.AlliedRaces) then return end
 
---Global variables that we don't cache, list them here for mikk's FindGlobals script
--- GLOBALS:
+	local AlliedRacesFrame = _G.AlliedRacesFrame
+	if E.private.skins.parchmentRemover.enable then
+		S:HandlePortraitFrame(AlliedRacesFrame, true)
+		select(2, AlliedRacesFrame.ModelFrame:GetRegions()):Hide()
 
-local function LoadSkin()
-	if E.private.skins.blizzard.enable ~= true or E.private.skins.blizzard.AlliedRaces ~= true then return end
+		local scrollFrame = AlliedRacesFrame.RaceInfoFrame.ScrollFrame
+		scrollFrame.ScrollBar.Border:Hide()
+		scrollFrame.ScrollBar.ScrollUpBorder:Hide()
+		scrollFrame.ScrollBar.ScrollDownBorder:Hide()
+		S:HandleScrollBar(scrollFrame.ScrollBar)
 
-	-- AlliedRacesFrame:StripTextures() -- this will hide almost everything, not cool
-	AlliedRacesFrame:CreateBackdrop("Transparent")
-	AlliedRacesFrameBg:Hide()
-	AlliedRacesFramePortrait:Hide()
-	AlliedRacesFramePortraitFrame:Hide()
-	AlliedRacesFrameTitleBg:Hide()
-	AlliedRacesFrameTopBorder:Hide()
-	AlliedRacesFrameTopRightCorner:Hide()
-	AlliedRacesFrameRightBorder:Hide()
-	AlliedRacesFrameBotRightCorner:Hide()
-	AlliedRacesFrameBotLeftCorner:Hide()
-	AlliedRacesFrameBtnCornerRight:Hide()
-	AlliedRacesFrameBtnCornerLeft:Hide()
-	AlliedRacesFrameButtonBottomBorder:Hide()
-	AlliedRacesFrameBottomBorder:Hide()
-	AlliedRacesFrameLeftBorder:Hide()
-	AlliedRacesFrame.RaceInfoFrame.ScrollFrame.ScrollBar.Border:Hide()
-	AlliedRacesFrame.RaceInfoFrame.ScrollFrame.ScrollBar.ScrollUpBorder:Hide()
-	AlliedRacesFrame.RaceInfoFrame.ScrollFrame.ScrollBar.ScrollDownBorder:Hide()
-	AlliedRacesFrame.ModelFrame:StripTextures()
+		scrollFrame.Child.ObjectivesFrame:StripTextures()
+		scrollFrame.Child.ObjectivesFrame:CreateBackdrop("Transparent")
 
-	S:HandleCloseButton(AlliedRacesFrameCloseButton)
-	S:HandleScrollBar(AlliedRacesFrame.RaceInfoFrame.ScrollFrame.ScrollBar)
+		AlliedRacesFrame.RaceInfoFrame.AlliedRacesRaceName:SetTextColor(1, .8, 0)
+		scrollFrame.Child.RaceDescriptionText:SetTextColor(1, 1, 1)
+		scrollFrame.Child.RacialTraitsLabel:SetTextColor(1, .8, 0)
+	else
+		AlliedRacesFrame.NineSlice:SetAlpha(0)
+		_G.AlliedRacesFramePortrait:SetAlpha(0)
+		_G.AlliedRacesFrameBg:SetAlpha(0)
+		AlliedRacesFrame.TitleBg:SetAlpha(0)
+		AlliedRacesFrame.ModelFrame:StripTextures()
+
+		AlliedRacesFrame:CreateBackdrop("Transparent")
+
+		local scrollFrame = AlliedRacesFrame.RaceInfoFrame.ScrollFrame
+		scrollFrame.ScrollBar.Border:Hide()
+		scrollFrame.ScrollBar.ScrollUpBorder:Hide()
+		scrollFrame.ScrollBar.ScrollDownBorder:Hide()
+		S:HandleScrollBar(scrollFrame.ScrollBar)
+
+		S:HandleCloseButton(_G.AlliedRacesFrameCloseButton)
+	end
+
+	AlliedRacesFrame:HookScript("OnShow", function(s)
+		for button in s.abilityPool:EnumerateActive() do
+			select(3, button:GetRegions()):Hide()
+			S:HandleIcon(button.Icon, true)
+			if E.private.skins.parchmentRemover.enable then
+				button.Text:SetTextColor(1, 1, 1)
+			end
+		end
+	end)
 end
 
-S:AddCallbackForAddon("Blizzard_AlliedRacesUI", "AlliedRaces", LoadSkin)
+S:AddCallbackForAddon('Blizzard_AlliedRacesUI')

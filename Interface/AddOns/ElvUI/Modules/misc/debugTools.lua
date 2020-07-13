@@ -1,43 +1,43 @@
 local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
-local D = E:NewModule('DebugTools', 'AceEvent-3.0', 'AceHook-3.0');
-E.DebugTools = D
+local D = E:GetModule('DebugTools')
 
---Cache global variables
 --WoW API / Variables
+local _G = _G
 local hooksecurefunc = hooksecurefunc
 local CreateFrame = CreateFrame
 local InCombatLockdown = InCombatLockdown
 local GetCVarBool = GetCVarBool
 local StaticPopup_Hide = StaticPopup_Hide
 
---Global variables that we don't cache, list them here for mikk's FindGlobals script
--- GLOBALS: ScriptErrorsFrame
--- GLOBALS: UIParent, IsAddOnLoaded, LoadAddOn
+local function UnHighlightText(self)
+	self:HighlightText(0, 0)
+end
+
+local function ScriptErrors_UnHighlightText()
+	_G.ScriptErrorsFrame.ScrollFrame.Text:HighlightText(0, 0)
+end
 
 function D:ModifyErrorFrame()
+	local ScriptErrorsFrame = _G.ScriptErrorsFrame
 	ScriptErrorsFrame.ScrollFrame.Text.cursorOffset = 0
 	ScriptErrorsFrame.ScrollFrame.Text.cursorHeight = 0
 	ScriptErrorsFrame.ScrollFrame.Text:SetScript("OnEditFocusGained", nil)
 
-	local function ScriptErrors_UnHighlightText()
-		ScriptErrorsFrame.ScrollFrame.Text:HighlightText(0, 0)
-	end
 	hooksecurefunc(ScriptErrorsFrame, 'Update', ScriptErrors_UnHighlightText)
 
 	-- Unhighlight text when focus is hit
-	local function UnHighlightText(self) self:HighlightText(0, 0) end
 	ScriptErrorsFrame.ScrollFrame.Text:HookScript("OnEscapePressed", UnHighlightText)
 
-	ScriptErrorsFrame:SetSize(500, 300)
-	ScriptErrorsFrame.ScrollFrame:SetSize(ScriptErrorsFrame:GetWidth() - 45, ScriptErrorsFrame:GetHeight() - 71)
+	ScriptErrorsFrame:Size(500, 300)
+	ScriptErrorsFrame.ScrollFrame:Size(ScriptErrorsFrame:GetWidth() - 45, ScriptErrorsFrame:GetHeight() - 71)
 
 	local BUTTON_WIDTH = 75
-	local BUTTON_HEIGHT = 24
+	local BUTTON_HEIGHT = 23
 	local BUTTON_SPACING = 2
 
 	-- Add a first button
 	local firstButton = CreateFrame("Button", nil, ScriptErrorsFrame, "UIPanelButtonTemplate")
-	firstButton:Point("BOTTOMRIGHT", ScriptErrorsFrame.PreviousError, "BOTTOMLEFT", -BUTTON_SPACING, 0)
+	firstButton:Point("BOTTOMLEFT", ScriptErrorsFrame.Reload, "BOTTOMRIGHT", BUTTON_SPACING, 0)
 	firstButton:SetText("First")
 	firstButton:Height(BUTTON_HEIGHT)
 	firstButton:Width(BUTTON_WIDTH)
@@ -49,7 +49,7 @@ function D:ModifyErrorFrame()
 
 	-- Also add a Last button for errors
 	local lastButton = CreateFrame("Button", nil, ScriptErrorsFrame, "UIPanelButtonTemplate")
-	lastButton:Point("BOTTOMLEFT", ScriptErrorsFrame.NextError, "BOTTOMRIGHT", BUTTON_SPACING, 0)
+	lastButton:Point("BOTTOMRIGHT", ScriptErrorsFrame.Close, "BOTTOMLEFT", -BUTTON_SPACING, 0)
 	lastButton:Height(BUTTON_HEIGHT)
 	lastButton:Width(BUTTON_WIDTH)
 	lastButton:SetText("Last")
@@ -64,6 +64,7 @@ function D:ModifyErrorFrame()
 end
 
 function D:ScriptErrorsFrame_UpdateButtons()
+	local ScriptErrorsFrame = _G.ScriptErrorsFrame
 	if not ScriptErrorsFrame.firstButton then return end
 
 	local numErrors = #ScriptErrorsFrame.order;
@@ -90,17 +91,17 @@ function D:ScriptErrorsFrame_OnError(_, _, keepHidden)
 end
 
 function D:PLAYER_REGEN_ENABLED()
-	ScriptErrorsFrame:SetParent(UIParent)
+	_G.ScriptErrorsFrame:SetParent(_G.UIParent)
 	D.MessagePrinted = nil;
 end
 
 function D:PLAYER_REGEN_DISABLED()
-	ScriptErrorsFrame:SetParent(self.HideFrame)
+	_G.ScriptErrorsFrame:SetParent(self.HideFrame)
 end
 
 function D:TaintError(event, addonName, addonFunc)
 	if GetCVarBool('scriptErrors') ~= true or E.db.general.taintLog ~= true then return end
-	ScriptErrorsFrame:OnError(L["%s: %s tried to call the protected function '%s'."]:format(event, addonName or "<name>", addonFunc or "<func>"), false, false)
+	_G.ScriptErrorsFrame:OnError(L["%s: %s tried to call the protected function '%s'."]:format(event, addonName or "<name>", addonFunc or "<func>"), false, false)
 end
 
 function D:StaticPopup_Show(name)
@@ -110,9 +111,11 @@ function D:StaticPopup_Show(name)
 end
 
 function D:Initialize()
+	self.Initialized = true
 	self.HideFrame = CreateFrame('Frame')
 	self.HideFrame:Hide()
 
+	local ScriptErrorsFrame = _G.ScriptErrorsFrame
 	self:SecureHookScript(ScriptErrorsFrame, 'OnShow', D.ModifyErrorFrame)
 	self:SecureHook(ScriptErrorsFrame, 'UpdateButtons', D.ScriptErrorsFrame_UpdateButtons)
 	self:SecureHook(ScriptErrorsFrame, 'OnError', D.ScriptErrorsFrame_OnError)
@@ -123,8 +126,4 @@ function D:Initialize()
 	self:RegisterEvent("ADDON_ACTION_FORBIDDEN", "TaintError")
 end
 
-local function InitializeCallback()
-	D:Initialize()
-end
-
-E:RegisterModule(D:GetName(), InitializeCallback)
+E:RegisterModule(D:GetName())

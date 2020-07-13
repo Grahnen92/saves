@@ -2,6 +2,7 @@
 ElvCharacterDB = {
 	["ChatEditHistory"] = {
 		"/i you got it boss", -- [1]
+		"/reload", -- [2]
 	},
 	["ChatHistoryLog"] = {
 		{

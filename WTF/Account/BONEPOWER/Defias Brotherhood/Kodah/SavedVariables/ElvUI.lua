@@ -1,292 +1,28 @@
 
 ElvCharacterDB = {
 	["ChatEditHistory"] = {
-		"/i yeah", -- [1]
-		"/i did it based on the number of s", -- [2]
-		"/i debuff stacks", -- [3]
-		"/i Do I enter the portal?", -- [4]
-		"/i I did mention that this is my first time :p", -- [5]
-		"/i When do I taunt the boss and when do I enter portals?", -- [6]
-		"/cw Rocksteády-Trollbane ok", -- [7]
-		"/i ok rock will tell me when to taunt", -- [8]
-		"/i when do I enter portals", -- [9]
-		"/i ?", -- [10]
-		"/i ok", -- [11]
-		"/i any combat resses up?", -- [12]
-		"/cw Rocksteády-Trollbane cd", -- [13]
-		"/i rebirth was on cd :/", -- [14]
-		"/cw Rocksteády-Trollbane yeah", -- [15]
-		"/cw Rocksteády-Trollbane Got it!", -- [16]
-		"/cw Rocksteády-Trollbane Thanks for the help man :)", -- [17]
-		"/raid can someone ress? :)", -- [18]
-		"/cw Dreistx-Kel'Thuzad yo", -- [19]
-		"/cw Dreistx-Kel'Thuzad need me for ana-mouz?", -- [20]
+		"/i did it based on the number of s", -- [1]
+		"/i debuff stacks", -- [2]
+		"/i Do I enter the portal?", -- [3]
+		"/i I did mention that this is my first time :p", -- [4]
+		"/i When do I taunt the boss and when do I enter portals?", -- [5]
+		"/cw Rocksteády-Trollbane ok", -- [6]
+		"/i ok rock will tell me when to taunt", -- [7]
+		"/i when do I enter portals", -- [8]
+		"/i ?", -- [9]
+		"/i ok", -- [10]
+		"/i any combat resses up?", -- [11]
+		"/cw Rocksteády-Trollbane cd", -- [12]
+		"/i rebirth was on cd :/", -- [13]
+		"/cw Rocksteády-Trollbane yeah", -- [14]
+		"/cw Rocksteády-Trollbane Got it!", -- [15]
+		"/cw Rocksteády-Trollbane Thanks for the help man :)", -- [16]
+		"/raid can someone ress? :)", -- [17]
+		"/cw Dreistx-Kel'Thuzad yo", -- [18]
+		"/cw Dreistx-Kel'Thuzad need me for ana-mouz?", -- [19]
+		"/dance", -- [20]
 	},
 	["ChatHistoryLog"] = {
-		{
-			"dont go there", -- [1]
-			"Plastik-TwistingNether", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Plastik-TwistingNether", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1138, -- [11]
-			"Player-3674-059BBB66", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff48cbaPlastik-TwistingNether|r",
-			[51] = 1514624640,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [1]
-		{
-			"Dudes get back", -- [1]
-			"Rocksteády-Trollbane", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Rocksteády-Trollbane", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1139, -- [11]
-			"Player-1598-065CC0C4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aRocksteády-Trollbane|r",
-			[51] = 1514624648,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [2]
-		{
-			"....", -- [1]
-			"Plastik-TwistingNether", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Plastik-TwistingNether", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1142, -- [11]
-			"Player-3674-059BBB66", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff48cbaPlastik-TwistingNether|r",
-			[51] = 1514624655,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [3]
-		{
-			"taunt", -- [1]
-			"Rocksteády-Trollbane", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Rocksteády-Trollbane", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1151, -- [11]
-			"Player-1598-065CC0C4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aRocksteády-Trollbane|r",
-			[51] = 1514624701,
-			[50] = "CHAT_MSG_WHISPER",
-		}, -- [4]
-		{
-			"taunt", -- [1]
-			"Rocksteády-Trollbane", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Rocksteády-Trollbane", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1159, -- [11]
-			"Player-1598-065CC0C4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aRocksteády-Trollbane|r",
-			[51] = 1514624752,
-			[50] = "CHAT_MSG_WHISPER",
-		}, -- [5]
-		{
-			"taunt", -- [1]
-			"Rocksteády-Trollbane", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Rocksteády-Trollbane", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1166, -- [11]
-			"Player-1598-065CC0C4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aRocksteády-Trollbane|r",
-			[51] = 1514624824,
-			[50] = "CHAT_MSG_WHISPER",
-		}, -- [6]
-		{
-			"taunt", -- [1]
-			"Rocksteády-Trollbane", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Rocksteády-Trollbane", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1168, -- [11]
-			"Player-1598-065CC0C4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aRocksteády-Trollbane|r",
-			[51] = 1514624860,
-			[50] = "CHAT_MSG_WHISPER",
-		}, -- [7]
-		{
-			"taunt", -- [1]
-			"Rocksteády-Trollbane", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Rocksteády-Trollbane", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1172, -- [11]
-			"Player-1598-065CC0C4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aRocksteády-Trollbane|r",
-			[51] = 1514624936,
-			[50] = "CHAT_MSG_WHISPER",
-		}, -- [8]
-		{
-			"GZ", -- [1]
-			"Namfas-Sanguino", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Namfas-Sanguino", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1186, -- [11]
-			"Player-1379-085DD5E3", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffNamfas-Sanguino|r",
-			[51] = 1514624995,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [9]
-		{
-			"need the relic?", -- [1]
-			"Namfas-Sanguino", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Namfas-Sanguino", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1197, -- [11]
-			"Player-1379-085DD5E3", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffNamfas-Sanguino|r",
-			[51] = 1514625015,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [10]
-		{
-			"or the cae? xD", -- [1]
-			"Namfas-Sanguino", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Namfas-Sanguino", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1202, -- [11]
-			"Player-1379-085DD5E3", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffNamfas-Sanguino|r",
-			[51] = 1514625024,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [11]
-		{
-			"|cffa335ee|Hitem:152139::::::::110:63::4:3:3613:1457:3528:::|h[Runebound Leggings]|h|rroll", -- [1]
-			"Bibelrawr-DefiasBrotherhood", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Bibelrawr", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1204, -- [11]
-			"Player-1096-07D2779A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaBibelrawr|r",
-			[51] = 1514625025,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [12]
 		{
 			"cape*", -- [1]
 			"Namfas-Sanguino", -- [2]
@@ -308,7 +44,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffNamfas-Sanguino|r",
 			[51] = 1514625026,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [13]
+		}, -- [1]
 		{
 			"ty!", -- [1]
 			"Namfas-Sanguino", -- [2]
@@ -330,7 +66,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffNamfas-Sanguino|r",
 			[51] = 1514625040,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [14]
+		}, -- [2]
 		{
 			"can someone ress? :)", -- [1]
 			"Kodah-DefiasBrotherhood", -- [2]
@@ -352,7 +88,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aKodah|r",
 			[51] = 1514636237,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [15]
+		}, -- [3]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:10059:Player-1096-07DDC89F:1:1:1:18:4294967295:4294967295:4294967295:4294967295|h[Ain't No Mountain High Enough]|h|r!", -- [1]
 			"Loqutus-DefiasBrotherhood", -- [2]
@@ -374,7 +110,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddLoqutus|r",
 			[51] = 1514838432,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [16]
+		}, -- [4]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:6458:Player-1096-07E24C4E:1:1:1:18:4294967295:4294967295:4294967295:4294967295|h[Guardians of Mogu'shan]|h|r!", -- [1]
 			"Sawada", -- [2]
@@ -396,7 +132,7 @@ ElvCharacterDB = {
 			[52] = "|cfffff468Sawada|r",
 			[51] = 1514838434,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [17]
+		}, -- [5]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:1177:Player-1096-07E24C4E:1:1:1:18:4294967295:4294967295:4294967295:4294967295|h[Got My Mind On My Money]|h|r!", -- [1]
 			"Sawada-DefiasBrotherhood", -- [2]
@@ -418,7 +154,7 @@ ElvCharacterDB = {
 			[52] = "|cfffff468Sawada|r",
 			[51] = 1514838435,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [18]
+		}, -- [6]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:1176:Player-1096-07E28F4C:1:1:1:18:4294967295:4294967295:4294967295:4294967295|h[Got My Mind On My Money]|h|r!", -- [1]
 			"Kusht-DefiasBrotherhood", -- [2]
@@ -440,7 +176,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaKusht|r",
 			[51] = 1514838668,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [19]
+		}, -- [7]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:10780:Player-1096-07623C33:1:1:1:18:4294967295:4294967295:4294967295:4294967295|h[Eye of Azshara]|h|r!", -- [1]
 			"Holydoc-DefiasBrotherhood", -- [2]
@@ -462,7 +198,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffHolydoc|r",
 			[51] = 1514838740,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [20]
+		}, -- [8]
 		{
 			"hi", -- [1]
 			"Garôu-Minahonda", -- [2]
@@ -484,7 +220,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dGarôu-Minahonda|r",
 			[51] = 1514838743,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [21]
+		}, -- [9]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:481:Player-1096-07DE4867:1:1:1:18:4294967295:4294967295:4294967295:4294967295|h[Ahn'kahet: The Old Kingdom]|h|r!", -- [1]
 			"Belgarion-DefiasBrotherhood", -- [2]
@@ -506,7 +242,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaBelgarion|r",
 			[51] = 1514838773,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [22]
+		}, -- [10]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:10411:Player-1096-07BC35CC:1:1:1:18:4294967295:4294967295:4294967295:4294967295|h[Helheim Hath No Fury]|h|r!", -- [1]
 			"Elysanne-DefiasBrotherhood", -- [2]
@@ -528,7 +264,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Elysanne|r",
 			[51] = 1514838815,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [23]
+		}, -- [11]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:10411:Player-1096-07D84293:1:1:1:18:4294967295:4294967295:4294967295:4294967295|h[Helheim Hath No Fury]|h|r!", -- [1]
 			"Paczeek-DefiasBrotherhood", -- [2]
@@ -550,7 +286,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aPaczeek|r",
 			[51] = 1514838815,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [24]
+		}, -- [12]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:732:Player-1096-07E2C18E:1:1:1:18:4294967295:4294967295:4294967295:4294967295|h[Professional Artisan]|h|r!", -- [1]
 			"Czoperdelta", -- [2]
@@ -572,7 +308,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dCzoperdelta|r",
 			[51] = 1514838856,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [25]
+		}, -- [13]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:1252:Player-1096-07DAEEC4:1:1:1:18:4294967295:4294967295:4294967295:4294967295|h[Supreme Defender]|h|r!", -- [1]
 			"Newreaper-DefiasBrotherhood", -- [2]
@@ -594,7 +330,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dNewreaper|r",
 			[51] = 1514838971,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [26]
+		}, -- [14]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:6757:Player-1096-07DE5937:1:1:1:18:4294967295:4294967295:4294967295:4294967295|h[Temple of the Jade Serpent]|h|r!", -- [1]
 			"Madhoof", -- [2]
@@ -616,7 +352,7 @@ ElvCharacterDB = {
 			[52] = "|cfffff468Madhoof|r",
 			[51] = 1514839152,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [27]
+		}, -- [15]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:632:Player-1096-07E3C31E:1:1:1:18:4294967295:4294967295:4294967295:4294967295|h[Blackfathom Deeps]|h|r!", -- [1]
 			"Knokkelkop-Sporeggar", -- [2]
@@ -638,7 +374,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edKnokkelkop-Sporeggar|r",
 			[51] = 1514839183,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [28]
+		}, -- [16]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:10809:Player-1096-07BC35CC:1:1:1:18:4294967295:4294967295:4294967295:4294967295|h[Mythic: Maw of Souls]|h|r!", -- [1]
 			"Elysanne-DefiasBrotherhood", -- [2]
@@ -660,7 +396,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Elysanne|r",
 			[51] = 1514839200,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [29]
+		}, -- [17]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:10809:Player-1096-07D84293:1:1:1:18:4294967295:4294967295:4294967295:4294967295|h[Mythic: Maw of Souls]|h|r!", -- [1]
 			"Paczeek-DefiasBrotherhood", -- [2]
@@ -682,7 +418,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aPaczeek|r",
 			[51] = 1514839200,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [30]
+		}, -- [18]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:642:Player-1096-0721AB3D:1:1:1:18:4294967295:4294967295:4294967295:4294967295|h[Blackrock Depths]|h|r!", -- [1]
 			"Fizzelstick-DefiasBrotherhood", -- [2]
@@ -704,7 +440,7 @@ ElvCharacterDB = {
 			[52] = "|cfffff468Fizzelstick|r",
 			[51] = 1514839204,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [31]
+		}, -- [19]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:12102:Player-1096-07DE49F7:1:1:1:18:4294967295:4294967295:4294967295:4294967295|h[To Kill Demons...]|h|r!", -- [1]
 			"Harofax-DefiasBrotherhood", -- [2]
@@ -726,7 +462,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aHarofax|r",
 			[51] = 1514839208,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [32]
+		}, -- [20]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:9130:Player-1096-07E2F71B:1:1:1:18:4294967295:4294967295:4294967295:4294967295|h[A Rare Friend]|h|r!", -- [1]
 			"Pumbabom-DefiasBrotherhood", -- [2]
@@ -748,7 +484,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dPumbabom|r",
 			[51] = 1514839275,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [33]
+		}, -- [21]
 		{
 			"NEED THAT?", -- [1]
 			"Gabypaladin-ChamberofAspects", -- [2]
@@ -770,7 +506,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaGabypaladin-ChamberofAspects|r",
 			[51] = 1514839328,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [34]
+		}, -- [22]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:10813:Player-1096-06F09340:1:1:1:18:4294967295:4294967295:4294967295:4294967295|h[Mythic: The Arcway]|h|r!", -- [1]
 			"Engrod-DefiasBrotherhood", -- [2]
@@ -792,7 +528,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dEngrod|r",
 			[51] = 1514839340,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [35]
+		}, -- [23]
 		{
 			"?", -- [1]
 			"Gabypaladin-ChamberofAspects", -- [2]
@@ -814,7 +550,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaGabypaladin-ChamberofAspects|r",
 			[51] = 1514839355,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [36]
+		}, -- [24]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:12066:Player-1096-05E9F9D9:1:1:1:18:4294967295:4294967295:4294967295:4294967295|h[You Are Now Prepared!]|h|r!", -- [1]
 			"Barsade-DefiasBrotherhood", -- [2]
@@ -836,7 +572,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dBarsade|r",
 			[51] = 1514839361,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [37]
+		}, -- [25]
 		{
 			"back", -- [1]
 			"Kungfulady-TheVentureCo", -- [2]
@@ -858,7 +594,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Kungfulady|r",
 			[51] = 1514839361,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [38]
+		}, -- [26]
 		{
 			"NO", -- [1]
 			"Garôu-Minahonda", -- [2]
@@ -880,7 +616,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dGarôu-Minahonda|r",
 			[51] = 1514839367,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [39]
+		}, -- [27]
 		{
 			"wb", -- [1]
 			"Diggsy-DefiasBrotherhood", -- [2]
@@ -902,7 +638,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Diggsy|r",
 			[51] = 1514839388,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [40]
+		}, -- [28]
 		{
 			"hi", -- [1]
 			"Kungfulady-TheVentureCo", -- [2]
@@ -924,7 +660,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Kungfulady|r",
 			[51] = 1514839509,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [41]
+		}, -- [29]
 		{
 			"hi, thanks for the invite", -- [1]
 			"Lulletje", -- [2]
@@ -946,7 +682,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Lulletje|r",
 			[51] = 1514839517,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [42]
+		}, -- [30]
 		{
 			"there's still 750g to be made from a weekly guild keystone, i could tank like a +2", -- [1]
 			"Engrod-DefiasBrotherhood", -- [2]
@@ -968,7 +704,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dEngrod|r",
 			[51] = 1514839522,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [43]
+		}, -- [31]
 		{
 			"hello ", -- [1]
 			"Diggsy-DefiasBrotherhood", -- [2]
@@ -990,7 +726,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Diggsy|r",
 			[51] = 1514839523,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [44]
+		}, -- [32]
 		{
 			"hi all", -- [1]
 			"Engrod-DefiasBrotherhood", -- [2]
@@ -1012,7 +748,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dEngrod|r",
 			[51] = 1514839527,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [45]
+		}, -- [33]
 		{
 			"welcome", -- [1]
 			"Kungfulady-TheVentureCo", -- [2]
@@ -1034,7 +770,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Kungfulady|r",
 			[51] = 1514839532,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [46]
+		}, -- [34]
 		{
 			"Greetings, thank you for the invite.", -- [1]
 			"Emmalee", -- [2]
@@ -1056,7 +792,7 @@ ElvCharacterDB = {
 			[52] = "|cfffff468Emmalee|r",
 			[51] = 1514839549,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [47]
+		}, -- [35]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:12072:Player-1096-05E9F9D9:1:1:1:18:4294967295:4294967295:4294967295:4294967295|h[Now You're Cooking with Netherlight]|h|r!", -- [1]
 			"Barsade-DefiasBrotherhood", -- [2]
@@ -1078,7 +814,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dBarsade|r",
 			[51] = 1514839553,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [48]
+		}, -- [36]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:630:Player-1096-07E38D21:1:1:1:18:4294967295:4294967295:4294967295:4294967295|h[Wailing Caverns]|h|r!", -- [1]
 			"Lulletje-DefiasBrotherhood", -- [2]
@@ -1100,7 +836,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Lulletje|r",
 			[51] = 1514839559,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [49]
+		}, -- [37]
 		{
 			"welcome to guild", -- [1]
 			"Kungfulady-TheVentureCo", -- [2]
@@ -1122,7 +858,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Kungfulady|r",
 			[51] = 1514839609,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [50]
+		}, -- [38]
 		{
 			"welcome", -- [1]
 			"Polly-TheVentureCo", -- [2]
@@ -1144,7 +880,7 @@ ElvCharacterDB = {
 			[52] = "|cfffff468Polly|r",
 			[51] = 1514839615,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [51]
+		}, -- [39]
 		{
 			"shall we do a guild thing", -- [1]
 			"Kungfulady-TheVentureCo", -- [2]
@@ -1166,7 +902,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Kungfulady|r",
 			[51] = 1514839631,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [52]
+		}, -- [40]
 		{
 			"yes!", -- [1]
 			"Diggsy-DefiasBrotherhood", -- [2]
@@ -1188,7 +924,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Diggsy|r",
 			[51] = 1514839635,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [53]
+		}, -- [41]
 		{
 			":O", -- [1]
 			"Polly-TheVentureCo", -- [2]
@@ -1210,7 +946,7 @@ ElvCharacterDB = {
 			[52] = "|cfffff468Polly|r",
 			[51] = 1514839642,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [54]
+		}, -- [42]
 		{
 			"what", -- [1]
 			"Kungfulady-TheVentureCo", -- [2]
@@ -1232,7 +968,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Kungfulady|r",
 			[51] = 1514839645,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [55]
+		}, -- [43]
 		{
 			"dunno what but yes", -- [1]
 			"Diggsy-DefiasBrotherhood", -- [2]
@@ -1254,7 +990,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Diggsy|r",
 			[51] = 1514839646,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [56]
+		}, -- [44]
 		{
 			"But the interesting thing is - tokens, so are legendaries are 101 level.", -- [1]
 			"Kachiba-TheVentureCo", -- [2]
@@ -1276,7 +1012,7 @@ ElvCharacterDB = {
 			[52] = "|cfffff468Kachiba|r",
 			[51] = 1515342043,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [57]
+		}, -- [45]
 		{
 			"So you can give them to twink :D", -- [1]
 			"Kachiba-TheVentureCo", -- [2]
@@ -1298,7 +1034,7 @@ ElvCharacterDB = {
 			[52] = "|cfffff468Kachiba|r",
 			[51] = 1515342048,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [58]
+		}, -- [46]
 		{
 			"oh i see", -- [1]
 			"Vaelanen-DefiasBrotherhood", -- [2]
@@ -1320,7 +1056,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaVaelanen|r",
 			[51] = 1515342064,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [59]
+		}, -- [47]
 		{
 			"people dont twink anymore do they?", -- [1]
 			"Demonlady-TheVentureCo", -- [2]
@@ -1342,7 +1078,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Demonlady|r",
 			[51] = 1515342072,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [60]
+		}, -- [48]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:1308:Player-1096-07DF99F0:1:1:7:18:4294967295:4294967295:4294967295:4294967295|h[Strand of the Ancients Victory]|h|r!", -- [1]
 			"Vaelanen-DefiasBrotherhood", -- [2]
@@ -1364,7 +1100,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaVaelanen|r",
 			[51] = 1515342077,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [61]
+		}, -- [49]
 		{
 			"some do. As far as I know they boost people through dungeons for gold.", -- [1]
 			"Kachiba-TheVentureCo", -- [2]
@@ -1386,7 +1122,7 @@ ElvCharacterDB = {
 			[52] = "|cfffff468Kachiba|r",
 			[51] = 1515342102,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [62]
+		}, -- [50]
 		{
 			"sounds real boring", -- [1]
 			"Vaelanen-DefiasBrotherhood", -- [2]
@@ -1408,7 +1144,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaVaelanen|r",
 			[51] = 1515342115,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [63]
+		}, -- [51]
 		{
 			"oh ok", -- [1]
 			"Demonlady-TheVentureCo", -- [2]
@@ -1430,7 +1166,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Demonlady|r",
 			[51] = 1515342116,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [64]
+		}, -- [52]
 		{
 			"heh", -- [1]
 			"Vaelanen-DefiasBrotherhood", -- [2]
@@ -1452,7 +1188,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaVaelanen|r",
 			[51] = 1515342119,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [65]
+		}, -- [53]
 		{
 			"a proper 101 level DH twink does way more damage than any 110", -- [1]
 			"Kachiba-TheVentureCo", -- [2]
@@ -1474,7 +1210,7 @@ ElvCharacterDB = {
 			[52] = "|cfffff468Kachiba|r",
 			[51] = 1515342127,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [66]
+		}, -- [54]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:889:Player-1096-07E03CEB:1:1:7:18:4294967295:4294967295:4294967295:4294967295|h[Fast and Furious]|h|r!", -- [1]
 			"Zhinnie-DefiasBrotherhood", -- [2]
@@ -1496,7 +1232,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Zhinnie|r",
 			[51] = 1515342148,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [67]
+		}, -- [55]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:10561:Player-1096-07E50012:1:1:7:18:4294967295:4294967295:4294967295:4294967295|h[Honorable Medallion]|h|r!", -- [1]
 			"Hexarth-DefiasBrotherhood", -- [2]
@@ -1518,7 +1254,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aHexarth|r",
 			[51] = 1515342196,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [68]
+		}, -- [56]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:639:Player-1096-07E3A0FE:1:1:7:18:4294967295:4294967295:4294967295:4294967295|h[Zul'Farrak]|h|r!", -- [1]
 			"Lyssia-Sporeggar", -- [2]
@@ -1540,7 +1276,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffLyssia-Sporeggar|r",
 			[51] = 1515342206,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [69]
+		}, -- [57]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:238:Player-1096-07E50012:1:1:7:18:4294967295:4294967295:4294967295:4294967295|h[An Honorable Kill]|h|r!", -- [1]
 			"Hexarth-DefiasBrotherhood", -- [2]
@@ -1562,7 +1298,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aHexarth|r",
 			[51] = 1515342372,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [70]
+		}, -- [58]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:652:Player-1096-07E22F6E:1:1:7:18:4294967295:4294967295:4294967295:4294967295|h[The Escape From Durnholde]|h|r!", -- [1]
 			"Bonefish-DefiasBrotherhood", -- [2]
@@ -1584,7 +1320,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffBonefish|r",
 			[51] = 1515342436,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [71]
+		}, -- [59]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:1795:Player-1096-07E3A0FE:1:1:7:18:4294967295:4294967295:4294967295:4294967295|h[Lunch Lady]|h|r!", -- [1]
 			"Lyssia-Sporeggar", -- [2]
@@ -1606,7 +1342,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffLyssia-Sporeggar|r",
 			[51] = 1515342684,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [72]
+		}, -- [60]
 		{
 			"hello", -- [1]
 			"Gorehöwl-DefiasBrotherhood", -- [2]
@@ -1628,7 +1364,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dGorehöwl|r",
 			[51] = 1515342691,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [73]
+		}, -- [61]
 		{
 			"eyo", -- [1]
 			"Vaelanen-DefiasBrotherhood", -- [2]
@@ -1650,7 +1386,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaVaelanen|r",
 			[51] = 1515342698,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [74]
+		}, -- [62]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:6594:Player-1096-07E4A36F:1:1:7:18:4294967295:4294967295:4294967295:4294967295|h[Cat Fight!]|h|r!", -- [1]
 			"Gwathwen-DefiasBrotherhood", -- [2]
@@ -1672,7 +1408,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aGwathwen|r",
 			[51] = 1515342771,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [75]
+		}, -- [63]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:4839:Player-1096-07E48D54:1:1:7:18:4294967295:4294967295:4294967295:4294967295|h[Throne of the Tides]|h|r!", -- [1]
 			"Totembuilder-DefiasBrotherhood", -- [2]
@@ -1694,7 +1430,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddTotembuilder|r",
 			[51] = 1515342816,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [76]
+		}, -- [64]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:862:Player-1096-07DF76FC:1:1:7:18:4294967295:4294967295:4294967295:4294967295|h[Explore Hellfire Peninsula]|h|r!", -- [1]
 			"Pusti-DefiasBrotherhood", -- [2]
@@ -1716,7 +1452,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dPusti|r",
 			[51] = 1515343112,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [77]
+		}, -- [65]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:12071:Player-1096-07DAEEC4:1:1:7:18:4294967295:4294967295:4294967295:4294967295|h[Crucible's Promise]|h|r!", -- [1]
 			"Newreaper-DefiasBrotherhood", -- [2]
@@ -1738,7 +1474,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dNewreaper|r",
 			[51] = 1515343174,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [78]
+		}, -- [66]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:11989:Player-1096-07CA065C:1:1:7:18:4294967295:4294967295:4294967295:4294967295|h[Hope's End]|h|r!", -- [1]
 			"Naglik-DefiasBrotherhood", -- [2]
@@ -1760,7 +1496,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aNaglik|r",
 			[51] = 1515343268,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [79]
+		}, -- [67]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:11989:Player-1096-07CA6F90:1:1:7:18:4294967295:4294967295:4294967295:4294967295|h[Hope's End]|h|r!", -- [1]
 			"Miracidium-DefiasBrotherhood", -- [2]
@@ -1782,7 +1518,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edMiracidium|r",
 			[51] = 1515343268,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [80]
+		}, -- [68]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:973:Player-1096-07E4A32A:1:1:7:18:4294967295:4294967295:4294967295:4294967295|h[5 Daily Quests Completed]|h|r!", -- [1]
 			"Evila-TheVentureCo", -- [2]
@@ -1804,7 +1540,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edEvila-TheVentureCo|r",
 			[51] = 1515343411,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [81]
+		}, -- [69]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:4833:Player-1096-07DBC4FB:1:1:7:18:4294967295:4294967295:4294967295:4294967295|h[Blackrock Caverns]|h|r!", -- [1]
 			"Takver-DefiasBrotherhood", -- [2]
@@ -1826,7 +1562,7 @@ ElvCharacterDB = {
 			[52] = "|cfffff468Takver|r",
 			[51] = 1515343509,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [82]
+		}, -- [70]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:11989:Player-1096-07C006D7:1:1:7:18:4294967295:4294967295:4294967295:4294967295|h[Hope's End]|h|r!", -- [1]
 			"Lumdum-DefiasBrotherhood", -- [2]
@@ -1848,7 +1584,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Lumdum|r",
 			[51] = 1515343573,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [83]
+		}, -- [71]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:6019:Player-1096-07DBBAD9:1:1:7:18:4294967295:4294967295:4294967295:4294967295|h[Come One, Come All!]|h|r!", -- [1]
 			"Fxii", -- [2]
@@ -1870,7 +1606,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddFxii|r",
 			[51] = 1515343621,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [84]
+		}, -- [72]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:11989:Player-1096-0730EE4A:1:1:7:18:4294967295:4294967295:4294967295:4294967295|h[Hope's End]|h|r!", -- [1]
 			"Leerak-DefiasBrotherhood", -- [2]
@@ -1892,7 +1628,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edLeerak|r",
 			[51] = 1515343700,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [85]
+		}, -- [73]
 		{
 			"grats", -- [1]
 			"Sniperlady-TheVentureCo", -- [2]
@@ -1914,7 +1650,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Sniperlady|r",
 			[51] = 1515343731,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [86]
+		}, -- [74]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:557:Player-1096-07DC042E:1:1:7:18:4294967295:4294967295:4294967295:4294967295|h[Superior]|h|r!", -- [1]
 			"Eshaton-DefiasBrotherhood", -- [2]
@@ -1936,7 +1672,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaEshaton|r",
 			[51] = 1515343803,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [87]
+		}, -- [75]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:11609:Player-1096-07D4A926:1:1:7:18:4294967295:4294967295:4294967295:4294967295|h[Power Unbound]|h|r!", -- [1]
 			"Tororek-DefiasBrotherhood", -- [2]
@@ -1958,7 +1694,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddTororek|r",
 			[51] = 1515343827,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [88]
+		}, -- [76]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:1766:Player-1096-07DF99F0:1:1:7:18:4294967295:4294967295:4294967295:4294967295|h[Ancient Protector]|h|r!", -- [1]
 			"Vaelanen-DefiasBrotherhood", -- [2]
@@ -1980,7 +1716,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaVaelanen|r",
 			[51] = 1515344258,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [89]
+		}, -- [77]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:9909:Player-1096-07662EF1:1:1:7:18:4294967295:4294967295:4294967295:4294967295|h[Heirloom Hoarder]|h|r!", -- [1]
 			"Demonhuntres-Sporeggar", -- [2]
@@ -2002,7 +1738,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Demonhuntres-Sporeggar|r",
 			[51] = 1515344291,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [90]
+		}, -- [78]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:641:Player-1096-07D57264:1:1:7:18:4294967295:4294967295:4294967295:4294967295|h[Sunken Temple]|h|r!", -- [1]
 			"Aquawolf-Ravenholdt", -- [2]
@@ -2024,7 +1760,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Aquawolf-Ravenholdt|r",
 			[51] = 1515344406,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [91]
+		}, -- [79]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:128:Player-1096-07E4A36F:1:1:7:18:4294967295:4294967295:4294967295:4294967295|h[Artisan Fisherman]|h|r!", -- [1]
 			"Gwathwen-DefiasBrotherhood", -- [2]
@@ -2046,7 +1782,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aGwathwen|r",
 			[51] = 1515344449,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [92]
+		}, -- [80]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:4864:Player-1096-07C25F2C:1:1:7:18:4294967295:4294967295:4294967295:4294967295|h[Explore Deepholm]|h|r!", -- [1]
 			"Alivya-DefiasBrotherhood", -- [2]
@@ -2068,7 +1804,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddAlivya|r",
 			[51] = 1515344459,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [93]
+		}, -- [81]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:397:Player-1096-07DAEEC4:1:1:7:18:4294967295:4294967295:4294967295:4294967295|h[Step Into The Arena]|h|r!", -- [1]
 			"Newreaper-DefiasBrotherhood", -- [2]
@@ -2090,7 +1826,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dNewreaper|r",
 			[51] = 1515344487,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [94]
+		}, -- [82]
 		{
 			"|cffa335ee|Hkeystone:233:3:0:0:0|h[Keystone: Cathedral of Eternal Night]|h|r could we get a guild run going? i'm tanking", -- [1]
 			"Engrod-DefiasBrotherhood", -- [2]
@@ -2112,7 +1848,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dEngrod|r",
 			[51] = 1515344532,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [95]
+		}, -- [83]
 		{
 			"where is Q?", -- [1]
 			"Suzzu-Drak'thul", -- [2]
@@ -2134,7 +1870,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Suzzu-Drak'thul|r",
 			[51] = 1515344538,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [96]
+		}, -- [84]
 		{
 			"|cffffff00|Hquest:46868:110|h[Cathedral of Eternal Night: Infernal Dead]|h|r", -- [1]
 			"Suzzu-Drak'thul", -- [2]
@@ -2156,7 +1892,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Suzzu-Drak'thul|r",
 			[51] = 1515344542,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [97]
+		}, -- [85]
 		{
 			"sure, I can heal", -- [1]
 			"Vaelanen-DefiasBrotherhood", -- [2]
@@ -2178,7 +1914,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaVaelanen|r",
 			[51] = 1515344543,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [98]
+		}, -- [86]
 		{
 			"|cff71d5ff|Hspell:253058:0|h[Maddened Chaosrunner]|h|r Sweet ", -- [1]
 			"Youngone-Ravenholdt", -- [2]
@@ -2200,7 +1936,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Youngone|r",
 			[51] = 1515344546,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [99]
+		}, -- [87]
 		{
 			"inv me", -- [1]
 			"Krog-DefiasBrotherhood", -- [2]
@@ -2222,7 +1958,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aKrog|r",
 			[51] = 1515344557,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [100]
+		}, -- [88]
 		{
 			"I'll DPS for ya.", -- [1]
 			"Krog-DefiasBrotherhood", -- [2]
@@ -2244,7 +1980,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aKrog|r",
 			[51] = 1515344560,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [101]
+		}, -- [89]
 		{
 			"2 more dps for |cffa335ee|Hkeystone:233:3:0:0:0|h[Keystone: Cathedral of Eternal Night]|h|r", -- [1]
 			"Engrod-DefiasBrotherhood", -- [2]
@@ -2266,7 +2002,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dEngrod|r",
 			[51] = 1515344577,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [102]
+		}, -- [90]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:9755:Player-1096-07DBBAD9:1:1:7:18:4294967295:4294967295:4294967295:4294967295|h[Darkmoon Race Enthusiast]|h|r!", -- [1]
 			"Fxii", -- [2]
@@ -2288,7 +2024,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddFxii|r",
 			[51] = 1515344580,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [103]
+		}, -- [91]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:4846:Player-1096-07DBC4FB:1:1:7:18:4294967295:4294967295:4294967295:4294967295|h[The Stonecore]|h|r!", -- [1]
 			"Takver-DefiasBrotherhood", -- [2]
@@ -2310,7 +2046,7 @@ ElvCharacterDB = {
 			[52] = "|cfffff468Takver|r",
 			[51] = 1515344592,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [104]
+		}, -- [92]
 		{
 			"or 1 heal 1 dps, I can do either :)", -- [1]
 			"Vaelanen-DefiasBrotherhood", -- [2]
@@ -2332,7 +2068,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaVaelanen|r",
 			[51] = 1515344602,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [105]
+		}, -- [93]
 		{
 			"guys?", -- [1]
 			"Suzzu-Drak'thul", -- [2]
@@ -2354,7 +2090,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Suzzu-Drak'thul|r",
 			[51] = 1515344606,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [106]
+		}, -- [94]
 		{
 			"?", -- [1]
 			"Suzzu-Drak'thul", -- [2]
@@ -2376,7 +2112,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Suzzu-Drak'thul|r",
 			[51] = 1515344639,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [107]
+		}, -- [95]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:646:Player-1096-07E3A0FE:1:1:7:18:4294967295:4294967295:4294967295:4294967295|h[Stratholme]|h|r!", -- [1]
 			"Lyssia-Sporeggar", -- [2]
@@ -2398,7 +2134,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffLyssia-Sporeggar|r",
 			[51] = 1515344641,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [108]
+		}, -- [96]
 		{
 			"deeper in", -- [1]
 			"Rynba-TarrenMill", -- [2]
@@ -2420,7 +2156,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaRynba-TarrenMill|r",
 			[51] = 1515344658,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [109]
+		}, -- [97]
 		{
 			"after  2nd boss", -- [1]
 			"Rynba-TarrenMill", -- [2]
@@ -2442,7 +2178,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaRynba-TarrenMill|r",
 			[51] = 1515344661,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [110]
+		}, -- [98]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:480:Player-1096-07E3BA7A:1:1:7:18:4294967295:4294967295:4294967295:4294967295|h[Azjol-Nerub]|h|r!", -- [1]
 			"Restopaw-DefiasBrotherhood", -- [2]
@@ -2464,7 +2200,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddRestopaw|r",
 			[51] = 1515344677,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [111]
+		}, -- [99]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:1557:Player-1096-07E4A32A:1:1:7:18:4294967295:4294967295:4294967295:4294967295|h[50 Fish]|h|r!", -- [1]
 			"Evila-TheVentureCo", -- [2]
@@ -2486,7 +2222,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edEvila-TheVentureCo|r",
 			[51] = 1515344692,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [112]
+		}, -- [100]
 		{
 			"just hop in, need 4/5 for guidl bonus", -- [1]
 			"Engrod-DefiasBrotherhood", -- [2]
@@ -2508,7 +2244,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dEngrod|r",
 			[51] = 1515344692,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [113]
+		}, -- [101]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:545:Player-1096-07E4836A:1:1:7:18:4294967295:4294967295:4294967295:4294967295|h[Shave and a Haircut]|h|r!", -- [1]
 			"Salakas-DefiasBrotherhood", -- [2]
@@ -2530,7 +2266,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffSalakas|r",
 			[51] = 1515344732,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [114]
+		}, -- [102]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:1178:Player-1096-07D3DB3C:1:1:7:18:4294967295:4294967295:4294967295:4294967295|h[Got My Mind On My Money]|h|r!", -- [1]
 			"Oliviosaa-DefiasBrotherhood", -- [2]
@@ -2552,7 +2288,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffOliviosaa|r",
 			[51] = 1515344790,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [115]
+		}, -- [103]
 		{
 			"Any heals or DPS want to be carried through a +3?", -- [1]
 			"Krog-DefiasBrotherhood", -- [2]
@@ -2574,7 +2310,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aKrog|r",
 			[51] = 1515344857,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [116]
+		}, -- [104]
 		{
 			"come on friends it'll be a breeze", -- [1]
 			"Vaelanen-DefiasBrotherhood", -- [2]
@@ -2596,7 +2332,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaVaelanen|r",
 			[51] = 1515344868,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [117]
+		}, -- [105]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:10994:Player-1096-07D4A926:1:1:7:18:4294967295:4294967295:4294967295:4294967295|h[A Glorious Campaign]|h|r!", -- [1]
 			"Tororek-DefiasBrotherhood", -- [2]
@@ -2618,7 +2354,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddTororek|r",
 			[51] = 1515344873,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [118]
+		}, -- [106]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:10073:Player-1096-07D3DB3C:1:1:7:18:4294967295:4294967295:4294967295:4294967295|h[Echoes of Doomfire]|h|r!", -- [1]
 			"Oliviosaa-DefiasBrotherhood", -- [2]
@@ -2640,7 +2376,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffOliviosaa|r",
 			[51] = 1515344876,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [119]
+		}, -- [107]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:11220:Player-1096-07D4A926:1:1:7:18:4294967295:4294967295:4294967295:4294967295|h[Roster of Champions]|h|r!", -- [1]
 			"Tororek-DefiasBrotherhood", -- [2]
@@ -2662,7 +2398,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddTororek|r",
 			[51] = 1515344891,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [120]
+		}, -- [108]
 		{
 			"Sure, I'll join if it's quick", -- [1]
 			"Youngone-Ravenholdt", -- [2]
@@ -2684,7 +2420,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Youngone|r",
 			[51] = 1515344897,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [121]
+		}, -- [109]
 		{
 			"it will be ;)", -- [1]
 			"Vaelanen-DefiasBrotherhood", -- [2]
@@ -2706,7 +2442,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaVaelanen|r",
 			[51] = 1515344908,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [122]
+		}, -- [110]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:10561:Player-1096-07E48D54:1:1:7:18:4294967295:4294967295:4294967295:4294967295|h[Honorable Medallion]|h|r!", -- [1]
 			"Totembuilder-DefiasBrotherhood", -- [2]
@@ -2728,7 +2464,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddTotembuilder|r",
 			[51] = 1515344915,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [123]
+		}, -- [111]
 		{
 			"%s has earned the achievement |cffffff00|Hachievement:10746:Player-1096-07D4A926:1:1:7:18:4294967295:4294967295:4294967295:4294967295|h[Forged for Battle]|h|r!", -- [1]
 			"Tororek-DefiasBrotherhood", -- [2]
@@ -2750,7 +2486,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddTororek|r",
 			[51] = 1515344986,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [124]
+		}, -- [112]
 		{
 			"anyone dont need ?", -- [1]
 			"Rikkus-Drak'thul", -- [2]
@@ -2772,7 +2508,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dRikkus-Drak'thul|r",
 			[51] = 1523687175,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [125]
+		}, -- [113]
 		{
 			"yo", -- [1]
 			"Dreistx-Kel'Thuzad", -- [2]
@@ -2794,7 +2530,7 @@ ElvCharacterDB = {
 			[52] = "|cfffff468Dreistx-Kel'Thuzad|r",
 			[51] = 1536854542,
 			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [126]
+		}, -- [114]
 		{
 			"need me for ana-mouz?", -- [1]
 			"Dreistx-Kel'Thuzad", -- [2]
@@ -2816,6 +2552,270 @@ ElvCharacterDB = {
 			[52] = "|cfffff468Dreistx-Kel'Thuzad|r",
 			[51] = 1536854548,
 			[50] = "CHAT_MSG_WHISPER_INFORM",
+		}, -- [115]
+		{
+			"WTS Ny’alotha Heroic/ Mythic; N'Zoth Heroic/ Mythic; BFA Keystone Conqueror 12x10+ in time; M10+ -17+in time – ready to start", -- [1]
+			"Dasijan-Ravenholdt", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Dasijan-Ravenholdt", -- [5]
+			"DND", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1114, -- [11]
+			"Player-1096-08CB38DA", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcDasijan-Ravenholdt|r",
+			[51] = 1586683763,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [116]
+		{
+			"WTS Ny’alotha  Heroic or Mythic - collect your full gear, all BFA Glories, Glacial Tidestorm, Upgrade Your RIO with our team - M15-20+", -- [1]
+			"Sujakel-Ravenholdt", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Sujakel-Ravenholdt", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			12, -- [11]
+			"Player-1096-08FCF7EA", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcSujakel-Ravenholdt|r",
+			[51] = 1594536290,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [117]
+		{
+			"<Sylvanas Community>  M +15 159k || M+ 14  135k || +10 100k ||  Free armostack on all keys! || x5 run +10 400k!!!!!! || Get your 465/475ilvl loot now  || Ny'alotha Hc/Myth || Jaina Mount (399k) || Visions || PVP || Whisper Booking. Gold all realms!", -- [1]
+			"Pallofour-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Pallofour-DefiasBrotherhood", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			60, -- [11]
+			"Player-1096-08E99362", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcPallofour|r",
+			[51] = 1594557018,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [118]
+		{
+			"Walkthrough(WR 20/1k+ n'zoth kills) is selling |cff66bbff|Hjournal:1:2375:14|h[N'Zoth the Corruptor]|h|r HC for 79k now! You'll get |cffffff00|Hachievement:14068:Player-1096-08DC32FE:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: N'Zoth the Corruptor]|h|r, the Mount |cff71d5ff|Hspell:302143:0|h[Uncorrupted Voidwing]|h|r & Chance on 470 Loot! /w me", -- [1]
+			"Trenboost-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Trenboost-DefiasBrotherhood", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			62, -- [11]
+			"Player-1096-08DC32FE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcTrenboost|r",
+			[51] = 1594557133,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [119]
+		{
+			"WTS Ny’alotha  Heroic or Mythic - collect your full gear, all BFA Glories, Glacial Tidestorm, Upgrade Your RIO with our team - M15-20+", -- [1]
+			"Sujakel-Ravenholdt", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Sujakel-Ravenholdt", -- [5]
+			"DND", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			63, -- [11]
+			"Player-1096-08FCF7EA", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcSujakel-Ravenholdt|r",
+			[51] = 1594557175,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [120]
+		{
+			"Oblivion Boost Community sells Nya'lotha Heroic, also with VIP Spots,  Jaina Mythic + Mount, M+ 10-15, with several Loot Options and with specific Key/Armorstack! /w me for Prices and Times! =)", -- [1]
+			"Endgoldd-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Endgoldd-DefiasBrotherhood", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			64, -- [11]
+			"Player-1096-08FDB0A8", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cEndgoldd|r",
+			[51] = 1594557206,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [121]
+		{
+			"<Sylvanas Community>  M +15 159k || M+ 14  135k || +10 100k ||  Free armostack on all keys! || x5 run +10 400k!!!!!! || Get your 465/475ilvl loot now  || Ny'alotha Hc/Myth || Jaina Mount (399k) || Visions || PVP || Whisper Booking. Gold all realms!", -- [1]
+			"Pallofour-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Pallofour-DefiasBrotherhood", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			65, -- [11]
+			"Player-1096-08E99362", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcPallofour|r",
+			[51] = 1594557257,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [122]
+		{
+			"Walkthrough(WR 20/1k+ n'zoth kills) is selling |cff66bbff|Hjournal:1:2375:14|h[N'Zoth the Corruptor]|h|r HC for 79k now! You'll get |cffffff00|Hachievement:14068:Player-1096-08DC32FE:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: N'Zoth the Corruptor]|h|r, the Mount |cff71d5ff|Hspell:302143:0|h[Uncorrupted Voidwing]|h|r & Chance on 470 Loot! /w me", -- [1]
+			"Trenboost-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Trenboost-DefiasBrotherhood", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			66, -- [11]
+			"Player-1096-08DC32FE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcTrenboost|r",
+			[51] = 1594557337,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [123]
+		{
+			"<The Brown Boar Tavern> is looking for new members! We are looking for DPS and Healers to fill our Raiding Team (12/12 HC + 1/12M). M+ / Social players are always welcome too! Whisper me for more details.", -- [1]
+			"Deradruid-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Deradruid-DefiasBrotherhood", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			67, -- [11]
+			"Player-1096-08DA8841", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Deradruid|r",
+			[51] = 1594557341,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [124]
+		{
+			"<Sylvanas Community>  M +15 159k || M+ 14  135k || +10 100k ||  Free armostack on all keys! || x5 run +10 400k!!!!!! || Get your 465/475ilvl loot now  || Ny'alotha Hc/Myth || Jaina Mount (399k) || Visions || PVP || Whisper Booking. Gold all realms!", -- [1]
+			"Pallofour-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Pallofour-DefiasBrotherhood", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			68, -- [11]
+			"Player-1096-08E99362", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcPallofour|r",
+			[51] = 1594557478,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [125]
+		{
+			"Oblivion Boost Community sells Nya'lotha Heroic, also with VIP Spots,  Jaina Mythic + Mount, M+ 10-15, with several Loot Options and with specific Key/Armorstack! /w me for Prices and Times! =)", -- [1]
+			"Endgoldd-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Endgoldd-DefiasBrotherhood", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			69, -- [11]
+			"Player-1096-08FDB0A8", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cEndgoldd|r",
+			[51] = 1594557528,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [126]
+		{
+			"Walkthrough(WR 20/1k+ n'zoth kills) is selling |cff66bbff|Hjournal:1:2375:14|h[N'Zoth the Corruptor]|h|r HC for 79k now! You'll get |cffffff00|Hachievement:14068:Player-1096-08DC32FE:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: N'Zoth the Corruptor]|h|r, the Mount |cff71d5ff|Hspell:302143:0|h[Uncorrupted Voidwing]|h|r & Chance on 470 Loot! /w me", -- [1]
+			"Trenboost-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Trenboost-DefiasBrotherhood", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			70, -- [11]
+			"Player-1096-08DC32FE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcTrenboost|r",
+			[51] = 1594557543,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [127]
 	},
 }

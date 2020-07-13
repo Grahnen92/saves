@@ -12,3 +12,15 @@ DynamicCam: disabled
 DBM-Challenges: disabled
 ElvUI_EverySecondCounts: disabled
 Clique: disabled
+WeakAurasCompanion: enabled
+Skada: enabled
+ElvUI_VisualAuraTimers: disabled
+ElvUI_ExtraActionBars: disabled
+ElvUI_CastBarOverlay: disabled
+ElvUI_AuraBarsMovers: disabled
+ElvUI_CustomTweaks: disabled
+WeakAurasArchive: enabled
+ElvUI_OptionsUI: enabled
+ElvUI_VerticalBars: disabled
+OPie_Classic: disabled
+Plater: disabled

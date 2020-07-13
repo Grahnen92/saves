@@ -1,22 +1,31 @@
-local E, L, DF = unpack(select(2, ...))
-local B = E:GetModule('Blizzard');
+local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
+local B = E:GetModule('Blizzard')
 
---Cache global variables
 --Lua functions
 local _G = _G
+local hooksecurefunc = hooksecurefunc
+local CreateFrame = CreateFrame
 
---No point caching anything else here, but list them here for mikk's FindGlobals script
--- GLOBALS: DurabilityFrame, hooksecurefunc, Minimap
+local function SetPosition(frame, _, parent)
+	if parent ~= _G.DurabilityFrameHolder then
+		frame:ClearAllPoints()
+		frame:SetPoint("CENTER", _G.DurabilityFrameHolder, "CENTER")
+	end
+end
 
 function B:PositionDurabilityFrame()
-	DurabilityFrame:SetFrameStrata("HIGH")
+	local DurabilityFrame = _G.DurabilityFrame
 
-	local function SetPosition(self, _, parent)
-		if (parent == "MinimapCluster") or (parent == _G["MinimapCluster"]) then
-			DurabilityFrame:ClearAllPoints()
-			DurabilityFrame:SetPoint("RIGHT", Minimap, "RIGHT")
-			DurabilityFrame:SetScale(0.6)
-		end
-	end
-	hooksecurefunc(DurabilityFrame,"SetPoint", SetPosition)
+	local Scale = E.db.general.durabilityScale or 1
+
+	local DurabilityFrameHolder = CreateFrame("Frame", "DurabilityFrameHolder", E.UIParent)
+	DurabilityFrameHolder:Size(DurabilityFrame:GetSize())
+	DurabilityFrameHolder:Point('TOPRIGHT', E.UIParent, 'TOPRIGHT', -135, -300)
+
+	E:CreateMover(DurabilityFrameHolder, 'DurabilityFrameMover', L["Durability Frame"], nil, nil, nil, nil, nil, 'all,general')
+
+	DurabilityFrame:SetFrameStrata("HIGH")
+	DurabilityFrame:SetScale(Scale)
+
+	hooksecurefunc(DurabilityFrame, "SetPoint", SetPosition)
 end

@@ -4,21 +4,15 @@ local _, ns = ...
 local ElvUF = ns.oUF
 assert(ElvUF, "ElvUI was unable to locate oUF.")
 
---Cache global variables
 --Lua functions
+local _G = _G
 --WoW API / Variables
 local CreateFrame = CreateFrame
-local InCombatLockdown = InCombatLockdown
-local IsInInstance = IsInInstance
 local RegisterStateDriver = RegisterStateDriver
-local UnregisterStateDriver = UnregisterStateDriver
-
---Global variables that we don't cache, list them here for mikk's FindGlobals script
--- GLOBALS: UnitFrame_OnEnter, UnitFrame_OnLeave
 
 function UF:Construct_RaidpetFrames()
-	self:SetScript('OnEnter', UnitFrame_OnEnter)
-	self:SetScript('OnLeave', UnitFrame_OnLeave)
+	self:SetScript('OnEnter', _G.UnitFrame_OnEnter)
+	self:SetScript('OnLeave', _G.UnitFrame_OnLeave)
 
 	self.RaisedElementParent = CreateFrame('Frame', nil, self)
 	self.RaisedElementParent.TextureParent = CreateFrame('Frame', nil, self.RaisedElementParent)
@@ -38,34 +32,14 @@ function UF:Construct_RaidpetFrames()
 	self.ThreatIndicator = UF:Construct_Threat(self)
 	self.RaidTargetIndicator = UF:Construct_RaidIcon(self)
 	self.HealthPrediction = UF:Construct_HealComm(self)
-	self.Range = UF:Construct_Range(self)
-	self.customTexts = {}
+	self.Fader = UF:Construct_Fader()
+	self.Cutaway = UF:Construct_Cutaway(self)
 
-	UF:Update_StatusBars()
-	UF:Update_FontStrings()
+	self.customTexts = {}
 
 	self.unitframeType = "raidpet"
 
 	return self
-end
-
---I don't know if this function is needed or not? But the error I pm'ed you about was because of the missing OnEvent so I just added it.
-function UF:RaidPetsSmartVisibility(event)
-	if not self.db or (self.db and not self.db.enable) or (UF.db and not UF.db.smartRaidFilter) or self.isForced then return; end
-	if event == "PLAYER_REGEN_ENABLED" then self:UnregisterEvent("PLAYER_REGEN_ENABLED") end
-
-	if not InCombatLockdown() then
-		local inInstance, instanceType = IsInInstance()
-		if inInstance and instanceType == "raid" then
-			UnregisterStateDriver(self, "visibility")
-			self:Show()
-		elseif self.db.visibility then
-			RegisterStateDriver(self, "visibility", self.db.visibility)
-		end
-	else
-		self:RegisterEvent("PLAYER_REGEN_ENABLED")
-		return
-	end
 end
 
 function UF:Update_RaidpetHeader(header, db)
@@ -77,22 +51,19 @@ function UF:Update_RaidpetHeader(header, db)
 	if not headerHolder.positioned then
 		headerHolder:ClearAllPoints()
 		headerHolder:Point("BOTTOMLEFT", E.UIParent, "BOTTOMLEFT", 4, 574)
+		E:CreateMover(headerHolder, headerHolder:GetName()..'Mover', L["Raid Pet Frames"], nil, nil, nil, 'ALL,RAID', nil, 'unitframe,groupUnits,raidpet,generalGroup')
 
-		E:CreateMover(headerHolder, headerHolder:GetName()..'Mover', L["Raid Pet Frames"], nil, nil, nil, 'ALL,RAID')
 		headerHolder.positioned = true;
-
-		headerHolder:RegisterEvent("PLAYER_ENTERING_WORLD")
-		headerHolder:RegisterEvent("ZONE_CHANGED_NEW_AREA")
-		headerHolder:SetScript("OnEvent", UF['RaidPetsSmartVisibility'])
 	end
 
-	UF.RaidPetsSmartVisibility(headerHolder)
+	if not headerHolder.isForced and db.enable then
+		RegisterStateDriver(headerHolder, "visibility", db.visibility)
+	end
 end
 
 function UF:Update_RaidpetFrames(frame, db)
 	frame.db = db
 
-	frame.Portrait = frame.Portrait or (db.portrait.style == '2D' and frame.Portrait2D or frame.Portrait3D)
 	frame.colors = ElvUF.colors
 	frame:RegisterForClicks(self.db.targetOnMouseDown and 'AnyDown' or 'AnyUp')
 
@@ -130,9 +101,7 @@ function UF:Update_RaidpetFrames(frame, db)
 		frame.VARIABLES_SET = true
 	end
 
-	if not InCombatLockdown() then
-		frame:Size(frame.UNIT_WIDTH, frame.UNIT_HEIGHT)
-	end
+	frame:Size(frame.UNIT_WIDTH, frame.UNIT_HEIGHT)
 
 	--Health
 	UF:Configure_HealthBar(frame)
@@ -148,8 +117,7 @@ function UF:Update_RaidpetFrames(frame, db)
 
 	--Auras
 	UF:EnableDisable_Auras(frame)
-	UF:Configure_Auras(frame, 'Buffs')
-	UF:Configure_Auras(frame, 'Debuffs')
+	UF:Configure_AllAuras(frame)
 
 	--RaidDebuffs
 	UF:Configure_RaidDebuffs(frame)
@@ -163,11 +131,14 @@ function UF:Update_RaidpetFrames(frame, db)
 	--OverHealing
 	UF:Configure_HealComm(frame)
 
-	--Range
-	UF:Configure_Range(frame)
+	--Fader
+	UF:Configure_Fader(frame)
 
 	--BuffIndicator
-	UF:UpdateAuraWatch(frame, true) --2nd argument is the petOverride
+	UF:Configure_AuraWatch(frame, true)
+
+	--Cutaway
+	UF:Configure_Cutaway(frame)
 
 	--CustomTexts
 	UF:Configure_CustomTexts(frame)
@@ -176,4 +147,4 @@ function UF:Update_RaidpetFrames(frame, db)
 end
 
 --Added an additional argument at the end, specifying the header Template we want to use
-UF['headerstoload']['raidpet'] = {nil, nil, 'SecureGroupPetHeaderTemplate'}
+UF.headerstoload.raidpet = {nil, nil, 'SecureGroupPetHeaderTemplate'}

@@ -1,6 +1,31 @@
+VER 3 010000000000000F "Bloodlust" "136012"
+#showtooltip
+/cast [target=mouseover,exists,nodead, help] Bloodlust; Bloodlust
+END
+VER 3 010000000000000B "Capacitor totem" "136013"
+#showtooltip
+/cast [@cursor] Capacitor Totem
+END
 VER 3 0100000000000003 "Chain heal" "SPELL_NATURE_HEALINGWAVEGREATER"
 #showtooltip
 /cast [target=mouseover,exists,nodead,harm]  Chain Lightning; Chain Lightning [target=mouseover,exists,nodead, help] Chain Heal ;  Chain Lightning
+END
+VER 3 0100000000000009 "Cleanse Spirit" "236288"
+#showtooltip
+/cast [target=mouseover,exists,nodead,harm]  Purge; Purge [target=mouseover,exists,nodead, help] Cleanse Spirit ;  Purge
+END
+VER 3 010000000000000A "Earthbind" "136102"
+#showtooltip
+/cast [@cursor] Earthbind Totem
+END
+VER 3 010000000000000C "Earthquake" "451165"
+#showtooltip
+/cast [@cursor] Earthquake
+END
+VER 3 010000000000000E "Feral Spirit" "237577"
+/cast Feral Spirit
+/use 13
+/use 14
 END
 VER 3 0100000000000008 "Flametongue" "SPELL_FIRE_FLAMETOUNGE"
 #showtooltip
@@ -27,6 +52,10 @@ VER 3 0100000000000005 "Purify spirit" "ABILITY_SHAMAN_CLEANSESPIRIT"
 /cast [target=mouseover,exists,nodead,harm]  Purge; Purge [target=mouseover,exists,nodead, help] Purify Spirit ;  Purge
 END
 VER 3 0100000000000004 "Riptide" "SPELL_NATURE_RIPTIDE"
-#showtooltip
+#showtooltip Riptide
 /cast [target=mouseover,exists,nodead,harm]  Flame Shock; Flame Shock [target=mouseover,exists,nodead, help] Riptide ;  Flame Shock
+END
+VER 3 010000000000000D "SelfHeal" "136044"
+#showtooltip
+/cast [target=player] Healing Surge
 END

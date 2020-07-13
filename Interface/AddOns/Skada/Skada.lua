@@ -2794,19 +2794,19 @@ do
 		media:Register("background", "Copper",        [[Interface\Addons\Skada\media\background\copper]])
 
 		-- Some sounds (copied from Omen).
-		media:Register("sound", "Rubber Ducky",       [[Sound\Doodad\Goblin_Lottery_Open01.ogg]])
-		media:Register("sound", "Cartoon FX",         [[Sound\Doodad\Goblin_Lottery_Open03.ogg]])
-		media:Register("sound", "Explosion",          [[Sound\Doodad\Hellfire_Raid_FX_Explosion05.ogg]])
-		media:Register("sound", "Shing!",             [[Sound\Doodad\PortcullisActive_Closed.ogg]])
-		media:Register("sound", "Wham!",              [[Sound\Doodad\PVP_Lordaeron_Door_Open.ogg]])
-		media:Register("sound", "Simon Chime",        [[Sound\Doodad\SimonGame_LargeBlueTree.ogg]])
-		media:Register("sound", "War Drums",          [[Sound\Event Sounds\Event_wardrum_ogre.ogg]])
-		media:Register("sound", "Cheer",              [[Sound\Event Sounds\OgreEventCheerUnique.ogg]])
-		media:Register("sound", "Humm",               [[Sound\Spells\SimonGame_Visual_GameStart.ogg]])
-		media:Register("sound", "Short Circuit",      [[Sound\Spells\SimonGame_Visual_BadPress.ogg]])
-		media:Register("sound", "Fel Portal",         [[Sound\Spells\Sunwell_Fel_PortalStand.ogg]])
-		media:Register("sound", "Fel Nova",           [[Sound\Spells\SeepingGaseous_Fel_Nova.ogg]])
-		media:Register("sound", "You Will Die!",      [[Sound\Creature\CThun\CThunYouWillDie.ogg]])
+		media:Register("sound", "Rubber Ducky",       566121) --[[Sound\Doodad\Goblin_Lottery_Open01.ogg]]
+		media:Register("sound", "Cartoon FX",         566543) --[[Sound\Doodad\Goblin_Lottery_Open03.ogg]]
+		media:Register("sound", "Explosion",          566982) --[[Sound\Doodad\Hellfire_Raid_FX_Explosion05.ogg]]
+		media:Register("sound", "Shing!",             566240) --[[Sound\Doodad\PortcullisActive_Closed.ogg]]
+		media:Register("sound", "Wham!",              566946) --[[Sound\Doodad\PVP_Lordaeron_Door_Open.ogg]]
+		media:Register("sound", "Simon Chime",        566076) --[[Sound\Doodad\SimonGame_LargeBlueTree.ogg]]
+		media:Register("sound", "War Drums",          567275) --[[Sound\Event Sounds\Event_wardrum_ogre.ogg]]
+		media:Register("sound", "Cheer",              567283) --[[Sound\Event Sounds\OgreEventCheerUnique.ogg]]
+		media:Register("sound", "Humm",               569518) --[[Sound\Spells\SimonGame_Visual_GameStart.ogg]]
+		media:Register("sound", "Short Circuit",      568975) --[[Sound\Spells\SimonGame_Visual_BadPress.ogg]]
+		media:Register("sound", "Fel Portal",         569215) --[[Sound\Spells\Sunwell_Fel_PortalStand.ogg]]
+		media:Register("sound", "Fel Nova",           568582) --[[Sound\Spells\SeepingGaseous_Fel_Nova.ogg]]
+		media:Register("sound", "You Will Die!",      546633) --[[Sound\Creature\CThun\CThunYouWillDie.ogg]]
 
 		-- DB
 		self.db = LibStub("AceDB-3.0"):New("SkadaDB", self.defaults, "Default")

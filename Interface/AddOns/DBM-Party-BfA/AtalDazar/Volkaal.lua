@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(2036, "DBM-Party-BfA", 1, 968)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 17724 $"):sub(12, -3))
+mod:SetRevision("20200211040655")
 mod:SetCreatureID(122965)
 mod:SetEncounterID(2085)
 mod:SetZone()
@@ -12,6 +12,8 @@ mod:RegisterEventsInCombat(
 	"SPELL_AURA_APPLIED 250585",
 	"SPELL_CAST_START 250258",
 	"SPELL_CAST_SUCCESS 250368 259572 250241",
+	"SPELL_PERIODIC_DAMAGE 250585",
+	"SPELL_PERIODIC_MISSED 250585",
 	"UNIT_DIED"
 )
 
@@ -23,7 +25,7 @@ local warnTotemsLeft				= mod:NewAddsLeftAnnounce(250190, 2, 250192)
 
 local specWarnLeap					= mod:NewSpecialWarningDodge(250258, nil, nil, nil, 2, 2)
 local specWarnNoxiousStench			= mod:NewSpecialWarningInterrupt(250368, "HasInterrupt", nil, nil, 1, 2)
-local specWarnGTFO					= mod:NewSpecialWarningGTFO(250585, nil, nil, nil, 1, 2)
+local specWarnGTFO					= mod:NewSpecialWarningGTFO(250585, nil, nil, nil, 1, 8)
 
 local timerLeapCD					= mod:NewCDTimer(6, 250258, nil, nil, nil, 3)--6 uness delayed by stentch, then 8
 local timerNoxiousStenchCD			= mod:NewCDTimer(18.2, 250368, nil, nil, nil, 4, nil, DBM_CORE_INTERRUPT_ICON..DBM_CORE_DISEASE_ICON)
@@ -40,15 +42,15 @@ end
 
 function mod:SPELL_AURA_APPLIED(args)
 	local spellId = args.spellId
-	if spellId == 250585 and args:IsPlayer() and self:AntiSpam(2, 1) then
+	if spellId == 250585 and args:IsPlayer() and self:AntiSpam(3, 1) then
 		specWarnGTFO:Show(args.spellName)
-		specWarnGTFO:Play("runaway")
+		specWarnGTFO:Play("watchfeet")
 	end
 end
 
 function mod:SPELL_CAST_START(args)
 	local spellId = args.spellId
-	if spellId == 195254 then
+	if spellId == 250258 then
 		specWarnLeap:Show()
 		specWarnLeap:Play("watchstep")
 		timerLeapCD:Start()
@@ -77,15 +79,15 @@ function mod:SPELL_CAST_SUCCESS(args)
 	end
 end
 
---[[
-function mod:SPELL_PERIODIC_DAMAGE(_, _, _, _, destGUID, _, _, _, spellId)
-	if spellId == 228007 and destGUID == UnitGUID("player") and self:AntiSpam(2, 4) then
-		specWarnGTFO:Show()
-		specWarnGTFO:Play("runaway")
+
+function mod:SPELL_PERIODIC_DAMAGE(_, _, _, _, destGUID, _, _, _, spellId, spellName)
+	if spellId == 250585 and destGUID == UnitGUID("player") and self:AntiSpam(3, 1) then
+		specWarnGTFO:Show(spellName)
+		specWarnGTFO:Play("watchfeet")
 	end
 end
 mod.SPELL_PERIODIC_MISSED = mod.SPELL_PERIODIC_DAMAGE
---]]
+
 
 function mod:UNIT_DIED(args)
 	local cid = self:GetCIDFromGUID(args.destGUID)
@@ -96,10 +98,3 @@ function mod:UNIT_DIED(args)
 		end
 	end
 end
-
---[[
-function mod:UNIT_SPELLCAST_SUCCEEDED(uId, _, spellId)
-	if spellId == 257939 then
-	end
-end
---]]

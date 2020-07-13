@@ -1,16 +1,12 @@
 local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 local S = E:GetModule('Skins')
 
---Cache global variables
 local _G = _G
-local select, type, unpack = select, type, unpack
+local select, unpack, pairs = select, unpack, pairs
 --WoW API / Variables
 local GetItemInfo = GetItemInfo
-local GetItemQualityColor = GetItemQualityColor
-local C_BlackMarket_GetNumItems = C_BlackMarket.GetNumItems
-local C_BlackMarket_GetItemInfoByIndex = C_BlackMarket.GetItemInfoByIndex
 local hooksecurefunc = hooksecurefunc
--- GLOBALS: HybridScrollFrame_GetOffset, BLACK_MARKET_TITLE
+local GetItemQualityColor = GetItemQualityColor
 
 local function SkinTab(tab)
 	tab.Left:SetAlpha(0)
@@ -20,16 +16,16 @@ local function SkinTab(tab)
 	tab.Right:SetAlpha(0)
 end
 
-local function LoadSkin()
-	if E.private.skins.blizzard.enable ~= true or E.private.skins.blizzard.bmah ~= true then return end
+function S:Blizzard_BlackMarketUI()
+	if not (E.private.skins.blizzard.enable and E.private.skins.blizzard.bmah) then return end
 
-	local BlackMarketFrame = _G["BlackMarketFrame"]
+	local BlackMarketFrame = _G.BlackMarketFrame
 	BlackMarketFrame:StripTextures()
 	BlackMarketFrame:SetTemplate('Transparent')
 	BlackMarketFrame.Inset:StripTextures()
 
 	S:HandleCloseButton(BlackMarketFrame.CloseButton)
-	S:HandleScrollBar(BlackMarketScrollFrameScrollBar, 4)
+	S:HandleScrollBar(_G.BlackMarketScrollFrameScrollBar, 4)
 	SkinTab(BlackMarketFrame.ColumnName)
 	SkinTab(BlackMarketFrame.ColumnLevel)
 	SkinTab(BlackMarketFrame.ColumnType)
@@ -38,48 +34,33 @@ local function LoadSkin()
 	SkinTab(BlackMarketFrame.ColumnCurrentBid)
 
 	BlackMarketFrame.MoneyFrameBorder:StripTextures()
-	S:HandleEditBox(BlackMarketBidPriceGold)
-	BlackMarketBidPriceGold.backdrop:Point("TOPLEFT", -2, 0)
-	BlackMarketBidPriceGold.backdrop:Point("BOTTOMRIGHT", -2, 0)
+	S:HandleEditBox(_G.BlackMarketBidPriceGold)
+	_G.BlackMarketBidPriceGold.backdrop:Point("TOPLEFT", -2, 0)
+	_G.BlackMarketBidPriceGold.backdrop:Point("BOTTOMRIGHT", -2, 0)
 
 	S:HandleButton(BlackMarketFrame.BidButton)
 
 	hooksecurefunc('BlackMarketScrollFrame_Update', function()
-		local buttons = BlackMarketScrollFrame.buttons;
-		local numButtons = #buttons;
-		local offset = HybridScrollFrame_GetOffset(BlackMarketScrollFrame);
-		local numItems = C_BlackMarket_GetNumItems();
-
-		for i = 1, numButtons do
-			local button = buttons[i];
-			local index = offset + i; -- adjust index
-
+		for _, button in pairs(_G.BlackMarketScrollFrame.buttons) do
 			if not button.skinned then
 				S:HandleItemButton(button.Item)
-				button:StripTextures('BACKGROUND')
+				button:StripTextures()
 				button:StyleButton()
 
 				local cR, cG, cB = button.Item.IconBorder:GetVertexColor()
 				if not cR then cR, cG, cB = unpack(E.media.bordercolor) end
 				button.Item.backdrop:SetBackdropBorderColor(cR, cG, cB)
-				button.Item.IconBorder:SetTexture(nil)
+				button.Item.IconBorder:SetTexture()
 
-				hooksecurefunc(button.Item.IconBorder, 'SetVertexColor', function(self, r, g, b)
-					self:GetParent().backdrop:SetBackdropBorderColor(r, g, b)
-					self:SetTexture("")
+				hooksecurefunc(button.Item.IconBorder, 'SetVertexColor', function(s, r, g, b)
+					s:GetParent().backdrop:SetBackdropBorderColor(r, g, b)
+					s:SetTexture()
 				end)
-				hooksecurefunc(button.Item.IconBorder, 'Hide', function(self)
-					self:GetParent().backdrop:SetBackdropBorderColor(unpack(E.media.bordercolor))
+				hooksecurefunc(button.Item.IconBorder, 'Hide', function(s)
+					s:GetParent().backdrop:SetBackdropBorderColor(unpack(E.media.bordercolor))
 				end)
 
 				button.skinned = true
-			end
-
-			if ( type(numItems) == "number" and index <= numItems ) then
-				local name, texture = C_BlackMarket_GetItemInfoByIndex(index);
-				if ( name ) then
-					button.Item.IconTexture:SetTexture(texture);
-				end
 			end
 		end
 	end)
@@ -90,14 +71,14 @@ local function LoadSkin()
 
 	for i=1, BlackMarketFrame:GetNumRegions() do
 		local region = select(i, BlackMarketFrame:GetRegions())
-		if region and region:IsObjectType("FontString") and region:GetText() == BLACK_MARKET_TITLE then
+		if region and region:IsObjectType("FontString") and region:GetText() == _G.BLACK_MARKET_TITLE then
 			region:ClearAllPoints()
 			region:Point('TOP', BlackMarketFrame, 'TOP', 0, -4)
 		end
 	end
 
-	hooksecurefunc("BlackMarketFrame_UpdateHotItem", function(self)
-		local hotDeal = self.HotDeal
+	hooksecurefunc("BlackMarketFrame_UpdateHotItem", function(s)
+		local hotDeal = s.HotDeal
 		if hotDeal:IsShown() and hotDeal.itemLink then
 			local _, _, quality = GetItemInfo(hotDeal.itemLink)
 			hotDeal.Name:SetTextColor(GetItemQualityColor(quality))
@@ -105,4 +86,4 @@ local function LoadSkin()
 	end)
 end
 
-S:AddCallbackForAddon("Blizzard_BlackMarketUI", "BlackMarket", LoadSkin)
+S:AddCallbackForAddon('Blizzard_BlackMarketUI')

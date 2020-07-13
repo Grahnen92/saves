@@ -1,11 +1,8 @@
 local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 local UF = E:GetModule('UnitFrames');
 
---Cache global variables
 --Lua functions
 local pairs = pairs
---WoW API / Variables
-
 
 function UF:Configure_CustomTexts(frame)
 	local db = frame.db
@@ -14,13 +11,12 @@ function UF:Configure_CustomTexts(frame)
 	for objectName, object in pairs(frame.customTexts) do
 		if (not db.customTexts) or (db.customTexts and not db.customTexts[objectName]) then
 			object:Hide()
-			frame.customTexts[objectName] = nil
 		end
 	end
 
 	if db.customTexts then
 		local customFont = UF.LSM:Fetch("font", UF.db.font)
-		for objectName, _ in pairs(db.customTexts) do
+		for objectName in pairs(db.customTexts) do
 			if not frame.customTexts[objectName] then
 				frame.customTexts[objectName] = frame.RaisedElementParent:CreateFontString(nil, 'OVERLAY')
 			end

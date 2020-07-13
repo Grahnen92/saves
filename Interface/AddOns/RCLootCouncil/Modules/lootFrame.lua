@@ -3,11 +3,7 @@
 -- @author	Potdisc
 -- Create Date : 12/16/2014 8:24:04 PM
 
---[===[@debug@
-if LibDebug then LibDebug() end
---@end-debug@]===]
-
-local addon = LibStub("AceAddon-3.0"):GetAddon("RCLootCouncil")
+local _,addon = ...
 local LootFrame = addon:NewModule("RCLootFrame", "AceTimer-3.0", "AceEvent-3.0")
 local LibDialog = LibStub("LibDialog-1.0")
 local L = LibStub("AceLocale-3.0"):GetLocale("RCLootCouncil")
@@ -15,7 +11,6 @@ local L = LibStub("AceLocale-3.0"):GetLocale("RCLootCouncil")
 local entries = {}
 local ENTRY_HEIGHT = 80
 local MAX_ENTRIES = 5
-local numRolled = 0
 local MIN_BUTTON_WIDTH = 40
 
 local sessionsWaitingRollResultQueue = {}
@@ -54,6 +49,7 @@ function LootFrame:AddItem (offset, k, item, reRoll)
 		sessions = {item.session},
 		isRoll = item.isRoll,
 		owner = item.owner,
+		typeCode = item.typeCode,
 	}
 end
 
@@ -62,9 +58,9 @@ function LootFrame:CheckDuplicates (lenght, offset)
 		if not self.items[k].rolled then
 			for j = offset+1, offset + lenght do
 				if j ~= k and addon:ItemIsItem(self.items[k].link, self.items[j].link) and not self.items[j].rolled then
+					addon:Debug("LootFrame:", self.items[k].link, "is a dublicate of", self.items[j].link)
 					tinsert(self.items[k].sessions, self.items[j].sessions[1])
 					self.items[j].rolled = true -- Pretend we have rolled it.
-					numRolled = numRolled + 1
 				end
 			end
 		end
@@ -85,7 +81,6 @@ function LootFrame:Start(table, reRoll)
 	for k = 1, #table do
 		if table[k].autopass then
 			self.items[offset+k] = { rolled = true} -- it's autopassed, so pretend we rolled it
-			numRolled = numRolled + 1
 		else
 			self:AddItem(offset, k, table[k], reRoll)
 		end
@@ -96,12 +91,11 @@ function LootFrame:Start(table, reRoll)
 end
 
 function LootFrame:AddSingleItem(item)
+	if not self:IsEnabled() then self:Enable() end
 	addon:DebugLog("LootFrame:AddSingleItem", item.link, #self.items)
 	if item.autopass then
 		self.items[#self.items+1] = { rolled = true}
-		numRolled = numRolled + 1
 	else
-		if not self:IsEnabled() then self:Enable() end
 		self:AddItem(0, #self.items + 1, item)
 		-- REVIEW Consider duplicates? It doesn't really work in it's current form here.
 		self:Show()
@@ -128,7 +122,6 @@ function LootFrame:OnDisable()
 		end
 	end
 	self.items = {}
-	numRolled = 0
 	self:CancelAllTimers()
 end
 
@@ -142,10 +135,6 @@ end
 --end
 
 function LootFrame:Update()
-	addon:Debug("NumRolled:", numRolled, "#items:", #self.items)
-	if numRolled >= #self.items then -- We're through them all, so hide the frame
-		return self:Disable()
-	end
 	local width = 150
 	local numEntries = 0
 	for _,item in ipairs(self.items) do
@@ -154,6 +143,9 @@ function LootFrame:Update()
 			numEntries = numEntries + 1
 			self.EntryManager:GetEntry(item)
 		end
+	end
+	if numEntries == 0 then
+		return self:Disable()
 	end
 	self.EntryManager:Update()
 	self.frame.content:SetHeight(numEntries * ENTRY_HEIGHT + 7)
@@ -172,19 +164,22 @@ end
 function LootFrame:OnRoll(entry, button)
 	local item = entry.item
 	if not item.isRoll then
+		if addon.mldb and addon.mldb.requireNotes and button ~= "PASS" then
+			if not item.note or #item.note == 0 then
+				addon:Print(format(L["lootFrame_error_note_required"], addon.Ambiguate(addon.masterLooter)))
+				return
+			end
+		end
 		-- Only send minimum neccessary data, because the information of current equipped gear has been sent when we receive the loot table.
 		-- target, session, response, isTier, isRelic, note, link, ilvl, equipLoc, relicType, sendAvgIlvl, sendSpecID
-		local isTier = item.isTier and addon.mldb.tierButtonsEnabled
-		local isRelic = item.isRelic and addon.mldb.relicButtonsEnabled
-		addon:Debug("LootFrame:Response", button, "Response:", addon:GetResponse(item.equipLoc, button).text)
+		addon:Debug("LootFrame:Response", button, "Response:", addon:GetResponse(item.typeCode or item.equipLoc, button).text)
 		for _, session in ipairs(item.sessions) do
-			addon:SendResponse("group", session, button, isTier, isRelic, item.note)
+			addon:SendResponse("group", session, button, nil, nil, item.note)
 		end
 		if addon:Getdb().printResponse then
 			addon:Print(string.format(L["Response to 'item'"], addon:GetItemTextWithCount(item.link, #item.sessions))..
-				": "..addon:GetResponse(item.equipLoc, button).text)
+				": "..addon:GetResponse(item.typeCode or item.equipLoc, button).text)
 		end
-		numRolled = numRolled + 1
 		item.rolled = true
 		self.EntryManager:Trash(entry)
 		self:Update()
@@ -199,11 +194,11 @@ function LootFrame:OnRoll(entry, button)
 			entry.buttons[2]:Hide() -- Hide pass button
 			-- Hide the frame later
 		else
-			-- When frame is roll type, and we choose to not roll, do nothing.
-			numRolled = numRolled + 1
+			-- When frame is roll type, and we choose to not roll, but send a "-"
 			item.rolled = true
 			self.EntryManager:Trash(entry)
 			self:Update()
+			addon:SendCommand("group", "roll", addon.playerName, "-", item.sessions)
 		end
 	end
 
@@ -239,6 +234,11 @@ do
 				entry.noteButton:Hide()
 			else
 				entry.noteButton:Show()
+			end
+			if IsCorruptedItem and IsCorruptedItem(item.link) then
+				entry.icon:SetBorderColor("purple")
+			else
+				entry.icon:SetBorderColor()
 			end
 			entry.item = item
 			entry.itemText:SetText((item.isRoll and (_G.ROLL..": ") or "")..addon:GetItemTextWithCount(entry.item.link or "error", #entry.item.sessions))
@@ -287,7 +287,8 @@ do
 			entry.frame:SetPoint("TOPLEFT", parent, "TOPLEFT")
 
 			-------- Item Icon -------------
-			entry.icon = addon.UI:New("Icon", entry.frame)
+			entry.icon = addon.UI:New("IconBordered", entry.frame)
+			entry.icon:SetBorderColor() -- white
 			entry.icon:SetSize(ENTRY_HEIGHT*0.78, ENTRY_HEIGHT*0.78)
 			entry.icon:SetPoint("TOPLEFT", entry.frame, "TOPLEFT", 9, -5)
 			entry.icon:SetMultipleScripts({
@@ -515,7 +516,7 @@ do
 		if item.isRoll then
 			entry = self:Get("roll")
 		else
-			entry = self:Get(item.equipLoc)
+			entry = self:Get(item.typeCode or item.equipLoc)
 		end
 		if entry then -- We restored a previously trashed entry, so just update it to the new item
 			entry:Update(item)
@@ -538,7 +539,7 @@ do
 	function LootFrame.EntryManager:GetNewEntry(item)
 		--addon:DebugLog("Creating Entry:", "normal", item.link)
 		local Entry = setmetatable({}, mt)
-		Entry.type = item.equipLoc
+		Entry.type = item.typeCode or item.equipLoc
 		Entry:Create(LootFrame.frame.content)
 		Entry:Update(item)
 		return Entry
@@ -616,7 +617,6 @@ end
 function LootFrame:OnRollTimeout(entryInQueue)
 	tDeleteItem(sessionsWaitingRollResultQueue, entryInQueue)
 	local entry = entryInQueue.entry
-	numRolled = numRolled + 1
 	entry.item.rolled = true
 	self.EntryManager:Trash(entry)
 	self:Update()

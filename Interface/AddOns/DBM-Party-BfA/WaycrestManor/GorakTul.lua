@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(2129, "DBM-Party-BfA", 10, 1001)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 17722 $"):sub(12, -3))
+mod:SetRevision("20200211040655")
 mod:SetCreatureID(131864)
 mod:SetEncounterID(2117)
 mod:SetZone()
@@ -10,7 +10,8 @@ mod:RegisterCombat("combat")
 
 mod:RegisterEventsInCombat(
 	"SPELL_AURA_APPLIED 268202",
-	"SPELL_CAST_START 266225 266266 266181"
+	"SPELL_CAST_START 266225 266266 266181",
+	"SPELL_CAST_SUCCESS 266266"
 )
 
 --TODO, re-transcribe fight to see what UNIT events exist so maybe yell isn't needed
@@ -21,8 +22,6 @@ local warnDeathlens					= mod:NewTargetNoFilterAnnounce(268202, 4)
 local specWarnSummonSlaver			= mod:NewSpecialWarningSwitch(266266, "-Healer", nil, nil, 1, 2)
 local specWarnDreadEssence			= mod:NewSpecialWarningSpell(266181, nil, nil, nil, 2, 2)
 local specWarnDarkenedLightning		= mod:NewSpecialWarningInterrupt(266225, "HasInterrupt", nil, nil, 1, 2)
---local yellSwirlingScythe			= mod:NewYell(195254)
---local specWarnGTFO				= mod:NewSpecialWarningGTFO(238028, nil, nil, nil, 1, 2)
 
 local timerDarkenedLightningCD		= mod:NewCDTimer(15.7, 266225, nil, nil, nil, 4, nil, DBM_CORE_INTERRUPT_ICON)--Has interrupt spell icon but it's not actually interruptable
 local timerSummonSlaverCD			= mod:NewCDTimer(17, 266266, nil, nil, nil, 1)--17-22
@@ -51,8 +50,6 @@ function mod:SPELL_AURA_APPLIED(args)
 		warnDeathlens:CombinedShow(0.3, args.destName)
 	end
 end
---mod.SPELL_AURA_APPLIED_DOSE = mod.SPELL_AURA_APPLIED
-
 
 function mod:SPELL_CAST_START(args)
 	local spellId = args.spellId
@@ -63,8 +60,6 @@ function mod:SPELL_CAST_START(args)
 			specWarnDarkenedLightning:Play("kickcast")
 		end
 	elseif spellId == 266266 then
-		specWarnSummonSlaver:Show()
-		specWarnSummonSlaver:Play("killmob")
 		timerSummonSlaverCD:Start()
 	elseif spellId == 266181 then
 		specWarnDreadEssence:Show()
@@ -73,24 +68,10 @@ function mod:SPELL_CAST_START(args)
 	end
 end
 
---[[
-function mod:SPELL_PERIODIC_DAMAGE(_, _, _, _, destGUID, _, _, _, spellId)
-	if spellId == 228007 and destGUID == UnitGUID("player") and self:AntiSpam(2, 4) then
-		specWarnGTFO:Show()
-		specWarnGTFO:Play("runaway")
+function mod:SPELL_CAST_SUCCESS(args)
+	local spellId = args.spellId
+	if spellId == 266266 then
+		specWarnSummonSlaver:Show()
+		specWarnSummonSlaver:Play("killmob")
 	end
 end
-mod.SPELL_PERIODIC_MISSED = mod.SPELL_PERIODIC_DAMAGE
-
-function mod:UNIT_DIED(args)
-	local cid = self:GetCIDFromGUID(args.destGUID)
-	if cid == 124396 then
-		
-	end
-end
-
-function mod:UNIT_SPELLCAST_SUCCEEDED(uId, _, spellId)
-	if spellId == 257939 then
-	end
-end
---]]

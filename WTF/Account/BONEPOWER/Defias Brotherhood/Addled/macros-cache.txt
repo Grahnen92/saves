@@ -4,6 +4,10 @@ END
 VER 3 0100000000000003 "ffasf" "INV_MISC_QUESTIONMARK"
 /script DEFAULT_CHAT_FRAME:AddMessage("\124cff0070dd\124Hitem:113791:0:0:0:0:0:0:0:0:0:0\124h[Thunderlord Chestguard]\124h\124r");
 END
+VER 3 0100000000000008 "Grappling Hook" "1373906"
+#showtooltip
+/cast [@cursor] Grappling Hook
+END
 VER 3 0100000000000005 "Hemorrhage" "SPELL_SHADOW_LIFEDRAIN"
 #showtooltip hemorrhage
 /cast Hemorrhage

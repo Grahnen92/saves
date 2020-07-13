@@ -2,10 +2,6 @@
 -- @author	Potdisc
 -- Create Date : 23/9/2016
 
---[===[@debug@
-if LibDebug then LibDebug() end
---@end-debug@]===]
-
 --- Never autopass these armor types.
 -- @table autopassOverride
 local autopassOverride = {
@@ -27,7 +23,7 @@ local autopassTable = {
 		[LE_ITEM_WEAPON_AXE2H]		= {"DRUID", "ROGUE", "MONK", "PRIEST", "MAGE", "WARLOCK", "DEMONHUNTER"},
 		[LE_ITEM_WEAPON_BOWS] 		= {"DEATHKNIGHT", "PALADIN", "DRUID", "MONK", "SHAMAN", "PRIEST", "MAGE", "WARLOCK", "DEMONHUNTER", "WARRIOR"},
 		[LE_ITEM_WEAPON_CROSSBOW] 	= {"DEATHKNIGHT", "PALADIN", "DRUID", "MONK", "SHAMAN", "PRIEST", "MAGE", "WARLOCK", "DEMONHUNTER", "WARRIOR"},
-		[LE_ITEM_WEAPON_DAGGER]		= {"DEATHKNIGHT", "PALADIN", "MONK", },
+		[LE_ITEM_WEAPON_DAGGER]		= {"DEATHKNIGHT", "PALADIN", "MONK", "DEMONHUNTER"},
 		[LE_ITEM_WEAPON_GUNS]		= {"DEATHKNIGHT", "PALADIN", "DRUID", "MONK","SHAMAN", "PRIEST", "MAGE", "WARLOCK", "DEMONHUNTER", "WARRIOR"},
 		[LE_ITEM_WEAPON_MACE1H]		= {"HUNTER", "MAGE", "WARLOCK", "DEMONHUNTER"},
 		[LE_ITEM_WEAPON_MACE2H]		= {"MONK", "ROGUE", "HUNTER", "PRIEST", "MAGE", "WARLOCK", "DEMONHUNTER"},

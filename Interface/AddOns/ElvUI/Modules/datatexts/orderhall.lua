@@ -1,12 +1,14 @@
 local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 local DT = E:GetModule('DataTexts')
 
---Cache global variables
 --Lua functions
-local select, ipairs = select, ipairs
-local format = string.format
-local tsort = table.sort
+local _G = _G
+local select, ipairs, format, sort = select, ipairs, format, sort
 --WoW API / Variables
+local GetCurrencyInfo = GetCurrencyInfo
+local GetMouseFocus = GetMouseFocus
+local HideUIPanel = HideUIPanel
+local ShowGarrisonLandingPage = ShowGarrisonLandingPage
 local C_Garrison_GetCompleteTalent = C_Garrison.GetCompleteTalent
 local C_Garrison_GetFollowerShipments = C_Garrison.GetFollowerShipments
 local C_Garrison_GetInProgressMissions = C_Garrison.GetInProgressMissions
@@ -16,21 +18,14 @@ local C_Garrison_GetTalentTreeIDsByClassID = C_Garrison.GetTalentTreeIDsByClassI
 local C_Garrison_GetTalentTreeInfoForID = C_Garrison.GetTalentTreeInfoForID
 local C_Garrison_HasGarrison = C_Garrison.HasGarrison
 local C_Garrison_RequestLandingPageShipmentInfo = C_Garrison.RequestLandingPageShipmentInfo
-local GetCurrencyInfo = GetCurrencyInfo
-local GetMouseFocus = GetMouseFocus
-local HideUIPanel = HideUIPanel
-local ShowGarrisonLandingPage = ShowGarrisonLandingPage
 local CAPACITANCE_WORK_ORDERS = CAPACITANCE_WORK_ORDERS
-local COMPLETE = COMPLETE
 local FOLLOWERLIST_LABEL_TROOPS = FOLLOWERLIST_LABEL_TROOPS
 local GARRISON_LANDING_SHIPMENT_COUNT = GARRISON_LANDING_SHIPMENT_COUNT
 local GARRISON_TALENT_ORDER_ADVANCEMENT = GARRISON_TALENT_ORDER_ADVANCEMENT
 local LE_FOLLOWER_TYPE_GARRISON_7_0 = LE_FOLLOWER_TYPE_GARRISON_7_0
 local LE_GARRISON_TYPE_7_0 = LE_GARRISON_TYPE_7_0
 local ORDER_HALL_MISSIONS = ORDER_HALL_MISSIONS
-
---Global variables that we don't cache, list them here for mikk's FindGlobals script
--- GLOBALS: GarrisonLandingPage
+local InCombatLockdown = InCombatLockdown
 
 local GARRISON_CURRENCY = 1220
 local GARRISON_ICON = format("|T%s:16:16:0:0:64:64:4:60:4:60|t", select(3, GetCurrencyInfo(GARRISON_CURRENCY)))
@@ -42,9 +37,9 @@ end
 local function OnEnter(self, _, noUpdate)
 	DT:SetupTooltip(self)
 
-	if(not noUpdate) then
+	if not noUpdate then
 		DT.tooltip:Hide()
-		C_Garrison_RequestLandingPageShipmentInfo();
+		C_Garrison_RequestLandingPageShipmentInfo()
 		return
 	end
 
@@ -54,7 +49,7 @@ local function OnEnter(self, _, noUpdate)
 	local inProgressMissions = C_Garrison_GetInProgressMissions(LE_FOLLOWER_TYPE_GARRISON_7_0)
 	local numMissions = (inProgressMissions and #inProgressMissions or 0)
 	if(numMissions > 0) then
-		tsort(inProgressMissions, sortFunction) --Sort by time left, lowest first
+		sort(inProgressMissions, sortFunction) --Sort by time left, lowest first
 
 		DT.tooltip:AddLine(ORDER_HALL_MISSIONS) -- "Class Hall Missions"
 		firstLine = false
@@ -67,7 +62,7 @@ local function OnEnter(self, _, noUpdate)
 			end
 
 			if(timeLeft and timeLeft == "0") then
-				DT.tooltip:AddDoubleLine(mission.name, COMPLETE, r, g, b, 0, 1, 0)
+				DT.tooltip:AddDoubleLine(mission.name, _G.COMPLETE, r, g, b, 0, 1, 0)
 			else
 				DT.tooltip:AddDoubleLine(mission.name, mission.timeLeft, r, g, b)
 			end
@@ -117,20 +112,20 @@ local function OnEnter(self, _, noUpdate)
 	end
 
 	-- Talents
-	local talentTreeIDs = C_Garrison_GetTalentTreeIDsByClassID(LE_GARRISON_TYPE_7_0, E.myClassID);
+	local talentTreeIDs = C_Garrison_GetTalentTreeIDsByClassID(LE_GARRISON_TYPE_7_0, E.myClassID)
 	local hasTalent = false
 	if (talentTreeIDs) then
 		-- this is a talent that has completed, but has not been seen in the talent UI yet.
-		local completeTalentID = C_Garrison_GetCompleteTalent(LE_GARRISON_TYPE_7_0);
+		local completeTalentID = C_Garrison_GetCompleteTalent(LE_GARRISON_TYPE_7_0)
 		for _, treeID in ipairs(talentTreeIDs) do
-			local _, _, tree = C_Garrison_GetTalentTreeInfoForID(treeID);
+			local _, _, tree = C_Garrison_GetTalentTreeInfoForID(treeID)
 			for _, talent in ipairs(tree) do
-				local showTalent = false;
+				local showTalent = false
 				if (talent.isBeingResearched) then
-					showTalent = true;
+					showTalent = true
 				end
 				if (talent.id == completeTalentID) then
-					showTalent = true;
+					showTalent = true
 				end
 				if (showTalent) then
 					if not firstLine then
@@ -138,7 +133,7 @@ local function OnEnter(self, _, noUpdate)
 					end
 					firstLine = false
 					DT.tooltip:AddLine(GARRISON_TALENT_ORDER_ADVANCEMENT); -- "Order Advancement"
-					DT.tooltip:AddDoubleLine(talent.name, format(GARRISON_LANDING_SHIPMENT_COUNT, talent.isBeingResearched and 0 or 1, 1), 1, 1, 1);
+					DT.tooltip:AddDoubleLine(talent.name, format(GARRISON_LANDING_SHIPMENT_COUNT, talent.isBeingResearched and 0 or 1, 1), 1, 1, 1)
 					hasTalent = true
 				end
 			end
@@ -153,18 +148,21 @@ local function OnEnter(self, _, noUpdate)
 end
 
 local function OnClick()
+	if InCombatLockdown() then _G.UIErrorsFrame:AddMessage(E.InfoColor.._G.ERR_NOT_IN_COMBAT) return end
+
 	if not (C_Garrison_HasGarrison(LE_GARRISON_TYPE_7_0)) then
-		return;
+		return
 	end
 
-	local isShown = GarrisonLandingPage and GarrisonLandingPage:IsShown();
+	local GarrisonLandingPage = _G.GarrisonLandingPage
+	local isShown = GarrisonLandingPage and GarrisonLandingPage:IsShown()
 	if (not isShown) then
-		ShowGarrisonLandingPage(LE_GARRISON_TYPE_7_0);
+		ShowGarrisonLandingPage(LE_GARRISON_TYPE_7_0)
 	elseif (GarrisonLandingPage) then
-		local currentGarrType = GarrisonLandingPage.garrTypeID;
-		HideUIPanel(GarrisonLandingPage);
+		local currentGarrType = GarrisonLandingPage.garrTypeID
+		HideUIPanel(GarrisonLandingPage)
 		if (currentGarrType ~= LE_GARRISON_TYPE_7_0) then
-			ShowGarrisonLandingPage(LE_GARRISON_TYPE_7_0);
+			ShowGarrisonLandingPage(LE_GARRISON_TYPE_7_0)
 		end
 	end
 end

@@ -1,31 +1,24 @@
---[[
-	Collection of previous april fools pranks
-
-	Harlem Shake: 		Try it out with the command /harlemshake
-	Hello Kitty: 		Try it out with the command /hellokitty (pay attention to the popups, read what it says)
-]]
-
+------------------------------------------------------------------------
+-- Collection of previous april fools pranks
+-- Harlem Shake: 	Try it out with the command /harlemshake
+-- Hello Kitty: 	Try it out with the command /hellokitty (pay attention to the popups, read what it says)
+------------------------------------------------------------------------
 local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
+local UF = E:GetModule('UnitFrames')
+local AB = E:GetModule('ActionBars')
 
---Cache global variables
 --Lua functions
 local _G = _G
 local pairs = pairs
-local twipe, tinsert = table.wipe, table.insert
+local twipe, tinsert = wipe, tinsert
 --WoW API / Variables
 local CreateFrame = CreateFrame
-local PlayMusic, StopMusic = PlayMusic, StopMusic
-local GetCVar, SetCVar = GetCVar, SetCVar
 local DoEmote = DoEmote
-local SendChatMessage = SendChatMessage
+local GetCVar, SetCVar = GetCVar, SetCVar
 local NUM_PET_ACTION_SLOTS = NUM_PET_ACTION_SLOTS
-
---Global variables that we don't cache, list them here for the mikk's Find Globals script
--- GLOBALS: UIParent, GameTooltip, Minimap
--- GLOBALS: ElvUI_StaticPopup1, ElvUI_StaticPopup1Button1, LeftChatPanel, RightChatPanel
--- GLOBALS: ElvUI_StanceBar, ObjectiveTrackerFrame
--- GLOBALS: HelloKittyLeft, HelloKittyRight
-
+local PlayMusic, StopMusic = PlayMusic, StopMusic
+local SendChatMessage = SendChatMessage
+-- GLOBALS: ElvUI_StaticPopup1, ElvUI_StaticPopup1Button1, ElvUI_StanceBar
 
 --Harlem Shake (Activate with command: /harlemshake)
 --People really seemed to like this one. We got a lot of positive responses.
@@ -33,11 +26,11 @@ do
 	function E:StopHarlemShake()
 		E.isMassiveShaking = nil
 		StopMusic()
-		SetCVar("Sound_EnableAllSound", self.oldEnableAllSound)
-		SetCVar("Sound_EnableMusic", self.oldEnableMusic)
+		SetCVar('Sound_EnableAllSound', self.oldEnableAllSound)
+		SetCVar('Sound_EnableMusic', self.oldEnableMusic)
 
 		self:StopShakeHorizontal(ElvUI_StaticPopup1)
-		for _, object in pairs(self["massiveShakeObjects"]) do
+		for _, object in pairs(self.massiveShakeObjects) do
 			if object then
 				self:StopShake(object)
 			end
@@ -47,56 +40,53 @@ do
 			E:CancelTimer(E.massiveShakeTimer)
 		end
 
-		E.global.aprilFools = true;
-		E:StaticPopup_Hide("HARLEM_SHAKE")
+		E.global.aprilFools = true
+		E:StaticPopup_Hide('HARLEM_SHAKE')
 		twipe(self.massiveShakeObjects)
-		DoEmote("Dance")
+		DoEmote('Dance')
 	end
 
 	function E:DoTheHarlemShake()
 		E.isMassiveShaking = true
 		ElvUI_StaticPopup1Button1:Enable()
 
-		for _, object in pairs(self["massiveShakeObjects"]) do
+		for _, object in pairs(self.massiveShakeObjects) do
 			if object and not object:IsForbidden() and object:IsShown() then
 				self:Shake(object)
 			end
 		end
 
-		E.massiveShakeTimer = E:ScheduleTimer("StopHarlemShake", 42.5)
-		SendChatMessage("DO THE HARLEM SHAKE!", "YELL")
+		E.massiveShakeTimer = E:ScheduleTimer('StopHarlemShake', 42.5)
+		SendChatMessage('DO THE HARLEM SHAKE!', 'YELL')
 	end
 
 	function E:BeginHarlemShake()
-		DoEmote("Dance")
+		DoEmote('Dance')
 		ElvUI_StaticPopup1Button1:Disable()
 		self:ShakeHorizontal(ElvUI_StaticPopup1)
-		self.oldEnableAllSound = GetCVar("Sound_EnableAllSound")
-		self.oldEnableMusic = GetCVar("Sound_EnableMusic")
+		self.oldEnableAllSound = GetCVar('Sound_EnableAllSound')
+		self.oldEnableMusic = GetCVar('Sound_EnableMusic')
 
-		SetCVar("Sound_EnableAllSound", 1)
-		SetCVar("Sound_EnableMusic", 1)
-		PlayMusic([[Interface\AddOns\ElvUI\media\sounds\harlemshake.ogg]])
-		E:ScheduleTimer("DoTheHarlemShake", 15.5)
+		SetCVar('Sound_EnableAllSound', 1)
+		SetCVar('Sound_EnableMusic', 1)
+		PlayMusic(E.Media.Sounds.HarlemShake)
+		E:ScheduleTimer('DoTheHarlemShake', 15.5)
 
-		local UF = E:GetModule("UnitFrames")
-		local AB = E:GetModule("ActionBars")
 		self.massiveShakeObjects = {}
-		tinsert(self.massiveShakeObjects, GameTooltip)
-		tinsert(self.massiveShakeObjects, Minimap)
-		tinsert(self.massiveShakeObjects, ObjectiveTrackerFrame)
-		tinsert(self.massiveShakeObjects, LeftChatPanel)
-		tinsert(self.massiveShakeObjects, RightChatPanel)
+		tinsert(self.massiveShakeObjects, _G.GameTooltip)
+		tinsert(self.massiveShakeObjects, _G.Minimap)
+		tinsert(self.massiveShakeObjects, _G.ObjectiveTrackerFrame)
+		tinsert(self.massiveShakeObjects, _G.LeftChatPanel)
+		tinsert(self.massiveShakeObjects, _G.RightChatPanel)
 
-		for unit in pairs(UF['units']) do
+		for unit in pairs(UF.units) do
 			tinsert(self.massiveShakeObjects, UF[unit])
 		end
-
-		for _, header in pairs(UF['headers']) do
+		for _, header in pairs(UF.headers) do
 			tinsert(self.massiveShakeObjects, header)
 		end
 
-		for _, bar in pairs(AB['handledBars']) do
+		for _, bar in pairs(AB.handledBars) do
 			for i=1, #bar.buttons do
 				tinsert(self.massiveShakeObjects, bar.buttons[i])
 			end
@@ -109,7 +99,7 @@ do
 		end
 
 		for i=1, NUM_PET_ACTION_SLOTS do
-			local button = _G["PetActionButton"..i]
+			local button = _G['PetActionButton'..i]
 			if button then
 				tinsert(self.massiveShakeObjects, button)
 			end
@@ -117,7 +107,7 @@ do
 	end
 
 	function E:HarlemShakeToggle()
-		self:StaticPopup_Show("HARLEM_SHAKE");
+		self:StaticPopup_Show('HARLEM_SHAKE')
 	end
 end
 
@@ -168,8 +158,8 @@ do
 		if(self:HelloKittyFixCheck()) then
 			E:HelloKittyFix()
 		else
-			self.oldEnableAllSound = GetCVar("Sound_EnableAllSound")
-			self.oldEnableMusic = GetCVar("Sound_EnableMusic")
+			self.oldEnableAllSound = GetCVar('Sound_EnableAllSound')
+			self.oldEnableMusic = GetCVar('Sound_EnableMusic')
 
 			t.backdropcolor = {r = c.r, g = c.g, b = c.b}
 			c = self.db.general.backdropfadecolor
@@ -200,8 +190,8 @@ do
 			self.db.general.bordercolor = {r = 223/255, g = 217/255, b = 47/255}
 			self.db.general.valuecolor = {r = 223/255, g = 217/255, b = 47/255}
 
-			self.db.chat.panelBackdropNameLeft = [[Interface\AddOns\ElvUI\media\textures\helloKittyChat.tga]]
-			self.db.chat.panelBackdropNameRight = [[Interface\AddOns\ElvUI\media\textures\helloKittyChat.tga]]
+			self.db.chat.panelBackdropNameLeft = E.Media.Textures.HelloKittyChat
+			self.db.chat.panelBackdropNameRight = E.Media.Textures.HelloKittyChat
 
 			self.db.unitframe.colors.castColor = {r = 223/255, g = 76/255, b = 188/255}
 			self.db.unitframe.colors.transparentCastbar = true
@@ -212,24 +202,24 @@ do
 			self.db.unitframe.colors.health = {r = 223/255, g = 76/255, b = 188/255}
 			self.db.unitframe.colors.healthclass = false
 
-			SetCVar("Sound_EnableAllSound", 1)
-			SetCVar("Sound_EnableMusic", 1)
-			PlayMusic([[Interface\AddOns\ElvUI\media\sounds\helloKitty.ogg]])
-			E:StaticPopup_Show("HELLO_KITTY_END")
+			SetCVar('Sound_EnableAllSound', 1)
+			SetCVar('Sound_EnableMusic', 1)
+			PlayMusic(E.Media.Sounds.HelloKitty)
+			E:StaticPopup_Show('HELLO_KITTY_END')
 
 			self.db.general.kittys = true
 			self:CreateKittys()
 
-			self:UpdateAll()
+			self:StaggeredUpdateAll(nil, true)
 		end
 	end
 
 	function E:RestoreHelloKitty()
 		--Store old settings
 		self.db.general.kittys = false
-		if(HelloKittyLeft) then
-			HelloKittyLeft:Hide()
-			HelloKittyRight:Hide()
+		if(_G.HelloKittyLeft) then
+			_G.HelloKittyLeft:Hide()
+			_G.HelloKittyRight:Hide()
 		end
 
 		if not(self.db.tempSettings) then return end
@@ -267,51 +257,51 @@ do
 
 		self.db.tempSettings = nil
 
-		self:UpdateAll()
+		self:StaggeredUpdateAll(nil, true)
 	end
 
 	function E:CreateKittys()
-		if(HelloKittyLeft) then
-			HelloKittyLeft:Show()
-			HelloKittyRight:Show()
+		if(_G.HelloKittyLeft) then
+			_G.HelloKittyLeft:Show()
+			_G.HelloKittyRight:Show()
 			return
 		end
-		local helloKittyLeft = CreateFrame("Frame", "HelloKittyLeft", UIParent)
-		helloKittyLeft:SetSize(120, 128)
+		local helloKittyLeft = CreateFrame('Frame', 'HelloKittyLeft', _G.UIParent)
+		helloKittyLeft:Size(120, 128)
 		helloKittyLeft:SetMovable(true)
 		helloKittyLeft:EnableMouse(true)
-		helloKittyLeft:RegisterForDrag("LeftButton")
-		helloKittyLeft:Point("BOTTOMLEFT", LeftChatPanel, "BOTTOMRIGHT", 2, -4)
-		helloKittyLeft.tex = helloKittyLeft:CreateTexture(nil, "OVERLAY")
+		helloKittyLeft:RegisterForDrag('LeftButton')
+		helloKittyLeft:Point('BOTTOMLEFT', _G.LeftChatPanel, 'BOTTOMRIGHT', 2, -4)
+		helloKittyLeft.tex = helloKittyLeft:CreateTexture(nil, 'OVERLAY')
 		helloKittyLeft.tex:SetAllPoints()
-		helloKittyLeft.tex:SetTexture("Interface\\AddOns\\ElvUI\\media\\textures\\helloKitty.tga")
+		helloKittyLeft.tex:SetTexture(E.Media.Textures.HelloKitty)
 		helloKittyLeft.tex:SetTexCoord(0, 0, 0, 1, 0, 0, 0, 1)
 		helloKittyLeft.curFrame = 1
 		helloKittyLeft.countUp = true
 		helloKittyLeft:SetClampedToScreen(true)
-		helloKittyLeft:SetScript("OnDragStart", OnDragStart)
-		helloKittyLeft:SetScript("OnDragStop", OnDragStop)
-		helloKittyLeft:SetScript("OnUpdate", OnUpdate)
+		helloKittyLeft:SetScript('OnDragStart', OnDragStart)
+		helloKittyLeft:SetScript('OnDragStop', OnDragStop)
+		helloKittyLeft:SetScript('OnUpdate', OnUpdate)
 
-		local helloKittyRight = CreateFrame("Frame", "HelloKittyRight", UIParent)
-		helloKittyRight:SetSize(120, 128)
+		local helloKittyRight = CreateFrame('Frame', 'HelloKittyRight', _G.UIParent)
+		helloKittyRight:Size(120, 128)
 		helloKittyRight:SetMovable(true)
 		helloKittyRight:EnableMouse(true)
-		helloKittyRight:RegisterForDrag("LeftButton")
-		helloKittyRight:Point("BOTTOMRIGHT", RightChatPanel, "BOTTOMLEFT", -2, -4)
-		helloKittyRight.tex = helloKittyRight:CreateTexture(nil, "OVERLAY")
+		helloKittyRight:RegisterForDrag('LeftButton')
+		helloKittyRight:Point('BOTTOMRIGHT', _G.RightChatPanel, 'BOTTOMLEFT', -2, -4)
+		helloKittyRight.tex = helloKittyRight:CreateTexture(nil, 'OVERLAY')
 		helloKittyRight.tex:SetAllPoints()
-		helloKittyRight.tex:SetTexture("Interface\\AddOns\\ElvUI\\media\\textures\\helloKitty.tga")
+		helloKittyRight.tex:SetTexture(E.Media.Textures.HelloKitty)
 		helloKittyRight.tex:SetTexCoord(0, 0, 0, 1, 0, 0, 0, 1)
 		helloKittyRight.curFrame = 10
 		helloKittyRight.countUp = false
 		helloKittyRight:SetClampedToScreen(true)
-		helloKittyRight:SetScript("OnDragStart", OnDragStart)
-		helloKittyRight:SetScript("OnDragStop", OnDragStop)
-		helloKittyRight:SetScript("OnUpdate", OnUpdate)
+		helloKittyRight:SetScript('OnDragStart', OnDragStart)
+		helloKittyRight:SetScript('OnDragStop', OnDragStop)
+		helloKittyRight:SetScript('OnUpdate', OnUpdate)
 	end
 
-	--When it bugged out for a user the command "/hellokittyfix" attempted to restore the changed settings to default
+	--When it bugged out for a user the command '/hellokittyfix' attempted to restore the changed settings to default
 	function E:HelloKittyFixCheck(secondCheck)
 		local t = self.db.tempSettings
 		if(not t and not secondCheck) then t = self.db.general end
@@ -333,8 +323,8 @@ do
 		c = P.general.valuecolor
 		self.db.general.valuecolor = {r = c.r, g = c.g, b = c.b}
 
-		self.db.chat.panelBackdropNameLeft = ""
-		self.db.chat.panelBackdropNameRight = ""
+		self.db.chat.panelBackdropNameLeft = ''
+		self.db.chat.panelBackdropNameRight = ''
 
 		c = P.unitframe.colors.health
 		self.db.unitframe.colors.health = {r = c.r, g = c.g, b = c.b}
@@ -347,22 +337,22 @@ do
 		self.db.unitframe.colors.auraBarBuff = {r = c.r, g = c.g, b = c.b}
 		self.db.unitframe.colors.transparentAurabars = false
 
-		if(HelloKittyLeft) then
-			HelloKittyLeft:Hide()
-			HelloKittyRight:Hide()
+		if(_G.HelloKittyLeft) then
+			_G.HelloKittyLeft:Hide()
+			_G.HelloKittyRight:Hide()
 			self.db.general.kittys = nil
 			return
 		end
 
 		self.db.tempSettings = nil
-		self:UpdateAll()
+		self:StaggeredUpdateAll(nil, true)
 	end
 
 	function E:HelloKittyToggle()
-		if(HelloKittyLeft and HelloKittyLeft:IsShown()) then
+		if(_G.HelloKittyLeft and _G.HelloKittyLeft:IsShown()) then
 			self:RestoreHelloKitty()
 		else
-			self:StaticPopup_Show("HELLO_KITTY")
+			self:StaticPopup_Show('HELLO_KITTY')
 		end
 	end
 end

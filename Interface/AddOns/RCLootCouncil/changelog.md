@@ -1,3 +1,457 @@
+# v2.18.3
+## Bugfixes
+* *Fixed rare error when award later items have no trade time remaining. (CurseClassic#37)*
+* *Fixed issues with EQdkp Plus XML export (CurseClassic#35).*
+* *Fixed issue with Award Later when items aren't available in the ML's bags when expected.*
+
+# v2.18.2
+## Changes
+### Allow Keeping
+The pop-up for keeping items now shows "Keep"/"Trade" instead of yes/no. (#183).
+
+## Bugfixes
+* *Passes no longer require a note with 'Require Notes' enabled. (#184)*
+* *Fixes issue with receiving votes outside an instance (Curse#413).*
+* *Fixed issues with TSV Export hyperlinks.*
+
+
+# v2.18.0
+## Additions
+### Auto Award BoE's
+Added a new system allowing for auto awarding BoE's.
+Only Epic, Equippable, non-bags items qualify.
+This is checked before the normal auto award, so if both is enabled, this will have priority.
+
+### Class Filter
+Added class filters to the Loot History.
+Unlike the normal filters, these are active when enabled, i.e. checking 'Warrior' and 'Priest' will only show warriors and priests.
+
+### Require Notes
+Added a new option for ML's that will require a note to be added to all responses.
+When enabled, if no note is supplied, the response is blocked, and the candidate shown a message to why that happened.
+Note: This is not backwards compatible with older version of the addon.
+
+### Winners of item
+Added all the winners of the selected item to the More Info tooltip in the Loot History.
+Note: Different versions of an item is not included in the count.
+
+## Changes
+### Auto Award
+Apparently Auto Awards never worked with Personal Loot - this has now been rectified.
+
+### Corrupted Items
+Corrupted items now have a purple border and 'Corrupted' text as their bonus text.
+This should help you spotting those.
+
+### History Exports
+All exports will now respect all currently active filters, i.e. only export what you're currently able to see.
+
+### Out of Raid Support
+An "Out of Raid" response is no longer automatically sent if you're outside an instance while in a group of 8 or more.
+Instead, the Master Looter will now have to specifically enable it in the "Master Looter > Usage Options" options.
+When enabled, it functions exactly as it did before.
+*DevNote: I decided to make this change now, as I've seen an increasingly amount of confusion as to why people didn't get Loot pop-ups when out of an instance. I expect the few that actually use this feature will figure out how to turn it on.*
+
+## Bugfixes
+* *Candidate info no longer has the potential to wait a long time before being sync, i.e. guild rank not showing up in the voting frame.*
+* *2.18.1: Previous version would error out when awarding during tests.*
+
+
+#### Dev
+* Changed parameters of `ML:AutoAward`.
+* Changed parameters and return type of `ML:ShouldAutoAward`.
+* Added new comm `do_trade` for handling trading of items not contained in `lootTable`.
+* Changed system for sending candidate updates (`ML:SendCandidates`).
+
+
+
+# v2.17.2
+## Bugfixes
+* *Characters with Non-ascii names that have a lower-case by WoW lua's definition can now be council members (CurseClassic#31).*
+* *Fixed issue regarding adding items to a session could potentially cause an error (Curse#406).*
+
+# v2.17.1
+## Changes
+### Corruption
+The corruption column will now show a candidate's effective corruption (corruption - resistance) instead of the total corruption.
+When awarding a corruption item, the tooltip showing the new total corruption now takes corruption resistance into consideration.
+Corruption Effects in the tooltip are now colored yellow if an award would make a player exceed its threshold.
+
+### Item Registration
+Changed the detection of looted items to ensure better reliability with high latencies (CurseClassic#9).
+
+## Bugfixes
+* *Mousing over an empty corruption column will no longer result in an error.*
+* *CSV importing data with date and time and no id will now properly add the time part to the history.*
+
+
+#### Dev
+Deprecated `:IsCouncil(name)` with `:CouncilContains(name)`. Former function will be removed in a couple of months.
+
+# v2.17.0
+## Changes
+Updated for patch 8.3.
+
+## Additions
+### Corruption
+Added a new button group for corrupted items.
+This group supersedes all other button groups, regardless of their specificity.
+
+Added a new column in the Voting Frame containing candidates' corruption info.
+Mouse over the value to see a tooltip containing even more info.
+It may also be clickable, N'Zoth wills it..
+
+### Ny'alotha the Waking City
+Added auto pass data for the new trinkets.
+Added both patch 8.3 and the raid as history mass deletion options.
+
+### JSON Export
+Sebastianbassen kindly created a JSON export which is now included (#180).
+
+
+## Bugfixes
+* *Fixed issue with CSV importing responses without button groups (CurseClassic#25).*
+
+# v2.16.1
+## Changes
+
+#### Chat Frame
+`/rc reset` now also resets the chosen chat frame.
+The chat frame is also automatically reset to default if the selected chat frame becomes invalid.
+
+
+## Bugfixes
+* *Time calculations with raid members in different timezones now works properly (CurseClassic#22).*
+* *The TradeUI now detects reawards when a session has ended.*
+* *Bags are now properly ignored by the Auto Award system.*
+
+# v2.16.0
+
+## Additions
+
+### Alt-click Awarding
+ML's can now Award items by Alt-clicking a candidate row, saving you a right-click.
+
+### CSV Import/Export
+Added support for importing custom history through CSV.  
+See the wiki for more info.  
+*Note: The CSV export has changed fields to comply with the new import system. This also means old CSV exports cannot be imported!*
+
+### Frame Options
+Added an option to select which chat frame RCLootCouncil will print to.
+
+### Loot History
+Added "Send to guild" option.  
+Checking this will send history entries to your guild instead of your group.
+
+### Looting Options
+Added "Award Later" option.  
+When enabled, this option will automatically check "Award Later" in the Session Frame.
+
+## Changes
+
+### Loot History
+The history is now sortable by class. Just click the class icon header.
+
+### Options
+
+#### Council
+Current Council list is now sorted alphabetically.
+
+### Voting Frame
+
+#### Awarding
+When Master Looter, awarding an item will now switch session to the first unawarded session instead of simply the next numerical session (i.e. session + 1).
+
+#### Vote Status
+The list is now sorted alphabetically and colored according to the candidates' class.  
+Added councilmembers that haven't yet voted to the list.  
+The names now respects the "Append realm name" option.
+
+#### Votes Column
+Voter names are now class colored.  
+The names now respects the "Append realm name" option.
+
+
+## Bugfixes
+* *Added a potential fix to the occasional false "Full bags" blame.*
+* *Added a history patch for broken "Award Reasons".*
+
+
+### v2.15.1
+---
+###### Bugfixes
+* *Fixed error when council members reconnect during session (Curse#398).*
+* *Fixed error with 'whisper guide' being too long to send in some locales (#177).*
+* *The 'Keep Loot' popup is now only used in raids to avoid it unintentionally popping up in dungeons. This is a temporary fix, as a proper fix needs way more work (Curse#396).*
+* *Adding items to a session will no longer reset rolls on existing items when "Add Rolls" is enabled.*
+* *Adding more than one item to a session could sometimes mess up and make a session switch button disappear.*
+* *Items awarded with "Award Reasons" would retain their original response when filtering the Loot History (CurseClassic#9).*
+
+
+### v2.15.0
+---
+* **Auto Award**  
+* Auto Awards can now only happen on equip able items. #Classic.
+
+
+* **Filters**  
+* Added the option to always show the owner of an item in the voting frame.
+* Enabled by default.
+
+
+###### Bugfixes
+* *The explanation on how to use the whisper system was wrong.*
+* *The whisper system didn't work properly with responses..*
+* *The whisper help system was also broken...*
+
+###### Dev
+* Added `typeCode` to `lootTable`. Used to determine butons/responses for a session. Still backwards compatible with old system.
+* Changed the entire system of adding new button groups. Refer to `ML:GetTypeCodeForItem`.
+* Updated `:PrepareLootTable` to add info from `GetItemInfo` for future comms update.
+* Added "Constants.lua" and moved certain constants there.
+* Added `itemClassID` and `itemSubClassID` to loot history.
+* `RCVotingFrame:RemoveColumn` now automatically updates old sortnext values.
+* Overhauled "TrinketData.lua" with new format and classic trinkets.
+
+
+
+### v2.14.0
+---
+* **Voting Frame**  
+* The ML can now right click candidates after a session has ended.
+* This basically allows for an entire redo of the session, particularly changing awards later than usual.
+* As a reminder you can always reopen the voting frame with "/rc open".
+
+###### Bugfixes
+* *Reawarding an item to the original owner will now remove the old trade entry from the TradeUI.*
+
+
+### v2.13.1
+---
+###### Bugfixes
+* *Fixed issues when upgrading from a pre 2.7 version to 2.13 (#391-394).*
+
+### v2.13.0
+---
+* **Loot History**  
+* Added an option to delete loot history entries by instance name.
+* This allows you to target a specific instance, in particular Mythic+ loot that got added unintentionally.
+
+###### Dev
+* Changed various structures for easier editing. All changes are backwards compatible. #Classic.
+
+
+
+### v2.12.2
+---
+###### Bugfixes
+* *Fixed issue with loot history (#389).*
+* *Fixed error popping up on random trades (#390).*
+* *No longer tracks non-tradeable loot when it isn't supposed to.*
+
+
+### v2.12.1
+---
+###### Bugfixes  
+* *Fixed library issue causing scrolling tables to unstick and break the UI in 8.2.*
+
+
+
+### v2.12.0 (patch 8.2)
+---
+* Added patch 8.2 and Azshara's Eternal Palace as history mass delete options.
+
+
+* **Autopass**  
+* Added autopass data for trinkets in Crucible of Storms (a bit late, I know).
+* Added autopass data for trinkets in Eternal Palace.
+
+
+###### Bugfixes  
+* *Added a compatibility fix very old loot histories (#388).*
+* *Removed any Breath of Bwonsamdi that have been recorded to the history during alpha releases.*
+
+
+### v2.11.0
+---
+* **Loot Status**  
+* The loot status now registers all items dropped by a boss, even if the response indicating if it's tradeable isn't received from the candidate.
+* Implemented code to ignore certain loot sources and types (particularly Opulence trash piles), which should overall make the loot status more reliable.
+
+
+###### Bugfixes  
+* *The TradeUI is now able to handle multiple instances of the same item.*
+* *More error correcting code for corrupted loot history*
+* *No longer logs `non_tradeable` loots when the addon isn't being used, i.e. in dungeons.*
+* *Mostly fixed the worst texture stretching throughout the UI.*
+
+
+###### Dev
+* Added `addon.Compat` namespace for handling backwards compatibility.
+* Added `addon.lootGUIDToIgnore` table indicating guid's that won't have their loot registered.
+
+
+### v2.10.3
+---
+###### Bugfixes
+* *Added error correcting code for corrupted settings and loot history.*
+
+
+### v2.10.2
+---
+* **Loot History**
+* Added all non default responses to the list of changeable responses.
+
+
+###### Bugfixes
+* *VotingFrame session buttons now better display the status, particular for council members.*
+
+
+
+### v2.10.1
+---
+**Loot Status**
+* Added loot status to the session frame.
+* This allows the ML to see how many have looted the boss before starting a session.
+
+* Added `notes` as an option to announce awards.
+
+
+###### Bugfixes
+* *Fixed random issue with realm name (#385).*
+
+
+### v2.10.0
+---
+* **Version Checker**
+* The version checker can now print any detected outdated clients.
+* Simply add any argument to the chat command, e.g. `/rc v 1` to get the list.
+
+
+* **Ilvl comparisons**
+* If a trinket or ring is looted, and the candidate already has equipped a different version of the item,
+RCLootCouncil now uses that item's ilvl when calculating the difference, since that item would have to be replaced (#378).
+
+
+* The owner is now also shown above the award status in the voting frame.
+
+
+* Updated Libraries to the latest version(s).
+
+
+###### Bugfixes
+* *Sorting the loot history now properly triggers secondary sorts where needed.*
+
+###### Dev
+* Changed structure of `db.global.verTestCandidates`.
+* Replaced `:GetDiff()` with `:GetIlvlDifference()` which takes different arguments.
+
+
+### v2.9.7
+---
+###### Bugfixes
+* *Fixed issue with Loot Status (#382).*
+
+
+
+### v2.9.6
+---
+* **Loot Status**  
+* Added a new indicator for when candidates fail to loot items due to full bags.
+* This is considered the same as "fake loot" for all intents and purposes.
+
+
+* **Tests**
+* `/rc ftest` now only uses items from the newest raid.
+* A `looted` message is now sent on all tests so that people can see the "Loot Status" in action.
+
+
+* **Loot History**
+* Added the owner of an item to the Loot History.
+* The owner has also been added to .csv and .tsv exports.
+* Note: Only items awarded after this release has their owners tracked.
+
+* Declined manual rolls is now displayed in the voting frame (#329).
+
+* Added trinkets from Battle of Dazar'Alor to the autopass list.
+
+###### Bugfixes
+* *Fixed "Not in raid" spam in Battlegrounds (#380).*
+
+###### Dev
+* Changed parameters in ml_core `TrackAndLogLoot`.
+* Updated fields in `history_table` in said function, along with `RCMLLootHistorySend` message.
+
+
+### v2.9.5
+---
+* Updated .toc for patch 8.1
+* Added patch 8.1 as an option for Loot History mass deletion.
+
+
+* **Auto Trade**
+* Added a new option that when enabled bypasses the trade popup and automatically adds items that should be traded.
+* This option is disabled by default.
+
+
+* The version checker now only shows eligible players at the time of the query *(For Bram)*.
+
+
+###### Bugfixes
+* *Fixed issue with fewer than default buttons not working properly (Git#172).*
+* *Items would sometimes be marked as non-tradeable if the player already had a duplicate of the item (#379, #375).*
+* *Switched to MSA_DropDownMenu-1.0 to avoid errors with DropDownMenus (#376, #374, #366?, #361?).*
+
+
+
+### v2.9.4
+---
+###### Bugfixes
+* *Fixed issue with loot frame disappearing after rolling for just one item. (#377)*
+
+
+### v2.9.3
+---
+* **Loot Status**  
+* Added a display of whom have looted the boss to the voting frame.
+
+
+* **Add command**
+* The "/rc add" command have been extended to optionally include a player name.
+* Simply type the name of a group member before any items you add.
+* Unless invalid, that player will be added as the owner of the item, which will allow the TradeUI to do it's thing.
+* Note: You must add a space after the player name.
+
+
+* **Moveable buttons options**
+* Buttons and responses can now be moved up/down in the options menu to easily change their order.
+* This can also be done on the "Award Reasons".
+
+
+
+### v2.9.2
+---
+###### Bugfixes
+* *Fixed issue with dropdown menus that had sneaked in at the last minute.*
+
+
+### v2.9.1
+---
+
+* Added local chat print option to all announcements.
+* Added a custom number of days input to loot history mass deletion.
+
+
+###### Bugfixes
+* *BoE items are now no longer added to sessions when the option is turned off.*
+* *Disabled all ML registrations in pvp (#354).*
+* *Added a patch and fix for Blizzards and others taint of dropdown menus (#358, #361, #366).*
+* *Wands and other weapons are now correctly identified as MainHand weapons (#368).*
+* *The TradeUI will now be shown if using a different locale than the ML (#370).*
+
+
+
 ### v2.9.0
 ---
 * **Appearance**

@@ -1,0 +1,13 @@
+WeakAurasCompanion: enabled
+Skada: enabled
+ElvUI_VisualAuraTimers: disabled
+ElvUI_ExtraActionBars: disabled
+ElvUI_CastBarOverlay: disabled
+ElvUI_EverySecondCounts: disabled
+ElvUI_AuraBarsMovers: disabled
+ElvUI_CustomTweaks: disabled
+WeakAurasArchive: enabled
+ElvUI_VerticalBars: disabled
+ElvUI_OptionsUI: enabled
+OPie_Classic: disabled
+Plater: disabled

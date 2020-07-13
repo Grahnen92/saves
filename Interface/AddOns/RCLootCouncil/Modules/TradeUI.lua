@@ -3,11 +3,7 @@
 -- @author Potdisc
 -- Create Date : 28/5/2018 16:48:38
 
---[===[@debug@
-if LibDebug then LibDebug() end
---@end-debug@]===]
-
-local addon = LibStub("AceAddon-3.0"):GetAddon("RCLootCouncil")
+local _,addon = ...
 local TradeUI = addon:NewModule("RCTradeUI", "AceComm-3.0", "AceEvent-3.0", "AceTimer-3.0")
 addon.TradeUI = TradeUI -- Shorthand for easier access
 local ST = LibStub("ScrollingTable")
@@ -85,7 +81,7 @@ function TradeUI:Update(forceShow)
             {DoCellUpdate = self.SetCellItemIcon},
             {value = v.link},
             {value = "-->"},
-            {value = addon.Ambiguate(v.args.recipient), color = addon:GetClassColor(addon.candidates[v.args.recipient] and addon.candidates[v.args.recipient].class or "nothing")},
+            {value = v.args.recipient and addon.Ambiguate(v.args.recipient) or "Unknown", color = addon:GetClassColor(addon.candidates[v.args.recipient] and addon.candidates[v.args.recipient].class or "nothing")},
             {value = _G.TRADE, color = self.GetTradeLabelColor, colorargs = {self, v.args.recipient},},
          }
       }
@@ -98,30 +94,87 @@ function TradeUI:OnCommReceived(prefix, serializedMsg, distri, sender)
 	if prefix == "RCLootCouncil" then
 		local test, command, data = addon:Deserialize(serializedMsg)
 		if addon:HandleXRealmComms(self, command, data, sender) then return end
-		if test and command == "awarded" then
-         local session, winner, trader = unpack(data)
-         if addon:UnitIsUnit(trader, "player") then
-            -- We should give our item to 'winner'
-            if not addon:UnitIsUnit(winner, "player") or (addon.testMode or addon.nnp) then -- Don't add ourself unless we're testing
-               addon.ItemStorage:StoreItem(addon:GetLootTable()[session].link, "to_trade", {recipient = winner})
-            end
-            self:Show()
+		if test then
+         if command == "awarded" then
+            self:OnAwardReceived(unpack(data))
+         elseif command == "do_trade" then
+            self:OnDoTrade(unpack(data))
          end
       end
    end
 end
 
+function TradeUI:OnDoTrade (trader, item, winner)
+   if addon:UnitIsUnit(trader, "player") then
+      -- Item should be registered
+      local Item = addon.ItemStorage:GetItem(item)
+      if not Item then
+         addon:DebugLog("<ERROR>", "Couldn't find item for 'DoTrade'", item, winner)
+         return addon:Print(format("Couldn't find %s to trade to %s",tostring(item), tostring(winner)))
+      end
+      Item.type = "to_trade"
+      Item.args.recipient = winner
+      if Item and addon:UnitIsUnit(winner, "player") and not (addon.testMode or addon.nnp) then
+         addon.ItemStorage:RemoveItem(Item)
+      end
+      self:Show()
+   end
+end
+
+function TradeUI:OnAwardReceived (session, winner, trader)
+   if addon:UnitIsUnit(trader, "player") then
+      -- We should give our item to 'winner'
+      local Item
+      -- Session might have ended, meaning the lootTable is cleared
+      local lootSession = addon:GetLootTable()[session]
+      if lootSession then
+         Item = addon.ItemStorage:GetItem(lootSession.link) -- Update our temp item
+         if Item then
+            Item.type = "to_trade"
+            Item.args.recipient = winner
+            Item.args.session = session
+         else -- Maybe we don't have a temp item; can be caused by manually adding it.
+            Item = addon.ItemStorage:New(lootSession.link, "to_trade", {recipient = winner, session = session}):Store()
+         end
+      else
+         -- If the session has ended and we receive another award, it's got to be a reaward. Fetch the item based on the session:
+         local Items = self:GetStoredItemBySession(session)
+         if Items and #Items > 0 then
+            if #Items > 1 then -- We have more than one?
+               addon:DebugLog("<WARNING>","Found multiple items for session", session)
+            end
+            Item = Items[1]
+            Item.args.recipient = winner
+            addon:DebugLog("Changed winner for", session, Item.link, "to", winner)
+         else
+            -- We found no items with the session - probably an error (or we have already traded the item)
+            addon:DebugLog("<ERROR>", "Found no stored items for session:", session)
+            -- REVIEW Fail silently
+         end
+      end
+
+      -- Don't add ourself unless we're testing
+      -- but do add/update the item first, in case it's a reaward to ourself
+      if Item and addon:UnitIsUnit(winner, "player") and not (addon.testMode or addon.nnp) then
+         addon.ItemStorage:RemoveItem(Item)
+      end
+      self:Show()
+   end
+end
+
 function TradeUI:CheckTimeRemaining()
-   -- This will handle all items in ItemStorage, not just to_trade.
-   -- It might as well since it's always runnning, although I might change that if need be.
    local Items = addon.ItemStorage:GetAllItemsLessTimeRemaining(TIME_REMAINING_WARNING)
+   -- Filter for items with "to_trade" and "award_later"
+   Items = tFilter(Items, function(item)
+      return item.type == "to_trade" or item.type == "award_later"
+    end, true)
    if #Items > 0 then
       addon:Print(format(L["time_remaining_warning"], TIME_REMAINING_WARNING/60))
       for i, Item in pairs(Items) do
          addon:Print(i, Item)
       end
       for i, Item in pairs(Items) do
-         if Item.time_remaining <= 0 then
+         if Item.time_remaining <= 0 and Item:SafeToRemove() then
             addon:DebugLog("TradeUI - removed", Item, "due to <= 0 time remaining")
             addon.ItemStorage:RemoveItem(Item)
          end
@@ -140,8 +193,11 @@ function TradeUI:OnEvent_TRADE_SHOW (event, ...)
    local count = self:GetNumAwardedInBagsToTradeWindow()
 
    if count > 0 then
-      -- TODO Make this optionally automatic
-      LibDialog:Spawn("RCLOOTCOUNCIL_TRADE_ADD_ITEM", {count=count})
+      if db.autoTrade then
+         self:AddAwardedInBagsToTradeWindow()
+      else
+         LibDialog:Spawn("RCLOOTCOUNCIL_TRADE_ADD_ITEM", {count=count})
+      end
    end
 end
 
@@ -164,15 +220,15 @@ end
 function TradeUI:OnEvent_UI_INFO_MESSAGE (event, ...)
    if select(1, ...) == _G.LE_GAME_ERR_TRADE_COMPLETE then -- Trade complete. Remove items from db.baggedItems if traded to winners
       addon:Debug("TradeUI: Traded item(s) to", self.tradeTarget)
-      -- TODO This records every single item we trade - modify to only do stuff with items we are actively handling
       for _, link in ipairs(self.tradeItems) do
          local Item = addon.ItemStorage:GetItem(link)
-         if Item and addon:UnitIsUnit(self.tradeTarget, Item.args.recipient) then
-            -- REVIEW This check is probably redundant, but currently TRADE_ACCEPT_UPDATE just adds all traded items, not just those we track
-            addon:SendCommand("group", "trade_complete", link, self.tradeTarget, addon.playerName)
-         elseif Item and not addon:UnitIsUnit(self.tradeTarget, Item.args.recipient) then
-            -- Player trades the item to someone else than the winner
-            addon:SendCommand("group", "trade_WrongWinner", link, self.tradeTarget, addon.playerName, Item.args.recipient)
+         if Item and Item.type and Item.type == "to_trade" then
+            if addon:UnitIsUnit(self.tradeTarget, Item.args.recipient) then
+               addon:SendCommand("group", "trade_complete", link, self.tradeTarget, addon.playerName)
+            elseif Item.args.recipient and not addon:UnitIsUnit(self.tradeTarget, Item.args.recipient) then
+               -- Player trades the item to someone else than the winner
+               addon:SendCommand("group", "trade_WrongWinner", link, self.tradeTarget, addon.playerName, Item.args.recipient)
+            end
          end
          addon.ItemStorage:RemoveItem(link)
       end
@@ -192,6 +248,12 @@ function TradeUI:GetNumAwardedInBagsToTradeWindow()
    )
 end
 
+function TradeUI:GetStoredItemBySession (session)
+   return tFilter(addon.ItemStorage:GetAllItemsOfType("to_trade"), function(v)
+      return v.args.session and v.args.session == session
+   end, true)
+end
+
 function TradeUI:AddAwardedInBagsToTradeWindow()
    local tradeIndex = 1
    local items = addon.ItemStorage:GetAllItemsMultiPred(
@@ -204,7 +266,7 @@ function TradeUI:AddAwardedInBagsToTradeWindow()
 		end
       local c,s = addon.ItemStorage:GetItemContainerSlot(Item)
       if not c then -- Item is gone?!
-         -- TODO Print something to the user?
+         addon:Print(L["trade_item_to_trade_not_found"])
          return addon:Debug("Error TradeUI:", "Item missing when attempting to trade", Item.link, self.tradeTarget)
       end
       if self.isTrading then

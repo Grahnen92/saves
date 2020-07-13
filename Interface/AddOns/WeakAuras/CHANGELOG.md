@@ -1,18 +1,16 @@
-# [2.8.1](https://github.com/WeakAuras/WeakAuras2/tree/2.8.1) (2018-10-02)
+# [2.17.4](https://github.com/WeakAuras/WeakAuras2/tree/2.17.4) (2020-04-22)
 
-[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/2.8.0...2.8.1)
+[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/2.17.3...2.17.4)
 
 ## Highlights
 
- We fixed a bug where conditions were not properly resetting when auras got unloaded. 
+ - fix a buff tracking and nameplates regression 
 
 ## Commits
 
-Causese (1):
+InfusOnWoW (3):
 
-- fixed a trait that is no longer a buff on player
-
-Infus (1):
-
-- Fix Conditions not resetting on unloading auras
+- BT2 Fix Multi by adjusting it to recent changes (#2139)
+- Clean up match data if a unit ceases to exists
+- Fix nameplates auras sometimes not being applied if in a raid group
 

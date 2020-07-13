@@ -1,0 +1,4 @@
+VER 3 0100000000000001 "CrackVivify" "606542"
+#showtooltip
+/cast [target=mouseover,exists,nodead,harm]  Crackling Jade Lightning; Crackling Jade Lightning [target=mouseover,exists,nodead, help] Vivify ; Crackling Jade Lightning
+END

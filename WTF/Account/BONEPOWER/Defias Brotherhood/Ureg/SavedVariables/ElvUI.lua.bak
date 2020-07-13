@@ -1,1436 +1,28 @@
 
 ElvCharacterDB = {
 	["ChatEditHistory"] = {
-		"/cw Thanasia-EarthenRing where do you get the fresh meat?", -- [1]
-		"/cw Thanasia-EarthenRing me 2", -- [2]
-		"/cw Thanasia-EarthenRing thanks!", -- [3]
-		"/who mollox", -- [4]
-		"/roll", -- [5]
-		"/cw Wakiz-Kazzak lol", -- [6]
-		"/cw Tigerdr-Frostmane lol", -- [7]
-		"/cw Veldanas-DefiasBrotherhood yes, mythic raiding", -- [8]
-		" jag känner att jag blir crazy", -- [9]
-		" venne", -- [10]
-		" får chilla :)", -- [11]
-		"/cry", -- [12]
-		"/thank", -- [13]
-		"/love", -- [14]
-		"/kiss", -- [15]
-		"/dance", -- [16]
-		" ne", -- [17]
-		" drar efter denna", -- [18]
-		"  /readycheck", -- [19]
-		"/p   /readycheck", -- [20]
+		"/p   /readycheck", -- [1]
+		"/i fight in courtyard", -- [2]
+		"venne", -- [3]
+		"/love", -- [4]
+		"/cry", -- [5]
+		"/cw Thanasia-EarthenRing me 2", -- [6]
+		"/readycheck", -- [7]
+		"/who mollox", -- [8]
+		"/wa", -- [9]
+		"/dance", -- [10]
+		"/invite Ilyrana", -- [11]
+		"/cw Veldanas-DefiasBrotherhood yes, mythic raiding", -- [12]
+		"drar efter denna", -- [13]
+		"/ec", -- [14]
+		"ne", -- [15]
+		"/cw Tigerdr-Frostmane lol", -- [16]
+		"/thank", -- [17]
+		"/invite ilyrana", -- [18]
+		"/kiss", -- [19]
+		"/reload", -- [20]
 	},
 	["ChatHistoryLog"] = {
-		{
-			"Explosive Burst on Ilyrana", -- [1]
-			"Ilyrana-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ilyrana", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			395, -- [11]
-			"Player-1096-060686F4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8787edIlyrana|r",
-			[51] = 1537303140,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [1]
-		{
-			"Explosive Burst on Ureg", -- [1]
-			"Ureg-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ureg", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			396, -- [11]
-			"Player-1096-077D61E7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaUreg|r",
-			[51] = 1537303140,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [2]
-		{
-			"Explosive Burst on Ilyrana", -- [1]
-			"Ilyrana-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ilyrana", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			398, -- [11]
-			"Player-1096-060686F4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8787edIlyrana|r",
-			[51] = 1537303155,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [3]
-		{
-			"Explosive Burst on Minso", -- [1]
-			"Minso-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Minso-Kazzak", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			399, -- [11]
-			"Player-1305-09F16362", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffMinso-Kazzak|r",
-			[51] = 1537303155,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [4]
-		{
-			"Explosive Burst on Ureg", -- [1]
-			"Ureg-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ureg", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			400, -- [11]
-			"Player-1096-077D61E7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaUreg|r",
-			[51] = 1537303155,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [5]
-		{
-			"Explosive Burst on Ilyrana", -- [1]
-			"Ilyrana-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ilyrana", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			402, -- [11]
-			"Player-1096-060686F4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8787edIlyrana|r",
-			[51] = 1537303162,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [6]
-		{
-			"Explosive Burst on Minso", -- [1]
-			"Minso-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Minso-Kazzak", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			403, -- [11]
-			"Player-1305-09F16362", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffMinso-Kazzak|r",
-			[51] = 1537303162,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [7]
-		{
-			"Explosive Burst on Ureg", -- [1]
-			"Ureg-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ureg", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			404, -- [11]
-			"Player-1096-077D61E7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaUreg|r",
-			[51] = 1537303162,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [8]
-		{
-			"Deadeye on Minso", -- [1]
-			"Minso-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Minso-Kazzak", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			408, -- [11]
-			"Player-1305-09F16362", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffMinso-Kazzak|r",
-			[51] = 1537303173,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [9]
-		{
-			"Explosive Burst on Minso", -- [1]
-			"Minso-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Minso-Kazzak", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			409, -- [11]
-			"Player-1305-09F16362", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffMinso-Kazzak|r",
-			[51] = 1537303178,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [10]
-		{
-			"Explosive Burst on Ilyrana", -- [1]
-			"Ilyrana-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ilyrana", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			410, -- [11]
-			"Player-1096-060686F4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8787edIlyrana|r",
-			[51] = 1537303178,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [11]
-		{
-			"Explosive Burst on Ureg", -- [1]
-			"Ureg-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ureg", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			411, -- [11]
-			"Player-1096-077D61E7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaUreg|r",
-			[51] = 1537303178,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [12]
-		{
-			"Explosive Burst on Ilyrana", -- [1]
-			"Ilyrana-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ilyrana", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			412, -- [11]
-			"Player-1096-060686F4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8787edIlyrana|r",
-			[51] = 1537303186,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [13]
-		{
-			"Explosive Burst on Minso", -- [1]
-			"Minso-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Minso-Kazzak", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			413, -- [11]
-			"Player-1305-09F16362", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffMinso-Kazzak|r",
-			[51] = 1537303186,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [14]
-		{
-			"Explosive Burst on Ureg", -- [1]
-			"Ureg-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ureg", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			414, -- [11]
-			"Player-1096-077D61E7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaUreg|r",
-			[51] = 1537303186,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [15]
-		{
-			"Deadeye on Ilyrana", -- [1]
-			"Ilyrana-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ilyrana", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			422, -- [11]
-			"Player-1096-060686F4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8787edIlyrana|r",
-			[51] = 1537303199,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [16]
-		{
-			"Explosive Burst on Minso", -- [1]
-			"Minso-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Minso-Kazzak", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			426, -- [11]
-			"Player-1305-09F16362", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffMinso-Kazzak|r",
-			[51] = 1537303211,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [17]
-		{
-			"Explosive Burst on Ilyrana", -- [1]
-			"Ilyrana-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ilyrana", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			427, -- [11]
-			"Player-1096-060686F4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8787edIlyrana|r",
-			[51] = 1537303211,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [18]
-		{
-			"Deadeye on Ilyrana", -- [1]
-			"Ilyrana-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ilyrana", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			431, -- [11]
-			"Player-1096-060686F4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8787edIlyrana|r",
-			[51] = 1537303221,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [19]
-		{
-			"Explosive Burst on Minso", -- [1]
-			"Minso-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Minso-Kazzak", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			432, -- [11]
-			"Player-1305-09F16362", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffMinso-Kazzak|r",
-			[51] = 1537303227,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [20]
-		{
-			"Explosive Burst on Ilyrana", -- [1]
-			"Ilyrana-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ilyrana", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			433, -- [11]
-			"Player-1096-060686F4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8787edIlyrana|r",
-			[51] = 1537303227,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [21]
-		{
-			"Explosive Burst on Minso", -- [1]
-			"Minso-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Minso-Kazzak", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			434, -- [11]
-			"Player-1305-09F16362", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffMinso-Kazzak|r",
-			[51] = 1537303234,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [22]
-		{
-			"Explosive Burst on Ilyrana", -- [1]
-			"Ilyrana-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ilyrana", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			435, -- [11]
-			"Player-1096-060686F4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8787edIlyrana|r",
-			[51] = 1537303234,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [23]
-		{
-			"Explosive Burst on Minso", -- [1]
-			"Minso-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Minso-Kazzak", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			444, -- [11]
-			"Player-1305-09F16362", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffMinso-Kazzak|r",
-			[51] = 1537303351,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [24]
-		{
-			"Explosive Burst on Ureg", -- [1]
-			"Ureg-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ureg", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			445, -- [11]
-			"Player-1096-077D61E7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaUreg|r",
-			[51] = 1537303351,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [25]
-		{
-			"Explosive Burst on Ilyrana", -- [1]
-			"Ilyrana-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ilyrana", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			446, -- [11]
-			"Player-1096-060686F4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8787edIlyrana|r",
-			[51] = 1537303351,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [26]
-		{
-			"Deadeye on Minso", -- [1]
-			"Minso-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Minso-Kazzak", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			450, -- [11]
-			"Player-1305-09F16362", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffMinso-Kazzak|r",
-			[51] = 1537303362,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [27]
-		{
-			"Explosive Burst on Minso", -- [1]
-			"Minso-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Minso-Kazzak", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			451, -- [11]
-			"Player-1305-09F16362", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffMinso-Kazzak|r",
-			[51] = 1537303374,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [28]
-		{
-			"Explosive Burst on Ilyrana", -- [1]
-			"Ilyrana-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ilyrana", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			452, -- [11]
-			"Player-1096-060686F4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8787edIlyrana|r",
-			[51] = 1537303374,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [29]
-		{
-			"Explosive Burst on Ureg", -- [1]
-			"Ureg-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ureg", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			453, -- [11]
-			"Player-1096-077D61E7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaUreg|r",
-			[51] = 1537303374,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [30]
-		{
-			"Deadeye on Ilyrana", -- [1]
-			"Ilyrana-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ilyrana", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			457, -- [11]
-			"Player-1096-060686F4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8787edIlyrana|r",
-			[51] = 1537303388,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [31]
-		{
-			"Explosive Burst on Minso", -- [1]
-			"Minso-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Minso-Kazzak", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			459, -- [11]
-			"Player-1305-09F16362", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffMinso-Kazzak|r",
-			[51] = 1537303400,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [32]
-		{
-			"Explosive Burst on Ilyrana", -- [1]
-			"Ilyrana-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ilyrana", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			460, -- [11]
-			"Player-1096-060686F4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8787edIlyrana|r",
-			[51] = 1537303400,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [33]
-		{
-			"Explosive Burst on Ureg", -- [1]
-			"Ureg-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ureg", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			461, -- [11]
-			"Player-1096-077D61E7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaUreg|r",
-			[51] = 1537303400,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [34]
-		{
-			"Explosive Burst on Tigerdr", -- [1]
-			"Tigerdr-Frostmane", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Tigerdr-Frostmane", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			467, -- [11]
-			"Player-1300-09FDE2CA", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aTigerdr-Frostmane|r",
-			[51] = 1537303415,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [35]
-		{
-			"Explosive Burst on Ureg", -- [1]
-			"Ureg-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ureg", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			468, -- [11]
-			"Player-1096-077D61E7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaUreg|r",
-			[51] = 1537303415,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [36]
-		{
-			"Explosive Burst on Minso", -- [1]
-			"Minso-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Minso-Kazzak", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			469, -- [11]
-			"Player-1305-09F16362", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffMinso-Kazzak|r",
-			[51] = 1537303415,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [37]
-		{
-			"Explosive Burst on Ureg", -- [1]
-			"Ureg-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ureg", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			470, -- [11]
-			"Player-1096-077D61E7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaUreg|r",
-			[51] = 1537303423,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [38]
-		{
-			"Explosive Burst on Minso", -- [1]
-			"Minso-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Minso-Kazzak", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			471, -- [11]
-			"Player-1305-09F16362", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffMinso-Kazzak|r",
-			[51] = 1537303423,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [39]
-		{
-			"Deadeye on Ilyrana", -- [1]
-			"Ilyrana-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ilyrana", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			475, -- [11]
-			"Player-1096-060686F4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8787edIlyrana|r",
-			[51] = 1537303436,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [40]
-		{
-			"Explosive Burst on Ureg", -- [1]
-			"Ureg-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ureg", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			477, -- [11]
-			"Player-1096-077D61E7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaUreg|r",
-			[51] = 1537303448,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [41]
-		{
-			"Explosive Burst on Minso", -- [1]
-			"Minso-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Minso-Kazzak", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			478, -- [11]
-			"Player-1305-09F16362", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffMinso-Kazzak|r",
-			[51] = 1537303448,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [42]
-		{
-			"Explosive Burst on Ilyrana", -- [1]
-			"Ilyrana-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ilyrana", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			479, -- [11]
-			"Player-1096-060686F4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8787edIlyrana|r",
-			[51] = 1537303448,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [43]
-		{
-			"Deadeye on Ureg", -- [1]
-			"Ureg-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ureg", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			484, -- [11]
-			"Player-1096-077D61E7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaUreg|r",
-			[51] = 1537303458,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [44]
-		{
-			"Explosive Burst on Minso", -- [1]
-			"Minso-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Minso-Kazzak", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			485, -- [11]
-			"Player-1305-09F16362", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffMinso-Kazzak|r",
-			[51] = 1537303464,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [45]
-		{
-			"Explosive Burst on Ureg", -- [1]
-			"Ureg-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ureg", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			486, -- [11]
-			"Player-1096-077D61E7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaUreg|r",
-			[51] = 1537303464,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [46]
-		{
-			"Explosive Burst on Ilyrana", -- [1]
-			"Ilyrana-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ilyrana", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			487, -- [11]
-			"Player-1096-060686F4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8787edIlyrana|r",
-			[51] = 1537303464,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [47]
-		{
-			"Explosive Burst on Minso", -- [1]
-			"Minso-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Minso-Kazzak", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			488, -- [11]
-			"Player-1305-09F16362", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffMinso-Kazzak|r",
-			[51] = 1537303471,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [48]
-		{
-			"Explosive Burst on Ureg", -- [1]
-			"Ureg-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ureg", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			489, -- [11]
-			"Player-1096-077D61E7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaUreg|r",
-			[51] = 1537303471,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [49]
-		{
-			"Deadeye on Ilyrana", -- [1]
-			"Ilyrana-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ilyrana", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			493, -- [11]
-			"Player-1096-060686F4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8787edIlyrana|r",
-			[51] = 1537303485,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [50]
-		{
-			"|cffa335ee|Hitem:159628::::::::120:104::23:3:4779:1512:4786:::|h[Kul Tiran Cannonball Runner]|h|r", -- [1]
-			"Tigerdr-Frostmane", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Tigerdr-Frostmane", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			514, -- [11]
-			"Player-1300-09FDE2CA", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aTigerdr-Frostmane|r",
-			[51] = 1537303507,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [51]
-		{
-			"where do you get the fresh meat?", -- [1]
-			"Thanasia-EarthenRing", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Thanasia-EarthenRing", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			58, -- [11]
-			"Player-1317-064F6467", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc41e3aThanasia-EarthenRing|r",
-			[51] = 1537851490,
-			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [52]
-		{
-			"kill big ones", -- [1]
-			"Thanasia-EarthenRing", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Thanasia-EarthenRing", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			59, -- [11]
-			"Player-1317-064F6467", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc41e3aThanasia-EarthenRing|r",
-			[51] = 1537851502,
-			[50] = "CHAT_MSG_WHISPER",
-		}, -- [53]
-		{
-			"doesnt drop often :L(", -- [1]
-			"Thanasia-EarthenRing", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Thanasia-EarthenRing", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			65, -- [11]
-			"Player-1317-064F6467", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc41e3aThanasia-EarthenRing|r",
-			[51] = 1537851525,
-			[50] = "CHAT_MSG_WHISPER",
-		}, -- [54]
-		{
-			"done", -- [1]
-			"Thanasia-EarthenRing", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Thanasia-EarthenRing", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			79, -- [11]
-			"Player-1317-064F6467", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc41e3aThanasia-EarthenRing|r",
-			[51] = 1537851627,
-			[50] = "CHAT_MSG_WHISPER",
-		}, -- [55]
-		{
-			"me 2", -- [1]
-			"Thanasia-EarthenRing", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Thanasia-EarthenRing", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			80, -- [11]
-			"Player-1317-064F6467", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc41e3aThanasia-EarthenRing|r",
-			[51] = 1537851630,
-			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [56]
-		{
-			"thanks!", -- [1]
-			"Thanasia-EarthenRing", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Thanasia-EarthenRing", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			81, -- [11]
-			"Player-1317-064F6467", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc41e3aThanasia-EarthenRing|r",
-			[51] = 1537851631,
-			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [57]
-		{
-			"Unstable Hex on Ureg", -- [1]
-			"Ureg-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ureg", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			179, -- [11]
-			"Player-1096-077D61E7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaUreg|r",
-			[51] = 1538419654,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [58]
-		{
-			"Unstable Hex on Ureg", -- [1]
-			"Ureg-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ureg", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			181, -- [11]
-			"Player-1096-077D61E7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaUreg|r",
-			[51] = 1538419664,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [59]
-		{
-			"Unstable Hex on Ureg", -- [1]
-			"Ureg-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ureg", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			194, -- [11]
-			"Player-1096-077D61E7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaUreg|r",
-			[51] = 1538419788,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [60]
-		{
-			"Unstable Hex on Ureg", -- [1]
-			"Ureg-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Ureg", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			201, -- [11]
-			"Player-1096-077D61E7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaUreg|r",
-			[51] = 1538419925,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [61]
-		{
-			"Unstable Hex on Emerentia", -- [1]
-			"Emerentia-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Emerentia-Kazzak", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			202, -- [11]
-			"Player-1305-09F0D669", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaEmerentia-Kazzak|r",
-			[51] = 1538419925,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [62]
-		{
-			"3", -- [1]
-			"Emerentia-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Emerentia-Kazzak", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			203, -- [11]
-			"Player-1305-09F0D669", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaEmerentia-Kazzak|r",
-			[51] = 1538419927,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [63]
-		{
-			"2", -- [1]
-			"Emerentia-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Emerentia-Kazzak", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			204, -- [11]
-			"Player-1305-09F0D669", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaEmerentia-Kazzak|r",
-			[51] = 1538419928,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [64]
 		{
 			"1", -- [1]
 			"Emerentia-Kazzak", -- [2]
@@ -1452,7 +44,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaEmerentia-Kazzak|r",
 			[51] = 1538419929,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [65]
+		}, -- [1]
 		{
 			"Unstable Hex on Emerentia", -- [1]
 			"Emerentia-Kazzak", -- [2]
@@ -1474,7 +66,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaEmerentia-Kazzak|r",
 			[51] = 1538420113,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [66]
+		}, -- [2]
 		{
 			"3", -- [1]
 			"Emerentia-Kazzak", -- [2]
@@ -1496,7 +88,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaEmerentia-Kazzak|r",
 			[51] = 1538420115,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [67]
+		}, -- [3]
 		{
 			"2", -- [1]
 			"Emerentia-Kazzak", -- [2]
@@ -1518,7 +110,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaEmerentia-Kazzak|r",
 			[51] = 1538420116,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [68]
+		}, -- [4]
 		{
 			"1", -- [1]
 			"Emerentia-Kazzak", -- [2]
@@ -1540,7 +132,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaEmerentia-Kazzak|r",
 			[51] = 1538420117,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [69]
+		}, -- [5]
 		{
 			"Pursuit on Emerentia", -- [1]
 			"Emerentia-Kazzak", -- [2]
@@ -1562,7 +154,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaEmerentia-Kazzak|r",
 			[51] = 1538421042,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [70]
+		}, -- [6]
 		{
 			"Pursuit on Tigerdr", -- [1]
 			"Tigerdr-Frostmane", -- [2]
@@ -1584,7 +176,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aTigerdr-Frostmane|r",
 			[51] = 1538421119,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [71]
+		}, -- [7]
 		{
 			"Pursuit on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -1606,7 +198,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1538421246,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [72]
+		}, -- [8]
 		{
 			"sån jävla cirkus", -- [1]
 			"Tigerdr-Frostmane", -- [2]
@@ -1628,7 +220,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aTigerdr-Frostmane|r",
 			[51] = 1538421623,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [73]
+		}, -- [9]
 		{
 			"jag dör", -- [1]
 			"Tigerdr-Frostmane", -- [2]
@@ -1650,7 +242,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aTigerdr-Frostmane|r",
 			[51] = 1538421626,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [74]
+		}, -- [10]
 		{
 			"har dödat world boss + coin + 2 här och en coin", -- [1]
 			"Tigerdr-Frostmane", -- [2]
@@ -1672,7 +264,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aTigerdr-Frostmane|r",
 			[51] = 1538422821,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [75]
+		}, -- [11]
 		{
 			"blir inge loot", -- [1]
 			"Tigerdr-Frostmane", -- [2]
@@ -1694,7 +286,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aTigerdr-Frostmane|r",
 			[51] = 1538422823,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [76]
+		}, -- [12]
 		{
 			"vill bara ha 320 fmllll", -- [1]
 			"Tigerdr-Frostmane", -- [2]
@@ -1716,7 +308,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aTigerdr-Frostmane|r",
 			[51] = 1538422832,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [77]
+		}, -- [13]
 		{
 			"lol", -- [1]
 			"Wakiz-Kazzak", -- [2]
@@ -1738,7 +330,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddWakiz-Kazzak|r",
 			[51] = 1538422834,
 			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [78]
+		}, -- [14]
 		{
 			"lol", -- [1]
 			"Tigerdr-Frostmane", -- [2]
@@ -1760,7 +352,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aTigerdr-Frostmane|r",
 			[51] = 1538422840,
 			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [79]
+		}, -- [15]
 		{
 			"Unstable Hex on Emerentia", -- [1]
 			"Emerentia-Kazzak", -- [2]
@@ -1782,7 +374,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaEmerentia-Kazzak|r",
 			[51] = 1538423193,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [80]
+		}, -- [16]
 		{
 			"3", -- [1]
 			"Emerentia-Kazzak", -- [2]
@@ -1804,7 +396,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaEmerentia-Kazzak|r",
 			[51] = 1538423195,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [81]
+		}, -- [17]
 		{
 			"2", -- [1]
 			"Emerentia-Kazzak", -- [2]
@@ -1826,7 +418,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaEmerentia-Kazzak|r",
 			[51] = 1538423196,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [82]
+		}, -- [18]
 		{
 			"1", -- [1]
 			"Emerentia-Kazzak", -- [2]
@@ -1848,7 +440,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaEmerentia-Kazzak|r",
 			[51] = 1538423197,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [83]
+		}, -- [19]
 		{
 			"Unstable Hex on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -1870,7 +462,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1538423198,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [84]
+		}, -- [20]
 		{
 			"Hi there, looking for guild?", -- [1]
 			"Veldanas-DefiasBrotherhood", -- [2]
@@ -1892,7 +484,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaVeldanas|r",
 			[51] = 1538505250,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [85]
+		}, -- [21]
 		{
 			"yes, mythic raiding", -- [1]
 			"Veldanas-DefiasBrotherhood", -- [2]
@@ -1914,7 +506,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaVeldanas|r",
 			[51] = 1538505259,
 			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [86]
+		}, -- [22]
 		{
 			"jag känner att jag blir crazy", -- [1]
 			"|Kf2|k00000|k", -- [2]
@@ -1937,7 +529,7 @@ ElvCharacterDB = {
 			[51] = 1538505702,
 			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
 			[53] = "tiger",
-		}, -- [87]
+		}, -- [23]
 		{
 			"haha", -- [1]
 			"|Kf2|k00000|k", -- [2]
@@ -1960,7 +552,7 @@ ElvCharacterDB = {
 			[51] = 1538505705,
 			[50] = "CHAT_MSG_BN_WHISPER",
 			[53] = "tiger",
-		}, -- [88]
+		}, -- [24]
 		{
 			"varför?", -- [1]
 			"|Kf2|k00000|k", -- [2]
@@ -1983,7 +575,7 @@ ElvCharacterDB = {
 			[51] = 1538505707,
 			[50] = "CHAT_MSG_BN_WHISPER",
 			[53] = "tiger",
-		}, -- [89]
+		}, -- [25]
 		{
 			"venne", -- [1]
 			"|Kf2|k00000|k", -- [2]
@@ -2006,7 +598,7 @@ ElvCharacterDB = {
 			[51] = 1538505721,
 			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
 			[53] = "tiger",
-		}, -- [90]
+		}, -- [26]
 		{
 			"får chilla :)", -- [1]
 			"|Kf2|k00000|k", -- [2]
@@ -2029,7 +621,7 @@ ElvCharacterDB = {
 			[51] = 1538505724,
 			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
 			[53] = "tiger",
-		}, -- [91]
+		}, -- [27]
 		{
 			"|cff0070dd|Hitem:159851::::::::120:264::13:2:1683:4927:::|h[Honorable Combatant's Shield of the Peerless]|h|r", -- [1]
 			"Wakiz-Kazzak", -- [2]
@@ -2051,7 +643,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddWakiz-Kazzak|r",
 			[51] = 1538506287,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [92]
+		}, -- [28]
 		{
 			"|cff0070dd|Hitem:152837::::::::120:264::13:2:1683:4927:::|h[Precision Attitude Adjuster of the Peerless]|h|r", -- [1]
 			"Wakiz-Kazzak", -- [2]
@@ -2073,7 +665,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddWakiz-Kazzak|r",
 			[51] = 1538506295,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [93]
+		}, -- [29]
 		{
 			"det är över", -- [1]
 			"|Kf2|k00000|k", -- [2]
@@ -2096,7 +688,7 @@ ElvCharacterDB = {
 			[51] = 1538509083,
 			[50] = "CHAT_MSG_BN_WHISPER",
 			[53] = "tiger",
-		}, -- [94]
+		}, -- [30]
 		{
 			"<Deadly Boss Mods> Ureg is busy fighting against Mythic+ (3) - Council o' Captains (59% (1/2 Bosses Defeated), 1/5 people alive)", -- [1]
 			"|Kf2|k00000|k", -- [2]
@@ -2119,7 +711,7 @@ ElvCharacterDB = {
 			[51] = 1538509084,
 			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
 			[53] = "tiger",
-		}, -- [95]
+		}, -- [31]
 		{
 			"<DBM> Ureg has wiped on Mythic+ (3) - Council o' Captains at 59% (1/2 Bosses Defeated)", -- [1]
 			"|Kf2|k00000|k", -- [2]
@@ -2142,7 +734,7 @@ ElvCharacterDB = {
 			[51] = 1538509098,
 			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
 			[53] = "tiger",
-		}, -- [96]
+		}, -- [32]
 		{
 			"Shark Toss on Tigerdr", -- [1]
 			"Tigerdr-Frostmane", -- [2]
@@ -2164,7 +756,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aTigerdr-Frostmane|r",
 			[51] = 1538510294,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [97]
+		}, -- [33]
 		{
 			"Shark Toss on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -2186,7 +778,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1538510398,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [98]
+		}, -- [34]
 		{
 			"Shark Toss on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -2208,7 +800,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1538510459,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [99]
+		}, -- [35]
 		{
 			"asså jag orkar inte", -- [1]
 			"|Kf2|k00000|k", -- [2]
@@ -2231,7 +823,7 @@ ElvCharacterDB = {
 			[51] = 1538510587,
 			[50] = "CHAT_MSG_BN_WHISPER",
 			[53] = "tiger",
-		}, -- [100]
+		}, -- [36]
 		{
 			"ne", -- [1]
 			"|Kf2|k00000|k", -- [2]
@@ -2254,7 +846,7 @@ ElvCharacterDB = {
 			[51] = 1538510591,
 			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
 			[53] = "tiger",
-		}, -- [101]
+		}, -- [37]
 		{
 			"drar efter denna", -- [1]
 			"|Kf2|k00000|k", -- [2]
@@ -2277,7 +869,7 @@ ElvCharacterDB = {
 			[51] = 1538510598,
 			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
 			[53] = "tiger",
-		}, -- [102]
+		}, -- [38]
 		{
 			"klockan är 23 innan vi är klara", -- [1]
 			"|Kf2|k00000|k", -- [2]
@@ -2300,7 +892,7 @@ ElvCharacterDB = {
 			[51] = 1538510599,
 			[50] = "CHAT_MSG_BN_WHISPER",
 			[53] = "tiger",
-		}, -- [103]
+		}, -- [39]
 		{
 			"Ricocheting Throw on Emerentia", -- [1]
 			"Emerentia-Kazzak", -- [2]
@@ -2322,7 +914,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaEmerentia-Kazzak|r",
 			[51] = 1538510626,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [104]
+		}, -- [40]
 		{
 			" /readycheck", -- [1]
 			"|Kf2|k00000|k", -- [2]
@@ -2345,7 +937,7 @@ ElvCharacterDB = {
 			[51] = 1538510703,
 			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
 			[53] = "tiger",
-		}, -- [105]
+		}, -- [41]
 		{
 			"  /readycheck", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -2367,7 +959,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1538510707,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [106]
+		}, -- [42]
 		{
 			"Shark Toss on Tigerdr", -- [1]
 			"Tigerdr-Frostmane", -- [2]
@@ -2389,7 +981,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aTigerdr-Frostmane|r",
 			[51] = 1538510741,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [107]
+		}, -- [43]
 		{
 			"Shark Toss on Tigerdr", -- [1]
 			"Tigerdr-Frostmane", -- [2]
@@ -2411,7 +1003,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aTigerdr-Frostmane|r",
 			[51] = 1538510794,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [108]
+		}, -- [44]
 		{
 			"Shark Toss on Tigerdr", -- [1]
 			"Tigerdr-Frostmane", -- [2]
@@ -2433,7 +1025,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aTigerdr-Frostmane|r",
 			[51] = 1538510848,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [109]
+		}, -- [45]
 		{
 			"Shark Toss on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -2455,7 +1047,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1538510902,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [110]
+		}, -- [46]
 		{
 			"Shark Toss on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -2477,7 +1069,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1538510929,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [111]
+		}, -- [47]
 		{
 			"Cannon Barrage on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -2499,7 +1091,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1538511772,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [112]
+		}, -- [48]
 		{
 			"Cannon Barrage on Tigerdr", -- [1]
 			"Tigerdr-Frostmane", -- [2]
@@ -2521,7 +1113,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aTigerdr-Frostmane|r",
 			[51] = 1538511855,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [113]
+		}, -- [49]
 		{
 			"Cannon Barrage on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -2543,7 +1135,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1538511855,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [114]
+		}, -- [50]
 		{
 			"Cannon Barrage on Tigerdr", -- [1]
 			"Tigerdr-Frostmane", -- [2]
@@ -2565,7 +1157,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aTigerdr-Frostmane|r",
 			[51] = 1538511874,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [115]
+		}, -- [51]
 		{
 			"Cannon Barrage on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -2587,7 +1179,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1538511874,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [116]
+		}, -- [52]
 		{
 			"Cannon Barrage on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -2609,7 +1201,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1538511894,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [117]
+		}, -- [53]
 		{
 			"Cannon Barrage on Emerentia", -- [1]
 			"Emerentia-Kazzak", -- [2]
@@ -2631,7 +1223,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaEmerentia-Kazzak|r",
 			[51] = 1538511928,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [118]
+		}, -- [54]
 		{
 			"Cannon Barrage on Ureg", -- [1]
 			"Ureg-DefiasBrotherhood", -- [2]
@@ -2653,7 +1245,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaUreg|r",
 			[51] = 1538511928,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [119]
+		}, -- [55]
 		{
 			"get middle ", -- [1]
 			"Magusor-Kazzak", -- [2]
@@ -2675,7 +1267,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaMagusor-Kazzak|r",
 			[51] = 1538564752,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [120]
+		}, -- [56]
 		{
 			"said anakin", -- [1]
 			"Kirurgi-TwistingNether", -- [2]
@@ -2697,7 +1289,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffKirurgi-TwistingNether|r",
 			[51] = 1538565024,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [121]
+		}, -- [57]
 		{
 			"take the circle of elements ? ", -- [1]
 			"Magusor-Kazzak", -- [2]
@@ -2719,7 +1311,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaMagusor-Kazzak|r",
 			[51] = 1538565102,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [122]
+		}, -- [58]
 		{
 			"Just lust at circle", -- [1]
 			"Kuriokaze-Balnazzar", -- [2]
@@ -2741,7 +1333,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Kuriokaze-Balnazzar|r",
 			[51] = 1538565238,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [123]
+		}, -- [59]
 		{
 			"get to the middle all ", -- [1]
 			"Magusor-Kazzak", -- [2]
@@ -2763,7 +1355,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaMagusor-Kazzak|r",
 			[51] = 1538565347,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [124]
+		}, -- [60]
 		{
 			"1 more demo", -- [1]
 			"Kuriokaze-Balnazzar", -- [2]
@@ -2785,7 +1377,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Kuriokaze-Balnazzar|r",
 			[51] = 1538565354,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [125]
+		}, -- [61]
 		{
 			"k good", -- [1]
 			"Kuriokaze-Balnazzar", -- [2]
@@ -2807,7 +1399,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Kuriokaze-Balnazzar|r",
 			[51] = 1538565371,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [126]
+		}, -- [62]
 		{
 			"bring the boss to the open plz", -- [1]
 			"Kirurgi-TwistingNether", -- [2]
@@ -2829,6 +1421,1414 @@ ElvCharacterDB = {
 			[52] = "|cffffffffKirurgi-TwistingNether|r",
 			[51] = 1538565722,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [63]
+		{
+			"some people come newstead ", -- [1]
+			"Kaldeera-Draenor", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Kaldeera-Draenor", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			94, -- [11]
+			"Player-1403-0640814B", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc41e3aKaldeera-Draenor|r",
+			[51] = 1538591371,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [64]
+		{
+			"BL?", -- [1]
+			"Sangor-Aggramar", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Sangor-Aggramar", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			179, -- [11]
+			"Player-1325-03C60E59", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8787edSangor-Aggramar|r",
+			[51] = 1538592147,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [65]
+		{
+			"|cffffff00Xibala is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Zuldazar", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Zuldazar", -- [9]
+			0, -- [10]
+			199, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1538592706,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [66]
+		{
+			"|cffffff00The Sliver is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Zuldazar", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Zuldazar", -- [9]
+			0, -- [10]
+			200, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1538592746,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [67]
+		{
+			"|cffffff00The Sliver is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Zuldazar", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Zuldazar", -- [9]
+			0, -- [10]
+			201, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1538592953,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [68]
+		{
+			"plz take newstead after lamber", -- [1]
+			"Drbloody-Sunstrider", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Drbloody-Sunstrider", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			216, -- [11]
+			"Player-1598-06F25435", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff3fc6eaDrbloody-Sunstrider|r",
+			[51] = 1538593340,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [69]
+		{
+			"i ll bring 100 iron to wipe them fast", -- [1]
+			"Drbloody-Sunstrider", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Drbloody-Sunstrider", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			219, -- [11]
+			"Player-1598-06F25435", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff3fc6eaDrbloody-Sunstrider|r",
+			[51] = 1538593358,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [70]
+		{
+			"come newstead", -- [1]
+			"Drbloody-Sunstrider", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Drbloody-Sunstrider", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			267, -- [11]
+			"Player-1598-06F25435", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff3fc6eaDrbloody-Sunstrider|r",
+			[51] = 1538593653,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [71]
+		{
+			"i have 100 iron so if we take newstead every thing will be easy and fast", -- [1]
+			"Drbloody-Sunstrider", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Drbloody-Sunstrider", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			272, -- [11]
+			"Player-1598-06F25435", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff3fc6eaDrbloody-Sunstrider|r",
+			[51] = 1538593686,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [72]
+		{
+			"need more demos", -- [1]
+			"Gnas-TheMaelstrom", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Gnas-TheMaelstrom", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			408, -- [11]
+			"Player-1596-0A08B05A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff0070ddGnas-TheMaelstrom|r",
+			[51] = 1538594710,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+		}, -- [73]
+		{
+			"need 1 more demo", -- [1]
+			"Gnas-TheMaelstrom", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Gnas", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			412, -- [11]
+			"Player-1596-0A08B05A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff0070ddGnas-TheMaelstrom|r",
+			[51] = 1538594755,
+			[50] = "CHAT_MSG_RAID_WARNING",
+		}, -- [74]
+		{
+			"nvm", -- [1]
+			"Gnas-TheMaelstrom", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Gnas", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			413, -- [11]
+			"Player-1596-0A08B05A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff0070ddGnas-TheMaelstrom|r",
+			[51] = 1538594760,
+			[50] = "CHAT_MSG_RAID_WARNING",
+		}, -- [75]
+		{
+			"kick", -- [1]
+			"Corebreak-Magtheridon", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Corebreak-Magtheridon", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			420, -- [11]
+			"Player-3681-093C8850", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff0070ddCorebreak-Magtheridon|r",
+			[51] = 1538594960,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [76]
+		{
+			"afk", -- [1]
+			"Corebreak-Magtheridon", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Corebreak-Magtheridon", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			421, -- [11]
+			"Player-3681-093C8850", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff0070ddCorebreak-Magtheridon|r",
+			[51] = 1538594961,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [77]
+		{
+			"KICK PLZ", -- [1]
+			"Corebreak-Magtheridon", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Corebreak-Magtheridon", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			422, -- [11]
+			"Player-3681-093C8850", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff0070ddCorebreak-Magtheridon|r",
+			[51] = 1538594972,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [78]
+		{
+			"1 more", -- [1]
+			"Corebreak-Magtheridon", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Corebreak-Magtheridon", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			433, -- [11]
+			"Player-3681-093C8850", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff0070ddCorebreak-Magtheridon|r",
+			[51] = 1538595010,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [79]
+		{
+			"fight in courtyard", -- [1]
+			"Ureg-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Ureg", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			434, -- [11]
+			"Player-1096-077D61E7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff3fc6eaUreg|r",
+			[51] = 1538595010,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [80]
+		{
+			"kick", -- [1]
+			"Corebreak-Magtheridon", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Corebreak-Magtheridon", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			435, -- [11]
+			"Player-3681-093C8850", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff0070ddCorebreak-Magtheridon|r",
+			[51] = 1538595011,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [81]
+		{
+			"plz", -- [1]
+			"Corebreak-Magtheridon", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Corebreak-Magtheridon", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			436, -- [11]
+			"Player-3681-093C8850", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff0070ddCorebreak-Magtheridon|r",
+			[51] = 1538595012,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [82]
+		{
+			"GET INSIDE", -- [1]
+			"Gnas-TheMaelstrom", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Gnas", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			454, -- [11]
+			"Player-1596-0A08B05A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff0070ddGnas-TheMaelstrom|r",
+			[51] = 1538595068,
+			[50] = "CHAT_MSG_RAID_WARNING",
+		}, -- [83]
+		{
+			"|cffffff00Xibala is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Dazar'alor", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Dazar'alor", -- [9]
+			0, -- [10]
+			17, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1573394841,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [84]
+		{
+			"<Krakenboost> WTS < Carapace - 100k >, < N'zoth the Corruptor - 150k >, < Cara + N'zoth - 225k > Heroic kills. Having Runs every 30 minutes. Accepting payment on all realms. Get your 470+ BiS Gear, Curve and Mount tonight. /w ", -- [1]
+			"Ziratso-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Ziratso-DefiasBrotherhood", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			371, -- [11]
+			"Player-1096-08C7FCBB", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cZiratso|r",
+			[51] = 1587236871,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [85]
+		{
+			"LF guild - casual player looking for friendly levelling guild with light raiding", -- [1]
+			"Isablia-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Isablia-DefiasBrotherhood", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			374, -- [11]
+			"Player-1096-08C1099F", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcIsablia|r",
+			[51] = 1587236923,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [86]
+		{
+			"WTS the adorable |cff0070dd|Hbattlepet:2576:1:3:161:12:9:0000000000000000:81097|h[Beakbert]|h|r turtle pet for 25k :)", -- [1]
+			"Aÿír-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Aÿír-DefiasBrotherhood", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			375, -- [11]
+			"Player-1096-0866A10F", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cAÿír|r",
+			[51] = 1587236985,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [87]
+		{
+			"<Krakenboost> WTS < Carapace - 100k >, < N'zoth the Corruptor - 150k >, < Cara + N'zoth - 225k > Heroic kills. Having Runs every 30 minutes. Accepting payment on all realms. Get your 470+ BiS Gear, Curve and Mount tonight. /w ", -- [1]
+			"Ziratso-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Ziratso-DefiasBrotherhood", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			378, -- [11]
+			"Player-1096-08C7FCBB", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cZiratso|r",
+			[51] = 1587237051,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [88]
+		{
+			"WTS Ny’alotha Heroic/ Mythic; N'Zoth Heroic/ Mythic; BFA Keystone Conqueror 12x10+ in time; M10+ -17+in time – ready to start", -- [1]
+			"Dasijan-Ravenholdt", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Dasijan-Ravenholdt", -- [5]
+			"DND", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			379, -- [11]
+			"Player-1096-08CB38DA", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcDasijan-Ravenholdt|r",
+			[51] = 1587237088,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [89]
+		{
+			"Boost group with 1000+ kills is selling >125k< |cff66bbff|Hjournal:1:2375:14|h[N'Zoth the Corruptor]|h|r HC || You'll get |cffffff00|Hachievement:14068:Player-1096-08C5B26A:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: N'Zoth the Corruptor]|h|r |cff71d5ff|Hspell:302143:0|h[Uncorrupted Voidwing]|h|r and 470 Loot! New run every 15min", -- [1]
+			"Doztworry-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Doztworry-DefiasBrotherhood", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			382, -- [11]
+			"Player-1096-08C5B26A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcDoztworry|r",
+			[51] = 1587237121,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [90]
+		{
+			"WTS the adorable |cff0070dd|Hbattlepet:2576:1:3:161:12:9:0000000000000000:81097|h[Beakbert]|h|r turtle pet for 25k :)", -- [1]
+			"Aÿír-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Aÿír-DefiasBrotherhood", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			383, -- [11]
+			"Player-1096-0866A10F", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cAÿír|r",
+			[51] = 1587237139,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [91]
+		{
+			"<Krakenboost> WTS < Carapace - 100k >, < N'zoth the Corruptor - 150k >, < Cara + N'zoth - 225k > Heroic kills. Having Runs every 30 minutes. Accepting payment on all realms. Get your 470+ BiS Gear, Curve and Mount tonight. /w ", -- [1]
+			"Ziratso-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Ziratso-DefiasBrotherhood", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			388, -- [11]
+			"Player-1096-08C7FCBB", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cZiratso|r",
+			[51] = 1587237231,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [92]
+		{
+			"Impaling Spear on Ureg", -- [1]
+			"Ureg-DefiasBrotherhood", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Ureg-DefiasBrotherhood", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			403, -- [11]
+			"Player-1096-077D61E7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff3ec5e9Ureg|r",
+			[51] = 1587237728,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [93]
+		{
+			"Arcane Bomb on Ureg", -- [1]
+			"Ureg-DefiasBrotherhood", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Ureg-DefiasBrotherhood", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			465, -- [11]
+			"Player-1096-077D61E7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff3ec5e9Ureg|r",
+			[51] = 1587238500,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [94]
+		{
+			"WTS Ny’alotha Heroic/ Mythic; N'Zoth Heroic/ Mythic; BFA Keystone Conqueror 12x10+ in time; M10+ -17+in time – ready to start", -- [1]
+			"Dasijan-Ravenholdt", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Dasijan-Ravenholdt", -- [5]
+			"DND", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			5, -- [11]
+			"Player-1096-08CB38DA", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcDasijan-Ravenholdt|r",
+			[51] = 1587281130,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [95]
+		{
+			"where to create arena team ?", -- [1]
+			"Luthar-Ravenholdt", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Luthar-Ravenholdt", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			54, -- [11]
+			"Player-1096-089B2815", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc31d39Luthar-Ravenholdt|r",
+			[51] = 1587310704,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [96]
+		{
+			"you dont need to", -- [1]
+			"Eschalot-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Eschalot-DefiasBrotherhood", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			55, -- [11]
+			"Player-1096-087104DF", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa22fc8Eschalot|r",
+			[51] = 1587310719,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [97]
+		{
+			"you just que with someone", -- [1]
+			"Eschalot-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Eschalot-DefiasBrotherhood", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			56, -- [11]
+			"Player-1096-087104DF", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa22fc8Eschalot|r",
+			[51] = 1587310723,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [98]
+		{
+			"for rated arenas ?", -- [1]
+			"Luthar-Ravenholdt", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Luthar-Ravenholdt", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			57, -- [11]
+			"Player-1096-089B2815", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc31d39Luthar-Ravenholdt|r",
+			[51] = 1587310739,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [99]
+		{
+			"yes", -- [1]
+			"Sílirium-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Sílirium-DefiasBrotherhood", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			58, -- [11]
+			"Player-1096-0811139A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec5e9Sílirium|r",
+			[51] = 1587310741,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [100]
+		{
+			"Arena team per say as a feature does not exist anymore", -- [1]
+			"Sílirium-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Sílirium-DefiasBrotherhood", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			59, -- [11]
+			"Player-1096-0811139A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec5e9Sílirium|r",
+			[51] = 1587310755,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [101]
+		{
+			"oh", -- [1]
+			"Luthar-Ravenholdt", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Luthar-Ravenholdt", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			60, -- [11]
+			"Player-1096-089B2815", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc31d39Luthar-Ravenholdt|r",
+			[51] = 1587310762,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [102]
+		{
+			"just que with your friend (if you have one) or with a stranger :P ", -- [1]
+			"Sílirium-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Sílirium-DefiasBrotherhood", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			61, -- [11]
+			"Player-1096-0811139A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec5e9Sílirium|r",
+			[51] = 1587310778,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [103]
+		{
+			"WTS Ny’alotha Heroic/ Mythic; N'Zoth Heroic/ Mythic; BFA Keystone Conqueror 12x10+ in time; M10+ -17+in time – ready to start", -- [1]
+			"Dasijan-Ravenholdt", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Dasijan-Ravenholdt", -- [5]
+			"DND", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			62, -- [11]
+			"Player-1096-08CB38DA", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcDasijan-Ravenholdt|r",
+			[51] = 1587310806,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [104]
+		{
+			"WTS |cff0070dd|Hbattlepet:285:3:3:264:39:29:0000000000000000:0|h[Landro's Lil' XT]|h|r|cff0070dd|Hbattlepet:264:25:3:1481:305:257:0000000000000000:0|h[Crawling Claw]|h|r", -- [1]
+			"Calyna-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Calyna-DefiasBrotherhood", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			65, -- [11]
+			"Player-1096-08CDE3D5", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Calyna|r",
+			[51] = 1587311450,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [105]
+		{
+			"WTS Ny’alotha Heroic/ Mythic; N'Zoth Heroic/ Mythic; BFA Keystone Conqueror 12x10+ in time; M10+ -17+in time – ready to start", -- [1]
+			"Dasijan-Ravenholdt", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Dasijan-Ravenholdt", -- [5]
+			"DND", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			66, -- [11]
+			"Player-1096-08CB38DA", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcDasijan-Ravenholdt|r",
+			[51] = 1587311581,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [106]
+		{
+			"LF guild that does mythic +10 keystones", -- [1]
+			"Thomas-Sporeggar", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Thomas-Sporeggar", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			67, -- [11]
+			"Player-1096-075F33E4", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa22fc8Thomas-Sporeggar|r",
+			[51] = 1587311623,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [107]
+		{
+			"LF guild", -- [1]
+			"Korwinka-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Korwinka-DefiasBrotherhood", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			68, -- [11]
+			"Player-1096-082CD9DC", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc31d39Korwinka|r",
+			[51] = 1587311983,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [108]
+		{
+			"WTS Ny’alotha Heroic/ Mythic; N'Zoth Heroic/ Mythic; BFA Keystone Conqueror 12x10+ in time; M10+ -17+in time – ready to start", -- [1]
+			"Dasijan-Ravenholdt", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Dasijan-Ravenholdt", -- [5]
+			"DND", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			69, -- [11]
+			"Player-1096-08CB38DA", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcDasijan-Ravenholdt|r",
+			[51] = 1587312091,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [109]
+		{
+			"WTS Ny’alotha Heroic/ Mythic; N'Zoth Heroic/ Mythic; BFA Keystone Conqueror 12x10+ in time; M10+ -17+in time – ready to start", -- [1]
+			"Dasijan-Ravenholdt", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Dasijan-Ravenholdt", -- [5]
+			"DND", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			695, -- [11]
+			"Player-1096-08CB38DA", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcDasijan-Ravenholdt|r",
+			[51] = 1587315936,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [110]
+		{
+			"WTS |cffa335ee|Hitem:175008::::::::120:65::5:8:4823:41:6578:6579:6551:6513:1502:4786:::|h[Lurking Schemer's Band]|h|r", -- [1]
+			"Nave-Sporeggar", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Nave-Sporeggar", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			696, -- [11]
+			"Player-1096-047A7B69", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Nave-Sporeggar|r",
+			[51] = 1587316016,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [111]
+		{
+			"<Krakenboost> WTS < Carapace - 100k >, < N'zoth the Corruptor - 150k >, < Cara + N'zoth - 225k > Heroic kills. Having Runs every 30 minutes. Accepting payment on all realms. Get your 470+ BiS Gear, Curve and Mount tonight. /w ", -- [1]
+			"Ziratso-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Ziratso-DefiasBrotherhood", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			697, -- [11]
+			"Player-1096-08C7FCBB", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cZiratso|r",
+			[51] = 1587316069,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [112]
+		{
+			"Anyone link BS?", -- [1]
+			"Krexx-Ravenholdt", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Krexx-Ravenholdt", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			699, -- [11]
+			"Player-1096-0720E857", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcKrexx-Ravenholdt|r",
+			[51] = 1587316226,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [113]
+		{
+			"WTS Ny’alotha Heroic/ Mythic; N'Zoth Heroic/ Mythic; BFA Keystone Conqueror 12x10+ in time; M10+ -17+in time – ready to start", -- [1]
+			"Dasijan-Ravenholdt", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Dasijan-Ravenholdt", -- [5]
+			"DND", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			700, -- [11]
+			"Player-1096-08CB38DA", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcDasijan-Ravenholdt|r",
+			[51] = 1587316241,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [114]
+		{
+			"<Krakenboost> WTS < Carapace - 100k >, < N'zoth the Corruptor - 150k >, < Cara + N'zoth - 225k > Heroic kills. Having Runs every 30 minutes. Accepting payment on all realms. Get your 470+ BiS Gear, Curve and Mount tonight. /w ", -- [1]
+			"Ziratso-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Ziratso-DefiasBrotherhood", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			701, -- [11]
+			"Player-1096-08C7FCBB", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cZiratso|r",
+			[51] = 1587316249,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [115]
+		{
+			"Anyone got Blacksmithing??", -- [1]
+			"Krexx-Ravenholdt", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Krexx-Ravenholdt", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			702, -- [11]
+			"Player-1096-0720E857", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcKrexx-Ravenholdt|r",
+			[51] = 1587316307,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [116]
+		{
+			"dead proffession", -- [1]
+			"Makeawishdk-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Makeawishdk-DefiasBrotherhood", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			703, -- [11]
+			"Player-1096-0874EA8B", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc31d39Makeawishdk|r",
+			[51] = 1587316320,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [117]
+		{
+			"LF LW", -- [1]
+			"Krexx-Ravenholdt", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Krexx-Ravenholdt", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			704, -- [11]
+			"Player-1096-0720E857", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcKrexx-Ravenholdt|r",
+			[51] = 1587316404,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [118]
+		{
+			"<Krakenboost> WTS < Carapace - 100k >, < N'zoth the Corruptor - 150k >, < Cara + N'zoth - 225k > Heroic kills. Having Runs every 30 minutes. Accepting payment on all realms. Get your 470+ BiS Gear, Curve and Mount tonight. /w ", -- [1]
+			"Ziratso-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Ziratso-DefiasBrotherhood", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			705, -- [11]
+			"Player-1096-08C7FCBB", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cZiratso|r",
+			[51] = 1587316429,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [119]
+		{
+			"WTS |cffffffff|Hitem:168314::::::::120:577::::::|h[Bil'Tong]|h|r 40 gold each, cheaper than AH", -- [1]
+			"Tazameta-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Tazameta-DefiasBrotherhood", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			706, -- [11]
+			"Player-1096-08CAAF31", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa22fc8Tazameta|r",
+			[51] = 1587316463,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [120]
+		{
+			"WTS |cff0070dd|Hbattlepet:2578:1:3:156:12:10:0000000000000000:81213|h[Scaley]|h|r & |cff0070dd|Hbattlepet:2576:1:3:161:12:9:0000000000000000:81097|h[Beakbert]|h|r pets for 20k each :)", -- [1]
+			"Aÿír-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Aÿír-DefiasBrotherhood", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			707, -- [11]
+			"Player-1096-0866A10F", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cAÿír|r",
+			[51] = 1587316467,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [121]
+		{
+			"<Krakenboost> WTS < Carapace - 100k >, < N'zoth the Corruptor - 150k >, < Cara + N'zoth - 225k > Heroic kills. Having Runs every 30 minutes. Accepting payment on all realms. Get your 470+ BiS Gear, Curve and Mount tonight. /w ", -- [1]
+			"Ziratso-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Ziratso-DefiasBrotherhood", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			709, -- [11]
+			"Player-1096-08C7FCBB", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cZiratso|r",
+			[51] = 1587316609,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [122]
+		{
+			"WTS Ny’alotha Heroic/ Mythic; N'Zoth Heroic/ Mythic; BFA Keystone Conqueror 12x10+ in time; M10+ -17+in time – ready to start", -- [1]
+			"Dasijan-Ravenholdt", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Dasijan-Ravenholdt", -- [5]
+			"DND", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			712, -- [11]
+			"Player-1096-08CB38DA", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcDasijan-Ravenholdt|r",
+			[51] = 1587316827,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [123]
+		{
+			"<Krakenboost> WTS < Carapace - 100k >, < N'zoth the Corruptor - 150k >, < Cara + N'zoth - 225k > Heroic kills. Having Runs every 30 minutes. Accepting payment on all realms. Get your 470+ BiS Gear, Curve and Mount tonight. /w ", -- [1]
+			"Ziratso-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Ziratso-DefiasBrotherhood", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			777, -- [11]
+			"Player-1096-08C7FCBB", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cZiratso|r",
+			[51] = 1587318229,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [124]
+		{
+			"When u check its prices , U will change ur mind", -- [1]
+			"Darkwing-Sporeggar", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Darkwing-Sporeggar", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			778, -- [11]
+			"Player-1096-08BD6403", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec5e9Darkwing-Sporeggar|r",
+			[51] = 1587318232,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [125]
+		{
+			"<Krakenboost> WTS < Carapace - 100k >, < N'zoth the Corruptor - 150k >, < Cara + N'zoth - 225k > Heroic kills. Having Runs every 30 minutes. Accepting payment on all realms. Get your 470+ BiS Gear, Curve and Mount tonight. /w ", -- [1]
+			"Ziratso-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Ziratso-DefiasBrotherhood", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			835, -- [11]
+			"Player-1096-08C7FCBB", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cZiratso|r",
+			[51] = 1587319490,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [126]
+		{
+			"|cffa335ee|Hitem:175010::::::::120:73::5:7:4823:6578:6579:6560:6513:1502:4786:::|h[Maddened Adherent's Bulwark]|h|r on ah", -- [1]
+			"Grato-ScarshieldLegion", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Grato-ScarshieldLegion", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1157, -- [11]
+			"Player-1096-00193B33", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc59a6cGrato-ScarshieldLegion|r",
+			[51] = 1587320243,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [127]
 	},
 }

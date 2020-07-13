@@ -1,11 +1,14 @@
 local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
-local B = E:NewModule('Blizzard', 'AceEvent-3.0', 'AceHook-3.0');
-E.Blizzard = B;
+local B = E:GetModule('Blizzard')
+local Skins = E:GetModule('Skins')
 
---No point caching anything here, but list them here for mikk's FindGlobals script
--- GLOBALS: IsAddOnLoaded, LossOfControlFrame, CreateFrame, LFRBrowseFrame, TalentMicroButtonAlert
+local _G = _G
+local CreateFrame = CreateFrame
+local IsAddOnLoaded = IsAddOnLoaded
 
 function B:Initialize()
+	self.Initialized = true
+
 	self:EnhanceColorPicker()
 	self:KillBlizzard()
 	self:AlertMovers()
@@ -17,6 +20,7 @@ function B:Initialize()
 	self:PositionTalkingHead()
 	self:Handle_LevelUpDisplay_BossBanner()
 	self:Handle_UIWidgets()
+	self:GarrisonDropDown()
 
 	if not IsAddOnLoaded("DugisGuideViewerZ") then
 		self:MoveObjectiveFrame()
@@ -27,37 +31,35 @@ function B:Initialize()
 		self:SkinAltPowerBar()
 	end
 
-	E:CreateMover(LossOfControlFrame, 'LossControlMover', L["Loss Control Icon"])
+	E:CreateMover(_G.LossOfControlFrame, 'LossControlMover', L["Loss Control Icon"])
 
-	CreateFrame("Frame"):SetScript("OnUpdate", function(self)
-		if LFRBrowseFrame.timeToClear then
-			LFRBrowseFrame.timeToClear = nil
+	-- Quick Join Bug
+	CreateFrame("Frame"):SetScript("OnUpdate", function()
+		if _G.LFRBrowseFrame.timeToClear then
+			_G.LFRBrowseFrame.timeToClear = nil
 		end
 	end)
 
 	-- MicroButton Talent Alert
+	local TalentMicroButtonAlert = _G.TalentMicroButtonAlert
 	if TalentMicroButtonAlert then -- why do we need to check this?
 		if E.global.general.showMissingTalentAlert then
 			TalentMicroButtonAlert:ClearAllPoints()
-			TalentMicroButtonAlert:SetPoint("CENTER", E.UIParent, "TOP", 0, -75)
+			TalentMicroButtonAlert:Point("CENTER", E.UIParent, "TOP", 0, -75)
 			TalentMicroButtonAlert:StripTextures()
 			TalentMicroButtonAlert.Arrow:Hide()
 			TalentMicroButtonAlert.Text:FontTemplate()
 			TalentMicroButtonAlert:CreateBackdrop("Transparent")
-			E:GetModule("Skins"):HandleCloseButton(TalentMicroButtonAlert.CloseButton)
+			Skins:HandleCloseButton(TalentMicroButtonAlert.CloseButton)
 
 			TalentMicroButtonAlert.tex = TalentMicroButtonAlert:CreateTexture(nil, "OVERLAY")
 			TalentMicroButtonAlert.tex:Point("RIGHT", -10, 0)
 			TalentMicroButtonAlert.tex:SetTexture("Interface\\DialogFrame\\UI-Dialog-Icon-AlertNew")
-			TalentMicroButtonAlert.tex:SetSize(32, 32)
+			TalentMicroButtonAlert.tex:Size(32, 32)
 		else
 			TalentMicroButtonAlert:Kill() -- Kill it, because then the blizz default will show
 		end
 	end
 end
 
-local function InitializeCallback()
-	B:Initialize()
-end
-
-E:RegisterModule(B:GetName(), InitializeCallback)
+E:RegisterModule(B:GetName())

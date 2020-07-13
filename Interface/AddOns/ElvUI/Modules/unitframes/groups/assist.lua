@@ -4,20 +4,17 @@ local _, ns = ...
 local ElvUF = ns.oUF
 assert(ElvUF, "ElvUI was unable to locate oUF.")
 
---Cache global variables
 --Lua functions
-local max = math.max
+local _G = _G
+local max = max
 --WoW API / Variables
 local CreateFrame = CreateFrame
 local InCombatLockdown = InCombatLockdown
 local RegisterAttributeDriver = RegisterAttributeDriver
 
---Global variables that we don't cache, list them here for mikk's FindGlobals script
--- GLOBALS: UnitFrame_OnEnter, UnitFrame_OnLeave
-
 function UF:Construct_AssistFrames()
-	self:SetScript('OnEnter', UnitFrame_OnEnter)
-	self:SetScript('OnLeave', UnitFrame_OnLeave)
+	self:SetScript('OnEnter', _G.UnitFrame_OnEnter)
+	self:SetScript('OnLeave', _G.UnitFrame_OnLeave)
 
 	self.RaisedElementParent = CreateFrame('Frame', nil, self)
 	self.RaisedElementParent.TextureParent = CreateFrame('Frame', nil, self.RaisedElementParent)
@@ -29,7 +26,8 @@ function UF:Construct_AssistFrames()
 	self.RaidTargetIndicator = UF:Construct_RaidIcon(self)
 	self.MouseGlow = UF:Construct_MouseGlow(self)
 	self.TargetGlow = UF:Construct_TargetGlow(self)
-	self.Range = UF:Construct_Range(self)
+	self.Fader = UF:Construct_Fader()
+	self.Cutaway = UF:Construct_Cutaway(self)
 
 	if not self.isChild then
 		self.Buffs = UF:Construct_Buffs(self)
@@ -43,11 +41,11 @@ function UF:Construct_AssistFrames()
 		self.unitframeType = "assisttarget"
 	end
 
-	UF:Update_AssistFrames(self, E.db['unitframe']['units']['assist'])
+	self.originalParent = self:GetParent()
+
+	UF:Update_AssistFrames(self, E.db.unitframe.units.assist)
 	UF:Update_StatusBars()
 	UF:Update_FontStrings()
-
-	self.originalParent = self:GetParent()
 
 	return self
 end
@@ -58,25 +56,22 @@ function UF:Update_AssistHeader(header, db)
 
 	UF:ClearChildPoints(header:GetChildren())
 
-	header:SetAttribute("startingIndex", -1)
-	RegisterAttributeDriver(header, 'state-visibility', 'show')
-	RegisterAttributeDriver(header, 'state-visibility', '[@raid1,exists] show;hide')
-	header:SetAttribute("startingIndex", 1)
+	if not header.isForced and db.enable then
+		RegisterAttributeDriver(header, 'state-visibility', '[@raid1,exists] show;hide')
+	end
 
 	header:SetAttribute('point', 'BOTTOM')
 	header:SetAttribute('columnAnchorPoint', 'LEFT')
-
-	UF:ClearChildPoints(header:GetChildren())
 	header:SetAttribute("yOffset", db.verticalSpacing)
-
-	local width, height = header:GetSize()
-	header.dirtyWidth, header.dirtyHeight = width, max(height, 2*db.height + db.verticalSpacing)
 
 	if not header.positioned then
 		header:ClearAllPoints()
 		header:Point("TOPLEFT", E.UIParent, "TOPLEFT", 4, -248)
 
-		E:CreateMover(header, header:GetName()..'Mover', L["MA Frames"], nil, nil, nil, 'ALL,RAID')
+		local width, height = header:GetSize()
+		header.dirtyWidth, header.dirtyHeight = width, max(height, 2*db.height + db.verticalSpacing)
+
+		E:CreateMover(header, header:GetName()..'Mover', L["MA Frames"], nil, nil, nil, 'ALL,RAID', nil, 'unitframe,groupUnits,assist,generalGroup')
 		header.mover.positionOverride = "TOPLEFT"
 		header:SetAttribute('minHeight', header.dirtyHeight)
 		header:SetAttribute('minWidth', header.dirtyWidth)
@@ -122,25 +117,22 @@ function UF:Update_AssistFrames(frame, db)
 		frame.VARIABLES_SET = true
 	end
 
-	if frame.isChild and frame.originalParent then
+	if frame.isChild then
 		local childDB = db.targetsGroup
 		frame.db = db.targetsGroup
-		if not frame.originalParent.childList then
-			frame.originalParent.childList = {}
-		end
-		frame.originalParent.childList[frame] = true;
+
+		frame:Size(childDB.width, childDB.height)
 
 		if not InCombatLockdown() then
 			if childDB.enable then
-				frame:SetParent(frame.originalParent)
-				frame:Size(childDB.width, childDB.height)
+				frame:Enable()
 				frame:ClearAllPoints()
 				frame:Point(E.InversePoints[childDB.anchorPoint], frame.originalParent, childDB.anchorPoint, childDB.xOffset, childDB.yOffset)
 			else
-				frame:SetParent(E.HiddenFrame)
+				frame:Disable()
 			end
 		end
-	elseif not InCombatLockdown() then
+	else
 		frame:Size(frame.UNIT_WIDTH, frame.UNIT_HEIGHT)
 	end
 
@@ -151,24 +143,20 @@ function UF:Update_AssistFrames(frame, db)
 	UF:Configure_Threat(frame)
 
 	--Name
-	do
-		local name = frame.Name
-		name:Point('CENTER', frame.Health, 'CENTER')
-		if UF.db.colors.healthclass then
-			frame:Tag(name, '[name:medium]')
-		else
-			frame:Tag(name, '[namecolor][name:medium]')
-		end
-	end
+	UF:UpdateNameSettings(frame)
 
-	--Range
-	UF:Configure_Range(frame)
+	--Fader
+	UF:Configure_Fader(frame)
+
+	UF:Configure_RaidIcon(frame)
+
+	--Cutaway
+	UF:Configure_Cutaway(frame)
 
 	if not frame.isChild then
 		--Auras
 		UF:EnableDisable_Auras(frame)
-		UF:Configure_Auras(frame, "Buffs")
-		UF:Configure_Auras(frame, "Debuffs")
+		UF:Configure_AllAuras(frame)
 
 		--RaidDebuffs
 		UF:Configure_RaidDebuffs(frame)
@@ -177,10 +165,10 @@ function UF:Update_AssistFrames(frame, db)
 		UF:Configure_DebuffHighlight(frame)
 
 		--Buff Indicator
-		UF:UpdateAuraWatch(frame)
+		UF:Configure_AuraWatch(frame)
 	end
 
 	frame:UpdateAllElements("ElvUI_UpdateAllElements")
 end
 
-UF['headerstoload']['assist'] = {'MAINASSIST', 'ELVUI_UNITTARGET'}
+UF.headerstoload.assist = {'MAINASSIST', 'ELVUI_UNITTARGET'}
