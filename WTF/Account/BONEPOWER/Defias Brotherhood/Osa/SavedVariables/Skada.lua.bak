@@ -1,0 +1,740 @@
+
+SkadaPerCharDB = {
+	["sets"] = {
+		{
+			["healingabsorbed"] = 0,
+			["dispells"] = 0,
+			["ccbreaks"] = 0,
+			["overhealing"] = 3,
+			["interrupts"] = 0,
+			["endtime"] = 1604665859,
+			["damagetaken"] = 5,
+			["damage"] = 69,
+			["players"] = {
+				{
+					["last"] = 1604665854,
+					["healingabsorbed"] = 0,
+					["class"] = "PRIEST",
+					["damaged"] = {
+						["Combat Dummy"] = 9,
+						["Grunt Throg"] = 60,
+					},
+					["dispells"] = 0,
+					["healingspells"] = {
+						["Touch of the Grave"] = {
+							["shielding"] = 0,
+							["id"] = 127802,
+							["healing"] = 1,
+							["min"] = 1,
+							["name"] = "Touch of the Grave",
+							["max"] = 1,
+							["critical"] = 0,
+							["absorbed"] = 0,
+							["overhealing"] = 3,
+							["hits"] = 1,
+						},
+					},
+					["overhealing"] = 3,
+					["interrupts"] = 0,
+					["ffdamagedonetargets"] = {
+					},
+					["ffdamagedonespells"] = {
+					},
+					["damage"] = 69,
+					["damagespells"] = {
+						["Touch of the Grave"] = {
+							["hitmin"] = 4,
+							["id"] = 127802,
+							["min"] = 4,
+							["hitamount"] = 4,
+							["hitmax"] = 4,
+							["hit"] = 1,
+							["school"] = 32,
+							["max"] = 4,
+							["totalhits"] = 1,
+							["damage"] = 4,
+						},
+						["Smite"] = {
+							["hitmin"] = 8,
+							["id"] = 585,
+							["min"] = 8,
+							["hitamount"] = 65,
+							["hitmax"] = 9,
+							["hit"] = 8,
+							["school"] = 2,
+							["max"] = 9,
+							["totalhits"] = 8,
+							["damage"] = 65,
+						},
+					},
+					["ffdamagedone"] = 0,
+					["healed"] = {
+						["Player-1096-09E8493E"] = {
+							["role"] = "NONE",
+							["name"] = "Osa",
+							["amount"] = 1,
+							["class"] = "PRIEST",
+							["shielding"] = 0,
+						},
+					},
+					["shielding"] = 0,
+					["id"] = "Player-1096-09E8493E",
+					["healing"] = 1,
+					["auras"] = {
+					},
+					["damagetakenspells"] = {
+						["Attack"] = {
+							["crushing"] = 0,
+							["id"] = 6603,
+							["min"] = 1,
+							["school"] = 1,
+							["critical"] = 0,
+							["glancing"] = 0,
+							["absorbed"] = 0,
+							["name"] = "Attack",
+							["blocked"] = 0,
+							["totalhits"] = 5,
+							["resisted"] = 0,
+							["max"] = 1,
+							["damage"] = 5,
+						},
+					},
+					["ccbreaks"] = 0,
+					["power"] = {
+					},
+					["name"] = "Osa",
+					["maxhp"] = 140,
+					["damagetaken"] = 5,
+					["first"] = 1604665841,
+					["role"] = "NONE",
+					["time"] = 13,
+				}, -- [1]
+			},
+			["deaths"] = 0,
+			["mobs"] = {
+				["Combat Dummy"] = {
+					["players"] = {
+						["Osa"] = {
+							["taken"] = 9,
+							["done"] = 0,
+							["role"] = "NONE",
+							["class"] = "PRIEST",
+						},
+					},
+					["hdone"] = 0,
+					["htakenspell"] = {
+					},
+					["taken"] = 9,
+					["done"] = 0,
+					["htaken"] = 0,
+					["hdonespell"] = {
+					},
+				},
+				["Grunt Throg"] = {
+					["players"] = {
+						["Osa"] = {
+							["taken"] = 60,
+							["done"] = 5,
+							["role"] = "NONE",
+							["class"] = "PRIEST",
+						},
+					},
+					["hdone"] = 0,
+					["htakenspell"] = {
+					},
+					["taken"] = 60,
+					["done"] = 5,
+					["htaken"] = 0,
+					["hdonespell"] = {
+					},
+				},
+			},
+			["mobtaken"] = 69,
+			["ffdamagedone"] = 0,
+			["healing"] = 1,
+			["auras"] = {
+			},
+			["power"] = {
+			},
+			["time"] = 20,
+			["starttime"] = 1604665839,
+			["name"] = "Grunt Throg",
+			["mobname"] = "Grunt Throg",
+			["shielding"] = 0,
+			["mobhdone"] = 0,
+			["last_action"] = 1604665839,
+			["mobdone"] = 5,
+		}, -- [1]
+		{
+			["healingabsorbed"] = 0,
+			["dispells"] = 0,
+			["ccbreaks"] = 0,
+			["overhealing"] = 0,
+			["interrupts"] = 0,
+			["endtime"] = 1604665824,
+			["damagetaken"] = 0,
+			["damage"] = 49,
+			["players"] = {
+				{
+					["last"] = 1604665817,
+					["healingabsorbed"] = 0,
+					["class"] = "PRIEST",
+					["damaged"] = {
+						["Combat Dummy"] = 49,
+					},
+					["dispells"] = 0,
+					["healingspells"] = {
+					},
+					["overhealing"] = 0,
+					["interrupts"] = 0,
+					["ffdamagedonetargets"] = {
+					},
+					["ffdamagedonespells"] = {
+					},
+					["damage"] = 49,
+					["damagespells"] = {
+						["Smite"] = {
+							["hitmin"] = 8,
+							["criticalamount"] = 17,
+							["id"] = 585,
+							["criticalmin"] = 17,
+							["hitamount"] = 32,
+							["critical"] = 1,
+							["min"] = 8,
+							["criticalmax"] = 17,
+							["hitmax"] = 8,
+							["hit"] = 4,
+							["school"] = 2,
+							["max"] = 17,
+							["totalhits"] = 5,
+							["damage"] = 49,
+						},
+					},
+					["ffdamagedone"] = 0,
+					["healed"] = {
+					},
+					["shielding"] = 0,
+					["id"] = "Player-1096-09E8493E",
+					["healing"] = 0,
+					["auras"] = {
+					},
+					["damagetakenspells"] = {
+					},
+					["ccbreaks"] = 0,
+					["power"] = {
+					},
+					["name"] = "Osa",
+					["maxhp"] = 140,
+					["damagetaken"] = 0,
+					["first"] = 1604665810,
+					["role"] = "NONE",
+					["time"] = 7,
+				}, -- [1]
+			},
+			["deaths"] = 0,
+			["mobs"] = {
+				["Combat Dummy"] = {
+					["players"] = {
+						["Osa"] = {
+							["taken"] = 49,
+							["done"] = 0,
+							["role"] = "NONE",
+							["class"] = "PRIEST",
+						},
+					},
+					["hdone"] = 0,
+					["htakenspell"] = {
+					},
+					["taken"] = 49,
+					["done"] = 0,
+					["htaken"] = 0,
+					["hdonespell"] = {
+					},
+				},
+			},
+			["mobtaken"] = 49,
+			["ffdamagedone"] = 0,
+			["healing"] = 0,
+			["auras"] = {
+			},
+			["power"] = {
+			},
+			["time"] = 15,
+			["starttime"] = 1604665809,
+			["name"] = "Combat Dummy (2)",
+			["mobname"] = "Combat Dummy",
+			["shielding"] = 0,
+			["mobhdone"] = 0,
+			["last_action"] = 1604665809,
+			["mobdone"] = 0,
+		}, -- [2]
+		{
+			["healingabsorbed"] = 0,
+			["dispells"] = 0,
+			["ccbreaks"] = 0,
+			["overhealing"] = 4,
+			["interrupts"] = 0,
+			["mobdone"] = 0,
+			["mobs"] = {
+				["Combat Dummy"] = {
+					["players"] = {
+						["Osa"] = {
+							["taken"] = 36,
+							["done"] = 0,
+							["class"] = "PRIEST",
+							["role"] = "NONE",
+						},
+					},
+					["hdone"] = 0,
+					["hdonespell"] = {
+					},
+					["taken"] = 36,
+					["htakenspell"] = {
+					},
+					["htaken"] = 0,
+					["done"] = 0,
+				},
+			},
+			["damage"] = 36,
+			["players"] = {
+				{
+					["last"] = 1604665782,
+					["healingabsorbed"] = 0,
+					["class"] = "PRIEST",
+					["damaged"] = {
+						["Combat Dummy"] = 36,
+					},
+					["dispells"] = 0,
+					["healingspells"] = {
+						["Touch of the Grave"] = {
+							["shielding"] = 0,
+							["id"] = 127802,
+							["healing"] = 0,
+							["min"] = 0,
+							["name"] = "Touch of the Grave",
+							["hits"] = 1,
+							["overhealing"] = 4,
+							["max"] = 0,
+							["critical"] = 0,
+							["absorbed"] = 0,
+						},
+					},
+					["overhealing"] = 4,
+					["interrupts"] = 0,
+					["time"] = 6,
+					["role"] = "NONE",
+					["damage"] = 36,
+					["damagespells"] = {
+						["Smite"] = {
+							["hitmin"] = 8,
+							["id"] = 585,
+							["min"] = 8,
+							["damage"] = 32,
+							["hitmax"] = 8,
+							["hit"] = 4,
+							["school"] = 2,
+							["totalhits"] = 4,
+							["max"] = 8,
+							["hitamount"] = 32,
+						},
+						["Touch of the Grave"] = {
+							["hitmin"] = 4,
+							["id"] = 127802,
+							["min"] = 4,
+							["damage"] = 4,
+							["hitmax"] = 4,
+							["hit"] = 1,
+							["school"] = 32,
+							["totalhits"] = 1,
+							["max"] = 4,
+							["hitamount"] = 4,
+						},
+					},
+					["first"] = 1604665776,
+					["healed"] = {
+						["Player-1096-09E8493E"] = {
+							["role"] = "NONE",
+							["name"] = "Osa",
+							["amount"] = 0,
+							["class"] = "PRIEST",
+							["shielding"] = 0,
+						},
+					},
+					["shielding"] = 0,
+					["id"] = "Player-1096-09E8493E",
+					["healing"] = 0,
+					["damagetaken"] = 0,
+					["damagetakenspells"] = {
+					},
+					["maxhp"] = 140,
+					["name"] = "Osa",
+					["ffdamagedonetargets"] = {
+					},
+					["power"] = {
+					},
+					["ccbreaks"] = 0,
+					["auras"] = {
+					},
+					["ffdamagedone"] = 0,
+					["ffdamagedonespells"] = {
+					},
+				}, -- [1]
+			},
+			["deaths"] = 0,
+			["damagetaken"] = 0,
+			["mobtaken"] = 36,
+			["ffdamagedone"] = 0,
+			["healing"] = 0,
+			["shielding"] = 0,
+			["power"] = {
+			},
+			["time"] = 13,
+			["starttime"] = 1604665776,
+			["name"] = "Combat Dummy",
+			["mobname"] = "Combat Dummy",
+			["auras"] = {
+			},
+			["mobhdone"] = 0,
+			["last_action"] = 1604665776,
+			["endtime"] = 1604665789,
+		}, -- [3]
+	},
+	["total"] = {
+		["healingabsorbed"] = 0,
+		["dispells"] = 0,
+		["ccbreaks"] = 0,
+		["overhealing"] = 15,
+		["interrupts"] = 0,
+		["damage"] = 267,
+		["players"] = {
+			{
+				["healingabsorbed"] = 0,
+				["class"] = "PRIEST",
+				["damaged"] = {
+				},
+				["dispells"] = 0,
+				["healingspells"] = {
+					["Touch of the Grave"] = {
+						["shielding"] = 0,
+						["id"] = 127802,
+						["healing"] = 1,
+						["min"] = 0,
+						["name"] = "Touch of the Grave",
+						["hits"] = 4,
+						["overhealing"] = 15,
+						["max"] = 1,
+						["critical"] = 0,
+						["absorbed"] = 0,
+					},
+				},
+				["overhealing"] = 15,
+				["interrupts"] = 0,
+				["time"] = 36,
+				["role"] = "NONE",
+				["damage"] = 267,
+				["damagespells"] = {
+					["Shadow Word: Pain"] = {
+						["criticalamount"] = 4,
+						["id"] = 589,
+						["min"] = 4,
+						["criticalmax"] = 4,
+						["critical"] = 1,
+						["criticalmin"] = 4,
+						["school"] = 32,
+						["max"] = 4,
+						["totalhits"] = 1,
+						["damage"] = 4,
+					},
+					["Attack"] = {
+						["hitmin"] = 1,
+						["id"] = 6603,
+						["min"] = 1,
+						["hitamount"] = 1,
+						["hitmax"] = 1,
+						["hit"] = 1,
+						["school"] = 1,
+						["max"] = 1,
+						["totalhits"] = 1,
+						["damage"] = 1,
+					},
+					["Smite"] = {
+						["hitmin"] = 8,
+						["criticalamount"] = 53,
+						["id"] = 585,
+						["criticalmin"] = 17,
+						["damage"] = 245,
+						["critical"] = 3,
+						["min"] = 8,
+						["criticalmax"] = 18,
+						["hitmax"] = 9,
+						["hit"] = 23,
+						["school"] = 2,
+						["totalhits"] = 26,
+						["max"] = 18,
+						["hitamount"] = 192,
+					},
+					["Touch of the Grave"] = {
+						["hitmin"] = 4,
+						["id"] = 127802,
+						["min"] = 4,
+						["damage"] = 17,
+						["hitmax"] = 5,
+						["hit"] = 4,
+						["school"] = 32,
+						["totalhits"] = 4,
+						["max"] = 5,
+						["hitamount"] = 17,
+					},
+				},
+				["damagetaken"] = 20,
+				["healed"] = {
+					["Player-1096-09E8493E"] = {
+						["role"] = "NONE",
+						["name"] = "Osa",
+						["amount"] = 1,
+						["class"] = "PRIEST",
+						["shielding"] = 0,
+					},
+				},
+				["shielding"] = 0,
+				["id"] = "Player-1096-09E8493E",
+				["healing"] = 1,
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["srcname"] = "Osa",
+						["spellid"] = 127802,
+						["hp"] = 140,
+						["ts"] = 1604665776.618,
+					}, -- [1]
+					{
+						["ts"] = 1604665841.901,
+						["amount"] = -1,
+						["hp"] = 140,
+						["spellid"] = 88163,
+						["srcname"] = "Grunt Throg",
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 1,
+						["hp"] = 140,
+						["ts"] = 1604665843.218,
+						["spellid"] = 127802,
+						["srcname"] = "Osa",
+					}, -- [3]
+					{
+						["ts"] = 1604665843.909,
+						["amount"] = -1,
+						["hp"] = 140,
+						["spellid"] = 88163,
+						["srcname"] = "Grunt Throg",
+					}, -- [4]
+					{
+						["ts"] = 1604665847.953,
+						["amount"] = -1,
+						["hp"] = 139,
+						["spellid"] = 88163,
+						["srcname"] = "Grunt Throg",
+					}, -- [5]
+					{
+						["ts"] = 1604665849.966,
+						["amount"] = -1,
+						["hp"] = 138,
+						["spellid"] = 88163,
+						["srcname"] = "Grunt Throg",
+					}, -- [6]
+					{
+						["ts"] = 1604665851.974,
+						["amount"] = -1,
+						["hp"] = 137,
+						["spellid"] = 88163,
+						["srcname"] = "Grunt Throg",
+					}, -- [7]
+					{
+						["ts"] = 1604665904.284,
+						["amount"] = -3,
+						["hp"] = 154,
+						["spellid"] = 88163,
+						["srcname"] = "Shuffling Crab",
+					}, -- [8]
+					{
+						["ts"] = 1604665906.292,
+						["amount"] = -5,
+						["hp"] = 151,
+						["spellid"] = 88163,
+						["srcname"] = "Shuffling Crab",
+					}, -- [9]
+					{
+						["ts"] = 1604665920.102,
+						["amount"] = -4,
+						["hp"] = 154,
+						["spellid"] = 88163,
+						["srcname"] = "Murloc Spearhunter",
+					}, -- [10]
+					{
+						["ts"] = 1604665922.127,
+						["amount"] = -3,
+						["hp"] = 150,
+						["spellid"] = 88163,
+						["srcname"] = "Murloc Spearhunter",
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["hp"] = 154,
+						["ts"] = 1604665931.113,
+						["spellid"] = 127802,
+						["srcname"] = "Osa",
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["hp"] = 154,
+						["ts"] = 1604665981.694,
+						["spellid"] = 127802,
+						["srcname"] = "Osa",
+					}, -- [13]
+					["pos"] = 14,
+				},
+				["damagetakenspells"] = {
+					["Attack"] = {
+						["crushing"] = 0,
+						["id"] = 6603,
+						["min"] = 1,
+						["school"] = 1,
+						["critical"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 0,
+						["name"] = "Attack",
+						["blocked"] = 0,
+						["totalhits"] = 9,
+						["resisted"] = 0,
+						["max"] = 5,
+						["damage"] = 20,
+					},
+				},
+				["name"] = "Osa",
+				["maxhp"] = 140,
+				["ffdamagedonetargets"] = {
+				},
+				["power"] = {
+				},
+				["ccbreaks"] = 0,
+				["auras"] = {
+				},
+				["ffdamagedone"] = 0,
+				["ffdamagedonespells"] = {
+				},
+			}, -- [1]
+		},
+		["deaths"] = 0,
+		["mobs"] = {
+			["Combat Dummy"] = {
+				["players"] = {
+					["Osa"] = {
+						["taken"] = 94,
+						["done"] = 0,
+						["class"] = "PRIEST",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 94,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 0,
+			},
+			["Murloc Watershaper"] = {
+				["players"] = {
+					["Osa"] = {
+						["taken"] = 67,
+						["done"] = 0,
+						["role"] = "NONE",
+						["class"] = "PRIEST",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 67,
+				["done"] = 0,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["Murloc Spearhunter"] = {
+				["players"] = {
+					["Osa"] = {
+						["taken"] = 45,
+						["done"] = 7,
+						["role"] = "NONE",
+						["class"] = "PRIEST",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 45,
+				["done"] = 7,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["Shuffling Crab"] = {
+				["players"] = {
+					["Osa"] = {
+						["taken"] = 1,
+						["done"] = 8,
+						["role"] = "NONE",
+						["class"] = "PRIEST",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 1,
+				["done"] = 8,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["Grunt Throg"] = {
+				["players"] = {
+					["Osa"] = {
+						["taken"] = 60,
+						["done"] = 5,
+						["role"] = "NONE",
+						["class"] = "PRIEST",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 60,
+				["done"] = 5,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+		},
+		["mobtaken"] = 267,
+		["ffdamagedone"] = 0,
+		["healing"] = 1,
+		["auras"] = {
+		},
+		["power"] = {
+		},
+		["shielding"] = 0,
+		["damagetaken"] = 20,
+		["name"] = "Total",
+		["starttime"] = 1604665768,
+		["time"] = 48,
+		["mobhdone"] = 0,
+		["last_action"] = 1604665768,
+		["mobdone"] = 20,
+	},
+}

@@ -2,12 +2,11 @@ local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, Private
 local UF = E:GetModule('UnitFrames')
 local LSM = E.Libs.LSM
 
---Lua functions
 local _G = _G
 local sort, ceil, huge = sort, ceil, math.huge
-local select, unpack, format = select, unpack, format
+local select, unpack, next, format = select, unpack, next, format
 local strfind, strsplit, strmatch = strfind, strsplit, strmatch
---WoW API / Variables
+
 local CreateFrame = CreateFrame
 local IsShiftKeyDown = IsShiftKeyDown
 local IsAltKeyDown = IsAltKeyDown
@@ -17,9 +16,9 @@ local UnitIsFriend = UnitIsFriend
 local UnitIsUnit = UnitIsUnit
 
 function UF:Construct_Buffs(frame)
-	local buffs = CreateFrame('Frame', frame:GetName().."Buffs", frame)
-	buffs.spacing = E.Spacing
-	buffs.PreSetPosition = (not frame:GetScript("OnUpdate")) and self.SortAuras or nil
+	local buffs = CreateFrame('Frame', '$parentBuffs', frame)
+	buffs.spacing = UF.SPACING
+	buffs.PreSetPosition = (not frame:GetScript('OnUpdate')) and self.SortAuras or nil
 	buffs.PostCreateIcon = self.Construct_AuraIcon
 	buffs.PostUpdateIcon = self.PostUpdateAura
 	buffs.CustomFilter = self.AuraFilter
@@ -32,9 +31,9 @@ function UF:Construct_Buffs(frame)
 end
 
 function UF:Construct_Debuffs(frame)
-	local debuffs = CreateFrame('Frame', frame:GetName().."Debuffs", frame)
-	debuffs.spacing = E.Spacing
-	debuffs.PreSetPosition = (not frame:GetScript("OnUpdate")) and self.SortAuras or nil
+	local debuffs = CreateFrame('Frame', '$parentDebuffs', frame)
+	debuffs.spacing = UF.SPACING
+	debuffs.PreSetPosition = (not frame:GetScript('OnUpdate')) and self.SortAuras or nil
 	debuffs.PostCreateIcon = self.Construct_AuraIcon
 	debuffs.PostUpdateIcon = self.PostUpdateAura
 	debuffs.CustomFilter = self.AuraFilter
@@ -46,28 +45,32 @@ function UF:Construct_Debuffs(frame)
 	return debuffs
 end
 
-local function OnClick(btn)
-	local mod = E.db.unitframe.auraBlacklistModifier
-	if mod == "NONE" or not ((mod == "SHIFT" and IsShiftKeyDown()) or (mod == "ALT" and IsAltKeyDown()) or (mod == "CTRL" and IsControlKeyDown())) then return end
-	local auraName = btn.name
+function UF:Aura_OnClick()
+	local keyDown = IsShiftKeyDown() and 'SHIFT' or IsAltKeyDown() and 'ALT' or IsControlKeyDown() and 'CTRL'
+	if not keyDown then return end
 
-	if auraName then
-		E:Print(format(L["The spell '%s' has been added to the Blacklist unitframe aura filter."], auraName))
-		E.global.unitframe.aurafilters.Blacklist.spells[btn.spellID] = { enable = true, priority = 0 }
+	local spellName, spellID = self.name, self.spellID
+	local listName = UF.db.modifiers[keyDown]
+	if spellName and spellID and listName ~= 'NONE' then
+		if not E.global.unitframe.aurafilters[listName].spells[spellID] then
+			E:Print(format(L["The spell '%s' has been added to the '%s' unitframe aura filter."], spellName, listName))
+			E.global.unitframe.aurafilters[listName].spells[spellID] = { enable = true, priority = 0 }
+		else
+			E.global.unitframe.aurafilters[listName].spells[spellID].enable = true
+		end
 
 		UF:Update_AllFrames()
 	end
 end
 
 function UF:Construct_AuraIcon(button)
-	local offset = UF.thinBorders and E.mult or E.Border
-	button:SetTemplate(nil, nil, nil, UF.thinBorders, true)
+	button:SetTemplate(nil, nil, nil, nil, true)
 
 	button.cd:SetReverse(true)
 	button.cd:SetDrawEdge(false)
-	button.cd:SetInside(button, offset, offset)
+	button.cd:SetInside(button, UF.BORDER, UF.BORDER)
 
-	button.icon:SetInside(button, offset, offset)
+	button.icon:SetInside(button, UF.BORDER, UF.BORDER)
 	button.icon:SetDrawLayer('ARTWORK')
 
 	button.count:ClearAllPoints()
@@ -78,7 +81,7 @@ function UF:Construct_AuraIcon(button)
 	button.stealable:SetTexture()
 
 	button:RegisterForClicks('RightButtonUp')
-	button:SetScript('OnClick', OnClick)
+	button:SetScript('OnClick', UF.Aura_OnClick)
 
 	button.cd.CooldownOverride = 'unitframe'
 	E:RegisterCooldown(button.cd)
@@ -132,8 +135,6 @@ function UF:UpdateAuraCooldownPosition(button)
 end
 
 function UF:Configure_AllAuras(frame)
-	if not frame.VARIABLES_SET then return end
-
 	if frame.Buffs then frame.Buffs:ClearAllPoints() end
 	if frame.Debuffs then frame.Debuffs:ClearAllPoints() end
 
@@ -142,59 +143,57 @@ function UF:Configure_AllAuras(frame)
 end
 
 function UF:Configure_Auras(frame, which)
-	if not frame.VARIABLES_SET then return end
-
 	local db = frame.db
 	local auras = frame[which]
 	local auraType = which:lower()
 	auras.db = db[auraType]
 
 	local position = db.smartAuraPosition
-	if position == "BUFFS_ON_DEBUFFS" then
-		if db.debuffs.attachTo == "BUFFS" then
+	if position == 'BUFFS_ON_DEBUFFS' then
+		if db.debuffs.attachTo == 'BUFFS' then
 			E:Print(format(L["This setting caused a conflicting anchor point, where '%s' would be attached to itself. Please check your anchor points. Setting '%s' to be attached to '%s'."], L["Buffs"], L["Debuffs"], L["Frame"]))
-			db.debuffs.attachTo = "FRAME"
+			db.debuffs.attachTo = 'FRAME'
 			frame.Debuffs.attachTo = frame
 			frame.Debuffs:ClearAllPoints()
 			frame.Debuffs:Point(frame.Debuffs.initialAnchor, frame.Debuffs.attachTo, frame.Debuffs.anchorPoint, frame.Debuffs.xOffset, frame.Debuffs.yOffset)
 		end
-		db.buffs.attachTo = "DEBUFFS"
+		db.buffs.attachTo = 'DEBUFFS'
 		frame.Buffs.attachTo = frame.Debuffs
 		frame.Buffs.PostUpdate = nil
 		frame.Debuffs.PostUpdate = UF.UpdateBuffsHeaderPosition
-	elseif position == "DEBUFFS_ON_BUFFS" then
-		if db.buffs.attachTo == "DEBUFFS" then
+	elseif position == 'DEBUFFS_ON_BUFFS' then
+		if db.buffs.attachTo == 'DEBUFFS' then
 			E:Print(format(L["This setting caused a conflicting anchor point, where '%s' would be attached to itself. Please check your anchor points. Setting '%s' to be attached to '%s'."], L["Debuffs"], L["Buffs"], L["Frame"]))
-			db.buffs.attachTo = "FRAME"
+			db.buffs.attachTo = 'FRAME'
 			frame.Buffs.attachTo = frame
 			frame.Buffs:ClearAllPoints()
 			frame.Buffs:Point(frame.Buffs.initialAnchor, frame.Buffs.attachTo, frame.Buffs.anchorPoint, frame.Buffs.xOffset, frame.Buffs.yOffset)
 		end
-		db.debuffs.attachTo = "BUFFS"
+		db.debuffs.attachTo = 'BUFFS'
 		frame.Debuffs.attachTo = frame.Buffs
 		frame.Buffs.PostUpdate = UF.UpdateDebuffsHeaderPosition
 		frame.Debuffs.PostUpdate = nil
-	elseif position == "FLUID_BUFFS_ON_DEBUFFS" then
-		if db.debuffs.attachTo == "BUFFS" then
+	elseif position == 'FLUID_BUFFS_ON_DEBUFFS' then
+		if db.debuffs.attachTo == 'BUFFS' then
 			E:Print(format(L["This setting caused a conflicting anchor point, where '%s' would be attached to itself. Please check your anchor points. Setting '%s' to be attached to '%s'."], L["Buffs"], L["Debuffs"], L["Frame"]))
-			db.debuffs.attachTo = "FRAME"
+			db.debuffs.attachTo = 'FRAME'
 			frame.Debuffs.attachTo = frame
 			frame.Debuffs:ClearAllPoints()
 			frame.Debuffs:Point(frame.Debuffs.initialAnchor, frame.Debuffs.attachTo, frame.Debuffs.anchorPoint, frame.Debuffs.xOffset, frame.Debuffs.yOffset)
 		end
-		db.buffs.attachTo = "DEBUFFS"
+		db.buffs.attachTo = 'DEBUFFS'
 		frame.Buffs.attachTo = frame.Debuffs
 		frame.Buffs.PostUpdate = UF.UpdateBuffsHeight
 		frame.Debuffs.PostUpdate = UF.UpdateBuffsPositionAndDebuffHeight
-	elseif position == "FLUID_DEBUFFS_ON_BUFFS" then
-		if db.buffs.attachTo == "DEBUFFS" then
+	elseif position == 'FLUID_DEBUFFS_ON_BUFFS' then
+		if db.buffs.attachTo == 'DEBUFFS' then
 			E:Print(format(L["This setting caused a conflicting anchor point, where '%s' would be attached to itself. Please check your anchor points. Setting '%s' to be attached to '%s'."], L["Debuffs"], L["Buffs"], L["Frame"]))
-			db.buffs.attachTo = "FRAME"
+			db.buffs.attachTo = 'FRAME'
 			frame.Buffs.attachTo = frame
 			frame.Buffs:ClearAllPoints()
 			frame.Buffs:Point(frame.Buffs.initialAnchor, frame.Buffs.attachTo, frame.Buffs.anchorPoint, frame.Buffs.xOffset, frame.Buffs.yOffset)
 		end
-		db.debuffs.attachTo = "BUFFS"
+		db.debuffs.attachTo = 'BUFFS'
 		frame.Debuffs.attachTo = frame.Buffs
 		frame.Buffs.PostUpdate = UF.UpdateDebuffsPositionAndBuffHeight
 		frame.Debuffs.PostUpdate = UF.UpdateDebuffsHeight
@@ -210,38 +209,45 @@ function UF:Configure_Auras(frame, which)
 
 	local rows = auras.db.numrows
 	auras.spacing = auras.db.spacing
+	auras.attachTo = self:GetAuraAnchorFrame(frame, auras.db.attachTo)
+
+	if auras.db.sizeOverride and auras.db.sizeOverride > 0 then
+		auras:Width(auras.db.perrow * auras.db.sizeOverride + ((auras.db.perrow - 1) * auras.spacing))
+	else
+		local xOffset = 0
+		if frame.USE_POWERBAR_OFFSET then
+			if frame.ORIENTATION == 'MIDDLE' then
+				if auras.db.attachTo ~= 'POWER' then
+					xOffset = frame.POWERBAR_OFFSET * 2
+				end -- if its middle and power we dont want an offset.
+			else
+				xOffset = frame.POWERBAR_OFFSET
+			end
+		end
+
+		auras:Width((frame.UNIT_WIDTH - UF.SPACING*2) - xOffset)
+	end
+
 	auras.num = auras.db.perrow * rows
 	auras.size = auras.db.sizeOverride ~= 0 and auras.db.sizeOverride or ((((auras:GetWidth() - (auras.spacing*(auras.num/rows - 1))) / auras.num)) * rows)
 	auras.forceShow = frame.forceShowAuras
 	auras.disableMouse = auras.db.clickThrough
 	auras.anchorPoint = auras.db.anchorPoint
 	auras.initialAnchor = E.InversePoints[auras.anchorPoint]
-	auras.attachTo = self:GetAuraAnchorFrame(frame, auras.db.attachTo)
-	auras["growth-y"] = strfind(auras.anchorPoint, 'TOP') and 'UP' or 'DOWN'
-	auras["growth-x"] = auras.anchorPoint == 'LEFT' and 'LEFT' or  auras.anchorPoint == 'RIGHT' and 'RIGHT' or (strfind(auras.anchorPoint, 'LEFT') and 'RIGHT' or 'LEFT')
+	auras['growth-y'] = strfind(auras.anchorPoint, 'TOP') and 'UP' or 'DOWN'
+	auras['growth-x'] = auras.anchorPoint == 'LEFT' and 'LEFT' or  auras.anchorPoint == 'RIGHT' and 'RIGHT' or (strfind(auras.anchorPoint, 'LEFT') and 'RIGHT' or 'LEFT')
 
-	local x, y = E:GetXYOffset(auras.anchorPoint, frame.SPACING) --Use frame.SPACING override since it may be different from E.Spacing due to forced thin borders
-	if auras.attachTo == "FRAME" then
-		y = 0
-	elseif auras.attachTo == "HEALTH" or auras.attachTo == "POWER" then
-		x = E:GetXYOffset(auras.anchorPoint, -frame.BORDER)
-		y = select(2, E:GetXYOffset(auras.anchorPoint, (frame.BORDER + frame.SPACING)))
+	local x, y
+	if auras.db.attachTo == 'HEALTH' or auras.db.attachTo == 'POWER' then
+		x, y = E:GetXYOffset(auras.anchorPoint, -UF.BORDER, UF.BORDER)
+	elseif auras.db.attachTo == 'FRAME' then
+		x, y = E:GetXYOffset(auras.anchorPoint, UF.SPACING, 0)
 	else
-		x = 0
+		x, y = E:GetXYOffset(auras.anchorPoint, 0, UF.SPACING)
 	end
-	auras.xOffset = x + auras.db.xOffset
+
+	auras.xOffset = x + auras.db.xOffset + (auras.db.attachTo == 'FRAME' and frame.ORIENTATION ~= 'LEFT' and frame.POWERBAR_OFFSET or 0)
 	auras.yOffset = y + auras.db.yOffset
-
-	if auras.db.sizeOverride and auras.db.sizeOverride > 0 then
-		auras:Width(auras.db.perrow * auras.db.sizeOverride + ((auras.db.perrow - 1) * auras.spacing))
-	else
-		local totalWidth = frame.UNIT_WIDTH - frame.SPACING*2
-		if frame.USE_POWERBAR_OFFSET and not (auras.attachTo == "POWER" and frame.ORIENTATION == "MIDDLE") then
-			local powerOffset = ((frame.ORIENTATION == "MIDDLE" and 2 or 1) * frame.POWERBAR_OFFSET)
-			totalWidth = totalWidth - powerOffset
-		end
-		auras:Width(totalWidth)
-	end
 
 	local index = 1
 	while auras[index] do
@@ -249,6 +255,7 @@ function UF:Configure_Auras(frame, which)
 		if button then
 			button.db = auras.db
 			UF:UpdateAuraSettings(auras, button)
+			button:SetBackdropBorderColor(unpack(E.media.unitframeBorderColor))
 		end
 
 		index = index + 1
@@ -266,13 +273,13 @@ function UF:Configure_Auras(frame, which)
 end
 
 local function SortAurasByTime(a, b)
-	if (a and b and a:GetParent().db) then
+	if a and b and a:GetParent().db then
 		if a:IsShown() and b:IsShown() then
 			local sortDirection = a:GetParent().db.sortDirection
 			local aTime = a.noTime and huge or a.expiration or -1
 			local bTime = b.noTime and huge or b.expiration or -1
-			if (aTime and bTime) then
-				if(sortDirection == "DESCENDING") then
+			if aTime and bTime then
+				if sortDirection == 'DESCENDING' then
 					return aTime < bTime
 				else
 					return aTime > bTime
@@ -285,13 +292,13 @@ local function SortAurasByTime(a, b)
 end
 
 local function SortAurasByName(a, b)
-	if (a and b and a:GetParent().db) then
+	if a and b and a:GetParent().db then
 		if a:IsShown() and b:IsShown() then
 			local sortDirection = a:GetParent().db.sortDirection
-			local aName = a.spell or ""
-			local bName = b.spell or ""
-			if (aName and bName) then
-				if(sortDirection == "DESCENDING") then
+			local aName = a.spell or ''
+			local bName = b.spell or ''
+			if aName and bName then
+				if sortDirection == 'DESCENDING' then
 					return aName < bName
 				else
 					return aName > bName
@@ -304,13 +311,13 @@ local function SortAurasByName(a, b)
 end
 
 local function SortAurasByDuration(a, b)
-	if (a and b and a:GetParent().db) then
+	if a and b and a:GetParent().db then
 		if a:IsShown() and b:IsShown() then
 			local sortDirection = a:GetParent().db.sortDirection
 			local aTime = a.noTime and huge or a.duration or -1
 			local bTime = b.noTime and huge or b.duration or -1
-			if (aTime and bTime) then
-				if(sortDirection == "DESCENDING") then
+			if aTime and bTime then
+				if sortDirection == 'DESCENDING' then
 					return aTime < bTime
 				else
 					return aTime > bTime
@@ -323,12 +330,12 @@ local function SortAurasByDuration(a, b)
 end
 
 local function SortAurasByCaster(a, b)
-	if (a and b and a:GetParent().db) then
+	if a and b and a:GetParent().db then
 		if a:IsShown() and b:IsShown() then
 			local sortDirection = a:GetParent().db.sortDirection
 			local aPlayer = a.isPlayer or false
 			local bPlayer = b.isPlayer or false
-			if(sortDirection == "DESCENDING") then
+			if sortDirection == 'DESCENDING' then
 				return (aPlayer and not bPlayer)
 			else
 				return (not aPlayer and bPlayer)
@@ -343,13 +350,13 @@ function UF:SortAuras()
 	if not self.db then return end
 
 	--Sorting by Index is Default
-	if self.db.sortMethod == "TIME_REMAINING" then
+	if self.db.sortMethod == 'TIME_REMAINING' then
 		sort(self, SortAurasByTime)
-	elseif self.db.sortMethod == "NAME" then
+	elseif self.db.sortMethod == 'NAME' then
 		sort(self, SortAurasByName)
-	elseif self.db.sortMethod == "DURATION" then
+	elseif self.db.sortMethod == 'DURATION' then
 		sort(self, SortAurasByDuration)
-	elseif self.db.sortMethod == "PLAYER" then
+	elseif self.db.sortMethod == 'PLAYER' then
 		sort(self, SortAurasByCaster)
 	end
 
@@ -358,23 +365,27 @@ function UF:SortAuras()
 	return 1, #self --from/to range needed for the :SetPosition call in oUF aura element. Without this aura icon position gets all whacky when not sorted by index
 end
 
-function UF:PostUpdateAura(unit, button)
+function UF:PostUpdateAura(_, button)
 	if button.isDebuff then
-		if(not button.isFriend and not button.isPlayer) then --[[and (not E.isDebuffWhiteList[name])]]
-			button:SetBackdropBorderColor(0.9, 0.1, 0.1)
-			button.icon:SetDesaturated((unit and not strfind(unit, 'arena%d')) and true or false)
+		if not button.isFriend and not button.isPlayer then --[[and (not E.isDebuffWhiteList[name])]]
+			if UF.db.colors.auraByType then
+				button:SetBackdropBorderColor(.9, .1, .1)
+			end
+			button.icon:SetDesaturated(button.canDesaturate)
 		else
-			if E.BadDispels[button.spellID] and E:IsDispellableByMe(button.dtype) then
-				button:SetBackdropBorderColor(0.05, 0.85, 0.94)
-			else
-				local color = (button.dtype and _G.DebuffTypeColor[button.dtype]) or _G.DebuffTypeColor.none
-				button:SetBackdropBorderColor(color.r * 0.6, color.g * 0.6, color.b * 0.6)
+			if UF.db.colors.auraByType then
+				if E.BadDispels[button.spellID] and button.dtype and E:IsDispellableByMe(button.dtype) then
+					button:SetBackdropBorderColor(.05, .85, .94)
+				else
+					local color = (button.dtype and _G.DebuffTypeColor[button.dtype]) or _G.DebuffTypeColor.none
+					button:SetBackdropBorderColor(color.r * 0.6, color.g * 0.6, color.b * 0.6)
+				end
 			end
 			button.icon:SetDesaturated(false)
 		end
 	else
-		if button.isStealable and not button.isFriend then
-			button:SetBackdropBorderColor(0.93, 0.91, 0.55, 1.0)
+		if UF.db.colors.auraByType and button.isStealable and not button.isFriend then
+			button:SetBackdropBorderColor(.93, .91, .55)
 		else
 			button:SetBackdropBorderColor(unpack(E.media.unitframeBorderColor))
 		end
@@ -385,73 +396,79 @@ function UF:PostUpdateAura(unit, button)
 	end
 end
 
-function UF:CheckFilter(name, caster, spellID, isFriend, isPlayer, isUnit, isBossDebuff, allowDuration, noDuration, canDispell, casterIsPlayer, ...)
-	for i=1, select('#', ...) do
-		local filterName = select(i, ...)
-		local friendCheck = (isFriend and strmatch(filterName, "^Friendly:([^,]*)")) or (not isFriend and strmatch(filterName, "^Enemy:([^,]*)")) or nil
-		if friendCheck ~= false then
-			if friendCheck ~= nil and (G.unitframe.specialFilters[friendCheck] or E.global.unitframe.aurafilters[friendCheck]) then
-				filterName = friendCheck -- this is for our filters to handle Friendly and Enemy
-			end
-			local filter = E.global.unitframe.aurafilters[filterName]
-			if filter then
-				local filterType = filter.type
-				local spellList = filter.spells
-				local spell = spellList and (spellList[spellID] or spellList[name])
+function UF:CheckFilter(caster, spellName, spellID, canDispell, isFriend, isPlayer, unitIsCaster, myPet, otherPet, isBossDebuff, allowDuration, noDuration, casterIsPlayer, nameplateShowSelf, nameplateShowAll, ...)
+	local special, filters = G.unitframe.specialFilters, E.global.unitframe.aurafilters
 
-				if filterType and (filterType == 'Whitelist') and (spell and spell.enable) and allowDuration then
-					return true, spell.priority -- this is the only difference from auarbars code
-				elseif filterType and (filterType == 'Blacklist') and (spell and spell.enable) then
-					return false
+	for i = 1, select('#', ...) do
+		local name = select(i, ...)
+		local check = (isFriend and strmatch(name, '^Friendly:([^,]*)')) or (not isFriend and strmatch(name, '^Enemy:([^,]*)')) or nil
+		if check ~= false then
+			if check ~= nil and (special[check] or filters[check]) then
+				name = check -- this is for our filters to handle Friendly and Enemy
+			end
+
+			-- Custom Filters
+			local filter = filters[name]
+			if filter then
+				local which, list = filter.type, filter.spells
+				if which and list and next(list) then
+					local spell = list[spellID] or list[spellName]
+					if spell and spell.enable then
+						if which == 'Blacklist' then
+							return false
+						elseif allowDuration then
+							return true, spell.priority
+						end
+					end
 				end
-			elseif filterName == 'Personal' and isPlayer and allowDuration then
-				return true
-			elseif filterName == 'nonPersonal' and (not isPlayer) and allowDuration then
-				return true
-			elseif filterName == 'Boss' and isBossDebuff and allowDuration then
-				return true
-			elseif filterName == 'CastByUnit' and (caster and isUnit) and allowDuration then
-				return true
-			elseif filterName == 'notCastByUnit' and (caster and not isUnit) and allowDuration then
-				return true
-			elseif filterName == 'Dispellable' and canDispell and allowDuration then
-				return true
-			elseif filterName == 'notDispellable' and (not canDispell) and allowDuration then
-				return true
-			elseif filterName == 'CastByNPC' and (not casterIsPlayer) and allowDuration then
-				return true
-			elseif filterName == 'CastByPlayers' and casterIsPlayer and allowDuration then
-				return true
-			elseif filterName == 'blockCastByPlayers' and casterIsPlayer then
-				return false
-			elseif filterName == 'blockNoDuration' and noDuration then
-				return false
-			elseif filterName == 'blockNonPersonal' and (not isPlayer) then
-				return false
-			elseif filterName == 'blockDispellable' and canDispell then
-				return false
-			elseif filterName == 'blockNotDispellable' and (not canDispell) then
-				return false
+			-- Special Filters
+			else
+				-- Whitelists
+				local found = (allowDuration and ((name == 'Personal' and isPlayer)
+					or (name == 'nonPersonal' and not isPlayer)
+					or (name == 'Boss' and isBossDebuff)
+					or (name == 'MyPet' and myPet)
+					or (name == 'OtherPet' and otherPet)
+					or (name == 'CastByUnit' and caster and unitIsCaster)
+					or (name == 'notCastByUnit' and caster and not unitIsCaster)
+					or (name == 'Dispellable' and canDispell)
+					or (name == 'notDispellable' and not canDispell)
+					or (name == 'CastByNPC' and not casterIsPlayer)
+					or (name == 'CastByPlayers' and casterIsPlayer)
+					or (name == 'BlizzardNameplate' and (nameplateShowAll or (nameplateShowSelf and (isPlayer or myPet))))))
+				-- Blacklists
+				or ((name == 'blockCastByPlayers' and casterIsPlayer)
+				or (name == 'blockNoDuration' and noDuration)
+				or (name == 'blockNonPersonal' and not isPlayer)
+				or (name == 'blockDispellable' and canDispell)
+				or (name == 'blockNotDispellable' and not canDispell)) and 0
+
+				if found then
+					return found ~= 0
+				end
 			end
 		end
 	end
 end
 
-function UF:AuraFilter(unit, button, name, _, count, debuffType, duration, expiration, caster, isStealable, _, spellID, _, isBossDebuff, casterIsPlayer)
+function UF:AuraFilter(unit, button, name, _, count, debuffType, duration, expiration, caster, isStealable, nameplateShowSelf, spellID, _, isBossDebuff, casterIsPlayer, nameplateShowAll)
 	if not name then return end -- checking for an aura that is not there, pass nil to break while loop
 
 	local db = button.db or self.db
 	if not db then return true end
 
-	local isPlayer = (caster == 'player' or caster == 'vehicle')
-	local isFriend = unit and UnitIsFriend('player', unit) and not UnitCanAttack('player', unit)
-
-	button.isPlayer = isPlayer
-	button.isFriend = isFriend
+	button.canDesaturate = db.desaturate
+	button.myPet = caster == 'pet'
+	button.isPlayer = caster == 'player' or caster == 'vehicle'
+	button.otherPet = caster and not UnitIsUnit('pet', caster) and strmatch(caster, 'pet%d+')
+	button.isFriend = unit and UnitIsFriend('player', unit) and not UnitCanAttack('player', unit)
+	button.unitIsCaster = unit and caster and UnitIsUnit(unit, caster)
+	button.canDispell = (self.type == 'buffs' and isStealable) or (self.type == 'debuffs' and debuffType and E:IsDispellableByMe(debuffType))
 	button.isStealable = isStealable
 	button.dtype = debuffType
 	button.duration = duration
 	button.expiration = expiration
+	button.noTime = duration == 0 and expiration == 0
 	button.stackCount = count
 	button.name = name
 	button.spellID = spellID
@@ -461,18 +478,14 @@ function UF:AuraFilter(unit, button, name, _, count, debuffType, duration, expir
 
 	local noDuration = (not duration or duration == 0)
 	local allowDuration = noDuration or (duration and duration > 0 and (not db.maxDuration or db.maxDuration == 0 or duration <= db.maxDuration) and (not db.minDuration or db.minDuration == 0 or duration >= db.minDuration))
-	local filterCheck, spellPriority
 
 	if db.priority and db.priority ~= '' then
-		local isUnit = unit and caster and UnitIsUnit(unit, caster)
-		local canDispell = (self.type == 'buffs' and isStealable) or (self.type == 'debuffs' and debuffType and E:IsDispellableByMe(debuffType))
-		filterCheck, spellPriority = UF:CheckFilter(name, caster, spellID, isFriend, isPlayer, isUnit, isBossDebuff, allowDuration, noDuration, canDispell, casterIsPlayer, strsplit(',', db.priority))
+		local filterCheck, spellPriority = UF:CheckFilter(caster, name, spellID, button.canDispell, button.isFriend, button.isPlayer, button.unitIsCaster, button.myPet, button.otherPet, isBossDebuff, allowDuration, noDuration, casterIsPlayer, nameplateShowSelf, nameplateShowAll, strsplit(',', db.priority))
 		if spellPriority then button.priority = spellPriority end -- this is the only difference from auarbars code
+		return filterCheck
 	else
-		filterCheck = allowDuration and true -- Allow all auras to be shown when the filter list is empty, while obeying duration sliders
+		return allowDuration -- Allow all auras to be shown when the filter list is empty, while obeying duration sliders
 	end
-
-	return filterCheck
 end
 
 function UF:UpdateBuffsHeaderPosition()

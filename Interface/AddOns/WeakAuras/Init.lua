@@ -1,18 +1,19 @@
+local AddonName, Private = ...
 WeakAuras = {}
 WeakAuras.L = {}
 WeakAuras.frames = {}
 
-WeakAuras.normalWidth = 1.25
+WeakAuras.normalWidth = 1.3
 WeakAuras.halfWidth = WeakAuras.normalWidth / 2
 WeakAuras.doubleWidth = WeakAuras.normalWidth * 2
 
 local versionStringFromToc = GetAddOnMetadata("WeakAuras", "Version")
-local versionString = "2.17.4"
-local buildTime = "20200422171414"
-
+local versionString = "3.0.4"
+local buildTime = "20201019145900"
 local isDevVersion = false
+
 --[===[@debug@
-if versionStringFromToc == "2.17.4" then
+if versionStringFromToc == "3.0.4" then
   versionStringFromToc = "Dev"
   buildTime = "Dev"
   isDevVersion = true
@@ -26,7 +27,6 @@ intendedWoWProject = WOW_PROJECT_CLASSIC
 
 WeakAuras.versionString = versionStringFromToc
 WeakAuras.buildTime = buildTime
-WeakAuras.printPrefix = "|cff9900ffWeakAuras:|r "
 WeakAuras.newFeatureString = "|TInterface\\OptionsFrame\\UI-OptionsFrame-NewFeatureIcon:0|t"
 WeakAuras.BuildInfo = select(4, GetBuildInfo())
 
@@ -39,54 +39,49 @@ function WeakAuras.IsCorrectVersion()
 end
 
 WeakAuras.prettyPrint = function(msg)
-  print(WeakAuras.printPrefix .. msg)
+  print("|cff9900ffWeakAuras:|r " .. msg)
 end
 
-WeakAuras.versionMismatchPrint = function()
-  WeakAuras.prettyPrint("You need to restart your game client to complete the WeakAuras update!")
-end
-
-WeakAuras.wrongTargetMessage = "This version of WeakAuras was packaged for World of Warcraft " ..
+Private.wrongTargetMessage = "This version of WeakAuras was packaged for World of Warcraft " ..
                               (intendedWoWProject == WOW_PROJECT_MAINLINE and "Retail" or "Classic") ..
                               ". Please install the " .. (WOW_PROJECT_ID == WOW_PROJECT_MAINLINE and "Retail" or "Classic") ..
-                              " version instead.\nIf you are using the Twitch Client, then " ..
-                              " please contact the twitch support for further assistance."
+                              " version instead.\nIf you are using the CurseForge Client, then " ..
+                              " contact CurseForge support for further assistance and reinstall WeakAuras manually."
 
 if not WeakAuras.IsCorrectVersion() then
-  C_Timer.After(1, function() WeakAuras.prettyPrint(WeakAuras.wrongTargetMessage) end)
+  C_Timer.After(1, function() WeakAuras.prettyPrint(Private.wrongTargetMessage) end)
 end
 
-if versionString ~= versionStringFromToc and versionStringFromToc ~= "Dev" then
-  C_Timer.After(1, WeakAuras.versionMismatchPrint)
-end
-
-WeakAuras.PowerAurasPath = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Auras\\"
-WeakAuras.PowerAurasSoundPath = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\"
-
--- force enable WeakAurasCompanion and Archive because some addon managers interfere with it
+-- Force enable WeakAurasCompanion and Archive because some addon managers interfere with it
 EnableAddOn("WeakAurasCompanion")
 EnableAddOn("WeakAurasArchive")
 
---These function stubs are defined here to reduce the number of errors that occur if WeakAuras.lua fails to compile
+-- These function stubs are defined here to reduce the number of errors that occur if WeakAuras.lua fails to compile
 function WeakAuras.RegisterRegionType()
 end
 
 function WeakAuras.RegisterRegionOptions()
 end
 
-function WeakAuras.StartProfileSystem()
+function Private.StartProfileSystem()
 end
 
-function WeakAuras.StartProfileAura()
+function Private.StartProfileAura()
 end
 
-function WeakAuras.StopProfileSystem()
+function Private.StopProfileSystem()
 end
 
-function WeakAuras.StopProfileAura()
+function Private.StopProfileAura()
 end
 
--- if weakauras shuts down due to being installed on the wrong target, keep the bindings from erroring
+function Private.StartProfileUID()
+end
+
+function Private.StopProfileUID()
+end
+
+-- If WeakAuras shuts down due to being installed on the wrong target, keep the bindings from erroring
 function WeakAuras.StartProfile()
 end
 

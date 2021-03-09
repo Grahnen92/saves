@@ -5,7 +5,7 @@
 -- Update Date : 12/1/2020 (8.3.0 Build 32976)
 
 
-local ZERO = ("0"):rep(GetNumClasses())
+local ZERO = ("0"):rep(RCLootCouncil.Utils.GetNumClasses())
 --[===[@debug@
 --[[
 This function is used for developer.
@@ -41,7 +41,6 @@ local instanceNames = {}
 -- Inside each instance, scan by difficulty id order(nextDiffID)
 function RCLootCouncil:ExportTrinketData(nextTier, nextIsRaid, nextIndex, nextDiffID, maxTier)
    LoadAddOn("BLizzard_EncounterJournal")
-   local MAX_CLASSFLAG_VAL = bit.lshift(1, GetNumClasses()) - 1
    local TIME_FOR_EACH_INSTANCE_DIFF = 5
 
    if not nextTier then
@@ -108,7 +107,7 @@ function RCLootCouncil:ExportTrinketData(nextTier, nextIsRaid, nextIndex, nextDi
       end
    end
    local exp = "%-"..format("%d", longestNameLen + 1).."s"
-   for i, entry in ipairs(trinketData) do
+   for _, entry in ipairs(trinketData) do
 		if entry[1] == "name" then
 			exports = exports.."-- "..entry[2].."\n"
 		else
@@ -122,7 +121,7 @@ end
 
 function RCLootCouncil:ClassesFlagToStr(flag)
    local text = ""
-   for i = 1, GetNumClasses() do
+   for i = 1, self.Utils.GetNumClasses() do
       if bit.band(flag, bit.lshift(1, i - 1)) > 0 then
          if text ~= "" then
             text = text..", "
@@ -169,7 +168,7 @@ function RCLootCouncil:ExportTrinketDataSingleInstance(instanceID, diffID, timeL
       end
    end
 
-   for classID = 1, GetNumClasses() do
+   for classID = 1, self.Utils.GetNumClasses() do
       for specIndex = 1, GetNumSpecializationsForClassID(classID) do
          EJ_SetLootFilter(classID, GetSpecializationInfoForClassID(classID, specIndex))
          for j = 1, EJ_GetNumLoot() do -- EJ_GetNumLoot() can be 0 if EJ items are not cached.
@@ -179,7 +178,7 @@ function RCLootCouncil:ExportTrinketDataSingleInstance(instanceID, diffID, timeL
 					local specCode = trinketData[index][2]
                local digit = tonumber(specCode:sub(-classID, - classID), 16)
                digit = digit + 2^(specIndex - 1)
-               trinketData[index][2] = specCode:sub(1, GetNumClasses() - classID)..format("%X", digit)..specCode:sub(GetNumClasses() - classID + 2, GetNumClasses())
+               trinketData[index][2] = specCode:sub(1, self.Utils.GetNumClasses() - classID)..format("%X", digit)..specCode:sub(self.Utils.GetNumClasses() - classID + 2, self.Utils.GetNumClasses())
             end
          end
       end
@@ -193,7 +192,6 @@ function RCLootCouncil:ExportTrinketDataSingleInstance(instanceID, diffID, timeL
       for _, link in ipairs(trinketlinksInThisInstances) do
          local id = self:GetItemIDFromLink(link)
          self:Print(format("%s(%d): %s", link, id, trinketData[trinketIdToIndex[id]][2]))
-         lastID = id
       end
       self:Print("--------------------")
    end
@@ -239,12 +237,12 @@ _G.RCTrinketCategories = {
    ["010773050000"] = DAMAGER..", "..ITEM_MOD_INTELLECT_SHORT.."?", -- Damage, Intellect? (+Enhancement Shaman)
 }
 -- Class specific trinket
-for classID = 1, GetNumClasses() do
+for classID = 1, RCLootCouncil.Utils.GetNumClasses() do
    local digit = 0
    for specIndex = 1, GetNumSpecializationsForClassID(classID) do
       digit = digit + 2^(specIndex - 1)
    end
-   local flag = ZERO:sub(1, GetNumClasses() - classID)..format("%X", digit)..ZERO:sub(GetNumClasses() - classID + 2, GetNumClasses())
+   local flag = ZERO:sub(1, RCLootCouncil.Utils.GetNumClasses() - classID)..format("%X", digit)..ZERO:sub(RCLootCouncil.Utils.GetNumClasses() - classID + 2, RCLootCouncil.Utils.GetNumClasses())
    _G.RCTrinketCategories[flag] = select(1, GetClassInfo(classID))
 end
 

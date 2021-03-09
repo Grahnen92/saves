@@ -1,16 +1,22 @@
-# [2.17.4](https://github.com/WeakAuras/WeakAuras2/tree/2.17.4) (2020-04-22)
+# [3.0.4](https://github.com/WeakAuras/WeakAuras2/tree/3.0.4) (2020-10-19)
 
-[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/2.17.3...2.17.4)
+[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/3.0.3...3.0.4)
 
 ## Highlights
 
- - fix a buff tracking and nameplates regression 
+ - bug fixes 
 
 ## Commits
 
-InfusOnWoW (3):
+InfusOnWoW (1):
 
-- BT2 Fix Multi by adjusting it to recent changes (#2139)
-- Clean up match data if a unit ceases to exists
-- Fix nameplates auras sometimes not being applied if in a raid group
+- Fix texture picker for ticks
+
+Stanzilla (1):
+
+- Revert back to upstream LibSpellRange
+
+mrbuds (1):
+
+- Fix error with old versions of OmniCC
 

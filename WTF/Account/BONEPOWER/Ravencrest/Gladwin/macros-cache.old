@@ -32,7 +32,7 @@ VER 3 0100000000000010 "Cleanse Toxins" "135953"
 END
 VER 3 0100000000000001 "Flash/shock" "SPELL_HOLY_FLASHHEAL"
 #showtooltip
-/cast [target=mouseover,exists,nodead,harm]  Judgment ; Judgment  [target=mouseover,exists,nodead, help] Flash of Light ; Judgment
+/cast [target=mouseover,exists,nodead,harm]  Crusader Strike; Crusader Strike [target=mouseover,exists,nodead, help] Flash of Light ; Crusader Strike
 END
 VER 3 0100000000000002 "Holy Judgement" "SPELL_HOLY_SURGEOFLIGHT"
 #showtooltip

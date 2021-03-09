@@ -7,6 +7,81 @@ local _
 function Plater.GetChangelogTable()
 	if (not Plater.ChangeLogTable) then
 		Plater.ChangeLogTable = {
+
+			{1603223454,  "Bug Fix", "October 20th, 2020", "Fixing issue with no-combat alpha and coloring."},
+			{1603223454,  "Bug Fix", "October 20th, 2020", "Adjusting execute settings tooltip and adding Shadowburn (WL, Destro) talent."},
+			{1603223454,  "Bug Fix", "October 20th, 2020", "Adding sanity checks for range-checking to omit unwanted errors."},
+			{1603223454,  "Bug Fix", "October 19th, 2020", "Fixing an issue with scripts/mods not being re-compiled properly."},
+
+			{1603047531,  "Bug Fix", "October 18th, 2020", "Execute spells are now checked for being available."},
+			{1603047531,  "Bug Fix", "October 18th, 2020", "Execute Glow effect now scales properly with healthbar size."},
+			{1603047531,  "Bug Fix", "October 17th, 2020", "Fixing an issue with overwritten modTable/scriptTable for mods/scripts with the same name."},
+			{1603047531,  "Bug Fix", "October 17th, 2020", "Destructor Hooks now are called again."},
+			{1603047531,  "Bug Fix", "October 16th, 2020", "Fixing range check for low-level characters without a talent spec."},
+			{1603047531,  "Bug Fix", "October 16th, 2020", "Adding an option to switch back to player combat state recognition instead of unit state. (Thanks Jaden for the initial work on this)"},
+			{1603047531,  "Bug Fix", "October 16th, 2020", "Fixing 'combat state' recognition for certain options."},
+			{1603047531,  "Bug Fix", "October 15th, 2020", "CVars should now be stored and restored more consistently when changed through Plater."},
+			{1603047531,  "Bug Fix", "October 15th, 2020", "Selecting Profile Import text box is now easier."},
+			{1603047531,  "Backend Changes", "October 15th, 2020", "Adding missing execute spells."},
+			{1603047531,  "Bug Fix", "October 15th, 2020", "Fixing an issue with importing profiles."},
+			
+			{1602710092,  "Bug Fix", "October 14th, 2020", "Adding Warrior, Paladin and Monk execute spells as baseline."},
+			{1602710092,  "Bug Fix", "October 14th, 2020", "Fixed range check for low-level characters."},
+			{1602710092,  "Bug Fix", "October 14th, 2020", "Fixing issue with plate sizes not updating properly when entering combat."},
+			{1602710092,  "Bug Fix", "October 14th, 2020", "Fixing npc title recognition."},
+			
+			{1602538221,  "Options Changes", "October 13th, 2020", "New global nameplate width and height options for easier setup."},
+			{1602538221,  "Backend Changes", "October 13th, 2020", "'In Combat' config now applies according to combat state of the unit."},
+			{1602538221,  "New Feature", "October 13th, 2020", "Adding overwritable aura sort function 'Plater.AuraIconsSortFunction(aura1, aura2)' and options to enable/disable sorting. Default: time remaining."},
+			{1602538221,  "New Feature", "October 13th, 2020", "Quest mobs now have additional information available: 'QuestInfo'-list, containing all active quests with name, text, states and more information."},
+			{1602538221,  "Backend Changes", "October 13th, 2020", "CVars from Options are now stored and re-stored with the profile."},
+			{1602538221,  "Backend Changes", "October 13th, 2020", "Improvements on Nameplate Widgets."},
+			{1602538221,  "New Feature", "October 13th, 2020", "Range check now uses LibRangeCheck and let you select specific ranges instead of spells."},
+			{1602538221,  "New Feature", "October 13th, 2020", "Range check now has separate settings for friendly and enemy units."},
+			{1602538221,  "Backend Changes", "October 13th, 2020", "Adjustments for Shadowlands / 9.0 API changes."},
+			
+			{1602538221,  "Bug Fix", "October 7th, 2020", "Fixing Health % 'Out of Combat' option."},
+		
+			{1602021262,  "Bug Fix", "September 22nd, 2020", "Fixing a re-scaling issue with the target highlight glows."},
+			{1602021262,  "Bug Fix", "September 15th, 2020", "Cast bar alpha will not be changed for range/target when already fading."},
+			{1602021262,  "Backend Changes", "September 14th, 2020", "'Stacking' and 'Friendly' nameplates auto toggle (Auto tab) now apply in PVP zones as well."},
+		
+			{1599216958,  "Backend Changes", "August 16th, 2020", "Configuration for minor and pet nameplates should now prefer minor over pet."},
+			{1599216958,  "Bug Fix", "August 11th, 2020", "Bugfix to 'Cast Bar Icon Config' mod."},
+			
+			{1596791967,  "Bug Fix", "August 7th, 2020", "Buff Frame Anchors behave consistent with grow direction and anchor position now."},
+			
+			{1596672621,  "New Feature", "August 6th, 2020", "New Mod added: 'Cast Bar Icon Settings [P]', this is a new mod to deal with the cast bar icon at ease. It can be enabled at the Modding tab."},
+			
+			{1594844798,  "Bug Fix", "August 5th, 2020", "Metamorphosis CC should no longer cause the Player Buff to be shown automatically."},
+			{1594844798,  "Backend Changes", "August 4th, 2020", "Adding cache value 'unitFrame.IsFocus' for usage in mods/scripts."},
+			{1594844798,  "Backend Changes", "July 30th, 2020", "Range/Target Alpha options should behave more consistent now."},
+			{1596627316,  "Options Changes", "July 29th, 2020", "Adding anchor options for Buff Frames. Important: this requires offset migration, which is attempted automatically, but you might need to setup Buff Frame anchors and offsets again."},
+			{1596627316,  "Options Changes", "July 29th, 2020", "Adding icon size options for Buff Frame 2."},
+			{1596627316,  "Options Changes", "July 29th, 2020", "Adding option to ignore duration filtering on personal bar buffs."},
+			{1596627316,  "Options Changes", "July 29th, 2020", "Adding options for 'Big Actor Title' on enemy npcs to better support 'name only' mode in mods."},
+			
+			{1594844798,  "Bug Fix", "July 15th, 2020", "The event code buttons now show the correct code."},
+			{1594844798,  "Backend Changes", "July 15th, 2020", "'Hide OmniCC' now surpresses tullaCC as well. Option available for Boss-Mod-Auras as well."},
+			
+			{1592230039,  "Bug Fix", "June 21st, 2020", "Fixing an issue with reputation standing showing on friendly NPCs instead of the unit title when color blind mode is enabled."},
+			{1592230039,  "New Feature", "June 15th, 2020", "Introducing 'Custom Options' for Mods and Scripts as per profile settings for the mod/script."},
+			{1592230039,  "New Feature", "June 15th, 2020", "Profile updates from wago.io through the companion app will now keep additionally imported mods/scripts which were not part of the profile."},
+			{1592230039,  "Bug Fix", "June 15th, 2020", "Fixing buff special tracking being case sensitive and auto-suggest being all lower-case."},
+			
+			{1591436231,  "Bug Fix", "June 6th, 2020", "Fixing an issue with profiles not being editable without WA-Companion addon."},
+			
+			{1591387261,  "New Feature", "June 5th, 2020", "Adding options to skip or ignore profile updates."},
+			{1591387261,  "New Feature", "June 3rd, 2020", "Adding options to skip or ignore a mod/script updates."},
+			{1591387261,  "New Feature", "June 2nd, 2020", "Wago-Icons on Mods/Scripts are now clickable to update."},
+			{1591387261,  "Bug Fix", "June 2nd, 2020", "Range/Target alpha should now update properly."},
+			{1591387261,  "Bug Fix", "May 23rd, 2020", "Fixing visibility of nameplate 'widgets', e.g. Nazjatar followers or hatchling."},
+			
+			{1588949935,  "New Feature", "May 7th, 2020", "Adding 'Plater.GetVersionInfo(<printOut - bool>)' function to get current version information."},
+			{1588949935,  "Bug Fix", "May 7th, 2020", "Spell names are now truncated properly accordingly to the nameplate size."},
+			{1588949935,  "Bug Fix", "Apr 29th, 2020", "Shield Absorb indicators are now updated properly when showing the plate for the first time."},
+			{1588949935,  "New Feature", "Apr 28th, 2020", "Supporting whole Plater profiles to be updated from wago.io via WA-Companion app."},
+			{1588949935,  "New Feature", "Apr 28th, 2020", "Available Wago.io updates will now be indicated by small wago icons on the tabs."},
 			
 			{1587858181,  "Bug Fix", "Apr 25th, 2020", "Fixing 'copy wago url' action not updating the URL properly."},
 			{1587038093,  "Bug Fix", "Apr 16th, 2020", "Pet recognition is working for russian clients as intended now."},

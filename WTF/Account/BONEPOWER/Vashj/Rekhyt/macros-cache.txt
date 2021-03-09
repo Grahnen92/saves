@@ -1,0 +1,12 @@
+VER 3 0100000000000001 "ATTAC>K" "Ability_Creature_Cursed_04"
+/cast Hunter's Mark
+/petattack
+END
+VER 3 0100000000000002 "Attack" "Ability_BackStab"
+/cast Auto Attack
+/petattack
+END
+VER 3 0100000000000003 "Focus Fire/Berse" "Ability_Hunter_FocusFire"
+/Cast Focus Fire
+/Cast Berserking
+END

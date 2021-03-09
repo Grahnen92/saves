@@ -11,7 +11,8 @@ local function Hide(element)
 end
 
 local function Update(self)
-	local element = self.WidgetXPBar
+	local npShown = self:IsShown()
+	local element = npShown and self.WidgetXPBar
 	if not element then return end
 
 	local widget = self.widget
@@ -26,7 +27,7 @@ local function Update(self)
 
 	local npcID = self.npcID and tonumber(self.npcID)
 	local widgetID = E:GetWidgetInfoID(npcID)
-	local realID = widget.widgetFrames and next(widget.widgetFrames)
+	local realID = npcID and widget.widgetFrames and next(widget.widgetFrames)
 	if realID and realID ~= widgetID then -- auto save new npc ids to their widget id
 		E:SetWidgetInfoID(npcID, realID)
 		widgetID = realID
@@ -45,7 +46,7 @@ local function Update(self)
 	end
 
 	if element.ProgressText then
-		element.ProgressText:SetFormattedText(maxRank and L["Max Rank"] or "%d / %d", cur, toNext)
+		element.ProgressText:SetFormattedText(maxRank and L["Max Rank"] or '%d / %d', cur, toNext)
 		element.ProgressText:Show()
 	end
 
@@ -59,7 +60,7 @@ local function Path(self, ...)
 end
 
 local function ForceUpdate(element)
-	return Path(element.__owner, "ForceUpdate", element.__owner.unit)
+	return Path(element.__owner, 'ForceUpdate', element.__owner.unit)
 end
 
 local function Enable(self)
@@ -68,8 +69,8 @@ local function Enable(self)
 		element.__owner = self
 		element.ForceUpdate = ForceUpdate
 
-		self:RegisterEvent("UPDATE_UI_WIDGET", Path, true)
-		self:RegisterEvent("QUEST_LOG_UPDATE", Path, true)
+		self:RegisterEvent('UPDATE_UI_WIDGET', Path, true)
+		self:RegisterEvent('QUEST_LOG_UPDATE', Path, true)
 		return true
 	end
 end
@@ -79,9 +80,9 @@ local function Disable(self)
 	if element then
 		Hide(element)
 
-		self:UnregisterEvent("UPDATE_UI_WIDGET", Path)
-		self:UnregisterEvent("QUEST_LOG_UPDATE", Path)
+		self:UnregisterEvent('UPDATE_UI_WIDGET', Path)
+		self:UnregisterEvent('QUEST_LOG_UPDATE', Path)
 	end
 end
 
-oUF:AddElement("WidgetXPBar", Path, Enable, Disable)
+oUF:AddElement('WidgetXPBar', Path, Enable, Disable)

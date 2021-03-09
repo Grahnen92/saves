@@ -42,6 +42,7 @@ DF:InstallTemplate ("font", "PLATER_BUTTON_DISABLED", {color = {1/3, .8/3, .2/3}
 
 --button templates
 DF:InstallTemplate ("button", "PLATER_BUTTON_DISABLED", {backdropcolor = {.4, .4, .4, .3}, backdropbordercolor = {0, 0, 0, .5}}, "OPTIONS_BUTTON_TEMPLATE")
+DF:InstallTemplate ("button", "PLATER_BUTTON_SELECTED", {backdropbordercolor = {1, .7, .1, 1},}, "OPTIONS_BUTTON_TEMPLATE")
 
 -- those two may be removed, as they are covered by settings now
 DF:NewColor ("PLATER_FRIEND", .71, 1, 1, 1)
@@ -49,7 +50,7 @@ DF:NewColor ("PLATER_GUILD", 0.498039, 1, .2, 1)
 
 DF:NewColor ("PLATER_DEBUFF", 1, 0.7117, 0.7117, 1)
 DF:NewColor ("PLATER_BUFF", 0.7117, 1, 0.7509, 1)
-DF:NewColor ("PLATER_CAST", 0.7117, 0.7784, 1, 1)
+DF:NewColor ("PLATER_CAST", 0.4117, 0.4784, 1, 1)
 
 --defining reaction constants here isnce they are used within the profile
 local UNITREACTION_HOSTILE = 3
@@ -506,14 +507,27 @@ PLATER_DEFAULT_SETTINGS = {
 		plater_resources_scale = 0.8,
 		plater_resources_padding = 2,
 
+		spell_prediction = {
+			enabled = false,
+			castbar_height = 12,
+
+		},
+
 		--transparency control
 		transparency_behavior = 0x1,
 		transparency_behavior_use_division = false,
 		non_targeted_alpha_enabled = false,
+		transparency_behavior_on_enemies = true,
+		honor_blizzard_plate_alpha = false,
+		
+		
+		transparency_behavior_on_friendlies = false,
 		
 		quick_hide = false, --hide the nameplate when the unit hits 0 health points | making disabled by default, this maybe is bugging hunters FD
 		
 		enable_masque_support = false,
+		
+		use_player_combat_state = false,
 		
 		last_news_time = 0,
 		disable_omnicc_on_auras = false,
@@ -579,6 +593,7 @@ PLATER_DEFAULT_SETTINGS = {
 		
 		no_spellname_length_limit = false,
 		
+		--> castbar target name
 		castbar_target_show = false,
 		castbar_target_anchor = {side = 5, x = 0, y = 0},
 		castbar_target_text_size = 10,
@@ -587,6 +602,14 @@ PLATER_DEFAULT_SETTINGS = {
 		castbar_target_shadow_color_offset = {1, -1},
 		castbar_target_color = {0.968627, 0.992156, 1, 1},
 		castbar_target_font = "Arial Narrow",
+
+		--> castbar icon
+		castbar_icon_customization_enabled = true,
+		castbar_icon_show = true,
+		castbar_icon_attach_to_side = "left", --"right"
+		castbar_icon_size = "same as castbar", --"same as castbar plus healthbar"
+		castbar_icon_x_offset = 0,
+		
 		
 		--> store spells from the latest event the player has been into
 		captured_spells = {},
@@ -603,12 +626,13 @@ PLATER_DEFAULT_SETTINGS = {
 		hook_auto_imported = {}, --store the name and revision of scripts imported from the Plater script library
 		
 		patch_version = 0,
+		patch_version_profile = 0,
 		
 		health_cutoff = true,
 		health_cutoff_extra_glow = false,
 		health_cutoff_hide_divisor = false,
 		
-		update_throttle = 0.25,
+		update_throttle = 0.120,
 		culling_distance = 100,
 		use_playerclass_color = true, --friendly player
 		
@@ -634,22 +658,27 @@ PLATER_DEFAULT_SETTINGS = {
 		aura_show_tooltip = false,
 		aura_width = 26,
 		aura_height = 16,
+		aura_width2 = 26,
+		aura_height2 = 16,
 		
 		--> aura frame 1
-		aura_x_offset = 0,
-		aura_y_offset = 0,
+		--aura_x_offset = 0,
+		--aura_y_offset = 5,
 		aura_grow_direction = 2, --> center
+		aura_frame1_anchor = {side = 8, x = 0, y = 5}, -- in sync with aura_x_offset and aura_y_offset to be compatible to scripts...
 		aura_breakline_space = 12, --space between the first and second line when the aura break line
 		
 		--> aura frame 2
 		buffs_on_aura2 = false,
-		aura2_x_offset = 0,
-		aura2_y_offset = 0,
+		--aura2_x_offset = 0,
+		--aura2_y_offset = 5,
 		aura2_grow_direction = 2, --> center
+		aura_frame2_anchor = {side = 8, x = 0, y = 5}, -- in sync with aura_x_offset and aura_y_offset to be compatible to scripts...
 		
 		aura_padding = 1, --space between each icon
 		aura_consolidate = false, --aura icons shown with the same name is stacked into only one
 		aura_consolidate_timeleft_lower = true, --when stacking auras with the same name, show the time left for the aura with the lesser remaining time
+		aura_sort = false, -- sort auras via sort function -> default by time left
 		
 		aura_alpha = 0.85,
 		aura_custom = {},
@@ -700,6 +729,7 @@ PLATER_DEFAULT_SETTINGS = {
 		aura_height_personal = 20,
 		aura_show_buffs_personal = false,
 		aura_show_debuffs_personal = true,
+		aura_show_all_duration_buffs_personal = false,
 		
 		aura_show_important = true,
 		aura_show_dispellable = true,
@@ -757,18 +787,26 @@ PLATER_DEFAULT_SETTINGS = {
 		bossmod_aura_height = 32,
 		bossmod_aura_width = 32,
 		bossmod_cooldown_text_size = 16,
+		bossmod_cooldown_text_enabled = true,
 		bossmod_icons_anchor = {side = 8, x = 0, y = 30},
 		
 		not_affecting_combat_enabled = false,
 		not_affecting_combat_alpha = 0.6,
 
 		range_check_enabled = true,
-		range_check_alpha = 1, --overall as it set in the unitFrame
-		range_check_health_bar_alpha = 0.65,
-		range_check_cast_bar_alpha = 0.85,
-		range_check_buffs_alpha = 0.85,
-		range_check_power_bar_alpha = 0.85,
+		range_check_alpha = 0.65, --overall as it set in the unitFrame
+		range_check_health_bar_alpha = 1,
+		range_check_cast_bar_alpha = 1,
+		range_check_buffs_alpha = 1,
+		range_check_power_bar_alpha = 1,
 		range_check_in_range_or_target_alpha = 0.9, 
+		
+		range_check_alpha_friendlies = 0.65, --overall as it set in the unitFrame
+		range_check_health_bar_alpha_friendlies = 1,
+		range_check_cast_bar_alpha_friendlies = 1,
+		range_check_buffs_alpha_friendlies = 1,
+		range_check_power_bar_alpha_friendlies = 1,
+		range_check_in_range_or_target_alpha_friendlies = 0.9,
 		
 		target_highlight = true,
 		target_highlight_alpha = 0.75,
@@ -2412,6 +2450,7 @@ PLATER_DEFAULT_SETTINGS = {
 		
 		indicator_faction = true,
 		indicator_spec = true,
+		indicator_worldboss = true,
 		indicator_elite = true,
 		indicator_rare = true,
 		indicator_quest = true,

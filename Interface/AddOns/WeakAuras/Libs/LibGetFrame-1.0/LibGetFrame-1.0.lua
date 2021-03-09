@@ -1,5 +1,5 @@
 local MAJOR_VERSION = "LibGetFrame-1.0"
-local MINOR_VERSION = 16
+local MINOR_VERSION = 24
 if not LibStub then error(MAJOR_VERSION .. " requires LibStub.") end
 local lib = LibStub:NewLibrary(MAJOR_VERSION, MINOR_VERSION)
 if not lib then return end
@@ -23,54 +23,57 @@ local defaultFramePriorities = {
     [7] = "^HealBot", -- healbot
     [8] = "^GridLayout", -- grid
     [9] = "^Grid2Layout", -- grid2
-    [10] = "^ElvUF_RaidGroup", -- elv
-    [11] = "^oUF_bdGrid", -- bdgrid
-    [12] = "^oUF.*raid", -- generic oUF
-    [13] = "^LimeGroup", -- lime
-    [14] = "^SUFHeaderraid", -- suf
-    [15] = "^CompactRaid", -- blizz
+    [10] = "^PlexusLayout", -- plexus
+    [11] = "^ElvUF_RaidGroup", -- elv
+    [12] = "^oUF_bdGrid", -- bdgrid
+    [13] = "^oUF_.-Raid", -- generic oUF
+    [14] = "^LimeGroup", -- lime
+    [15] = "^SUFHeaderraid", -- suf
     -- party frames
     [16] = "^AleaUI_GroupHeader", -- Alea
     [17] = "^SUFHeaderparty", --suf
     [18] = "^ElvUF_PartyGroup", -- elv
-    [19] = "^oUF.*party", -- generic oUF
+    [19] = "^oUF_.-Party", -- generic oUF
     [20] = "^PitBull4_Groups_Party", -- pitbull4
-    [21] = "^CompactParty", -- blizz
+    [21] = "^CompactRaid", -- blizz
+    [22] = "^CompactParty", -- blizz
     -- player frame
-    [22] = "^SUFUnitplayer",
-    [23] = "^PitBull4_Frames_Player",
-    [24] = "^ElvUF_Player",
-    [25] = "^oUF.*player",
-    [26] = "^PlayerFrame",
+    [23] = "^SUFUnitplayer",
+    [24] = "^PitBull4_Frames_Player",
+    [25] = "^ElvUF_Player",
+    [26] = "^oUF_.-Player",
+    [27] = "^PlayerFrame",
 }
 
 local defaultPlayerFrames = {
     "SUFUnitplayer",
     "PitBull4_Frames_Player",
     "ElvUF_Player",
-    "oUF_TukuiPlayer",
-    "PlayerFrame",
-    "oUF_Player",
+    "oUF_.-Player",
     "oUF_PlayerPlate",
+    "PlayerFrame",
 }
 local defaultTargetFrames = {
     "SUFUnittarget",
     "PitBull4_Frames_Target",
     "ElvUF_Target",
+    "oUF_.-Target",
     "TargetFrame",
-    "oUF_TukuiTarget",
-    "oUF_Target",
 }
 local defaultTargettargetFrames = {
     "SUFUnittargetarget",
     "PitBull4_Frames_Target's target",
     "ElvUF_TargetTarget",
-    "TargetTargetFrame",
-    "oUF_TukuiTargetTarget",
+    "oUF_.-TargetTarget",
     "oUF_ToT",
+    "TargetTargetFrame",
+}
+local defaultPartyTargetFrames = {
+    "SUFChildpartytarget%d",
 }
 
 local GetFramesCache = {}
+local FrameToUnitFresh = {}
 local FrameToUnit = {}
 local UpdatedFrames = {}
 
@@ -93,6 +96,7 @@ local function ScanFrames(depth, frame, ...)
                     FrameToUnit[frame] = unit
                     UpdatedFrames[frame] = unit
                 end
+                FrameToUnitFresh[frame] = unit
             end
         end
     end
@@ -100,26 +104,31 @@ local function ScanFrames(depth, frame, ...)
 end
 
 local wait = false
+
+local function doScanForUnitFrames()
+    wait = false
+    wipe(UpdatedFrames)
+    wipe(GetFramesCache)
+    wipe(FrameToUnitFresh)
+    ScanFrames(0, UIParent)
+    callbacks:Fire("GETFRAME_REFRESH")
+    for frame, unit in pairs(UpdatedFrames) do
+        callbacks:Fire("FRAME_UNIT_UPDATE", frame, unit)
+    end
+    for frame, unit in pairs(FrameToUnit) do
+        if FrameToUnitFresh[frame] ~= unit then
+            callbacks:Fire("FRAME_UNIT_REMOVED", frame, unit)
+            FrameToUnit[frame] = nil
+        end
+    end
+end
 local function ScanForUnitFrames(noDelay)
     if noDelay then
-        wipe(UpdatedFrames)
-        wipe(GetFramesCache)
-        ScanFrames(0, UIParent)
-        callbacks:Fire("GETFRAME_REFRESH")
-        for frame, unit in pairs(UpdatedFrames) do
-            callbacks:Fire("FRAME_UNIT_UPDATE", frame, unit)
-        end
+        doScanForUnitFrames()
     elseif not wait then
         wait = true
         C_Timer.After(1, function()
-            wipe(UpdatedFrames)
-            wipe(GetFramesCache)
-            ScanFrames(0, UIParent)
-            wait = false
-            callbacks:Fire("GETFRAME_REFRESH")
-            for frame, unit in pairs(UpdatedFrames) do
-                callbacks:Fire("FRAME_UNIT_UPDATE", frame, unit)
-            end
+            doScanForUnitFrames()
         end)
     end
 end
@@ -171,12 +180,16 @@ local defaultOptions = {
     ignorePlayerFrame = true,
     ignoreTargetFrame = true,
     ignoreTargettargetFrame = true,
+    ignorePartyTargetFrame = true,
     playerFrames = defaultPlayerFrames,
     targetFrames = defaultTargetFrames,
     targettargetFrames = defaultTargettargetFrames,
+    partyTargetFrames = defaultPartyTargetFrames,
     ignoreFrames = {
         "PitBull4_Frames_Target's target's target",
-        "ElvUF_PartyGroup%dUnitButton%dTarget"
+        "ElvUF_PartyGroup%dUnitButton%dTarget",
+        "ElvUF_FocusTarget",
+        "RavenButton"
     },
     returnAll = false,
 }
@@ -212,6 +225,11 @@ function lib.GetUnitFrame(target, opt)
     end
     if opt.ignoreTargettargetFrame then
         for _,v in pairs(opt.targettargetFrames) do
+            tinsert(ignoredFrames, v)
+        end
+    end
+    if opt.ignorePartyTargetFrame then
+        for _,v in pairs(opt.partyTargetFrames) do
             tinsert(ignoredFrames, v)
         end
     end

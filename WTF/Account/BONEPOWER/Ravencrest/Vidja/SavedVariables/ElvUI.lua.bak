@@ -1,43 +1,21 @@
 
 ElvCharacterDB = {
 	["ChatEditHistory"] = {
-		"/s ty for group", -- [1]
-		"/wa", -- [2]
-		"/s 7wa", -- [3]
-		"/i brb 30 sec", -- [4]
-		"/ec", -- [5]
-		"/i I saw a Mists of Pandaria loading screen when coming here x)", -- [6]
-		"/reload", -- [7]
-		"/s my veve is big", -- [8]
+		"/wa", -- [1]
+		"/i brb 30 sec", -- [2]
+		"/i I saw a Mists of Pandaria loading screen when coming here x)", -- [3]
+		"/s my veve is big", -- [4]
+		"/s 7e", -- [5]
+		"/i lol", -- [6]
+		"/s ty for group", -- [7]
+		"/ec", -- [8]
 		"/s q", -- [9]
-		"/s 7e", -- [10]
-		"/s qer", -- [11]
-		"/i lol", -- [12]
-		"/dance", -- [13]
+		"/dance", -- [10]
+		"/reload", -- [11]
+		"/s 7wa", -- [12]
+		"/s qer", -- [13]
 	},
 	["ChatHistoryLog"] = {
-		{
-			"Gallywix Community|| WTS|cff66bbff|Hjournal:0:1180:15|h[Ny'alotha, the Waking City]|h|rEveryday @19:00 & 21:00 ST 12/12 Mythic+HC VIP+Share Loot. Get Curve+Mount+Carapace||Raden Cheap! M+(10-24) INTIME. PVP 0-2K4,AZSHARA,VISION,JAINA MOUNT Gold Any Server", -- [1]
-			"Anothing-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Anothing-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			598, -- [11]
-			"Player-1329-0710E239", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe95Anothing|r",
-			[51] = 1593352991,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [1]
 		{
 			"GALLYWIX  M+10-24 keys IN TIME by 2700+Raider.io players, Armour Stacks, Specific Keys|| |cffffff00|Hachievement:14145:Player-1084-08A2986E:1:4:10:20:4294967295:4294967295:4294967295:4294967295|h[Battle for Azeroth Keystone Master: Season Four]|h|r Get |cff71d5ff|Hspell:316637:0|h[Awakened Mindborer]|h|r ||Mech Hardmode & |cff71d5ff|Hspell:290718:0|h[Aerial Unit R-21/X]|h|r || 0-2400 & |cffffff00|Hachievement:2091:Player-1084-08A2986E:1:11:20:18:0:0:0:0|h[Gladiator]|h|r", -- [1]
 			"Cyonagally-Ravencrest", -- [2]
@@ -59,7 +37,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Cyonagally|r",
 			[51] = 1593352992,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [2]
+		}, -- [1]
 		{
 			"WTS boost|cff66bbff|Hjournal:0:1180:15|h[Ny'alotha, the Waking City]|h|r<HC>  <Carapace of Nzoth> and <Nzoth The Corruptor> and <Ra-den the Despoiled> heroic. <RIGHT NOW> GOLD ONLY! Get mount, curve and chance on 470 loot. Fast, smooth and cherry", -- [1]
 			"Mamaliano-Ravencrest", -- [2]
@@ -81,7 +59,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Mamaliano|r",
 			[51] = 1593352994,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [3]
+		}, -- [2]
 		{
 			"<Gallywix> WTS |cffffff00|Hachievement:14069:Player-2073-0705E4D5:0:0:0:-1:0:0:0:0|h[Cutting Edge: N'Zoth the Corruptor]|h|r |cffffff00|Hachievement:14068:Player-2073-0705E4D5:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: N'Zoth the Corruptor]|h|r || M10-24 |cffffff00|Hachievement:14145:Player-2073-0705E4D5:0:0:0:-1:0:0:0:0|h[Battle for Azeroth Keystone Master: Season Four]|h|r || Jaina Mount || Visions || PVP || GOLD ONLY || HC Queen Azshara ||", -- [1]
 			"Keepsy-Ravencrest", -- [2]
@@ -103,7 +81,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeKeepsy|r",
 			[51] = 1593352998,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [4]
+		}, -- [3]
 		{
 			"[WТS] Nyalotha Normal & Heroic Boosts: get ilvl 445-470+ corrupted gear, NEW MOUNT, Essences & Curve Achieve. Fast runs with TOP Guilds every day. We have over 8349 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
 			"Iminahiwi-Ravencrest", -- [2]
@@ -125,7 +103,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cIminahiwi|r",
 			[51] = 1593353010,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [5]
+		}, -- [4]
 		{
 			"Gallywix Community|| WTS Free Armor Stack Mythic+ (10-24) Guarantee INTIME+Specific keys|cffffff00|Hachievement:14145:Player-1305-0AC0244F:1:2:11:20:4294967295:4294967295:4294967295:4294967295|h[Battle for Azeroth Keystone Master: Season Four]|h|rBuy more than 1x (10-20)% OFF! Nyalotha 12/12 Mythic+HC! PVP 0-2K4,AZSHARA,VISION,JAINA MOUNT Gold Any Server", -- [1]
 			"Anothing-Ravencrest", -- [2]
@@ -147,7 +125,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Anothing|r",
 			[51] = 1593353016,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [6]
+		}, -- [5]
 		{
 			"< Gallywix >  m+10-20++ || Nyalotha Heroic/Mythic || Cara/Nzoth/Raden specific |||cff71d5ff|Hspell:289555:0|h[Glacial Tidestorm]|h|r |||cff71d5ff|Hspell:308814:0|h[Ny'alotha Allseer]|h|r ||Azshara's Font of Power|| Visions || PvP and much more! ", -- [1]
 			"Cyonagally-Ravencrest", -- [2]
@@ -169,7 +147,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Cyonagally|r",
 			[51] = 1593353019,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [7]
+		}, -- [6]
 		{
 			"<Gallywix Community> GREAT offers on M+ - ANY keys 10-24! ALL LOOT YOURS - Specific Keys - Armor Stack - Bulk Purchase Discounts! /w now!", -- [1]
 			"Keepsy-Ravencrest", -- [2]
@@ -191,7 +169,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeKeepsy|r",
 			[51] = 1593353021,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [8]
+		}, -- [7]
 		{
 			"<SBS> SELLING , 3x +11s 260k (9x 460 ilvl loot) , 3x +14s 380k(9x 465 ilvl loot) +10/95k ,+11/105K,+12/115k ,+15/170k FREE ARMOR STACK. +16 /+17s, Horrific Vision 5 mask 180k!", -- [1]
 			"Shiihun-Ravencrest", -- [2]
@@ -213,7 +191,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Shiihun|r",
 			[51] = 1593353022,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [9]
+		}, -- [8]
 		{
 			"WTS 5 masks vision runs! ONLY 90k!", -- [1]
 			"Zèraveth-Ravencrest", -- [2]
@@ -235,7 +213,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Zèraveth|r",
 			[51] = 1593353025,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [10]
+		}, -- [9]
 		{
 			"WTS rarespawn mounts: Voidtalon 500k, Time-Lost Proto-Drake 300k, Phosphorescent Stone Drake275k, Grey Riding Camel325k, Frightened Kodo 200k, Long Forgotten Hippogryph75k, Draenor rares50k, Bloody Coins(mount title pet)110k, /w me", -- [1]
 			"Raremountz-Ravencrest", -- [2]
@@ -257,7 +235,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Raremountz|r",
 			[51] = 1593353029,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [11]
+		}, -- [10]
 		{
 			"Nova Community  Selling +M(10-22) IN TIME With FREE ARMORSTACK AND SHARELOOT! ||+10=85k || || +12=110k || ||+14=145k || || +15= 160k ||  2x=10%Off , [Ny'alotha, the Waking City] Hc Share loot 200k , Jaina 500k ,Vision All Servers /w for info", -- [1]
 			"Hiphopa-Ravencrest", -- [2]
@@ -279,7 +257,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Hiphopa|r",
 			[51] = 1593353035,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [12]
+		}, -- [11]
 		{
 			"GALLYWIX WTS |cffffff00|Hachievement:14145:Player-1329-0712EAE8:0:0:0:0:0:0:0:0|h[Battle for Azeroth Keystone Master: Season Four]|h|r m+10-23 ArmorStack/All Dungeons!! 12/12 HC/MYTHIC VIP Loot!! |cff66bbff|Hjournal:0:1180:16|h[Ny'alotha, the Waking City]|h|r ,[Gladiator: Battle for Azeroth Season 4]PVP 0-2400 Gladiator, Visions!! Jaina Mount!!8", -- [1]
 			"Galysuper-Ravencrest", -- [2]
@@ -301,7 +279,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeGalysuper|r",
 			[51] = 1593353036,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [13]
+		}, -- [12]
 		{
 			"<<NBC>> (Special Offer) WTS M+10 =85k, M+15= 160k with free Armor Stack Buy 2x runs get 10% Discount! (Specific Key Available).Ny'alotha Hc Raid Full Clear=200k (Personal trader available) -Mecha Hm + Mount - FH leveling (Only Gold) Wis Me For Info!!", -- [1]
 			"Novazii-Ravencrest", -- [2]
@@ -323,7 +301,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Novazii|r",
 			[51] = 1593353038,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [14]
+		}, -- [13]
 		{
 			"<Nova> WTS  Boost M+15=160k 5k For ARMORSTACK / M+10 =85k /M+(10-22) intime/2 RUN 10% Discount /Full clear [Ny'alotha, the Waking City] 200k /Curv 90k / Jaina mount 500k/Mythic raid NYA /Specific Boss/visions &...", -- [1]
 			"Mythrisen-Ravencrest", -- [2]
@@ -345,7 +323,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Mythrisen|r",
 			[51] = 1593353038,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [15]
+		}, -- [14]
 		{
 			"GALLYWIX WTS|cffffff00|Hachievement:14145:Player-1329-0710E239:0:0:0:-1:0:0:0:0|h[Battle for Azeroth Keystone Master: Season Four]|h|r|cffffff00|Hachievement:14068:Player-1329-0710E239:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: N'Zoth the Corruptor]|h|r+ CARAPACE!Raden|cffffff00|Hachievement:14069:Player-1329-0710E239:0:0:0:-1:0:0:0:0|h[Cutting Edge: N'Zoth the Corruptor]|h|rFull Mythic+HC @19:00 & 21:00! M+(10-24) INTIME, Pvp 0-2K4 Gladiator AZSHARA,VISION,JAINA Mount 500k", -- [1]
 			"Anothing-Ravencrest", -- [2]
@@ -367,7 +345,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Anothing|r",
 			[51] = 1593353039,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [16]
+		}, -- [15]
 		{
 			"<Perplexity> are a new 10/12 HC guild on the server and currently recruiting ranged dps to continue smashing heroic and push through to mythic raiding, our raid times are 20:00 - 23:30 server time, message for more info", -- [1]
 			"Yunarei-Ravencrest", -- [2]
@@ -389,7 +367,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Yunarei|r",
 			[51] = 1593353042,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [17]
+		}, -- [16]
 		{
 			"WTS |cff66bbff|Hjournal:0:1001:1|h[Freehold]|h|r Levelup [110-120] FAST / M+[10-17] in Time / Vision 0-5 Mask <<< Cheap >>>", -- [1]
 			"Crazymonk-Ravencrest", -- [2]
@@ -411,7 +389,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Crazymonk|r",
 			[51] = 1593353043,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [18]
+		}, -- [17]
 		{
 			"WTS boost|cff66bbff|Hjournal:0:1180:15|h[Ny'alotha, the Waking City]|h|r<HC>  <Carapace of Nzoth> and <Nzoth The Corruptor> and <Ra-den the Despoiled> heroic. <RIGHT NOW> GOLD ONLY! Get mount, curve and chance on 470 loot. Fast, smooth and cherry", -- [1]
 			"Mamaliano-Ravencrest", -- [2]
@@ -433,7 +411,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Mamaliano|r",
 			[51] = 1593353044,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [19]
+		}, -- [18]
 		{
 			"WTS |cff66bbff|Hjournal:0:1180:16|h[Ny'alotha, the Waking City]|h|r12/12 Hc Full Run  19:00  - VIP trader   Available Only for gold  / < Cara + Nzoth + raden > / +Mythic 10-18 / smooth and cherry! lowest price", -- [1]
 			"Bestservice-Ravencrest", -- [2]
@@ -455,7 +433,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Bestservice|r",
 			[51] = 1593353046,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [20]
+		}, -- [19]
 		{
 			"<Gallywix Community> Offering Visions (0-5 Masks) || M+ 10-21 Keys || Jaina Mount || Nya'lotha 12/12 HC & Mythic || Curve  (Cara & N'zoth) Multiple Runs Per Day || Islands  || PVP || Freehold Levelling || PVE/PVP Coaching || HC Ra-Den || ", -- [1]
 			"Keepsy-Ravencrest", -- [2]
@@ -477,7 +455,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeKeepsy|r",
 			[51] = 1593353046,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [21]
+		}, -- [20]
 		{
 			"WTS |cffffffff|Hitem:152496::::::::120:268::::::|h[Demitri's Draught of Deception]|h|r|cffffffff|Hitem:152543::::::::120:268::::::|h[Sand Shifter]|h|r/w me", -- [1]
 			"Bàmboo-Ravencrest", -- [2]
@@ -499,7 +477,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Bàmboo|r",
 			[51] = 1593353047,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [22]
+		}, -- [21]
 		{
 			"WTS GOING NOW  GRP is Ready NOW N zoth HC !!!! Mythic +2/+16-Mechagon Nm Hm <<Aerial Unit R-21/X>> (mecha mount) (Weekly chest 470i level gear)  / All tradable items Grp is rdy Level BOOST 110-120 in 2Hour", -- [1]
 			"Artapa-Ravencrest", -- [2]
@@ -521,7 +499,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Artapa|r",
 			[51] = 1593353049,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [23]
+		}, -- [22]
 		{
 			"Gallywix Community|| WTS|cff66bbff|Hjournal:0:1180:15|h[Ny'alotha, the Waking City]|h|rEveryday @19:00 & 21:00 ST 12/12 Mythic+HC VIP+Share Loot. Get Curve+Mount+Carapace||Raden Cheap! M+(10-24) INTIME. PVP 0-2K4,AZSHARA,VISION,JAINA MOUNT Gold Any Server", -- [1]
 			"Anothing-Ravencrest", -- [2]
@@ -543,7 +521,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Anothing|r",
 			[51] = 1593353063,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [24]
+		}, -- [23]
 		{
 			"<Gallywix> WTS M+ 10-24 Keys - Armor Stack - Specific Keys - |cffffff00|Hachievement:14145:Player-2073-07101F89:0:0:0:0:0:0:0:0|h[Battle for Azeroth Keystone Master: Season Four]|h|r - GOLD ONLY", -- [1]
 			"Keepsy-Ravencrest", -- [2]
@@ -565,7 +543,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeKeepsy|r",
 			[51] = 1593353066,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [25]
+		}, -- [24]
 		{
 			"GALLYWIX  <[Lady Jaina Proudmoore]  + |cff71d5ff|Hspell:289555:0|h[Glacial Tidestorm]|h|r > ||M+10-24 Keys In Time|| 12/12 HC & Mythic [Cutting Edge: N'Zoth the Corruptor] & |cff71d5ff|Hspell:308814:0|h[Ny'alotha Allseer]|h|r  ||HC Nzoth <GET CURVE||Visions 0-5 Masks||Pvp 0-2400 & |cffffff00|Hachievement:2091:Player-1084-08A2986E:1:11:20:18:0:0:0:0|h[Gladiator]|h|r", -- [1]
 			"Cyonagally-Ravencrest", -- [2]
@@ -587,7 +565,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Cyonagally|r",
 			[51] = 1593353070,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [26]
+		}, -- [25]
 		{
 			"Nova Community  Selling +M(10-22) IN TIME With FREE ARMORSTACK AND SHARELOOT! ||+10=85k || || +12=110k || ||+15=160k || 2x=10%Off , |cff66bbff|Hjournal:0:1180:16|h[Ny'alotha, the Waking City]|h|r Hc Share loot 200k , Jaina 500k ,Vision /w for info", -- [1]
 			"Novacravenw-Ravencrest", -- [2]
@@ -609,7 +587,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Novacravenw|r",
 			[51] = 1593353074,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [27]
+		}, -- [26]
 		{
 			"Gallywix Community|| WTS Free Armor Stack Mythic+ (10-24) Guarantee INTIME+Specific keys|cffffff00|Hachievement:14145:Player-1305-0AC0244F:1:2:11:20:4294967295:4294967295:4294967295:4294967295|h[Battle for Azeroth Keystone Master: Season Four]|h|rBuy more than 1x (10-20)% OFF! Nyalotha 12/12 Mythic+HC! PVP 0-2K4,AZSHARA,VISION,JAINA MOUNT Gold Any Server", -- [1]
 			"Anothing-Ravencrest", -- [2]
@@ -631,7 +609,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Anothing|r",
 			[51] = 1593353086,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [28]
+		}, -- [27]
 		{
 			"<<GALLYWIX>> DEAL DAY! Get your M+ done before the reset! Price drops for ALL keys! /w for more info! Bulk buying discount! GOLD ONLY /w", -- [1]
 			"Keepsy-Ravencrest", -- [2]
@@ -653,7 +631,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeKeepsy|r",
 			[51] = 1593353087,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [29]
+		}, -- [28]
 		{
 			"WTS N zoth HC !!!! Mythic +2/+16-Mechagon Nm Hm <<Aerial Unit R-21/X>> (mecha mount) (Weekly chest 475i level gear) - Armor stack available( FREE ) / All tradable items Grp is rdy Level BOOST 110-120 in 2Hour", -- [1]
 			"Necrowitch-Ravencrest", -- [2]
@@ -675,7 +653,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecNecrowitch|r",
 			[51] = 1593353088,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [30]
+		}, -- [29]
 		{
 			"[WТS] WTS Mythic+ runs Tonight! +10/+11/+12/+13/+14/+15 key CARRY. You will get ilvl 430-475+ Gear, RIO score & Essences. Fast Mechagon Mount runs. We have over 8349 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
 			"Iminahiwi-Ravencrest", -- [2]
@@ -697,7 +675,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cIminahiwi|r",
 			[51] = 1593353094,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [31]
+		}, -- [30]
 		{
 			"WTS boost|cff66bbff|Hjournal:0:1180:15|h[Ny'alotha, the Waking City]|h|r<HC>  <Carapace of Nzoth> and <Nzoth The Corruptor> and <Ra-den the Despoiled> heroic. <RIGHT NOW> GOLD ONLY! Get mount, curve and chance on 470 loot. Fast, smooth and cherry", -- [1]
 			"Mamaliano-Ravencrest", -- [2]
@@ -719,7 +697,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Mamaliano|r",
 			[51] = 1593353094,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [32]
+		}, -- [31]
 		{
 			"Want those old world rare-spawn mounts without camping? |cff71d5ff|Hspell:60002:0|h[Time-Lost Proto-Drake]|h|r(330k!), |cff71d5ff|Hspell:88718:0|h[Phosphorescent Stone Drake]|h|r, |cff71d5ff|Hspell:88750:0|h[Grey Riding Camel]|h|r for sale (Gold) now!", -- [1]
 			"Lanadrah-Ravencrest", -- [2]
@@ -741,7 +719,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Lanadrah|r",
 			[51] = 1593353098,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [33]
+		}, -- [32]
 		{
 			"Also available are |cff71d5ff|Hspell:288499:0|h[Frightened Kodo]|h|r, |cff71d5ff|Hspell:231428:0|h[Smoldering Ember Wyrm]|h|r and WoD rare spawns! Hundreds of visible reviews available, PM for prices :)", -- [1]
 			"Lanadrah-Ravencrest", -- [2]
@@ -763,7 +741,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Lanadrah|r",
 			[51] = 1593353098,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [34]
+		}, -- [33]
 		{
 			"WTS M+ (6-18) + all tradeable items + armor stack avaiable/ Full HC run |cff66bbff|Hjournal:0:1180:14|h[Ny'alotha, the Waking City]|h|r + specific bosses N'Zoth + Carapace + ra-den quick runs/ get your curve+mount+470 items now (for gold)", -- [1]
 			"Zoryal-Ravencrest", -- [2]
@@ -785,7 +763,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeZoryal|r",
 			[51] = 1593353098,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [35]
+		}, -- [34]
 		{
 			"WTS 5 masks vision runs! ONLY 90k!", -- [1]
 			"Zèraveth-Ravencrest", -- [2]
@@ -807,7 +785,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Zèraveth|r",
 			[51] = 1593353100,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [36]
+		}, -- [35]
 		{
 			"Gallywix WTS |cffffff00|Hachievement:14069:Player-1329-0712EAE8:0:0:0:0:0:0:0:0|h[Cutting Edge: N'Zoth the Corruptor]|h|r  12/12 HC/MYTH VIP Slots!  |cffffff00|Hachievement:14068:Player-1329-0712EAE8:0:0:0:0:0:0:0:0|h[Ahead of the Curve: N'Zoth the Corruptor]|h|r & Carapace |cffffff00|Hachievement:14145:Player-1329-0712EAE8:0:0:0:0:0:0:0:0|h[Battle for Azeroth Keystone Master: Season Four]|h|r  M+ 10-25      PvP 0-2400 Gladiator!   Jaina Mount!   Visions", -- [1]
 			"Varaven-Ravencrest", -- [2]
@@ -829,7 +807,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecVaraven|r",
 			[51] = 1593353102,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [37]
+		}, -- [36]
 		{
 			"WTS Raden - Cara - Nzoth HC LAST SPOT/ can also pick one spicific / 460-470 gear +mount and curve/ traders available and u can afk / only for gold and aceptable in any realm n faction /w for more info !!!", -- [1]
 			"Justiceboy-Ravencrest", -- [2]
@@ -851,7 +829,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Justiceboy|r",
 			[51] = 1593353105,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [38]
+		}, -- [37]
 		{
 			"<<NBC>> (Special Offer) WTS M+10 =85k, M+15= 160k with free Armor Stack Buy 2x runs get 10% Discount! (Specific Key Available).Ny'alotha Hc Raid Full Clear=200k (Personal trader available) -Mecha Hm + Mount - FH leveling (Only Gold) Wis Me For Info!!", -- [1]
 			"Novazii-Ravencrest", -- [2]
@@ -873,7 +851,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Novazii|r",
 			[51] = 1593353105,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [39]
+		}, -- [38]
 		{
 			"GALLYWIX WTS |cffffff00|Hachievement:14145:Player-1329-0712EAE8:0:0:0:0:0:0:0:0|h[Battle for Azeroth Keystone Master: Season Four]|h|r m+10-23 ArmorStack/All Dungeons!! 12/12 HC/MYTHIC VIP Loot!! |cff66bbff|Hjournal:0:1180:16|h[Ny'alotha, the Waking City]|h|r ,[Gladiator: Battle for Azeroth Season 4]PVP 0-2400 Gladiator, Visions!! Jaina Mount!!8", -- [1]
 			"Galysuper-Ravencrest", -- [2]
@@ -895,7 +873,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeGalysuper|r",
 			[51] = 1593353107,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [40]
+		}, -- [39]
 		{
 			"GALLYWIX  Azshara Font Stacks, Glory Achievements - |cffffff00|Hachievement:14146:Player-1084-08A2986E:0:0:0:-1:65:0:0:0|h[Glory of the Ny'alotha Raider]|h|r + |cff71d5ff|Hspell:316343:0|h[Wriggling Parasite]|h|r & Others such as |cff71d5ff|Hspell:253087:0|h[Antoran Gloomhound]|h|r, BoD Transmog Raids, Insane & Headmaster titles || |cffffff00|Hachievement:3316:Player-1084-08A2986E:1:5:2:20:4294967295:4294967295:4294967295:4294967295|h[Herald of the Titans]|h|r & more!", -- [1]
 			"Cyonagally-Ravencrest", -- [2]
@@ -917,7 +895,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Cyonagally|r",
 			[51] = 1593353111,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [41]
+		}, -- [40]
 		{
 			"<Gallywix> WTS |cffffff00|Hachievement:14069:Player-2073-0705E4D5:0:0:0:-1:0:0:0:0|h[Cutting Edge: N'Zoth the Corruptor]|h|r |cffffff00|Hachievement:14068:Player-2073-0705E4D5:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: N'Zoth the Corruptor]|h|r || M10-24 |cffffff00|Hachievement:14145:Player-2073-0705E4D5:0:0:0:-1:0:0:0:0|h[Battle for Azeroth Keystone Master: Season Four]|h|r || Jaina Mount || Visions || PVP || GOLD ONLY || HC Queen Azshara ||", -- [1]
 			"Keepsy-Ravencrest", -- [2]
@@ -939,7 +917,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeKeepsy|r",
 			[51] = 1593353113,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [42]
+		}, -- [41]
 		{
 			"GALLYWIX WTS|cffffff00|Hachievement:14145:Player-1329-0710E239:0:0:0:-1:0:0:0:0|h[Battle for Azeroth Keystone Master: Season Four]|h|r|cffffff00|Hachievement:14068:Player-1329-0710E239:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: N'Zoth the Corruptor]|h|r+ CARAPACE!Raden|cffffff00|Hachievement:14069:Player-1329-0710E239:0:0:0:-1:0:0:0:0|h[Cutting Edge: N'Zoth the Corruptor]|h|rFull Mythic+HC @19:00 & 21:00! M+(10-24) INTIME, Pvp 0-2K4 Gladiator AZSHARA,VISION,JAINA Mount 500k", -- [1]
 			"Anothing-Ravencrest", -- [2]
@@ -961,7 +939,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Anothing|r",
 			[51] = 1593353115,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [43]
+		}, -- [42]
 		{
 			"<SBS> SELLING , 3x +11s 260k (9x 460 ilvl loot) , 3x +14s 380k(9x 465 ilvl loot) +10/95k ,+11/105K,+12/115k ,+15/170k FREE ARMOR STACK. +16 /+17s, Horrific Vision 5 mask 180k!", -- [1]
 			"Shiihun-Ravencrest", -- [2]
@@ -983,7 +961,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Shiihun|r",
 			[51] = 1593353117,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [44]
+		}, -- [43]
 		{
 			"<Nordic Brethren> 9/12 NYA mythic.  söker efter erfaren holy paladin samt andra classer för Cutting Edge progress i SL. Känner du dig sugen? vill du veta mer? whispa. Socials är också välkomna! ", -- [1]
 			"Tmose-Ravencrest", -- [2]
@@ -1005,7 +983,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cTmose|r",
 			[51] = 1593353130,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [45]
+		}, -- [44]
 		{
 			"<Gallywix Community> GREAT offers on M+ - ANY keys 10-24! ALL LOOT YOURS - Specific Keys - Armor Stack - Bulk Purchase Discounts! /w now!", -- [1]
 			"Keepsy-Ravencrest", -- [2]
@@ -1027,7 +1005,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeKeepsy|r",
 			[51] = 1593353136,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [46]
+		}, -- [45]
 		{
 			"<Nova Boosting Community> WTS Mythic Plus 10-21 Dungeons inti -12/12 N'yalotha Full HC 200K VIP TRADER 100K ONLY!+10 85K + 11 95K- +12 110K +13 130K +14 150K +15 ONLY 165K FREE ARMOR STACK +16 220K +17 300K ! JAINA MOUNT ONLY 500K!", -- [1]
 			"Novahuana-Ravencrest", -- [2]
@@ -1049,7 +1027,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Novahuana|r",
 			[51] = 1593353136,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [47]
+		}, -- [46]
 		{
 			"Gallywix Community|| WTS|cff66bbff|Hjournal:0:1180:15|h[Ny'alotha, the Waking City]|h|rEveryday @19:00 & 21:00 ST 12/12 Mythic+HC VIP+Share Loot. Get Curve+Mount+Carapace||Raden Cheap! M+(10-24) INTIME. PVP 0-2K4,AZSHARA,VISION,JAINA MOUNT Gold Any Server", -- [1]
 			"Anothing-Ravencrest", -- [2]
@@ -1071,7 +1049,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Anothing|r",
 			[51] = 1593353136,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [48]
+		}, -- [47]
 		{
 			"Nova Community  Selling +M(10-22) IN TIME With FREE ARMORSTACK AND SHARELOOT! ||+10=85k || || +12=110k || ||+14=145k || || +15= 160k ||  2x=10%Off , [Ny'alotha, the Waking City] Hc Share loot 200k , Jaina 500k ,Vision All Servers /w for info", -- [1]
 			"Hiphopa-Ravencrest", -- [2]
@@ -1093,7 +1071,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Hiphopa|r",
 			[51] = 1593353141,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [49]
+		}, -- [48]
 		{
 			"WTS boost|cff66bbff|Hjournal:0:1180:15|h[Ny'alotha, the Waking City]|h|r<HC>  <Carapace of Nzoth> and <Nzoth The Corruptor> and <Ra-den the Despoiled> heroic. <RIGHT NOW> GOLD ONLY! Get mount, curve and chance on 470 loot. Fast, smooth and cherry", -- [1]
 			"Mamaliano-Ravencrest", -- [2]
@@ -1115,7 +1093,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Mamaliano|r",
 			[51] = 1593353144,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [50]
+		}, -- [49]
 		{
 			"WTS Ny’alotha Mythic and Heroic with strong team; Heroic and Mythic Full Gear; we will help to make achievement Mad World; Arena rating 2v2- 3v3. Horrific Visions 5 chest run + masks;", -- [1]
 			"Posterio-Ravencrest", -- [2]
@@ -1137,7 +1115,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefePosterio|r",
 			[51] = 1593353148,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [51]
+		}, -- [50]
 		{
 			"<Nova> WTS  Boost M+15=160k 5k For ARMORSTACK / M+10 =85k /M+(10-22) intime/2 RUN 10% Discount /Full clear [Ny'alotha, the Waking City] 200k /Curv 90k / Jaina mount 500k/Mythic raid NYA /Specific Boss/visions &...", -- [1]
 			"Mythrisen-Ravencrest", -- [2]
@@ -1159,7 +1137,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Mythrisen|r",
 			[51] = 1593353151,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [52]
+		}, -- [51]
 		{
 			"WTS |cff66bbff|Hjournal:0:1180:16|h[Ny'alotha, the Waking City]|h|r12/12 Hc Full Run  19:00  - VIP trader   Available Only for gold  / < Cara + Nzoth + raden > / +Mythic 10-18 / smooth and cherry! lowest price", -- [1]
 			"Bestservice-Ravencrest", -- [2]
@@ -1181,7 +1159,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Bestservice|r",
 			[51] = 1593353153,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [53]
+		}, -- [52]
 		{
 			"GALLYWIX  |cffffff00|Hachievement:14068:Player-1084-08A2986E:1:1:25:20:4294967295:4294967295:4294967295:4294967295|h[Ahead of the Curve: N'Zoth the Corruptor]|h|r  <<GET CURVE + |cff71d5ff|Hspell:302143:0|h[Uncorrupted Voidwing]|h|r Today!>> Raden/Cara/Nzoth only || UPGRADE YOUR CLOAK || |cff71d5ff|Hspell:308814:0|h[Ny'alotha Allseer]|h|r || |cff66bbff|Hjournal:0:1180:15|h[Ny'alotha, the Waking City]|h|r || 12/12HC/M VIP traders available", -- [1]
 			"Cyonagally-Ravencrest", -- [2]
@@ -1203,7 +1181,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Cyonagally|r",
 			[51] = 1593353157,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [54]
+		}, -- [53]
 		{
 			"<Gallywix Community> Offering Visions (0-5 Masks) || M+ 10-21 Keys || Jaina Mount || Nya'lotha 12/12 HC & Mythic || Curve  (Cara & N'zoth) Multiple Runs Per Day || Islands  || PVP || Freehold Levelling || PVE/PVP Coaching || HC Ra-Den || ", -- [1]
 			"Keepsy-Ravencrest", -- [2]
@@ -1225,7 +1203,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeKeepsy|r",
 			[51] = 1593353159,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [55]
+		}, -- [54]
 		{
 			"WTS |cffffffff|Hitem:152496::::::::120:268::::::|h[Demitri's Draught of Deception]|h|r|cffffffff|Hitem:152543::::::::120:268::::::|h[Sand Shifter]|h|r/w me", -- [1]
 			"Bàmboo-Ravencrest", -- [2]
@@ -1247,7 +1225,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Bàmboo|r",
 			[51] = 1593353159,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [56]
+		}, -- [55]
 		{
 			"Gallywix Community|| WTS Free Armor Stack Mythic+ (10-24) Guarantee INTIME+Specific keys|cffffff00|Hachievement:14145:Player-1305-0AC0244F:1:2:11:20:4294967295:4294967295:4294967295:4294967295|h[Battle for Azeroth Keystone Master: Season Four]|h|rBuy more than 1x (10-20)% OFF! Nyalotha 12/12 Mythic+HC! PVP 0-2K4,AZSHARA,VISION,JAINA MOUNT Gold Any Server", -- [1]
 			"Anothing-Ravencrest", -- [2]
@@ -1269,7 +1247,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Anothing|r",
 			[51] = 1593353161,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [57]
+		}, -- [56]
 		{
 			"<NOVA> Sells Ny'alotha 12/12 HC (200k PL - VIP Trader each 100k) - N'Zoth HC only (90k) - M+10 (85k) / M+15 (160k) (Free armor stack for all keys) - Mythic Ny'Alotha 12/12M- Also Jaina Mount-Horrific Visions-Leveling Boost 110-120-Mechagon MOUNT /w me", -- [1]
 			"Alynas-Ravencrest", -- [2]
@@ -1291,7 +1269,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeAlynas|r",
 			[51] = 1593353164,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [58]
+		}, -- [57]
 		{
 			"<<NBC>> (Special Offer) WTS M+10 =85k, M+15= 160k with free Armor Stack Buy 2x runs get 10% Discount! (Specific Key Available).Ny'alotha Hc Raid Full Clear=200k (Personal trader available) -Mecha Hm + Mount - FH leveling (Only Gold) Wis Me For Info!!", -- [1]
 			"Novazii-Ravencrest", -- [2]
@@ -1313,7 +1291,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Novazii|r",
 			[51] = 1593353164,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [59]
+		}, -- [58]
 		{
 			"Selling Cheapest (Keystones) Boosts (10 - 21)  Share loot and (in time Guranti) Leather -Plate - Cloth - Maill stack available)  ( Vision Boosts 0-5 Mask ) ( Only for Gold ) >> Hard mode + Mount << Wis me for more info", -- [1]
 			"Flâwless-Ravencrest", -- [2]
@@ -1335,7 +1313,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Flâwless|r",
 			[51] = 1593353167,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [60]
+		}, -- [59]
 		{
 			"WTS |cff66bbff|Hjournal:0:1001:1|h[Freehold]|h|r Levelup [110-120] FAST / M+[10-17] in Time / Vision 0-5 Mask <<< Cheap >>>", -- [1]
 			"Crazymonk-Ravencrest", -- [2]
@@ -1357,7 +1335,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Crazymonk|r",
 			[51] = 1593353167,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [61]
+		}, -- [60]
 		{
 			"Gallywix WTS |cffffff00|Hachievement:14069:Player-1329-0712EAE8:0:0:0:0:0:0:0:0|h[Cutting Edge: N'Zoth the Corruptor]|h|r  12/12 HC/MYTH VIP Slots!  |cffffff00|Hachievement:14068:Player-1329-0712EAE8:0:0:0:0:0:0:0:0|h[Ahead of the Curve: N'Zoth the Corruptor]|h|r & Carapace |cffffff00|Hachievement:14145:Player-1329-0712EAE8:0:0:0:0:0:0:0:0|h[Battle for Azeroth Keystone Master: Season Four]|h|r  M+ 10-25      PvP 0-2400 Gladiator!   Jaina Mount!   Visions", -- [1]
 			"Varaven-Ravencrest", -- [2]
@@ -1379,7 +1357,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecVaraven|r",
 			[51] = 1593353169,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [62]
+		}, -- [61]
 		{
 			"Nova Community  Selling +M(10-22) IN TIME With FREE ARMORSTACK AND SHARELOOT! ||+10=85k || || +12=110k || ||+15=160k || 2x=10%Off , |cff66bbff|Hjournal:0:1180:16|h[Ny'alotha, the Waking City]|h|r Hc Share loot 200k , Jaina 500k ,Vision /w for info", -- [1]
 			"Novacravenw-Ravencrest", -- [2]
@@ -1401,7 +1379,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Novacravenw|r",
 			[51] = 1593353171,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [63]
+		}, -- [62]
 		{
 			"<NBC> Selling Mythic +10=85k +15intime=160k buy 2runs 10% discount!New raid [Ny'alotha, the Waking City] full hc&Mythic raid!Horrific visions with mask or without!", -- [1]
 			"Nilz-Ravencrest", -- [2]
@@ -1423,7 +1401,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Nilz|r",
 			[51] = 1593353171,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [64]
+		}, -- [63]
 		{
 			"GALLYWIX WTS |cffffff00|Hachievement:14145:Player-1329-0712EAE8:0:0:0:0:0:0:0:0|h[Battle for Azeroth Keystone Master: Season Four]|h|r m+10-23 ArmorStack/All Dungeons!! 12/12 HC/MYTHIC VIP Loot!! |cff66bbff|Hjournal:0:1180:16|h[Ny'alotha, the Waking City]|h|r ,[Gladiator: Battle for Azeroth Season 4]PVP 0-2400 Gladiator, Visions!! Jaina Mount!!8", -- [1]
 			"Galysuper-Ravencrest", -- [2]
@@ -1445,7 +1423,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeGalysuper|r",
 			[51] = 1593353179,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [65]
+		}, -- [64]
 		{
 			"GALLYWIX WTS|cffffff00|Hachievement:14145:Player-1329-0710E239:0:0:0:-1:0:0:0:0|h[Battle for Azeroth Keystone Master: Season Four]|h|r|cffffff00|Hachievement:14068:Player-1329-0710E239:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: N'Zoth the Corruptor]|h|r+ CARAPACE!Raden|cffffff00|Hachievement:14069:Player-1329-0710E239:0:0:0:-1:0:0:0:0|h[Cutting Edge: N'Zoth the Corruptor]|h|rFull Mythic+HC @19:00 & 21:00! M+(10-24) INTIME, Pvp 0-2K4 Gladiator AZSHARA,VISION,JAINA Mount 500k", -- [1]
 			"Anothing-Ravencrest", -- [2]
@@ -1467,7 +1445,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Anothing|r",
 			[51] = 1593353181,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [66]
+		}, -- [65]
 		{
 			"<Gallywix> WTS M+ 10-24 Keys - Armor Stack - Specific Keys - |cffffff00|Hachievement:14145:Player-2073-07101F89:0:0:0:0:0:0:0:0|h[Battle for Azeroth Keystone Master: Season Four]|h|r - GOLD ONLY", -- [1]
 			"Keepsy-Ravencrest", -- [2]
@@ -1489,7 +1467,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeKeepsy|r",
 			[51] = 1593353185,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [67]
+		}, -- [66]
 		{
 			"hello", -- [1]
 			"Nicódemus-Ravencrest", -- [2]
@@ -1511,7 +1489,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Nicódemus|r",
 			[51] = 1593353188,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [68]
+		}, -- [67]
 		{
 			"<SBS> SELLING , 3x +11s 260k (9x 460 ilvl loot) , 3x +14s 380k(9x 465 ilvl loot) +10/95k ,+11/105K,+12/115k ,+15/170k FREE ARMOR STACK. +16 /+17s, Horrific Vision 5 mask 180k!", -- [1]
 			"Shiihun-Ravencrest", -- [2]
@@ -1533,7 +1511,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Shiihun|r",
 			[51] = 1593353190,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [69]
+		}, -- [68]
 		{
 			"GALLYWIX Offer CHEAP Cara+Nzoth today ! ViP traders also availble on the cheap --> get your |cffffff00|Hachievement:14068:Player-1084-08A2986E:1:1:25:20:4294967295:4294967295:4294967295:4294967295|h[Ahead of the Curve: N'Zoth the Corruptor]|h|r  +  |cff71d5ff|Hspell:302143:0|h[Uncorrupted Voidwing]|h|r !", -- [1]
 			"Cyonagally-Ravencrest", -- [2]
@@ -1555,7 +1533,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Cyonagally|r",
 			[51] = 1593353191,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [70]
+		}, -- [69]
 		{
 			"WTS boost|cff66bbff|Hjournal:0:1180:15|h[Ny'alotha, the Waking City]|h|r<HC>  <Carapace of Nzoth> and <Nzoth The Corruptor> and <Ra-den the Despoiled> heroic. <RIGHT NOW> GOLD ONLY! Get mount, curve and chance on 470 loot. Fast, smooth and cherry", -- [1]
 			"Mamaliano-Ravencrest", -- [2]
@@ -1577,7 +1555,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Mamaliano|r",
 			[51] = 1593353194,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [71]
+		}, -- [70]
 		{
 			"<Nova Boosting Community> WTS Mythic Plus 10-21 Dungeons inti -12/12 N'yalotha Full HC 200K VIP TRADER 100K ONLY!+10 85K + 11 95K- +12 110K +13 130K +14 150K +15 ONLY 165K FREE ARMOR STACK +16 220K +17 300K ! JAINA MOUNT ONLY 500K!", -- [1]
 			"Novahuana-Ravencrest", -- [2]
@@ -1599,7 +1577,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Novahuana|r",
 			[51] = 1593353198,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [72]
+		}, -- [71]
 		{
 			"WTS 5 masks vision runs! ONLY 90k!", -- [1]
 			"Zèraveth-Ravencrest", -- [2]
@@ -1621,7 +1599,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Zèraveth|r",
 			[51] = 1593353202,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [73]
+		}, -- [72]
 		{
 			"[WТS] Horrific Visions Challenge Boost, Legendary cloak upgrade, Essences, Allied races, Reputations, Glories, Mounts & other 8.3 BOOSTS! We have over 8349 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
 			"Iminahiwi-Ravencrest", -- [2]
@@ -1643,7 +1621,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cIminahiwi|r",
 			[51] = 1593353203,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [74]
+		}, -- [73]
 		{
 			"Want those old world rare-spawn mounts without camping? |cff71d5ff|Hspell:60002:0|h[Time-Lost Proto-Drake]|h|r(330k!), |cff71d5ff|Hspell:88718:0|h[Phosphorescent Stone Drake]|h|r, |cff71d5ff|Hspell:88750:0|h[Grey Riding Camel]|h|r for sale (Gold) now!", -- [1]
 			"Lanadrah-Ravencrest", -- [2]
@@ -1665,7 +1643,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Lanadrah|r",
 			[51] = 1593353204,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [75]
+		}, -- [74]
 		{
 			"Also available are |cff71d5ff|Hspell:288499:0|h[Frightened Kodo]|h|r, |cff71d5ff|Hspell:231428:0|h[Smoldering Ember Wyrm]|h|r and WoD rare spawns! Hundreds of visible reviews available, PM for prices :)", -- [1]
 			"Lanadrah-Ravencrest", -- [2]
@@ -1687,7 +1665,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Lanadrah|r",
 			[51] = 1593353204,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [76]
+		}, -- [75]
 		{
 			"Gallywix Community|| WTS|cff66bbff|Hjournal:0:1180:15|h[Ny'alotha, the Waking City]|h|rEveryday @19:00 & 21:00 ST 12/12 Mythic+HC VIP+Share Loot. Get Curve+Mount+Carapace||Raden Cheap! M+(10-24) INTIME. PVP 0-2K4,AZSHARA,VISION,JAINA MOUNT Gold Any Server", -- [1]
 			"Anothing-Ravencrest", -- [2]
@@ -1709,7 +1687,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Anothing|r",
 			[51] = 1593353204,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [77]
+		}, -- [76]
 		{
 			"<NOVA>WTS M+15 160K /Nyalotha HC PL 200k/VIP Trader=100k/12/12M+mount 6000k/First 3 boses 150k /Hive Shad'har Xanesh 300k/Vex Drest 400k/Ra-den Ilgynoth 900k/Cara 1200k/N'zoth+mount 3000k/5 Mask 180k/JainaMount 500k/N'Zoth HC 90k/any PVP boost/w me", -- [1]
 			"Raremountz-Ravencrest", -- [2]
@@ -1731,7 +1709,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Raremountz|r",
 			[51] = 1593353206,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [78]
+		}, -- [77]
 		{
 			"WTS |cffa335ee|Hitem:175010::::::::120:264::3:7:4822:6578:6579:6562:6513:1487:4786:::|h[Maddened Adherent's Bulwark]|h|r", -- [1]
 			"Clunj-Ravencrest", -- [2]
@@ -1753,7 +1731,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcClunj|r",
 			[51] = 1593353211,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [79]
+		}, -- [78]
 		{
 			"wts 3 masks runs 25k each", -- [1]
 			"Blazefüry-Ravencrest", -- [2]
@@ -1775,7 +1753,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cBlazefüry|r",
 			[51] = 1593353211,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [80]
+		}, -- [79]
 		{
 			"<<GALLYWIX>> DEAL DAY! Get your M+ done before the reset! Price drops for ALL keys! /w for more info! Bulk buying discount! GOLD ONLY /w", -- [1]
 			"Keepsy-Ravencrest", -- [2]
@@ -1797,7 +1775,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeKeepsy|r",
 			[51] = 1593353211,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [81]
+		}, -- [80]
 		{
 			"WTS |cff66bbff|Hjournal:0:1180:16|h[Ny'alotha, the Waking City]|h|r12/12 Hc Full Run  19:00  - VIP trader   Available Only for gold  / < Cara + Nzoth + raden > / +Mythic 10-18 / smooth and cherry! lowest price", -- [1]
 			"Bestservice-Ravencrest", -- [2]
@@ -1819,7 +1797,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Bestservice|r",
 			[51] = 1593353215,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [82]
+		}, -- [81]
 		{
 			"Gallywix Community|| WTS Free Armor Stack Mythic+ (10-24) Guarantee INTIME+Specific keys|cffffff00|Hachievement:14145:Player-1305-0AC0244F:1:2:11:20:4294967295:4294967295:4294967295:4294967295|h[Battle for Azeroth Keystone Master: Season Four]|h|rBuy more than 1x (10-20)% OFF! Nyalotha 12/12 Mythic+HC! PVP 0-2K4,AZSHARA,VISION,JAINA MOUNT Gold Any Server", -- [1]
 			"Anothing-Ravencrest", -- [2]
@@ -1841,7 +1819,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Anothing|r",
 			[51] = 1593353227,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [83]
+		}, -- [82]
 		{
 			"Gallywix supersale !  Lady Jaina Proudmore + |cff71d5ff|Hspell:289555:0|h[Glacial Tidestorm]|h|r now on heavily discounted!", -- [1]
 			"Cyonagally-Ravencrest", -- [2]
@@ -1863,7 +1841,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Cyonagally|r",
 			[51] = 1593353228,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [84]
+		}, -- [83]
 		{
 			"<Gallywix> WTS |cffffff00|Hachievement:14069:Player-2073-0705E4D5:0:0:0:-1:0:0:0:0|h[Cutting Edge: N'Zoth the Corruptor]|h|r |cffffff00|Hachievement:14068:Player-2073-0705E4D5:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: N'Zoth the Corruptor]|h|r || M10-24 |cffffff00|Hachievement:14145:Player-2073-0705E4D5:0:0:0:-1:0:0:0:0|h[Battle for Azeroth Keystone Master: Season Four]|h|r || Jaina Mount || Visions || PVP || GOLD ONLY || HC Queen Azshara ||", -- [1]
 			"Keepsy-Ravencrest", -- [2]
@@ -1885,7 +1863,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeKeepsy|r",
 			[51] = 1593353232,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [85]
+		}, -- [84]
 		{
 			"Nova Community  Selling +M(10-22) IN TIME With FREE ARMORSTACK AND SHARELOOT! ||+10=85k || || +12=110k || ||+14=145k || || +15= 160k ||  2x=10%Off , [Ny'alotha, the Waking City] Hc Share loot 200k , Jaina 500k ,Vision All Servers /w for info", -- [1]
 			"Hiphopa-Ravencrest", -- [2]
@@ -1907,7 +1885,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Hiphopa|r",
 			[51] = 1593353234,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [86]
+		}, -- [85]
 		{
 			"Gallywix WTS |cffffff00|Hachievement:14069:Player-1329-0712EAE8:0:0:0:0:0:0:0:0|h[Cutting Edge: N'Zoth the Corruptor]|h|r  12/12 HC/MYTH VIP Slots!  |cffffff00|Hachievement:14068:Player-1329-0712EAE8:0:0:0:0:0:0:0:0|h[Ahead of the Curve: N'Zoth the Corruptor]|h|r & Carapace |cffffff00|Hachievement:14145:Player-1329-0712EAE8:0:0:0:0:0:0:0:0|h[Battle for Azeroth Keystone Master: Season Four]|h|r  M+ 10-25      PvP 0-2400 Gladiator!   Jaina Mount!   Visions", -- [1]
 			"Varaven-Ravencrest", -- [2]
@@ -1929,7 +1907,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecVaraven|r",
 			[51] = 1593353236,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [87]
+		}, -- [86]
 		{
 			"WTS boost|cff66bbff|Hjournal:0:1180:15|h[Ny'alotha, the Waking City]|h|r<HC>  <Carapace of Nzoth> and <Nzoth The Corruptor> and <Ra-den the Despoiled> heroic. <RIGHT NOW> GOLD ONLY! Get mount, curve and chance on 470 loot. Fast, smooth and cherry", -- [1]
 			"Mamaliano-Ravencrest", -- [2]
@@ -1951,7 +1929,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Mamaliano|r",
 			[51] = 1593353244,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [88]
+		}, -- [87]
 		{
 			"<Nova> WTS  Boost M+15=160k 5k For ARMORSTACK / M+10 =85k /M+(10-22) intime/2 RUN 10% Discount /Full clear [Ny'alotha, the Waking City] 200k /Curv 90k / Jaina mount 500k/Mythic raid NYA /Specific Boss/visions &...", -- [1]
 			"Mythrisen-Ravencrest", -- [2]
@@ -1973,7 +1951,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Mythrisen|r",
 			[51] = 1593353252,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [89]
+		}, -- [88]
 		{
 			"GALLYWIX WTS |cffffff00|Hachievement:14145:Player-1329-0712EAE8:0:0:0:0:0:0:0:0|h[Battle for Azeroth Keystone Master: Season Four]|h|r m+10-23 ArmorStack/All Dungeons!! 12/12 HC/MYTHIC VIP Loot!! |cff66bbff|Hjournal:0:1180:16|h[Ny'alotha, the Waking City]|h|r ,[Gladiator: Battle for Azeroth Season 4]PVP 0-2400 Gladiator, Visions!! Jaina Mount!!8", -- [1]
 			"Galysuper-Ravencrest", -- [2]
@@ -1995,7 +1973,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeGalysuper|r",
 			[51] = 1593353252,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [90]
+		}, -- [89]
 		{
 			"GALLYWIX WTS|cffffff00|Hachievement:14145:Player-1329-0710E239:0:0:0:-1:0:0:0:0|h[Battle for Azeroth Keystone Master: Season Four]|h|r|cffffff00|Hachievement:14068:Player-1329-0710E239:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: N'Zoth the Corruptor]|h|r+ CARAPACE!Raden|cffffff00|Hachievement:14069:Player-1329-0710E239:0:0:0:-1:0:0:0:0|h[Cutting Edge: N'Zoth the Corruptor]|h|rFull Mythic+HC @19:00 & 21:00! M+(10-24) INTIME, Pvp 0-2K4 Gladiator AZSHARA,VISION,JAINA Mount 500k", -- [1]
 			"Anothing-Ravencrest", -- [2]
@@ -2017,7 +1995,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Anothing|r",
 			[51] = 1593353253,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [91]
+		}, -- [90]
 		{
 			"<Gallywix Community> GREAT offers on M+ - ANY keys 10-24! ALL LOOT YOURS - Specific Keys - Armor Stack - Bulk Purchase Discounts! /w now!", -- [1]
 			"Keepsy-Ravencrest", -- [2]
@@ -2039,7 +2017,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeKeepsy|r",
 			[51] = 1593353257,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [92]
+		}, -- [91]
 		{
 			"WTS |cffffffff|Hitem:152496::::::::120:268::::::|h[Demitri's Draught of Deception]|h|r|cffffffff|Hitem:152543::::::::120:268::::::|h[Sand Shifter]|h|r/w me", -- [1]
 			"Bàmboo-Ravencrest", -- [2]
@@ -2061,7 +2039,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Bàmboo|r",
 			[51] = 1593353257,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [93]
+		}, -- [92]
 		{
 			"Nova Community  Selling +M(10-22) IN TIME With FREE ARMORSTACK AND SHARELOOT! ||+10=85k || || +12=110k || ||+15=160k || 2x=10%Off , |cff66bbff|Hjournal:0:1180:16|h[Ny'alotha, the Waking City]|h|r Hc Share loot 200k , Jaina 500k ,Vision /w for info", -- [1]
 			"Novacravenw-Ravencrest", -- [2]
@@ -2083,7 +2061,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Novacravenw|r",
 			[51] = 1593353259,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [94]
+		}, -- [93]
 		{
 			"<<NBC>> (Special Offer) WTS M+10 =85k, M+15= 160k with free Armor Stack Buy 2x runs get 10% Discount! (Specific Key Available).Ny'alotha Hc Raid Full Clear=200k (Personal trader available) -Mecha Hm + Mount - FH leveling (Only Gold) Wis Me For Info!!", -- [1]
 			"Novazii-Ravencrest", -- [2]
@@ -2105,7 +2083,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Novazii|r",
 			[51] = 1593353261,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [95]
+		}, -- [94]
 		{
 			"WTS GOING NOW  GRP is Ready NOW N zoth HC !!!! Mythic +2/+16-Mechagon Nm Hm <<Aerial Unit R-21/X>> (mecha mount) (Weekly chest 470i level gear)  / All tradable items Grp is rdy Level BOOST 110-120 in 2Hour", -- [1]
 			"Artapa-Ravencrest", -- [2]
@@ -2127,7 +2105,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Artapa|r",
 			[51] = 1593353261,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [96]
+		}, -- [95]
 		{
 			"> Hydra Community < WTS Pvp mount:|cff71d5ff|Hspell:230401:0|h[Ivory Hawkstrider]|h|r550k |||cff71d5ff|Hspell:148428:0|h[Ashhide Mushan Beast]|h|r40k , 100k  mount+title+pet+5 achievment l|cff71d5ff|Hspell:261395:0|h[The Hivemind]|h|r160K  /W ME", -- [1]
 			"Wmsecreett-Ravencrest", -- [2]
@@ -2149,7 +2127,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeWmsecreett|r",
 			[51] = 1593353269,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [97]
+		}, -- [96]
 		{
 			"<||Gallywix Community|| WTS 10-25 Keys All intime   HC/Mythic |cff66bbff|Hjournal:0:1180:15|h[Ny'alotha, the Waking City]|h|r With Top Guilds-Horrific Vision Full Clear 0-5 Mask - Jaina Mount/Rare Mount/Pets /w Me For more info||>", -- [1]
 			"Gaallydemo-Ravencrest", -- [2]
@@ -2171,7 +2149,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeGaallydemo|r",
 			[51] = 1593353274,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [98]
+		}, -- [97]
 		{
 			"WTS 5 masks vision runs! ONLY 90k!", -- [1]
 			"Zèraveth-Ravencrest", -- [2]
@@ -2193,7 +2171,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Zèraveth|r",
 			[51] = 1593353275,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [99]
+		}, -- [98]
 		{
 			"Gallywix Community|| WTS|cff66bbff|Hjournal:0:1180:15|h[Ny'alotha, the Waking City]|h|rEveryday @19:00 & 21:00 ST 12/12 Mythic+HC VIP+Share Loot. Get Curve+Mount+Carapace||Raden Cheap! M+(10-24) INTIME. PVP 0-2K4,AZSHARA,VISION,JAINA MOUNT Gold Any Server", -- [1]
 			"Anothing-Ravencrest", -- [2]
@@ -2215,7 +2193,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Anothing|r",
 			[51] = 1593353277,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [100]
+		}, -- [99]
 		{
 			"Gallywix WTS [Illidan Stormrage] Black temple timewalking, fast runs all day ! Get your glaive transmog with [I'll Hold These For You Until You Get Out]! /w to book in now!", -- [1]
 			"Cyonagally-Ravencrest", -- [2]
@@ -2237,7 +2215,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Cyonagally|r",
 			[51] = 1593353277,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [101]
+		}, -- [100]
 		{
 			"<Gallywix Community> Offering Visions (0-5 Masks) || M+ 10-21 Keys || Jaina Mount || Nya'lotha 12/12 HC & Mythic || Curve  (Cara & N'zoth) Multiple Runs Per Day || Islands  || PVP || Freehold Levelling || PVE/PVP Coaching || HC Ra-Den || ", -- [1]
 			"Keepsy-Ravencrest", -- [2]
@@ -2259,7 +2237,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeKeepsy|r",
 			[51] = 1593353279,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [102]
+		}, -- [101]
 		{
 			"<SBS> SELLING , 3x +11s 260k (9x 460 ilvl loot) , 3x +14s 380k(9x 465 ilvl loot) +10/95k ,+11/105K,+12/115k ,+15/170k FREE ARMOR STACK. +16 /+17s, Horrific Vision 5 mask 180k!", -- [1]
 			"Shiihun-Ravencrest", -- [2]
@@ -2281,7 +2259,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Shiihun|r",
 			[51] = 1593353279,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [103]
+		}, -- [102]
 		{
 			"WTS |cff66bbff|Hjournal:0:1001:1|h[Freehold]|h|r Levelup [110-120] FAST / M+[10-17] in Time / Vision 0-5 Mask <<< Cheap >>>", -- [1]
 			"Crazymonk-Ravencrest", -- [2]
@@ -2303,7 +2281,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Crazymonk|r",
 			[51] = 1593353282,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [104]
+		}, -- [103]
 		{
 			"WTS boost|cff66bbff|Hjournal:0:1180:15|h[Ny'alotha, the Waking City]|h|r<HC>  <Carapace of Nzoth> and <Nzoth The Corruptor> and <Ra-den the Despoiled> heroic. <RIGHT NOW> GOLD ONLY! Get mount, curve and chance on 470 loot. Fast, smooth and cherry", -- [1]
 			"Mamaliano-Ravencrest", -- [2]
@@ -2325,7 +2303,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Mamaliano|r",
 			[51] = 1593353294,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [105]
+		}, -- [104]
 		{
 			"Gallywix Community|| WTS Free Armor Stack Mythic+ (10-24) Guarantee INTIME+Specific keys|cffffff00|Hachievement:14145:Player-1305-0AC0244F:1:2:11:20:4294967295:4294967295:4294967295:4294967295|h[Battle for Azeroth Keystone Master: Season Four]|h|rBuy more than 1x (10-20)% OFF! Nyalotha 12/12 Mythic+HC! PVP 0-2K4,AZSHARA,VISION,JAINA MOUNT Gold Any Server", -- [1]
 			"Anothing-Ravencrest", -- [2]
@@ -2347,7 +2325,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Anothing|r",
 			[51] = 1593353297,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [106]
+		}, -- [105]
 		{
 			"<Nova Boosting Community> WTS Mythic Plus 10-21 Dungeons inti -12/12 N'yalotha Full HC 200K VIP TRADER 100K ONLY!+10 85K + 11 95K- +12 110K +13 130K +14 150K +15 ONLY 165K FREE ARMOR STACK +16 220K +17 300K ! JAINA MOUNT ONLY 500K!", -- [1]
 			"Novahuana-Ravencrest", -- [2]
@@ -2369,7 +2347,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Novahuana|r",
 			[51] = 1593353297,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [107]
+		}, -- [106]
 		{
 			"Want those old world rare-spawn mounts without camping? |cff71d5ff|Hspell:60002:0|h[Time-Lost Proto-Drake]|h|r(330k!), |cff71d5ff|Hspell:88718:0|h[Phosphorescent Stone Drake]|h|r, |cff71d5ff|Hspell:88750:0|h[Grey Riding Camel]|h|r for sale (Gold) now!", -- [1]
 			"Lanadrah-Ravencrest", -- [2]
@@ -2391,7 +2369,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Lanadrah|r",
 			[51] = 1593353300,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [108]
+		}, -- [107]
 		{
 			"Also available are |cff71d5ff|Hspell:288499:0|h[Frightened Kodo]|h|r, |cff71d5ff|Hspell:231428:0|h[Smoldering Ember Wyrm]|h|r and WoD rare spawns! Hundreds of visible reviews available, PM for prices :)", -- [1]
 			"Lanadrah-Ravencrest", -- [2]
@@ -2413,7 +2391,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Lanadrah|r",
 			[51] = 1593353300,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [109]
+		}, -- [108]
 		{
 			"<Gallywix> WTS M+ 10-24 Keys - Armor Stack - Specific Keys - |cffffff00|Hachievement:14145:Player-2073-07101F89:0:0:0:0:0:0:0:0|h[Battle for Azeroth Keystone Master: Season Four]|h|r - GOLD ONLY", -- [1]
 			"Keepsy-Ravencrest", -- [2]
@@ -2435,7 +2413,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeKeepsy|r",
 			[51] = 1593353303,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [110]
+		}, -- [109]
 		{
 			"WTS Keystone Boost 10-15! ", -- [1]
 			"Lolicica-Ravencrest", -- [2]
@@ -2457,7 +2435,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cLolicica|r",
 			[51] = 1593353304,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [111]
+		}, -- [110]
 		{
 			"[WТS] Nyalotha Normal & Heroic Boosts: get ilvl 445-470+ corrupted gear, NEW MOUNT, Essences & Curve Achieve. Fast runs with TOP Guilds every day. We have over 8349 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
 			"Iminahiwi-Ravencrest", -- [2]
@@ -2479,7 +2457,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cIminahiwi|r",
 			[51] = 1593353314,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [112]
+		}, -- [111]
 		{
 			"|cffffff00Blackhawk's Bulwark is under attack!|r", -- [1]
 			"", -- [2]
@@ -2501,7 +2479,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1593355062,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [113]
+		}, -- [112]
 		{
 			"|cffffff00Blackhawk's Bulwark is under attack!|r", -- [1]
 			"", -- [2]
@@ -2523,7 +2501,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1593356589,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [114]
+		}, -- [113]
 		{
 			"|cffffff00Blackhawk's Bulwark is under attack!|r", -- [1]
 			"", -- [2]
@@ -2545,7 +2523,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1593356653,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [115]
+		}, -- [114]
 		{
 			"|cffffff00Blackhawk's Bulwark is under attack!|r", -- [1]
 			"", -- [2]
@@ -2567,7 +2545,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1593356900,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [116]
+		}, -- [115]
 		{
 			"|cffffff00Blackhawk's Bulwark is under attack!|r", -- [1]
 			"", -- [2]
@@ -2589,7 +2567,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1593356973,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [117]
+		}, -- [116]
 		{
 			"|cffffff00Blackhawk's Bulwark is under attack!|r", -- [1]
 			"", -- [2]
@@ -2611,7 +2589,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1593357048,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [118]
+		}, -- [117]
 		{
 			"|cffffff00Blackhawk's Bulwark is under attack!|r", -- [1]
 			"", -- [2]
@@ -2633,7 +2611,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1593357111,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [119]
+		}, -- [118]
 		{
 			"|cffffff00Blackhawk's Bulwark is under attack!|r", -- [1]
 			"", -- [2]
@@ -2655,7 +2633,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1593360145,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [120]
+		}, -- [119]
 		{
 			"|cffffff00Blackhawk's Bulwark is under attack!|r", -- [1]
 			"", -- [2]
@@ -2677,7 +2655,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1593360443,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [121]
+		}, -- [120]
 		{
 			"|cffffff00Blackhawk's Bulwark is under attack!|r", -- [1]
 			"", -- [2]
@@ -2699,7 +2677,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1593360938,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [122]
+		}, -- [121]
 		{
 			"|cffffff00Blackhawk's Bulwark is under attack!|r", -- [1]
 			"", -- [2]
@@ -2721,7 +2699,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1593361012,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [123]
+		}, -- [122]
 		{
 			"|cffffff00Blackhawk's Bulwark is under attack!|r", -- [1]
 			"", -- [2]
@@ -2743,7 +2721,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1593361118,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [124]
+		}, -- [123]
 		{
 			"|cffffff00Stormheim is under attack!|r", -- [1]
 			"", -- [2]
@@ -2765,7 +2743,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1593361152,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [125]
+		}, -- [124]
 		{
 			"|cffffff00Blackhawk's Bulwark is under attack!|r", -- [1]
 			"", -- [2]
@@ -2787,7 +2765,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1593361204,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [126]
+		}, -- [125]
 		{
 			"|cffffff00Skyfire Triage Camp is under attack!|r", -- [1]
 			"", -- [2]
@@ -2808,6 +2786,28 @@ ElvCharacterDB = {
 			true, -- [17]
 			[52] = "",
 			[51] = 1593372945,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [126]
+		{
+			"can someone sync with me plz ? :D", -- [1]
+			"Zeldorn-Ravencrest", -- [2]
+			"", -- [3]
+			"1. General - Stormheim", -- [4]
+			"Zeldorn-Ravencrest", -- [5]
+			"", -- [6]
+			1, -- [7]
+			1, -- [8]
+			"General - Stormheim", -- [9]
+			0, -- [10]
+			67, -- [11]
+			"Player-1329-070B695A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa22fc8Zeldorn|r",
+			[51] = 1594475387,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [127]
 	},

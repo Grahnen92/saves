@@ -1,2821 +1,2205 @@
 
 ElvCharacterDB = {
 	["ChatEditHistory"] = {
-		"/RELOAD", -- [1]
-		"/s reload", -- [2]
-		"/plater", -- [3]
-		"/s &wa", -- [4]
-		"/s wa", -- [5]
-		"/opie", -- [6]
-		"/s &ec", -- [7]
-		"/reload", -- [8]
-		"/cw Taburim-Kazzak did you manage to kill tempestia?", -- [9]
-		"/cw Taburim-Kazzak could help you now :)", -- [10]
-		"/invite Taburim-Kazzak", -- [11]
-		"/cw Taburim-Kazzak you in warmode?", -- [12]
-		"/cw Taburim-Kazzak good", -- [13]
-		"/cw Taburim-Kazzak Damn straight!", -- [14]
+		"/cw Taburim-Kazzak good", -- [1]
+		"/ec", -- [2]
+		"/i ty", -- [3]
+		"/opie", -- [4]
+		"/cw Taburim-Kazzak Damn straight!", -- [5]
+		"/i cyas", -- [6]
+		"/cw Taburim-Kazzak cya", -- [7]
+		"/wa", -- [8]
+		"/cw Holyspikey-Magtheridon need that sword? :)", -- [9]
+		"/invite Taburim-Kazzak", -- [10]
+		"/wave", -- [11]
+		"/cw Taburim-Kazzak could help you now :)", -- [12]
+		"/reload", -- [13]
+		"/cw Taburim-Kazzak you in warmode?", -- [14]
 		"/cw Taburim-Kazzak np", -- [15]
-		"/cw Taburim-Kazzak cya", -- [16]
-		"/ec", -- [17]
-		"/dance", -- [18]
-		"/wave", -- [19]
-		"/wa", -- [20]
+		"/dance", -- [16]
+		"/s &ec", -- [17]
+		"/s &wa", -- [18]
+		"/cw Dextorian-Doomhammer need that chest? :)", -- [19]
+		"/cw Holyspikey-Magtheridon ok :)", -- [20]
 	},
 	["ChatHistoryLog"] = {
 		{
-			"The Gallywix  WTS|cff66bbff|Hjournal:0:1180:15|h[Ny'alotha, the Waking City]|h|rHC 350k |cff66bbff|Hjournal:1:2364:14|h[Ra-den the Despoiled]|h|rHC 175k (Carapace+N'Zoth 175k) Key (10-22) IN TIME (Vision WITH 5 mask)(PVP) Jaina Mount/gold all realms ", -- [1]
-			"Ucantseemee-Ravencrest", -- [2]
+			"*.*NOVA*.* is Offering Ny'alotha 12/12 Heroic [Shared loot] 140K! Trader for 60K! & Mythic 12/12 Included Mount and +3 Traders [VIP spot] --- Jaina Mount 350K! / M+15=90K / Vision 5mask 70K/", -- [1]
+			"Astrenbc-Ravencrest", -- [2]
 			"", -- [3]
 			"2. Trade - City", -- [4]
-			"Ucantseemee-Ravencrest", -- [5]
+			"Astrenbc-Ravencrest", -- [5]
 			"", -- [6]
 			2, -- [7]
 			2, -- [8]
 			"Trade - City", -- [9]
 			0, -- [10]
-			122, -- [11]
-			"Player-1329-068C3F4F", -- [12]
+			1207, -- [11]
+			"Player-1329-075ADA9A", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cfffef367Ucantseemee|r",
-			[51] = 1590139482,
+			[52] = "|cfffefefeAstrenbc|r",
+			[51] = 1604948249,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [1]
 		{
-			"The Gallywix Community || WTS |cff66bbff|Hjournal:0:1180:15|h[Ny'alotha, the Waking City]|h|r 12/12 Mythic/HC+VIP's |cff66bbff|Hjournal:1:2364:14|h[Ra-den the Despoiled]|h|r || M+10-21, Armor stacks & Specific keys || Vision Runs 0-5Mask || Freehold Speed Leveling || PVP || Jaina Mount & More, /W To Book", -- [1]
-			"Ðerego-Ravencrest", -- [2]
+			"WTS |cff71d5ff|Hspell:253087:0|h[Antoran Gloomhound]|h|r|cffffff00|Hachievement:11987:Player-1329-0942943E:1:10:29:20:4294967295:4294967295:4294967295:4294967295|h[Glory of the Argus Raider]|h|r20:00 server Time (cheap now)For gold /w me For info", -- [1]
+			"Forthecifer-Ravencrest", -- [2]
 			"", -- [3]
 			"2. Trade - City", -- [4]
-			"Ðerego-Ravencrest", -- [5]
+			"Forthecifer-Ravencrest", -- [5]
 			"", -- [6]
 			2, -- [7]
 			2, -- [8]
 			"Trade - City", -- [9]
 			0, -- [10]
-			124, -- [11]
-			"Player-1329-06F5FE8C", -- [12]
+			1208, -- [11]
+			"Player-1329-0942943E", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cfff38bb9Ðerego|r",
-			[51] = 1590139484,
+			[52] = "|cffc59a6cForthecifer|r",
+			[51] = 1604948251,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [2]
 		{
-			"someone wanna help me with the honey smasher`?", -- [1]
-			"Skylerwhite-Ravencrest", -- [2]
+			"WTS |cff71d5ff|Hspell:275623:0|h[Nazjatar Blood Serpent]|h|r 80k get your secret bfa mount within less then 8mins!", -- [1]
+			"Kissmyblades-Ravencrest", -- [2]
 			"", -- [3]
-			"1. General - Stormsong Valley", -- [4]
-			"Skylerwhite-Ravencrest", -- [5]
+			"2. Trade - City", -- [4]
+			"Kissmyblades-Ravencrest", -- [5]
 			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormsong Valley", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			139, -- [11]
-			"Player-1329-06CFAD20", -- [12]
+			1209, -- [11]
+			"Player-1329-068062FE", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cffa22fc8Skylerwhite|r",
-			[51] = 1590139574,
+			[52] = "|cfffef367Kissmyblades|r",
+			[51] = 1604948258,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [3]
 		{
-			"what does that honey gives?", -- [1]
-			"Mikz-Outland", -- [2]
+			"%s has earned the achievement |cffffff00|Hachievement:14271:Player-1329-05D1BD66:1:11:9:20:4294967295:4294967295:4294967295:4294967295|h[WoW's 16th Anniversary]|h|r!", -- [1]
+			"Maafckaa-Ravencrest", -- [2]
 			"", -- [3]
-			"1. General - Stormsong Valley", -- [4]
-			"Mikz-Outland", -- [5]
+			"", -- [4]
+			"Maafckaa-Ravencrest", -- [5]
 			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormsong Valley", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			141, -- [11]
-			"Player-1301-0AFD9522", -- [12]
+			1218, -- [11]
+			"Player-1329-05D1BD66", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffef367Mikz-Outland|r",
-			[51] = 1590139594,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cfff38bb9Maafckaa|r",
+			[51] = 1604948806,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [4]
 		{
-			"progression towards the mount", -- [1]
-			"Skylerwhite-Ravencrest", -- [2]
+			"priest buff pls", -- [1]
+			"Amagerlüder-BronzeDragonflight", -- [2]
 			"", -- [3]
-			"1. General - Stormsong Valley", -- [4]
-			"Skylerwhite-Ravencrest", -- [5]
+			"", -- [4]
+			"Amagerlüder-BronzeDragonflight", -- [5]
 			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormsong Valley", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			144, -- [11]
-			"Player-1329-06CFAD20", -- [12]
+			1235, -- [11]
+			"Player-1393-074AE3EE", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa22fc8Skylerwhite|r",
-			[51] = 1590139616,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cfff38bb9Amagerlüder-BronzeDragonflight|r",
+			[51] = 1604949305,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [5]
 		{
-			"what mount?", -- [1]
-			"Mikz-Outland", -- [2]
+			"wow", -- [1]
+			"Littlegenius-Turalyon", -- [2]
 			"", -- [3]
-			"1. General - Stormsong Valley", -- [4]
-			"Mikz-Outland", -- [5]
+			"", -- [4]
+			"Littlegenius-Turalyon", -- [5]
 			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormsong Valley", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			147, -- [11]
-			"Player-1301-0AFD9522", -- [12]
+			1236, -- [11]
+			"Player-1402-098B3A0B", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffef367Mikz-Outland|r",
-			[51] = 1590139625,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cff3ec6eaLittlegenius-Turalyon|r",
+			[51] = 1604949317,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [6]
 		{
-			"Why is nobody pvping", -- [1]
-			"Brett-Outland", -- [2]
+			"hello guyz", -- [1]
+			"Littlegenius-Turalyon", -- [2]
 			"", -- [3]
-			"1. General - Stormsong Valley", -- [4]
-			"Brett-Outland", -- [5]
+			"", -- [4]
+			"Littlegenius-Turalyon", -- [5]
 			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormsong Valley", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			148, -- [11]
-			"Player-1301-0B225ED1", -- [12]
+			1237, -- [11]
+			"Player-1402-098B3A0B", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Brett-Outland|r",
-			[51] = 1590139632,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cff3ec6eaLittlegenius-Turalyon|r",
+			[51] = 1604949320,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [7]
 		{
-			"honeyback harvester", -- [1]
-			"Solaireae-Silvermoon", -- [2]
+			"hey", -- [1]
+			"Vixarra-DunModr", -- [2]
 			"", -- [3]
-			"1. General - Stormsong Valley", -- [4]
-			"Solaireae-Silvermoon", -- [5]
+			"", -- [4]
+			"Vixarra-DunModr", -- [5]
 			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormsong Valley", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			150, -- [11]
-			"Player-3391-0AB05D9D", -- [12]
+			1238, -- [11]
+			"Player-1378-0A70CE28", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Solaireae-Silvermoon|r",
-			[51] = 1590139638,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cff006fdcVixarra-DunModr|r",
+			[51] = 1604949341,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [8]
 		{
-			"i have started a group in pve custom named honey smasher if someone wants to join", -- [1]
-			"Skylerwhite-Ravencrest", -- [2]
+			"hey", -- [1]
+			"Dextorian-Doomhammer", -- [2]
 			"", -- [3]
-			"1. General - Stormsong Valley", -- [4]
-			"Skylerwhite-Ravencrest", -- [5]
+			"", -- [4]
+			"Dextorian-Doomhammer", -- [5]
 			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormsong Valley", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			158, -- [11]
-			"Player-1329-06CFAD20", -- [12]
+			1239, -- [11]
+			"Player-1402-07135804", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa22fc8Skylerwhite|r",
-			[51] = 1590139675,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cffc59a6cDextorian-Doomhammer|r",
+			[51] = 1604949347,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [9]
 		{
-			"|cffffff00Deadwash is under attack!|r", -- [1]
-			"", -- [2]
+			"look away on |cff71d5ff|Hspell:283650:0|h[Blinding Faith]|h|r", -- [1]
+			"Gesma-BurningLegion", -- [2]
 			"", -- [3]
-			"3. LocalDefense - Stormsong Valley", -- [4]
-			"", -- [5]
+			"", -- [4]
+			"Gesma-BurningLegion", -- [5]
 			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Stormsong Valley", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			160, -- [11]
-			false, -- [12]
+			1278, -- [11]
+			"Player-3713-07284637", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1590139683,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cff3ec6eaGesma-BurningLegion|r",
+			[51] = 1604949546,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [10]
 		{
-			"Horde camping the Shell outs quest", -- [1]
-			"Brett-Outland", -- [2]
+			"i have 17 stacks ", -- [1]
+			"Mikklagaart-ArgentDawn", -- [2]
 			"", -- [3]
-			"1. General - Stormsong Valley", -- [4]
-			"Brett-Outland", -- [5]
+			"", -- [4]
+			"Mikklagaart-ArgentDawn", -- [5]
 			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormsong Valley", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			161, -- [11]
-			"Player-1301-0B225ED1", -- [12]
+			1286, -- [11]
+			"Player-3702-0626A3B8", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Brett-Outland|r",
-			[51] = 1590139684,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cff00fe97Mikklagaart-ArgentDawn|r",
+			[51] = 1604949588,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [11]
 		{
-			"anyone going for bounty?", -- [1]
-			"Bën-Silvermoon", -- [2]
+			"wipe", -- [1]
+			"Gesma-BurningLegion", -- [2]
 			"", -- [3]
-			"1. General - Stormsong Valley", -- [4]
-			"Bën-Silvermoon", -- [5]
+			"", -- [4]
+			"Gesma-BurningLegion", -- [5]
 			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormsong Valley", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			163, -- [11]
-			"Player-3391-089284FE", -- [12]
+			1292, -- [11]
+			"Player-3713-07284637", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Bën-Silvermoon|r",
-			[51] = 1590139719,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cff3ec6eaGesma-BurningLegion|r",
+			[51] = 1604949610,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [12]
 		{
-			"horde fucking everywhere", -- [1]
-			"Zeheb-Dragonblight", -- [2]
+			"wiep", -- [1]
+			"Amagerlüder-BronzeDragonflight", -- [2]
 			"", -- [3]
-			"1. General - Stormsong Valley", -- [4]
-			"Zeheb-Dragonblight", -- [5]
+			"", -- [4]
+			"Amagerlüder-BronzeDragonflight", -- [5]
 			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormsong Valley", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			164, -- [11]
-			"Player-1588-0BF33101", -- [12]
+			1295, -- [11]
+			"Player-1393-074AE3EE", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cZeheb-Dragonblight|r",
-			[51] = 1590139725,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cfff38bb9Amagerlüder-BronzeDragonflight|r",
+			[51] = 1604949623,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [13]
 		{
-			"oh rly", -- [1]
-			"Bën-Silvermoon", -- [2]
+			"wipe", -- [1]
+			"Amagerlüder-BronzeDragonflight", -- [2]
 			"", -- [3]
-			"1. General - Stormsong Valley", -- [4]
-			"Bën-Silvermoon", -- [5]
+			"", -- [4]
+			"Amagerlüder-BronzeDragonflight", -- [5]
 			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormsong Valley", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			165, -- [11]
-			"Player-3391-089284FE", -- [12]
+			1297, -- [11]
+			"Player-1393-074AE3EE", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Bën-Silvermoon|r",
-			[51] = 1590139740,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cfff38bb9Amagerlüder-BronzeDragonflight|r",
+			[51] = 1604949625,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [14]
 		{
-			"we getting assassin?", -- [1]
-			"Brett-Outland", -- [2]
+			"look away from blinding light", -- [1]
+			"Wearytravel-Quel'Thalas", -- [2]
 			"", -- [3]
-			"1. General - Stormsong Valley", -- [4]
-			"Brett-Outland", -- [5]
+			"", -- [4]
+			"Wearytravel-Quel'Thalas", -- [5]
 			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormsong Valley", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			169, -- [11]
-			"Player-1301-0B225ED1", -- [12]
+			1305, -- [11]
+			"Player-1396-0997C517", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Brett-Outland|r",
-			[51] = 1590139834,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cffa22fc8Wearytravel-Quel'Thalas|r",
+			[51] = 1604949639,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [15]
 		{
-			"not with 2", -- [1]
-			"Zeheb-Dragonblight", -- [2]
+			"with how many stacks do we switch?", -- [1]
+			"Mikklagaart-ArgentDawn", -- [2]
 			"", -- [3]
-			"1. General - Stormsong Valley", -- [4]
-			"Zeheb-Dragonblight", -- [5]
+			"", -- [4]
+			"Mikklagaart-ArgentDawn", -- [5]
 			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormsong Valley", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			171, -- [11]
-			"Player-1588-0BF33101", -- [12]
+			1308, -- [11]
+			"Player-3702-0626A3B8", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cZeheb-Dragonblight|r",
-			[51] = 1590139844,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cff00fe97Mikklagaart-ArgentDawn|r",
+			[51] = 1604949643,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [16]
 		{
-			"lol", -- [1]
-			"Zeheb-Dragonblight", -- [2]
+			"and focus adds", -- [1]
+			"Wearytravel-Quel'Thalas", -- [2]
 			"", -- [3]
-			"1. General - Stormsong Valley", -- [4]
-			"Zeheb-Dragonblight", -- [5]
+			"", -- [4]
+			"Wearytravel-Quel'Thalas", -- [5]
 			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormsong Valley", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			172, -- [11]
-			"Player-1588-0BF33101", -- [12]
+			1309, -- [11]
+			"Player-1396-0997C517", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cZeheb-Dragonblight|r",
-			[51] = 1590139859,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cffa22fc8Wearytravel-Quel'Thalas|r",
+			[51] = 1604949644,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [17]
 		{
-			"did supply drop?", -- [1]
-			"Taklucka-Outland", -- [2]
+			"we wiped cus no one tanked the one add that just destroyed the dps", -- [1]
+			"Wearytravel-Quel'Thalas", -- [2]
 			"", -- [3]
-			"1. General - Stormsong Valley", -- [4]
-			"Taklucka-Outland", -- [5]
+			"", -- [4]
+			"Wearytravel-Quel'Thalas", -- [5]
 			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormsong Valley", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			173, -- [11]
-			"Player-1301-09C1FC9A", -- [12]
+			1312, -- [11]
+			"Player-1396-0997C517", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe95Taklucka-Outland|r",
-			[51] = 1590139860,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cffa22fc8Wearytravel-Quel'Thalas|r",
+			[51] = 1604949666,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [18]
 		{
-			"|cffffff00Deadwash is under attack!|r", -- [1]
-			"", -- [2]
+			"1 tank on adds, 1 tank on boss", -- [1]
+			"Valentianux-Ravencrest", -- [2]
 			"", -- [3]
-			"3. LocalDefense - Stormsong Valley", -- [4]
-			"", -- [5]
+			"", -- [4]
+			"Valentianux-Ravencrest", -- [5]
 			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Stormsong Valley", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			174, -- [11]
-			false, -- [12]
+			1322, -- [11]
+			"Player-1329-09300DD8", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1590139939,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cfff38bb9Valentianux|r",
+			[51] = 1604949696,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [19]
 		{
-			"supply 46 56", -- [1]
-			"Kubert-Silvermoon", -- [2]
+			"does anyone know? I read the tactics but it doesnt say how many stacks to switch", -- [1]
+			"Mikklagaart-ArgentDawn", -- [2]
 			"", -- [3]
-			"1. General - Stormsong Valley", -- [4]
-			"Kubert-Silvermoon", -- [5]
+			"", -- [4]
+			"Mikklagaart-ArgentDawn", -- [5]
 			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormsong Valley", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			202, -- [11]
-			"Player-3391-089F93EE", -- [12]
+			1323, -- [11]
+			"Player-3702-0626A3B8", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Kubert-Silvermoon|r",
-			[51] = 1590140261,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cff00fe97Mikklagaart-ArgentDawn|r",
+			[51] = 1604949696,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [20]
 		{
-			"%s has earned the achievement |cffffff00|Hachievement:513:Player-1329-06FBA153:1:5:22:20:4294967295:4294967295:4294967295:4294967295|h[100 Honorable Kills]|h|r!", -- [1]
-			"Randomajs-Ravencrest", -- [2]
+			"do a ready chec", -- [1]
+			"Dextorian-Doomhammer", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Randomajs-Ravencrest", -- [5]
+			"Dextorian-Doomhammer", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			213, -- [11]
-			"Player-1329-06FBA153", -- [12]
+			1327, -- [11]
+			"Player-1402-07135804", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Randomajs|r",
-			[51] = 1590140399,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+			[52] = "|cffc59a6cDextorian-Doomhammer|r",
+			[51] = 1604949701,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [21]
 		{
-			"%s has earned the achievement |cffffff00|Hachievement:13060:Player-1329-057548C8:1:5:22:20:4294967295:4294967295:4294967295:4294967295|h[Kul Runnings]|h|r!", -- [1]
-			"Sheiik-Ravencrest", -- [2]
+			"i had 17 stacks at 1 point", -- [1]
+			"Mikklagaart-ArgentDawn", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Sheiik-Ravencrest", -- [5]
+			"Mikklagaart-ArgentDawn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			214, -- [11]
-			"Player-1329-057548C8", -- [12]
+			1328, -- [11]
+			"Player-3702-0626A3B8", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffe7b09Sheiik|r",
-			[51] = 1590140525,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+			[52] = "|cff00fe97Mikklagaart-ArgentDawn|r",
+			[51] = 1604949703,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [22]
 		{
-			"%s has earned the achievement |cffffff00|Hachievement:892:Player-1329-07092459:1:5:22:20:4294967295:4294967295:4294967295:4294967295|h[The Right Stuff]|h|r!", -- [1]
-			"Thickfish-Ravencrest", -- [2]
+			"okay so nobody knows", -- [1]
+			"Mikklagaart-ArgentDawn", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Thickfish-Ravencrest", -- [5]
+			"Mikklagaart-ArgentDawn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			217, -- [11]
-			"Player-1329-07092459", -- [12]
+			1329, -- [11]
+			"Player-3702-0626A3B8", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Thickfish|r",
-			[51] = 1590140655,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+			[52] = "|cff00fe97Mikklagaart-ArgentDawn|r",
+			[51] = 1604949725,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [23]
 		{
-			"varför hittar jag inte colossus smash i min spellbok.(har inte spleat på 1 år)", -- [1]
-			"Deuzz-Ravencrest", -- [2]
+			"but still we want a ready check", -- [1]
+			"Mikklagaart-ArgentDawn", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Mikklagaart-ArgentDawn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			221, -- [11]
-			"Player-1329-068079FF", -- [12]
+			1330, -- [11]
+			"Player-3702-0626A3B8", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cDeuzz|r",
-			[51] = 1590140730,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cff00fe97Mikklagaart-ArgentDawn|r",
+			[51] = 1604949735,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [24]
 		{
-			"Har du valt Warbreaker?", -- [1]
-			"Randomajs-Ravencrest", -- [2]
+			"ye ye, go go", -- [1]
+			"Valentianux-Ravencrest", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Valentianux-Ravencrest", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			222, -- [11]
-			"Player-1329-06FBA153", -- [12]
+			1331, -- [11]
+			"Player-1329-09300DD8", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Randomajs|r",
-			[51] = 1590140755,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cfff38bb9Valentianux|r",
+			[51] = 1604949741,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [25]
 		{
-			"som tlaent", -- [1]
-			"Randomajs-Ravencrest", -- [2]
+			"u should know it ", -- [1]
+			"Dextorian-Doomhammer", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Dextorian-Doomhammer", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			223, -- [11]
-			"Player-1329-06FBA153", -- [12]
+			1332, -- [11]
+			"Player-1402-07135804", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Randomajs|r",
-			[51] = 1590140757,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cffc59a6cDextorian-Doomhammer|r",
+			[51] = 1604949747,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [26]
 		{
-			"den byter ut den", -- [1]
-			"Randomajs-Ravencrest", -- [2]
+			"who got lead", -- [1]
+			"Gesma-BurningLegion", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Gesma-BurningLegion", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			224, -- [11]
-			"Player-1329-06FBA153", -- [12]
+			1333, -- [11]
+			"Player-3713-07284637", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Randomajs|r",
-			[51] = 1590140766,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cff3ec6eaGesma-BurningLegion|r",
+			[51] = 1604949751,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [27]
 		{
-			"ah", -- [1]
-			"Deuzz-Ravencrest", -- [2]
+			"focus adds", -- [1]
+			"Wearytravel-Quel'Thalas", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Wearytravel-Quel'Thalas", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			225, -- [11]
-			"Player-1329-068079FF", -- [12]
+			1337, -- [11]
+			"Player-1396-0997C517", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cDeuzz|r",
-			[51] = 1590140774,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cffa22fc8Wearytravel-Quel'Thalas|r",
+			[51] = 1604949790,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [28]
 		{
-			"tack", -- [1]
-			"Deuzz-Ravencrest", -- [2]
+			"focus adds again", -- [1]
+			"Wearytravel-Quel'Thalas", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Wearytravel-Quel'Thalas", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			226, -- [11]
-			"Player-1329-068079FF", -- [12]
+			1345, -- [11]
+			"Player-1396-0997C517", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cDeuzz|r",
-			[51] = 1590140782,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cffa22fc8Wearytravel-Quel'Thalas|r",
+			[51] = 1604949859,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [29]
 		{
-			"typ aoe colossus", -- [1]
-			"Randomajs-Ravencrest", -- [2]
+			"gj", -- [1]
+			"Wearytravel-Quel'Thalas", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Wearytravel-Quel'Thalas", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			227, -- [11]
-			"Player-1329-06FBA153", -- [12]
+			1353, -- [11]
+			"Player-1396-0997C517", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Randomajs|r",
-			[51] = 1590140784,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cffa22fc8Wearytravel-Quel'Thalas|r",
+			[51] = 1604949909,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [30]
 		{
-			"honeyback harvester event 33, 32", -- [1]
-			"Taklucka-Outland", -- [2]
+			"gj", -- [1]
+			"Gesma-BurningLegion", -- [2]
 			"", -- [3]
-			"1. General - Stormsong Valley", -- [4]
-			"Taklucka-Outland", -- [5]
+			"", -- [4]
+			"Gesma-BurningLegion", -- [5]
 			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormsong Valley", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			228, -- [11]
-			"Player-1301-09C1FC9A", -- [12]
+			1356, -- [11]
+			"Player-3713-07284637", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe95Taklucka-Outland|r",
-			[51] = 1590140828,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cff3ec6eaGesma-BurningLegion|r",
+			[51] = 1604949909,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [31]
 		{
-			"supply /w for inv", -- [1]
-			"Accurséd-Outland", -- [2]
+			"gj", -- [1]
+			"Holyspikey-Magtheridon", -- [2]
 			"", -- [3]
-			"1. General - Stormsong Valley", -- [4]
-			"Accurséd-Outland", -- [5]
+			"", -- [4]
+			"Holyspikey-Magtheridon", -- [5]
 			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormsong Valley", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			233, -- [11]
-			"Player-1301-045F191E", -- [12]
+			1362, -- [11]
+			"Player-3681-092CEB92", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cff8686ecAccurséd-Outland|r",
-			[51] = 1590141147,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cfff38bb9Holyspikey-Magtheridon|r",
+			[51] = 1604949914,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [32]
 		{
-			"%s has earned the achievement |cffffff00|Hachievement:14019:Player-1329-054C06F3:1:5:22:20:4294967295:4294967295:4294967295:4294967295|h[Smoke Test]|h|r!", -- [1]
-			"Trèétard-Ravencrest", -- [2]
-			"", -- [3]
+			"need that chest? :)", -- [1]
+			"Dextorian-Doomhammer", -- [2]
+			"Common", -- [3]
 			"", -- [4]
-			"Trèétard-Ravencrest", -- [5]
+			"Dextorian-Doomhammer", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			252, -- [11]
-			"Player-1329-054C06F3", -- [12]
+			1367, -- [11]
+			"Player-1402-07135804", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffe7b09Trèétard|r",
-			[51] = 1590141344,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+			[52] = "|cffc59a6cDextorian-Doomhammer|r",
+			[51] = 1604949926,
+			[50] = "CHAT_MSG_WHISPER_INFORM",
 		}, -- [33]
 		{
-			"denna jävla triumf of gomerigen", -- [1]
-			"Lumilia-Ravencrest", -- [2]
-			"", -- [3]
+			"ty", -- [1]
+			"Spelunker-Silvermoon", -- [2]
+			"Common", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Spelunker-Silvermoon", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			258, -- [11]
-			"Player-1329-05CBFD34", -- [12]
+			1368, -- [11]
+			"Player-3391-0B3EE52F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8686ecLumilia|r",
-			[51] = 1590141473,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cfffefefeSpelunker-Silvermoon|r",
+			[51] = 1604949928,
+			[50] = "CHAT_MSG_SAY",
 		}, -- [34]
 		{
-			"%s has earned the achievement |cffffff00|Hachievement:13765:Player-1329-066933E1:1:5:22:20:4294967295:4294967295:4294967295:4294967295|h[Subaquatic Support]|h|r!", -- [1]
-			"Nightsworn-Ravencrest", -- [2]
+			"this was noice", -- [1]
+			"Littlegenius-Turalyon", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Nightsworn-Ravencrest", -- [5]
+			"Littlegenius-Turalyon", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			262, -- [11]
-			"Player-1329-066933E1", -- [12]
+			1372, -- [11]
+			"Player-1402-098B3A0B", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Nightsworn|r",
-			[51] = 1590141511,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+			[52] = "|cff3ec6eaLittlegenius-Turalyon|r",
+			[51] = 1604949934,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [35]
 		{
-			"suspekt ilvl/statproc värde på dessa: |cff0070dd|Hitem:172848::::::::120:259::47:3:6515:1537:4785:::|h[Corrupted Aspirant's Insignia]|h|r|cff0070dd|Hitem:158153::::::::120:259::26:4:4803:6515:1607:4785:::|h[Gilded Loa Figurine]|h|r", -- [1]
-			"Nightsworn-Ravencrest", -- [2]
-			"", -- [3]
+			"need that sword? :)", -- [1]
+			"Holyspikey-Magtheridon", -- [2]
+			"Common", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Holyspikey-Magtheridon", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			272, -- [11]
-			"Player-1329-066933E1", -- [12]
+			1373, -- [11]
+			"Player-3681-092CEB92", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Nightsworn|r",
-			[51] = 1590142059,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cfff38bb9Holyspikey-Magtheridon|r",
+			[51] = 1604949939,
+			[50] = "CHAT_MSG_WHISPER_INFORM",
 		}, -- [36]
 		{
-			"om nu inte ppm skiljer", -- [1]
-			"Nightsworn-Ravencrest", -- [2]
+			"thank you :D", -- [1]
+			"Maevë-Ravencrest", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Maevë-Ravencrest", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			273, -- [11]
-			"Player-1329-066933E1", -- [12]
+			1375, -- [11]
+			"Player-1329-093F9B1F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Nightsworn|r",
-			[51] = 1590142081,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cfffef367Maevë|r",
+			[51] = 1604949949,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [37]
 		{
-			"%s has earned the achievement |cffffff00|Hachievement:14193:Player-1329-054C06F3:1:5:22:20:4294967295:4294967295:4294967295:4294967295|h[Vision of Destiny]|h|r!", -- [1]
-			"Trèétard-Ravencrest", -- [2]
+			"yeah ;(", -- [1]
+			"Holyspikey-Magtheridon", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Trèétard-Ravencrest", -- [5]
+			"Holyspikey-Magtheridon", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			275, -- [11]
-			"Player-1329-054C06F3", -- [12]
+			1376, -- [11]
+			"Player-3681-092CEB92", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffe7b09Trèétard|r",
-			[51] = 1590142128,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+			[52] = "|cfff38bb9Holyspikey-Magtheridon|r",
+			[51] = 1604949952,
+			[50] = "CHAT_MSG_WHISPER",
 		}, -- [38]
 		{
-			"%s has earned the achievement |cffffff00|Hachievement:652:Player-1329-07092459:1:5:22:20:4294967295:4294967295:4294967295:4294967295|h[The Escape From Durnholde]|h|r!", -- [1]
-			"Thickfish-Ravencrest", -- [2]
+			"does any1 need |cffa335ee|Hitem:165519::::::::50:260::4:4:4825:1472:4786:5435:1:28:689:::|h[Cowl of Righteous Resolve]|h|r", -- [1]
+			"Maevë-Ravencrest", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Thickfish-Ravencrest", -- [5]
+			"Maevë-Ravencrest", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			281, -- [11]
-			"Player-1329-07092459", -- [12]
+			1381, -- [11]
+			"Player-1329-093F9B1F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Thickfish|r",
-			[51] = 1590142552,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+			[52] = "|cfffef367Maevë|r",
+			[51] = 1604949976,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [39]
 		{
-			"%s has earned the achievement |cffffff00|Hachievement:13479:Player-1329-05CBFD34:1:5:22:20:4294967295:4294967295:4294967295:4294967295|h[Junkyard Architect]|h|r!", -- [1]
-			"Lumilia-Ravencrest", -- [2]
-			"", -- [3]
+			"ok :)", -- [1]
+			"Holyspikey-Magtheridon", -- [2]
+			"Common", -- [3]
 			"", -- [4]
-			"Lumilia-Ravencrest", -- [5]
+			"Holyspikey-Magtheridon", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			283, -- [11]
-			"Player-1329-05CBFD34", -- [12]
+			1388, -- [11]
+			"Player-3681-092CEB92", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8686ecLumilia|r",
-			[51] = 1590142668,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+			[52] = "|cfff38bb9Holyspikey-Magtheridon|r",
+			[51] = 1604950075,
+			[50] = "CHAT_MSG_WHISPER_INFORM",
 		}, -- [40]
 		{
-			"gz!", -- [1]
-			"Thickfish-Ravencrest", -- [2]
+			"tank left", -- [1]
+			"Vixarra-DunModr", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Vixarra-DunModr", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			285, -- [11]
-			"Player-1329-07092459", -- [12]
+			1406, -- [11]
+			"Player-1378-0A70CE28", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Thickfish|r",
-			[51] = 1590142696,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cff006fdcVixarra-DunModr|r",
+			[51] = 1604950262,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [41]
 		{
-			"|cffffff00|Hachievement:13541:Player-1329-05CBFD34:0:0:0:-1:895:0:0:0|h[Mecha-Done]|h|r", -- [1]
-			"Lumilia-Ravencrest", -- [2]
+			"MONKE", -- [1]
+			"Wearytravel-Quel'Thalas", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Wearytravel-Quel'Thalas", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			289, -- [11]
-			"Player-1329-05CBFD34", -- [12]
+			1408, -- [11]
+			"Player-1396-0997C517", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8686ecLumilia|r",
-			[51] = 1590142737,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cffa22fc8Wearytravel-Quel'Thalas|r",
+			[51] = 1604950283,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [42]
 		{
-			"|cffffff00|Hachievement:13686:Player-1329-05CBFD34:0:0:0:-1:31:0:0:0|h[Junkyard Melomaniac]|h|r", -- [1]
-			"Lumilia-Ravencrest", -- [2]
+			"so", -- [1]
+			"Dextorian-Doomhammer", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Dextorian-Doomhammer", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			291, -- [11]
-			"Player-1329-05CBFD34", -- [12]
+			1413, -- [11]
+			"Player-1402-07135804", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8686ecLumilia|r",
-			[51] = 1590142744,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cffc59a6cDextorian-Doomhammer|r",
+			[51] = 1604950333,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [43]
 		{
-			"rip", -- [1]
-			"Randomajs-Ravencrest", -- [2]
+			"how u guys doing", -- [1]
+			"Dextorian-Doomhammer", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Dextorian-Doomhammer", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			292, -- [11]
-			"Player-1329-06FBA153", -- [12]
+			1414, -- [11]
+			"Player-1402-07135804", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Randomajs|r",
-			[51] = 1590142755,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cffc59a6cDextorian-Doomhammer|r",
+			[51] = 1604950337,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [44]
 		{
-			"i jävla sak kvar har farmat den som en galning", -- [1]
-			"Lumilia-Ravencrest", -- [2]
+			"we need 2 tanks for this?", -- [1]
+			"Amagerlüder-BronzeDragonflight", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Amagerlüder-BronzeDragonflight", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			293, -- [11]
-			"Player-1329-05CBFD34", -- [12]
+			1415, -- [11]
+			"Player-1393-074AE3EE", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8686ecLumilia|r",
-			[51] = 1590142756,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cfff38bb9Amagerlüder-BronzeDragonflight|r",
+			[51] = 1604950343,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [45]
 		{
-			"man kan inte fått den va utan att veta det", -- [1]
-			"Lumilia-Ravencrest", -- [2]
+			"divide and conquer", -- [1]
+			"Wearytravel-Quel'Thalas", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Wearytravel-Quel'Thalas", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			297, -- [11]
-			"Player-1329-05CBFD34", -- [12]
+			1416, -- [11]
+			"Player-1396-0997C517", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8686ecLumilia|r",
-			[51] = 1590142855,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cffa22fc8Wearytravel-Quel'Thalas|r",
+			[51] = 1604950345,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [46]
 		{
-			"nice ", -- [1]
-			"Lumilia-Ravencrest", -- [2]
+			"yes", -- [1]
+			"Wearytravel-Quel'Thalas", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Wearytravel-Quel'Thalas", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			299, -- [11]
-			"Player-1329-05CBFD34", -- [12]
+			1417, -- [11]
+			"Player-1396-0997C517", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8686ecLumilia|r",
-			[51] = 1590142917,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cffa22fc8Wearytravel-Quel'Thalas|r",
+			[51] = 1604950348,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [47]
 		{
-			"och söndag", -- [1]
-			"Lumilia-Ravencrest", -- [2]
+			"i think waiting is the best part of WoW", -- [1]
+			"Holyspikey-Magtheridon", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Holyspikey-Magtheridon", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			317, -- [11]
-			"Player-1329-05CBFD34", -- [12]
+			1418, -- [11]
+			"Player-3681-092CEB92", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8686ecLumilia|r",
-			[51] = 1590143632,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cfff38bb9Holyspikey-Magtheridon|r",
+			[51] = 1604950361,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [48]
 		{
-			"få raiders och officers att signa", -- [1]
-			"Grizzlybeear-Ravencrest", -- [2]
+			"fun times", -- [1]
+			"Holyspikey-Magtheridon", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Holyspikey-Magtheridon", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			318, -- [11]
-			"Player-1329-05E5748E", -- [12]
+			1419, -- [11]
+			"Player-3681-092CEB92", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffe7b09Grizzlybeear|r",
-			[51] = 1590143648,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cfff38bb9Holyspikey-Magtheridon|r",
+			[51] = 1604950366,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [49]
 		{
-			"nice meme", -- [1]
-			"Grizzlybeear-Ravencrest", -- [2]
+			"guess il fuck myself then", -- [1]
+			"Dextorian-Doomhammer", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Dextorian-Doomhammer", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			319, -- [11]
-			"Player-1329-05E5748E", -- [12]
+			1420, -- [11]
+			"Player-1402-07135804", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffe7b09Grizzlybeear|r",
-			[51] = 1590143650,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cffc59a6cDextorian-Doomhammer|r",
+			[51] = 1604950376,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [50]
 		{
-			"haha officers värst", -- [1]
-			"Lumilia-Ravencrest", -- [2]
+			"we have to kill them in the same time right?", -- [1]
+			"Littlegenius-Turalyon", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Littlegenius-Turalyon", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			320, -- [11]
-			"Player-1329-05CBFD34", -- [12]
+			1421, -- [11]
+			"Player-1402-098B3A0B", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8686ecLumilia|r",
-			[51] = 1590143666,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cff3ec6eaLittlegenius-Turalyon|r",
+			[51] = 1604950379,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [51]
 		{
-			"trodde för en sec att opti skulle logga och signa men fel fick jag", -- [1]
-			"Lumilia-Ravencrest", -- [2]
+			"some1 swap?", -- [1]
+			"Amagerlüder-BronzeDragonflight", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Amagerlüder-BronzeDragonflight", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			325, -- [11]
-			"Player-1329-05CBFD34", -- [12]
+			1423, -- [11]
+			"Player-1393-074AE3EE", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8686ecLumilia|r",
-			[51] = 1590143779,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cfff38bb9Amagerlüder-BronzeDragonflight|r",
+			[51] = 1604950398,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [52]
 		{
-			"Funderade på det", -- [1]
-			"Optimajs-Ravencrest", -- [2]
+			"lets try", -- [1]
+			"Vikoshunter-Kazzak", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Vikoshunter-Kazzak", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			326, -- [11]
-			"Player-1329-0682EFCD", -- [12]
+			1424, -- [11]
+			"Player-1305-0146AFB6", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3ec5e9Optimajs|r",
-			[51] = 1590143789,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cffa9d271Vikoshunter-Kazzak|r",
+			[51] = 1604950446,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [53]
 		{
-			"nån som vill ha en fin cloth drerss som transmog? |cffa335ee|Hitem:940::::::::120:253:512:54:1:4247:120:::|h[Robes of Insight]|h|r?? försöt sälja men blir under cuttad hela tiden.. så nu kollar nån vill ha denna för free", -- [1]
-			"Liradormi-Ravencrest", -- [2]
+			"pull 2 together", -- [1]
+			"Vikoshunter-Kazzak", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Vikoshunter-Kazzak", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			327, -- [11]
-			"Player-1329-06F52FC2", -- [12]
+			1425, -- [11]
+			"Player-1305-0146AFB6", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Liradormi|r",
-			[51] = 1590143803,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cffa9d271Vikoshunter-Kazzak|r",
+			[51] = 1604950451,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [54]
 		{
-			"ja", -- [1]
-			"Lumilia-Ravencrest", -- [2]
+			"and 2 healers to hill yo", -- [1]
+			"Vikoshunter-Kazzak", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Vikoshunter-Kazzak", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			328, -- [11]
-			"Player-1329-05CBFD34", -- [12]
+			1426, -- [11]
+			"Player-1305-0146AFB6", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8686ecLumilia|r",
-			[51] = 1590143831,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cffa9d271Vikoshunter-Kazzak|r",
+			[51] = 1604950457,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [55]
 		{
-			"vad vill du ha för den`?", -- [1]
-			"Lumilia-Ravencrest", -- [2]
+			"you the same time", -- [1]
+			"Vikoshunter-Kazzak", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Vikoshunter-Kazzak", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			329, -- [11]
-			"Player-1329-05CBFD34", -- [12]
+			1427, -- [11]
+			"Player-1305-0146AFB6", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8686ecLumilia|r",
-			[51] = 1590143838,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cffa9d271Vikoshunter-Kazzak|r",
+			[51] = 1604950462,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [56]
 		{
-			"kramar :-p. sa fri", -- [1]
-			"Liradormi-Ravencrest", -- [2]
+			"ssure", -- [1]
+			"Dextorian-Doomhammer", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Dextorian-Doomhammer", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			330, -- [11]
-			"Player-1329-06F52FC2", -- [12]
+			1428, -- [11]
+			"Player-1402-07135804", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Liradormi|r",
-			[51] = 1590143851,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cffc59a6cDextorian-Doomhammer|r",
+			[51] = 1604950466,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [57]
 		{
-			"ok ty", -- [1]
-			"Lumilia-Ravencrest", -- [2]
+			"and we make dmg only to this with mark", -- [1]
+			"Vikoshunter-Kazzak", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Vikoshunter-Kazzak", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			331, -- [11]
-			"Player-1329-05CBFD34", -- [12]
+			1429, -- [11]
+			"Player-1305-0146AFB6", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8686ecLumilia|r",
-			[51] = 1590143863,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cffa9d271Vikoshunter-Kazzak|r",
+			[51] = 1604950482,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [58]
 		{
-			"skickar den från min bankchar \"Liralune\" ", -- [1]
-			"Liradormi-Ravencrest", -- [2]
+			"ok", -- [1]
+			"Dextorian-Doomhammer", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Dextorian-Doomhammer", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			333, -- [11]
-			"Player-1329-06F52FC2", -- [12]
+			1430, -- [11]
+			"Player-1402-07135804", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Liradormi|r",
-			[51] = 1590143921,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cffc59a6cDextorian-Doomhammer|r",
+			[51] = 1604950495,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [59]
 		{
-			"ok ty lunch nu men / hug", -- [1]
-			"Lumilia-Ravencrest", -- [2]
+			"3", -- [1]
+			"Amagerlüder-BronzeDragonflight", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Amagerlüder-BronzeDragonflight", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			335, -- [11]
-			"Player-1329-05CBFD34", -- [12]
+			1431, -- [11]
+			"Player-1393-074AE3EE", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8686ecLumilia|r",
-			[51] = 1590143947,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cfff38bb9Amagerlüder-BronzeDragonflight|r",
+			[51] = 1604950499,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [60]
 		{
-			"%s has earned the achievement |cffffff00|Hachievement:507:Player-1329-06A06B31:1:5:22:20:4294967295:4294967295:4294967295:4294967295|h[1000 Quests Completed]|h|r!", -- [1]
-			"Gretzelh-Ravencrest", -- [2]
+			"go", -- [1]
+			"Amagerlüder-BronzeDragonflight", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Gretzelh-Ravencrest", -- [5]
+			"Amagerlüder-BronzeDragonflight", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			341, -- [11]
-			"Player-1329-06A06B31", -- [12]
+			1433, -- [11]
+			"Player-1393-074AE3EE", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff006fdcGretzelh|r",
-			[51] = 1590144884,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+			[52] = "|cfff38bb9Amagerlüder-BronzeDragonflight|r",
+			[51] = 1604950502,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [61]
 		{
-			"4 timmar check bara 13 timmar kvar xD ", -- [1]
-			"Chrìlle-Ravencrest", -- [2]
+			"whos going 1 ", -- [1]
+			"Dextorian-Doomhammer", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Dextorian-Doomhammer", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			367, -- [11]
-			"Player-1329-04197B92", -- [12]
+			1435, -- [11]
+			"Player-1402-07135804", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Chrìlle|r",
-			[51] = 1590145367,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cffc59a6cDextorian-Doomhammer|r",
+			[51] = 1604950515,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [62]
 		{
-			"anyone around to help 2 dumb hordes that are preventing quests?", -- [1]
-			"Isabelaqt-Ravencrest", -- [2]
+			"go", -- [1]
+			"Vikoshunter-Kazzak", -- [2]
 			"", -- [3]
-			"1. General - Drustvar", -- [4]
-			"Isabelaqt-Ravencrest", -- [5]
+			"", -- [4]
+			"Vikoshunter-Kazzak", -- [5]
 			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Drustvar", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			383, -- [11]
-			"Player-1329-055044E4", -- [12]
+			1436, -- [11]
+			"Player-1305-0146AFB6", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Isabelaqt|r",
-			[51] = 1590145661,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cffa9d271Vikoshunter-Kazzak|r",
+			[51] = 1604950526,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [63]
 		{
-			"hmm, ska jag köra full warlock style", -- [1]
-			"Grizzlybeear-Ravencrest", -- [2]
+			"we still have one tank right ?", -- [1]
+			"Dextorian-Doomhammer", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Dextorian-Doomhammer", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			396, -- [11]
-			"Player-1329-05E5748E", -- [12]
+			1439, -- [11]
+			"Player-1402-07135804", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffe7b09Grizzlybeear|r",
-			[51] = 1590146228,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cffc59a6cDextorian-Doomhammer|r",
+			[51] = 1604950537,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [64]
 		{
-			"Echoing Void och Stamina flaska?", -- [1]
-			"Soffbordet-Ravencrest", -- [2]
+			"maked", -- [1]
+			"Vikoshunter-Kazzak", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Vikoshunter-Kazzak", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			397, -- [11]
-			"Player-1329-06F50DBD", -- [12]
+			1440, -- [11]
+			"Player-1305-0146AFB6", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff00fe95Soffbordet|r",
-			[51] = 1590146242,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cffa9d271Vikoshunter-Kazzak|r",
+			[51] = 1604950539,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [65]
 		{
-			"Lätt", -- [1]
-			"Soffbordet-Ravencrest", -- [2]
+			"marked#", -- [1]
+			"Vikoshunter-Kazzak", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Vikoshunter-Kazzak", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			398, -- [11]
-			"Player-1329-06F50DBD", -- [12]
+			1441, -- [11]
+			"Player-1305-0146AFB6", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff00fe95Soffbordet|r",
-			[51] = 1590146243,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cffa9d271Vikoshunter-Kazzak|r",
+			[51] = 1604950541,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [66]
 		{
-			"HAste hela bägen", -- [1]
-			"Thickfish-Ravencrest", -- [2]
+			"ill fucking go then", -- [1]
+			"Dextorian-Doomhammer", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Dextorian-Doomhammer", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			399, -- [11]
-			"Player-1329-07092459", -- [12]
+			1446, -- [11]
+			"Player-1402-07135804", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Thickfish|r",
-			[51] = 1590146244,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cffc59a6cDextorian-Doomhammer|r",
+			[51] = 1604950558,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [67]
 		{
-			"x3 expedient r3, racing pulse r2, GW & VR r2", -- [1]
-			"Grizzlybeear-Ravencrest", -- [2]
+			"do they have to die together?", -- [1]
+			"Vixarra-DunModr", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Vixarra-DunModr", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			400, -- [11]
-			"Player-1329-05E5748E", -- [12]
+			1455, -- [11]
+			"Player-1378-0A70CE28", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffe7b09Grizzlybeear|r",
-			[51] = 1590146246,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cff006fdcVixarra-DunModr|r",
+			[51] = 1604950638,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [68]
 		{
-			"Låter som mycket corruption", -- [1]
-			"Soffbordet-Ravencrest", -- [2]
+			"no", -- [1]
+			"Wearytravel-Quel'Thalas", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Wearytravel-Quel'Thalas", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			401, -- [11]
-			"Player-1329-06F50DBD", -- [12]
+			1458, -- [11]
+			"Player-1396-0997C517", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff00fe95Soffbordet|r",
-			[51] = 1590146259,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cffa22fc8Wearytravel-Quel'Thalas|r",
+			[51] = 1604950652,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [69]
 		{
-			"holy priest builden verkar iaf luta åt att maxa IT. 3 rank 2 och 6 r1", -- [1]
-			"Kabutoh-Ravencrest", -- [2]
+			"we just have to dmg them seperatly", -- [1]
+			"Wearytravel-Quel'Thalas", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Wearytravel-Quel'Thalas", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			414, -- [11]
-			"Player-1329-06A4E34D", -- [12]
+			1460, -- [11]
+			"Player-1396-0997C517", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffefefeKabutoh|r",
-			[51] = 1590146361,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cffa22fc8Wearytravel-Quel'Thalas|r",
+			[51] = 1604950657,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [70]
 		{
-			"Holy pala skulle köra 9xIT rank1 tror jag :D", -- [1]
-			"Optimajs-Ravencrest", -- [2]
+			"dont focus on one boss", -- [1]
+			"Wearytravel-Quel'Thalas", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Wearytravel-Quel'Thalas", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			415, -- [11]
-			"Player-1329-0682EFCD", -- [12]
+			1461, -- [11]
+			"Player-1396-0997C517", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3ec5e9Optimajs|r",
-			[51] = 1590146381,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cffa22fc8Wearytravel-Quel'Thalas|r",
+			[51] = 1604950661,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [71]
 		{
-			"Holy palas har lite att farma denna veckan ", -- [1]
-			"Optimajs-Ravencrest", -- [2]
+			"ma'ra deals more dmg now", -- [1]
+			"Wearytravel-Quel'Thalas", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Wearytravel-Quel'Thalas", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			416, -- [11]
-			"Player-1329-0682EFCD", -- [12]
+			1465, -- [11]
+			"Player-1396-0997C517", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3ec5e9Optimajs|r",
-			[51] = 1590146399,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cffa22fc8Wearytravel-Quel'Thalas|r",
+			[51] = 1604950686,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [72]
 		{
-			"ja de ska väl inte ha heart of darkness va?", -- [1]
-			"Kabutoh-Ravencrest", -- [2]
+			"kill rocks", -- [1]
+			"Littlegenius-Turalyon", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Littlegenius-Turalyon", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			417, -- [11]
-			"Player-1329-06A4E34D", -- [12]
+			1468, -- [11]
+			"Player-1402-098B3A0B", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffefefeKabutoh|r",
-			[51] = 1590146403,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cff3ec6eaLittlegenius-Turalyon|r",
+			[51] = 1604950699,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [73]
 		{
-			"man landar på 27 corruption som holy priest med den builden jag skrev", -- [1]
-			"Kabutoh-Ravencrest", -- [2]
+			"focus ma'ra", -- [1]
+			"Wearytravel-Quel'Thalas", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Wearytravel-Quel'Thalas", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			419, -- [11]
-			"Player-1329-06A4E34D", -- [12]
+			1469, -- [11]
+			"Player-1396-0997C517", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffefefeKabutoh|r",
-			[51] = 1590146420,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cffa22fc8Wearytravel-Quel'Thalas|r",
+			[51] = 1604950702,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [74]
 		{
-			"med maxad cloak", -- [1]
-			"Kabutoh-Ravencrest", -- [2]
+			"wipe`?", -- [1]
+			"Amagerlüder-BronzeDragonflight", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Amagerlüder-BronzeDragonflight", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			420, -- [11]
-			"Player-1329-06A4E34D", -- [12]
+			1476, -- [11]
+			"Player-1393-074AE3EE", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffefefeKabutoh|r",
-			[51] = 1590146427,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cfff38bb9Amagerlüder-BronzeDragonflight|r",
+			[51] = 1604950774,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [75]
 		{
-			"vene var bara nå gnäll jag läste att de behövde farma 30k innan lördag", -- [1]
-			"Optimajs-Ravencrest", -- [2]
+			"yup", -- [1]
+			"Wearytravel-Quel'Thalas", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Wearytravel-Quel'Thalas", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			421, -- [11]
-			"Player-1329-0682EFCD", -- [12]
+			1477, -- [11]
+			"Player-1396-0997C517", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3ec5e9Optimajs|r",
-			[51] = 1590146428,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cffa22fc8Wearytravel-Quel'Thalas|r",
+			[51] = 1604950779,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [76]
 		{
-			"vad gör nixxan då? varför farmar han inte?", -- [1]
-			"Kabutoh-Ravencrest", -- [2]
+			"die already", -- [1]
+			"Gesma-BurningLegion", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Gesma-BurningLegion", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			422, -- [11]
-			"Player-1329-06A4E34D", -- [12]
+			1478, -- [11]
+			"Player-3713-07284637", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffefefeKabutoh|r",
-			[51] = 1590146459,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cff3ec6eaGesma-BurningLegion|r",
+			[51] = 1604950793,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [77]
 		{
-			"^^", -- [1]
-			"Kabutoh-Ravencrest", -- [2]
+			"res", -- [1]
+			"Vikoshunter-Kazzak", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Vikoshunter-Kazzak", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			423, -- [11]
-			"Player-1329-06A4E34D", -- [12]
+			1479, -- [11]
+			"Player-1305-0146AFB6", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffefefeKabutoh|r",
-			[51] = 1590146477,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cffa9d271Vikoshunter-Kazzak|r",
+			[51] = 1604950840,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [78]
 		{
-			"livet suger när warcraftlogs är nere", -- [1]
-			"Grizzlybeear-Ravencrest", -- [2]
+			"stop healing", -- [1]
+			"Amagerlüder-BronzeDragonflight", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Amagerlüder-BronzeDragonflight", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			432, -- [11]
-			"Player-1329-05E5748E", -- [12]
+			1480, -- [11]
+			"Player-1393-074AE3EE", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffe7b09Grizzlybeear|r",
-			[51] = 1590147051,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cfff38bb9Amagerlüder-BronzeDragonflight|r",
+			[51] = 1604950874,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [79]
 		{
-			"wowlife", -- [1]
-			"Grizzlybeear-Ravencrest", -- [2]
+			"why...", -- [1]
+			"Gesma-BurningLegion", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Gesma-BurningLegion", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			433, -- [11]
-			"Player-1329-05E5748E", -- [12]
+			1484, -- [11]
+			"Player-3713-07284637", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffe7b09Grizzlybeear|r",
-			[51] = 1590147057,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cff3ec6eaGesma-BurningLegion|r",
+			[51] = 1604950965,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [80]
 		{
-			"Var nere igår också", -- [1]
-			"Soffbordet-Ravencrest", -- [2]
+			"guys u are not doing damage t him", -- [1]
+			"Dextorian-Doomhammer", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Dextorian-Doomhammer", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			434, -- [11]
-			"Player-1329-06F50DBD", -- [12]
+			1487, -- [11]
+			"Player-1402-07135804", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff00fe95Soffbordet|r",
-			[51] = 1590147059,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cffc59a6cDextorian-Doomhammer|r",
+			[51] = 1604950982,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [81]
 		{
-			"[Going NOW!] OBC sells \"Ahead of the Curve: N'zoth\" for 125k every 30 Minutes! Get your Achievement and also the Brand New Mount <Uncorrupted Voidwing> ! /w me for Info!", -- [1]
-			"Aramin-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Aramin-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			486, -- [11]
-			"Player-1329-06FD3BD9", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa22fc8Aramin|r",
-			[51] = 1590147721,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [82]
-		{
-			"|| Nova Community || Selling +M(10-22) IN TIME With FREE ARMORSTACK AND SHARELOOT!! ||+10=110k|| ||+12=130k || ||+14=170k || ||+15=220k ||  || VISION BOOST 1-5mask ||   + jaina 1mil  !! Ny'Alotha Raid Tonight * We Accept Gold in All Realms  /w For ", -- [1]
-			"Hiphop-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Hiphop-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			487, -- [11]
-			"Player-1329-070517DF", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffef367Hiphop|r",
-			[51] = 1590147725,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [83]
-		{
-			"WTS 5 mask vision run! Get your 470 corrupted piece now! 21 completed! PRICE 150k! Buy more than one run and get a DISCOUNT!  /W for more info", -- [1]
-			"Cigmund-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Cigmund-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			488, -- [11]
-			"Player-1329-0709514C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Cigmund|r",
-			[51] = 1590147727,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [84]
-		{
-			"WTS Ny’alotha Heroic& Mythic run* M10-20+ in timer* Arena 2x2, 3x3/ Horrific Visions Boost: Objectives", -- [1]
-			"Terfago-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Terfago-Ravencrest", -- [5]
-			"DND", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			489, -- [11]
-			"Player-1329-070BBC52", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffefefeTerfago|r",
-			[51] = 1590147730,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [85]
-		{
-			"Gallywix WTS  |cffffff00|Hachievement:14145:Player-1329-06BCDFB5:1:2:11:20:4294967295:4294967295:4294967295:4294967295|h[Battle for Azeroth Keystone Master: Season Four]|h|r  M+ 10-22 keys IN TIME. Ny'alotha  |cffffff00|Hachievement:14068:Player-1084-09796283:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: N'Zoth the Corruptor]|h|r  + Carapace/|cff66bbff|Hjournal:1:2364:14|h[Ra-den the Despoiled]|h|r HC |cff66bbff|Hjournal:0:1180:15|h[Ny'alotha, the Waking City]|h|r 12/12 /Mounts/pvp/Glory runs. /w for info :)", -- [1]
-			"Khoorra-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Khoorra-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			490, -- [11]
-			"Player-1329-070C10BA", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec5e9Khoorra|r",
-			[51] = 1590147733,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [86]
-		{
-			"<Gallywix> WTS |cffffff00|Hachievement:14145:Player-1329-070A79F8:0:0:0:-1:0:0:0:0|h[Battle for Azeroth Keystone Master: Season Four]|h|r20% Off Buy 6x M+(10-23) Share Loot. |cff66bbff|Hjournal:0:1180:15|h[Ny'alotha, the Waking City]|h|r12/12 Mythic+HC Unsaved Guild. <RADEN-Nzoth-Carapace HC> |cffffff00|Hachievement:14069:Player-1329-070A79F8:0:0:0:-1:0:0:0:0|h[Cutting Edge: N'Zoth the Corruptor]|h|r. PVP 0-2400,VISION,JAINA Mount", -- [1]
-			"Silentwix-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Silentwix-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			491, -- [11]
-			"Player-1329-070A79F8", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe95Silentwix|r",
-			[51] = 1590147734,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [87]
-		{
-			"WTS |cffffff00|Hachievement:14191:Player-1329-06EDDAD7:1:3:1:20:0:0:0:0|h[Servant of N'Zoth]|h|r title, comes with the |cff0070dd|Hitem:173951::::::::120:252::::::|h[N'lyeth, Sliver of N'Zoth]|h|r toy. /w me for info :)", -- [1]
-			"Kalliopio-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Kalliopio-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			492, -- [11]
-			"Player-1329-06EDDAD7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Kalliopio|r",
-			[51] = 1590147736,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [88]
-		{
-			"|| Nova Community || Selling +M(10-22) IN TIME With FREE ARMORSTACK AND SHARELOOT!! ||+10=100k|| ||+12=130k || ||+15=220k || |cff66bbff|Hjournal:0:1180:14|h[Ny'alotha, the Waking City]|h|r Full Clear 350k + Trader ,Jaina 1mil . Vision!!  /w For info", -- [1]
-			"Novacraven-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Novacraven-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			493, -- [11]
-			"Player-1329-06FC85C7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec5e9Novacraven|r",
-			[51] = 1590147736,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [89]
-		{
-			"WTS leveling boost 110-120 quickly! w me for more info!", -- [1]
-			"Dhkimmik-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Dhkimmik-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			494, -- [11]
-			"Player-1329-06808D61", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa22fc8Dhkimmik|r",
-			[51] = 1590147738,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [90]
-		{
-			"<Twilight Community> HUGE SALE NOW ON! +10 110k +11 130k +12 150k +13 170k +14 190k +15 225k BUYING 2 OR MORE FREE ARMOR STACK.  All loot is you.  All keys guaranteed in time/w for more info", -- [1]
-			"Twilightizi-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Twilightizi-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			495, -- [11]
-			"Player-1329-0708BE7C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Twilightizi|r",
-			[51] = 1590147739,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [91]
-		{
-			"%s has earned the achievement |cffffff00|Hachievement:13744:Player-1329-06BAE089:1:5:22:20:4294967295:4294967295:4294967295:4294967295|h[Seasoned: Bladesman Inowari]|h|r!", -- [1]
-			"Ásbjörn-Ravencrest", -- [2]
+			"i said hit only with mark", -- [1]
+			"Vikoshunter-Kazzak", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Ásbjörn-Ravencrest", -- [5]
+			"Vikoshunter-Kazzak", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			503, -- [11]
-			"Player-1329-06BAE089", -- [12]
+			1495, -- [11]
+			"Player-1305-0146AFB6", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cÁsbjörn|r",
-			[51] = 1590147782,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+			[52] = "|cffa9d271Vikoshunter-Kazzak|r",
+			[51] = 1604951015,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [82]
+		{
+			"guys we need to dps them seperatly", -- [1]
+			"Wearytravel-Quel'Thalas", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Wearytravel-Quel'Thalas", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1496, -- [11]
+			"Player-1396-0997C517", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa22fc8Wearytravel-Quel'Thalas|r",
+			[51] = 1604951023,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [83]
+		{
+			"600 k on secound 1", -- [1]
+			"Vikoshunter-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Vikoshunter-Kazzak", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1497, -- [11]
+			"Player-1305-0146AFB6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa9d271Vikoshunter-Kazzak|r",
+			[51] = 1604951024,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [84]
+		{
+			"read adventure guide is soo simple", -- [1]
+			"Littlegenius-Turalyon", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Littlegenius-Turalyon", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1498, -- [11]
+			"Player-1402-098B3A0B", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff3ec6eaLittlegenius-Turalyon|r",
+			[51] = 1604951035,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [85]
+		{
+			"we need another tank", -- [1]
+			"Dextorian-Doomhammer", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Dextorian-Doomhammer", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1499, -- [11]
+			"Player-1402-07135804", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cDextorian-Doomhammer|r",
+			[51] = 1604951045,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [86]
+		{
+			"aye", -- [1]
+			"Maevë-Ravencrest", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Maevë-Ravencrest", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1501, -- [11]
+			"Player-1329-093F9B1F", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffef367Maevë|r",
+			[51] = 1604951073,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [87]
+		{
+			"some1 just swap", -- [1]
+			"Amagerlüder-BronzeDragonflight", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Amagerlüder-BronzeDragonflight", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1502, -- [11]
+			"Player-1393-074AE3EE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff38bb9Amagerlüder-BronzeDragonflight|r",
+			[51] = 1604951088,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [88]
+		{
+			"and when i say separatly i mean doing it all the time", -- [1]
+			"Wearytravel-Quel'Thalas", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Wearytravel-Quel'Thalas", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1507, -- [11]
+			"Player-1396-0997C517", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa22fc8Wearytravel-Quel'Thalas|r",
+			[51] = 1604951118,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [89]
+		{
+			"kick afk", -- [1]
+			"Amagerlüder-BronzeDragonflight", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Amagerlüder-BronzeDragonflight", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1509, -- [11]
+			"Player-1393-074AE3EE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff38bb9Amagerlüder-BronzeDragonflight|r",
+			[51] = 1604951126,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [90]
+		{
+			"hit only 1", -- [1]
+			"Vikoshunter-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Vikoshunter-Kazzak", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1510, -- [11]
+			"Player-1305-0146AFB6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa9d271Vikoshunter-Kazzak|r",
+			[51] = 1604951131,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [91]
+		{
+			"600k on previous ", -- [1]
+			"Vikoshunter-Kazzak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Vikoshunter-Kazzak", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1511, -- [11]
+			"Player-1305-0146AFB6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa9d271Vikoshunter-Kazzak|r",
+			[51] = 1604951140,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [92]
 		{
-			"WTS leveling boost 110-120 quickly! w me for more info!", -- [1]
-			"Dhkimmik-Ravencrest", -- [2]
+			"kick af", -- [1]
+			"Wearytravel-Quel'Thalas", -- [2]
 			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Dhkimmik-Ravencrest", -- [5]
+			"", -- [4]
+			"Wearytravel-Quel'Thalas", -- [5]
 			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			511, -- [11]
-			"Player-1329-06808D61", -- [12]
+			1512, -- [11]
+			"Player-1396-0997C517", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa22fc8Dhkimmik|r",
-			[51] = 1590147846,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cffa22fc8Wearytravel-Quel'Thalas|r",
+			[51] = 1604951143,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [93]
 		{
-			"<Gallywix> WTS |cffffff00|Hachievement:14145:Player-1329-070A79F8:0:0:0:-1:0:0:0:0|h[Battle for Azeroth Keystone Master: Season Four]|h|r20% Off Buy 6x M+(10-23) Share Loot. |cff66bbff|Hjournal:0:1180:15|h[Ny'alotha, the Waking City]|h|r12/12 Mythic+HC Unsaved Guild. <RADEN-Nzoth-Carapace HC> |cffffff00|Hachievement:14069:Player-1329-070A79F8:0:0:0:-1:0:0:0:0|h[Cutting Edge: N'Zoth the Corruptor]|h|r. PVP 0-2400,VISION,JAINA Mount", -- [1]
-			"Silentwix-Ravencrest", -- [2]
+			",,,", -- [1]
+			"Vikoshunter-Kazzak", -- [2]
 			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Silentwix-Ravencrest", -- [5]
+			"", -- [4]
+			"Vikoshunter-Kazzak", -- [5]
 			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			512, -- [11]
-			"Player-1329-070A79F8", -- [12]
+			1513, -- [11]
+			"Player-1305-0146AFB6", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe95Silentwix|r",
-			[51] = 1590147846,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cffa9d271Vikoshunter-Kazzak|r",
+			[51] = 1604951143,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [94]
 		{
-			"Gallywix Community WTS Mythic Jaina Proudmore+ |cffa335ee|Hitem:166705::::::::4:259::::::|h[Glacial Tidestorm]|h|r // M+10-21 KEYS IN TIME  // 12/12 HC and MYTHIC Ny'alotha // Get CURVE + CE / Visions // Islands // Legacy raids and more /w me for info.", -- [1]
-			"Khoorra-Ravencrest", -- [2]
+			"vote to kick afk", -- [1]
+			"Vikoshunter-Kazzak", -- [2]
 			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Khoorra-Ravencrest", -- [5]
+			"", -- [4]
+			"Vikoshunter-Kazzak", -- [5]
 			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			513, -- [11]
-			"Player-1329-070C10BA", -- [12]
+			1514, -- [11]
+			"Player-1305-0146AFB6", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec5e9Khoorra|r",
-			[51] = 1590147849,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cffa9d271Vikoshunter-Kazzak|r",
+			[51] = 1604951160,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [95]
 		{
-			"WTS 5 mask vision run! Get your 470 corrupted piece now! 21 completed! PRICE 150k! Buy more than one run and get a DISCOUNT!  /W for more info", -- [1]
-			"Cigmund-Ravencrest", -- [2]
+			"tank kick the afk", -- [1]
+			"Amagerlüder-BronzeDragonflight", -- [2]
 			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Cigmund-Ravencrest", -- [5]
+			"", -- [4]
+			"Amagerlüder-BronzeDragonflight", -- [5]
 			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			514, -- [11]
-			"Player-1329-0709514C", -- [12]
+			1515, -- [11]
+			"Player-1393-074AE3EE", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Cigmund|r",
-			[51] = 1590147852,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cfff38bb9Amagerlüder-BronzeDragonflight|r",
+			[51] = 1604951163,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [96]
 		{
-			"|| Nova Community || Selling +M(10-22) IN TIME With FREE ARMORSTACK AND SHARELOOT!! ||+10=100k|| ||+12=130k || ||+15=220k || |cff66bbff|Hjournal:0:1180:14|h[Ny'alotha, the Waking City]|h|r Full Clear 350k + Trader ,Jaina 1mil . Vision!!  /w For info", -- [1]
-			"Novacraven-Ravencrest", -- [2]
+			"to come another", -- [1]
+			"Vikoshunter-Kazzak", -- [2]
 			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Novacraven-Ravencrest", -- [5]
+			"", -- [4]
+			"Vikoshunter-Kazzak", -- [5]
 			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			515, -- [11]
-			"Player-1329-06FC85C7", -- [12]
+			1516, -- [11]
+			"Player-1305-0146AFB6", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec5e9Novacraven|r",
-			[51] = 1590147854,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cffa9d271Vikoshunter-Kazzak|r",
+			[51] = 1604951165,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [97]
 		{
-			"[Going NOW!] OBC sells \"Ahead of the Curve: N'zoth\" for 125k every 30 Minutes! Get your Achievement and also the Brand New Mount <Uncorrupted Voidwing> ! /w me for Info!", -- [1]
-			"Aramin-Ravencrest", -- [2]
+			"*.*NOVA*.* is Offering Ny'alotha 12/12 Heroic [Shared loot] 140K! Trader for 60K! & Mythic 12/12 Included Mount and +3 Traders [VIP spot] --- Jaina Mount 350K! / M+15=90K / Vision 5mask 70K/", -- [1]
+			"Astrenbc-Ravencrest", -- [2]
 			"", -- [3]
 			"2. Trade - City", -- [4]
-			"Aramin-Ravencrest", -- [5]
+			"Astrenbc-Ravencrest", -- [5]
 			"", -- [6]
 			2, -- [7]
 			2, -- [8]
 			"Trade - City", -- [9]
 			0, -- [10]
-			518, -- [11]
-			"Player-1329-06FD3BD9", -- [12]
+			1529, -- [11]
+			"Player-1329-075ADA9A", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cffa22fc8Aramin|r",
-			[51] = 1590147863,
+			[52] = "|cfffefefeAstrenbc|r",
+			[51] = 1604953820,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [98]
 		{
-			"WTS TODAY! 12/12 MYTHIC |cffffff00|Hachievement:14069:Player-1329-0709B603:1:3:26:20:4294967295:4294967295:4294967295:4294967295|h[Cutting Edge: N'Zoth the Corruptor]|h|r+LOOT (3+TRADER FOR YOUR CLASS!)+MOUNT (Ny'alotha Allseer). /WHISP FOR MORE INFO", -- [1]
-			"Rizzoy-Ravencrest", -- [2]
+			"wts . dungeon Boosting< 10-22 Keystone intime Share Loot Armor Stack>and<Freehold fast lvl boost>", -- [1]
+			"Mamaliano-Ravencrest", -- [2]
 			"", -- [3]
 			"2. Trade - City", -- [4]
-			"Rizzoy-Ravencrest", -- [5]
+			"Mamaliano-Ravencrest", -- [5]
 			"", -- [6]
 			2, -- [7]
 			2, -- [8]
 			"Trade - City", -- [9]
 			0, -- [10]
-			522, -- [11]
-			"Player-1329-0709B603", -- [12]
+			1530, -- [11]
+			"Player-1329-06B2AAB5", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cff3ec5e9Rizzoy|r",
-			[51] = 1590147867,
+			[52] = "|cfffe7b09Mamaliano|r",
+			[51] = 1604953822,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [99]
-		{
-			"|| Nova Community || Selling +M(10-22) IN TIME With FREE ARMORSTACK AND SHARELOOT!! ||+10=110k|| ||+12=130k || ||+14=170k || ||+15=220k ||  || VISION BOOST 1-5mask ||   + jaina 1mil  !! Ny'Alotha Raid Tonight * We Accept Gold in All Realms  /w For ", -- [1]
-			"Hiphop-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Hiphop-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			523, -- [11]
-			"Player-1329-070517DF", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffef367Hiphop|r",
-			[51] = 1590147868,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [100]
-		{
-			"[RCU] We are selling M+10 to 23 for GOLD, guaranteed intime and all loot traded to you! ! WEEKEND DEAL!! Price Reduction on +15 keys! Specific keys and armor Stacking Reduced also!!! /w me for more info", -- [1]
-			"Davïncï-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Davïncï-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			524, -- [11]
-			"Player-1329-05E9E664", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Davïncï|r",
-			[51] = 1590147869,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [101]
-		{
-			"[Today at 20:00] OBC is selling Ny'alotha 12/12 HC TODAY at 20:00 ST. VIP, 425k lootshare and personal loot for 350k -- ||||WTS Visions & Leveling |||| M+10-21 in time, specific key & armorstack available!", -- [1]
-			"Aramin-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Aramin-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			525, -- [11]
-			"Player-1329-06FD3BD9", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa22fc8Aramin|r",
-			[51] = 1590147869,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [102]
-		{
-			"The Gallywix  WTS|cff66bbff|Hjournal:0:1180:15|h[Ny'alotha, the Waking City]|h|rHC 350k |cff66bbff|Hjournal:1:2364:14|h[Ra-den the Despoiled]|h|rHC 175k (Carapace+N'Zoth 175k) Key (10-22) IN TIME (Vision WITH 5 mask)(PVP) Jaina Mount/gold all realms ", -- [1]
-			"Ucantseemee-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Ucantseemee-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			530, -- [11]
-			"Player-1329-068C3F4F", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffef367Ucantseemee|r",
-			[51] = 1590147882,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [103]
-		{
-			"<NBC> Selling M+ Boost(6-17) / M+ 10=100k// M+15=220k / FREE ARMOR STACK for all keys  /Selling HC&MYTHIC Raid, Ny'alotha /Jaina mount/Mechagon NM/HM+Mount 100% / 110-120 FH Boost /  Horrific Vissions aswell /Gold Only /w me for more info", -- [1]
-			"Danielxdruid-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Danielxdruid-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			531, -- [11]
-			"Player-1329-06DD29CD", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Danielxdruid|r",
-			[51] = 1590147884,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [104]
-		{
-			"<Twilight Community> NYA 20:00 server time // personal loot 340k // shared loot 400k // PL with 1 trader 590k // SL with 1 trader 650k // whis now to book // FOR GOLD ONLY", -- [1]
-			"Needlefire-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Needlefire-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			532, -- [11]
-			"Player-1329-07019714", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Needlefire|r",
-			[51] = 1590147886,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [105]
-		{
-			"Gallywix WTS  |cffffff00|Hachievement:14145:Player-1329-06BCDFB5:1:2:11:20:4294967295:4294967295:4294967295:4294967295|h[Battle for Azeroth Keystone Master: Season Four]|h|r  M+ 10-22 keys IN TIME. Ny'alotha  |cffffff00|Hachievement:14068:Player-1084-09796283:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: N'Zoth the Corruptor]|h|r  + Carapace/|cff66bbff|Hjournal:1:2364:14|h[Ra-den the Despoiled]|h|r HC |cff66bbff|Hjournal:0:1180:15|h[Ny'alotha, the Waking City]|h|r 12/12 /Mounts/pvp/Glory runs. /w for info :)", -- [1]
-			"Khoorra-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Khoorra-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			533, -- [11]
-			"Player-1329-070C10BA", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec5e9Khoorra|r",
-			[51] = 1590147889,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [106]
-		{
-			"wheres the chest", -- [1]
-			"Jbieber-Wildhammer", -- [2]
-			"", -- [3]
-			"1. General - Stormsong Valley", -- [4]
-			"Jbieber-Wildhammer", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormsong Valley", -- [9]
-			0, -- [10]
-			584, -- [11]
-			"Player-1313-043852C5", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cJbieber-Wildhammer|r",
-			[51] = 1590148594,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [107]
-		{
-			"supply at 54 63", -- [1]
-			"Ethurospal-Ravencrest", -- [2]
-			"", -- [3]
-			"1. General - Stormsong Valley", -- [4]
-			"Ethurospal-Ravencrest", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Stormsong Valley", -- [9]
-			0, -- [10]
-			585, -- [11]
-			"Player-1329-06F3F50F", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Ethurospal|r",
-			[51] = 1590148601,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [108]
-		{
-			"WTS 5 mask vision run! Get your 470 corrupted piece now! 21 completed! PRICE 150k! Buy more than one run and get a DISCOUNT!  /W for more info", -- [1]
-			"Cigmund-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Cigmund-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			599, -- [11]
-			"Player-1329-0709514C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Cigmund|r",
-			[51] = 1590148765,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [109]
-		{
-			"WTS ---  5 Mask Horrific Vision --- Guaranteed 470 Corrupted Gear --- You can AFK or follow me! /w", -- [1]
-			"Ylquiorra-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Ylquiorra-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			600, -- [11]
-			"Player-1329-069BFBB8", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa22fc8Ylquiorra|r",
-			[51] = 1590148770,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [110]
-		{
-			"Gallywix WTS  |cffffff00|Hachievement:14145:Player-1329-06BCDFB5:1:2:11:20:4294967295:4294967295:4294967295:4294967295|h[Battle for Azeroth Keystone Master: Season Four]|h|r  M+ 10-22 keys IN TIME. Ny'alotha  |cffffff00|Hachievement:14068:Player-1084-09796283:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: N'Zoth the Corruptor]|h|r  + Carapace/|cff66bbff|Hjournal:1:2364:14|h[Ra-den the Despoiled]|h|r HC |cff66bbff|Hjournal:0:1180:15|h[Ny'alotha, the Waking City]|h|r 12/12 /Mounts/pvp/Glory runs. /w for info :)", -- [1]
-			"Khoorra-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Khoorra-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			603, -- [11]
-			"Player-1329-070C10BA", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec5e9Khoorra|r",
-			[51] = 1590148773,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [111]
-		{
-			"(NBC) Offering M+ Boost 10=100k/ M+15=220k in Time/ Free armor stack even at 1 run +10 to +15 / 5%-10% Discount on more than 1 run / shared loot  /  5 run 10% + armor ! / Selling NY'ALOTHA Full clear 315k  /  Curve 90k  /Mechagon HM /w for info", -- [1]
-			"Izannagia-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Izannagia-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			605, -- [11]
-			"Player-1329-06BA441D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffef367Izannagia|r",
-			[51] = 1590148782,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [112]
-		{
-			"We are selling N'Zoth Heroic Now! Receive|cffffff00|Hachievement:14068:Player-1329-056D98A1:1:2:14:20:4294967295:4294967295:4294967295:4294967295|h[Ahead of the Curve: N'Zoth the Corruptor]|h|r for 125k and the chance to get 470+ items aswell as the Uncorrupted Voidwing & Cloak Upgrade, we have runs every 20 mins /w for more info.", -- [1]
-			"Ðavidßoss-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Ðavidßoss-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			606, -- [11]
-			"Player-1329-056D98A1", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff006fdcÐavidßoss|r",
-			[51] = 1590148783,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [113]
-		{
-			"|| Nova Community || Selling +M(10-22) IN TIME With FREE ARMORSTACK AND SHARELOOT!! ||+10=110k|| ||+12=130k || ||+14=170k || ||+15=220k ||  || VISION BOOST 1-5mask ||   + jaina 1mil  !! Ny'Alotha Raid Tonight * We Accept Gold in All Realms  /w For ", -- [1]
-			"Hiphop-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Hiphop-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			607, -- [11]
-			"Player-1329-070517DF", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffef367Hiphop|r",
-			[51] = 1590148785,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [114]
-		{
-			"|| Nova Community || Selling +M(10-22) IN TIME With FREE ARMORSTACK AND SHARELOOT!! ||+10=100k|| ||+12=130k || ||+15=220k || |cff66bbff|Hjournal:0:1180:14|h[Ny'alotha, the Waking City]|h|r Full Clear 350k + Trader ,Jaina 1mil . Vision!!  /w For info", -- [1]
-			"Novacraven-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Novacraven-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			614, -- [11]
-			"Player-1329-06FC85C7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec5e9Novacraven|r",
-			[51] = 1590148795,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [115]
-		{
-			"<Gallywix> WTS |cffffff00|Hachievement:14145:Player-1329-070A79F8:0:0:0:-1:0:0:0:0|h[Battle for Azeroth Keystone Master: Season Four]|h|r20% Off Buy 6x M+(10-23) Share Loot. |cff66bbff|Hjournal:0:1180:15|h[Ny'alotha, the Waking City]|h|r12/12 Mythic+HC Unsaved Guild. <RADEN-Nzoth-Carapace HC> |cffffff00|Hachievement:14069:Player-1329-070A79F8:0:0:0:-1:0:0:0:0|h[Cutting Edge: N'Zoth the Corruptor]|h|r. PVP 0-2400,VISION,JAINA Mount", -- [1]
-			"Silentwix-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Silentwix-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			615, -- [11]
-			"Player-1329-070A79F8", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe95Silentwix|r",
-			[51] = 1590148795,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [116]
-		{
-			"Gallywix Community WTS Mythic Jaina Proudmore+ |cffa335ee|Hitem:166705::::::::4:259::::::|h[Glacial Tidestorm]|h|r // M+10-21 KEYS IN TIME  // 12/12 HC and MYTHIC Ny'alotha // Get CURVE + CE / Visions // Islands // Legacy raids and more /w me for info.", -- [1]
-			"Khoorra-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Khoorra-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			619, -- [11]
-			"Player-1329-070C10BA", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec5e9Khoorra|r",
-			[51] = 1590148805,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [117]
-		{
-			"%s has earned the achievement |cffffff00|Hachievement:13163:Player-1329-0604380E:1:5:22:20:4294967295:4294967295:4294967295:4294967295|h[Allied Races: Kul Tiran]|h|r!", -- [1]
-			"Gladwin-Ravencrest", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Gladwin-Ravencrest", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			623, -- [11]
-			"Player-1329-0604380E", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff38bb9Gladwin|r",
-			[51] = 1590148812,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [118]
-		{
-			"The Gallywix  WTS|cff66bbff|Hjournal:0:1180:15|h[Ny'alotha, the Waking City]|h|rHC 350k |cff66bbff|Hjournal:1:2364:14|h[Ra-den the Despoiled]|h|rHC 175k (Carapace+N'Zoth 175k) Key (10-22) IN TIME (Vision WITH 5 mask)(PVP) Jaina Mount/gold all realms ", -- [1]
-			"Ucantseemee-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Ucantseemee-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			625, -- [11]
-			"Player-1329-068C3F4F", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffef367Ucantseemee|r",
-			[51] = 1590148815,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [119]
-		{
-			"WTS |cff66bbff|Hjournal:1:2375:15|h[N'Zoth the Corruptor]|h|r 95k Only! Over 150 Nzoth kills! Whisper me for a spot!", -- [1]
-			"Deadîydèmon-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Deadîydèmon-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			626, -- [11]
-			"Player-1329-067B4244", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa22fc8Deadîydèmon|r",
-			[51] = 1590148822,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [120]
-		{
-			"<Gallywix Community> Offering Visions (0-5 Masks) || M+ 10-21 Keys || Jaina Mount || Nya'lotha 12/12 HC & Mythic || Curve (Cara & N'zoth) Multiple Runs Per Day || Islands Boost || PVP Boosts|| Freehold Levelling || PVE/PVP Coaching || HC Ra-Den ||", -- [1]
-			"Keepsy-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Keepsy-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			632, -- [11]
-			"Player-1329-070C67D6", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffefefeKeepsy|r",
-			[51] = 1590148832,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [121]
-		{
-			"(NBC) Offering M+ Boost 10=100k/ M+15=220k in Time/ Free armor stack even at 1 run +10 to +15 / 5%-10% Discount on more than 1 run / shared loot  /  5 run 10% + armor ! / Selling NY'ALOTHA Full clear 315k  /  Curve 90k  /Mechagon HM /w for info", -- [1]
-			"Izannagia-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Izannagia-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			633, -- [11]
-			"Player-1329-06BA441D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffef367Izannagia|r",
-			[51] = 1590148832,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [122]
-		{
-			"[RCU] We are selling M+10 to 23 for GOLD, guaranteed intime and all loot traded to you! ! WEEKEND DEAL!! Price Reduction on +15 keys! Specific keys and armor Stacking Reduced also!!! /w me for more info", -- [1]
-			"Davïncï-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Davïncï-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			635, -- [11]
-			"Player-1329-05E9E664", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Davïncï|r",
-			[51] = 1590148836,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [123]
-		{
-			"[WТS] WTS Mythic+ runs Tonight! +10/+11/+12/+13/+14/+15 key CARRY. You will get ilvl 430-475+ Gear, RIO score & Essences. Fast Mechagon Mount runs. We have over 8349 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
-			"Camezodok-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Camezodok-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			25, -- [11]
-			"Player-1329-070E74C3", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cCamezodok|r",
-			[51] = 1590471113,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [124]
-		{
-			"WTB All CSGO/Dota2/Rust/TF2/Steam Items for Classic/Retail Gold Add Shak111 on Steam (Denmark)", -- [1]
-			"Shakonets-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Shakonets-Ravencrest", -- [5]
-			"DND", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			26, -- [11]
-			"Player-1329-070B94FD", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffefefeShakonets|r",
-			[51] = 1590471141,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [125]
-		{
-			"help veskan please", -- [1]
-			"Pogshot-Outland", -- [2]
-			"", -- [3]
-			"1. General - Vale of Eternal Blossoms", -- [4]
-			"Pogshot-Outland", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Vale of Eternal Blossoms", -- [9]
-			0, -- [10]
-			2, -- [11]
-			"Player-1301-09F399B0", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Pogshot-Outland|r",
-			[51] = 1590556731,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [126]
-		{
-			"ty", -- [1]
-			"Pogshot-Outland", -- [2]
-			"", -- [3]
-			"1. General - Vale of Eternal Blossoms", -- [4]
-			"Pogshot-Outland", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Vale of Eternal Blossoms", -- [9]
-			0, -- [10]
-			3, -- [11]
-			"Player-1301-09F399B0", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Pogshot-Outland|r",
-			[51] = 1590556801,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [127]
 	},
 }

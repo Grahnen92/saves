@@ -7,20 +7,32 @@ KeyWait, RButton
 Send '
 Return
 
+;slow fall glide
+;~*+Space::
++Space::
+Send +2
+KeyWait, Space
+Send !2
+Return
+
 ;used to target scan when pressing both right and left click
-RButton & LButton::
+RButton & XButton1::
 Send {Tab down}
-KeyWait, LButton
+KeyWait, XButton1
 Send {Tab up}
 Return
 
-;desc
-RButton & XButton1::3
+;attack with left button
+RButton & LButton::3
 Return
 
 ;desc
-RButton & XButton2::4
-Return
+;RButton & XButton1::3
+;Return
+
+;desc
+;RButton & XButton2::4
+;Return
 
 !RButton::RButton
 Return
@@ -63,6 +75,13 @@ PgDn::
 Suspend
 Pause,,1
 return
+
+;used to target scan when pressing both right and left click
++h::
+Suspend
+KeyWait, h
+Suspend
+Return
 
   ;While GetKeyState("RButton","P")
   ;{

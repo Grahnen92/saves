@@ -44,7 +44,7 @@ VER 3 0100000000000004 "Holy Shock" "SPELL_HOLY_SEARINGLIGHT"
 END
 VER 3 0100000000000007 "Judgement" "135959"
 #showtooltip
-/cast [target=mouseover,exists,nodead,harm]    Judgment;   Judgment [target=mouseover,exists,nodead, help] Judgment ; Judgment
+/cast [target=mouseover,exists,nodead,harm]  Judgment;   Judgment [target=mouseover,exists,nodead, help] Judgment ; Judgment
 END
 VER 3 010000000000000B "Lay On Hands" "135928"
 #showtooltip

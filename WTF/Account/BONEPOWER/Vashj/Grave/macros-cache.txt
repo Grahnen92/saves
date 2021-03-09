@@ -1,0 +1,19 @@
+VER 3 0100000000000001 "DMG" "Ability_BullRush"
+/use Mark of Supremacy
+/Cast Blood Fury(Racial)
+END
+VER 3 0100000000000003 "PANIC" "Ability_Creature_Cursed_02"
+/Cast Vampiric Blood
+/Cast Rune Tap
+END
+VER 3 0100000000000002 "pet" "Ability_BackStab"
+/cast icy touch
+/cast Claw
+END
+VER 3 0100000000000005 "Pet heal" "Ability_Creature_Disease_04"
+/target pet
+/cast Death coil
+END
+VER 3 0100000000000004 "Showhelm" "Ability_Ambush"
+/run ShowHelm(not ShowingHelm())
+END

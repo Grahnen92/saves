@@ -1,12 +1,12 @@
-lightweight tag 0105af78e5f0e783773d49227ad2f297d3c70b42 3.25
+lightweight tag 5c1995ad663efec2235c1b653eabdf14b22fdaf0 3.29
 Author:	Phrike <phriked@gmail.com>
-Date:	Fri Feb 14 23:47:10 2020 -0600
+Date:	Wed Oct 21 11:25:08 2020 -0500
 
-commit 0105af78e5f0e783773d49227ad2f297d3c70b42
+commit 5c1995ad663efec2235c1b653eabdf14b22fdaf0
 Author: Phrike <phriked@gmail.com>
-Date:   Fri Feb 14 23:47:10 2020 -0600
+Date:   Wed Oct 21 11:25:08 2020 -0500
 
-    Bug fix
+    Bug Fix
     
-    - Should now properly show shorter mechagon dungeon names in the guild/friend list
+    Fixed API call
 

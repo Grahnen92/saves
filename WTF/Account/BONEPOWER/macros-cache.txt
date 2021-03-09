@@ -4,6 +4,9 @@ END
 VER 3 0000000000000019 "CatTotem" "132115"
 /cast Cat Form(Shapeshift)
 END
+VER 3 0000000000000023 "Draw" "133040"
+/run ToggleSheath()
+END
 VER 3 000000000000001F "Entangling Roots" "136100"
 /cast [target=mouseover,exists,nodead,harm]  Entangling Roots; Entangling Roots
 END

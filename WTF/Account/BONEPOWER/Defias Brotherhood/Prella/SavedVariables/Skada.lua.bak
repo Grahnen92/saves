@@ -1,0 +1,282 @@
+
+SkadaPerCharDB = {
+	["total"] = {
+		["healingabsorbed"] = 0,
+		["dispells"] = 0,
+		["ccbreaks"] = 0,
+		["overhealing"] = 0,
+		["interrupts"] = 0,
+		["damage"] = 31,
+		["players"] = {
+			{
+				["healingabsorbed"] = 0,
+				["class"] = "PRIEST",
+				["damaged"] = {
+				},
+				["dispells"] = 0,
+				["healingspells"] = {
+				},
+				["overhealing"] = 0,
+				["interrupts"] = 0,
+				["ffdamagedonetargets"] = {
+				},
+				["ffdamagedonespells"] = {
+				},
+				["ffdamagedone"] = 0,
+				["damage"] = 31,
+				["damagespells"] = {
+					["Smite"] = {
+						["hitmin"] = 7,
+						["id"] = 585,
+						["min"] = 7,
+						["hitamount"] = 31,
+						["hitmax"] = 8,
+						["hit"] = 4,
+						["school"] = 2,
+						["max"] = 8,
+						["totalhits"] = 4,
+						["damage"] = 31,
+					},
+				},
+				["auras"] = {
+				},
+				["healed"] = {
+				},
+				["shielding"] = 0,
+				["id"] = "Player-1096-09E70321",
+				["healing"] = 0,
+				["ccbreaks"] = 0,
+				["damagetakenspells"] = {
+					["Bubble Blast"] = {
+						["crushing"] = 0,
+						["id"] = 79765,
+						["min"] = 4,
+						["school"] = 16,
+						["critical"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 0,
+						["name"] = "Bubble Blast",
+						["blocked"] = 0,
+						["totalhits"] = 1,
+						["resisted"] = 0,
+						["max"] = 4,
+						["damage"] = 4,
+					},
+					["Attack"] = {
+						["crushing"] = 0,
+						["id"] = 6603,
+						["min"] = 4,
+						["school"] = 1,
+						["critical"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 0,
+						["name"] = "Attack",
+						["blocked"] = 0,
+						["totalhits"] = 2,
+						["resisted"] = 0,
+						["max"] = 5,
+						["damage"] = 9,
+					},
+				},
+				["power"] = {
+				},
+				["maxhp"] = 133,
+				["name"] = "Prella",
+				["deathlog"] = {
+					{
+						["ts"] = 1604387222.841,
+						["amount"] = -5,
+						["hp"] = 133,
+						["spellid"] = 88163,
+						["srcname"] = "Pygmy Surf Crawler",
+					}, -- [1]
+					{
+						["ts"] = 1604387226.866,
+						["amount"] = -4,
+						["hp"] = 125,
+						["spellid"] = 79765,
+						["srcname"] = "Pygmy Surf Crawler",
+					}, -- [2]
+					{
+						["ts"] = 1604387228.5,
+						["amount"] = -4,
+						["hp"] = 125,
+						["spellid"] = 88163,
+						["srcname"] = "Pygmy Surf Crawler",
+					}, -- [3]
+					["pos"] = 4,
+				},
+				["damagetaken"] = 13,
+				["role"] = "NONE",
+				["time"] = 7,
+			}, -- [1]
+		},
+		["deaths"] = 0,
+		["mobs"] = {
+			["Pygmy Surf Crawler"] = {
+				["players"] = {
+					["Prella"] = {
+						["taken"] = 31,
+						["done"] = 13,
+						["role"] = "NONE",
+						["class"] = "PRIEST",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 31,
+				["done"] = 13,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+		},
+		["mobtaken"] = 31,
+		["ffdamagedone"] = 0,
+		["healing"] = 0,
+		["auras"] = {
+		},
+		["power"] = {
+		},
+		["time"] = 7,
+		["starttime"] = 1604387222,
+		["name"] = "Total",
+		["damagetaken"] = 13,
+		["shielding"] = 0,
+		["mobhdone"] = 0,
+		["last_action"] = 1604387222,
+		["mobdone"] = 13,
+	},
+	["sets"] = {
+		{
+			["healingabsorbed"] = 0,
+			["dispells"] = 0,
+			["ccbreaks"] = 0,
+			["overhealing"] = 0,
+			["interrupts"] = 0,
+			["endtime"] = 1604387229,
+			["damagetaken"] = 13,
+			["damage"] = 31,
+			["players"] = {
+				{
+					["last"] = 1604387229,
+					["healingabsorbed"] = 0,
+					["class"] = "PRIEST",
+					["damaged"] = {
+						["Pygmy Surf Crawler"] = 31,
+					},
+					["dispells"] = 0,
+					["healingspells"] = {
+					},
+					["overhealing"] = 0,
+					["interrupts"] = 0,
+					["ffdamagedonetargets"] = {
+					},
+					["ffdamagedonespells"] = {
+					},
+					["damage"] = 31,
+					["damagespells"] = {
+						["Smite"] = {
+							["hitmin"] = 7,
+							["id"] = 585,
+							["min"] = 7,
+							["hitamount"] = 31,
+							["hitmax"] = 8,
+							["hit"] = 4,
+							["school"] = 2,
+							["max"] = 8,
+							["totalhits"] = 4,
+							["damage"] = 31,
+						},
+					},
+					["ffdamagedone"] = 0,
+					["healed"] = {
+					},
+					["shielding"] = 0,
+					["id"] = "Player-1096-09E70321",
+					["healing"] = 0,
+					["auras"] = {
+					},
+					["damagetakenspells"] = {
+						["Bubble Blast"] = {
+							["crushing"] = 0,
+							["id"] = 79765,
+							["min"] = 4,
+							["school"] = 16,
+							["critical"] = 0,
+							["glancing"] = 0,
+							["absorbed"] = 0,
+							["name"] = "Bubble Blast",
+							["blocked"] = 0,
+							["totalhits"] = 1,
+							["resisted"] = 0,
+							["max"] = 4,
+							["damage"] = 4,
+						},
+						["Attack"] = {
+							["crushing"] = 0,
+							["id"] = 6603,
+							["min"] = 4,
+							["school"] = 1,
+							["critical"] = 0,
+							["glancing"] = 0,
+							["absorbed"] = 0,
+							["name"] = "Attack",
+							["blocked"] = 0,
+							["totalhits"] = 2,
+							["resisted"] = 0,
+							["max"] = 5,
+							["damage"] = 9,
+						},
+					},
+					["ccbreaks"] = 0,
+					["power"] = {
+					},
+					["name"] = "Prella",
+					["maxhp"] = 133,
+					["damagetaken"] = 13,
+					["first"] = 1604387222,
+					["role"] = "NONE",
+					["time"] = 7,
+				}, -- [1]
+			},
+			["deaths"] = 0,
+			["mobs"] = {
+				["Pygmy Surf Crawler"] = {
+					["players"] = {
+						["Prella"] = {
+							["taken"] = 31,
+							["done"] = 13,
+							["role"] = "NONE",
+							["class"] = "PRIEST",
+						},
+					},
+					["hdone"] = 0,
+					["htakenspell"] = {
+					},
+					["taken"] = 31,
+					["done"] = 13,
+					["htaken"] = 0,
+					["hdonespell"] = {
+					},
+				},
+			},
+			["mobtaken"] = 31,
+			["ffdamagedone"] = 0,
+			["healing"] = 0,
+			["auras"] = {
+			},
+			["power"] = {
+			},
+			["time"] = 7,
+			["starttime"] = 1604387222,
+			["name"] = "Pygmy Surf Crawler",
+			["mobname"] = "Pygmy Surf Crawler",
+			["shielding"] = 0,
+			["mobhdone"] = 0,
+			["last_action"] = 1604387222,
+			["mobdone"] = 13,
+		}, -- [1]
+	},
+}

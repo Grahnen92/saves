@@ -1,0 +1,6 @@
+VER 3 0100000000000002 "CancelSlowFall" "135992"
+/cancelaura Slow Fall
+END
+VER 3 0100000000000001 "SlowFall" "135992"
+/Cast [@player] Slow Fall 
+END

@@ -55,3 +55,4 @@ WeakAurasArchive: enabled
 FarmHud: disabled
 Plater: disabled
 OPie_Classic: disabled
+ElvUI_DTBars2: disabled

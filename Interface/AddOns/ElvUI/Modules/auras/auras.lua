@@ -2,18 +2,16 @@ local E, L, V, P, G = unpack(select(2, ...)); --Import: Engine, Locales, Private
 local A = E:GetModule('Auras')
 local LSM = E.Libs.LSM
 
---Lua functions
 local _G = _G
 local floor, format, tinsert = floor, format, tinsert
 local select, unpack, strmatch = select, unpack, strmatch
---WoW API / Variables
-local CreateFrame = CreateFrame
 local GetInventoryItemQuality = GetInventoryItemQuality
 local GetInventoryItemTexture = GetInventoryItemTexture
 local GetItemQualityColor = GetItemQualityColor
 local GetWeaponEnchantInfo = GetWeaponEnchantInfo
 local RegisterAttributeDriver = RegisterAttributeDriver
 local RegisterStateDriver = RegisterStateDriver
+local CreateFrame = CreateFrame
 local UnitAura = UnitAura
 local GetTime = GetTime
 
@@ -135,7 +133,7 @@ function A:CreateIcon(button)
 	button.statusBar = CreateFrame('StatusBar', nil, button)
 	button.statusBar:SetFrameLevel(button:GetFrameLevel())
 	button.statusBar:SetFrameStrata(button:GetFrameStrata())
-	button.statusBar:SetStatusBarTexture(E.Libs.LSM:Fetch('statusbar', A.db.barTexture))
+	button.statusBar:SetStatusBarTexture(LSM:Fetch('statusbar', A.db.barTexture))
 	button.statusBar:CreateBackdrop()
 	E:SetSmoothing(button.statusBar)
 
@@ -209,6 +207,7 @@ function A:ClearAuraTime(button, expired)
 	end
 
 	button.endTime = nil
+	button.timeLeft = nil
 	button.text:SetText('')
 	button:SetScript('OnUpdate', nil)
 end
@@ -295,6 +294,12 @@ function A:UpdateTempEnchant(button, index)
 		A:SetAuraTime(button, E:Round(remaining + GetTime(), 3), duration)
 	else
 		A:ClearAuraTime(button)
+	end
+
+	if A.db.showDuration then
+		button.text:Show()
+	else
+		button.text:Hide()
 	end
 
 	if (A.db.barShow and remaining > 0) or (A.db.barShow and A.db.barNoDuration and not expiration) then
@@ -400,7 +405,7 @@ function A:UpdateHeader(header)
 		child.statusBar:Height((isOnLeft or isOnRight) and iconSize or (A.db.barHeight + (E.PixelMode and 0 or 2)))
 		child.statusBar:ClearAllPoints()
 		child.statusBar:Point(E.InversePoints[pos], child, pos, (isOnTop or isOnBottom) and 0 or ((isOnLeft and -((E.PixelMode and 1 or 3) + spacing)) or ((E.PixelMode and 1 or 3) + spacing)), (isOnLeft or isOnRight) and 0 or ((isOnTop and ((E.PixelMode and 1 or 3) + spacing) or -((E.PixelMode and 1 or 3) + spacing))))
-		child.statusBar:SetStatusBarTexture(E.Libs.LSM:Fetch('statusbar', A.db.barTexture))
+		child.statusBar:SetStatusBarTexture(LSM:Fetch('statusbar', A.db.barTexture))
 		if isOnLeft or isOnRight then
 			child.statusBar:SetOrientation('VERTICAL')
 		else
@@ -452,14 +457,14 @@ function A:Initialize()
 
 	if E.private.auras.buffsHeader then
 		A.BuffFrame = A:CreateAuraHeader('HELPFUL')
-		A.BuffFrame:Point('TOPRIGHT', _G.MMHolder, 'TOPLEFT', -(6 + E.Border), -E.Border - E.Spacing)
+		A.BuffFrame:Point('TOPRIGHT', _G.MMHolder or _G.Minimap, 'TOPLEFT', -(6 + E.Border), -E.Border - E.Spacing)
 		E:CreateMover(A.BuffFrame, 'BuffsMover', L["Player Buffs"], nil, nil, nil, nil, nil, 'auras,buffs')
 		if Masque and MasqueGroupBuffs then A.BuffsMasqueGroup = MasqueGroupBuffs end
 	end
 
 	if E.private.auras.debuffsHeader then
 		A.DebuffFrame = A:CreateAuraHeader('HARMFUL')
-		A.DebuffFrame:Point('BOTTOMRIGHT', _G.MMHolder, 'BOTTOMLEFT', -(6 + E.Border), E.Border + E.Spacing)
+		A.DebuffFrame:Point('BOTTOMRIGHT', _G.MMHolder or _G.Minimap, 'BOTTOMLEFT', -(6 + E.Border), E.Border + E.Spacing)
 		E:CreateMover(A.DebuffFrame, 'DebuffsMover', L["Player Debuffs"], nil, nil, nil, nil, nil, 'auras,debuffs')
 		if Masque and MasqueGroupDebuffs then A.DebuffsMasqueGroup = MasqueGroupDebuffs end
 	end

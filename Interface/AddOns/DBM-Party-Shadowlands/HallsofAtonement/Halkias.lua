@@ -1,10 +1,9 @@
 local mod	= DBM:NewMod(2406, "DBM-Party-Shadowlands", 4, 1185)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20200412002938")
+mod:SetRevision("20200908175403")
 mod:SetCreatureID(165408)
 mod:SetEncounterID(2401)
-mod:SetZone()
 
 mod:RegisterCombat("combat")
 
@@ -18,23 +17,33 @@ mod:RegisterEventsInCombat(
 )
 
 --TODO, Target scan Heave Debris? it's instant cast, maybe it has an emote?
+--TODO, timers on fight seem utterly useless, need a lot more combat data to find out what's going on
+--TODO, fights timers are really all over place, might be health based or some other unknown factor
+--[[
+(ability.id = 322936 or ability.id = 322711) and type = "begincast"
+ or (ability.id = 322943 or ability.id = 322977) and type = "cast"
+--]]
 local warnHeaveDebris				= mod:NewSpellAnnounce(322943, 3)
 
 local specWarnCrumblingSlam			= mod:NewSpecialWarningMove(322936, "Tank", nil, nil, 1, 2)
 local specWarnRefractedSinlight		= mod:NewSpecialWarningDodge(322711, nil, nil, nil, 3, 2)
-local specWarnGTFO					= mod:NewSpecialWarningGTFO(323001, nil, nil, nil, 1, 8)
 local specWarnSinlightVisions		= mod:NewSpecialWarningDispel(322977, "RemoveMagic", nil, nil, 1, 2)
+local specWarnGTFO					= mod:NewSpecialWarningGTFO(323001, nil, nil, nil, 1, 8)
 
-local timerCrumblingSlamCD			= mod:NewAITimer(13, 322936, nil, nil, nil, 5, nil, DBM_CORE_TANK_ICON)
-local timerHeaveDebrisCD			= mod:NewAITimer(15.8, 322943, nil, nil, nil, 3)
-local timerRefractedSinlightD		= mod:NewAITimer(13, 322711, nil, nil, nil, 3, nil, DBM_CORE_DEADLY_ICON)
-local timerSinlightVisionsCD		= mod:NewAITimer(13, 322977, nil, nil, nil, 5, nil, DBM_CORE_MAGIC_ICON)
+--local timerCrumblingSlamCD		= mod:NewCDTimer(12.1, 322936, nil, nil, nil, 5, nil, DBM_CORE_L.TANK_ICON)--4.7, 13.3, 34, 17, nani?
+--local timerHeaveDebrisCD			= mod:NewCDTimer(15.8, 322943, nil, nil, nil, 3)
+local timerRefractedSinlightD		= mod:NewCDTimer(49.7, 322711, nil, nil, nil, 3, nil, DBM_CORE_L.DEADLY_ICON)--49.7--51
+local timerSinlightVisionsCD		= mod:NewCDTimer(23, 322977, nil, nil, nil, 3, nil, DBM_CORE_L.MAGIC_ICON)--23-27
+
+--Slam Data, more data needed
+--4.7, 13.3, 34, 17
+--4.1, 14.5, 37.6, 12.1
 
 function mod:OnCombatStart(delay)
-	timerCrumblingSlamCD:Start(1-delay)
-	timerHeaveDebrisCD:Start(1-delay)
-	timerRefractedSinlightD:Start(1-delay)
-	timerSinlightVisionsCD:Start(1-delay)--SUCCESS
+--	timerCrumblingSlamCD:Start(4.1-delay)
+--	timerHeaveDebrisCD:Start(12-delay)--SUCCESS
+	timerSinlightVisionsCD:Start(27.8-delay)--SUCCESS
+	timerRefractedSinlightD:Start(29.6-delay)
 end
 
 function mod:SPELL_CAST_START(args)
@@ -42,7 +51,7 @@ function mod:SPELL_CAST_START(args)
 	if spellId == 322936 then
 		specWarnCrumblingSlam:Show()
 		specWarnCrumblingSlam:Play("moveboss")
-		timerCrumblingSlamCD:Start()
+--		timerCrumblingSlamCD:Start()
 	elseif spellId == 322711 then
 		specWarnRefractedSinlight:Show()
 		specWarnRefractedSinlight:Play("watchstep")
@@ -54,9 +63,9 @@ function mod:SPELL_CAST_SUCCESS(args)
 	local spellId = args.spellId
 	if spellId == 322943 then
 		warnHeaveDebris:Show()
-		timerHeaveDebrisCD:Start()
+--		timerHeaveDebrisCD:Start()
 	elseif spellId == 322977 then
-		timerSinlightVisionsCD:Start()
+		--timerSinlightVisionsCD:Start()--Unknown, pull too short
 	end
 end
 

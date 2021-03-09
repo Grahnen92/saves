@@ -1,0 +1,187 @@
+
+MogItDB = {
+	["profileKeys"] = {
+		["Kêl - Defias Brotherhood"] = "Default",
+		["Thaler - Defias Brotherhood"] = "Default",
+		["Osa - Defias Brotherhood"] = "Default",
+		["Gladwin - Ravencrest"] = "Default",
+		["Tzol - Defias Brotherhood"] = "Default",
+		["Ureg - Defias Brotherhood"] = "Default",
+		["Zuldo - Defias Brotherhood"] = "Default",
+		["Cazh - Kazzak"] = "Default",
+		["Kodah - Defias Brotherhood"] = "Default",
+		["Prella - Defias Brotherhood"] = "Default",
+		["Gladwin - Defias Brotherhood"] = "Default",
+		["Ärlig - Ravencrest"] = "Default",
+		["Rekhyt - Vashj"] = "Default",
+		["Mfgd - Defias Brotherhood"] = "Default",
+		["Greve - Ravencrest"] = "Default",
+		["Venedict - Defias Brotherhood"] = "Default",
+		["Ored - Kazzak"] = "Default",
+		["Gask - Ravencrest"] = "Default",
+		["Rektar - Defias Brotherhood"] = "Default",
+		["Träl - Defias Brotherhood"] = "Default",
+		["Addled - Defias Brotherhood"] = "Default",
+		["Gladwin - Kazzak"] = "Default",
+		["Vidja - Ravencrest"] = "Default",
+		["Odöde - Defias Brotherhood"] = "Default",
+		["Orek - Defias Brotherhood"] = "Default",
+		["Rever - Ravencrest"] = "Default",
+		["Grave - Vashj"] = "Default",
+		["Ödette - Defias Brotherhood"] = "Default",
+		["Dryda - Ravencrest"] = "Default",
+		["Vite - Ravencrest"] = "Default",
+		["Ösa - Defias Brotherhood"] = "Default",
+	},
+	["global"] = {
+		["version"] = "3.9.3",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["previewProps"] = {
+				{
+					["y"] = 86.25506591796875,
+					["h"] = 577.2635498046875,
+					["w"] = 585.8641967773438,
+					["x"] = 51.0283203125,
+				}, -- [1]
+			},
+			["x"] = 93.49795532226562,
+			["slotLabels"] = {
+				["Waist"] = "Waist",
+				["Fist"] = "Fist Weapons",
+				["Tabard"] = "Tabard",
+				["Legs"] = "Legs",
+				["Back"] = "Back",
+				["Crossbow"] = "Crossbows",
+				["Gun"] = "Guns",
+				["Shirt"] = "Shirt",
+				["Dagger"] = "Daggers",
+				["Hands"] = "Hands",
+				["Wrist"] = "Wrist",
+				["1H-sword"] = "One-Handed Swords",
+				["2H-sword"] = "Two-Handed Swords",
+				["Warglaives"] = "Warglaives",
+				["ArtifactLegion"] = "Legion Artifacts",
+				["1H-mace"] = "One-Handed Maces",
+				["Head"] = "Head",
+				["Holdable"] = "Held In Off-hand",
+				["Bow"] = "Bows",
+				["2H-axe"] = "Two-Handed Axes",
+				["Staff"] = "Staves",
+				["Chest"] = "Chest",
+				["Shield"] = "Shields",
+				["Polearm"] = "Polearms",
+				["2H-mace"] = "Two-Handed Maces",
+				["Feet"] = "Feet",
+				["1H-axe"] = "One-Handed Axes",
+				["Shoulder"] = "Shoulder",
+				["Wand"] = "Wands",
+			},
+			["point"] = "TOP",
+			["y"] = -129.8765563964844,
+		},
+	},
+}
+MogItWishlist = {
+	["global"] = {
+		["version"] = 90002,
+	},
+	["profileKeys"] = {
+		["Kêl - Defias Brotherhood"] = "Kêl - Defias Brotherhood",
+		["Thaler - Defias Brotherhood"] = "Thaler - Defias Brotherhood",
+		["Osa - Defias Brotherhood"] = "Osa - Defias Brotherhood",
+		["Gladwin - Ravencrest"] = "Gladwin - Ravencrest",
+		["Tzol - Defias Brotherhood"] = "Tzol - Defias Brotherhood",
+		["Ureg - Defias Brotherhood"] = "Ureg - Defias Brotherhood",
+		["Zuldo - Defias Brotherhood"] = "Zuldo - Defias Brotherhood",
+		["Cazh - Kazzak"] = "Cazh - Kazzak",
+		["Kodah - Defias Brotherhood"] = "Kodah - Defias Brotherhood",
+		["Prella - Defias Brotherhood"] = "Prella - Defias Brotherhood",
+		["Gladwin - Defias Brotherhood"] = "Gladwin - Defias Brotherhood",
+		["Ärlig - Ravencrest"] = "Ärlig - Ravencrest",
+		["Rekhyt - Vashj"] = "Rekhyt - Vashj",
+		["Mfgd - Defias Brotherhood"] = "Mfgd - Defias Brotherhood",
+		["Greve - Ravencrest"] = "Greve - Ravencrest",
+		["Venedict - Defias Brotherhood"] = "Venedict - Defias Brotherhood",
+		["Ored - Kazzak"] = "Ored - Kazzak",
+		["Gask - Ravencrest"] = "Gask - Ravencrest",
+		["Rektar - Defias Brotherhood"] = "Rektar - Defias Brotherhood",
+		["Träl - Defias Brotherhood"] = "Träl - Defias Brotherhood",
+		["Addled - Defias Brotherhood"] = "Addled - Defias Brotherhood",
+		["Gladwin - Kazzak"] = "Gladwin - Kazzak",
+		["Vidja - Ravencrest"] = "Vidja - Ravencrest",
+		["Odöde - Defias Brotherhood"] = "Odöde - Defias Brotherhood",
+		["Orek - Defias Brotherhood"] = "Orek - Defias Brotherhood",
+		["Rever - Ravencrest"] = "Rever - Ravencrest",
+		["Grave - Vashj"] = "Grave - Vashj",
+		["Ödette - Defias Brotherhood"] = "Ödette - Defias Brotherhood",
+		["Dryda - Ravencrest"] = "Dryda - Ravencrest",
+		["Vite - Ravencrest"] = "Vite - Ravencrest",
+		["Ösa - Defias Brotherhood"] = "Ösa - Defias Brotherhood",
+	},
+	["profiles"] = {
+		["Kêl - Defias Brotherhood"] = {
+		},
+		["Thaler - Defias Brotherhood"] = {
+		},
+		["Osa - Defias Brotherhood"] = {
+		},
+		["Gladwin - Ravencrest"] = {
+		},
+		["Tzol - Defias Brotherhood"] = {
+		},
+		["Ureg - Defias Brotherhood"] = {
+		},
+		["Zuldo - Defias Brotherhood"] = {
+		},
+		["Cazh - Kazzak"] = {
+		},
+		["Kodah - Defias Brotherhood"] = {
+		},
+		["Prella - Defias Brotherhood"] = {
+		},
+		["Gladwin - Defias Brotherhood"] = {
+		},
+		["Ärlig - Ravencrest"] = {
+		},
+		["Rekhyt - Vashj"] = {
+		},
+		["Mfgd - Defias Brotherhood"] = {
+		},
+		["Greve - Ravencrest"] = {
+		},
+		["Venedict - Defias Brotherhood"] = {
+		},
+		["Ored - Kazzak"] = {
+		},
+		["Gask - Ravencrest"] = {
+		},
+		["Rektar - Defias Brotherhood"] = {
+		},
+		["Träl - Defias Brotherhood"] = {
+		},
+		["Addled - Defias Brotherhood"] = {
+		},
+		["Gladwin - Kazzak"] = {
+		},
+		["Vidja - Ravencrest"] = {
+		},
+		["Odöde - Defias Brotherhood"] = {
+		},
+		["Orek - Defias Brotherhood"] = {
+		},
+		["Rever - Ravencrest"] = {
+		},
+		["Grave - Vashj"] = {
+		},
+		["Ödette - Defias Brotherhood"] = {
+		},
+		["Dryda - Ravencrest"] = {
+		},
+		["Vite - Ravencrest"] = {
+		},
+		["Ösa - Defias Brotherhood"] = {
+		},
+	},
+}

@@ -2,8 +2,8 @@
 OneRing_Config = {
 	["CharProfiles"] = {
 	},
-	["_GameVersion"] = "8.3.0",
-	["_OPieVersion"] = "Walnut 6 (3.101)",
+	["_GameVersion"] = "9.0.2",
+	["_OPieVersion"] = "Xe 1a (3.102)",
 	["ProfileStorage"] = {
 		["default"] = {
 			["RingAtMouse"] = true,
@@ -33,3 +33,4 @@ OneRing_Config = {
 	},
 	["_GameLocale"] = "enUS",
 }
+OPie_SavedData = nil

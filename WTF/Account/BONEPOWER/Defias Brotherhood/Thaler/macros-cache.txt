@@ -2,3 +2,15 @@ VER 3 0100000000000001 "Infernal Strike" "1344650"
 #showtooltip
 /cast [@cursor] Infernal Strike
 END
+VER 3 0100000000000002 "Sigil of Flame" "1344652"
+#showtooltip
+/cast [@cursor] Sigil of Flame
+END
+VER 3 0100000000000004 "Sigil of Misery" "1418287"
+#showtooltip
+/cast [@cursor] Sigil of Misery
+END
+VER 3 0100000000000003 "Sigil of Silence" "1418288"
+#showtooltip
+/cast [@cursor] Sigil of Silence
+END

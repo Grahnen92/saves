@@ -1,0 +1,26 @@
+VER 3 0100000000000003 "EnvelopingKick" "574575"
+#showtooltip
+/cast [target=mouseover,exists,nodead,help] Enveloping Mist; Blackout Kick
+END
+VER 3 0100000000000006 "EnvelopingSun" "642415"
+#showtooltip
+/cast [target=mouseover,exists,nodead,help] Enveloping Mist; Rising Sun Kick
+END
+VER 3 0100000000000007 "EssenceKick" "606543"
+END
+VER 3 0100000000000002 "RenewingPalm" "606551"
+#showtooltip
+/cast [target=mouseover,exists,nodead,help] Renewing Mist; Tiger Palm
+END
+VER 3 0100000000000001 "SoothingLightnin" "606542"
+#showtooltip
+/cast [target=mouseover,exists,nodead,help] Soothing Mist; Crackling Jade Lightning
+END
+VER 3 0100000000000004 "Vivify" "1360980"
+#showtooltip
+/cast [target=mouseover,exists,nodead,help] Vivify; Vivify
+END
+VER 3 0100000000000005 "VivifyingKick" "574575"
+#showtooltip
+/cast [target=mouseover,exists,nodead,help] Vivify; Blackout Kick
+END

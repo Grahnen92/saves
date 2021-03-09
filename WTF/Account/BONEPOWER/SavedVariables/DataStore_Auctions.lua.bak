@@ -1,0 +1,43 @@
+
+DataStore_AuctionsDB = {
+	["profileKeys"] = {
+		["Kêl - Defias Brotherhood"] = "Kêl - Defias Brotherhood",
+		["Thaler - Defias Brotherhood"] = "Thaler - Defias Brotherhood",
+		["Osa - Defias Brotherhood"] = "Osa - Defias Brotherhood",
+		["Gladwin - Ravencrest"] = "Gladwin - Ravencrest",
+		["Tzol - Defias Brotherhood"] = "Tzol - Defias Brotherhood",
+		["Ureg - Defias Brotherhood"] = "Ureg - Defias Brotherhood",
+		["Zuldo - Defias Brotherhood"] = "Zuldo - Defias Brotherhood",
+		["Cazh - Kazzak"] = "Cazh - Kazzak",
+		["Kodah - Defias Brotherhood"] = "Kodah - Defias Brotherhood",
+		["Prella - Defias Brotherhood"] = "Prella - Defias Brotherhood",
+		["Gladwin - Defias Brotherhood"] = "Gladwin - Defias Brotherhood",
+		["Ärlig - Ravencrest"] = "Ärlig - Ravencrest",
+		["Rekhyt - Vashj"] = "Rekhyt - Vashj",
+		["Mfgd - Defias Brotherhood"] = "Mfgd - Defias Brotherhood",
+		["Greve - Ravencrest"] = "Greve - Ravencrest",
+		["Venedict - Defias Brotherhood"] = "Venedict - Defias Brotherhood",
+		["Ored - Kazzak"] = "Ored - Kazzak",
+		["Gask - Ravencrest"] = "Gask - Ravencrest",
+		["Rektar - Defias Brotherhood"] = "Rektar - Defias Brotherhood",
+		["Träl - Defias Brotherhood"] = "Träl - Defias Brotherhood",
+		["Addled - Defias Brotherhood"] = "Addled - Defias Brotherhood",
+		["Gladwin - Kazzak"] = "Gladwin - Kazzak",
+		["Vidja - Ravencrest"] = "Vidja - Ravencrest",
+		["Odöde - Defias Brotherhood"] = "Odöde - Defias Brotherhood",
+		["Orek - Defias Brotherhood"] = "Orek - Defias Brotherhood",
+		["Rever - Ravencrest"] = "Rever - Ravencrest",
+		["Grave - Vashj"] = "Grave - Vashj",
+		["Ödette - Defias Brotherhood"] = "Ödette - Defias Brotherhood",
+		["Dryda - Ravencrest"] = "Dryda - Ravencrest",
+		["Vite - Ravencrest"] = "Vite - Ravencrest",
+		["Ösa - Defias Brotherhood"] = "Ösa - Defias Brotherhood",
+	},
+	["global"] = {
+		["Characters"] = {
+			["Default.Kazzak.Gladwin"] = {
+				["lastUpdate"] = 1608745447,
+			},
+		},
+	},
+}
