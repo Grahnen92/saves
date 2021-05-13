@@ -1,0 +1,28 @@
+
+DataStore_CraftsDB = {
+	["profileKeys"] = {
+		["Bernardana - Ravencrest"] = "Bernardana - Ravencrest",
+	},
+	["global"] = {
+		["Characters"] = {
+			["Default.Ravencrest.Bernardana"] = {
+				["lastUpdate"] = 1619957786,
+				["Prof2"] = "Skinning",
+				["Professions"] = {
+					["Skinning"] = {
+						["CurrentLevelName"] = "Skinning",
+					},
+					["Leatherworking"] = {
+						["CurrentLevelName"] = "Leatherworking",
+					},
+				},
+				["Prof1"] = "Leatherworking",
+			},
+		},
+	},
+}
+DataStore_CraftsRefDB = {
+	["profileKeys"] = {
+		["Bernardana - Ravencrest"] = "Bernardana - Ravencrest",
+	},
+}

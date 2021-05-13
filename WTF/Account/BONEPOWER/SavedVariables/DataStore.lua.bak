@@ -1,37 +1,39 @@
 
 DataStoreDB = {
 	["profileKeys"] = {
-		["Kêl - Defias Brotherhood"] = "Kêl - Defias Brotherhood",
-		["Thaler - Defias Brotherhood"] = "Thaler - Defias Brotherhood",
-		["Osa - Defias Brotherhood"] = "Osa - Defias Brotherhood",
-		["Gladwin - Ravencrest"] = "Gladwin - Ravencrest",
-		["Tzol - Defias Brotherhood"] = "Tzol - Defias Brotherhood",
-		["Ureg - Defias Brotherhood"] = "Ureg - Defias Brotherhood",
-		["Zuldo - Defias Brotherhood"] = "Zuldo - Defias Brotherhood",
-		["Cazh - Kazzak"] = "Cazh - Kazzak",
-		["Kodah - Defias Brotherhood"] = "Kodah - Defias Brotherhood",
-		["Prella - Defias Brotherhood"] = "Prella - Defias Brotherhood",
-		["Gladwin - Defias Brotherhood"] = "Gladwin - Defias Brotherhood",
-		["Ärlig - Ravencrest"] = "Ärlig - Ravencrest",
-		["Rekhyt - Vashj"] = "Rekhyt - Vashj",
-		["Mfgd - Defias Brotherhood"] = "Mfgd - Defias Brotherhood",
-		["Greve - Ravencrest"] = "Greve - Ravencrest",
-		["Venedict - Defias Brotherhood"] = "Venedict - Defias Brotherhood",
-		["Ored - Kazzak"] = "Ored - Kazzak",
-		["Gask - Ravencrest"] = "Gask - Ravencrest",
-		["Rektar - Defias Brotherhood"] = "Rektar - Defias Brotherhood",
-		["Träl - Defias Brotherhood"] = "Träl - Defias Brotherhood",
 		["Addled - Defias Brotherhood"] = "Addled - Defias Brotherhood",
-		["Gladwin - Kazzak"] = "Gladwin - Kazzak",
-		["Vidja - Ravencrest"] = "Vidja - Ravencrest",
+		["Osa - Defias Brotherhood"] = "Osa - Defias Brotherhood",
+		["Ösa - Defias Brotherhood"] = "Ösa - Defias Brotherhood",
+		["Ureg - Defias Brotherhood"] = "Ureg - Defias Brotherhood",
+		["Greve - Ravencrest"] = "Greve - Ravencrest",
+		["Rektar - Defias Brotherhood"] = "Rektar - Defias Brotherhood",
+		["Ored - Kazzak"] = "Ored - Kazzak",
 		["Odöde - Defias Brotherhood"] = "Odöde - Defias Brotherhood",
-		["Orek - Defias Brotherhood"] = "Orek - Defias Brotherhood",
+		["Gladwin - Kazzak"] = "Gladwin - Kazzak",
 		["Rever - Ravencrest"] = "Rever - Ravencrest",
 		["Grave - Vashj"] = "Grave - Vashj",
-		["Ödette - Defias Brotherhood"] = "Ödette - Defias Brotherhood",
 		["Dryda - Ravencrest"] = "Dryda - Ravencrest",
 		["Vite - Ravencrest"] = "Vite - Ravencrest",
-		["Ösa - Defias Brotherhood"] = "Ösa - Defias Brotherhood",
+		["Thaler - Defias Brotherhood"] = "Thaler - Defias Brotherhood",
+		["Gladwin - Ravencrest"] = "Gladwin - Ravencrest",
+		["Allvarg - Ravencrest"] = "Allvarg - Ravencrest",
+		["Zuldo - Defias Brotherhood"] = "Zuldo - Defias Brotherhood",
+		["Rekhyt - Vashj"] = "Rekhyt - Vashj",
+		["Gladwin - Defias Brotherhood"] = "Gladwin - Defias Brotherhood",
+		["Träl - Defias Brotherhood"] = "Träl - Defias Brotherhood",
+		["Ödette - Defias Brotherhood"] = "Ödette - Defias Brotherhood",
+		["Vidja - Ravencrest"] = "Vidja - Ravencrest",
+		["Cazh - Kazzak"] = "Cazh - Kazzak",
+		["Venedict - Defias Brotherhood"] = "Venedict - Defias Brotherhood",
+		["Mfgd - Defias Brotherhood"] = "Mfgd - Defias Brotherhood",
+		["Prella - Defias Brotherhood"] = "Prella - Defias Brotherhood",
+		["Orek - Defias Brotherhood"] = "Orek - Defias Brotherhood",
+		["Ärlig - Ravencrest"] = "Ärlig - Ravencrest",
+		["Gask - Ravencrest"] = "Gask - Ravencrest",
+		["Kodah - Defias Brotherhood"] = "Kodah - Defias Brotherhood",
+		["Tzol - Defias Brotherhood"] = "Tzol - Defias Brotherhood",
+		["Kêl - Defias Brotherhood"] = "Kêl - Defias Brotherhood",
+		["Dal - Ravencrest"] = "Dal - Ravencrest",
 	},
 	["global"] = {
 		["Guilds"] = {
@@ -47,53 +49,22 @@ DataStoreDB = {
 		},
 		["Version"] = 1,
 		["Characters"] = {
-			["Default.Ravencrest.Vidja"] = {
-				["faction"] = "Alliance",
-			},
-			["Default.Defias Brotherhood.Ureg"] = {
-				["faction"] = "Horde",
-			},
 			["Default.Ravencrest.Ärlig"] = {
 				["faction"] = "Alliance",
 			},
 			["Default.Vashj.Rekhyt"] = {
 				["faction"] = "Horde",
 			},
-			["Default.Ravencrest.Gladwin"] = {
-				["faction"] = "Alliance",
-				["guildName"] = "Plutonen",
-			},
 			["Default.Defias Brotherhood.Träl"] = {
-				["faction"] = "Horde",
-			},
-			["Default.Kazzak.Cazh"] = {
-				["faction"] = "Horde",
-			},
-			["Default.Defias Brotherhood.Osa"] = {
 				["faction"] = "Horde",
 			},
 			["Default.Defias Brotherhood.Orek"] = {
 				["faction"] = "Horde",
 			},
-			["Default.Kazzak.Ored"] = {
-				["faction"] = "Horde",
-			},
-			["Default.Defias Brotherhood.Gladwin"] = {
-				["faction"] = "Horde",
-			},
-			["Default.Ravencrest.Rever"] = {
-				["faction"] = "Alliance",
-			},
-			["Default.Defias Brotherhood.Tzol"] = {
-				["faction"] = "Horde",
-			},
 			["Default.Ravencrest.Gask"] = {
 				["faction"] = "Alliance",
 			},
-			["Default.Defias Brotherhood.Thaler"] = {
-				["faction"] = "Horde",
-			},
-			["Default.Defias Brotherhood.Mfgd"] = {
+			["Default.Defias Brotherhood.Zuldo"] = {
 				["faction"] = "Horde",
 			},
 			["Default.Defias Brotherhood.Ösa"] = {
@@ -102,30 +73,13 @@ DataStoreDB = {
 			["Default.Ravencrest.Greve"] = {
 				["faction"] = "Alliance",
 			},
-			["Default.Defias Brotherhood.Rektar"] = {
-				["faction"] = "Horde",
-			},
-			["Default.Ravencrest.Vite"] = {
+			["Default.Ravencrest.Allvarg"] = {
 				["faction"] = "Alliance",
 			},
-			["Default.Ravencrest.Dryda"] = {
-				["faction"] = "Alliance",
-			},
-			["Default.Vashj.Grave"] = {
-				["guildName"] = "ART",
-				["faction"] = "Alliance",
-			},
-			["Default.Defias Brotherhood.Odöde"] = {
-				["faction"] = "Horde",
-			},
-			["Default.Kazzak.Gladwin"] = {
-				["guildName"] = "Lucid Dream",
+			["Default.Defias Brotherhood.Tzol"] = {
 				["faction"] = "Horde",
 			},
 			["Default.Defias Brotherhood.Prella"] = {
-				["faction"] = "Horde",
-			},
-			["Default.Defias Brotherhood.Zuldo"] = {
 				["faction"] = "Horde",
 			},
 			["Default.Defias Brotherhood.Venedict"] = {
@@ -137,17 +91,71 @@ DataStoreDB = {
 			["Default.Defias Brotherhood.Ödette"] = {
 				["faction"] = "Horde",
 			},
+			["Default.Defias Brotherhood.Kêl"] = {
+				["faction"] = "Horde",
+			},
+			["Default.Defias Brotherhood.Gladwin"] = {
+				["faction"] = "Horde",
+			},
+			["Default.Vashj.Grave"] = {
+				["faction"] = "Alliance",
+				["guildName"] = "ART",
+			},
+			["Default.Defias Brotherhood.Thaler"] = {
+				["faction"] = "Horde",
+			},
+			["Default.Defias Brotherhood.Mfgd"] = {
+				["faction"] = "Horde",
+			},
+			["Default.Ravencrest.Dryda"] = {
+				["faction"] = "Alliance",
+			},
+			["Default.Defias Brotherhood.Rektar"] = {
+				["faction"] = "Horde",
+			},
+			["Default.Ravencrest.Vite"] = {
+				["faction"] = "Alliance",
+			},
+			["Default.Ravencrest.Vidja"] = {
+				["faction"] = "Alliance",
+			},
+			["Default.Defias Brotherhood.Ureg"] = {
+				["faction"] = "Horde",
+			},
+			["Default.Defias Brotherhood.Odöde"] = {
+				["faction"] = "Horde",
+			},
+			["Default.Kazzak.Gladwin"] = {
+				["faction"] = "Horde",
+				["guildName"] = "Lucid Dream",
+			},
+			["Default.Kazzak.Ored"] = {
+				["faction"] = "Horde",
+			},
+			["Default.Ravencrest.Dal"] = {
+				["faction"] = "Alliance",
+			},
+			["Default.Defias Brotherhood.Osa"] = {
+				["faction"] = "Horde",
+			},
+			["Default.Ravencrest.Rever"] = {
+				["faction"] = "Alliance",
+			},
+			["Default.Ravencrest.Gladwin"] = {
+				["guildName"] = "Plutonen",
+				["faction"] = "Alliance",
+			},
 			["Default.Defias Brotherhood.Kodah"] = {
 				["faction"] = "Horde",
 			},
-			["Default.Defias Brotherhood.Kêl"] = {
+			["Default.Kazzak.Cazh"] = {
 				["faction"] = "Horde",
 			},
 		},
 		["ShortToLongRealmNames"] = {
 			["DefiasBrotherhood"] = "Defias Brotherhood",
-			["Vashj"] = "Vashj",
 			["Kazzak"] = "Kazzak",
+			["Vashj"] = "Vashj",
 			["Ravencrest"] = "Ravencrest",
 		},
 	},

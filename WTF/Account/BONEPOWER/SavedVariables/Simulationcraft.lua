@@ -19,32 +19,34 @@ SimulationCraftDB = {
 		["Flagel - Kazzak"] = "Flagel - Kazzak",
 		["Thaler - Defias Brotherhood"] = "Thaler - Defias Brotherhood",
 		["Gladwin - Ravencrest"] = "Gladwin - Ravencrest",
+		["Orogue - Kazzak"] = "Orogue - Kazzak",
 		["Ösa - Defias Brotherhood"] = "Ösa - Defias Brotherhood",
+		["Allvarg - Ravencrest"] = "Allvarg - Ravencrest",
 		["Zuldo - Defias Brotherhood"] = "Zuldo - Defias Brotherhood",
 		["Vite - Ravencrest"] = "Vite - Ravencrest",
-		["Ödette - Defias Brotherhood"] = "Ödette - Defias Brotherhood",
-		["Prella - Defias Brotherhood"] = "Prella - Defias Brotherhood",
+		["Odöde - Defias Brotherhood"] = "Odöde - Defias Brotherhood",
+		["Grave - Vashj"] = "Grave - Vashj",
 		["Krozz - Defias Brotherhood"] = "Krozz - Defias Brotherhood",
 		["Vide - Defias Brotherhood"] = "Vide - Defias Brotherhood",
 		["Rekhyt - Vashj"] = "Rekhyt - Vashj",
 		["Vidja - Defias Brotherhood"] = "Vidja - Defias Brotherhood",
 		["Cazh - Kazzak"] = "Cazh - Kazzak",
 		["Gladwin - Defias Brotherhood"] = "Gladwin - Defias Brotherhood",
-		["Eims - Kazzak"] = "Eims - Kazzak",
 		["Mfgd - Defias Brotherhood"] = "Mfgd - Defias Brotherhood",
+		["Träl - Defias Brotherhood"] = "Träl - Defias Brotherhood",
 		["Rozt - Kazzak"] = "Rozt - Kazzak",
-		["Tålig - Kazzak"] = "Tålig - Kazzak",
+		["Kêl - Defias Brotherhood"] = "Kêl - Defias Brotherhood",
 		["Dryda - Ravencrest"] = "Dryda - Ravencrest",
 		["Tzol - Kazzak"] = "Tzol - Kazzak",
-		["Kêl - Defias Brotherhood"] = "Kêl - Defias Brotherhood",
-		["Träl - Defias Brotherhood"] = "Träl - Defias Brotherhood",
+		["Tålig - Kazzak"] = "Tålig - Kazzak",
+		["Eims - Kazzak"] = "Eims - Kazzak",
 		["Orek - Defias Brotherhood"] = "Orek - Defias Brotherhood",
 		["Ärlig - Ravencrest"] = "Ärlig - Ravencrest",
-		["Grave - Vashj"] = "Grave - Vashj",
-		["Odöde - Defias Brotherhood"] = "Odöde - Defias Brotherhood",
+		["Prella - Defias Brotherhood"] = "Prella - Defias Brotherhood",
+		["Ödette - Defias Brotherhood"] = "Ödette - Defias Brotherhood",
 		["Tzol - Defias Brotherhood"] = "Tzol - Defias Brotherhood",
 		["Testa - Kazzak"] = "Testa - Kazzak",
-		["Orogue - Kazzak"] = "Orogue - Kazzak",
+		["Dal - Ravencrest"] = "Dal - Ravencrest",
 	},
 	["profiles"] = {
 		["Addled - Defias Brotherhood"] = {
@@ -89,15 +91,19 @@ SimulationCraftDB = {
 		},
 		["Gladwin - Ravencrest"] = {
 		},
+		["Orogue - Kazzak"] = {
+		},
 		["Ösa - Defias Brotherhood"] = {
+		},
+		["Allvarg - Ravencrest"] = {
 		},
 		["Zuldo - Defias Brotherhood"] = {
 		},
 		["Vite - Ravencrest"] = {
 		},
-		["Ödette - Defias Brotherhood"] = {
+		["Odöde - Defias Brotherhood"] = {
 		},
-		["Prella - Defias Brotherhood"] = {
+		["Grave - Vashj"] = {
 		},
 		["Krozz - Defias Brotherhood"] = {
 		},
@@ -114,35 +120,35 @@ SimulationCraftDB = {
 		},
 		["Gladwin - Defias Brotherhood"] = {
 		},
-		["Eims - Kazzak"] = {
-		},
 		["Mfgd - Defias Brotherhood"] = {
+		},
+		["Träl - Defias Brotherhood"] = {
 		},
 		["Rozt - Kazzak"] = {
 		},
-		["Tålig - Kazzak"] = {
+		["Kêl - Defias Brotherhood"] = {
 		},
 		["Dryda - Ravencrest"] = {
 		},
 		["Tzol - Kazzak"] = {
 		},
-		["Kêl - Defias Brotherhood"] = {
+		["Tålig - Kazzak"] = {
 		},
-		["Träl - Defias Brotherhood"] = {
+		["Eims - Kazzak"] = {
 		},
 		["Orek - Defias Brotherhood"] = {
 		},
 		["Ärlig - Ravencrest"] = {
 		},
-		["Grave - Vashj"] = {
+		["Prella - Defias Brotherhood"] = {
 		},
-		["Odöde - Defias Brotherhood"] = {
+		["Ödette - Defias Brotherhood"] = {
 		},
 		["Tzol - Defias Brotherhood"] = {
 		},
 		["Testa - Kazzak"] = {
 		},
-		["Orogue - Kazzak"] = {
+		["Dal - Ravencrest"] = {
 		},
 	},
 }

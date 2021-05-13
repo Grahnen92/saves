@@ -1,0 +1,49 @@
+
+MogItDB = {
+	["global"] = {
+		["version"] = "3.9.3",
+	},
+	["profileKeys"] = {
+		["Bernardana - Ravencrest"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["x"] = 0,
+			["slotLabels"] = {
+				["Waist"] = "Waist",
+				["Fist"] = "Fist Weapons",
+				["Tabard"] = "Tabard",
+				["Shield"] = "Shields",
+				["Back"] = "Back",
+				["Shirt"] = "Shirt",
+				["Dagger"] = "Daggers",
+				["Hands"] = "Hands",
+				["Wrist"] = "Wrist",
+				["2H-axe"] = "Two-Handed Axes",
+				["2H-mace"] = "Two-Handed Maces",
+				["1H-mace"] = "One-Handed Maces",
+				["1H-axe"] = "One-Handed Axes",
+				["Holdable"] = "Held In Off-hand",
+				["Staff"] = "Staves",
+				["Chest"] = "Chest",
+				["Legs"] = "Legs",
+				["Feet"] = "Feet",
+				["Shoulder"] = "Shoulder",
+				["Head"] = "Head",
+			},
+			["y"] = 0,
+		},
+	},
+}
+MogItWishlist = {
+	["profileKeys"] = {
+		["Bernardana - Ravencrest"] = "Bernardana - Ravencrest",
+	},
+	["global"] = {
+		["version"] = 90005,
+	},
+	["profiles"] = {
+		["Bernardana - Ravencrest"] = {
+		},
+	},
+}

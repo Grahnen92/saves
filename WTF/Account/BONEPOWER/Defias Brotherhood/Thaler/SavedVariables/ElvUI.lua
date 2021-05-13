@@ -1,908 +1,28 @@
 
 ElvCharacterDB = {
 	["ChatEditHistory"] = {
-		"/i farm", -- [1]
-		"/reload", -- [2]
-		"/s wa", -- [3]
-		"/wa", -- [4]
-		"/i wops x)", -- [5]
-		"/kneel", -- [6]
-		"/bleed", -- [7]
-		"/salute", -- [8]
-		"/flex", -- [9]
-		"/sneak", -- [10]
-		"/s nah", -- [11]
-		"/s you go", -- [12]
-		"/s 1v1", -- [13]
-		"/cheer", -- [14]
-		"/dance", -- [15]
-		"/bow", -- [16]
-		"/praise", -- [17]
-		"/thank", -- [18]
-		"/strong", -- [19]
-		"/s hello there", -- [20]
+		"/flex", -- [1]
+		"/sneak", -- [2]
+		"/s nah", -- [3]
+		"/s you go", -- [4]
+		"/s 1v1", -- [5]
+		"/cheer", -- [6]
+		"/dance", -- [7]
+		"/bow", -- [8]
+		"/praise", -- [9]
+		"/thank", -- [10]
+		"/strong", -- [11]
+		"/s hello there", -- [12]
+		"/p ty", -- [13]
+		"/s let me die", -- [14]
+		"/i Do you need that?", -- [15]
+		"/i ya", -- [16]
+		"/i the ring", -- [17]
+		"/reload", -- [18]
+		"/welcome", -- [19]
+		"/wave", -- [20]
 	},
 	["ChatHistoryLog"] = {
-		{
-			"Shadow Ambush on Bloktor", -- [1]
-			"Bloktor-Lightbringer", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Bloktor-Lightbringer", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			361, -- [11]
-			"Player-1388-0945A736", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff006fdcBloktor-Lightbringer|r",
-			[51] = 1609009836,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [1]
-		{
-			"3", -- [1]
-			"Bloktor-Lightbringer", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Bloktor-Lightbringer", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			362, -- [11]
-			"Player-1388-0945A736", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff006fdcBloktor-Lightbringer|r",
-			[51] = 1609009839,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [2]
-		{
-			"2", -- [1]
-			"Bloktor-Lightbringer", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Bloktor-Lightbringer", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			363, -- [11]
-			"Player-1388-0945A736", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff006fdcBloktor-Lightbringer|r",
-			[51] = 1609009840,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [3]
-		{
-			"1", -- [1]
-			"Bloktor-Lightbringer", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Bloktor-Lightbringer", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			364, -- [11]
-			"Player-1388-0945A736", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff006fdcBloktor-Lightbringer|r",
-			[51] = 1609009841,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [4]
-		{
-			"Shadow Ambush on Chaosfreak", -- [1]
-			"Chaosfreak-TarrenMill", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Chaosfreak-TarrenMill", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			369, -- [11]
-			"Player-1084-09CC23E3", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8687edChaosfreak-TarrenMill|r",
-			[51] = 1609009858,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [5]
-		{
-			"3", -- [1]
-			"Chaosfreak-TarrenMill", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Chaosfreak-TarrenMill", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			370, -- [11]
-			"Player-1084-09CC23E3", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8687edChaosfreak-TarrenMill|r",
-			[51] = 1609009861,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [6]
-		{
-			"2", -- [1]
-			"Chaosfreak-TarrenMill", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Chaosfreak-TarrenMill", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			371, -- [11]
-			"Player-1084-09CC23E3", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8687edChaosfreak-TarrenMill|r",
-			[51] = 1609009862,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [7]
-		{
-			"1", -- [1]
-			"Chaosfreak-TarrenMill", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Chaosfreak-TarrenMill", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			372, -- [11]
-			"Player-1084-09CC23E3", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8687edChaosfreak-TarrenMill|r",
-			[51] = 1609009863,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [8]
-		{
-			"wops x)", -- [1]
-			"Thaler-DefiasBrotherhood", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Thaler-DefiasBrotherhood", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			420, -- [11]
-			"Player-1096-075FDA9C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa22fc8Thaler|r",
-			[51] = 1609010049,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [9]
-		{
-			"Where they at now?", -- [1]
-			"Vyralen-ArgentDawn", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Maldraxxus", -- [4]
-			"Vyralen-ArgentDawn", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Maldraxxus", -- [9]
-			0, -- [10]
-			2, -- [11]
-			"Player-3702-0975AF53", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Vyralen-ArgentDawn|r",
-			[51] = 1609168294,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [10]
-		{
-			"theatre of pain", -- [1]
-			"Allaon-DefiasBrotherhood", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Maldraxxus", -- [4]
-			"Allaon-DefiasBrotherhood", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Maldraxxus", -- [9]
-			0, -- [10]
-			3, -- [11]
-			"Player-1096-0809CBA7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Allaon|r",
-			[51] = 1609168328,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [11]
-		{
-			"Yep I saw em", -- [1]
-			"Vyralen-ArgentDawn", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Maldraxxus", -- [4]
-			"Vyralen-ArgentDawn", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Maldraxxus", -- [9]
-			0, -- [10]
-			4, -- [11]
-			"Player-3702-0975AF53", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Vyralen-ArgentDawn|r",
-			[51] = 1609168338,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [12]
-		{
-			"kill?", -- [1]
-			"Throlzush-ArgentDawn", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Throlzush-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			48, -- [11]
-			"Player-3702-09844F2B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffef367Throlzush-ArgentDawn|r",
-			[51] = 1609168761,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [13]
-		{
-			"nah", -- [1]
-			"Thaler-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Thaler-DefiasBrotherhood", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			49, -- [11]
-			"Player-1096-075FDA9C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa22fc8Thaler|r",
-			[51] = 1609168768,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [14]
-		{
-			"you go", -- [1]
-			"Thaler-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Thaler-DefiasBrotherhood", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			51, -- [11]
-			"Player-1096-075FDA9C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa22fc8Thaler|r",
-			[51] = 1609168778,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [15]
-		{
-			"1v1", -- [1]
-			"Thaler-DefiasBrotherhood", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Thaler-DefiasBrotherhood", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			52, -- [11]
-			"Player-1096-075FDA9C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa22fc8Thaler|r",
-			[51] = 1609168779,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [16]
-		{
-			"|cffffff00Tirna Vaal is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Ardenweald", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Ardenweald", -- [9]
-			0, -- [10]
-			85, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1609170336,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [17]
-		{
-			"|cffffff00Oaken Assembly is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Ardenweald", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Ardenweald", -- [9]
-			0, -- [10]
-			26, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1609331241,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [18]
-		{
-			"|cffffff00Root-Home is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Ardenweald", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Ardenweald", -- [9]
-			0, -- [10]
-			53, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1609331855,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [19]
-		{
-			"|cffffff00Tirna Vaal is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Ardenweald", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Ardenweald", -- [9]
-			0, -- [10]
-			209, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1609335075,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [20]
-		{
-			"|cffffff00Root-Home is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Ardenweald", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Ardenweald", -- [9]
-			0, -- [10]
-			344, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1609338379,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [21]
-		{
-			"|cffffff00Tirna Vaal is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Ardenweald", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Ardenweald", -- [9]
-			0, -- [10]
-			426, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1609340464,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [22]
-		{
-			"|cffffff00Root-Home is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Ardenweald", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Ardenweald", -- [9]
-			0, -- [10]
-			427, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1609340496,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [23]
-		{
-			"WTS Castle Nathria Norma+Heroic,Denathrius Heroic+Normal, Mythic 10+ Dungeons for weekly chest , ashes weekly cap farm; leveling 50-60 +", -- [1]
-			"Pertioka-Ravenholdt", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Pertioka-Ravenholdt", -- [5]
-			"DND", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			521, -- [11]
-			"Player-1096-0A02557B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Pertioka-Ravenholdt|r",
-			[51] = 1609398894,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [24]
-		{
-			"wtb |cffffffff|Hitem:172315::::::::60:105:::::::|h[Umbrahide Treads]|h|r r3", -- [1]
-			"Hemosia-DefiasBrotherhood", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Hemosia-DefiasBrotherhood", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			1, -- [11]
-			"Player-1096-08B3D018", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Hemosia|r",
-			[51] = 1609589504,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [25]
-		{
-			"WTS |cffa335ee|Hitem:183035::::::::60:62:::::::|h[Ardent Sunstar Signet]|h|r 226ilvl + Leech", -- [1]
-			"Xjanter-DefiasBrotherhood", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Xjanter-DefiasBrotherhood", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			36, -- [11]
-			"Player-1096-0605CA52", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec6eaXjanter|r",
-			[51] = 1609589801,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [26]
-		{
-			"WTS rare pet |cff0070dd|Hbattlepet:2960:1:3:155:10:12:0000000000000000:99915|h[Invertebrate Oil]|h|r 79kk. and I upgraded it to blue", -- [1]
-			"Soutsous-DefiasBrotherhood", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Soutsous-DefiasBrotherhood", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			4, -- [11]
-			"Player-1096-07DB2DB5", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa22fc8Soutsous|r",
-			[51] = 1610397483,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [27]
-		{
-			"|cffffff00Dreamshrine Basin is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Ardenweald", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Ardenweald", -- [9]
-			0, -- [10]
-			27, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1610398009,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [28]
-		{
-			"|cffffff00Hibernal Hollow is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Ardenweald", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Ardenweald", -- [9]
-			0, -- [10]
-			51, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1610398175,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [29]
-		{
-			"|cffffff00Glitterfall Basin is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Ardenweald", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Ardenweald", -- [9]
-			0, -- [10]
-			90, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1610398742,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [30]
-		{
-			"|cffffff00Glitterfall Basin is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Ardenweald", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Ardenweald", -- [9]
-			0, -- [10]
-			98, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1610398824,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [31]
-		{
-			"|cffffff00Glitterfall Basin is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Ardenweald", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Ardenweald", -- [9]
-			0, -- [10]
-			100, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1610398938,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [32]
-		{
-			"|cffffff00Glitterfall Basin is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Ardenweald", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Ardenweald", -- [9]
-			0, -- [10]
-			101, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1610398998,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [33]
-		{
-			"|cffffff00Glitterfall Basin is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Ardenweald", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Ardenweald", -- [9]
-			0, -- [10]
-			103, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1610399061,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [34]
-		{
-			"|cffffff00Glitterfall Basin is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Ardenweald", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Ardenweald", -- [9]
-			0, -- [10]
-			106, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1610399140,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [35]
-		{
-			"okay", -- [1]
-			"Veggy-DefiasBrotherhood", -- [2]
-			"", -- [3]
-			"1. General - Ardenweald", -- [4]
-			"Veggy-DefiasBrotherhood", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Ardenweald", -- [9]
-			0, -- [10]
-			109, -- [11]
-			"Player-1096-09DE7DAE", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff8687edVeggy|r",
-			[51] = 1610399173,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [36]
-		{
-			"|cffffff00|Hworldmap:1565:5260:3087|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a Map Pin Location]|h|r dont come to this city if you're horde", -- [1]
-			"Veggy-DefiasBrotherhood", -- [2]
-			"", -- [3]
-			"1. General - Ardenweald", -- [4]
-			"Veggy-DefiasBrotherhood", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Ardenweald", -- [9]
-			0, -- [10]
-			116, -- [11]
-			"Player-1096-09DE7DAE", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff8687edVeggy|r",
-			[51] = 1610399374,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [37]
-		{
-			"alliance raid going on", -- [1]
-			"Veggy-DefiasBrotherhood", -- [2]
-			"", -- [3]
-			"1. General - Ardenweald", -- [4]
-			"Veggy-DefiasBrotherhood", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Ardenweald", -- [9]
-			0, -- [10]
-			117, -- [11]
-			"Player-1096-09DE7DAE", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff8687edVeggy|r",
-			[51] = 1610399380,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [38]
-		{
-			"they are just being diks", -- [1]
-			"Pennÿpax-ArgentDawn", -- [2]
-			"", -- [3]
-			"1. General - Ardenweald", -- [4]
-			"Pennÿpax-ArgentDawn", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Ardenweald", -- [9]
-			0, -- [10]
-			122, -- [11]
-			"Player-3702-08B0B64C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa22fc8Pennÿpax-ArgentDawn|r",
-			[51] = 1610399410,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [39]
-		{
-			"the bounty is alone with a disc priest", -- [1]
-			"Veggy-DefiasBrotherhood", -- [2]
-			"", -- [3]
-			"1. General - Ardenweald", -- [4]
-			"Veggy-DefiasBrotherhood", -- [5]
-			"", -- [6]
-			1, -- [7]
-			1, -- [8]
-			"General - Ardenweald", -- [9]
-			0, -- [10]
-			133, -- [11]
-			"Player-1096-09DE7DAE", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff8687edVeggy|r",
-			[51] = 1610399687,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [40]
 		{
 			"he's only 28k hp warrior", -- [1]
 			"Veggy-DefiasBrotherhood", -- [2]
@@ -924,7 +44,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edVeggy|r",
 			[51] = 1610399693,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [41]
+		}, -- [1]
 		{
 			"Don't even man, what gets me is the people who run into encounters, die, and then run in again without thinking... Like, it's okay if you don't know what you're doing, just ask", -- [1]
 			"Moonoir-EarthenRing", -- [2]
@@ -946,7 +66,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Moonoir-EarthenRing|r",
 			[51] = 1610998217,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [42]
+		}, -- [2]
 		{
 			"get baptised in SW and call it a day", -- [1]
 			"Bulvrick-ScarshieldLegion", -- [2]
@@ -968,7 +88,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cBulvrick-ScarshieldLegion|r",
 			[51] = 1610999472,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [43]
+		}, -- [3]
 		{
 			"ofc =o playing as a healer in open world is just torturing yourself needlessly..", -- [1]
 			"Redrum-Ravenholdt", -- [2]
@@ -990,7 +110,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Redrum-Ravenholdt|r",
 			[51] = 1610999497,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [44]
+		}, -- [4]
 		{
 			"guess all the wankstains keep on being salty not being part of any community for so long they gotta share their impotence", -- [1]
 			"Yinroh-ScarshieldLegion", -- [2]
@@ -1012,7 +132,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeYinroh-ScarshieldLegion|r",
 			[51] = 1611001222,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [45]
+		}, -- [5]
 		{
 			"What was your character name on US proudmoore server in 2004?", -- [1]
 			"Gadock-DefiasBrotherhood", -- [2]
@@ -1034,7 +154,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Gadock|r",
 			[51] = 1611001241,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [46]
+		}, -- [6]
 		{
 			"think you can track that hahahahahahaha", -- [1]
 			"Yinroh-ScarshieldLegion", -- [2]
@@ -1056,7 +176,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeYinroh-ScarshieldLegion|r",
 			[51] = 1611001257,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [47]
+		}, -- [7]
 		{
 			"I can try ^^", -- [1]
 			"Gadock-DefiasBrotherhood", -- [2]
@@ -1078,7 +198,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Gadock|r",
 			[51] = 1611001262,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [48]
+		}, -- [8]
 		{
 			"yinroh but I don't think you will", -- [1]
 			"Yinroh-ScarshieldLegion", -- [2]
@@ -1100,7 +220,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeYinroh-ScarshieldLegion|r",
 			[51] = 1611001269,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [49]
+		}, -- [9]
 		{
 			"Alliance or horde?", -- [1]
 			"Gadock-DefiasBrotherhood", -- [2]
@@ -1122,7 +242,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Gadock|r",
 			[51] = 1611001277,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [50]
+		}, -- [10]
 		{
 			"Can't wait to taste yer salty tears hahahahahahaha", -- [1]
 			"Yinroh-ScarshieldLegion", -- [2]
@@ -1144,7 +264,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeYinroh-ScarshieldLegion|r",
 			[51] = 1611001382,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [51]
+		}, -- [11]
 		{
 			"You sure do sound like a salty old man", -- [1]
 			"Nyxanne-DefiasBrotherhood", -- [2]
@@ -1166,7 +286,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Nyxanne|r",
 			[51] = 1611001409,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [52]
+		}, -- [12]
 		{
 			"WTS |cffa335ee|Hitem:181393::::::::60:258::2:3:6652:1472:6646:1:28:748:::|h[Sylvan Whiteshield]|h|r 90k", -- [1]
 			"Ozella-ScarshieldLegion", -- [2]
@@ -1188,7 +308,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeOzella-ScarshieldLegion|r",
 			[51] = 1611002442,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [53]
+		}, -- [13]
 		{
 			"Dein Höhenflug hat ein Ende, ich warte am Airport", -- [1]
 			"Grella-DefiasBrotherhood", -- [2]
@@ -1210,7 +330,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Grella|r",
 			[51] = 1611002702,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [54]
+		}, -- [14]
 		{
 			"WTS |cff0070dd|Hitem:128319::::::::50:267::31:::::|h[Void-Shrouded Satchel]|h|r containing the heirloom trinket |cff00ccff|Hitem:128318::::::::50:267:::1:5805::::|h[Touch of the Void]|h|r for 7k :)", -- [1]
 			"Glordar-DefiasBrotherhood", -- [2]
@@ -1232,7 +352,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Glordar|r",
 			[51] = 1611002730,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [55]
+		}, -- [15]
 		{
 			"Crafting R4 |cffffffff|Hitem:172325::::::::60:264::63:1:3524::::|h[Boneshatter Helm]|h|r and |cffffffff|Hitem:172318::::::::60:264::63:1:3524::::|h[Umbrahide Leggings]|h|r", -- [1]
 			"Zehran-DefiasBrotherhood", -- [2]
@@ -1254,7 +374,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcZehran|r",
 			[51] = 1611003093,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [56]
+		}, -- [16]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-137900-1096-70759505|h[Guild: Era of Insolence]|h|r PvP Guild recruiting 1.9k+ CR HPally for RBGs. Also looking for Arena and Casual PvPers. Active Discord too! /w for more info", -- [1]
 			"Chouharder-Sporeggar", -- [2]
@@ -1276,7 +396,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Chouharder-Sporeggar|r",
 			[51] = 1611003128,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [57]
+		}, -- [17]
 		{
 			"Oblivions Caress is recruiting skilled Ranged DPS+WW Monk+Rogue+HPally for current raiding progression (9/10 HC). We raid Thu+Sun @ 19-23h. We're a mature and friendly guild with a strong community. M+ players are always welcome!", -- [1]
 			"Mikka-DefiasBrotherhood", -- [2]
@@ -1298,7 +418,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Mikka|r",
 			[51] = 1611003235,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [58]
+		}, -- [18]
 		{
 			"|cffffd000|Htrade:Player-1096-0975B32E:195096:333|h[Enchanting]|h|r free your mats", -- [1]
 			"Denni-DarkmoonFaire", -- [2]
@@ -1320,7 +440,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Denni-DarkmoonFaire|r",
 			[51] = 1611003395,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [59]
+		}, -- [19]
 		{
 			"Oblivions Caress is recruiting skilled Ranged DPS+WW Monk+Rogue+HPally for current raiding progression (9/10 HC). We raid Thu+Sun @ 19-23h. We're a mature and friendly guild with a strong community. M+ players are always welcome!", -- [1]
 			"Mikka-DefiasBrotherhood", -- [2]
@@ -1342,7 +462,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Mikka|r",
 			[51] = 1611003673,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [60]
+		}, -- [20]
 		{
 			"WTS |cffffffff|Hitem:173241::::::::60:267::64:2:6717:1507::::|h[Grim-Veiled Robe]|h|r cheaper then AH", -- [1]
 			"Cyqres-DefiasBrotherhood", -- [2]
@@ -1364,7 +484,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edCyqres|r",
 			[51] = 1611003716,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [61]
+		}, -- [21]
 		{
 			"LF craft R4 mail boots.", -- [1]
 			"Gróx-DefiasBrotherhood", -- [2]
@@ -1386,7 +506,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcGróx|r",
 			[51] = 1611003799,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [62]
+		}, -- [22]
 		{
 			"|cffa335ee|Hitem:171694::::::::60:254::22:2:1612:6646:1:28:1029:::|h[Treads of Implicit Obedience]|h|r", -- [1]
 			"Redbol-DarkmoonFaire", -- [2]
@@ -1408,7 +528,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Redbol-DarkmoonFaire|r",
 			[51] = 1611519593,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [63]
+		}, -- [23]
 		{
 			"any battered hilt for sale? /w me", -- [1]
 			"Bradthedead-DefiasBrotherhood", -- [2]
@@ -1430,7 +550,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Bradthedead|r",
 			[51] = 1611519595,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [64]
+		}, -- [24]
 		{
 			"Hello", -- [1]
 			"Kuzh-DefiasBrotherhood", -- [2]
@@ -1452,7 +572,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcKuzh|r",
 			[51] = 1611521409,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [65]
+		}, -- [25]
 		{
 			"Loktar!", -- [1]
 			"Errak-ArgentDawn", -- [2]
@@ -1474,7 +594,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Errak-ArgentDawn|r",
 			[51] = 1611521416,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [66]
+		}, -- [26]
 		{
 			"Would you like to party?", -- [1]
 			"Kuzh-DefiasBrotherhood", -- [2]
@@ -1496,7 +616,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcKuzh|r",
 			[51] = 1611521418,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [67]
+		}, -- [27]
 		{
 			"May not be a bad idea", -- [1]
 			"Errak-ArgentDawn", -- [2]
@@ -1518,7 +638,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Errak-ArgentDawn|r",
 			[51] = 1611521425,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [68]
+		}, -- [28]
 		{
 			"hello there", -- [1]
 			"Thaler-DefiasBrotherhood", -- [2]
@@ -1540,7 +660,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Thaler|r",
 			[51] = 1611521426,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [69]
+		}, -- [29]
 		{
 			"Well, we're off for now Errak. You have a pleasant evening!", -- [1]
 			"Kuzh-DefiasBrotherhood", -- [2]
@@ -1562,7 +682,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcKuzh|r",
 			[51] = 1611521613,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [70]
+		}, -- [30]
 		{
 			"dont suppose any1 selling 235 |cffffffff|Hitem:172316::::::::60:268:::::::|h[Umbrahide Gauntlets]|h|r around 100k mark? (or shoulders)", -- [1]
 			"Kungfuhybrid-EarthenRing", -- [2]
@@ -1584,7 +704,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Kungfuhybrid-EarthenRing|r",
 			[51] = 1611522687,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [71]
+		}, -- [31]
 		{
 			"MRRRRRRRRRRRRaz", -- [1]
 			"Sparta-EarthenRing", -- [2]
@@ -1606,7 +726,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Sparta-EarthenRing|r",
 			[51] = 1612381770,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [72]
+		}, -- [32]
 		{
 			"can u link", -- [1]
 			"Aerodeon-TwistingNether", -- [2]
@@ -1628,7 +748,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Aerodeon-TwistingNether|r",
 			[51] = 1612383932,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [73]
+		}, -- [33]
 		{
 			"Walkthrough(world rank 20) is selling |cff66bbff|Hjournal:1:2424:14|h[Sire Denathrius]|h|r HC for > 80k < now! You'll get |cffffff00|Hachievement:14460:Player-1096-0A14586A:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Sire Denathrius]|h|r & Chance on 220 ilvl Loot! /w me for more info", -- [1]
 			"Qwiss-EarthenRing", -- [2]
@@ -1650,7 +770,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Qwiss-EarthenRing|r",
 			[51] = 1615131417,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [74]
+		}, -- [34]
 		{
 			"AND THEN GOD SAID UNTO ADAM ", -- [1]
 			"Zhukel-DefiasBrotherhood", -- [2]
@@ -1672,7 +792,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcZhukel|r",
 			[51] = 1615131917,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [75]
+		}, -- [35]
 		{
 			"YOU MUST CONSTRUCT ADDITIONAL PYLONS", -- [1]
 			"Zhukel-DefiasBrotherhood", -- [2]
@@ -1694,7 +814,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcZhukel|r",
 			[51] = 1615131947,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [76]
+		}, -- [36]
 		{
 			"WTF I AM A ZERG NOT A PROTOSS", -- [1]
 			"Rekaris-DefiasBrotherhood", -- [2]
@@ -1716,7 +836,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeRekaris|r",
 			[51] = 1615131990,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [77]
+		}, -- [37]
 		{
 			"WTS |cff1eff00|Hitem:14970::::::::60:262::54:2:1677:4277:1:9:35:::|h[Glorious Legplates of the Quickblade]|h|r50K|cff0070dd|Hitem:1973::::::::60:262::::1:28:26:::|h[Orb of Deception]|h|r20K|cff0070dd|Hitem:164334::::::::60:262:::::::|h[Plundered Blade of Northern Kings]|h|r70K|cff0070dd|Hitem:52489::::::::60:262:::::::|h[Rhinestone Sunglasses]|h|r90K", -- [1]
 			"Agrogas-DefiasBrotherhood", -- [2]
@@ -1738,7 +858,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcAgrogas|r",
 			[51] = 1615131996,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [78]
+		}, -- [38]
 		{
 			"Stop screaming", -- [1]
 			"Hvirvelkost-DarkmoonFaire", -- [2]
@@ -1760,7 +880,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Hvirvelkost-DarkmoonFaire|r",
 			[51] = 1615132003,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [79]
+		}, -- [39]
 		{
 			"NO!", -- [1]
 			"Rekaris-DefiasBrotherhood", -- [2]
@@ -1782,7 +902,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeRekaris|r",
 			[51] = 1615132007,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [80]
+		}, -- [40]
 		{
 			"Enjoy your reports!?", -- [1]
 			"Hvirvelkost-DarkmoonFaire", -- [2]
@@ -1804,7 +924,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Hvirvelkost-DarkmoonFaire|r",
 			[51] = 1615132029,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [81]
+		}, -- [41]
 		{
 			"YES", -- [1]
 			"Rekaris-DefiasBrotherhood", -- [2]
@@ -1826,7 +946,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeRekaris|r",
 			[51] = 1615132034,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [82]
+		}, -- [42]
 		{
 			"you a bich", -- [1]
 			"Zhukel-DefiasBrotherhood", -- [2]
@@ -1848,7 +968,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcZhukel|r",
 			[51] = 1615132043,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [83]
+		}, -- [43]
 		{
 			"for using caps?", -- [1]
 			"Djuel-DefiasBrotherhood", -- [2]
@@ -1870,7 +990,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcDjuel|r",
 			[51] = 1615132046,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [84]
+		}, -- [44]
 		{
 			"Walkthrough(world rank 20) is selling |cff66bbff|Hjournal:1:2424:14|h[Sire Denathrius]|h|r HC for > 80k < now! You'll get |cffffff00|Hachievement:14460:Player-1096-0A14586A:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: Sire Denathrius]|h|r & Chance on 220 ilvl Loot! /w me for more info", -- [1]
 			"Qwiss-EarthenRing", -- [2]
@@ -1892,7 +1012,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Qwiss-EarthenRing|r",
 			[51] = 1615132047,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [85]
+		}, -- [45]
 		{
 			"anyone selling |cffa335ee|Hitem:183035::::::::60:256:::::::|h[Ardent Sunstar Signet]|h|r 213 for a decent price?", -- [1]
 			"Twotoe-DefiasBrotherhood", -- [2]
@@ -1914,7 +1034,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeTwotoe|r",
 			[51] = 1615132058,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [86]
+		}, -- [46]
 		{
 			"WTS |cff0070dd|Hitem:120137::::::::60:262::::1:28:46:::|h[Tome of Polymorph: Polar Bear Cub]|h|r", -- [1]
 			"Agrogas-DefiasBrotherhood", -- [2]
@@ -1936,7 +1056,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcAgrogas|r",
 			[51] = 1615132073,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [87]
+		}, -- [47]
 		{
 			"<<<<Hunter's Den>>>> Selling RARE SPAWN MOUNTS: Voidtalon, Time-Lost Proto-Drake, Phosphorescent Stone Drake, Grey Riding Camel, Frightened Kodo, Long Forgotten Hippogryph, Thundering onyx cloud serpent, spirit Hunter pets and more. Gold only.", -- [1]
 			"Agrogas-DefiasBrotherhood", -- [2]
@@ -1958,7 +1078,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcAgrogas|r",
 			[51] = 1615132105,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [88]
+		}, -- [48]
 		{
 			"<<<<Hunter's Den>>>>  Selling Ashhide Mushan Beast with pet and title or on its own, Smoldering Ember Wyrm, The Hivemind, all Dreanor world mounts!!", -- [1]
 			"Agrogas-DefiasBrotherhood", -- [2]
@@ -1980,7 +1100,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcAgrogas|r",
 			[51] = 1615132165,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [89]
+		}, -- [49]
 		{
 			"<<<<Hunter's Den>>>> Selling ALL Glory achievments, single achievments that require group (pm which one you need) and Blood Infusion Questline, Servant of N'Zoth, Vial of Green Goo, The Alliance/Horde Slayer, Master of Duels, DISCOUNTS AVAILABLE", -- [1]
 			"Agrogas-DefiasBrotherhood", -- [2]
@@ -2002,7 +1122,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcAgrogas|r",
 			[51] = 1615132207,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [90]
+		}, -- [50]
 		{
 			"gamers are most oppressed people on earth", -- [1]
 			"Zhukel-DefiasBrotherhood", -- [2]
@@ -2024,7 +1144,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcZhukel|r",
 			[51] = 1615132413,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [91]
+		}, -- [51]
 		{
 			"you might be", -- [1]
 			"Zívíel-DefiasBrotherhood", -- [2]
@@ -2046,7 +1166,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Zívíel|r",
 			[51] = 1615132425,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [92]
+		}, -- [52]
 		{
 			"no me", -- [1]
 			"Rekaris-DefiasBrotherhood", -- [2]
@@ -2068,7 +1188,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeRekaris|r",
 			[51] = 1615132430,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [93]
+		}, -- [53]
 		{
 			"mirroring your own insecurities", -- [1]
 			"Zívíel-DefiasBrotherhood", -- [2]
@@ -2090,7 +1210,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Zívíel|r",
 			[51] = 1615132454,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [94]
+		}, -- [54]
 		{
 			"no u", -- [1]
 			"Zhukel-DefiasBrotherhood", -- [2]
@@ -2112,7 +1232,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcZhukel|r",
 			[51] = 1615132485,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [95]
+		}, -- [55]
 		{
 			"i am?", -- [1]
 			"Zívíel-DefiasBrotherhood", -- [2]
@@ -2134,7 +1254,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Zívíel|r",
 			[51] = 1615132500,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [96]
+		}, -- [56]
 		{
 			"how so", -- [1]
 			"Zívíel-DefiasBrotherhood", -- [2]
@@ -2156,7 +1276,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Zívíel|r",
 			[51] = 1615132503,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [97]
+		}, -- [57]
 		{
 			"well?", -- [1]
 			"Zívíel-DefiasBrotherhood", -- [2]
@@ -2178,7 +1298,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Zívíel|r",
 			[51] = 1615132541,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [98]
+		}, -- [58]
 		{
 			"as i thought", -- [1]
 			"Zívíel-DefiasBrotherhood", -- [2]
@@ -2199,6 +1319,886 @@ ElvCharacterDB = {
 			true, -- [17]
 			[52] = "|cffa22fc8Zívíel|r",
 			[51] = 1615132557,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [59]
+		{
+			"sell|cffa335ee|Hitem:41508::::::::60:261:::::::|h[Mechano-Hog]|h|r", -- [1]
+			"Baruunn-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Baruunn-DefiasBrotherhood", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1, -- [11]
+			"Player-1096-074811E7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffef367Baruunn|r",
+			[51] = 1616445302,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [60]
+		{
+			"wts |cffa335ee|Hitem:183013::::::::60:70::6:4:7187:6652:1498:6646:1:28:753:::|h[Fallen Templar's Gauntlets]|h|r|cffa335ee|Hitem:184778::::::::60:70::6:4:7187:6652:1498:6646:1:28:753:::|h[Decadent Nathrian Shawl]|h|r|cffa335ee|Hitem:183035::::::::60:70::6:5:7187:6652:7193:1498:6646:1:28:753:::|h[Ardent Sunstar Signet]|h|r w/me", -- [1]
+			"Liarine-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Liarine-DefiasBrotherhood", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			4, -- [11]
+			"Player-1096-060AE871", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Liarine|r",
+			[51] = 1616445628,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [61]
+		{
+			"WTS|cffffffff|Hitem:178926::::::::60:257::64:3:6717:7193:1507::::|h[Shadowghast Ring]|h|r 13K ", -- [1]
+			"Sickheals-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Sickheals-DefiasBrotherhood", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1, -- [11]
+			"Player-1096-0A1CD256", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeSickheals|r",
+			[51] = 1619469600,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [62]
+		{
+			"i can go tank", -- [1]
+			"Drgreenpaw-Stormreaver", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Drgreenpaw-Stormreaver", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			67, -- [11]
+			"Player-3656-0709AF7A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffe7b09Drgreenpaw-Stormreaver|r",
+			[51] = 1620105010,
+			[50] = "CHAT_MSG_PARTY",
+		}, -- [63]
+		{
+			"nah", -- [1]
+			"Bolovan-Stormreaver", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Bolovan-Stormreaver", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			78, -- [11]
+			"Player-3656-0800463E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa22fc8Bolovan-Stormreaver|r",
+			[51] = 1620105069,
+			[50] = "CHAT_MSG_PARTY_LEADER",
+		}, -- [64]
+		{
+			"ty", -- [1]
+			"Thaler-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Thaler-DefiasBrotherhood", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			98, -- [11]
+			"Player-1096-075FDA9C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa22fc8Thaler|r",
+			[51] = 1620105159,
+			[50] = "CHAT_MSG_PARTY",
+		}, -- [65]
+		{
+			"doorbell bbr fast", -- [1]
+			"Drgreenpaw-Stormreaver", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Drgreenpaw-Stormreaver", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			133, -- [11]
+			"Player-3656-0709AF7A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffe7b09Drgreenpaw-Stormreaver|r",
+			[51] = 1620105288,
+			[50] = "CHAT_MSG_PARTY_LEADER",
+		}, -- [66]
+		{
+			"bk", -- [1]
+			"Drgreenpaw-Stormreaver", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Drgreenpaw-Stormreaver", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			137, -- [11]
+			"Player-3656-0709AF7A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffe7b09Drgreenpaw-Stormreaver|r",
+			[51] = 1620105345,
+			[50] = "CHAT_MSG_PARTY_LEADER",
+		}, -- [67]
+		{
+			"ty m8", -- [1]
+			"Drgreenpaw-Stormreaver", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Drgreenpaw-Stormreaver", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			154, -- [11]
+			"Player-3656-0709AF7A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffe7b09Drgreenpaw-Stormreaver|r",
+			[51] = 1620105423,
+			[50] = "CHAT_MSG_PARTY_LEADER",
+		}, -- [68]
+		{
+			"who want's my PI?", -- [1]
+			"Novichan-Draenor", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Novichan-Draenor", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			15, -- [11]
+			"Player-1403-06F9E8AE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffefefeNovichan-Draenor|r",
+			[51] = 1620156732,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [69]
+		{
+			"and fea?", -- [1]
+			"Novichan-Draenor", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Novichan-Draenor", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			18, -- [11]
+			"Player-1403-06F9E8AE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffefefeNovichan-Draenor|r",
+			[51] = 1620156740,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [70]
+		{
+			"Curse of Obliteration on Véxxér", -- [1]
+			"Véxxér-Draenor", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Véxxér-Draenor", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			19, -- [11]
+			"Player-1403-09B9AAC0", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffef367Véxxér-Draenor|r",
+			[51] = 1620156746,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [71]
+		{
+			"3", -- [1]
+			"Véxxér-Draenor", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Véxxér-Draenor", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			21, -- [11]
+			"Player-1403-09B9AAC0", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffef367Véxxér-Draenor|r",
+			[51] = 1620156749,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [72]
+		{
+			"2", -- [1]
+			"Véxxér-Draenor", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Véxxér-Draenor", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			22, -- [11]
+			"Player-1403-09B9AAC0", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffef367Véxxér-Draenor|r",
+			[51] = 1620156750,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [73]
+		{
+			"1", -- [1]
+			"Véxxér-Draenor", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Véxxér-Draenor", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			23, -- [11]
+			"Player-1403-09B9AAC0", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffef367Véxxér-Draenor|r",
+			[51] = 1620156751,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [74]
+		{
+			"Curse of Obliteration on Novichan", -- [1]
+			"Novichan-Draenor", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Novichan-Draenor", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			34, -- [11]
+			"Player-1403-06F9E8AE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffefefeNovichan-Draenor|r",
+			[51] = 1620156853,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [75]
+		{
+			"3", -- [1]
+			"Novichan-Draenor", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Novichan-Draenor", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			35, -- [11]
+			"Player-1403-06F9E8AE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffefefeNovichan-Draenor|r",
+			[51] = 1620156856,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [76]
+		{
+			"2", -- [1]
+			"Novichan-Draenor", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Novichan-Draenor", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			36, -- [11]
+			"Player-1403-06F9E8AE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffefefeNovichan-Draenor|r",
+			[51] = 1620156857,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [77]
+		{
+			"1", -- [1]
+			"Novichan-Draenor", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Novichan-Draenor", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			37, -- [11]
+			"Player-1403-06F9E8AE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffefefeNovichan-Draenor|r",
+			[51] = 1620156858,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [78]
+		{
+			"Curse of Obliteration on Véxxér", -- [1]
+			"Véxxér-Draenor", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Véxxér-Draenor", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			38, -- [11]
+			"Player-1403-09B9AAC0", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffef367Véxxér-Draenor|r",
+			[51] = 1620156900,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [79]
+		{
+			"Interrupted |cff71d5ff|Hspell:338003:0|h[Wicked Bolt]|h|r on Depraved Obliterator", -- [1]
+			"Véxxér-Draenor", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Véxxér-Draenor", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			39, -- [11]
+			"Player-1403-09B9AAC0", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffef367Véxxér-Draenor|r",
+			[51] = 1620156906,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [80]
+		{
+			"Curse of Obliteration on Novichan", -- [1]
+			"Novichan-Draenor", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Novichan-Draenor", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			40, -- [11]
+			"Player-1403-06F9E8AE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffefefeNovichan-Draenor|r",
+			[51] = 1620156909,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [81]
+		{
+			"3", -- [1]
+			"Novichan-Draenor", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Novichan-Draenor", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			41, -- [11]
+			"Player-1403-06F9E8AE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffefefeNovichan-Draenor|r",
+			[51] = 1620156912,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [82]
+		{
+			"2", -- [1]
+			"Novichan-Draenor", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Novichan-Draenor", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			42, -- [11]
+			"Player-1403-06F9E8AE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffefefeNovichan-Draenor|r",
+			[51] = 1620156913,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [83]
+		{
+			"3", -- [1]
+			"Véxxér-Draenor", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Véxxér-Draenor", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			54, -- [11]
+			"Player-1403-09B9AAC0", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffef367Véxxér-Draenor|r",
+			[51] = 1620156986,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [84]
+		{
+			"2", -- [1]
+			"Véxxér-Draenor", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Véxxér-Draenor", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			55, -- [11]
+			"Player-1403-09B9AAC0", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffef367Véxxér-Draenor|r",
+			[51] = 1620156987,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [85]
+		{
+			"1", -- [1]
+			"Véxxér-Draenor", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Véxxér-Draenor", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			56, -- [11]
+			"Player-1403-09B9AAC0", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffef367Véxxér-Draenor|r",
+			[51] = 1620156988,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [86]
+		{
+			"shroud", -- [1]
+			"Véxxér-Draenor", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Véxxér-Draenor", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			82, -- [11]
+			"Player-1403-09B9AAC0", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffef367Véxxér-Draenor|r",
+			[51] = 1620157154,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [87]
+		{
+			"let me die", -- [1]
+			"Thaler-DefiasBrotherhood", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Thaler-DefiasBrotherhood", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			85, -- [11]
+			"Player-1096-075FDA9C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa22fc8Thaler|r",
+			[51] = 1620157177,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [88]
+		{
+			"Interrupted |cff71d5ff|Hspell:326829:0|h[Wicked Bolt]|h|r on Inquisitor Sigar", -- [1]
+			"Véxxér-Draenor", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Véxxér-Draenor", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			119, -- [11]
+			"Player-1403-09B9AAC0", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffef367Véxxér-Draenor|r",
+			[51] = 1620157460,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [89]
+		{
+			"Do you need that?", -- [1]
+			"Thaler-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Thaler-DefiasBrotherhood", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			136, -- [11]
+			"Player-1096-075FDA9C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa22fc8Thaler|r",
+			[51] = 1620157552,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+		}, -- [90]
+		{
+			"me?", -- [1]
+			"Novichan-Draenor", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Novichan-Draenor", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			138, -- [11]
+			"Player-1403-06F9E8AE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffefefeNovichan-Draenor|r",
+			[51] = 1620157564,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [91]
+		{
+			"ya", -- [1]
+			"Thaler-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Thaler-DefiasBrotherhood", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			139, -- [11]
+			"Player-1096-075FDA9C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa22fc8Thaler|r",
+			[51] = 1620157570,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+		}, -- [92]
+		{
+			"need what?", -- [1]
+			"Novichan-Draenor", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Novichan-Draenor", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			140, -- [11]
+			"Player-1403-06F9E8AE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffefefeNovichan-Draenor|r",
+			[51] = 1620157573,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [93]
+		{
+			"the ring", -- [1]
+			"Thaler-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Thaler-DefiasBrotherhood", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			141, -- [11]
+			"Player-1096-075FDA9C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa22fc8Thaler|r",
+			[51] = 1620157574,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+		}, -- [94]
+		{
+			"I didn't get a ring", -- [1]
+			"Novichan-Draenor", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Novichan-Draenor", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			142, -- [11]
+			"Player-1403-06F9E8AE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffefefeNovichan-Draenor|r",
+			[51] = 1620157581,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [95]
+		{
+			"was other priest", -- [1]
+			"Novichan-Draenor", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Novichan-Draenor", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			143, -- [11]
+			"Player-1403-06F9E8AE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffefefeNovichan-Draenor|r",
+			[51] = 1620157603,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [96]
+		{
+			"FORTHIS RE RAS NAGAN ", -- [1]
+			"Gazey-Moonglade", -- [2]
+			"Common", -- [3]
+			"", -- [4]
+			"Gazey-Moonglade", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			23, -- [11]
+			"Player-1085-097C120F", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00fe97Gazey-Moonglade|r",
+			[51] = 1620213850,
+			[50] = "CHAT_MSG_YELL",
+		}, -- [97]
+		{
+			"well...it is 140 ilvl", -- [1]
+			"Malcorion-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Malcorion-DefiasBrotherhood", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			67, -- [11]
+			"Player-1096-074E4245", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa9d271Malcorion|r",
+			[51] = 1620228012,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [98]
+		{
+			"i sell |cffa335ee|Hitem:90655::::::::1:1453:::::::|h[Riendas del dragón nimbo rubí tronador]|h|r so cheaper than market", -- [1]
+			"Kateseller-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Kateseller-DefiasBrotherhood", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			69, -- [11]
+			"Player-1096-0A2284DA", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffef367Kateseller|r",
+			[51] = 1620228118,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [99]
 	},

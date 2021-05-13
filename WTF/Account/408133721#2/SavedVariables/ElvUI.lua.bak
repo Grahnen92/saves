@@ -1,0 +1,66 @@
+
+ElvDB = {
+	["profileKeys"] = {
+		["Bernardana - Ravencrest"] = "Default",
+	},
+	["namespaces"] = {
+		["LibDualSpec-1.0"] = {
+		},
+	},
+	["class"] = {
+		["Ravencrest"] = {
+			["Bernardana"] = "SHAMAN",
+		},
+	},
+	["profiles"] = {
+		["Default"] = {
+			["unitframe"] = {
+				["filters"] = {
+					["aurawatch"] = {
+					},
+				},
+			},
+		},
+	},
+	["LuaErrorDisabledAddOns"] = {
+	},
+	["global"] = {
+		["nameplate"] = {
+			["filters"] = {
+				["ElvUI_NonTarget"] = {
+				},
+				["ElvUI_Explosives"] = {
+				},
+				["ElvUI_Target"] = {
+				},
+				["ElvUI_Boss"] = {
+				},
+			},
+		},
+	},
+	["gold"] = {
+		["Ravencrest"] = {
+			["Bernardana"] = 15845407,
+		},
+	},
+	["faction"] = {
+		["Ravencrest"] = {
+			["Bernardana"] = "Alliance",
+		},
+	},
+	["serverID"] = {
+		[1329] = {
+			["Ravencrest"] = true,
+		},
+	},
+}
+ElvPrivateDB = {
+	["profileKeys"] = {
+		["Bernardana - Ravencrest"] = "Bernardana - Ravencrest",
+	},
+	["profiles"] = {
+		["Bernardana - Ravencrest"] = {
+			["install_complete"] = 12,
+		},
+	},
+}

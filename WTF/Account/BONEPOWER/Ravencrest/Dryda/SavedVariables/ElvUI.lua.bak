@@ -69,5 +69,137 @@ ElvCharacterDB = {
 			[51] = 1587888102,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [3]
+		{
+			"WTS 2v2 up to 1.8k and 3v3 up to 2.1k. Done by season glads. Whisper me your desired rating or if you want more info. Gold only.", -- [1]
+			"Iratha-Ravencrest", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Iratha-Ravencrest", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			4523, -- [11]
+			"Player-1329-09A25A9D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Iratha|r",
+			[51] = 1620465963,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [4]
+		{
+			"WTS |cffa335ee|Hitem:184804::::::::60:104:::2:1472:6646:1:28:2060:::|h[Ulfius' Calming Claymore]|h|r cheap", -- [1]
+			"Reginanature-Ravencrest", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Reginanature-Ravencrest", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			4551, -- [11]
+			"Player-1329-09A88393", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Reginanature|r",
+			[51] = 1620465986,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [5]
+		{
+			"<Icecrown> WTS 0-15 <10 for 80k> <12 for 100k> <14 for  110k> <15  for 200k> KEYSTONE MASTER //MYTHIC Castle Nathria / HC Castle Nathria + Traders/w for info", -- [1]
+			"Jamesiccrav-Ravencrest", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Jamesiccrav-Ravencrest", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			4553, -- [11]
+			"Player-1329-0995D1EB", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Jamesiccrav|r",
+			[51] = 1620465987,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [6]
+		{
+			"|cffffd100|HclubFinder:ClubFinder-1-148-1329-52221594|h[Guild: T H E O R Y]|h|r To Megalutero Ellhniko Guild tou Ravencrest || Recruitment Panta Anoixto gia Mythic Raiders || High Prio: Mage-Warlock || Progress 8/10 Mythic ", -- [1]
+			"Bolzano-Ravencrest", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Bolzano-Ravencrest", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			4555, -- [11]
+			"Player-1329-0419362B", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcBolzano|r",
+			[51] = 1620465990,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [7]
+		{
+			"...WTS LVL UP BOOST 50-60 with perfect team high quality fast & cheap /w me for more info...", -- [1]
+			"Sesnsor-Ravencrest", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Sesnsor-Ravencrest", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			4561, -- [11]
+			"Player-1329-0972F61D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc31d39Sesnsor|r",
+			[51] = 1620466000,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [8]
+		{
+			"<NOVA> Offering ||Keystone Master (All 15s  = 1330k|| ||M+10=79k|| ||M+12=99k|| ||M+14=110k|| ||M+15  = 190k|| ||M+16=430k|| ||M+17=620k|| ||M+18=900k||SHARELOOT+ARMORSTACK! [LVL, Torghast, PVP 2s, 3s, RBG] ||10/10 HC 300k|| Curve 50k /w for more info", -- [1]
+			"Novasellingg-Ravencrest", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Novasellingg-Ravencrest", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			4563, -- [11]
+			"Player-1329-09A7E319", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeNovasellingg|r",
+			[51] = 1620466003,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [9]
 	},
 }

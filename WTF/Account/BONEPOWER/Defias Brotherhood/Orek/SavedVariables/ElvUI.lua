@@ -24,50 +24,6 @@ ElvCharacterDB = {
 	},
 	["ChatHistoryLog"] = {
 		{
-			"nvm", -- [1]
-			"Orek-DefiasBrotherhood", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Orek", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			95, -- [11]
-			"Player-1096-068B80E4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dOrek|r",
-			[51] = 1519626801,
-			[50] = "CHAT_MSG_RAID",
-		}, -- [1]
-		{
-			"|cffffff00Whisperwind's Citadel is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Stormheim", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Stormheim", -- [9]
-			0, -- [10]
-			13, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1519667296,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [2]
-		{
 			"|cffffff00Whisperwind's Citadel is under attack!|r", -- [1]
 			"", -- [2]
 			"", -- [3]
@@ -88,7 +44,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1519667360,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [3]
+		}, -- [1]
 		{
 			"|cffffff00Whisperwind's Citadel is under attack!|r", -- [1]
 			"", -- [2]
@@ -110,7 +66,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1519667441,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [4]
+		}, -- [2]
 		{
 			"|cffffff00Whisperwind's Citadel is under attack!|r", -- [1]
 			"", -- [2]
@@ -132,7 +88,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1519667553,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [5]
+		}, -- [3]
 		{
 			"|cffffff00Whisperwind's Citadel is under attack!|r", -- [1]
 			"", -- [2]
@@ -154,7 +110,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1519667626,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [6]
+		}, -- [4]
 		{
 			"Interrupted Shadowsworn Betrayer's |cff71d5ff|Hspell:249700:0|h[Shadow Pact]|h|r!", -- [1]
 			"Molley-Kazzak", -- [2]
@@ -176,7 +132,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aMolley-Kazzak|r",
 			[51] = 1519884561,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [7]
+		}, -- [5]
 		{
 			"|cff71d5ff|Hspell:77761:0|h[Rugido de estampida]|h|r activated.", -- [1]
 			"Torososo-Uldum", -- [2]
@@ -198,7 +154,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aTorososo-Uldum|r",
 			[51] = 1519884644,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [8]
+		}, -- [6]
 		{
 			"wtf you doing ?", -- [1]
 			"Betræyer-Stormscale", -- [2]
@@ -220,7 +176,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Betræyer-Stormscale|r",
 			[51] = 1520180439,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [9]
+		}, -- [7]
 		{
 			"come kill this !@#$ and get over ffs", -- [1]
 			"Betræyer-Stormscale", -- [2]
@@ -242,7 +198,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Betræyer-Stormscale|r",
 			[51] = 1520180446,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [10]
+		}, -- [8]
 		{
 			"Interrupted |cff71d5ff|Hspell:248133:0|h[Stygian Blast]|h|r on Rift Warden", -- [1]
 			"Betræyer-Stormscale", -- [2]
@@ -264,7 +220,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Betræyer-Stormscale|r",
 			[51] = 1520180496,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [11]
+		}, -- [9]
 		{
 			"Interrupted |cff71d5ff|Hspell:248133:0|h[Stygian Blast]|h|r on Rift Warden", -- [1]
 			"Betræyer-Stormscale", -- [2]
@@ -286,7 +242,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Betræyer-Stormscale|r",
 			[51] = 1520180529,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [12]
+		}, -- [10]
 		{
 			"Interrupted |cff71d5ff|Hspell:245601:0|h[Umbral Bolt]|h|r on Shadowguard Conjurer", -- [1]
 			"Betræyer-Stormscale", -- [2]
@@ -308,7 +264,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Betræyer-Stormscale|r",
 			[51] = 1520180637,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [13]
+		}, -- [11]
 		{
 			"Interrupted |cff71d5ff|Hspell:248239:0|h[Dark Splice]|h|r on Grand Shadow-Weaver", -- [1]
 			"Betræyer-Stormscale", -- [2]
@@ -330,7 +286,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Betræyer-Stormscale|r",
 			[51] = 1520180675,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [14]
+		}, -- [12]
 		{
 			"Interrupted |cff71d5ff|Hspell:245522:0|h[Entropic Mist]|h|r on Shadowguard Voidbender", -- [1]
 			"Betræyer-Stormscale", -- [2]
@@ -352,7 +308,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Betræyer-Stormscale|r",
 			[51] = 1520180679,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [15]
+		}, -- [13]
 		{
 			"Interrupted |cff71d5ff|Hspell:244750:0|h[Dark Blast]|h|r on Viceroy Nezhar", -- [1]
 			"Betræyer-Stormscale", -- [2]
@@ -374,7 +330,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Betræyer-Stormscale|r",
 			[51] = 1520180717,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [16]
+		}, -- [14]
 		{
 			"WhoLusted: Saellir-TwistingNether cast |cff71d5ff|Hspell:80353:0|h[Time Warp]|h|r!!!", -- [1]
 			"Tûneth-Kazzak", -- [2]
@@ -396,7 +352,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Tûneth-Kazzak|r",
 			[51] = 1520540580,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [17]
+		}, -- [15]
 		{
 			"WhoLusted: Raïjïn cast |cff71d5ff|Hspell:2825:0|h[Bloodlust]|h|r!!!", -- [1]
 			"Tûneth-Kazzak", -- [2]
@@ -418,7 +374,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Tûneth-Kazzak|r",
 			[51] = 1520540591,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [18]
+		}, -- [16]
 		{
 			"WhoLusted: Yennow-Frostwolf cast |cff71d5ff|Hspell:80353:0|h[Time Warp]|h|r!!!", -- [1]
 			"Tûneth-Kazzak", -- [2]
@@ -440,7 +396,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Tûneth-Kazzak|r",
 			[51] = 1520540621,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [19]
+		}, -- [17]
 		{
 			"WhoLusted: Greenpower-Garona cast |cff71d5ff|Hspell:2825:0|h[Bloodlust]|h|r!!!", -- [1]
 			"Tûneth-Kazzak", -- [2]
@@ -462,7 +418,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Tûneth-Kazzak|r",
 			[51] = 1520540637,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [20]
+		}, -- [18]
 		{
 			"Saat der Zerstörung auf Rathangor", -- [1]
 			"Rathangor-Nathrezim", -- [2]
@@ -484,7 +440,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aRathangor-Nathrezim|r",
 			[51] = 1520540658,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [21]
+		}, -- [19]
 		{
 			"WhoLusted: Cluster-Ysera cast |cff71d5ff|Hspell:2825:0|h[Bloodlust]|h|r!!!", -- [1]
 			"Tûneth-Kazzak", -- [2]
@@ -506,7 +462,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Tûneth-Kazzak|r",
 			[51] = 1520540669,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [22]
+		}, -- [20]
 		{
 			"Seed of Destruction on Helgarad", -- [1]
 			"Helgarad-Ragnaros", -- [2]
@@ -528,7 +484,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddHelgarad-Ragnaros|r",
 			[51] = 1520540734,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [23]
+		}, -- [21]
 		{
 			"Seed of Destruction on Zunoa", -- [1]
 			"Zunoa-Gorgonnash", -- [2]
@@ -550,7 +506,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aZunoa-Gorgonnash|r",
 			[51] = 1520540756,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [24]
+		}, -- [22]
 		{
 			"someone go heal", -- [1]
 			"Larthes-Ragnaros", -- [2]
@@ -572,7 +528,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Larthes-Ragnaros|r",
 			[51] = 1521179430,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [25]
+		}, -- [23]
 		{
 			"no one able to heal??", -- [1]
 			"Fumavo-Draenor", -- [2]
@@ -594,7 +550,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aFumavo-Draenor|r",
 			[51] = 1521179433,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [26]
+		}, -- [24]
 		{
 			"i think we're all settled.", -- [1]
 			"Venereum-Draenor", -- [2]
@@ -616,7 +572,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaVenereum-Draenor|r",
 			[51] = 1521179447,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [27]
+		}, -- [25]
 		{
 			"im not... got 0 traits on healer weap", -- [1]
 			"Fumavo-Draenor", -- [2]
@@ -638,7 +594,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aFumavo-Draenor|r",
 			[51] = 1521179452,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [28]
+		}, -- [26]
 		{
 			"remember to soak greens", -- [1]
 			"Hoppu-Dentarg", -- [2]
@@ -660,7 +616,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aHoppu-Dentarg|r",
 			[51] = 1521179497,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [29]
+		}, -- [27]
 		{
 			"WhoLusted: Кляст-СтражСмерти cast |cff71d5ff|Hspell:80353:0|h[Time Warp]|h|r!!!", -- [1]
 			"Praada-Kazzak", -- [2]
@@ -682,7 +638,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaPraada-Kazzak|r",
 			[51] = 1521179606,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [30]
+		}, -- [28]
 		{
 			"soak", -- [1]
 			"Nerilith-Kilrogg", -- [2]
@@ -704,7 +660,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffNerilith-Kilrogg|r",
 			[51] = 1521179812,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [31]
+		}, -- [29]
 		{
 			"soak the balls", -- [1]
 			"Nerilith-Kilrogg", -- [2]
@@ -726,7 +682,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffNerilith-Kilrogg|r",
 			[51] = 1521179820,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [32]
+		}, -- [30]
 		{
 			"HEY", -- [1]
 			"Orek-DefiasBrotherhood", -- [2]
@@ -748,7 +704,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dOrek|r",
 			[51] = 1521697047,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [33]
+		}, -- [31]
 		{
 			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
 			"", -- [2]
@@ -770,7 +726,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1521698339,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [34]
+		}, -- [32]
 		{
 			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
 			"", -- [2]
@@ -792,7 +748,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1521698408,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [35]
+		}, -- [33]
 		{
 			"|cff71d5ff|Hspell:77764:0|h[Stampeding Roar]|h|r !!!", -- [1]
 			"Caspi-Kazzak", -- [2]
@@ -814,7 +770,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aCaspi-Kazzak|r",
 			[51] = 1521880741,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [36]
+		}, -- [34]
 		{
 			"Freezing Trap on Soulgaze Inquisitor removed by Alizyzz-Frostwhisper's |cff71d5ff|Hspell:132467:0|h[Chi Wave]|h|r", -- [1]
 			"Sthalia-Balnazzar", -- [2]
@@ -836,7 +792,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaSthalia-Balnazzar|r",
 			[51] = 1521880891,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [37]
+		}, -- [35]
 		{
 			"WhoLusted: Nyhler-Bloodscalp cast |cff71d5ff|Hspell:2825:0|h[Bloodlust]|h|r!!!", -- [1]
 			"Caspi-Kazzak", -- [2]
@@ -858,7 +814,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aCaspi-Kazzak|r",
 			[51] = 1521881032,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [38]
+		}, -- [36]
 		{
 			"taunt", -- [1]
 			"Haur-Moonglade", -- [2]
@@ -880,7 +836,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dHaur-Moonglade|r",
 			[51] = 1521881064,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [39]
+		}, -- [37]
 		{
 			"Interrupted Hellblaze Temptress's |cff71d5ff|Hspell:237391:0|h[Alluring Aroma]|h|r!", -- [1]
 			"Myerai-DefiasBrotherhood", -- [2]
@@ -902,7 +858,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Myerai|r",
 			[51] = 1522655237,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [40]
+		}, -- [38]
 		{
 			"[FIS] Interrupted Felborne Botanist's |cff71d5ff|Hspell:237578:0|h[Fel Bolt]|h|r", -- [1]
 			"Darrel-Quel'Thalas", -- [2]
@@ -924,7 +880,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aDarrel-Quel'Thalas|r",
 			[51] = 1522655274,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [41]
+		}, -- [39]
 		{
 			"[FIS] Interrupted Felborne Botanist's |cff71d5ff|Hspell:237578:0|h[Fel Bolt]|h|r", -- [1]
 			"Darrel-Quel'Thalas", -- [2]
@@ -946,7 +902,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aDarrel-Quel'Thalas|r",
 			[51] = 1522655352,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [42]
+		}, -- [40]
 		{
 			"|cffffff00Whisperwind's Citadel is under attack!|r", -- [1]
 			"", -- [2]
@@ -968,7 +924,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1524681016,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [43]
+		}, -- [41]
 		{
 			"|cffffff00Whisperwind's Citadel is under attack!|r", -- [1]
 			"", -- [2]
@@ -990,7 +946,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1524681101,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [44]
+		}, -- [42]
 		{
 			"|cffffff00Whisperwind's Citadel is under attack!|r", -- [1]
 			"", -- [2]
@@ -1012,7 +968,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1524681406,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [45]
+		}, -- [43]
 		{
 			"|cffffff00Whisperwind's Citadel is under attack!|r", -- [1]
 			"", -- [2]
@@ -1034,7 +990,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1524681469,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [46]
+		}, -- [44]
 		{
 			"|cffffff00Deliverance Point is under attack!|r", -- [1]
 			"", -- [2]
@@ -1056,7 +1012,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1531161780,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [47]
+		}, -- [45]
 		{
 			"thx mate bye", -- [1]
 			"Lylkizi-DefiasBrotherhood", -- [2]
@@ -1078,7 +1034,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edLylkizi|r",
 			[51] = 1531331275,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [48]
+		}, -- [46]
 		{
 			"bb", -- [1]
 			"Orek-DefiasBrotherhood", -- [2]
@@ -1100,7 +1056,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dOrek|r",
 			[51] = 1531331279,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [49]
+		}, -- [47]
 		{
 			"WTS Ny’alotha Heroic/ Mythic; N'Zoth Heroic/ Mythic; BFA Keystone Conqueror 12x10+ in time; M10+ -17+in time – ready to start", -- [1]
 			"Dasijan-Ravenholdt", -- [2]
@@ -1122,7 +1078,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcDasijan-Ravenholdt|r",
 			[51] = 1587464422,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [50]
+		}, -- [48]
 		{
 			"WTS Ny’alotha Heroic 12/12, Mythic , Ny'alotha Allseer, M10-23+ in timer, Horrific Visions 5 chest run, Glacial Tidestorm", -- [1]
 			"Peprypisa-Ravenholdt", -- [2]
@@ -1144,7 +1100,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Peprypisa-Ravenholdt|r",
 			[51] = 1604129484,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [51]
+		}, -- [49]
 		{
 			"WTB |cffa335ee|Hitem:170366::::::::50:72:::::::|h[Uncanny Combatant's Deckpounder]|h|r", -- [1]
 			"Force-TheVentureCo", -- [2]
@@ -1166,7 +1122,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cForce-TheVentureCo|r",
 			[51] = 1604867124,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [52]
+		}, -- [50]
 		{
 			"WTS |cffa335ee|Hitem:65891::::::::48:254:::1:3524::::|h[Vial of the Sands]|h|r", -- [1]
 			"Bisnesmiesxd-TheVentureCo", -- [2]
@@ -1188,7 +1144,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Bisnesmiesxd-TheVentureCo|r",
 			[51] = 1604867128,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [53]
+		}, -- [51]
 		{
 			"WTB |cffa335ee|Hitem:65891::::::::48:254:::1:3524::::|h[Vial of the Sands]|h|r", -- [1]
 			"Silneria-DarkmoonFaire", -- [2]
@@ -1210,7 +1166,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Silneria-DarkmoonFaire|r",
 			[51] = 1604867143,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [54]
+		}, -- [52]
 		{
 			"nevermind already got it", -- [1]
 			"Silneria-DarkmoonFaire", -- [2]
@@ -1232,7 +1188,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Silneria-DarkmoonFaire|r",
 			[51] = 1604867158,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [55]
+		}, -- [53]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-137900-1096-70759505|h[Guild: Era of Insolence]|h|r  Focused on PVP. Recruiting for a RBG team, Arena & Casual PvPers. Active Discord too! /w for more info", -- [1]
 			"Chouharder-Sporeggar", -- [2]
@@ -1254,7 +1210,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Chouharder-Sporeggar|r",
 			[51] = 1604867215,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [56]
+		}, -- [54]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-137900-1096-70759505|h[Guild: Era of Insolence]|h|r Focused on PVP. Recruiting for a RBG team, Arena & Casual PvPers. Active Discord too! /w for more info", -- [1]
 			"Chouharder-Sporeggar", -- [2]
@@ -1276,7 +1232,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Chouharder-Sporeggar|r",
 			[51] = 1604867216,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [57]
+		}, -- [55]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-110262-1096-69904542|h[Guild: Horde Among Us]|h|r with some jam on it", -- [1]
 			"Silneria-DarkmoonFaire", -- [2]
@@ -1298,7 +1254,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Silneria-DarkmoonFaire|r",
 			[51] = 1604867228,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [58]
+		}, -- [56]
 		{
 			"cringe", -- [1]
 			"Leipäjono-DefiasBrotherhood", -- [2]
@@ -1320,7 +1276,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Leipäjono|r",
 			[51] = 1604867244,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [59]
+		}, -- [57]
 		{
 			"Looking for guild", -- [1]
 			"Lazereye-EarthenRing", -- [2]
@@ -1342,7 +1298,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Lazereye-EarthenRing|r",
 			[51] = 1604867465,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [60]
+		}, -- [58]
 		{
 			"what kind?", -- [1]
 			"Mandymandy-TheVentureCo", -- [2]
@@ -1364,7 +1320,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaMandymandy-TheVentureCo|r",
 			[51] = 1604867487,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [61]
+		}, -- [59]
 		{
 			"<Dawn> WTS Mythic+15 /-/Nyalotha Mythic /-/ |cff71d5ff|Hspell:289555:0|h[Glacial Tidestorm]|h|r & |cff71d5ff|Hspell:308814:0|h[Ny'alotha Allseer]|h|r. ONLY ACCEPT GOLD", -- [1]
 			"Codybryant-DefiasBrotherhood", -- [2]
@@ -1386,7 +1342,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Codybryant|r",
 			[51] = 1604867534,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [62]
+		}, -- [60]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-137900-1096-70759505|h[Guild: Era of Insolence]|h|r  Focused on PVP. Recruiting for a RBG team, Arena & Casual PvPers. Active Discord too! /w for more info", -- [1]
 			"Chouharder-Sporeggar", -- [2]
@@ -1408,7 +1364,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Chouharder-Sporeggar|r",
 			[51] = 1604867762,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [63]
+		}, -- [61]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-137900-1096-70759505|h[Guild: Era of Insolence]|h|r Focused on PVP. Recruiting for a RBG team, Arena & Casual PvPers. Active Discord too! /w for more info", -- [1]
 			"Chouharder-Sporeggar", -- [2]
@@ -1430,7 +1386,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Chouharder-Sporeggar|r",
 			[51] = 1604867762,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [64]
+		}, -- [62]
 		{
 			"<Dawn> WTS Mythic+15 /-/Nyalotha Mythic /-/ |cff71d5ff|Hspell:289555:0|h[Glacial Tidestorm]|h|r & |cff71d5ff|Hspell:308814:0|h[Ny'alotha Allseer]|h|r. ONLY ACCEPT GOLD", -- [1]
 			"Codybryant-DefiasBrotherhood", -- [2]
@@ -1452,7 +1408,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Codybryant|r",
 			[51] = 1604867824,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [65]
+		}, -- [63]
 		{
 			"<Broken Skull Clan> Is a new guild freshly formed today. We PVP & Mythic + /w for more info", -- [1]
 			"Ollathir-DefiasBrotherhood", -- [2]
@@ -1474,7 +1430,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcOllathir|r",
 			[51] = 1604867879,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [66]
+		}, -- [64]
 		{
 			"WTS |cffa335ee|Hitem:153683::::::::50:102::13:1:3524::::|h[Royal Quartz Loop]|h|r Any stat combo (Versatility/Haste/Crit/Mastery) Cheap ", -- [1]
 			"Motorsågen-DefiasBrotherhood", -- [2]
@@ -1496,7 +1452,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Motorsågen|r",
 			[51] = 1604867988,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [67]
+		}, -- [65]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-137900-1096-70759505|h[Guild: Era of Insolence]|h|r  Focused on PVP. Recruiting for a RBG team, Arena & Casual PvPers. Active Discord too! /w for more info", -- [1]
 			"Chouharder-Sporeggar", -- [2]
@@ -1518,7 +1474,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Chouharder-Sporeggar|r",
 			[51] = 1604867991,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [68]
+		}, -- [66]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-137900-1096-70759505|h[Guild: Era of Insolence]|h|r Focused on PVP. Recruiting for a RBG team, Arena & Casual PvPers. Active Discord too! /w for more info", -- [1]
 			"Chouharder-Sporeggar", -- [2]
@@ -1540,7 +1496,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Chouharder-Sporeggar|r",
 			[51] = 1604867995,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [69]
+		}, -- [67]
 		{
 			"<Dawn> WTS Mythic+15 /-/Nyalotha Mythic /-/ |cff71d5ff|Hspell:289555:0|h[Glacial Tidestorm]|h|r & |cff71d5ff|Hspell:308814:0|h[Ny'alotha Allseer]|h|r. ONLY ACCEPT GOLD", -- [1]
 			"Codybryant-DefiasBrotherhood", -- [2]
@@ -1562,7 +1518,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Codybryant|r",
 			[51] = 1604867999,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [70]
+		}, -- [68]
 		{
 			"someone tried to pay you with goats or something?", -- [1]
 			"Sceptrum-DefiasBrotherhood", -- [2]
@@ -1584,7 +1540,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edSceptrum|r",
 			[51] = 1604868033,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [71]
+		}, -- [69]
 		{
 			"WTS |cffa335ee|Hitem:153683::::::::50:102::13:1:3524::::|h[Royal Quartz Loop]|h|r Any stat combo (Versatility/Haste/Crit/Mastery) Limited offer! 500gold, turn a profit resell it for 800-900gold if you want!", -- [1]
 			"Motorsågen-DefiasBrotherhood", -- [2]
@@ -1606,7 +1562,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Motorsågen|r",
 			[51] = 1604868065,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [72]
+		}, -- [70]
 		{
 			"any indication of doing it for real money gets your acount perma banned super fast", -- [1]
 			"Treeslayer-DefiasBrotherhood", -- [2]
@@ -1628,7 +1584,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Treeslayer|r",
 			[51] = 1604868084,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [73]
+		}, -- [71]
 		{
 			"<Broken Skull Clan> Is a new guild freshly formed today. We PVP & Mythic + /w for more info", -- [1]
 			"Ollathir-DefiasBrotherhood", -- [2]
@@ -1650,7 +1606,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcOllathir|r",
 			[51] = 1604868103,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [74]
+		}, -- [72]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-137900-1096-70759505|h[Guild: Era of Insolence]|h|r  Focused on PVP. Recruiting for a RBG team, Arena & Casual PvPers. Active Discord too! /w for more info", -- [1]
 			"Chouharder-Sporeggar", -- [2]
@@ -1672,7 +1628,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Chouharder-Sporeggar|r",
 			[51] = 1604868147,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [75]
+		}, -- [73]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-137900-1096-70759505|h[Guild: Era of Insolence]|h|r Focused on PVP. Recruiting for a RBG team, Arena & Casual PvPers. Active Discord too! /w for more info", -- [1]
 			"Chouharder-Sporeggar", -- [2]
@@ -1694,7 +1650,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Chouharder-Sporeggar|r",
 			[51] = 1604868150,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [76]
+		}, -- [74]
 		{
 			"<Broken Skull Clan> Is a new guild freshly formed today. We PVP & Mythic + /w for more info", -- [1]
 			"Ollathir-DefiasBrotherhood", -- [2]
@@ -1716,7 +1672,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcOllathir|r",
 			[51] = 1604868463,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [77]
+		}, -- [75]
 		{
 			"<Dawn> WTS Mythic+15 /-/Nyalotha Mythic /-/ |cff71d5ff|Hspell:289555:0|h[Glacial Tidestorm]|h|r & |cff71d5ff|Hspell:308814:0|h[Ny'alotha Allseer]|h|r. ONLY ACCEPT GOLD", -- [1]
 			"Codybryant-DefiasBrotherhood", -- [2]
@@ -1738,7 +1694,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Codybryant|r",
 			[51] = 1604868475,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [78]
+		}, -- [76]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-137900-1096-70759505|h[Guild: Era of Insolence]|h|r  Focused on PVP. Recruiting for a RBG team, Arena & Casual PvPers. Active Discord too! /w for more info", -- [1]
 			"Chouharder-Sporeggar", -- [2]
@@ -1760,7 +1716,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Chouharder-Sporeggar|r",
 			[51] = 1604868486,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [79]
+		}, -- [77]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-137900-1096-70759505|h[Guild: Era of Insolence]|h|r Focused on PVP. Recruiting for a RBG team, Arena & Casual PvPers. Active Discord too! /w for more info", -- [1]
 			"Chouharder-Sporeggar", -- [2]
@@ -1782,7 +1738,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Chouharder-Sporeggar|r",
 			[51] = 1604868487,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [80]
+		}, -- [78]
 		{
 			"WTS |cff1eff00|Hitem:1299::::::::50:267:::::::|h[Lesser Belt of the Spire]|h|r|cffffffff|Hitem:16083::::::::50:267:::::::|h[Expert Fishing - The Bass and You]|h|r|cffffffff|Hitem:27532::::::::50:267:::::::|h[Master Fishing - The Art of Angling]|h|r", -- [1]
 			"Bloodleh-DefiasBrotherhood", -- [2]
@@ -1804,7 +1760,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edBloodleh|r",
 			[51] = 1604868557,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [81]
+		}, -- [79]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-137900-1096-70759505|h[Guild: Era of Insolence]|h|r  Focused on PVP. Recruiting for a RBG team, Arena & Casual PvPers. Active Discord too! /w for more info", -- [1]
 			"Chouharder-Sporeggar", -- [2]
@@ -1826,7 +1782,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Chouharder-Sporeggar|r",
 			[51] = 1604868876,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [82]
+		}, -- [80]
 		{
 			"<Dawn> WTS Mythic+15 /-/Nyalotha Mythic /-/ |cff71d5ff|Hspell:289555:0|h[Glacial Tidestorm]|h|r & |cff71d5ff|Hspell:308814:0|h[Ny'alotha Allseer]|h|r. ONLY ACCEPT GOLD", -- [1]
 			"Codybryant-DefiasBrotherhood", -- [2]
@@ -1848,7 +1804,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Codybryant|r",
 			[51] = 1604868900,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [83]
+		}, -- [81]
 		{
 			"LF |cffa335ee|Hitem:114821::::::::10:66:::::::|h[Hexweave Bag]|h|r", -- [1]
 			"Hwasa-Ravenholdt", -- [2]
@@ -1870,7 +1826,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Hwasa-Ravenholdt|r",
 			[51] = 1604869060,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [84]
+		}, -- [82]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-137900-1096-70759505|h[Guild: Era of Insolence]|h|r  Focused on PVP. Recruiting for a RBG team, Arena & Casual PvPers. Active Discord too! /w for more info", -- [1]
 			"Chouharder-Sporeggar", -- [2]
@@ -1892,7 +1848,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Chouharder-Sporeggar|r",
 			[51] = 1604869151,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [85]
+		}, -- [83]
 		{
 			"|cffffd100|HclubFinder:ClubFinder-1-137900-1096-70759505|h[Guild: Era of Insolence]|h|r Focused on PVP. Recruiting for a RBG team, Arena & Casual PvPers. Active Discord too! /w for more info", -- [1]
 			"Chouharder-Sporeggar", -- [2]
@@ -1914,7 +1870,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Chouharder-Sporeggar|r",
 			[51] = 1604869152,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [86]
+		}, -- [84]
 		{
 			"WTS |cffa335ee|Hitem:184783::::::::60:66:::3:7193:1472:6646:1:28:1707:::|h[Muirnne's Stormforged Signet]|h|r, 140k", -- [1]
 			"Saam-DefiasBrotherhood", -- [2]
@@ -1936,7 +1892,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Saam|r",
 			[51] = 1606404008,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [87]
+		}, -- [85]
 		{
 			"link BLACKSMITHNIG PLS", -- [1]
 			"Lukakos-DefiasBrotherhood", -- [2]
@@ -1958,7 +1914,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcLukakos|r",
 			[51] = 1606404086,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [88]
+		}, -- [86]
 		{
 			"can some1 link bs?", -- [1]
 			"Lukakos-DefiasBrotherhood", -- [2]
@@ -1980,7 +1936,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcLukakos|r",
 			[51] = 1606404117,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [89]
+		}, -- [87]
 		{
 			"wowhead", -- [1]
 			"Zazou-DefiasBrotherhood", -- [2]
@@ -2002,7 +1958,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Zazou|r",
 			[51] = 1606404128,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [90]
+		}, -- [88]
 		{
 			"hmm soo where is archeology trainer?", -- [1]
 			"Willowie-EarthenRing", -- [2]
@@ -2024,7 +1980,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Willowie-EarthenRing|r",
 			[51] = 1606404160,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [91]
+		}, -- [89]
 		{
 			"kekw", -- [1]
 			"Skrekk-DefiasBrotherhood", -- [2]
@@ -2046,7 +2002,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Skrekk|r",
 			[51] = 1606404165,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [92]
+		}, -- [90]
 		{
 			"beside first aid trainer", -- [1]
 			"Regolock-DefiasBrotherhood", -- [2]
@@ -2068,7 +2024,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edRegolock|r",
 			[51] = 1606404178,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [93]
+		}, -- [91]
 		{
 			"No Archaeology... yet.", -- [1]
 			"Vestir-Ravenholdt", -- [2]
@@ -2090,7 +2046,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Vestir-Ravenholdt|r",
 			[51] = 1606404216,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [94]
+		}, -- [92]
 		{
 			"odd since there are achievments for archeology in shadowlands", -- [1]
 			"Willowie-EarthenRing", -- [2]
@@ -2112,7 +2068,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Willowie-EarthenRing|r",
 			[51] = 1606404230,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [95]
+		}, -- [93]
 		{
 			"oh... well gottaa wait then :)", -- [1]
 			"Willowie-EarthenRing", -- [2]
@@ -2134,7 +2090,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Willowie-EarthenRing|r",
 			[51] = 1606404253,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [96]
+		}, -- [94]
 		{
 			"Anyone have a wormhole SL?", -- [1]
 			"Trollkin-DefiasBrotherhood", -- [2]
@@ -2156,7 +2112,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Trollkin|r",
 			[51] = 1606404265,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [97]
+		}, -- [95]
 		{
 			"did they remove the blacksmithing buff u get for mount for farming?", -- [1]
 			"Lukakos-DefiasBrotherhood", -- [2]
@@ -2178,7 +2134,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcLukakos|r",
 			[51] = 1606404272,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [98]
+		}, -- [96]
 		{
 			"lf rogue to open |cff1eff00|Hitem:179311::::::::60:264::2:1:6826:2:9:60:28:748:::|h[Oxxein Lockbox]|h|r org", -- [1]
 			"Lukakos-DefiasBrotherhood", -- [2]
@@ -2199,6 +2155,50 @@ ElvCharacterDB = {
 			true, -- [17]
 			[52] = "|cff006fdcLukakos|r",
 			[51] = 1606404361,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [97]
+		{
+			"WTB 235 |cffffffff|Hitem:178926::::::::60:263:::::::|h[Shadowghast Ring]|h|r", -- [1]
+			"Kromaro-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Kromaro-DefiasBrotherhood", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			2, -- [11]
+			"Player-1096-083E564B", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcKromaro|r",
+			[51] = 1620067189,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [98]
+		{
+			"I'm sure the AH could accomodate you?", -- [1]
+			"Wisjin-EarthenRing", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Wisjin-EarthenRing", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			3, -- [11]
+			"Player-1096-0A1AA1AE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaWisjin-EarthenRing|r",
+			[51] = 1620067228,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [99]
 	},

@@ -1,254 +1,53 @@
 
 DataStore_CurrenciesDB = {
 	["profileKeys"] = {
-		["Kêl - Defias Brotherhood"] = "Kêl - Defias Brotherhood",
-		["Thaler - Defias Brotherhood"] = "Thaler - Defias Brotherhood",
-		["Osa - Defias Brotherhood"] = "Osa - Defias Brotherhood",
-		["Gladwin - Ravencrest"] = "Gladwin - Ravencrest",
-		["Tzol - Defias Brotherhood"] = "Tzol - Defias Brotherhood",
-		["Ureg - Defias Brotherhood"] = "Ureg - Defias Brotherhood",
-		["Zuldo - Defias Brotherhood"] = "Zuldo - Defias Brotherhood",
-		["Cazh - Kazzak"] = "Cazh - Kazzak",
-		["Kodah - Defias Brotherhood"] = "Kodah - Defias Brotherhood",
-		["Prella - Defias Brotherhood"] = "Prella - Defias Brotherhood",
-		["Gladwin - Defias Brotherhood"] = "Gladwin - Defias Brotherhood",
-		["Ärlig - Ravencrest"] = "Ärlig - Ravencrest",
-		["Rekhyt - Vashj"] = "Rekhyt - Vashj",
-		["Mfgd - Defias Brotherhood"] = "Mfgd - Defias Brotherhood",
-		["Greve - Ravencrest"] = "Greve - Ravencrest",
-		["Venedict - Defias Brotherhood"] = "Venedict - Defias Brotherhood",
-		["Ored - Kazzak"] = "Ored - Kazzak",
-		["Gask - Ravencrest"] = "Gask - Ravencrest",
-		["Rektar - Defias Brotherhood"] = "Rektar - Defias Brotherhood",
-		["Träl - Defias Brotherhood"] = "Träl - Defias Brotherhood",
 		["Addled - Defias Brotherhood"] = "Addled - Defias Brotherhood",
-		["Gladwin - Kazzak"] = "Gladwin - Kazzak",
-		["Vidja - Ravencrest"] = "Vidja - Ravencrest",
+		["Osa - Defias Brotherhood"] = "Osa - Defias Brotherhood",
+		["Ösa - Defias Brotherhood"] = "Ösa - Defias Brotherhood",
+		["Ureg - Defias Brotherhood"] = "Ureg - Defias Brotherhood",
+		["Greve - Ravencrest"] = "Greve - Ravencrest",
+		["Rektar - Defias Brotherhood"] = "Rektar - Defias Brotherhood",
+		["Ored - Kazzak"] = "Ored - Kazzak",
 		["Odöde - Defias Brotherhood"] = "Odöde - Defias Brotherhood",
-		["Orek - Defias Brotherhood"] = "Orek - Defias Brotherhood",
+		["Gladwin - Kazzak"] = "Gladwin - Kazzak",
 		["Rever - Ravencrest"] = "Rever - Ravencrest",
 		["Grave - Vashj"] = "Grave - Vashj",
-		["Ödette - Defias Brotherhood"] = "Ödette - Defias Brotherhood",
 		["Dryda - Ravencrest"] = "Dryda - Ravencrest",
 		["Vite - Ravencrest"] = "Vite - Ravencrest",
-		["Ösa - Defias Brotherhood"] = "Ösa - Defias Brotherhood",
+		["Thaler - Defias Brotherhood"] = "Thaler - Defias Brotherhood",
+		["Gladwin - Ravencrest"] = "Gladwin - Ravencrest",
+		["Allvarg - Ravencrest"] = "Allvarg - Ravencrest",
+		["Zuldo - Defias Brotherhood"] = "Zuldo - Defias Brotherhood",
+		["Rekhyt - Vashj"] = "Rekhyt - Vashj",
+		["Gladwin - Defias Brotherhood"] = "Gladwin - Defias Brotherhood",
+		["Träl - Defias Brotherhood"] = "Träl - Defias Brotherhood",
+		["Ödette - Defias Brotherhood"] = "Ödette - Defias Brotherhood",
+		["Vidja - Ravencrest"] = "Vidja - Ravencrest",
+		["Cazh - Kazzak"] = "Cazh - Kazzak",
+		["Venedict - Defias Brotherhood"] = "Venedict - Defias Brotherhood",
+		["Mfgd - Defias Brotherhood"] = "Mfgd - Defias Brotherhood",
+		["Prella - Defias Brotherhood"] = "Prella - Defias Brotherhood",
+		["Orek - Defias Brotherhood"] = "Orek - Defias Brotherhood",
+		["Ärlig - Ravencrest"] = "Ärlig - Ravencrest",
+		["Gask - Ravencrest"] = "Gask - Ravencrest",
+		["Kodah - Defias Brotherhood"] = "Kodah - Defias Brotherhood",
+		["Tzol - Defias Brotherhood"] = "Tzol - Defias Brotherhood",
+		["Kêl - Defias Brotherhood"] = "Kêl - Defias Brotherhood",
+		["Dal - Ravencrest"] = "Dal - Ravencrest",
 	},
 	["global"] = {
 		["Characters"] = {
-			["Default.Ravencrest.Vidja"] = {
-				["CurrencyInfo"] = {
-					[1299] = "5-0-0-5000",
-					[1220] = "1324-0-0-0",
-					[824] = "254-0-0-10000",
-				},
-				["Currencies"] = {
-					{
-						["isHeader"] = true,
-						["index"] = 1,
-						["count"] = 0,
-					}, -- [1]
-					{
-						["isHeader"] = false,
-						["index"] = 47,
-						["count"] = 5,
-					}, -- [2]
-					{
-						["isHeader"] = true,
-						["index"] = 3,
-						["count"] = 0,
-					}, -- [3]
-					{
-						["isHeader"] = false,
-						["index"] = 6,
-						["count"] = 1324,
-					}, -- [4]
-					{
-						["isHeader"] = true,
-						["index"] = 15,
-						["count"] = 0,
-					}, -- [5]
-					{
-						["isHeader"] = false,
-						["index"] = 18,
-						["count"] = 254,
-					}, -- [6]
-				},
-				["Conquest"] = 0,
-				["lastUpdate"] = 1603345084,
-			},
-			["Default.Defias Brotherhood.Ureg"] = {
-				["CurrencyInfo"] = {
-					[944] = "7-0-0-1000",
-					[823] = "81-0-0-0",
-					[994] = "1-0-0-20",
-					[1275] = "3-0-0-0",
-					[1803] = "2725-0-0-0",
-					[1155] = "53-0-0-400",
-					[1342] = "339-0-0-1000",
-					[1560] = "3699-0-0-0",
-					[1220] = "29406-0-0-0",
-					[1718] = "0-0-0-0",
-					[1533] = "304-0-0-0",
-					[1719] = "106-0-0-0",
-					[1226] = "15592-0-0-0",
-					[416] = "23-0-0-0",
-					[1755] = "34235-0-0-0",
-					[1508] = "934-0-0-2000",
-					[1602] = "0-0-0-0",
-					[824] = "1883-0-0-10000",
-				},
-				["Currencies"] = {
-					{
-						["isHeader"] = true,
-						["index"] = 1,
-						["count"] = 0,
-					}, -- [1]
-					{
-						["isHeader"] = false,
-						["index"] = 8,
-						["count"] = 34235,
-					}, -- [2]
-					{
-						["isHeader"] = false,
-						["index"] = 9,
-						["count"] = 106,
-					}, -- [3]
-					{
-						["isHeader"] = false,
-						["index"] = 10,
-						["count"] = 2725,
-					}, -- [4]
-					{
-						["isHeader"] = false,
-						["index"] = 11,
-						["count"] = 0,
-					}, -- [5]
-					{
-						["isHeader"] = false,
-						["index"] = 2,
-						["count"] = 3699,
-					}, -- [6]
-					{
-						["isHeader"] = true,
-						["index"] = 39,
-						["count"] = 0,
-					}, -- [7]
-					{
-						["isHeader"] = false,
-						["index"] = 51,
-						["count"] = 0,
-					}, -- [8]
-					{
-						["isHeader"] = true,
-						["index"] = 3,
-						["count"] = 0,
-					}, -- [9]
-					{
-						["isHeader"] = false,
-						["index"] = 12,
-						["count"] = 53,
-					}, -- [10]
-					{
-						["isHeader"] = false,
-						["index"] = 13,
-						["count"] = 3,
-					}, -- [11]
-					{
-						["isHeader"] = false,
-						["index"] = 4,
-						["count"] = 339,
-					}, -- [12]
-					{
-						["isHeader"] = false,
-						["index"] = 5,
-						["count"] = 15592,
-					}, -- [13]
-					{
-						["isHeader"] = false,
-						["index"] = 6,
-						["count"] = 29406,
-					}, -- [14]
-					{
-						["isHeader"] = false,
-						["index"] = 14,
-						["count"] = 934,
-					}, -- [15]
-					{
-						["isHeader"] = false,
-						["index"] = 7,
-						["count"] = 304,
-					}, -- [16]
-					{
-						["isHeader"] = true,
-						["index"] = 15,
-						["count"] = 0,
-					}, -- [17]
-					{
-						["isHeader"] = false,
-						["index"] = 16,
-						["count"] = 81,
-					}, -- [18]
-					{
-						["isHeader"] = false,
-						["index"] = 17,
-						["count"] = 7,
-					}, -- [19]
-					{
-						["isHeader"] = false,
-						["index"] = 18,
-						["count"] = 1883,
-					}, -- [20]
-					{
-						["isHeader"] = false,
-						["index"] = 19,
-						["count"] = 1,
-					}, -- [21]
-					{
-						["isHeader"] = true,
-						["index"] = 20,
-						["count"] = 0,
-					}, -- [22]
-					{
-						["isHeader"] = false,
-						["index"] = 21,
-						["count"] = 23,
-					}, -- [23]
-				},
-				["Conquest"] = 200,
-				["Archeology"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-					0, -- [4]
-					0, -- [5]
-					0, -- [6]
-					50, -- [7]
-					0, -- [8]
-					0, -- [9]
-					0, -- [10]
-					0, -- [11]
-					0, -- [12]
-					13, -- [13]
-					0, -- [14]
-					0, -- [15]
-					0, -- [16]
-					16, -- [17]
-					1, -- [18]
-					0, -- [19]
-					17, -- [20]
-				},
-				["lastUpdate"] = 1606418042,
-			},
 			["Default.Ravencrest.Ärlig"] = {
 				["CurrencyInfo"] = {
+					[1602] = "0-0-0-12100",
+					[1220] = "2386-0-0-0",
+					[1719] = "862-0-0-0",
+					[1803] = "650-0-0-0",
+					[1166] = "200-0-0-0",
+					[1560] = "3019-0-0-0",
 					[824] = "1031-0-0-10000",
 					[1755] = "20965-0-0-0",
-					[1220] = "2386-0-0-0",
 					[1721] = "43-0-0-0",
-					[1560] = "3019-0-0-0",
-					[1166] = "200-0-0-0",
-					[1803] = "650-0-0-0",
-					[1719] = "862-0-0-0",
 				},
 				["Currencies"] = {
 					{
@@ -293,27 +92,36 @@ DataStore_CurrenciesDB = {
 					}, -- [8]
 					{
 						["isHeader"] = true,
-						["index"] = 3,
+						["index"] = 39,
 						["count"] = 0,
 					}, -- [9]
 					{
 						["isHeader"] = false,
-						["index"] = 6,
-						["count"] = 2386,
+						["index"] = 51,
+						["count"] = 0,
 					}, -- [10]
 					{
 						["isHeader"] = true,
-						["index"] = 15,
+						["index"] = 3,
 						["count"] = 0,
 					}, -- [11]
 					{
 						["isHeader"] = false,
+						["index"] = 6,
+						["count"] = 2386,
+					}, -- [12]
+					{
+						["isHeader"] = true,
+						["index"] = 15,
+						["count"] = 0,
+					}, -- [13]
+					{
+						["isHeader"] = false,
 						["index"] = 18,
 						["count"] = 1031,
-					}, -- [12]
+					}, -- [14]
 				},
-				["Conquest"] = 50,
-				["lastUpdate"] = 1603345035,
+				["Conquest"] = 0,
 				["Archeology"] = {
 					0, -- [1]
 					0, -- [2]
@@ -336,158 +144,24 @@ DataStore_CurrenciesDB = {
 					0, -- [19]
 					0, -- [20]
 				},
+				["lastUpdate"] = 1620290322,
 			},
 			["Default.Vashj.Rekhyt"] = {
 				["lastUpdate"] = 1603345238,
 				["Conquest"] = 0,
 			},
-			["Default.Ravencrest.Gladwin"] = {
-				["CurrencyInfo"] = {
-					[1155] = "250-0-0-300",
-					[1580] = "0-0-0-5",
-					[1719] = "1290-0-0-0",
-					[1710] = "123-0-0-0",
-					[1166] = "285-0-0-0",
-					[1560] = "7117-0-0-0",
-					[1721] = "132-0-0-0",
-					[1717] = "220-0-0-0",
-					[1533] = "87-0-0-0",
-					[1342] = "3-0-0-1000",
-					[1226] = "1644-0-0-0",
-					[1755] = "61563-0-0-0",
-					[1803] = "1892-0-0-0",
-					[1718] = "78-0-0-0",
-					[1220] = "1642-0-0-0",
-				},
-				["lastUpdate"] = 1604951195,
-				["Conquest"] = 0,
-				["Archeology"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-					0, -- [4]
-					0, -- [5]
-					0, -- [6]
-					0, -- [7]
-					0, -- [8]
-					0, -- [9]
-					0, -- [10]
-					0, -- [11]
-					0, -- [12]
-					0, -- [13]
-					0, -- [14]
-					0, -- [15]
-					0, -- [16]
-					0, -- [17]
-					0, -- [18]
-					0, -- [19]
-					0, -- [20]
-				},
-				["Currencies"] = {
-					{
-						["isHeader"] = true,
-						["index"] = 1,
-						["count"] = 0,
-					}, -- [1]
-					{
-						["isHeader"] = false,
-						["index"] = 45,
-						["count"] = 220,
-					}, -- [2]
-					{
-						["isHeader"] = false,
-						["index"] = 8,
-						["count"] = 61563,
-					}, -- [3]
-					{
-						["isHeader"] = false,
-						["index"] = 9,
-						["count"] = 1290,
-					}, -- [4]
-					{
-						["isHeader"] = false,
-						["index"] = 10,
-						["count"] = 1892,
-					}, -- [5]
-					{
-						["isHeader"] = false,
-						["index"] = 46,
-						["count"] = 132,
-					}, -- [6]
-					{
-						["isHeader"] = false,
-						["index"] = 28,
-						["count"] = 123,
-					}, -- [7]
-					{
-						["isHeader"] = false,
-						["index"] = 44,
-						["count"] = 0,
-					}, -- [8]
-					{
-						["isHeader"] = false,
-						["index"] = 11,
-						["count"] = 78,
-					}, -- [9]
-					{
-						["isHeader"] = false,
-						["index"] = 2,
-						["count"] = 7117,
-					}, -- [10]
-					{
-						["isHeader"] = true,
-						["index"] = 22,
-						["count"] = 0,
-					}, -- [11]
-					{
-						["isHeader"] = false,
-						["index"] = 23,
-						["count"] = 285,
-					}, -- [12]
-					{
-						["isHeader"] = true,
-						["index"] = 3,
-						["count"] = 0,
-					}, -- [13]
-					{
-						["isHeader"] = false,
-						["index"] = 12,
-						["count"] = 250,
-					}, -- [14]
-					{
-						["isHeader"] = false,
-						["index"] = 4,
-						["count"] = 3,
-					}, -- [15]
-					{
-						["isHeader"] = false,
-						["index"] = 5,
-						["count"] = 1644,
-					}, -- [16]
-					{
-						["isHeader"] = false,
-						["index"] = 6,
-						["count"] = 1642,
-					}, -- [17]
-					{
-						["isHeader"] = false,
-						["index"] = 7,
-						["count"] = 87,
-					}, -- [18]
-				},
-			},
 			["Default.Defias Brotherhood.Träl"] = {
 				["CurrencyInfo"] = {
 					[402] = "1-0-0-0",
 					[697] = "1-0-0-20",
-					[61] = "2-0-0-0",
-					[1803] = "10178-0-0-0",
-					[1273] = "0-0-0-6",
 					[777] = "4595-0-0-0",
-					[1275] = "7-0-0-0",
 					[1710] = "20-0-0-0",
-					[1220] = "20921-0-0-0",
-					[416] = "22-0-0-0",
+					[1273] = "0-0-0-6",
+					[241] = "36-0-0-0",
+					[1275] = "7-0-0-0",
+					[1803] = "10178-0-0-0",
+					[1755] = "51618-0-0-0",
+					[1166] = "460-0-0-0",
 					[1155] = "1050-0-0-1600",
 					[1342] = "0-0-0-1000",
 					[1560] = "8692-0-0-0",
@@ -499,11 +173,13 @@ DataStore_CurrenciesDB = {
 					[824] = "800-0-0-10000",
 					[1226] = "4283-0-0-0",
 					[738] = "221-0-0-0",
-					[1755] = "51618-0-0-0",
-					[1166] = "460-0-0-0",
-					[1602] = "0-0-0-0",
-					[241] = "36-0-0-0",
+					[416] = "22-0-0-0",
+					[1220] = "20921-0-0-0",
+					[1602] = "0-0-0-12100",
+					[61] = "2-0-0-0",
 				},
+				["lastUpdate"] = 1620672860,
+				["Conquest"] = 0,
 				["Currencies"] = {
 					{
 						["isHeader"] = true,
@@ -676,92 +352,6 @@ DataStore_CurrenciesDB = {
 						["count"] = 2,
 					}, -- [34]
 				},
-				["Conquest"] = 0,
-				["lastUpdate"] = 1606410121,
-			},
-			["Default.Kazzak.Cazh"] = {
-				["CurrencyInfo"] = {
-					[824] = "270-0-0-10000",
-					[1220] = "2585-0-0-0",
-					[1560] = "97-0-0-0",
-					[1533] = "37-0-0-0",
-					[1166] = "200-0-0-0",
-				},
-				["lastUpdate"] = 1603344920,
-				["Conquest"] = 0,
-				["Currencies"] = {
-					{
-						["isHeader"] = true,
-						["index"] = 1,
-						["count"] = 0,
-					}, -- [1]
-					{
-						["isHeader"] = false,
-						["index"] = 2,
-						["count"] = 97,
-					}, -- [2]
-					{
-						["isHeader"] = true,
-						["index"] = 22,
-						["count"] = 0,
-					}, -- [3]
-					{
-						["isHeader"] = false,
-						["index"] = 23,
-						["count"] = 200,
-					}, -- [4]
-					{
-						["isHeader"] = true,
-						["index"] = 3,
-						["count"] = 0,
-					}, -- [5]
-					{
-						["isHeader"] = false,
-						["index"] = 6,
-						["count"] = 2585,
-					}, -- [6]
-					{
-						["isHeader"] = false,
-						["index"] = 7,
-						["count"] = 37,
-					}, -- [7]
-					{
-						["isHeader"] = true,
-						["index"] = 15,
-						["count"] = 0,
-					}, -- [8]
-					{
-						["isHeader"] = false,
-						["index"] = 18,
-						["count"] = 270,
-					}, -- [9]
-				},
-			},
-			["Default.Defias Brotherhood.Osa"] = {
-				["Conquest"] = 0,
-				["lastUpdate"] = 1604665882,
-				["Archeology"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-					0, -- [4]
-					0, -- [5]
-					0, -- [6]
-					0, -- [7]
-					0, -- [8]
-					0, -- [9]
-					0, -- [10]
-					0, -- [11]
-					0, -- [12]
-					0, -- [13]
-					0, -- [14]
-					0, -- [15]
-					0, -- [16]
-					0, -- [17]
-					0, -- [18]
-					0, -- [19]
-					0, -- [20]
-				},
 			},
 			["Default.Defias Brotherhood.Orek"] = {
 				["CurrencyInfo"] = {
@@ -770,17 +360,15 @@ DataStore_CurrenciesDB = {
 					[738] = "2-0-0-0",
 					[416] = "72-0-0-0",
 					[391] = "32-0-0-0",
-					[1155] = "300-0-0-300",
+					[1275] = "14-0-0-0",
 					[1533] = "498-0-0-0",
 					[1342] = "201-0-0-1000",
 					[1166] = "200-0-0-0",
-					[1275] = "14-0-0-0",
+					[1155] = "300-0-0-300",
 					[1226] = "1584-0-0-0",
 					[1508] = "1769-0-0-2000",
 					[241] = "1-0-0-0",
 				},
-				["lastUpdate"] = 1606403998,
-				["Conquest"] = 0,
 				["Currencies"] = {
 					{
 						["isHeader"] = true,
@@ -883,44 +471,236 @@ DataStore_CurrenciesDB = {
 						["count"] = 1,
 					}, -- [20]
 				},
+				["Conquest"] = 0,
+				["lastUpdate"] = 1620066922,
 			},
-			["Default.Kazzak.Ored"] = {
+			["Default.Ravencrest.Gask"] = {
 				["CurrencyInfo"] = {
-					[824] = "476-0-0-10000",
-					[1220] = "337-0-0-0",
+					[1560] = "50-0-0-0",
+				},
+				["Currencies"] = {
+					{
+						["isHeader"] = true,
+						["index"] = 1,
+						["count"] = 0,
+					}, -- [1]
+					{
+						["isHeader"] = false,
+						["index"] = 2,
+						["count"] = 50,
+					}, -- [2]
+				},
+				["Conquest"] = 0,
+				["lastUpdate"] = 1608929177,
+				["Archeology"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+					0, -- [4]
+					0, -- [5]
+					0, -- [6]
+					0, -- [7]
+					0, -- [8]
+					0, -- [9]
+					0, -- [10]
+					0, -- [11]
+					0, -- [12]
+					0, -- [13]
+					0, -- [14]
+					0, -- [15]
+					0, -- [16]
+					0, -- [17]
+					0, -- [18]
+					0, -- [19]
+					0, -- [20]
+				},
+			},
+			["Default.Defias Brotherhood.Zuldo"] = {
+				["CurrencyInfo"] = {
+					[824] = "2085-0-0-10000",
+					[738] = "82-0-0-0",
+					[777] = "1983-0-0-0",
+				},
+				["lastUpdate"] = 1604090329,
+				["Conquest"] = 0,
+				["Currencies"] = {
+					{
+						["isHeader"] = true,
+						["index"] = 15,
+						["count"] = 0,
+					}, -- [1]
+					{
+						["isHeader"] = false,
+						["index"] = 18,
+						["count"] = 2085,
+					}, -- [2]
+					{
+						["isHeader"] = true,
+						["index"] = 31,
+						["count"] = 0,
+					}, -- [3]
+					{
+						["isHeader"] = false,
+						["index"] = 33,
+						["count"] = 82,
+					}, -- [4]
+					{
+						["isHeader"] = false,
+						["index"] = 34,
+						["count"] = 1983,
+					}, -- [5]
+				},
+			},
+			["Default.Defias Brotherhood.Ösa"] = {
+				["lastUpdate"] = 1604650918,
+				["Conquest"] = 0,
+			},
+			["Default.Ravencrest.Greve"] = {
+				["CurrencyInfo"] = {
+					[1560] = "925-0-0-0",
+					[1717] = "46-0-0-0",
+					[1721] = "40-0-0-0",
 					[1166] = "200-0-0-0",
 				},
 				["Currencies"] = {
 					{
 						["isHeader"] = true,
-						["index"] = 3,
+						["index"] = 1,
 						["count"] = 0,
 					}, -- [1]
 					{
 						["isHeader"] = false,
-						["index"] = 6,
-						["count"] = 337,
+						["index"] = 45,
+						["count"] = 46,
 					}, -- [2]
+					{
+						["isHeader"] = false,
+						["index"] = 46,
+						["count"] = 40,
+					}, -- [3]
+					{
+						["isHeader"] = false,
+						["index"] = 2,
+						["count"] = 925,
+					}, -- [4]
 					{
 						["isHeader"] = true,
 						["index"] = 22,
 						["count"] = 0,
-					}, -- [3]
+					}, -- [5]
 					{
 						["isHeader"] = false,
 						["index"] = 23,
 						["count"] = 200,
-					}, -- [4]
+					}, -- [6]
+				},
+				["Conquest"] = 0,
+				["Archeology"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+					0, -- [4]
+					0, -- [5]
+					0, -- [6]
+					0, -- [7]
+					0, -- [8]
+					0, -- [9]
+					0, -- [10]
+					0, -- [11]
+					0, -- [12]
+					0, -- [13]
+					0, -- [14]
+					0, -- [15]
+					0, -- [16]
+					0, -- [17]
+					0, -- [18]
+					0, -- [19]
+					0, -- [20]
+				},
+				["lastUpdate"] = 1604988879,
+			},
+			["Default.Ravencrest.Allvarg"] = {
+				["CurrencyInfo"] = {
+					[1560] = "275-0-0-0",
+				},
+				["Currencies"] = {
 					{
 						["isHeader"] = true,
-						["index"] = 15,
+						["index"] = 1,
 						["count"] = 0,
-					}, -- [5]
+					}, -- [1]
 					{
 						["isHeader"] = false,
-						["index"] = 18,
-						["count"] = 476,
-					}, -- [6]
+						["index"] = 2,
+						["count"] = 275,
+					}, -- [2]
+				},
+				["Conquest"] = 0,
+				["Archeology"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+					0, -- [4]
+					0, -- [5]
+					0, -- [6]
+					0, -- [7]
+					0, -- [8]
+					0, -- [9]
+					0, -- [10]
+					0, -- [11]
+					0, -- [12]
+					0, -- [13]
+					0, -- [14]
+					0, -- [15]
+					0, -- [16]
+					0, -- [17]
+					0, -- [18]
+					0, -- [19]
+					0, -- [20]
+				},
+				["lastUpdate"] = 1620765117,
+			},
+			["Default.Defias Brotherhood.Tzol"] = {
+				["Conquest"] = 0,
+				["lastUpdate"] = 1606932851,
+				["Archeology"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+					0, -- [4]
+					0, -- [5]
+					0, -- [6]
+					0, -- [7]
+					0, -- [8]
+					0, -- [9]
+					0, -- [10]
+					0, -- [11]
+					0, -- [12]
+					0, -- [13]
+					0, -- [14]
+					0, -- [15]
+					0, -- [16]
+					0, -- [17]
+					0, -- [18]
+					0, -- [19]
+					0, -- [20]
+				},
+			},
+			["Default.Defias Brotherhood.Prella"] = {
+				["CurrencyInfo"] = {
+					[1166] = "200-0-0-0",
+				},
+				["Currencies"] = {
+					{
+						["isHeader"] = true,
+						["index"] = 22,
+						["count"] = 0,
+					}, -- [1]
+					{
+						["isHeader"] = false,
+						["index"] = 23,
+						["count"] = 200,
+					}, -- [2]
 				},
 				["Archeology"] = {
 					0, -- [1]
@@ -944,24 +724,292 @@ DataStore_CurrenciesDB = {
 					0, -- [19]
 					0, -- [20]
 				},
-				["lastUpdate"] = 1607082367,
 				["Conquest"] = 0,
+				["lastUpdate"] = 1604484130,
+			},
+			["Default.Defias Brotherhood.Venedict"] = {
+				["CurrencyInfo"] = {
+					[824] = "1233-0-0-10000",
+					[738] = "1-0-0-0",
+				},
+				["lastUpdate"] = 1604499452,
+				["Conquest"] = 0,
+				["Currencies"] = {
+					{
+						["isHeader"] = true,
+						["index"] = 15,
+						["count"] = 0,
+					}, -- [1]
+					{
+						["isHeader"] = false,
+						["index"] = 18,
+						["count"] = 1233,
+					}, -- [2]
+					{
+						["isHeader"] = true,
+						["index"] = 31,
+						["count"] = 0,
+					}, -- [3]
+					{
+						["isHeader"] = false,
+						["index"] = 33,
+						["count"] = 1,
+					}, -- [4]
+				},
+				["Archeology"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+					0, -- [4]
+					0, -- [5]
+					0, -- [6]
+					0, -- [7]
+					0, -- [8]
+					0, -- [9]
+					0, -- [10]
+					0, -- [11]
+					0, -- [12]
+					0, -- [13]
+					0, -- [14]
+					0, -- [15]
+					0, -- [16]
+					0, -- [17]
+					0, -- [18]
+					0, -- [19]
+					0, -- [20]
+				},
+			},
+			["Default.Defias Brotherhood.Addled"] = {
+				["CurrencyInfo"] = {
+					[944] = "4-0-0-1000",
+					[697] = "7-0-0-20",
+					[823] = "3024-0-0-0",
+					[777] = "13472-0-0-0",
+					[824] = "2152-0-0-10000",
+					[515] = "21-0-0-0",
+					[1155] = "7-0-0-300",
+					[1342] = "25-0-0-1000",
+					[1560] = "389-0-0-0",
+					[1220] = "8266-0-0-0",
+					[391] = "46-0-0-0",
+					[1533] = "5-0-0-0",
+					[1101] = "75-0-0-100000",
+					[738] = "330-0-0-0",
+					[416] = "29-0-0-0",
+					[241] = "6-0-0-0",
+					[614] = "1-0-0-0",
+					[1149] = "235-0-0-5000",
+				},
+				["Currencies"] = {
+					{
+						["isHeader"] = true,
+						["index"] = 1,
+						["count"] = 0,
+					}, -- [1]
+					{
+						["isHeader"] = false,
+						["index"] = 2,
+						["count"] = 389,
+					}, -- [2]
+					{
+						["isHeader"] = true,
+						["index"] = 29,
+						["count"] = 0,
+					}, -- [3]
+					{
+						["isHeader"] = false,
+						["index"] = 38,
+						["count"] = 21,
+					}, -- [4]
+					{
+						["isHeader"] = true,
+						["index"] = 39,
+						["count"] = 0,
+					}, -- [5]
+					{
+						["isHeader"] = false,
+						["index"] = 40,
+						["count"] = 46,
+					}, -- [6]
+					{
+						["isHeader"] = true,
+						["index"] = 3,
+						["count"] = 0,
+					}, -- [7]
+					{
+						["isHeader"] = false,
+						["index"] = 12,
+						["count"] = 7,
+					}, -- [8]
+					{
+						["isHeader"] = false,
+						["index"] = 4,
+						["count"] = 25,
+					}, -- [9]
+					{
+						["isHeader"] = false,
+						["index"] = 6,
+						["count"] = 8266,
+					}, -- [10]
+					{
+						["isHeader"] = false,
+						["index"] = 41,
+						["count"] = 235,
+					}, -- [11]
+					{
+						["isHeader"] = false,
+						["index"] = 7,
+						["count"] = 5,
+					}, -- [12]
+					{
+						["isHeader"] = true,
+						["index"] = 15,
+						["count"] = 0,
+					}, -- [13]
+					{
+						["isHeader"] = false,
+						["index"] = 16,
+						["count"] = 3024,
+					}, -- [14]
+					{
+						["isHeader"] = false,
+						["index"] = 17,
+						["count"] = 4,
+					}, -- [15]
+					{
+						["isHeader"] = false,
+						["index"] = 18,
+						["count"] = 2152,
+					}, -- [16]
+					{
+						["isHeader"] = false,
+						["index"] = 42,
+						["count"] = 75,
+					}, -- [17]
+					{
+						["isHeader"] = true,
+						["index"] = 31,
+						["count"] = 0,
+					}, -- [18]
+					{
+						["isHeader"] = false,
+						["index"] = 32,
+						["count"] = 7,
+					}, -- [19]
+					{
+						["isHeader"] = false,
+						["index"] = 33,
+						["count"] = 330,
+					}, -- [20]
+					{
+						["isHeader"] = false,
+						["index"] = 34,
+						["count"] = 13472,
+					}, -- [21]
+					{
+						["isHeader"] = true,
+						["index"] = 20,
+						["count"] = 0,
+					}, -- [22]
+					{
+						["isHeader"] = false,
+						["index"] = 21,
+						["count"] = 29,
+					}, -- [23]
+					{
+						["isHeader"] = false,
+						["index"] = 43,
+						["count"] = 1,
+					}, -- [24]
+					{
+						["isHeader"] = true,
+						["index"] = 35,
+						["count"] = 0,
+					}, -- [25]
+					{
+						["isHeader"] = false,
+						["index"] = 36,
+						["count"] = 6,
+					}, -- [26]
+				},
+				["Conquest"] = 0,
+				["lastUpdate"] = 1620316124,
+			},
+			["Default.Defias Brotherhood.Ödette"] = {
+				["Conquest"] = 0,
+				["lastUpdate"] = 1604650192,
+				["Archeology"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+					0, -- [4]
+					0, -- [5]
+					0, -- [6]
+					0, -- [7]
+					0, -- [8]
+					0, -- [9]
+					0, -- [10]
+					0, -- [11]
+					0, -- [12]
+					0, -- [13]
+					0, -- [14]
+					0, -- [15]
+					0, -- [16]
+					0, -- [17]
+					0, -- [18]
+					0, -- [19]
+					0, -- [20]
+				},
+			},
+			["Default.Defias Brotherhood.Kêl"] = {
+				["CurrencyInfo"] = {
+					[824] = "1287-0-0-10000",
+					[738] = "174-0-0-0",
+					[777] = "4050-0-0-0",
+				},
+				["lastUpdate"] = 1603344861,
+				["Conquest"] = 0,
+				["Currencies"] = {
+					{
+						["isHeader"] = true,
+						["index"] = 15,
+						["count"] = 0,
+					}, -- [1]
+					{
+						["isHeader"] = false,
+						["index"] = 18,
+						["count"] = 1287,
+					}, -- [2]
+					{
+						["isHeader"] = true,
+						["index"] = 31,
+						["count"] = 0,
+					}, -- [3]
+					{
+						["isHeader"] = false,
+						["index"] = 33,
+						["count"] = 174,
+					}, -- [4]
+					{
+						["isHeader"] = false,
+						["index"] = 34,
+						["count"] = 4050,
+					}, -- [5]
+				},
 			},
 			["Default.Defias Brotherhood.Gladwin"] = {
 				["CurrencyInfo"] = {
 					[1220] = "4783-0-0-0",
 					[824] = "300-0-0-10000",
-					[1226] = "2742-0-0-0",
+					[1155] = "11-0-0-300",
 					[1533] = "30-0-0-0",
 					[1342] = "38-0-0-1000",
 					[1166] = "80-0-0-0",
-					[1155] = "11-0-0-300",
+					[1275] = "3-0-0-0",
 					[1560] = "35-0-0-0",
 					[1508] = "45-0-0-2000",
-					[1275] = "3-0-0-0",
+					[1226] = "2742-0-0-0",
 				},
-				["lastUpdate"] = 1603344724,
-				["Conquest"] = 0,
 				["Currencies"] = {
 					{
 						["isHeader"] = true,
@@ -1034,124 +1082,54 @@ DataStore_CurrenciesDB = {
 						["count"] = 300,
 					}, -- [14]
 				},
+				["Conquest"] = 0,
+				["lastUpdate"] = 1603344724,
 			},
-			["Default.Ravencrest.Rever"] = {
+			["Default.Vashj.Grave"] = {
 				["CurrencyInfo"] = {
-					[1560] = "266-0-0-0",
-					[1220] = "2400-0-0-0",
-					[1533] = "13-0-0-0",
+					[241] = "17-0-0-0",
+					[391] = "40-0-0-0",
 				},
+				["lastUpdate"] = 1603345215,
+				["Conquest"] = 0,
 				["Currencies"] = {
 					{
 						["isHeader"] = true,
-						["index"] = 1,
+						["index"] = 35,
 						["count"] = 0,
 					}, -- [1]
 					{
 						["isHeader"] = false,
-						["index"] = 2,
-						["count"] = 266,
+						["index"] = 36,
+						["count"] = 17,
 					}, -- [2]
 					{
 						["isHeader"] = true,
-						["index"] = 3,
+						["index"] = 39,
 						["count"] = 0,
 					}, -- [3]
 					{
 						["isHeader"] = false,
-						["index"] = 6,
-						["count"] = 2400,
+						["index"] = 40,
+						["count"] = 40,
 					}, -- [4]
-					{
-						["isHeader"] = false,
-						["index"] = 7,
-						["count"] = 13,
-					}, -- [5]
 				},
-				["Conquest"] = 0,
-				["lastUpdate"] = 1603345151,
-			},
-			["Default.Defias Brotherhood.Tzol"] = {
-				["Archeology"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-					0, -- [4]
-					0, -- [5]
-					0, -- [6]
-					0, -- [7]
-					0, -- [8]
-					0, -- [9]
-					0, -- [10]
-					0, -- [11]
-					0, -- [12]
-					0, -- [13]
-					0, -- [14]
-					0, -- [15]
-					0, -- [16]
-					0, -- [17]
-					0, -- [18]
-					0, -- [19]
-					0, -- [20]
-				},
-				["lastUpdate"] = 1606932851,
-				["Conquest"] = 0,
-			},
-			["Default.Ravencrest.Gask"] = {
-				["CurrencyInfo"] = {
-					[1560] = "50-0-0-0",
-				},
-				["Currencies"] = {
-					{
-						["isHeader"] = true,
-						["index"] = 1,
-						["count"] = 0,
-					}, -- [1]
-					{
-						["isHeader"] = false,
-						["index"] = 2,
-						["count"] = 50,
-					}, -- [2]
-				},
-				["Conquest"] = 0,
-				["Archeology"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-					0, -- [4]
-					0, -- [5]
-					0, -- [6]
-					0, -- [7]
-					0, -- [8]
-					0, -- [9]
-					0, -- [10]
-					0, -- [11]
-					0, -- [12]
-					0, -- [13]
-					0, -- [14]
-					0, -- [15]
-					0, -- [16]
-					0, -- [17]
-					0, -- [18]
-					0, -- [19]
-					0, -- [20]
-				},
-				["lastUpdate"] = 1608929177,
 			},
 			["Default.Defias Brotherhood.Thaler"] = {
 				["CurrencyInfo"] = {
-					[1602] = "0-0-0-7150",
+					[1602] = "0-0-0-12100",
 					[1220] = "1602-0-0-0",
-					[1813] = "260-0-0-35000",
+					[1813] = "398-0-0-35000",
 					[1716] = "5-0-0-0",
-					[1767] = "112-0-0-0",
-					[1533] = "66-0-0-0",
 					[1342] = "25-0-0-1000",
+					[1226] = "70-0-0-0",
+					[1533] = "66-0-0-0",
+					[1792] = "30-0-0-15000",
 					[1166] = "200-0-0-0",
 					[1560] = "310-0-0-0",
-					[1820] = "68-0-0-100",
-					[1226] = "70-0-0-0",
-					[1792] = "30-0-0-15000",
+					[1820] = "100-0-0-100",
+					[1767] = "118-0-0-0",
+					[1191] = "85-0-0-11000",
 				},
 				["Currencies"] = {
 					{
@@ -1162,86 +1140,90 @@ DataStore_CurrenciesDB = {
 					{
 						["isHeader"] = false,
 						["index"] = 52,
-						["count"] = 68,
+						["count"] = 100,
 					}, -- [2]
 					{
 						["isHeader"] = false,
 						["index"] = 53,
-						["count"] = 260,
+						["count"] = 398,
 					}, -- [3]
 					{
 						["isHeader"] = false,
 						["index"] = 54,
-						["count"] = 112,
+						["count"] = 118,
 					}, -- [4]
+					{
+						["isHeader"] = false,
+						["index"] = 57,
+						["count"] = 85,
+					}, -- [5]
 					{
 						["isHeader"] = true,
 						["index"] = 22,
 						["count"] = 0,
-					}, -- [5]
+					}, -- [6]
 					{
 						["isHeader"] = false,
 						["index"] = 23,
 						["count"] = 200,
-					}, -- [6]
+					}, -- [7]
 					{
 						["isHeader"] = true,
 						["index"] = 39,
 						["count"] = 0,
-					}, -- [7]
+					}, -- [8]
 					{
 						["isHeader"] = false,
 						["index"] = 51,
 						["count"] = 0,
-					}, -- [8]
+					}, -- [9]
 					{
 						["isHeader"] = false,
 						["index"] = 48,
 						["count"] = 30,
-					}, -- [9]
+					}, -- [10]
 					{
 						["isHeader"] = true,
 						["index"] = 1,
 						["count"] = 0,
-					}, -- [10]
+					}, -- [11]
 					{
 						["isHeader"] = false,
 						["index"] = 27,
 						["count"] = 5,
-					}, -- [11]
+					}, -- [12]
 					{
 						["isHeader"] = false,
 						["index"] = 2,
 						["count"] = 310,
-					}, -- [12]
+					}, -- [13]
 					{
 						["isHeader"] = true,
 						["index"] = 3,
 						["count"] = 0,
-					}, -- [13]
+					}, -- [14]
 					{
 						["isHeader"] = false,
 						["index"] = 4,
 						["count"] = 25,
-					}, -- [14]
+					}, -- [15]
 					{
 						["isHeader"] = false,
 						["index"] = 5,
 						["count"] = 70,
-					}, -- [15]
+					}, -- [16]
 					{
 						["isHeader"] = false,
 						["index"] = 6,
 						["count"] = 1602,
-					}, -- [16]
+					}, -- [17]
 					{
 						["isHeader"] = false,
 						["index"] = 7,
 						["count"] = 66,
-					}, -- [17]
+					}, -- [18]
 				},
 				["Conquest"] = 0,
-				["lastUpdate"] = 1615131100,
 				["Archeology"] = {
 					0, -- [1]
 					0, -- [2]
@@ -1264,8 +1246,11 @@ DataStore_CurrenciesDB = {
 					0, -- [19]
 					0, -- [20]
 				},
+				["lastUpdate"] = 1620466030,
 			},
 			["Default.Defias Brotherhood.Mfgd"] = {
+				["Conquest"] = 0,
+				["lastUpdate"] = 1606932731,
 				["Archeology"] = {
 					0, -- [1]
 					0, -- [2]
@@ -1288,76 +1273,47 @@ DataStore_CurrenciesDB = {
 					0, -- [19]
 					0, -- [20]
 				},
-				["lastUpdate"] = 1606932731,
-				["Conquest"] = 0,
 			},
-			["Default.Defias Brotherhood.Ösa"] = {
-				["lastUpdate"] = 1604650918,
-				["Conquest"] = 0,
-			},
-			["Default.Ravencrest.Greve"] = {
+			["Default.Ravencrest.Dryda"] = {
 				["CurrencyInfo"] = {
-					[1560] = "925-0-0-0",
-					[1717] = "46-0-0-0",
-					[1721] = "40-0-0-0",
-					[1166] = "200-0-0-0",
+					[824] = "906-0-0-10000",
+					[738] = "2-0-0-0",
+					[416] = "15-0-0-0",
 				},
 				["Currencies"] = {
 					{
 						["isHeader"] = true,
-						["index"] = 1,
+						["index"] = 15,
 						["count"] = 0,
 					}, -- [1]
 					{
 						["isHeader"] = false,
-						["index"] = 45,
-						["count"] = 46,
+						["index"] = 18,
+						["count"] = 906,
 					}, -- [2]
 					{
-						["isHeader"] = false,
-						["index"] = 46,
-						["count"] = 40,
+						["isHeader"] = true,
+						["index"] = 31,
+						["count"] = 0,
 					}, -- [3]
 					{
 						["isHeader"] = false,
-						["index"] = 2,
-						["count"] = 925,
+						["index"] = 33,
+						["count"] = 2,
 					}, -- [4]
 					{
 						["isHeader"] = true,
-						["index"] = 22,
+						["index"] = 20,
 						["count"] = 0,
 					}, -- [5]
 					{
 						["isHeader"] = false,
-						["index"] = 23,
-						["count"] = 200,
+						["index"] = 21,
+						["count"] = 15,
 					}, -- [6]
 				},
 				["Conquest"] = 0,
-				["lastUpdate"] = 1604988879,
-				["Archeology"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-					0, -- [4]
-					0, -- [5]
-					0, -- [6]
-					0, -- [7]
-					0, -- [8]
-					0, -- [9]
-					0, -- [10]
-					0, -- [11]
-					0, -- [12]
-					0, -- [13]
-					0, -- [14]
-					0, -- [15]
-					0, -- [16]
-					0, -- [17]
-					0, -- [18]
-					0, -- [19]
-					0, -- [20]
-				},
+				["lastUpdate"] = 1620466097,
 			},
 			["Default.Defias Brotherhood.Rektar"] = {
 				["CurrencyInfo"] = {
@@ -1368,6 +1324,8 @@ DataStore_CurrenciesDB = {
 					[738] = "200-0-0-0",
 					[1220] = "2071-0-0-0",
 				},
+				["lastUpdate"] = 1603344805,
+				["Conquest"] = 0,
 				["Currencies"] = {
 					{
 						["isHeader"] = true,
@@ -1415,83 +1373,236 @@ DataStore_CurrenciesDB = {
 						["count"] = 10032,
 					}, -- [9]
 				},
-				["Conquest"] = 0,
-				["lastUpdate"] = 1603344805,
 			},
 			["Default.Ravencrest.Vite"] = {
 				["lastUpdate"] = 1603345429,
 				["Conquest"] = 0,
 			},
-			["Default.Ravencrest.Dryda"] = {
+			["Default.Ravencrest.Vidja"] = {
 				["CurrencyInfo"] = {
-					[824] = "906-0-0-10000",
-					[738] = "2-0-0-0",
-					[416] = "15-0-0-0",
+					[1299] = "5-0-0-5000",
+					[1220] = "1324-0-0-0",
+					[824] = "254-0-0-10000",
 				},
-				["lastUpdate"] = 1603345170,
-				["Conquest"] = 0,
 				["Currencies"] = {
+					{
+						["isHeader"] = true,
+						["index"] = 1,
+						["count"] = 0,
+					}, -- [1]
+					{
+						["isHeader"] = false,
+						["index"] = 47,
+						["count"] = 5,
+					}, -- [2]
+					{
+						["isHeader"] = true,
+						["index"] = 3,
+						["count"] = 0,
+					}, -- [3]
+					{
+						["isHeader"] = false,
+						["index"] = 6,
+						["count"] = 1324,
+					}, -- [4]
 					{
 						["isHeader"] = true,
 						["index"] = 15,
 						["count"] = 0,
-					}, -- [1]
-					{
-						["isHeader"] = false,
-						["index"] = 18,
-						["count"] = 906,
-					}, -- [2]
-					{
-						["isHeader"] = true,
-						["index"] = 31,
-						["count"] = 0,
-					}, -- [3]
-					{
-						["isHeader"] = false,
-						["index"] = 33,
-						["count"] = 2,
-					}, -- [4]
-					{
-						["isHeader"] = true,
-						["index"] = 20,
-						["count"] = 0,
 					}, -- [5]
 					{
 						["isHeader"] = false,
-						["index"] = 21,
-						["count"] = 15,
+						["index"] = 18,
+						["count"] = 254,
 					}, -- [6]
 				},
+				["Conquest"] = 0,
+				["lastUpdate"] = 1616336756,
+				["Archeology"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+					0, -- [4]
+					0, -- [5]
+					0, -- [6]
+					0, -- [7]
+					0, -- [8]
+					0, -- [9]
+					0, -- [10]
+					0, -- [11]
+					0, -- [12]
+					0, -- [13]
+					0, -- [14]
+					0, -- [15]
+					0, -- [16]
+					0, -- [17]
+					0, -- [18]
+					0, -- [19]
+					0, -- [20]
+				},
 			},
-			["Default.Vashj.Grave"] = {
+			["Default.Defias Brotherhood.Ureg"] = {
 				["CurrencyInfo"] = {
-					[241] = "17-0-0-0",
-					[391] = "40-0-0-0",
+					[944] = "7-0-0-1000",
+					[823] = "81-0-0-0",
+					[994] = "1-0-0-20",
+					[1275] = "3-0-0-0",
+					[1803] = "2725-0-0-0",
+					[1155] = "53-0-0-400",
+					[1342] = "339-0-0-1000",
+					[1560] = "3699-0-0-0",
+					[1220] = "29406-0-0-0",
+					[1718] = "0-0-0-0",
+					[1533] = "304-0-0-0",
+					[824] = "1883-0-0-10000",
+					[1226] = "15592-0-0-0",
+					[1755] = "34235-0-0-0",
+					[416] = "23-0-0-0",
+					[1508] = "934-0-0-2000",
+					[1602] = "0-0-0-12100",
+					[1719] = "106-0-0-0",
 				},
 				["Currencies"] = {
 					{
 						["isHeader"] = true,
-						["index"] = 35,
+						["index"] = 1,
 						["count"] = 0,
 					}, -- [1]
 					{
 						["isHeader"] = false,
-						["index"] = 36,
-						["count"] = 17,
+						["index"] = 8,
+						["count"] = 34235,
 					}, -- [2]
+					{
+						["isHeader"] = false,
+						["index"] = 9,
+						["count"] = 106,
+					}, -- [3]
+					{
+						["isHeader"] = false,
+						["index"] = 10,
+						["count"] = 2725,
+					}, -- [4]
+					{
+						["isHeader"] = false,
+						["index"] = 11,
+						["count"] = 0,
+					}, -- [5]
+					{
+						["isHeader"] = false,
+						["index"] = 2,
+						["count"] = 3699,
+					}, -- [6]
 					{
 						["isHeader"] = true,
 						["index"] = 39,
 						["count"] = 0,
-					}, -- [3]
+					}, -- [7]
 					{
 						["isHeader"] = false,
-						["index"] = 40,
-						["count"] = 40,
-					}, -- [4]
+						["index"] = 51,
+						["count"] = 0,
+					}, -- [8]
+					{
+						["isHeader"] = true,
+						["index"] = 3,
+						["count"] = 0,
+					}, -- [9]
+					{
+						["isHeader"] = false,
+						["index"] = 12,
+						["count"] = 53,
+					}, -- [10]
+					{
+						["isHeader"] = false,
+						["index"] = 13,
+						["count"] = 3,
+					}, -- [11]
+					{
+						["isHeader"] = false,
+						["index"] = 4,
+						["count"] = 339,
+					}, -- [12]
+					{
+						["isHeader"] = false,
+						["index"] = 5,
+						["count"] = 15592,
+					}, -- [13]
+					{
+						["isHeader"] = false,
+						["index"] = 6,
+						["count"] = 29406,
+					}, -- [14]
+					{
+						["isHeader"] = false,
+						["index"] = 14,
+						["count"] = 934,
+					}, -- [15]
+					{
+						["isHeader"] = false,
+						["index"] = 7,
+						["count"] = 304,
+					}, -- [16]
+					{
+						["isHeader"] = true,
+						["index"] = 15,
+						["count"] = 0,
+					}, -- [17]
+					{
+						["isHeader"] = false,
+						["index"] = 16,
+						["count"] = 81,
+					}, -- [18]
+					{
+						["isHeader"] = false,
+						["index"] = 17,
+						["count"] = 7,
+					}, -- [19]
+					{
+						["isHeader"] = false,
+						["index"] = 18,
+						["count"] = 1883,
+					}, -- [20]
+					{
+						["isHeader"] = false,
+						["index"] = 19,
+						["count"] = 1,
+					}, -- [21]
+					{
+						["isHeader"] = true,
+						["index"] = 20,
+						["count"] = 0,
+					}, -- [22]
+					{
+						["isHeader"] = false,
+						["index"] = 21,
+						["count"] = 23,
+					}, -- [23]
 				},
-				["Conquest"] = 0,
-				["lastUpdate"] = 1603345215,
+				["Conquest"] = 200,
+				["lastUpdate"] = 1620290285,
+				["Archeology"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+					0, -- [4]
+					0, -- [5]
+					0, -- [6]
+					50, -- [7]
+					0, -- [8]
+					0, -- [9]
+					0, -- [10]
+					0, -- [11]
+					0, -- [12]
+					13, -- [13]
+					0, -- [14]
+					0, -- [15]
+					0, -- [16]
+					16, -- [17]
+					1, -- [18]
+					0, -- [19]
+					17, -- [20]
+				},
 			},
 			["Default.Defias Brotherhood.Odöde"] = {
 				["CurrencyInfo"] = {
@@ -1542,8 +1653,8 @@ DataStore_CurrenciesDB = {
 					0, -- [19]
 					0, -- [20]
 				},
-				["Conquest"] = 0,
 				["lastUpdate"] = 1605128232,
+				["Conquest"] = 0,
 			},
 			["Default.Kazzak.Gladwin"] = {
 				["CurrencyInfo"] = {
@@ -1554,23 +1665,23 @@ DataStore_CurrenciesDB = {
 					[241] = "21-0-0-0",
 					[824] = "1102-0-0-10000",
 					[1803] = "462-0-0-0",
-					[1710] = "64-0-0-0",
+					[1828] = "1535-0-0-8000",
 					[1885] = "10-0-0-0",
 					[1155] = "0-0-0-500",
 					[1342] = "449-0-0-1000",
 					[1560] = "2094-0-0-0",
 					[1716] = "50-0-0-0",
-					[1533] = "225-0-0-0",
-					[1166] = "1130-0-0-0",
+					[1220] = "34631-0-0-0",
+					[1755] = "18006-0-0-0",
 					[1719] = "150-0-0-0",
 					[1813] = "3032-0-0-35000",
-					[738] = "2-0-0-0",
-					[1226] = "13626-0-0-0",
 					[1754] = "27-0-0-0",
-					[1755] = "18006-0-0-0",
-					[1220] = "34631-0-0-0",
+					[1226] = "13626-0-0-0",
+					[738] = "2-0-0-0",
+					[1166] = "1130-0-0-0",
+					[1533] = "225-0-0-0",
 					[1602] = "0-0-0-2750",
-					[1828] = "1535-0-0-8000",
+					[1710] = "64-0-0-0",
 				},
 				["Currencies"] = {
 					{
@@ -1735,6 +1846,7 @@ DataStore_CurrenciesDB = {
 					}, -- [32]
 				},
 				["Conquest"] = 0,
+				["lastUpdate"] = 1610431442,
 				["Archeology"] = {
 					27, -- [1]
 					0, -- [2]
@@ -1757,92 +1869,45 @@ DataStore_CurrenciesDB = {
 					0, -- [19]
 					0, -- [20]
 				},
-				["lastUpdate"] = 1610431442,
 			},
-			["Default.Defias Brotherhood.Prella"] = {
+			["Default.Kazzak.Ored"] = {
 				["CurrencyInfo"] = {
+					[824] = "476-0-0-10000",
+					[1220] = "337-0-0-0",
 					[1166] = "200-0-0-0",
 				},
 				["Currencies"] = {
 					{
 						["isHeader"] = true,
-						["index"] = 22,
+						["index"] = 3,
 						["count"] = 0,
 					}, -- [1]
+					{
+						["isHeader"] = false,
+						["index"] = 6,
+						["count"] = 337,
+					}, -- [2]
+					{
+						["isHeader"] = true,
+						["index"] = 22,
+						["count"] = 0,
+					}, -- [3]
 					{
 						["isHeader"] = false,
 						["index"] = 23,
 						["count"] = 200,
-					}, -- [2]
-				},
-				["Archeology"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-					0, -- [4]
-					0, -- [5]
-					0, -- [6]
-					0, -- [7]
-					0, -- [8]
-					0, -- [9]
-					0, -- [10]
-					0, -- [11]
-					0, -- [12]
-					0, -- [13]
-					0, -- [14]
-					0, -- [15]
-					0, -- [16]
-					0, -- [17]
-					0, -- [18]
-					0, -- [19]
-					0, -- [20]
-				},
-				["lastUpdate"] = 1604484130,
-				["Conquest"] = 0,
-			},
-			["Default.Defias Brotherhood.Zuldo"] = {
-				["CurrencyInfo"] = {
-					[824] = "2085-0-0-10000",
-					[738] = "82-0-0-0",
-					[777] = "1983-0-0-0",
-				},
-				["Currencies"] = {
+					}, -- [4]
 					{
 						["isHeader"] = true,
 						["index"] = 15,
 						["count"] = 0,
-					}, -- [1]
-					{
-						["isHeader"] = false,
-						["index"] = 18,
-						["count"] = 2085,
-					}, -- [2]
-					{
-						["isHeader"] = true,
-						["index"] = 31,
-						["count"] = 0,
-					}, -- [3]
-					{
-						["isHeader"] = false,
-						["index"] = 33,
-						["count"] = 82,
-					}, -- [4]
-					{
-						["isHeader"] = false,
-						["index"] = 34,
-						["count"] = 1983,
 					}, -- [5]
+					{
+						["isHeader"] = false,
+						["index"] = 18,
+						["count"] = 476,
+					}, -- [6]
 				},
-				["Conquest"] = 0,
-				["lastUpdate"] = 1604090329,
-			},
-			["Default.Defias Brotherhood.Venedict"] = {
-				["CurrencyInfo"] = {
-					[824] = "1233-0-0-10000",
-					[738] = "1-0-0-0",
-				},
-				["lastUpdate"] = 1604499452,
-				["Conquest"] = 0,
 				["Archeology"] = {
 					0, -- [1]
 					0, -- [2]
@@ -1865,51 +1930,68 @@ DataStore_CurrenciesDB = {
 					0, -- [19]
 					0, -- [20]
 				},
-				["Currencies"] = {
-					{
-						["isHeader"] = true,
-						["index"] = 15,
-						["count"] = 0,
-					}, -- [1]
-					{
-						["isHeader"] = false,
-						["index"] = 18,
-						["count"] = 1233,
-					}, -- [2]
-					{
-						["isHeader"] = true,
-						["index"] = 31,
-						["count"] = 0,
-					}, -- [3]
-					{
-						["isHeader"] = false,
-						["index"] = 33,
-						["count"] = 1,
-					}, -- [4]
-				},
+				["Conquest"] = 0,
+				["lastUpdate"] = 1620371242,
 			},
-			["Default.Defias Brotherhood.Addled"] = {
-				["CurrencyInfo"] = {
-					[944] = "4-0-0-1000",
-					[697] = "7-0-0-20",
-					[823] = "3024-0-0-0",
-					[777] = "13472-0-0-0",
-					[824] = "2152-0-0-10000",
-					[515] = "21-0-0-0",
-					[1155] = "7-0-0-300",
-					[1342] = "25-0-0-1000",
-					[1560] = "389-0-0-0",
-					[1220] = "8266-0-0-0",
-					[391] = "46-0-0-0",
-					[1533] = "5-0-0-0",
-					[1101] = "75-0-0-100000",
-					[738] = "330-0-0-0",
-					[416] = "29-0-0-0",
-					[1149] = "235-0-0-5000",
-					[614] = "1-0-0-0",
-					[241] = "6-0-0-0",
+			["Default.Ravencrest.Dal"] = {
+				["Archeology"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+					0, -- [4]
+					0, -- [5]
+					0, -- [6]
+					0, -- [7]
+					0, -- [8]
+					0, -- [9]
+					0, -- [10]
+					0, -- [11]
+					0, -- [12]
+					0, -- [13]
+					0, -- [14]
+					0, -- [15]
+					0, -- [16]
+					0, -- [17]
+					0, -- [18]
+					0, -- [19]
+					0, -- [20]
 				},
-				["lastUpdate"] = 1603344788,
+				["lastUpdate"] = 1620563582,
+				["Conquest"] = 0,
+			},
+			["Default.Defias Brotherhood.Osa"] = {
+				["Archeology"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+					0, -- [4]
+					0, -- [5]
+					0, -- [6]
+					0, -- [7]
+					0, -- [8]
+					0, -- [9]
+					0, -- [10]
+					0, -- [11]
+					0, -- [12]
+					0, -- [13]
+					0, -- [14]
+					0, -- [15]
+					0, -- [16]
+					0, -- [17]
+					0, -- [18]
+					0, -- [19]
+					0, -- [20]
+				},
+				["lastUpdate"] = 1604665882,
+				["Conquest"] = 0,
+			},
+			["Default.Ravencrest.Rever"] = {
+				["CurrencyInfo"] = {
+					[1560] = "266-0-0-0",
+					[1220] = "2400-0-0-0",
+					[1533] = "13-0-0-0",
+				},
+				["lastUpdate"] = 1620373432,
 				["Conquest"] = 0,
 				["Currencies"] = {
 					{
@@ -1920,131 +2002,148 @@ DataStore_CurrenciesDB = {
 					{
 						["isHeader"] = false,
 						["index"] = 2,
-						["count"] = 389,
+						["count"] = 266,
 					}, -- [2]
-					{
-						["isHeader"] = true,
-						["index"] = 29,
-						["count"] = 0,
-					}, -- [3]
-					{
-						["isHeader"] = false,
-						["index"] = 38,
-						["count"] = 21,
-					}, -- [4]
-					{
-						["isHeader"] = true,
-						["index"] = 39,
-						["count"] = 0,
-					}, -- [5]
-					{
-						["isHeader"] = false,
-						["index"] = 40,
-						["count"] = 46,
-					}, -- [6]
 					{
 						["isHeader"] = true,
 						["index"] = 3,
 						["count"] = 0,
-					}, -- [7]
-					{
-						["isHeader"] = false,
-						["index"] = 12,
-						["count"] = 7,
-					}, -- [8]
-					{
-						["isHeader"] = false,
-						["index"] = 4,
-						["count"] = 25,
-					}, -- [9]
+					}, -- [3]
 					{
 						["isHeader"] = false,
 						["index"] = 6,
-						["count"] = 8266,
-					}, -- [10]
-					{
-						["isHeader"] = false,
-						["index"] = 41,
-						["count"] = 235,
-					}, -- [11]
+						["count"] = 2400,
+					}, -- [4]
 					{
 						["isHeader"] = false,
 						["index"] = 7,
-						["count"] = 5,
+						["count"] = 13,
+					}, -- [5]
+				},
+			},
+			["Default.Ravencrest.Gladwin"] = {
+				["CurrencyInfo"] = {
+					[1602] = "0-0-0-12100",
+					[1580] = "0-0-0-5",
+					[1220] = "1642-0-0-0",
+					[1719] = "1290-0-0-0",
+					[1155] = "250-0-0-300",
+					[1533] = "87-0-0-0",
+					[1560] = "7117-0-0-0",
+					[1226] = "1644-0-0-0",
+					[1342] = "3-0-0-1000",
+					[1803] = "1892-0-0-0",
+					[1717] = "220-0-0-0",
+					[1721] = "132-0-0-0",
+					[1710] = "123-0-0-0",
+					[1166] = "285-0-0-0",
+					[1718] = "0-0-0-0",
+					[1755] = "61563-0-0-0",
+				},
+				["lastUpdate"] = 1620469623,
+				["Conquest"] = 0,
+				["Currencies"] = {
+					{
+						["isHeader"] = true,
+						["index"] = 1,
+						["count"] = 0,
+					}, -- [1]
+					{
+						["isHeader"] = false,
+						["index"] = 45,
+						["count"] = 220,
+					}, -- [2]
+					{
+						["isHeader"] = false,
+						["index"] = 8,
+						["count"] = 61563,
+					}, -- [3]
+					{
+						["isHeader"] = false,
+						["index"] = 9,
+						["count"] = 1290,
+					}, -- [4]
+					{
+						["isHeader"] = false,
+						["index"] = 10,
+						["count"] = 1892,
+					}, -- [5]
+					{
+						["isHeader"] = false,
+						["index"] = 46,
+						["count"] = 132,
+					}, -- [6]
+					{
+						["isHeader"] = false,
+						["index"] = 28,
+						["count"] = 123,
+					}, -- [7]
+					{
+						["isHeader"] = false,
+						["index"] = 44,
+						["count"] = 0,
+					}, -- [8]
+					{
+						["isHeader"] = false,
+						["index"] = 11,
+						["count"] = 0,
+					}, -- [9]
+					{
+						["isHeader"] = false,
+						["index"] = 2,
+						["count"] = 7117,
+					}, -- [10]
+					{
+						["isHeader"] = true,
+						["index"] = 22,
+						["count"] = 0,
+					}, -- [11]
+					{
+						["isHeader"] = false,
+						["index"] = 23,
+						["count"] = 285,
 					}, -- [12]
 					{
 						["isHeader"] = true,
-						["index"] = 15,
+						["index"] = 39,
 						["count"] = 0,
 					}, -- [13]
 					{
 						["isHeader"] = false,
-						["index"] = 16,
-						["count"] = 3024,
+						["index"] = 51,
+						["count"] = 0,
 					}, -- [14]
 					{
-						["isHeader"] = false,
-						["index"] = 17,
-						["count"] = 4,
+						["isHeader"] = true,
+						["index"] = 3,
+						["count"] = 0,
 					}, -- [15]
 					{
 						["isHeader"] = false,
-						["index"] = 18,
-						["count"] = 2152,
+						["index"] = 12,
+						["count"] = 250,
 					}, -- [16]
 					{
 						["isHeader"] = false,
-						["index"] = 42,
-						["count"] = 75,
+						["index"] = 4,
+						["count"] = 3,
 					}, -- [17]
 					{
-						["isHeader"] = true,
-						["index"] = 31,
-						["count"] = 0,
+						["isHeader"] = false,
+						["index"] = 5,
+						["count"] = 1644,
 					}, -- [18]
 					{
 						["isHeader"] = false,
-						["index"] = 32,
-						["count"] = 7,
+						["index"] = 6,
+						["count"] = 1642,
 					}, -- [19]
 					{
 						["isHeader"] = false,
-						["index"] = 33,
-						["count"] = 330,
+						["index"] = 7,
+						["count"] = 87,
 					}, -- [20]
-					{
-						["isHeader"] = false,
-						["index"] = 34,
-						["count"] = 13472,
-					}, -- [21]
-					{
-						["isHeader"] = true,
-						["index"] = 20,
-						["count"] = 0,
-					}, -- [22]
-					{
-						["isHeader"] = false,
-						["index"] = 21,
-						["count"] = 29,
-					}, -- [23]
-					{
-						["isHeader"] = false,
-						["index"] = 43,
-						["count"] = 1,
-					}, -- [24]
-					{
-						["isHeader"] = true,
-						["index"] = 35,
-						["count"] = 0,
-					}, -- [25]
-					{
-						["isHeader"] = false,
-						["index"] = 36,
-						["count"] = 6,
-					}, -- [26]
 				},
-			},
-			["Default.Defias Brotherhood.Ödette"] = {
 				["Archeology"] = {
 					0, -- [1]
 					0, -- [2]
@@ -2067,29 +2166,25 @@ DataStore_CurrenciesDB = {
 					0, -- [19]
 					0, -- [20]
 				},
-				["lastUpdate"] = 1604650192,
-				["Conquest"] = 0,
 			},
 			["Default.Defias Brotherhood.Kodah"] = {
 				["CurrencyInfo"] = {
-					[1155] = "242-0-0-300",
-					[1220] = "18181-0-0-0",
 					[824] = "1457-0-0-10000",
-					[1273] = "0-0-0-6",
-					[1268] = "3-0-0-1000",
-					[1560] = "68-0-0-0",
-					[1755] = "368-0-0-0",
-					[1166] = "830-0-0-0",
-					[1533] = "7-0-0-0",
-					[823] = "50-0-0-0",
-					[1226] = "732-0-0-0",
-					[1275] = "14-0-0-0",
-					[1342] = "266-0-0-1000",
-					[1508] = "4-0-0-2000",
+					[1220] = "18181-0-0-0",
 					[1314] = "0-0-20-40",
+					[1273] = "0-0-0-6",
+					[1508] = "4-0-0-2000",
+					[823] = "50-0-0-0",
+					[1275] = "14-0-0-0",
+					[1226] = "732-0-0-0",
+					[1533] = "7-0-0-0",
+					[1342] = "266-0-0-1000",
+					[1166] = "830-0-0-0",
+					[1560] = "68-0-0-0",
+					[1155] = "242-0-0-300",
+					[1268] = "3-0-0-1000",
+					[1755] = "368-0-0-0",
 				},
-				["lastUpdate"] = 1608959130,
-				["Conquest"] = 0,
 				["Currencies"] = {
 					{
 						["isHeader"] = true,
@@ -2187,42 +2282,66 @@ DataStore_CurrenciesDB = {
 						["count"] = 1457,
 					}, -- [19]
 				},
+				["Conquest"] = 0,
+				["lastUpdate"] = 1608959130,
 			},
-			["Default.Defias Brotherhood.Kêl"] = {
+			["Default.Kazzak.Cazh"] = {
 				["CurrencyInfo"] = {
-					[824] = "1287-0-0-10000",
-					[738] = "174-0-0-0",
-					[777] = "4050-0-0-0",
+					[824] = "270-0-0-10000",
+					[1220] = "2585-0-0-0",
+					[1560] = "97-0-0-0",
+					[1533] = "37-0-0-0",
+					[1166] = "200-0-0-0",
 				},
 				["Currencies"] = {
 					{
 						["isHeader"] = true,
-						["index"] = 15,
+						["index"] = 1,
 						["count"] = 0,
 					}, -- [1]
 					{
 						["isHeader"] = false,
-						["index"] = 18,
-						["count"] = 1287,
+						["index"] = 2,
+						["count"] = 97,
 					}, -- [2]
 					{
 						["isHeader"] = true,
-						["index"] = 31,
+						["index"] = 22,
 						["count"] = 0,
 					}, -- [3]
 					{
 						["isHeader"] = false,
-						["index"] = 33,
-						["count"] = 174,
+						["index"] = 23,
+						["count"] = 200,
 					}, -- [4]
 					{
-						["isHeader"] = false,
-						["index"] = 34,
-						["count"] = 4050,
+						["isHeader"] = true,
+						["index"] = 3,
+						["count"] = 0,
 					}, -- [5]
+					{
+						["isHeader"] = false,
+						["index"] = 6,
+						["count"] = 2585,
+					}, -- [6]
+					{
+						["isHeader"] = false,
+						["index"] = 7,
+						["count"] = 37,
+					}, -- [7]
+					{
+						["isHeader"] = true,
+						["index"] = 15,
+						["count"] = 0,
+					}, -- [8]
+					{
+						["isHeader"] = false,
+						["index"] = 18,
+						["count"] = 270,
+					}, -- [9]
 				},
 				["Conquest"] = 0,
-				["lastUpdate"] = 1603344861,
+				["lastUpdate"] = 1603344920,
 			},
 		},
 		["Reference"] = {
@@ -2283,11 +2402,13 @@ DataStore_CurrenciesDB = {
 				"Stygia|3743739", -- [54]
 				"Grateful Offering|134344", -- [55]
 				"Soul Ash|3743738", -- [56]
+				"Valor|463447", -- [57]
 			},
 			["CurrencyTextRev"] = {
 				["Mark of the World Tree"] = 21,
 				["Elder Charm of Good Fortune"] = 32,
 				["Nethershard"] = 5,
+				["Valor"] = 57,
 				["Dungeon and Raid"] = 22,
 				["Garrison Resources"] = 18,
 				["Order Resources"] = 6,
@@ -2298,47 +2419,47 @@ DataStore_CurrenciesDB = {
 				["Argent Commendation"] = 50,
 				["Stygia"] = 54,
 				["Brawler's Gold"] = 47,
-				["Prismatic Manapearl"] = 46,
+				["Titan Residuum"] = 11,
 				["Sightless Eye"] = 41,
 				["Coalescing Visions"] = 8,
-				["Mote of Darkness"] = 43,
+				["Ancient Mana"] = 12,
 				["Grateful Offering"] = 55,
-				["Timeless Coin"] = 34,
+				["Ironpaw Token"] = 30,
 				["Cataclysm"] = 20,
 				["Reservoir Anima"] = 53,
-				["Curious Coin"] = 13,
-				["Lingering Soul Fragment"] = 24,
-				["Legion"] = 3,
-				["Battle for Azeroth"] = 1,
-				["Ironpaw Token"] = 30,
-				["Infused Ruby"] = 52,
-				["Warlords of Draenor"] = 15,
-				["Mists of Pandaria"] = 31,
-				["Conquest"] = 51,
-				["Echoes of Ny'alotha"] = 10,
-				["Lesser Charm of Good Fortune"] = 33,
 				["Oil"] = 42,
+				["Lingering Soul Fragment"] = 24,
+				["Apexis Crystal"] = 16,
+				["Battle for Azeroth"] = 1,
+				["Corrupted Mementos"] = 9,
+				["Conquest"] = 51,
+				["Wakening Essence"] = 7,
+				["Curious Coin"] = 13,
+				["Seal of Broken Fate"] = 25,
+				["Timeworn Artifact"] = 26,
+				["Lesser Charm of Good Fortune"] = 33,
+				["Dalaran Jewelcrafter's Token"] = 37,
 				["Seal of Wartorn Fate"] = 44,
 				["Artifact Fragment"] = 17,
-				["7th Legion Service Medal"] = 45,
-				["Shadowlands"] = 49,
-				["Timewarped Badge"] = 23,
-				["Player vs. Player"] = 39,
-				["Soul Ash"] = 56,
-				["Wrath of the Lich King"] = 35,
-				["Seafarer's Dubloon"] = 28,
-				["Miscellaneous"] = 29,
-				["Honor"] = 48,
 				["Seal of Tempered Fate"] = 19,
-				["Timeworn Artifact"] = 26,
-				["Dalaran Jewelcrafter's Token"] = 37,
-				["Wakening Essence"] = 7,
-				["Seal of Broken Fate"] = 25,
-				["Apexis Crystal"] = 16,
+				["Shadowlands"] = 49,
+				["Soul Ash"] = 56,
+				["Player vs. Player"] = 39,
+				["Timewarped Badge"] = 23,
+				["Miscellaneous"] = 29,
+				["Seafarer's Dubloon"] = 28,
+				["Wrath of the Lich King"] = 35,
+				["Honor"] = 48,
+				["7th Legion Service Medal"] = 45,
+				["Echoes of Ny'alotha"] = 10,
+				["Mists of Pandaria"] = 31,
+				["Warlords of Draenor"] = 15,
+				["Infused Ruby"] = 52,
+				["Legion"] = 3,
 				["Darkmoon Prize Ticket"] = 38,
-				["Corrupted Mementos"] = 9,
-				["Ancient Mana"] = 12,
-				["Titan Residuum"] = 11,
+				["Timeless Coin"] = 34,
+				["Mote of Darkness"] = 43,
+				["Prismatic Manapearl"] = 46,
 				["Champion's Seal"] = 36,
 				["Legionfall War Supplies"] = 4,
 			},

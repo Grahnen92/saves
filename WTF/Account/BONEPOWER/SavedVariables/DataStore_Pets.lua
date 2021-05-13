@@ -1,40 +1,45 @@
 
 DataStore_PetsDB = {
 	["profileKeys"] = {
-		["Kêl - Defias Brotherhood"] = "Kêl - Defias Brotherhood",
-		["Thaler - Defias Brotherhood"] = "Thaler - Defias Brotherhood",
+		["Addled - Defias Brotherhood"] = "Addled - Defias Brotherhood",
 		["Osa - Defias Brotherhood"] = "Osa - Defias Brotherhood",
-		["Gladwin - Ravencrest"] = "Gladwin - Ravencrest",
 		["Ösa - Defias Brotherhood"] = "Ösa - Defias Brotherhood",
 		["Ureg - Defias Brotherhood"] = "Ureg - Defias Brotherhood",
-		["Zuldo - Defias Brotherhood"] = "Zuldo - Defias Brotherhood",
-		["Vite - Ravencrest"] = "Vite - Ravencrest",
-		["Dryda - Ravencrest"] = "Dryda - Ravencrest",
-		["Ödette - Defias Brotherhood"] = "Ödette - Defias Brotherhood",
-		["Venedict - Defias Brotherhood"] = "Venedict - Defias Brotherhood",
-		["Rever - Ravencrest"] = "Rever - Ravencrest",
-		["Rekhyt - Vashj"] = "Rekhyt - Vashj",
-		["Gask - Ravencrest"] = "Gask - Ravencrest",
 		["Greve - Ravencrest"] = "Greve - Ravencrest",
-		["Gladwin - Defias Brotherhood"] = "Gladwin - Defias Brotherhood",
-		["Ored - Kazzak"] = "Ored - Kazzak",
-		["Mfgd - Defias Brotherhood"] = "Mfgd - Defias Brotherhood",
-		["Odöde - Defias Brotherhood"] = "Odöde - Defias Brotherhood",
-		["Vidja - Ravencrest"] = "Vidja - Ravencrest",
-		["Addled - Defias Brotherhood"] = "Addled - Defias Brotherhood",
-		["Gladwin - Kazzak"] = "Gladwin - Kazzak",
-		["Träl - Defias Brotherhood"] = "Träl - Defias Brotherhood",
 		["Rektar - Defias Brotherhood"] = "Rektar - Defias Brotherhood",
-		["Orek - Defias Brotherhood"] = "Orek - Defias Brotherhood",
-		["Ärlig - Ravencrest"] = "Ärlig - Ravencrest",
+		["Ored - Kazzak"] = "Ored - Kazzak",
+		["Odöde - Defias Brotherhood"] = "Odöde - Defias Brotherhood",
+		["Gladwin - Kazzak"] = "Gladwin - Kazzak",
+		["Rever - Ravencrest"] = "Rever - Ravencrest",
 		["Grave - Vashj"] = "Grave - Vashj",
-		["Prella - Defias Brotherhood"] = "Prella - Defias Brotherhood",
-		["Tzol - Defias Brotherhood"] = "Tzol - Defias Brotherhood",
+		["Dryda - Ravencrest"] = "Dryda - Ravencrest",
+		["Vite - Ravencrest"] = "Vite - Ravencrest",
+		["Thaler - Defias Brotherhood"] = "Thaler - Defias Brotherhood",
+		["Gladwin - Ravencrest"] = "Gladwin - Ravencrest",
+		["Allvarg - Ravencrest"] = "Allvarg - Ravencrest",
+		["Zuldo - Defias Brotherhood"] = "Zuldo - Defias Brotherhood",
+		["Rekhyt - Vashj"] = "Rekhyt - Vashj",
+		["Gladwin - Defias Brotherhood"] = "Gladwin - Defias Brotherhood",
+		["Träl - Defias Brotherhood"] = "Träl - Defias Brotherhood",
+		["Dal - Ravencrest"] = "Dal - Ravencrest",
+		["Kêl - Defias Brotherhood"] = "Kêl - Defias Brotherhood",
 		["Cazh - Kazzak"] = "Cazh - Kazzak",
 		["Kodah - Defias Brotherhood"] = "Kodah - Defias Brotherhood",
+		["Gask - Ravencrest"] = "Gask - Ravencrest",
+		["Prella - Defias Brotherhood"] = "Prella - Defias Brotherhood",
+		["Orek - Defias Brotherhood"] = "Orek - Defias Brotherhood",
+		["Ärlig - Ravencrest"] = "Ärlig - Ravencrest",
+		["Mfgd - Defias Brotherhood"] = "Mfgd - Defias Brotherhood",
+		["Venedict - Defias Brotherhood"] = "Venedict - Defias Brotherhood",
+		["Tzol - Defias Brotherhood"] = "Tzol - Defias Brotherhood",
+		["Vidja - Ravencrest"] = "Vidja - Ravencrest",
+		["Ödette - Defias Brotherhood"] = "Ödette - Defias Brotherhood",
 	},
 	["global"] = {
 		["Characters"] = {
+			["Default.Ravencrest.Ärlig"] = {
+				["lastUpdate"] = 1620290324,
+			},
 			["Default.Vashj.Rekhyt"] = {
 				["lastUpdate"] = 1603345239,
 				["CRITTER"] = {
@@ -46,56 +51,8 @@ DataStore_PetsDB = {
 					110029, -- [6]
 				},
 			},
-			["Default.Defias Brotherhood.Orek"] = {
-				["lastUpdate"] = 1606403998,
-				["CRITTER"] = {
-					10688, -- [1]
-					26529, -- [2]
-					10674, -- [3]
-					51851, -- [4]
-					62746, -- [5]
-					55068, -- [6]
-					42609, -- [7]
-					51716, -- [8]
-					62508, -- [9]
-					62564, -- [10]
-					63712, -- [11]
-					62674, -- [12]
-					69002, -- [13]
-					70613, -- [14]
-					96571, -- [15]
-					75134, -- [16]
-					100684, -- [17]
-					98587, -- [18]
-					124660, -- [19]
-					69452, -- [20]
-					110029, -- [21]
-					131650, -- [22]
-					122748, -- [23]
-					149792, -- [24]
-					193514, -- [25]
-					193434, -- [26]
-					215560, -- [27]
-					223359, -- [28]
-					254295, -- [29]
-					223339, -- [30]
-					254197, -- [31]
-				},
-			},
-			["Default.Ravencrest.Ärlig"] = {
-				["lastUpdate"] = 1603345035,
-			},
-			["Default.Ravencrest.Vidja"] = {
-				["lastUpdate"] = 1603345084,
-				["CRITTER"] = {
-					65046, -- [1]
-				},
-			},
-			["Default.Defias Brotherhood.Ödette"] = {
-				["lastUpdate"] = 1604650191,
-			},
 			["Default.Defias Brotherhood.Träl"] = {
-				["lastUpdate"] = 1606410121,
+				["lastUpdate"] = 1620672859,
 				["CRITTER"] = {
 					89670, -- [1]
 					61855, -- [2]
@@ -129,8 +86,81 @@ DataStore_PetsDB = {
 					26541, -- [30]
 				},
 			},
+			["Default.Defias Brotherhood.Orek"] = {
+				["lastUpdate"] = 1620066924,
+				["CRITTER"] = {
+					62746, -- [1]
+					131650, -- [2]
+					193434, -- [3]
+					75134, -- [4]
+					69452, -- [5]
+					223359, -- [6]
+					10674, -- [7]
+					100684, -- [8]
+					254295, -- [9]
+					62508, -- [10]
+					62564, -- [11]
+					223339, -- [12]
+					122748, -- [13]
+					124660, -- [14]
+					62674, -- [15]
+					55068, -- [16]
+					149792, -- [17]
+					51716, -- [18]
+					69002, -- [19]
+					254197, -- [20]
+					96571, -- [21]
+					70613, -- [22]
+					215560, -- [23]
+					63712, -- [24]
+					42609, -- [25]
+					110029, -- [26]
+					193514, -- [27]
+					10688, -- [28]
+					51851, -- [29]
+					98587, -- [30]
+					26529, -- [31]
+				},
+			},
+			["Default.Ravencrest.Gask"] = {
+				["lastUpdate"] = 1608926383,
+			},
+			["Default.Defias Brotherhood.Zuldo"] = {
+				["lastUpdate"] = 1604090620,
+				["CRITTER"] = {
+					155838, -- [1]
+				},
+			},
+			["Default.Defias Brotherhood.Ösa"] = {
+				["lastUpdate"] = 1604650919,
+			},
+			["Default.Ravencrest.Greve"] = {
+				["lastUpdate"] = 1604988879,
+			},
+			["Default.Ravencrest.Allvarg"] = {
+				["lastUpdate"] = 1620765143,
+			},
+			["Default.Defias Brotherhood.Tzol"] = {
+				["lastUpdate"] = 1606932854,
+			},
+			["Default.Defias Brotherhood.Prella"] = {
+				["lastUpdate"] = 1604484041,
+			},
+			["Default.Defias Brotherhood.Venedict"] = {
+				["lastUpdate"] = 1604499454,
+				["CRITTER"] = {
+					10688, -- [1]
+					55068, -- [2]
+					69452, -- [3]
+					124660, -- [4]
+					131650, -- [5]
+					110029, -- [6]
+					149792, -- [7]
+					122748, -- [8]
+				},
+			},
 			["Default.Defias Brotherhood.Addled"] = {
-				["lastUpdate"] = 1603344790,
+				["lastUpdate"] = 1620316127,
 				["CRITTER"] = {
 					131650, -- [1]
 					173547, -- [2]
@@ -159,49 +189,106 @@ DataStore_PetsDB = {
 					10703, -- [25]
 				},
 			},
-			["Default.Defias Brotherhood.Venedict"] = {
-				["lastUpdate"] = 1604499454,
+			["Default.Defias Brotherhood.Ödette"] = {
+				["lastUpdate"] = 1604650191,
+			},
+			["Default.Defias Brotherhood.Kêl"] = {
+				["lastUpdate"] = 1603344863,
 				["CRITTER"] = {
-					10688, -- [1]
-					55068, -- [2]
+					155838, -- [1]
+					16450, -- [2]
+				},
+			},
+			["Default.Defias Brotherhood.Gladwin"] = {
+				["lastUpdate"] = 1603344724,
+			},
+			["Default.Vashj.Grave"] = {
+				["lastUpdate"] = 1603345217,
+				["CRITTER"] = {
+					61855, -- [1]
+					131650, -- [2]
+					10680, -- [3]
+					69452, -- [4]
+					124660, -- [5]
+					4055, -- [6]
+					55068, -- [7]
+					149792, -- [8]
+					69002, -- [9]
+					27570, -- [10]
+					70613, -- [11]
+					10684, -- [12]
+					110029, -- [13]
+				},
+			},
+			["Default.Defias Brotherhood.Thaler"] = {
+				["lastUpdate"] = 1620466030,
+				["CRITTER"] = {
+					339677, -- [1]
+					334789, -- [2]
+					318876, -- [3]
+				},
+			},
+			["Default.Defias Brotherhood.Mfgd"] = {
+				["lastUpdate"] = 1606932731,
+			},
+			["Default.Kazzak.Cazh"] = {
+				["lastUpdate"] = 1603344920,
+				["CRITTER"] = {
+					294206, -- [1]
+				},
+			},
+			["Default.Defias Brotherhood.Rektar"] = {
+				["lastUpdate"] = 1603344807,
+				["CRITTER"] = {
+					195368, -- [1]
+					190020, -- [2]
+					215560, -- [3]
+					15999, -- [4]
+				},
+			},
+			["Default.Ravencrest.Dryda"] = {
+				["lastUpdate"] = 1620466099,
+				["CRITTER"] = {
+					10685, -- [1]
+					131650, -- [2]
+					10680, -- [3]
+					69452, -- [4]
+					124660, -- [5]
+					55068, -- [6]
+					149792, -- [7]
+					10684, -- [8]
+					42609, -- [9]
+					110029, -- [10]
+					10679, -- [11]
+				},
+			},
+			["Default.Ravencrest.Vidja"] = {
+				["lastUpdate"] = 1616336756,
+				["CRITTER"] = {
+					65046, -- [1]
+				},
+			},
+			["Default.Defias Brotherhood.Ureg"] = {
+				["lastUpdate"] = 1620290287,
+				["CRITTER"] = {
+					55068, -- [1]
+					42609, -- [2]
 					69452, -- [3]
 					124660, -- [4]
 					131650, -- [5]
 					110029, -- [6]
 					149792, -- [7]
 					122748, -- [8]
+					181086, -- [9]
+					164212, -- [10]
+					195368, -- [11]
+					225200, -- [12]
+					273195, -- [13]
+					273839, -- [14]
 				},
 			},
-			["Default.Defias Brotherhood.Ureg"] = {
-				["lastUpdate"] = 1606418042,
-				["CRITTER"] = {
-					131650, -- [1]
-					225200, -- [2]
-					69452, -- [3]
-					195368, -- [4]
-					122748, -- [5]
-					181086, -- [6]
-					273839, -- [7]
-					124660, -- [8]
-					55068, -- [9]
-					149792, -- [10]
-					273195, -- [11]
-					42609, -- [12]
-					110029, -- [13]
-					164212, -- [14]
-				},
-			},
-			["Default.Defias Brotherhood.Zuldo"] = {
-				["lastUpdate"] = 1604090620,
-				["CRITTER"] = {
-					155838, -- [1]
-				},
-			},
-			["Default.Defias Brotherhood.Gladwin"] = {
-				["lastUpdate"] = 1603344724,
-			},
-			["Default.Ravencrest.Vite"] = {
-				["lastUpdate"] = 1603345431,
+			["Default.Defias Brotherhood.Odöde"] = {
+				["lastUpdate"] = 1605125819,
 			},
 			["Default.Kazzak.Gladwin"] = {
 				["lastUpdate"] = 1610431140,
@@ -231,95 +318,20 @@ DataStore_PetsDB = {
 					51851, -- [23]
 				},
 			},
-			["Default.Kazzak.Ored"] = {
-				["lastUpdate"] = 1607082367,
-			},
-			["Default.Defias Brotherhood.Thaler"] = {
-				["lastUpdate"] = 1615134148,
-				["CRITTER"] = {
-					339677, -- [1]
-					334789, -- [2]
-					318876, -- [3]
-				},
-			},
-			["Default.Defias Brotherhood.Mfgd"] = {
-				["lastUpdate"] = 1606932731,
-			},
-			["Default.Defias Brotherhood.Ösa"] = {
-				["lastUpdate"] = 1604650919,
-			},
-			["Default.Ravencrest.Greve"] = {
-				["lastUpdate"] = 1604988879,
-			},
-			["Default.Defias Brotherhood.Rektar"] = {
-				["lastUpdate"] = 1603344807,
-				["CRITTER"] = {
-					195368, -- [1]
-					190020, -- [2]
-					215560, -- [3]
-					15999, -- [4]
-				},
-			},
 			["Default.Ravencrest.Rever"] = {
-				["lastUpdate"] = 1603345151,
+				["lastUpdate"] = 1620823116,
 			},
-			["Default.Ravencrest.Dryda"] = {
-				["lastUpdate"] = 1603345171,
-				["CRITTER"] = {
-					10679, -- [1]
-					10684, -- [2]
-					10680, -- [3]
-					10685, -- [4]
-					55068, -- [5]
-					42609, -- [6]
-					69452, -- [7]
-					110029, -- [8]
-					124660, -- [9]
-					131650, -- [10]
-					149792, -- [11]
-				},
-			},
-			["Default.Vashj.Grave"] = {
-				["lastUpdate"] = 1603345217,
-				["CRITTER"] = {
-					61855, -- [1]
-					131650, -- [2]
-					10680, -- [3]
-					69452, -- [4]
-					124660, -- [5]
-					4055, -- [6]
-					55068, -- [7]
-					149792, -- [8]
-					69002, -- [9]
-					27570, -- [10]
-					70613, -- [11]
-					10684, -- [12]
-					110029, -- [13]
-				},
-			},
-			["Default.Defias Brotherhood.Odöde"] = {
-				["lastUpdate"] = 1605125819,
-			},
-			["Default.Defias Brotherhood.Tzol"] = {
-				["lastUpdate"] = 1606932854,
-			},
-			["Default.Defias Brotherhood.Prella"] = {
-				["lastUpdate"] = 1604484041,
-			},
-			["Default.Ravencrest.Gask"] = {
-				["lastUpdate"] = 1608926383,
+			["Default.Ravencrest.Dal"] = {
+				["lastUpdate"] = 1620563639,
 			},
 			["Default.Defias Brotherhood.Osa"] = {
 				["lastUpdate"] = 1604666204,
 			},
-			["Default.Kazzak.Cazh"] = {
-				["lastUpdate"] = 1603344920,
-				["CRITTER"] = {
-					294206, -- [1]
-				},
+			["Default.Kazzak.Ored"] = {
+				["lastUpdate"] = 1620371243,
 			},
 			["Default.Ravencrest.Gladwin"] = {
-				["lastUpdate"] = 1604951195,
+				["lastUpdate"] = 1620469771,
 				["CRITTER"] = {
 					315302, -- [1]
 					301051, -- [2]
@@ -340,12 +352,8 @@ DataStore_PetsDB = {
 					195370, -- [5]
 				},
 			},
-			["Default.Defias Brotherhood.Kêl"] = {
-				["lastUpdate"] = 1603344863,
-				["CRITTER"] = {
-					155838, -- [1]
-					16450, -- [2]
-				},
+			["Default.Ravencrest.Vite"] = {
+				["lastUpdate"] = 1603345431,
 			},
 		},
 		["Reference"] = {
@@ -388,62 +396,62 @@ DataStore_PetsDB = {
 				[131650] = 66984,
 				[193388] = 97207,
 				[15999] = 10259,
-				[84752] = 45340,
+				[318876] = 163897,
 				[301037] = 154839,
 				[181086] = 91226,
-				[4055] = 2671,
+				[339677] = 173534,
 				[89039] = 47944,
-				[221907] = 111423,
-				[62508] = 33194,
-				[27570] = 16085,
+				[55068] = 29726,
 				[334789] = 171565,
-				[177224] = 143810,
-				[10717] = 7567,
+				[27570] = 16085,
+				[62508] = 33194,
+				[10674] = 7384,
+				[39181] = 22445,
 				[164212] = 81431,
 				[10679] = 7386,
 				[10680] = 7390,
 				[273195] = 139073,
 				[173547] = 86719,
-				[69452] = 36871,
+				[273839] = 139252,
 				[10684] = 7389,
 				[10685] = 7394,
 				[65046] = 34278,
-				[254295] = 128157,
+				[42609] = 23909,
 				[10688] = 7395,
 				[62564] = 33227,
-				[36027] = 21055,
+				[254197] = 128119,
 				[230443] = 115918,
-				[223359] = 112144,
+				[96571] = 52226,
 				[126885] = 64899,
-				[122748] = 62829,
+				[100684] = 54128,
 				[75134] = 40295,
 				[149792] = 74405,
-				[62746] = 33239,
+				[89670] = 48242,
 				[312030] = 160196,
-				[315302] = 161964,
+				[177217] = 143814,
 				[169695] = 84915,
 				[78685] = 42183,
 				[16450] = 10598,
 				[10703] = 7550,
 				[10704] = 7549,
-				[177217] = 143814,
-				[89670] = 48242,
+				[315302] = 161964,
+				[62746] = 33239,
 				[301015] = 154819,
-				[100684] = 54128,
+				[122748] = 62829,
 				[315303] = 161966,
-				[96571] = 52226,
+				[223359] = 112144,
 				[10711] = 7560,
-				[254197] = 128119,
-				[42609] = 23909,
+				[36027] = 21055,
+				[254295] = 128157,
 				[10714] = 7565,
-				[273839] = 139252,
+				[69452] = 36871,
 				[10716] = 7562,
-				[39181] = 22445,
-				[10674] = 7384,
+				[10717] = 7567,
+				[177224] = 143810,
 				[12243] = 8376,
-				[55068] = 29726,
-				[339677] = 173534,
-				[318876] = 163897,
+				[221907] = 111423,
+				[4055] = 2671,
+				[84752] = 45340,
 			},
 		},
 	},

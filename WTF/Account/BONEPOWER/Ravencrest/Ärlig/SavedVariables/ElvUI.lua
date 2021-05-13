@@ -2,1215 +2,27 @@
 ElvCharacterDB = {
 	["ChatEditHistory"] = {
 		"/tar är", -- [1]
-		"/1 Where?", -- [2]
-		"/1 Crazed trogg", -- [3]
-		"/cw Discõ-Ravencrest haven't played in a while", -- [4]
-		"/cw Notdespo-Ravencrest wa", -- [5]
-		"/s  wanna try and kill the rare?", -- [6]
-		"/1 seaspit po", -- [7]
+		"/ec", -- [2]
+		"/1 2 hordes at scrap king", -- [3]
+		"/leave", -- [4]
+		"/s  wanna try and kill the rare?", -- [5]
+		"/cw Notdespo-Ravencrest wa", -- [6]
+		"/Ec", -- [7]
 		"/1 needs green", -- [8]
-		"/1 Rare at akhen fields, anyone wanna group up and kill it?", -- [9]
-		"/Ec", -- [10]
-		"/Wa", -- [11]
-		"/1 2 hordes at scrap king", -- [12]
-		"/leave", -- [13]
+		"/Wa", -- [9]
+		"/1 nvm", -- [10]
+		"/1 Rare at akhen fields, anyone wanna group up and kill it?", -- [11]
+		"/1 Crazed trogg", -- [12]
+		"/1 80,20", -- [13]
 		"/wa", -- [14]
 		"/reload", -- [15]
-		"/1 nvm", -- [16]
-		"/ec", -- [17]
+		"/1 seaspit po", -- [16]
+		"/1 Where?", -- [17]
 		"/cw Discõ-Ravencrest thanks  for the help and sorry about drums", -- [18]
-		"/1 80,20", -- [19]
+		"/cw Discõ-Ravencrest haven't played in a while", -- [19]
 		"/s help? :)", -- [20]
 	},
 	["ChatHistoryLog"] = {
-		{
-			"wts|cffa335ee|Hitem:175008::::::::120:577::6:7:4824:6578:6579:6551:6515:1517:4786:::|h[Lurking Schemer's Band]|h|r", -- [1]
-			"Asli-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Asli-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			86, -- [11]
-			"Player-1329-06B088B0", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa22fc8Asli|r",
-			[51] = 1587498162,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [1]
-		{
-			"<Twilight Community> HUGE SALE NOW ON! +10 108k +11 126k +12 144k +13 162k +14 189k +15 260k Free armor stack on +10 to +15 keys. All loot is yours.  All keys guaranteed in time/w for more info", -- [1]
-			"Needlefire-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Needlefire-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			87, -- [11]
-			"Player-1329-07019714", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Needlefire|r",
-			[51] = 1587498170,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [2]
-		{
-			"WTS TMOG |cff0070dd|Hitem:7961::::::::120:269:::1:3524:::|h[Phantom Blade]|h|r 15K |cff0070dd|Hitem:12777::::::::120:269::::::|h[Blazing Rapier]|h|r 5K", -- [1]
-			"Aproxer-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Aproxer-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			89, -- [11]
-			"Player-1329-06EC731C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe95Aproxer|r",
-			[51] = 1587498175,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [3]
-		{
-			"<NBC> WeekEnd Sale M+10=100k -M+15=250k intime (Armor Stack FREE For All Key's) also Ny'alotha Raid Hc &mythic-Mecha Hm-Jaina Mount-Fh lvleling-Horrific Visions with full Mask-Island And Pvp- Mythic Ny'alotha 12/12  /W for more info!", -- [1]
-			"Soilworkk-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Soilworkk-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			90, -- [11]
-			"Player-1329-0692732E", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffef367Soilworkk|r",
-			[51] = 1587498179,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [4]
-		{
-			"<Krakenboost> WTS < Carapace - 100k >, < N'zoth the Corruptor - 180k >, < Cara + N'zoth - 230k > Heroic kills. Having Runs every 30 minutes. Accepting payment on all realms. Get your 470+ BiS Gear, Curve and Mount tonight. /w ", -- [1]
-			"Ziratsu-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Ziratsu-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			91, -- [11]
-			"Player-1329-07011912", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffefefeZiratsu|r",
-			[51] = 1587498179,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [5]
-		{
-			"3K+ IO TEAM SELLING CHEAPEST +15! GET YOUR WEEKLY 475 NOW", -- [1]
-			"Snoopsmvp-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Snoopsmvp-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			92, -- [11]
-			"Player-1329-06ABEBA8", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffef367Snoopsmvp|r",
-			[51] = 1587498180,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [6]
-		{
-			"Boost Community|| M+Key(10-21) TIME+Share Loot.Buy 6x Key for 20% OFF.|cff66bbff|Hjournal:0:1180:16|h[Ny'alotha, the Waking City]|h|r12/12 Mythic+HC Loot Share+Trader.JaiNa MounT.VISION.Gold Everywhere", -- [1]
-			"Tiktakxd-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Tiktakxd-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			94, -- [11]
-			"Player-1329-0701D91C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe95Tiktakxd|r",
-			[51] = 1587498180,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [7]
-		{
-			"<<NBC>> (Special Offer) M+10=100k , M+15=250k intime (Armor Stack and Specifc key availible).Ny'alotha Hc Raid Full Clear=400k Personal trader available -Mecha Hm + Mount - FH leveling (Only Gold) Wis Me For Info!!", -- [1]
-			"Hollyhana-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Hollyhana-Ravencrest", -- [5]
-			"AFK", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			95, -- [11]
-			"Player-1329-066F55DE", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Hollyhana|r",
-			[51] = 1587498182,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [8]
-		{
-			"< Pro Boosting Community > Deals < +10 for 110k > & < +11 for 130k > & < +12 for 150k > & < +14 for 200k > & < +15 for 265k > FREE ARMOR STACK if you buy 2 or more keys // < NYC HC from 400k only > and Mythic available < and a lot more >  /w for info..", -- [1]
-			"Choppoo-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Choppoo-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			96, -- [11]
-			"Player-1329-06FA477F", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Choppoo|r",
-			[51] = 1587498182,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [9]
-		{
-			"WTS Mythic +15 - on sale for reset tomorrow! Can do lower keys as well! Get boosted by a skilled guild group. Trading ALL loot to you. /w for info", -- [1]
-			"Vanexia-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Vanexia-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			100, -- [11]
-			"Player-1329-06A726E5", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffef367Vanexia|r",
-			[51] = 1587498189,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [10]
-		{
-			"Gallywix WTS M+Key(10-21) FREE Armor,Share Loot.|cff66bbff|Hjournal:0:1180:15|h[Ny'alotha, the Waking City]|h|r12/12 HC+Mythic Share Loot >>N'zoth+Carapace<< JaiNa Mount.VISION.Gold Any Server", -- [1]
-			"Waddefak-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Waddefak-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			102, -- [11]
-			"Player-1329-06BCDFB5", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffef367Waddefak|r",
-			[51] = 1587498197,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [11]
-		{
-			"<NBC> M+ Boost/M+15=250k intime /M+10=100k /M+14=180K /M+||6-19|| Free share Loot And free Stack Armor/buy 5 run Get Discount /|cff66bbff|Hjournal:0:1180:16|h[Ny'alotha, the Waking City]|h|r Full Run = 400k /Gold Only/W For Info", -- [1]
-			"Novaboosteer-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Novaboosteer-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			103, -- [11]
-			"Player-1329-06F1D5A2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec5e9Novaboosteer|r",
-			[51] = 1587498199,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [12]
-		{
-			"(NOVA Community) Sellin |cff66bbff|Hjournal:0:1180:15|h[Ny'alotha, the Waking City]|h|r   HC  12/12 FULL Clear Tonight at  22:00 Server Time(start in 10 min one spot left  ) (special discount just for 400 k !!!!)   /w me for more info!!!!!!", -- [1]
-			"Nightros-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Nightros-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			104, -- [11]
-			"Player-1329-06FA9514", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec5e9Nightros|r",
-			[51] = 1587498200,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [13]
-		{
-			"The Gallywix Community WTS Tuesday Deal in Gallywix Key +15(275k WITH FULL ARMOR STACK)|cff66bbff|Hjournal:0:1180:16|h[Ny'alotha, the Waking City]|h|rHeroic Every Day Specific Bosses Avaliable (Carapace + N'Zoth 250k) Key (10-21)  (Vision WITH 5 mask)", -- [1]
-			"Ucantseemee-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Ucantseemee-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			105, -- [11]
-			"Player-1329-068C3F4F", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffef367Ucantseemee|r",
-			[51] = 1587498209,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [14]
-		{
-			"[WТS] WTS Mythic+ runs Tonight! +10/+11/+12/+13/+14/+15 key CARRY. You will get ilvl 430-475+ Gear, RIO score & Essences. Fast Mechagon Mount runs. We have over 8349 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
-			"Onesojeki-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Onesojeki-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			106, -- [11]
-			"Player-1329-0702418B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cOnesojeki|r",
-			[51] = 1587498211,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [15]
-		{
-			"WTS boost <Carapace of Nzoth> and <Nzoth The Corruptor> heroic. Every 30 min! GOLD ONLY! Get mount, curve and chance on 470 loot. Fast, smooth and cherry!Also Boosting 10-17 Keystone intime Share Loot Armor Stack", -- [1]
-			"Mamaliano-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Mamaliano-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			108, -- [11]
-			"Player-1329-06B2AAB5", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Mamaliano|r",
-			[51] = 1587498213,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [16]
-		{
-			"<BKC> Community  Selling  M6-M18 -Nyolotha Hc FULL run and Nzoth only ! 475 GP all loots tradeable- armor stack - u can AFK - accepting GOLD only and in any realm and faction - fair price /w for more info lvlup boost 110-120 fast and smooth", -- [1]
-			"Eternaall-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Eternaall-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			111, -- [11]
-			"Player-1329-06EB22E5", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Eternaall|r",
-			[51] = 1587498217,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [17]
-		{
-			"WTS |cffa335ee|Hitem:44168::::::::110:104::::::|h[Reins of the Time-Lost Proto-Drake]|h|r selling rare, more info /w me", -- [1]
-			"Izubr-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Izubr-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			119, -- [11]
-			"Player-1329-06956938", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Izubr|r",
-			[51] = 1587498237,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [18]
-		{
-			"TUESDAY SALE IS ON, M+ , +10/100k,+12 140k,+15 250k+ FREE ARMOR STACK.Horific visions full clear 90k ONLY, freehold lvl boost 8k per lvl ...", -- [1]
-			"Gostorva-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Gostorva-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			120, -- [11]
-			"Player-1329-07025CA0", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffef367Gostorva|r",
-			[51] = 1587498240,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [19]
-		{
-			"< Pro Boosting Community > Deals < +10 for 110k > & < +11 for 130k > & < +12 for 150k > & < +14 for 200k > & < +15 for 265k > FREE ARMOR STACK if you buy 2 or more keys // < NYC HC from 400k only > and Mythic available < and a lot more >  /w for info..", -- [1]
-			"Choppoo-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Choppoo-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			121, -- [11]
-			"Player-1329-06FA477F", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Choppoo|r",
-			[51] = 1587498242,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [20]
-		{
-			"wts|cffa335ee|Hitem:175008::::::::120:577::6:7:4824:6578:6579:6551:6515:1517:4786:::|h[Lurking Schemer's Band]|h|rgood price", -- [1]
-			"Asli-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Asli-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			123, -- [11]
-			"Player-1329-06B088B0", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa22fc8Asli|r",
-			[51] = 1587498254,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [21]
-		{
-			"<Twilight Community> HUGE SALE NOW ON! +10 108k +11 126k +12 144k +13 162k +14 189k +15 260k Free armor stack on +10 to +15 keys. All loot is yours.  All keys guaranteed in time/w for more info", -- [1]
-			"Needlefire-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Needlefire-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			124, -- [11]
-			"Player-1329-07019714", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Needlefire|r",
-			[51] = 1587498257,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [22]
-		{
-			"GALLYWIX MYTHIC NYA |cffffff00|Hachievement:14069:Player-1305-0974B3BF:1:2:12:20:4294967295:4294967295:4294967295:4294967295|h[Cutting Edge: N'Zoth the Corruptor]|h|r + MOUNT || DONE BY TOP 10 WORLD GUILDS! /W ME FOR ANY INFO OR QUESTIONS", -- [1]
-			"Sinisroh-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Sinisroh-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			127, -- [11]
-			"Player-1329-06F03DDF", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Sinisroh|r",
-			[51] = 1587498263,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [23]
-		{
-			"<Claw Boosts> are selling CHEAP & DISCOUNTED Timed 5-15 M+ KEYS +15 Full Stack  230K+! Full Traded Loot + 475 WEEKLY CHEST + 110-120 Freehold boosts. Whisper for more info!", -- [1]
-			"Zacharyx-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Zacharyx-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			128, -- [11]
-			"Player-1329-06DF2126", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Zacharyx|r",
-			[51] = 1587498268,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [24]
-		{
-			"<Krakenboost> WTS < Carapace - 100k >, < N'zoth the Corruptor - 180k >, < Cara + N'zoth - 230k > Heroic kills. Having Runs every 30 minutes. Accepting payment on all realms. Get your 470+ BiS Gear, Curve and Mount tonight. /w ", -- [1]
-			"Ziratsu-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Ziratsu-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			129, -- [11]
-			"Player-1329-07011912", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffefefeZiratsu|r",
-			[51] = 1587498269,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [25]
-		{
-			"Boost Community|| M+Key(10-21) TIME+Share Loot.Buy 6x Key for 20% OFF.|cff66bbff|Hjournal:0:1180:16|h[Ny'alotha, the Waking City]|h|r12/12 Mythic+HC Loot Share+Trader.JaiNa MounT.VISION.Gold Everywhere", -- [1]
-			"Tiktakxd-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Tiktakxd-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			130, -- [11]
-			"Player-1329-0701D91C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe95Tiktakxd|r",
-			[51] = 1587498270,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [26]
-		{
-			"WTS |cffa335ee|Hitem:175006::::::::120:250::6:8:4824:6578:6579:6472:6462:6513:1517:4786:::|h[Gauntlets of Nightmare Manifest]|h|r", -- [1]
-			"Jaradhiggins-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Jaradhiggins-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			132, -- [11]
-			"Player-1329-06DFEE31", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Jaradhiggins|r",
-			[51] = 1587498271,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [27]
-		{
-			"<NBC> WeekEnd Sale M+10=100k -M+15=250k intime (Armor Stack FREE For All Key's) also Ny'alotha Raid Hc &mythic-Mecha Hm-Jaina Mount-Fh lvleling-Horrific Visions with full Mask-Island And Pvp- Mythic Ny'alotha 12/12  /W for more info!", -- [1]
-			"Soilworkk-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Soilworkk-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			134, -- [11]
-			"Player-1329-0692732E", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffef367Soilworkk|r",
-			[51] = 1587498274,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [28]
-		{
-			"<Corvus Crista> is a tightknit group of people looking for casual raiders, socials and key pushers to join their ranks. We are currently looking to raid heroic for our raid team, were looking for rangeddps, and a healer. /w me for a little chat!", -- [1]
-			"Tweleiny-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Tweleiny-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			135, -- [11]
-			"Player-1329-06E34BCC", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff8686ecTweleiny|r",
-			[51] = 1587498278,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [29]
-		{
-			"WTS |cffa335ee|Hitem:175004::::::::120:250::3:7:4822:6578:6579:6558:6515:1487:4786:::|h[Legwraps of Horrifying Figments]|h|r |cffa335ee|Hitem:175006::::::::120:250::6:8:4824:6578:6579:6472:6462:6513:1517:4786:::|h[Gauntlets of Nightmare Manifest]|h|r ", -- [1]
-			"Jaradhiggins-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Jaradhiggins-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			136, -- [11]
-			"Player-1329-06DFEE31", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Jaradhiggins|r",
-			[51] = 1587498278,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [30]
-		{
-			"<<NBC>> (Special Offer) M+10=100k , M+15=250k intime (Armor Stack and Specifc key availible).Ny'alotha Hc Raid Full Clear=400k Personal trader available -Mecha Hm + Mount - FH leveling (Only Gold) Wis Me For Info!!", -- [1]
-			"Hollyhana-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Hollyhana-Ravencrest", -- [5]
-			"AFK", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			137, -- [11]
-			"Player-1329-066F55DE", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Hollyhana|r",
-			[51] = 1587498281,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [31]
-		{
-			"WTS  Horrific visions 4mask run, cheapest price ever, going whenever you're rdy pm for info!", -- [1]
-			"Deathmoves-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Deathmoves-Ravencrest", -- [5]
-			"DND", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			138, -- [11]
-			"Player-1329-06FD1A94", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Deathmoves|r",
-			[51] = 1587498282,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [32]
-		{
-			"Selling Horrific Vision cloak 1-5Masks_Island Cap(Pvp)/Carapace+Nozth / Full Run HC12/12 Mythic Keystone (10-20)InTime-Share loot-Armor Stack Accept gold all realm (horde And ally) /w more info ", -- [1]
-			"Sacege-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Sacege-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			141, -- [11]
-			"Player-1329-06BD6A02", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Sacege|r",
-			[51] = 1587498292,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [33]
-		{
-			"Gallywix WTS M+Key(10-21) FREE Armor,Share Loot.|cff66bbff|Hjournal:0:1180:15|h[Ny'alotha, the Waking City]|h|r12/12 HC+Mythic Share Loot >>N'zoth+Carapace<< JaiNa Mount.VISION.Gold Any Server", -- [1]
-			"Waddefak-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Waddefak-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			142, -- [11]
-			"Player-1329-06BCDFB5", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffef367Waddefak|r",
-			[51] = 1587498295,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [34]
-		{
-			"< Pro Boosting Community > Deals < +10 for 110k > & < +11 for 130k > & < +12 for 150k > & < +14 for 200k > & < +15 for 265k > FREE ARMOR STACK if you buy 2 or more keys // < NYC HC from 400k only > and Mythic available < and a lot more >  /w for info..", -- [1]
-			"Choppoo-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Choppoo-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			143, -- [11]
-			"Player-1329-06FA477F", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Choppoo|r",
-			[51] = 1587498302,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [35]
-		{
-			"WTS  Horrific visions 4mask run, cheapest price ever, going whenever you're rdy, pm for info :)", -- [1]
-			"Deathmoves-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Deathmoves-Ravencrest", -- [5]
-			"DND", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			144, -- [11]
-			"Player-1329-06FD1A94", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Deathmoves|r",
-			[51] = 1587498305,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [36]
-		{
-			"selling horrific vision with 1-5 mask/island cap(pvp)/|cff66bbff|Hjournal:1:2366:15|h[Carapace of N'Zoth]|h|r+|cff66bbff|Hjournal:1:2375:15|h[N'Zoth the Corruptor]|h|rfull run HC 12/12 mythic keystone(10-21)in time-share loot/accept gold all realm", -- [1]
-			"Fbiman-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Fbiman-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			145, -- [11]
-			"Player-1329-06DE9535", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cFbiman|r",
-			[51] = 1587498313,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [37]
-		{
-			"WTS |cff66bbff|Hjournal:0:1001:23|h[Freehold]|h|r110-120 LvL 8k (with looms) 10k (without) per LVL/Whisper me going Now", -- [1]
-			"Fbiman-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Fbiman-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			147, -- [11]
-			"Player-1329-06DE9535", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cFbiman|r",
-			[51] = 1587498314,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [38]
-		{
-			"<Krakenboost> WTS < Carapace - 100k >, < N'zoth the Corruptor - 180k >, < Cara + N'zoth - 230k > Heroic kills. Having Runs every 30 minutes. Accepting payment on all realms. Get your 470+ BiS Gear, Curve and Mount tonight. /w ", -- [1]
-			"Ziratsu-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Ziratsu-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			148, -- [11]
-			"Player-1329-07011912", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffefefeZiratsu|r",
-			[51] = 1587498314,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [39]
-		{
-			"Need 5mill gold donation for buying the mount", -- [1]
-			"Baymax-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Baymax-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			150, -- [11]
-			"Player-1329-040CD761", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffefefeBaymax|r",
-			[51] = 1587498319,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [40]
-		{
-			"wtb cheap 5 maks", -- [1]
-			"Shakichi-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Shakichi-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			151, -- [11]
-			"Player-1329-06F6DBF8", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffefefeShakichi|r",
-			[51] = 1587498319,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [41]
-		{
-			"<Mortal> Is a guild consisting of experienced and exceptional players, now recruiting additional players to bolster our ranks. Activities range from pushing Mythic+, to HC/Mythic raiding. Raiding days will be thurs/sun/mon 8-11 servertime. PM for info", -- [1]
-			"Eyelid-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Eyelid-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			154, -- [11]
-			"Player-1329-06FF625F", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec5e9Eyelid|r",
-			[51] = 1587498326,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [42]
-		{
-			"[WТS] Horrific Visions Challenge Boost, Legendary cloak upgrade, Essences, Allied races, Reputations, Glories, Mounts & other 8.3 BOOSTS! We have over 8349 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
-			"Onesojeki-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Onesojeki-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			156, -- [11]
-			"Player-1329-0702418B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cOnesojeki|r",
-			[51] = 1587498328,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [43]
-		{
-			"WTS |cffa335ee|Hkeystone:158923:244:17:10:7:2:120|h[Keystone: Atal'Dazar (17)]|h|r|cffa335ee|Hkeystone:158923:246:16:10:7:2:120|h[Keystone: Tol Dagor (16)]|h|r for weekly! /w me for details!", -- [1]
-			"Hugebank-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Hugebank-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			157, -- [11]
-			"Player-1329-06E08058", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff00fe95Hugebank|r",
-			[51] = 1587498329,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [44]
-		{
-			"wtb cheap 5 mask", -- [1]
-			"Shakichi-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Shakichi-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			160, -- [11]
-			"Player-1329-06F6DBF8", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffefefeShakichi|r",
-			[51] = 1587498342,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [45]
-		{
-			"WTS boost <Carapace of Nzoth> and <Nzoth The Corruptor> heroic. Every 30 min! GOLD ONLY! Get mount, curve and chance on 470 loot. Fast, smooth and cherry!Also Boosting 10-17 Keystone intime Share Loot Armor Stack", -- [1]
-			"Mamaliano-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Mamaliano-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			161, -- [11]
-			"Player-1329-06B2AAB5", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Mamaliano|r",
-			[51] = 1587498343,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [46]
-		{
-			"<Covid> is a freshly formed guild created by a group of returning plaayers. We are looking for memberss to fill our ranks and jump straight into pushing raids/keys. Message me for more info!", -- [1]
-			"Legu-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Legu-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			162, -- [11]
-			"Player-1329-04174D3B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Legu|r",
-			[51] = 1587498348,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [47]
-		{
-			"(NOVA Community) Sellin |cff66bbff|Hjournal:0:1180:15|h[Ny'alotha, the Waking City]|h|r   HC  12/12 FULL Clear Tonight at  22:00 Server Time(start in 10 min one spot left  ) (special discount just for 400 k !!!!)   /w me for more info!!!!!!", -- [1]
-			"Nightros-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Nightros-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			163, -- [11]
-			"Player-1329-06FA9514", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff3ec5e9Nightros|r",
-			[51] = 1587498349,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [48]
-		{
-			"WTS |cffa335ee|Hitem:175006::::::::120:250::6:8:4824:6578:6579:6472:6462:6513:1517:4786:::|h[Gauntlets of Nightmare Manifest]|h|r |cffa335ee|Hitem:175007::::::::120:250::5:8:4823:43:6578:6579:6566:6515:1502:4786:::|h[Footpads of Terrible Delusions]|h|r ", -- [1]
-			"Jaradhiggins-Ravencrest", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Jaradhiggins-Ravencrest", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			165, -- [11]
-			"Player-1329-06DFEE31", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Jaradhiggins|r",
-			[51] = 1587498351,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [49]
-		{
-			"MAGAN KIL GOLAR MAKA KAGG URUK ", -- [1]
-			"Serfantis-Kazzak", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Serfantis-Kazzak", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			24, -- [11]
-			"Player-1305-09217FD9", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc31d39Serfantis-Kazzak|r",
-			[51] = 1587531834,
-			[50] = "CHAT_MSG_YELL",
-		}, -- [50]
-		{
-			"bl ", -- [1]
-			"Discõ-Ravencrest", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Discõ-Ravencrest", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			28, -- [11]
-			"Player-1329-055994E8", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffefefeDiscõ|r",
-			[51] = 1587531932,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [51]
-		{
-			"omg ", -- [1]
-			"Discõ-Ravencrest", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Discõ-Ravencrest", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			29, -- [11]
-			"Player-1329-055994E8", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffefefeDiscõ|r",
-			[51] = 1587531933,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [52]
-		{
-			"use bl ", -- [1]
-			"Discõ-Ravencrest", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Discõ-Ravencrest", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			30, -- [11]
-			"Player-1329-055994E8", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffefefeDiscõ|r",
-			[51] = 1587531940,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [53]
-		{
-			"mlage", -- [1]
-			"Discõ-Ravencrest", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Discõ-Ravencrest", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			31, -- [11]
-			"Player-1329-055994E8", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffefefeDiscõ|r",
-			[51] = 1587531940,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [54]
 		{
 			"DRUMS ", -- [1]
 			"Discõ-Ravencrest", -- [2]
@@ -1232,7 +44,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeDiscõ|r",
 			[51] = 1587531954,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [55]
+		}, -- [1]
 		{
 			"PLZ ", -- [1]
 			"Discõ-Ravencrest", -- [2]
@@ -1254,7 +66,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeDiscõ|r",
 			[51] = 1587531955,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [56]
+		}, -- [2]
 		{
 			"OMG ", -- [1]
 			"Discõ-Ravencrest", -- [2]
@@ -1276,7 +88,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeDiscõ|r",
 			[51] = 1587531956,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [57]
+		}, -- [3]
 		{
 			"thanks  for the help and sorry about drums", -- [1]
 			"Discõ-Ravencrest", -- [2]
@@ -1298,7 +110,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeDiscõ|r",
 			[51] = 1587532005,
 			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [58]
+		}, -- [4]
 		{
 			"haven't played in a while", -- [1]
 			"Discõ-Ravencrest", -- [2]
@@ -1320,7 +132,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeDiscõ|r",
 			[51] = 1587532011,
 			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [59]
+		}, -- [5]
 		{
 			"np", -- [1]
 			"Discõ-Ravencrest", -- [2]
@@ -1342,7 +154,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeDiscõ|r",
 			[51] = 1587532014,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [60]
+		}, -- [6]
 		{
 			"What Does the Fox Say?!", -- [1]
 			"Djclawsy-Outland", -- [2]
@@ -1364,7 +176,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Djclawsy-Outland|r",
 			[51] = 1587532065,
 			[50] = "CHAT_MSG_YELL",
-		}, -- [61]
+		}, -- [7]
 		{
 			"MAGAN KIL GOLAR MAKA KAGG URUK ", -- [1]
 			"Serfantis-Kazzak", -- [2]
@@ -1386,7 +198,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Serfantis-Kazzak|r",
 			[51] = 1587532141,
 			[50] = "CHAT_MSG_YELL",
-		}, -- [62]
+		}, -- [8]
 		{
 			"15+ weekly 120k goin right now", -- [1]
 			"Azerwolf-Ravencrest", -- [2]
@@ -1408,7 +220,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Azerwolf|r",
 			[51] = 1587534036,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [63]
+		}, -- [9]
 		{
 			"Gallywix Community WTS  |cff66bbff|Hjournal:0:1180:16|h[Ny'alotha, the Waking City]|h|r 12/12 HC Full Run Loot Shared!  ||Also N'ZOTH+Carapace HC 230k||   ||M+ Key 10-22 In Time, Free Armor Stack||      PVP Arenas,    Visions,     Jaina Mount.       ", -- [1]
 			"Nterri-Ravencrest", -- [2]
@@ -1430,7 +242,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cNterri|r",
 			[51] = 1587534072,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [64]
+		}, -- [10]
 		{
 			"[WТS] WTS Mythic+ runs Tonight! +10/+11/+12/+13/+14/+15 key CARRY. You will get ilvl 430-475+ Gear, RIO score & Essences. Fast Mechagon Mount runs. We have over 8349 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
 			"Onesojeki-Ravencrest", -- [2]
@@ -1452,7 +264,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cOnesojeki|r",
 			[51] = 1587534080,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [65]
+		}, -- [11]
 		{
 			"<PRO Boost> WTS  +10 120k  / +11 140k / +12 160k / +14 180k  / +15 for 250k + Free amour stack  / 17-21 keys by TOP M+ players / Heroic NYALOTHA + VIPS + MYTHIC RAID  / JAINA MOUNT  / All for gold only / whisper me for more info!!", -- [1]
 			"Jamesrogue-Ravencrest", -- [2]
@@ -1474,7 +286,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Jamesrogue|r",
 			[51] = 1587534111,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [66]
+		}, -- [12]
 		{
 			"[WТS] Horrific Visions Challenge Boost, Legendary cloak upgrade, Essences, Allied races, Reputations, Glories, Mounts & other 8.3 BOOSTS! We have over 8349 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
 			"Onesojeki-Ravencrest", -- [2]
@@ -1496,7 +308,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cOnesojeki|r",
 			[51] = 1587534214,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [67]
+		}, -- [13]
 		{
 			"Gallywix Community WTS  |cff66bbff|Hjournal:0:1180:16|h[Ny'alotha, the Waking City]|h|r 12/12 HC Full Run Loot Shared!  ||Also N'ZOTH+Carapace HC 230k||   ||M+ Key 10-22 In Time, Free Armor Stack||      PVP Arenas,    Visions,     Jaina Mount.       ", -- [1]
 			"Nterri-Ravencrest", -- [2]
@@ -1518,7 +330,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cNterri|r",
 			[51] = 1587534214,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [68]
+		}, -- [14]
 		{
 			"wts 15+ 110k ", -- [1]
 			"Azerwolf-Ravencrest", -- [2]
@@ -1540,7 +352,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Azerwolf|r",
 			[51] = 1587534222,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [69]
+		}, -- [15]
 		{
 			"<PRO Boost> WTS  +10 120k  / +11 140k / +12 160k / +14 180k  / +15 for 250k + Free amour stack  / 17-21 keys by TOP M+ players / Heroic NYALOTHA + VIPS + MYTHIC RAID  / JAINA MOUNT  / All for gold only / whisper me for more info!!", -- [1]
 			"Jamesrogue-Ravencrest", -- [2]
@@ -1562,7 +374,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Jamesrogue|r",
 			[51] = 1587534235,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [70]
+		}, -- [16]
 		{
 			"<Covid> is a freshly formed guild created by a group of returning plaayers. We are looking for memberss to fill our ranks and jump straight into pushing raids/keys. Message me for more info!", -- [1]
 			"Legu-Ravencrest", -- [2]
@@ -1584,7 +396,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Legu|r",
 			[51] = 1587534337,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [71]
+		}, -- [17]
 		{
 			"[WТS] Nyalotha Normal & Heroic Boosts: get ilvl 445-470+ corrupted gear, NEW MOUNT, Essences & Curve Achieve. Fast runs with TOP Guilds every day. We have over 8349 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
 			"Onesojeki-Ravencrest", -- [2]
@@ -1606,7 +418,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cOnesojeki|r",
 			[51] = 1587534339,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [72]
+		}, -- [18]
 		{
 			"Yikes", -- [1]
 			"Clunj-Ravencrest", -- [2]
@@ -1628,7 +440,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcClunj|r",
 			[51] = 1587534345,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [73]
+		}, -- [19]
 		{
 			"Gallywix Community WTS  |cff66bbff|Hjournal:0:1180:16|h[Ny'alotha, the Waking City]|h|r 12/12 HC Full Run Loot Shared!  ||Also N'ZOTH+Carapace HC 230k||   ||M+ Key 10-22 In Time, Free Armor Stack||      PVP Arenas,    Visions,     Jaina Mount.       ", -- [1]
 			"Nterri-Ravencrest", -- [2]
@@ -1650,7 +462,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cNterri|r",
 			[51] = 1587534358,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [74]
+		}, -- [20]
 		{
 			"<PRO Boost> WTS  +10 120k  / +11 140k / +12 160k / +14 180k  / +15 for 250k + Free amour stack  / 17-21 keys by TOP M+ players / Heroic NYALOTHA + VIPS + MYTHIC RAID  / JAINA MOUNT  / All for gold only / whisper me for more info!!", -- [1]
 			"Jamesrogue-Ravencrest", -- [2]
@@ -1672,7 +484,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Jamesrogue|r",
 			[51] = 1587534368,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [75]
+		}, -- [21]
 		{
 			"wts |cff0070dd|Hbattlepet:1149:24:3:1348:278:278:0000000000000000:46923|h[Corefire Imp]|h|r5k", -- [1]
 			"Uhtredrag-Ravencrest", -- [2]
@@ -1694,7 +506,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Uhtredrag|r",
 			[51] = 1587534371,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [76]
+		}, -- [22]
 		{
 			"WTS TMOG |cff0070dd|Hitem:7961::::::::120:269::::::|h[Phantom Blade]|h|r 16K |cff0070dd|Hitem:12777::::::::120:269::::::|h[Blazing Rapier]|h|r 5K", -- [1]
 			"Aproxer-Ravencrest", -- [2]
@@ -1716,7 +528,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Aproxer|r",
 			[51] = 1587534421,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [77]
+		}, -- [23]
 		{
 			"Gallywix Community WTS  |cff66bbff|Hjournal:0:1180:16|h[Ny'alotha, the Waking City]|h|r 12/12 HC Full Run Loot Shared!  ||Also N'ZOTH+Carapace HC 230k||   ||M+ Key 10-22 In Time, Free Armor Stack||      PVP Arenas,    Visions,     Jaina Mount.       ", -- [1]
 			"Nterri-Ravencrest", -- [2]
@@ -1738,7 +550,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cNterri|r",
 			[51] = 1587534429,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [78]
+		}, -- [24]
 		{
 			"<PRO Boost> WTS  +10 120k  / +11 140k / +12 160k / +14 180k  / +15 for 250k + Free amour stack  / 17-21 keys by TOP M+ players / Heroic NYALOTHA + VIPS + MYTHIC RAID  / JAINA MOUNT  / All for gold only / whisper me for more info!!", -- [1]
 			"Jamesrogue-Ravencrest", -- [2]
@@ -1760,7 +572,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Jamesrogue|r",
 			[51] = 1587534443,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [79]
+		}, -- [25]
 		{
 			"wts 15+ weekly 110k right now", -- [1]
 			"Azerwolf-Ravencrest", -- [2]
@@ -1782,7 +594,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Azerwolf|r",
 			[51] = 1587534470,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [80]
+		}, -- [26]
 		{
 			"[WТS] WTS Mythic+ runs Tonight! +10/+11/+12/+13/+14/+15 key CARRY. You will get ilvl 430-475+ Gear, RIO score & Essences. Fast Mechagon Mount runs. We have over 8349 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
 			"Onesojeki-Ravencrest", -- [2]
@@ -1804,7 +616,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cOnesojeki|r",
 			[51] = 1587534485,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [81]
+		}, -- [27]
 		{
 			"<NBC> Special Offer [+15=250k], ArmorStack FREE.  get 475 item tommarow from the chest. [+14=180k]   [+13=160]  [+12=140k]  [+11=120k]  [+10=100k]. Whisper me for more info!", -- [1]
 			"Novarun-Ravencrest", -- [2]
@@ -1826,7 +638,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Novarun|r",
 			[51] = 1587534490,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [82]
+		}, -- [28]
 		{
 			"Gallywix Community WTS  |cff66bbff|Hjournal:0:1180:16|h[Ny'alotha, the Waking City]|h|r 12/12 HC Full Run Loot Shared!  ||Also N'ZOTH+Carapace HC 230k||   ||M+ Key 10-22 In Time, Free Armor Stack||      PVP Arenas,    Visions,     Jaina Mount.       ", -- [1]
 			"Nterri-Ravencrest", -- [2]
@@ -1848,7 +660,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cNterri|r",
 			[51] = 1587534500,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [83]
+		}, -- [29]
 		{
 			"<PRO Boost> WTS  +10 120k  / +11 140k / +12 160k / +14 180k  / +15 for 250k + Free amour stack  / 17-21 keys by TOP M+ players / Heroic NYALOTHA + VIPS + MYTHIC RAID  / JAINA MOUNT  / All for gold only / whisper me for more info!!", -- [1]
 			"Jamesrogue-Ravencrest", -- [2]
@@ -1870,7 +682,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Jamesrogue|r",
 			[51] = 1587534584,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [84]
+		}, -- [30]
 		{
 			"[WТS] Horrific Visions Challenge Boost, Legendary cloak upgrade, Essences, Allied races, Reputations, Glories, Mounts & other 8.3 BOOSTS! We have over 8349 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
 			"Onesojeki-Ravencrest", -- [2]
@@ -1892,7 +704,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cOnesojeki|r",
 			[51] = 1587534595,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [85]
+		}, -- [31]
 		{
 			"Gallywix Community WTS  |cff66bbff|Hjournal:0:1180:16|h[Ny'alotha, the Waking City]|h|r 12/12 HC Full Run Loot Shared!  ||Also N'ZOTH+Carapace HC 230k||   ||M+ Key 10-22 In Time, Free Armor Stack||      PVP Arenas,    Visions,     Jaina Mount.       ", -- [1]
 			"Nterri-Ravencrest", -- [2]
@@ -1914,7 +726,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cNterri|r",
 			[51] = 1587534856,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [86]
+		}, -- [32]
 		{
 			"<PRO Boost> WTS  +10 120k  / +11 140k / +12 160k / +14 180k  / +15 for 250k + Free amour stack  / 17-21 keys by TOP M+ players / Heroic NYALOTHA + VIPS + MYTHIC RAID  / JAINA MOUNT  / All for gold only / whisper me for more info!!", -- [1]
 			"Jamesrogue-Ravencrest", -- [2]
@@ -1936,7 +748,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Jamesrogue|r",
 			[51] = 1587534874,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [87]
+		}, -- [33]
 		{
 			"[WТS] Horrific Visions Challenge Boost, Legendary cloak upgrade, Essences, Allied races, Reputations, Glories, Mounts & other 8.3 BOOSTS! We have over 8349 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
 			"Onesojeki-Ravencrest", -- [2]
@@ -1958,7 +770,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cOnesojeki|r",
 			[51] = 1587534891,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [88]
+		}, -- [34]
 		{
 			"guys save will be reset at 8:30 ?", -- [1]
 			"Treant-Ravencrest", -- [2]
@@ -1980,7 +792,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Treant|r",
 			[51] = 1587534993,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [89]
+		}, -- [35]
 		{
 			"9", -- [1]
 			"Doktorbolt-Ravencrest", -- [2]
@@ -2002,7 +814,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecDoktorbolt|r",
 			[51] = 1587534997,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [90]
+		}, -- [36]
 		{
 			"9", -- [1]
 			"Phatpuck-Ravencrest", -- [2]
@@ -2024,7 +836,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefePhatpuck|r",
 			[51] = 1587534998,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [91]
+		}, -- [37]
 		{
 			"9:00", -- [1]
 			"Márkdawgenz-Ravencrest", -- [2]
@@ -2046,7 +858,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Márkdawgenz|r",
 			[51] = 1587534999,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [92]
+		}, -- [38]
 		{
 			"Gallywix Community WTS  |cff66bbff|Hjournal:0:1180:16|h[Ny'alotha, the Waking City]|h|r 12/12 HC Full Run Loot Shared!  ||Also N'ZOTH+Carapace HC 230k||   ||M+ Key 10-22 In Time, Free Armor Stack||      PVP Arenas,    Visions,     Jaina Mount.       ", -- [1]
 			"Nterri-Ravencrest", -- [2]
@@ -2068,7 +880,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cNterri|r",
 			[51] = 1587534999,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [93]
+		}, -- [39]
 		{
 			"1H from now ", -- [1]
 			"Bigbangwil-Ravencrest", -- [2]
@@ -2090,7 +902,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Bigbangwil|r",
 			[51] = 1587535001,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [94]
+		}, -- [40]
 		{
 			"ty", -- [1]
 			"Treant-Ravencrest", -- [2]
@@ -2112,7 +924,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Treant|r",
 			[51] = 1587535001,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [95]
+		}, -- [41]
 		{
 			"can i still go into a mythic and get my chest?", -- [1]
 			"Krammedister-Ravencrest", -- [2]
@@ -2134,7 +946,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Krammedister|r",
 			[51] = 1587535010,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [96]
+		}, -- [42]
 		{
 			"they are lying to you bro", -- [1]
 			"Shavedforher-Ravencrest", -- [2]
@@ -2156,7 +968,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Shavedforher|r",
 			[51] = 1587535012,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [97]
+		}, -- [43]
 		{
 			"join fast", -- [1]
 			"Katíe-Thunderhorn", -- [2]
@@ -2178,7 +990,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeKatíe-Thunderhorn|r",
 			[51] = 1587535016,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [98]
+		}, -- [44]
 		{
 			"|cffa335ee|Hkeystone:158923:353:3:10:0:0:0|h[Keystone: Siege of Boralus (3)]|h|r", -- [1]
 			"Katíe-Thunderhorn", -- [2]
@@ -2200,7 +1012,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeKatíe-Thunderhorn|r",
 			[51] = 1587535018,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [99]
+		}, -- [45]
 		{
 			"[WТS] Nyalotha Normal & Heroic Boosts: get ilvl 445-470+ corrupted gear, NEW MOUNT, Essences & Curve Achieve. Fast runs with TOP Guilds every day. We have over 8349 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
 			"Onesojeki-Ravencrest", -- [2]
@@ -2222,7 +1034,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cOnesojeki|r",
 			[51] = 1587535018,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [100]
+		}, -- [46]
 		{
 			"!!!", -- [1]
 			"Katíe-Thunderhorn", -- [2]
@@ -2244,7 +1056,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeKatíe-Thunderhorn|r",
 			[51] = 1587535019,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [101]
+		}, -- [47]
 		{
 			"its in 4 minutes", -- [1]
 			"Gubbenilådan-Ravencrest", -- [2]
@@ -2266,7 +1078,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcGubbenilådan|r",
 			[51] = 1587535027,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [102]
+		}, -- [48]
 		{
 			"guys if i go into a mythic now, will it still get me a chest?", -- [1]
 			"Krammedister-Ravencrest", -- [2]
@@ -2288,7 +1100,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Krammedister|r",
 			[51] = 1587535043,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [103]
+		}, -- [49]
 		{
 			"its in 1 hour and 4 minutes", -- [1]
 			"Turtlesam-Ravencrest", -- [2]
@@ -2310,7 +1122,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcTurtlesam|r",
 			[51] = 1587535055,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [104]
+		}, -- [50]
 		{
 			"It will count towards the new week", -- [1]
 			"Gubbenilådan-Ravencrest", -- [2]
@@ -2332,7 +1144,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcGubbenilådan|r",
 			[51] = 1587535055,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [105]
+		}, -- [51]
 		{
 			"if you do it in 1h you will ", -- [1]
 			"Bigbangwil-Ravencrest", -- [2]
@@ -2354,7 +1166,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Bigbangwil|r",
 			[51] = 1587535061,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [106]
+		}, -- [52]
 		{
 			"Gallywix Community WTS  |cff66bbff|Hjournal:0:1180:16|h[Ny'alotha, the Waking City]|h|r 12/12 HC Full Run Loot Shared!  ||Also N'ZOTH+Carapace HC 230k||   ||M+ Key 10-22 In Time, Free Armor Stack||      PVP Arenas,    Visions,     Jaina Mount.       ", -- [1]
 			"Nterri-Ravencrest", -- [2]
@@ -2376,7 +1188,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cNterri|r",
 			[51] = 1587535071,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [107]
+		}, -- [53]
 		{
 			"isn't it always 8? :S", -- [1]
 			"Gubbenilådan-Ravencrest", -- [2]
@@ -2398,7 +1210,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcGubbenilådan|r",
 			[51] = 1587535072,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [108]
+		}, -- [54]
 		{
 			"[WТS] WTS Mythic+ runs Tonight! +10/+11/+12/+13/+14/+15 key CARRY. You will get ilvl 430-475+ Gear, RIO score & Essences. Fast Mechagon Mount runs. We have over 8349 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
 			"Onesojeki-Ravencrest", -- [2]
@@ -2420,7 +1232,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cOnesojeki|r",
 			[51] = 1587535125,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [109]
+		}, -- [55]
 		{
 			"ima buy a boost then", -- [1]
 			"Gubbenilådan-Ravencrest", -- [2]
@@ -2442,7 +1254,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcGubbenilådan|r",
 			[51] = 1587535126,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [110]
+		}, -- [56]
 		{
 			"need me the chest", -- [1]
 			"Gubbenilådan-Ravencrest", -- [2]
@@ -2464,7 +1276,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcGubbenilådan|r",
 			[51] = 1587535129,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [111]
+		}, -- [57]
 		{
 			"Gallywix Community WTS  |cff66bbff|Hjournal:0:1180:16|h[Ny'alotha, the Waking City]|h|r 12/12 HC Full Run Loot Shared!  ||Also N'ZOTH+Carapace HC 230k||   ||M+ Key 10-22 In Time, Free Armor Stack||      PVP Arenas,    Visions,     Jaina Mount.       ", -- [1]
 			"Nterri-Ravencrest", -- [2]
@@ -2486,7 +1298,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cNterri|r",
 			[51] = 1587535142,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [112]
+		}, -- [58]
 		{
 			"[WТS] WTS Mythic+ runs Tonight! +10/+11/+12/+13/+14/+15 key CARRY. You will get ilvl 430-475+ Gear, RIO score & Essences. Fast Mechagon Mount runs. We have over 8349 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
 			"Onesojeki-Ravencrest", -- [2]
@@ -2508,7 +1320,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cOnesojeki|r",
 			[51] = 1587618018,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [113]
+		}, -- [59]
 		{
 			"<NBC> M+15=270k  M+14=200k  M+13=180k M+12=160k  M+11=140k  M+10=120k  (10-13>ArmorStack FREE), get 475 weekly item --buy two or more > get discount. Specific dungeons  available. Horrific boost Full Run=80K, only accept gold. wispher  me ...", -- [1]
 			"Novarun-Ravencrest", -- [2]
@@ -2530,7 +1342,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Novarun|r",
 			[51] = 1587618061,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [114]
+		}, -- [60]
 		{
 			"horde fgts camping boss", -- [1]
 			"Unholygrail-Sylvanas", -- [2]
@@ -2552,7 +1364,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Unholygrail-Sylvanas|r",
 			[51] = 1587621970,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [115]
+		}, -- [61]
 		{
 			"WTS M+ (6-18) + all tradeable items + armor stack avaiable/ Full HC run |cff66bbff|Hjournal:0:1180:14|h[Ny'alotha, the Waking City]|h|r + N'Zoth + Carapace + rad'den quick runs one run very 30min/ get your curve+mount+470 items now (for gold)", -- [1]
 			"Zoryal-Ravencrest", -- [2]
@@ -2574,7 +1386,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeZoryal|r",
 			[51] = 1592933416,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [116]
+		}, -- [62]
 		{
 			"Gallywix WTS |cffffff00|Hachievement:14069:Player-1329-0712EAE8:0:0:0:0:0:0:0:0|h[Cutting Edge: N'Zoth the Corruptor]|h|r 12/12 HC/MYTH @21:00 VIP Slots! |cffffff00|Hachievement:14068:Player-1329-0712EAE8:0:0:0:0:0:0:0:0|h[Ahead of the Curve: N'Zoth the Corruptor]|h|r & Carapace |cffffff00|Hachievement:14145:Player-1329-0712EAE8:0:0:0:0:0:0:0:0|h[Battle for Azeroth Keystone Master: Season Four]|h|r  M+ 10-25!   PvP 0-2400 Gladiator!   Jaina Mount!  Visions! Only gold", -- [1]
 			"Varaven-Ravencrest", -- [2]
@@ -2596,7 +1408,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecVaraven|r",
 			[51] = 1592933418,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [117]
+		}, -- [63]
 		{
 			"WTS 90K |cffa335ee|Hitem:52200::::::::120:268::11::::|h[Reins of the Crimson Deathcharger]|h|r", -- [1]
 			"Aproxer-Ravencrest", -- [2]
@@ -2618,7 +1430,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Aproxer|r",
 			[51] = 1592933418,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [118]
+		}, -- [64]
 		{
 			"Nova Community  Selling +M(10-22) IN TIME With FREE ARMORSTACK AND SHARELOOT! ||+10=85k || || +12=105k || ||+15=165k || 2x=15%Off , |cff66bbff|Hjournal:0:1180:16|h[Ny'alotha, the Waking City]|h|r Hc Share loot 250k , Jaina 500k ,Vision /w for info", -- [1]
 			"Novacravenw-Ravencrest", -- [2]
@@ -2640,7 +1452,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Novacravenw|r",
 			[51] = 1592933418,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [119]
+		}, -- [65]
 		{
 			"WTS M+10 50k  Right Now FAST AND <<< Very Cheap >>> ", -- [1]
 			"Crazymonk-Ravencrest", -- [2]
@@ -2662,7 +1474,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Crazymonk|r",
 			[51] = 1592933419,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [120]
+		}, -- [66]
 		{
 			"WTS *****Tuseday offer ****** 3x m+ 11 150k   just today", -- [1]
 			"Lifelêss-Ravencrest", -- [2]
@@ -2684,7 +1496,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Lifelêss|r",
 			[51] = 1592933421,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [121]
+		}, -- [67]
 		{
 			"<Icecrown>   HEROIC |cff66bbff|Hjournal:0:1180:16|h[Ny'alotha, the Waking City]|h|r @20.00 RT IN 30 MIN 200k! Traders available for all classes! Mythic Raid Tomorrow! <M+10 to +19!> +14=160k! +15=170k! Arena 0-2400! Legacy achieves,Rare Mounts & More!", -- [1]
 			"Clatraven-Ravencrest", -- [2]
@@ -2706,7 +1518,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Clatraven|r",
 			[51] = 1592933422,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [122]
+		}, -- [68]
 		{
 			"GALLYWIX WTS|cffffff00|Hachievement:14145:Player-1329-07127DAC:0:0:0:-1:0:0:0:0|h[Battle for Azeroth Keystone Master: Season Four]|h|r |cffffff00|Hachievement:14068:Player-1329-07127DAC:0:0:0:-1:0:0:0:0|h[Ahead of the Curve: N'Zoth the Corruptor]|h|r+Carapace/Raden|cffffff00|Hachievement:14069:Player-1329-07127DAC:0:0:0:-1:0:0:0:0|h[Cutting Edge: N'Zoth the Corruptor]|h|r12/12 HC & Mythic Raid TODAY at 1900 & 2100 M+ lvl 10-25 PVP 0-2400+GLADIATOR/Jaina/Azshara/Vision", -- [1]
 			"Galykizaa-Ravencrest", -- [2]
@@ -2728,7 +1540,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeGalykizaa|r",
 			[51] = 1592933424,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [123]
+		}, -- [69]
 		{
 			"(NBC) Offering M+ Boost 10=85k/ M+15=165k in Time/ Free armor stack for more than 1 run / 10%-15% Discount on more than 1 run / shared loot  / Jaina Mount ! / Selling NY'ALOTHA Full clear 200k share Loot  /  Curve 90k  /Mechagon HM /w for info", -- [1]
 			"Izannagia-Ravencrest", -- [2]
@@ -2750,7 +1562,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Izannagia|r",
 			[51] = 1592933426,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [124]
+		}, -- [70]
 		{
 			"anyone here", -- [1]
 			"Obeythegnome-Outland", -- [2]
@@ -2772,7 +1584,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Obeythegnome-Outland|r",
 			[51] = 1597984499,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [125]
+		}, -- [71]
 		{
 			"?", -- [1]
 			"Obeythegnome-Outland", -- [2]
@@ -2794,7 +1606,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Obeythegnome-Outland|r",
 			[51] = 1597984500,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [126]
+		}, -- [72]
 		{
 			"sup", -- [1]
 			"Menephannt-Outland", -- [2]
@@ -2816,6 +1628,578 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Menephannt-Outland|r",
 			[51] = 1597984506,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [127]
+		}, -- [73]
+		{
+			"<Its Not Rocket Surgery> 10/10 HC currently looking for a mage, havoc dh and lock to compliment our raidteam. Like to do m+ and raiding in a social atmosphere? This is the home for you! Raid days:wed/thur 8pm-22:30st. ", -- [1]
+			"Jenain-Ravencrest", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Jenain-Ravencrest", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			185, -- [11]
+			"Player-1329-09A28445", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcJenain|r",
+			[51] = 1620290188,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [74]
+		{
+			"<NOVA> WTS weeky14 only 95k - M14timed 110k - M15 ONLY 190K> - KSM 1330k- <10/10HC CN 300k> -  denathrius ONLY 50K - MYTHIC RAID - Torghast  - wating your whisp for info! <always check nova advertisers!> ONLY GOLD", -- [1]
+			"Novalady-Ravencrest", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Novalady-Ravencrest", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			187, -- [11]
+			"Player-1329-09A19FF9", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaNovalady|r",
+			[51] = 1620290207,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [75]
+		{
+			"|cff71d5ff|Hpvptal:715|h[Grounding Totem]|h|r can immune caster interupts ?", -- [1]
+			"Shamanheirlo-Ravencrest", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Shamanheirlo-Ravencrest", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			192, -- [11]
+			"Player-1329-04124DEF", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcShamanheirlo|r",
+			[51] = 1620290227,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [76]
+		{
+			"<NOVA> \"Best Offer\"|| RBG and Arena Boost!|| ||Castle Nathria Full HC only for 300K!|| ||Keystone master 1330K!||           Keys: ||M+10=79K|| ||M+11=89K|| ||M+12=99K|| ||M+13=105K|| ||M+14=110K|| ||M+15=190K|| /w for inf \"we only accept gold!\"", -- [1]
+			"Novablaze-Ravencrest", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Novablaze-Ravencrest", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			193, -- [11]
+			"Player-1329-09A5650D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff8687edNovablaze|r",
+			[51] = 1620290234,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [77]
+		{
+			"WTS |cffa335ee|Hitem:142369::::::::50:102:::::::|h[Ivory Hawkstrider]|h|r reputation,|cff71d5ff|Hspell:148428:0|h[Ashhide Mushan Beast]|h|r, |cffffff00|Hachievement:8721:Player-1329-064C915D:0:0:0:0:0:0:0:0|h[Fire-Watcher]|h|r/w me for info and prices", -- [1]
+			"Sunrazor-Ravencrest", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Sunrazor-Ravencrest", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			204, -- [11]
+			"Player-1329-064C915D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Sunrazor|r",
+			[51] = 1620290339,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [78]
+		{
+			"<NOVA> WTS weeky14 only 95k - M14timed 110k - M15 ONLY 190K> - KSM 1330k- <10/10HC CN 300k> -  denathrius ONLY 50K - MYTHIC RAID - Torghast  - wating your whisp for info! <always check nova advertisers!> ONLY GOLD", -- [1]
+			"Novalady-Ravencrest", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Novalady-Ravencrest", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			205, -- [11]
+			"Player-1329-09A19FF9", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaNovalady|r",
+			[51] = 1620290342,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [79]
+		{
+			"Resto Druid WTS arena boost for golds.  (2s) 0-1800 /w me, can boost all the class ", -- [1]
+			"Givemegg-Ravencrest", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Givemegg-Ravencrest", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			206, -- [11]
+			"Player-1329-098A91D2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Givemegg|r",
+			[51] = 1620290353,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [80]
+		{
+			"<NOVA>Ksm 1490k M10 79K M11 89k  M12 99k M13 105k  M14 110k M15 200k buying 2x runs armor stack free  Full clear HC 300k Mythic raid 7700k !!   Torghast Boost (L1-L8) PVP 0 -2400 rate  . /w info. Only Gold", -- [1]
+			"Novavento-Ravencrest", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Novavento-Ravencrest", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			207, -- [11]
+			"Player-1329-09A53A2B", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Novavento|r",
+			[51] = 1620290416,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [81]
+		{
+			"<NOVA> \"Best Offer\"|| RBG and Arena Boost!|| ||Castle Nathria Full HC only for 300K!|| ||Keystone master 1330K!||           Keys: ||M+10=79K|| ||M+11=89K|| ||M+12=99K|| ||M+13=105K|| ||M+14=110K|| ||M+15=190K|| /w for inf \"we only accept gold!\"", -- [1]
+			"Novablaze-Ravencrest", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Novablaze-Ravencrest", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			208, -- [11]
+			"Player-1329-09A5650D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff8687edNovablaze|r",
+			[51] = 1620290449,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [82]
+		{
+			"<NOVA>Ksm 1330k M10 79K M11 89k  M12 99k M13 105k  M14 110k M15 190k buying 2x runs armor stack free  Full clear HC 300k Mythic raid 7700k !!   Torghast Boost (L1-L8) PVP 0 -2400 rate  . /w info. Only Gold", -- [1]
+			"Novavento-Ravencrest", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Novavento-Ravencrest", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			209, -- [11]
+			"Player-1329-09A53A2B", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Novavento|r",
+			[51] = 1620290510,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [83]
+		{
+			"<NOVA>Selling (M0 - M20) for (gold only)[M10 - 79k] [M12 - 99k]  [m14 - 110k] [M15 200k] [Keymaster:1490k] [lvl up boosting 50-60] PvP 2v2 3v3 rateGet your weekly vault loot! All key levels available,bulk discount(5%- 15%) for muti runs,f", -- [1]
+			"Angrymaxi-Ravencrest", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Angrymaxi-Ravencrest", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			210, -- [11]
+			"Player-1329-06F6DA53", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcAngrymaxi|r",
+			[51] = 1620290525,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [84]
+		{
+			"WTS |cffa335ee|Hitem:142369::::::::50:102:::::::|h[Ivory Hawkstrider]|h|r reputation,|cff71d5ff|Hspell:148428:0|h[Ashhide Mushan Beast]|h|r, |cffffff00|Hachievement:8721:Player-1329-064C915D:0:0:0:0:0:0:0:0|h[Fire-Watcher]|h|r/w me for info and prices", -- [1]
+			"Sunrazor-Ravencrest", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Sunrazor-Ravencrest", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			212, -- [11]
+			"Player-1329-064C915D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Sunrazor|r",
+			[51] = 1620290579,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [85]
+		{
+			"WTB m+ spires or sanguine depths :D", -- [1]
+			"Satinâ-Ravencrest", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Satinâ-Ravencrest", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			214, -- [11]
+			"Player-1329-068B9323", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Satinâ|r",
+			[51] = 1620290690,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [86]
+		{
+			"|cffffd100|HclubFinder:ClubFinder-1-148-1329-52221594|h[Guild: T H E O R Y]|h|r To Megalutero Ellhniko Guild tou Ravencrest || Recruitment Panta Anoixto gia Mythic Raiders || High Prio: Mage-Warlock || Progress 8/10 Mythic ", -- [1]
+			"Bolzano-Ravencrest", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Bolzano-Ravencrest", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			215, -- [11]
+			"Player-1329-0419362B", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcBolzano|r",
+			[51] = 1620290710,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [87]
+		{
+			"WTB m+ spire or sanguine ", -- [1]
+			"Satinâ-Ravencrest", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Satinâ-Ravencrest", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			216, -- [11]
+			"Player-1329-068B9323", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Satinâ|r",
+			[51] = 1620290717,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [88]
+		{
+			"<NOVA>Ksm 1330k M10 79K M11 89k  M12 99k M13 105k  M14 110k M15 190k buying 2x runs armor stack free  Full clear HC 300k Mythic raid 7400k !!   Torghast Boost (L1-L8) PVP 0 -2400 rate  . /w info. Only Gold", -- [1]
+			"Novavento-Ravencrest", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Novavento-Ravencrest", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			217, -- [11]
+			"Player-1329-09A53A2B", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Novavento|r",
+			[51] = 1620290787,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [89]
+		{
+			"WTS |cffa335ee|Hitem:52200::::::::51:66::11::1:28:872:::|h[Reins of the Crimson Deathcharger]|h|r and |cffa335ee|Hitem:52252::::::::51:66::11::1:28:1023:::|h[Tabard of the Lightbringer]|h|r", -- [1]
+			"Rxo-Ravencrest", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Rxo-Ravencrest", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			218, -- [11]
+			"Player-1329-04193BEE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Rxo|r",
+			[51] = 1620290793,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [90]
+		{
+			"<Tea N Toots> Is  a newly formed pvp guild looking for good/skilled  players (2k+ exp!) wanting to push RBG and Arena rating. /w me for more info :) ", -- [1]
+			"Epískey-Ravencrest", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Epískey-Ravencrest", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			219, -- [11]
+			"Player-1329-09A8B5B1", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeEpískey|r",
+			[51] = 1620290832,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [91]
+		{
+			"<NOVA>Ksm 1330k M10 79K M11 89k  M12 99k M13 105k  M14 110k M15 190k buying 2x runs armor stack free  Full clear HC 300k Mythic raid 7400k !!   Torghast Boost (L1-L8) PVP 0 -2400 rate  . /w info. Only Gold", -- [1]
+			"Novavento-Ravencrest", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Novavento-Ravencrest", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			220, -- [11]
+			"Player-1329-09A53A2B", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Novavento|r",
+			[51] = 1620290994,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [92]
+		{
+			"<NOVA> WTS weeky14 only 95k - M14timed 110k - M15 ONLY 190K> - KSM 1330k- <10/10HC CN 300k> -  denathrius ONLY 50K - MYTHIC RAID - Torghast  - wating your whisp for info! <always check nova advertisers!> ONLY GOLD", -- [1]
+			"Novalady-Ravencrest", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Novalady-Ravencrest", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			221, -- [11]
+			"Player-1329-09A19FF9", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaNovalady|r",
+			[51] = 1620290998,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [93]
+		{
+			"<Nova> Selling Boost  M+10=79k / M+14=110k / M+15= 190k /Keystone Master 1.33M /2 run 5%  discount or Stack armor FREE / Selling CASTLE NATHRIA Full HC 300k and per Stack Armor 120k /Curve 50k / Raid Mythic full clear /Torghast Boost /w for info", -- [1]
+			"Exoservice-Ravencrest", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Exoservice-Ravencrest", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			222, -- [11]
+			"Player-1329-098D9B3C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaExoservice|r",
+			[51] = 1620291036,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [94]
+		{
+			"<NOVA>Ksm 1330k M10 79K M11 89k  M12 99k M13 105k  M14 110k M15 190k buying 2x runs armor stack free  Full clear HC 300k Mythic raid 7400k !!   Torghast Boost (L1-L8) PVP 0 -2400 rate  . /w info. Only Gold", -- [1]
+			"Novavento-Ravencrest", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Novavento-Ravencrest", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			248, -- [11]
+			"Player-1329-09A53A2B", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Novavento|r",
+			[51] = 1620291285,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [95]
+		{
+			"<Revoked> Er en dansk orienteret raiding guild. Vi er 2/10M - 10/10HC. Vi raider Mandag & Onsdag 20:00-22:30. Vi søger pt RDPS lock og boomie til at styrke vores raidhold, men alle dps kan tages i betragtning, så tøv endelig ikke med at smide en besked", -- [1]
+			"Bigpelican-Ravencrest", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Bigpelican-Ravencrest", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			252, -- [11]
+			"Player-1329-094994F1", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Bigpelican|r",
+			[51] = 1620291305,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [96]
+		{
+			"|cffffd100|HclubFinder:ClubFinder-1-148-1329-52221594|h[Guild: T H E O R Y]|h|r To Megalutero Ellhniko Guild tou Ravencrest || Recruitment Panta Anoixto gia Mythic Raiders || High Prio: Mage-Warlock || Progress 8/10 Mythic ", -- [1]
+			"Bolzano-Ravencrest", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Bolzano-Ravencrest", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			254, -- [11]
+			"Player-1329-0419362B", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcBolzano|r",
+			[51] = 1620291341,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [97]
+		{
+			"Resto Druid WTS arena boost for golds.  (2s) 0-1800 /w me, can boost all the class ", -- [1]
+			"Givemegg-Ravencrest", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Givemegg-Ravencrest", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			272, -- [11]
+			"Player-1329-098A91D2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Givemegg|r",
+			[51] = 1620291405,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [98]
+		{
+			"<NOVA>Ksm 1330k M10 79K M11 89k  M12 99k M13 105k  M14 110k M15 190k buying 2x runs armor stack free  Full clear HC 300k Mythic raid 7400k !!   Torghast Boost (L1-L8) PVP 0 -2400 rate  . /w info. Only Gold", -- [1]
+			"Novavento-Ravencrest", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Novavento-Ravencrest", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			275, -- [11]
+			"Player-1329-09A53A2B", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff38bb9Novavento|r",
+			[51] = 1620291429,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [99]
 	},
 }

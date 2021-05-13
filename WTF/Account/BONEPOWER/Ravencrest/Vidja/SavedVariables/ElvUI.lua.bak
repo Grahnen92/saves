@@ -1,19 +1,19 @@
 
 ElvCharacterDB = {
 	["ChatEditHistory"] = {
-		"/wa", -- [1]
-		"/i brb 30 sec", -- [2]
-		"/i I saw a Mists of Pandaria loading screen when coming here x)", -- [3]
-		"/s my veve is big", -- [4]
-		"/s 7e", -- [5]
-		"/i lol", -- [6]
-		"/s ty for group", -- [7]
-		"/ec", -- [8]
+		"/i brb 30 sec", -- [1]
+		"/s my veve is big", -- [2]
+		"/i lol", -- [3]
+		"/ec", -- [4]
+		"/dance", -- [5]
+		"/s 7wa", -- [6]
+		"/wa", -- [7]
+		"/s 7e", -- [8]
 		"/s q", -- [9]
-		"/dance", -- [10]
-		"/reload", -- [11]
-		"/s 7wa", -- [12]
-		"/s qer", -- [13]
+		"/s qer", -- [10]
+		"/s ty for group", -- [11]
+		"/i I saw a Mists of Pandaria loading screen when coming here x)", -- [12]
+		"/reload", -- [13]
 	},
 	["ChatHistoryLog"] = {
 		{

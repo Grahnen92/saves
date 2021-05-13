@@ -1,29 +1,5 @@
 
 AstralKeys = {
-	{
-		["btag"] = "Mollox#2865",
-		["weekly_best"] = 12,
-		["class"] = "PALADIN",
-		["key_level"] = 13,
-		["unit"] = "Mollzyx-Kazzak",
-		["dungeon_id"] = 380,
-		["week"] = 189,
-		["faction"] = "1",
-		["time_stamp"] = 0,
-		["source"] = "friend",
-	}, -- [1]
-	{
-		["btag"] = "tiger#2213",
-		["weekly_best"] = 20,
-		["class"] = "ROGUE",
-		["key_level"] = 18,
-		["unit"] = "Tigerlol-TarrenMill",
-		["dungeon_id"] = 380,
-		["week"] = 189,
-		["faction"] = "1",
-		["time_stamp"] = 0,
-		["source"] = "friend",
-	}, -- [2]
 }
 AstralCharacters = {
 	{
@@ -32,6 +8,18 @@ AstralCharacters = {
 		["unit"] = "Thaler-DefiasBrotherhood",
 		["faction"] = 1,
 	}, -- [1]
+	{
+		["weekly_best"] = 0,
+		["class"] = "MAGE",
+		["faction"] = 1,
+		["unit"] = "Ureg-DefiasBrotherhood",
+	}, -- [2]
+	{
+		["weekly_best"] = 0,
+		["class"] = "SHAMAN",
+		["faction"] = 1,
+		["unit"] = "Träl-DefiasBrotherhood",
+	}, -- [3]
 }
 AstralKeysSettings = {
 	["wipedOldTables"] = true,
@@ -39,15 +27,15 @@ AstralKeysSettings = {
 		["show_minimap_button"] = {
 			["isEnabled"] = true,
 		},
-		["init_time"] = 1615359600,
+		["init_time"] = 1620802800,
 		["expanded_tooltip"] = {
 			["isEnabled"] = true,
 		},
 		["report_on_message"] = {
-			["party"] = true,
-			["raid"] = false,
 			["guild"] = false,
+			["raid"] = false,
 			["no_key"] = false,
+			["party"] = true,
 		},
 		["show_tooltip_key"] = {
 			["isEnabled"] = true,
@@ -60,6 +48,14 @@ AstralKeysSettings = {
 		},
 	},
 	["new_settings_config"] = true,
+	["friendOptions"] = {
+		["friend_sync"] = {
+			["isEnabled"] = true,
+		},
+		["show_other_faction"] = {
+			["isEnabled"] = true,
+		},
+	},
 	["frame"] = {
 		["rank_filter"] = {
 			true, -- [1]
@@ -73,7 +69,9 @@ AstralKeysSettings = {
 			true, -- [9]
 			true, -- [10]
 		},
-		["current_list"] = "GUILD",
+		["show_offline"] = {
+			["isEnabled"] = true,
+		},
 		["isCollapsed"] = {
 			["isEnabled"] = false,
 		},
@@ -82,17 +80,7 @@ AstralKeysSettings = {
 			["isEnabled"] = false,
 		},
 		["sorth_method"] = "character_name",
-		["show_offline"] = {
-			["isEnabled"] = true,
-		},
-	},
-	["friendOptions"] = {
-		["friend_sync"] = {
-			["isEnabled"] = true,
-		},
-		["show_other_faction"] = {
-			["isEnabled"] = true,
-		},
+		["current_list"] = "GUILD",
 	},
 }
 AstralMinimap = {
@@ -112,6 +100,7 @@ AstralMinimap = {
 		["Flagel - Kazzak"] = "Flagel - Kazzak",
 		["Thaler - Defias Brotherhood"] = "Thaler - Defias Brotherhood",
 		["Krozz - Defias Brotherhood"] = "Krozz - Defias Brotherhood",
+		["Allvarg - Ravencrest"] = "Allvarg - Ravencrest",
 		["Zuldo - Defias Brotherhood"] = "Zuldo - Defias Brotherhood",
 		["Vide - Defias Brotherhood"] = "Vide - Defias Brotherhood",
 		["Rekhyt - Vashj"] = "Rekhyt - Vashj",
@@ -119,18 +108,18 @@ AstralMinimap = {
 		["Gladwin - Defias Brotherhood"] = "Gladwin - Defias Brotherhood",
 		["Träl - Defias Brotherhood"] = "Träl - Defias Brotherhood",
 		["Rozt - Kazzak"] = "Rozt - Kazzak",
-		["Kêl - Defias Brotherhood"] = "Kêl - Defias Brotherhood",
+		["Mfgd - Defias Brotherhood"] = "Mfgd - Defias Brotherhood",
 		["Tålig - Kazzak"] = "Tålig - Kazzak",
 		["Tzol - Kazzak"] = "Tzol - Kazzak",
 		["Ödette - Defias Brotherhood"] = "Ödette - Defias Brotherhood",
-		["Gask - Ravencrest"] = "Gask - Ravencrest",
-		["Orek - Defias Brotherhood"] = "Orek - Defias Brotherhood",
-		["Cazh - Kazzak"] = "Cazh - Kazzak",
-		["Eims - Kazzak"] = "Eims - Kazzak",
 		["Addled - Defias Brotherhood"] = "Addled - Defias Brotherhood",
+		["Orek - Defias Brotherhood"] = "Orek - Defias Brotherhood",
+		["Eims - Kazzak"] = "Eims - Kazzak",
+		["Cazh - Kazzak"] = "Cazh - Kazzak",
+		["Gask - Ravencrest"] = "Gask - Ravencrest",
 		["Tzol - Defias Brotherhood"] = "Tzol - Defias Brotherhood",
 		["Testa - Kazzak"] = "Testa - Kazzak",
-		["Mfgd - Defias Brotherhood"] = "Mfgd - Defias Brotherhood",
+		["Kêl - Defias Brotherhood"] = "Kêl - Defias Brotherhood",
 	},
 	["profiles"] = {
 		["Prella - Defias Brotherhood"] = {
@@ -166,6 +155,8 @@ AstralMinimap = {
 		},
 		["Krozz - Defias Brotherhood"] = {
 		},
+		["Allvarg - Ravencrest"] = {
+		},
 		["Zuldo - Defias Brotherhood"] = {
 		},
 		["Vide - Defias Brotherhood"] = {
@@ -183,7 +174,7 @@ AstralMinimap = {
 		},
 		["Rozt - Kazzak"] = {
 		},
-		["Kêl - Defias Brotherhood"] = {
+		["Mfgd - Defias Brotherhood"] = {
 		},
 		["Tålig - Kazzak"] = {
 		},
@@ -191,24 +182,24 @@ AstralMinimap = {
 		},
 		["Ödette - Defias Brotherhood"] = {
 		},
-		["Gask - Ravencrest"] = {
+		["Addled - Defias Brotherhood"] = {
 		},
 		["Orek - Defias Brotherhood"] = {
+		},
+		["Eims - Kazzak"] = {
 		},
 		["Cazh - Kazzak"] = {
 			["minimap"] = {
 				["minimapPos"] = 193.6627798552259,
 			},
 		},
-		["Eims - Kazzak"] = {
-		},
-		["Addled - Defias Brotherhood"] = {
+		["Gask - Ravencrest"] = {
 		},
 		["Tzol - Defias Brotherhood"] = {
 		},
 		["Testa - Kazzak"] = {
 		},
-		["Mfgd - Defias Brotherhood"] = {
+		["Kêl - Defias Brotherhood"] = {
 		},
 	},
 }
@@ -233,30 +224,34 @@ AstralLists = {
 			["Mareal-Kazzak"] = true,
 			["Härmatis-Kazzak"] = true,
 			["Thershu-Kazzak"] = true,
-			["Kurosan-Kazzak"] = true,
+			["Spankzme-Kazzak"] = true,
 			["Iglaveu-Kazzak"] = true,
 			["Kagemad-Kazzak"] = true,
 			["Fuyito-Kazzak"] = true,
 			["Gladwin-Kazzak"] = true,
-			["Nyckó-Kazzak"] = true,
+			["Sándér-Kazzak"] = true,
 			["Ragnyr-Kazzak"] = true,
-			["Shavenx-Kazzak"] = true,
 			["Birte-Kazzak"] = true,
+			["Shavenx-Kazzak"] = true,
 			["Icookie-Kazzak"] = true,
 			["Spanksham-Kazzak"] = true,
-			["Sándér-Kazzak"] = true,
+			["Nyckó-Kazzak"] = true,
 			["Zegromos-Kazzak"] = true,
-			["Spankzme-Kazzak"] = true,
+			["Kurosan-Kazzak"] = true,
 		},
 	}, -- [1]
 	{
 		["name"] = "FRIENDS",
 		["units"] = {
-			["Macks-TarrenMill"] = "Mack#2457",
-			["Tonkhan-TarrenMill"] = "Tonkan#2494",
-			["Anuwu-TarrenMill"] = "Kyllingz#2552",
-			["Tigerlol-TarrenMill"] = "tiger#2213",
+			["Dödstokig-Ragnaros"] = "Magrit#2771",
+			["Splëen-Ragnaros"] = "Magrit#2771",
+			["Viéra-Ragnaros"] = "Sunrise#2832",
 			["Mollzyx-Kazzak"] = "Mollox#2865",
+			["Macks-TarrenMill"] = "Mack#2457",
+			["Anuwu-TarrenMill"] = "Kyllingz#2552",
+			["Tonkhan-TarrenMill"] = "Tonkan#2494",
+			["Tigerlol-TarrenMill"] = "tiger#2213",
+			["Maggehh-Ragnaros"] = "Magrit#2771",
 		},
 	}, -- [2]
 }

@@ -1,10 +1,10 @@
 Bartender4: disabled
-ElvUI: disabled
+ElvUI: enabled
 ElvUI_Config: enabled
-WeakAuras: disabled
-WeakAurasModelPaths: disabled
-WeakAurasOptions: disabled
-WeakAurasTemplates: disabled
+WeakAuras: enabled
+WeakAurasModelPaths: enabled
+WeakAurasOptions: enabled
+WeakAurasTemplates: enabled
 ConsolePort: disabled
 DynamicCam: disabled
 ConsolePortBar: disabled
@@ -43,8 +43,8 @@ ElvUI_CastBarOverlay: disabled
 ElvUI_EverySecondCounts: disabled
 ElvUI_AuraBarsMovers: disabled
 ElvUI_CustomTweaks: disabled
-WeakAurasArchive: disabled
-ElvUI_OptionsUI: disabled
+WeakAurasArchive: enabled
+ElvUI_OptionsUI: enabled
 OPie_Classic: disabled
 Plater: disabled
 AstralKeys: disabled
@@ -61,3 +61,4 @@ DBM-CrucibleofStorms: disabled
 DBM-Party-Shadowlands: disabled
 DBM-Nyalotha: disabled
 DBM-EternalPalace: disabled
+ElvUI_DTBars2: disabled

@@ -24,204 +24,6 @@ ElvCharacterDB = {
 	},
 	["ChatHistoryLog"] = {
 		{
-			"<NOVA>  Mythic 0 Dungeon 200K, Torghast Boost, L1 70K, L2 170K L3 270K. Only Gold. w me for more info. verifying available.", -- [1]
-			"Brightkiller-Kazzak", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Brightkiller-Kazzak", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			2056, -- [11]
-			"Player-1305-05A34F6E", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cBrightkiller|r",
-			[51] = 1607085675,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [1]
-		{
-			"[WTS] Fast Powerleveling to 60 lvl! Heroic & Mythic Dungeons, Renown Farm, Covenants, Torghast, Castle Nathria preorders and other Boosts. We have over 12886 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
-			"Skrarn-Kazzak", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Skrarn-Kazzak", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			2058, -- [11]
-			"Player-1305-0BBA0A65", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cSkrarn|r",
-			[51] = 1607085677,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [2]
-		{
-			"<NOVA> Mythic 0 World tour (all 8): 1.2M . w me for more info", -- [1]
-			"Brightkiller-Kazzak", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Brightkiller-Kazzak", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			2059, -- [11]
-			"Player-1305-05A34F6E", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc59a6cBrightkiller|r",
-			[51] = 1607085678,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [3]
-		{
-			"Want To Sell [WTS] All Mythic 0 - All Dungeons << HC <<< Very Good Price Right Now <<<<", -- [1]
-			"Vanqûish-Kazzak", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Vanqûish-Kazzak", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			2060, -- [11]
-			"Player-1305-0942AA5F", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffef367Vanqûish|r",
-			[51] = 1607085678,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [4]
-		{
-			"LFW |cffffd000|Htrade:Player-1305-05A56EB3:195119:165|h[Leatherworking]|h|r (ur mats) u will get 3k gold if u craft with me drxD", -- [1]
-			"Changingit-Kazzak", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Changingit-Kazzak", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			2062, -- [11]
-			"Player-1305-05A56EB3", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Changingit|r",
-			[51] = 1607085684,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [5]
-		{
-			"Sylvanas Community || M0 for 220k WITH ARMOR STACK || Heroic Run 125k ||   2xrun Mythic For  420k || 5xrun 880 || Torghast lvl 1 150k Lvl 2 250k  Lvl 3 350k ||[Castle Nathria] Raid HC  Wis me For more info about runs", -- [1]
-			"Hâmeddark-Kazzak", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Hâmeddark-Kazzak", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			2063, -- [11]
-			"Player-1305-089F32A0", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfff38bb9Hâmeddark|r",
-			[51] = 1607085685,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [6]
-		{
-			"WTS mythic 0 and heroic cheap price for gold acc gold in all realm wiss me for info /fast run / 8/8 mythic / discount for multi runs / lether plate mail stack ", -- [1]
-			"Resolution-Kazzak", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Resolution-Kazzak", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			2064, -- [11]
-			"Player-1305-0B384256", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa9d271Resolution|r",
-			[51] = 1607085688,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [7]
-		{
-			"<> S Y L V A N A S <> WTS >>((mythic 0 = 220k))<< + ARMOR STACK >>((You Get All Loot))<<oFFer>>((2XM0 420k))*((5xM0 880k))*((8xM0 1410K))>(heroic dungeons 125k)>[Castle Nathria] personal loot>Torghast>(First L=150k)*(second L=250k)*(Third L=350k)/W me", -- [1]
-			"Sylvasboost-Kazzak", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Sylvasboost-Kazzak", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			2065, -- [11]
-			"Player-1305-0B473A78", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffe7b09Sylvasboost|r",
-			[51] = 1607085689,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [8]
-		{
-			"WTB |cffa335ee|Hitem:172232::::::::60:250:::::::|h[Eternal Crystal]|h|r and |cff1eff00|Hitem:171428::::::::60:250:::::::|h[Shadowghast Ingot]|h|r", -- [1]
-			"Gjore-Kazzak", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Gjore-Kazzak", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			2067, -- [11]
-			"Player-1305-0531A28B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffc31d39Gjore|r",
-			[51] = 1607085694,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [9]
-		{
 			"WTS B00ST << M^0 >> << HC>> Best Price% || We Going right now || -- / w me for more info ", -- [1]
 			"Khabora-Kazzak", -- [2]
 			"", -- [3]
@@ -242,7 +44,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Khabora|r",
 			[51] = 1607085694,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [10]
+		}, -- [1]
 		{
 			"WTS  M0- Heoric  Dungeons ! Specific dungeon possible.  Interested?accept gold all realm. /w me for Price", -- [1]
 			"Zanth-Kazzak", -- [2]
@@ -264,7 +66,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Zanth|r",
 			[51] = 1607085696,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [11]
+		}, -- [2]
 		{
 			"WTS Torghast Layer3 Boost /w for price", -- [1]
 			"Manìa-Kazzak", -- [2]
@@ -286,7 +88,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Manìa|r",
 			[51] = 1607085699,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [12]
+		}, -- [3]
 		{
 			"HIRE ME as  a tank for NM/HC/ M0    <3 <3 <3 /w me ", -- [1]
 			"Jasmaya-Kazzak", -- [2]
@@ -308,7 +110,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Jasmaya|r",
 			[51] = 1607085709,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [13]
+		}, -- [4]
 		{
 			"WTS  MythIC  Dungeon  ///TORGHAST // MYthic 8/8 Cheap -//  with armor stack // Fair Price /w me for info", -- [1]
 			"Hèllwing-Kazzak", -- [2]
@@ -330,7 +132,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaHèllwing|r",
 			[51] = 1607085718,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [14]
+		}, -- [5]
 		{
 			"< Torghast Boost >184 Prot Paladin boosting any layer! Layer 1 = 20k, Layer 2 = 35k, Layer 3 = 50k. Finished in 25 min average", -- [1]
 			"Torghaster-Kazzak", -- [2]
@@ -352,7 +154,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcTorghaster|r",
 			[51] = 1607085722,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [15]
+		}, -- [6]
 		{
 			"<< SYLVANAS COMMUNITY >>  SELLING Mythic +0 = 220k ARMORSTACK + LOOT  || 2 Run=420k /    3 run =  595k   /   5 run = 880k  /  8 run = 1410k   / |cff71d5ff|Hspell:344659:0|h[Voracious Gorger]|h|r + Achiv 2.3M  /  Torghast  L1=150k --L2=250k /W info", -- [1]
 			"Seevda-Kazzak", -- [2]
@@ -374,7 +176,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Seevda|r",
 			[51] = 1607085722,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [16]
+		}, -- [7]
 		{
 			"WTS ( MYTHIC 110k) (HEROIC 50k) (NORMAL 25k) GP RDY +180 ilvl fast run /w me for info", -- [1]
 			"Sensys-Kazzak", -- [2]
@@ -396,7 +198,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaSensys|r",
 			[51] = 1607085724,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [17]
+		}, -- [8]
 		{
 			"WTS Boost All Mythic &  All Heroic dungeon Whisper Me For Info", -- [1]
 			"Elfstylish-Kazzak", -- [2]
@@ -418,7 +220,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Elfstylish|r",
 			[51] = 1607085724,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [18]
+		}, -- [9]
 		{
 			"WTS-- 8-- Dungeons mythic 200k", -- [1]
 			"Getto-Kazzak", -- [2]
@@ -440,7 +242,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Getto|r",
 			[51] = 1607085727,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [19]
+		}, -- [10]
 		{
 			"<NOVA> Offering ||HC Dungeons =100k || and ||Mythic 0 =200k / 2x M0 = 380k , 4x M0 =740k , 6x M0 =1080k || Special offer for World Tour ( all Mythic 0 Dungeons  1.2M ) ||Torghast Layer1 : 70k / Layer 2 : 170k /layer3 : 250k  ) Gold only /w me for info", -- [1]
 			"Nbcjiraya-Kazzak", -- [2]
@@ -462,7 +264,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Nbcjiraya|r",
 			[51] = 1607085731,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [20]
+		}, -- [11]
 		{
 			"LFW |cffffd000|Htrade:Player-1305-05A56EB3:195119:165|h[Leatherworking]|h|r (ur mats) u will get 3k gold if u craft with me drxD", -- [1]
 			"Changingit-Kazzak", -- [2]
@@ -484,7 +286,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Changingit|r",
 			[51] = 1607085738,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [21]
+		}, -- [12]
 		{
 			"Sylvanas Community || M0 for 220k WITH ARMOR STACK || Heroic Run 125k ||   2xrun Mythic For  420k || 5xrun 880 || Torghast lvl 1 150k Lvl 2 250k  Lvl 3 350k ||[Castle Nathria] Raid HC  Wis me For more info about runs", -- [1]
 			"Hâmeddark-Kazzak", -- [2]
@@ -506,7 +308,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Hâmeddark|r",
 			[51] = 1607085745,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [22]
+		}, -- [13]
 		{
 			"WTS Mythic Dungeon 0+ Heroic Run + Get Iteam Levet +190 Wis Me For More Info To Get Extra Run...", -- [1]
 			"Leoricl-Kazzak", -- [2]
@@ -528,7 +330,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cLeoricl|r",
 			[51] = 1607085751,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [23]
+		}, -- [14]
 		{
 			"<Prestige Boosting> WTS @@ GOLD ONLY Boosting@@ >> M0 150k / Heroic 100k!  {Heroic Nathria Pre Bookings Available} {Torghast Layer 3 - 180k - 340k for both wings!! } /w for more info about boosting for us also!", -- [1]
 			"Droppediit-Kazzak", -- [2]
@@ -550,7 +352,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cDroppediit|r",
 			[51] = 1607085753,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [24]
+		}, -- [15]
 		{
 			"WTS <<HEROIC>> and <<MYTHIC0>> dungeons -- torghast tower layer 1/2/3 FAST AND FAIR PRICE!! /w for more info", -- [1]
 			"Liindsey-Kazzak", -- [2]
@@ -572,7 +374,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaLiindsey|r",
 			[51] = 1607085755,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [25]
+		}, -- [16]
 		{
 			"<> S Y L V A N A S <> WTS >>((mythic 0 = 220k))<< + ARMOR STACK >>((You Get All Loot))<<oFFer>>((2XM0 420k))*((5xM0 880k))*((8xM0 1410K))>(heroic dungeons 125k)>[Castle Nathria] personal loot>Torghast>(First L=150k)*(second L=250k)*(Third L=350k)/W me", -- [1]
 			"Sylvasboost-Kazzak", -- [2]
@@ -594,7 +396,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Sylvasboost|r",
 			[51] = 1607085770,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [26]
+		}, -- [17]
 		{
 			"<NOVA>  Mythic 0 Dungeon 200K, Torghast Boost, L1 70K, L2 170K L3 270K. Only Gold. w me for more info. verifying available.", -- [1]
 			"Brightkiller-Kazzak", -- [2]
@@ -616,7 +418,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cBrightkiller|r",
 			[51] = 1607085771,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [27]
+		}, -- [18]
 		{
 			"<NOVA> Mythic 0 World tour (all 8): 1.2M . w me for more info", -- [1]
 			"Brightkiller-Kazzak", -- [2]
@@ -638,7 +440,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cBrightkiller|r",
 			[51] = 1607085773,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [28]
+		}, -- [19]
 		{
 			"WTS mythic 0 and heroic cheap price for gold acc gold in all realm wiss me for info /fast run / 8/8 mythic / discount for multi runs / lether plate mail stack ", -- [1]
 			"Resolution-Kazzak", -- [2]
@@ -660,7 +462,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Resolution|r",
 			[51] = 1607085776,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [29]
+		}, -- [20]
 		{
 			"WTS torghast  L1 L2 L3 /w me for more info", -- [1]
 			"Bonekeeper-Kazzak", -- [2]
@@ -682,7 +484,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Bonekeeper|r",
 			[51] = 1607085777,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [30]
+		}, -- [21]
 		{
 			"HIRE ME as  a tank for NM/HC/ M0    <3 <3 <3 /w me ", -- [1]
 			"Jasmaya-Kazzak", -- [2]
@@ -704,7 +506,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Jasmaya|r",
 			[51] = 1607085783,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [31]
+		}, -- [22]
 		{
 			"WTB |cffa335ee|Hitem:165380::::::::60:71:::1:3524::::|h[Enhanced Stormsteel Legguards]|h|r paying alot", -- [1]
 			"Piò-Kazzak", -- [2]
@@ -726,7 +528,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cPiò|r",
 			[51] = 1607085787,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [32]
+		}, -- [23]
 		{
 			"PerfeCt Community< WTS Boost All Dungeons 8/8 Heroic And Mythic And torghast Layer 1-2-3  Full Run Only Gold /W for best Prices and Discounts", -- [1]
 			"Parsblood-Kazzak", -- [2]
@@ -748,7 +550,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Parsblood|r",
 			[51] = 1607085788,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [33]
+		}, -- [24]
 		{
 			"|cffa335ee|Hitem:184788::::::::60:102:::4:6652:7193:1472:6646:1:28:1707:::|h[Kit Jin's Sultry Cinch]|h|r 645k", -- [1]
 			"Silncedead-Kazzak", -- [2]
@@ -770,7 +572,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Silncedead|r",
 			[51] = 1607085790,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [34]
+		}, -- [25]
 		{
 			"WTS Mythic Dungeon + Heroic Run + Get Iteam Levet +190 Wis Me For More Info To Get Extra Run...", -- [1]
 			"Leoricl-Kazzak", -- [2]
@@ -792,7 +594,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cLeoricl|r",
 			[51] = 1607085791,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [35]
+		}, -- [26]
 		{
 			"WTS  M0- Heoric  Dungeons ! Specific dungeon possible.  Interested?accept gold all realm. /w me for Price", -- [1]
 			"Zanth-Kazzak", -- [2]
@@ -814,7 +616,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Zanth|r",
 			[51] = 1607085798,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [36]
+		}, -- [27]
 		{
 			"< Torghast Boost >184 Prot Paladin boosting any layer! Layer 1 = 20k, Layer 2 = 35k, Layer 3 = 50k. Finished in 25 min average", -- [1]
 			"Torghaster-Kazzak", -- [2]
@@ -836,7 +638,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcTorghaster|r",
 			[51] = 1607085799,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [37]
+		}, -- [28]
 		{
 			"WTS Boost All Mythic &  All Heroic dungeon Whisper Me For Info", -- [1]
 			"Elfstylish-Kazzak", -- [2]
@@ -858,7 +660,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Elfstylish|r",
 			[51] = 1607085801,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [38]
+		}, -- [29]
 		{
 			"Sylvanas Community || M0 for 220k WITH ARMOR STACK || Heroic Run 125k ||   2xrun Mythic For  420k || 5xrun 880 || Torghast lvl 1 150k Lvl 2 250k  Lvl 3 350k ||[Castle Nathria] Raid HC  Wis me For more info about runs", -- [1]
 			"Hâmeddark-Kazzak", -- [2]
@@ -880,7 +682,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Hâmeddark|r",
 			[51] = 1607085805,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [39]
+		}, -- [30]
 		{
 			"|cffa335ee|Hitem:184788::::::::60:102:::4:6652:7193:1472:6646:1:28:1707:::|h[Kit Jin's Sultry Cinch]|h|r65k", -- [1]
 			"Silncedead-Kazzak", -- [2]
@@ -902,7 +704,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Silncedead|r",
 			[51] = 1607085811,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [40]
+		}, -- [31]
 		{
 			"LFW |cffffd000|Htrade:Player-1305-05A56EB3:195119:165|h[Leatherworking]|h|r (ur mats) u will get 3k gold if u craft with me drxD", -- [1]
 			"Changingit-Kazzak", -- [2]
@@ -924,7 +726,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Changingit|r",
 			[51] = 1607085815,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [41]
+		}, -- [32]
 		{
 			"[WTS] Fast Powerleveling to 60 lvl! Heroic & Mythic Dungeons, Renown Farm, Covenants, Torghast, Castle Nathria preorders and other Boosts. We have over 12886 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
 			"Skrarn-Kazzak", -- [2]
@@ -946,7 +748,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cSkrarn|r",
 			[51] = 1607085817,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [42]
+		}, -- [33]
 		{
 			"< Nova Community > special Offering  For World Tour ( all Mythic 0 Dungeon  1.2M )  ||  Mythic 0 =200k / 2x M0 = 380k / 4x M0 = 740/ 6x M0 =1080k || Special || Torghast Layer 1: 70k / Layer 2: 170k / Layer 3 : 250k ) || Gold Only", -- [1]
 			"Novaservices-Kazzak", -- [2]
@@ -968,7 +770,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Novaservices|r",
 			[51] = 1607085829,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [43]
+		}, -- [34]
 		{
 			"<NOVA> Offering ||HC Dungeons =100k || and ||Mythic 0 =200k / 2x M0 = 380k , 4x M0 =740k , 6x M0 =1080k || Special offer for World Tour ( all Mythic 0 Dungeons  1.2M ) ||Torghast Layer1 : 70k / Layer 2 : 170k /layer3 : 250k  ) Gold only /w me for info", -- [1]
 			"Nbcjiraya-Kazzak", -- [2]
@@ -990,7 +792,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Nbcjiraya|r",
 			[51] = 1607085832,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [44]
+		}, -- [35]
 		{
 			"<< SYLVANAS COMMUNITY >>  SELLING Mythic +0 = 220k ARMORSTACK + LOOT  || 2 Run=420k /    3 run =  595k   /   5 run = 880k  /  8 run = 1410k   / |cff71d5ff|Hspell:344659:0|h[Voracious Gorger]|h|r + Achiv 2.3M  /  Torghast  L1=150k --L2=250k /W info", -- [1]
 			"Seevda-Kazzak", -- [2]
@@ -1012,7 +814,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Seevda|r",
 			[51] = 1607085836,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [45]
+		}, -- [36]
 		{
 			"|cffa335ee|Hitem:184788::::::::60:102:::4:6652:7193:1472:6646:1:28:1707:::|h[Kit Jin's Sultry Cinch]|h|r65K", -- [1]
 			"Silncedead-Kazzak", -- [2]
@@ -1034,7 +836,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Silncedead|r",
 			[51] = 1607085843,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [46]
+		}, -- [37]
 		{
 			"< Torghast Boost >184 Prot Paladin boosting any layer! Layer 1 = 20k, Layer 2 = 35k, Layer 3 = 50k. Finished in 25 min average", -- [1]
 			"Torghaster-Kazzak", -- [2]
@@ -1056,7 +858,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcTorghaster|r",
 			[51] = 1607085848,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [47]
+		}, -- [38]
 		{
 			"HIRE ME as  a tank for NM/HC/ M0    <3 <3 <3 /w me ", -- [1]
 			"Jasmaya-Kazzak", -- [2]
@@ -1078,7 +880,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Jasmaya|r",
 			[51] = 1607085848,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [48]
+		}, -- [39]
 		{
 			"WTS Mythic Dungeon + Heroic Run + Get Iteam Levet +190 Wis Me For More Info To Get Extra Run...", -- [1]
 			"Leoricl-Kazzak", -- [2]
@@ -1100,7 +902,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cLeoricl|r",
 			[51] = 1607085848,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [49]
+		}, -- [40]
 		{
 			"WTB |cffa335ee|Hitem:172232::::::::60:250:::::::|h[Eternal Crystal]|h|r ", -- [1]
 			"Gjore-Kazzak", -- [2]
@@ -1122,7 +924,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Gjore|r",
 			[51] = 1607085849,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [50]
+		}, -- [41]
 		{
 			"<> S Y L V A N A S <> WTS >>((mythic 0 = 220k))<< + ARMOR STACK >>((You Get All Loot))<<oFFer>>((2XM0 420k))*((5xM0 880k))*((8xM0 1410K))>(heroic dungeons 125k)>[Castle Nathria] personal loot>Torghast>(First L=150k)*(second L=250k)*(Third L=350k)/W me", -- [1]
 			"Sylvasboost-Kazzak", -- [2]
@@ -1144,7 +946,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Sylvasboost|r",
 			[51] = 1607085852,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [51]
+		}, -- [42]
 		{
 			"WTS <<HEROIC>> and <<MYTHIC0>> dungeons -- torghast tower layer 1/2/3 FAST AND FAIR PRICE!! /w for more info", -- [1]
 			"Liindsey-Kazzak", -- [2]
@@ -1166,7 +968,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaLiindsey|r",
 			[51] = 1607085865,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [52]
+		}, -- [43]
 		{
 			"Sylvanas Community || M0 for 220k WITH ARMOR STACK || Heroic Run 125k ||   2xrun Mythic For  420k || 5xrun 880 || Torghast lvl 1 150k Lvl 2 250k  Lvl 3 350k ||[Castle Nathria] Raid HC  Wis me For more info about runs", -- [1]
 			"Hâmeddark-Kazzak", -- [2]
@@ -1188,7 +990,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Hâmeddark|r",
 			[51] = 1607085865,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [53]
+		}, -- [44]
 		{
 			"<NOVA> Mythic 0 World tour (all 8): 1.2M . w me for more info", -- [1]
 			"Brightkiller-Kazzak", -- [2]
@@ -1210,7 +1012,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cBrightkiller|r",
 			[51] = 1607085868,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [54]
+		}, -- [45]
 		{
 			"<NOVA>  Mythic 0 Dungeon 200K, Torghast Boost, L1 70K, L2 170K L3 270K. Only Gold. w me for more info. verifying available.", -- [1]
 			"Brightkiller-Kazzak", -- [2]
@@ -1232,7 +1034,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cBrightkiller|r",
 			[51] = 1607085868,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [55]
+		}, -- [46]
 		{
 			"<PerfeCt Community> ((((( => Torghast Layer 3 < 160K > => Mythic Dungeon < 160K > => Heroic Dungeon < 75K > => Solo Queues also available just message back if you needed any help. World Tour for Mythic 1M only. ))))", -- [1]
 			"Balthazarr-Kazzak", -- [2]
@@ -1254,7 +1056,7 @@ ElvCharacterDB = {
 			[52] = "|cff8687edBalthazarr|r",
 			[51] = 1607085871,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [56]
+		}, -- [47]
 		{
 			"BM monk LF casual raiding + m+ guild - pls /w", -- [1]
 			"Skoletaske-Kazzak", -- [2]
@@ -1276,7 +1078,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Skoletaske|r",
 			[51] = 1607085872,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [57]
+		}, -- [48]
 		{
 			"WTS mythic 8/8 boost /w for more info !", -- [1]
 			"Skullorx-Kazzak", -- [2]
@@ -1298,7 +1100,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Skullorx|r",
 			[51] = 1607085872,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [58]
+		}, -- [49]
 		{
 			"WTS mythic 0 and heroic cheap price for gold acc gold in all realm wiss me for info /fast run / 8/8 mythic / discount for multi runs / lether plate mail stack ", -- [1]
 			"Resolution-Kazzak", -- [2]
@@ -1320,7 +1122,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Resolution|r",
 			[51] = 1607085872,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [59]
+		}, -- [50]
 		{
 			"WTS  M0- Heoric  Dungeons ! Specific dungeon possible.  Interested?accept gold all realm. /w me for Price", -- [1]
 			"Zanth-Kazzak", -- [2]
@@ -1342,7 +1144,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Zanth|r",
 			[51] = 1607085883,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [60]
+		}, -- [51]
 		{
 			"enchanting |cffffd000|Htrade:Player-1305-0B339E14:7411:333|h[Enchanting]|h|r  for free (bring your own mats) :)", -- [1]
 			"Neverluckyjr-Kazzak", -- [2]
@@ -1364,7 +1166,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Neverluckyjr|r",
 			[51] = 1607085891,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [61]
+		}, -- [52]
 		{
 			"enchanting [Enchanting]  for free (bring your own mats) :)", -- [1]
 			"Neverluckyjr-Kazzak", -- [2]
@@ -1386,7 +1188,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe97Neverluckyjr|r",
 			[51] = 1607085893,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [62]
+		}, -- [53]
 		{
 			"any guild with unlocked herilooms accepting new low lvl players?", -- [1]
 			"Jiruj-Kazzak", -- [2]
@@ -1408,7 +1210,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Jiruj|r",
 			[51] = 1607085905,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [63]
+		}, -- [54]
 		{
 			"WTS ( MYTHIC 110k) (HEROIC 50k) (NORMAL 25k) GP RDY +180 ilvl fast run /w me for info", -- [1]
 			"Epichorn-Kazzak", -- [2]
@@ -1430,7 +1232,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Epichorn|r",
 			[51] = 1607085905,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [64]
+		}, -- [55]
 		{
 			"[WTS] Fast Powerleveling to 60 lvl! Heroic & Mythic Dungeons, Renown Farm, Covenants, Torghast, Castle Nathria preorders and other Boosts. We have over 12886 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
 			"Skrarn-Kazzak", -- [2]
@@ -1452,7 +1254,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cSkrarn|r",
 			[51] = 1607085913,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [65]
+		}, -- [56]
 		{
 			"PerfeCt Community< WTS Boost All Dungeons 8/8 Heroic And Mythic And torghast Layer 1-2-3  Full Run Only Gold /W for best Prices and Discounts", -- [1]
 			"Parsblood-Kazzak", -- [2]
@@ -1474,7 +1276,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Parsblood|r",
 			[51] = 1607085915,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [66]
+		}, -- [57]
 		{
 			"|cffa335ee|Hitem:184788::::::::60:102:::4:6652:7193:1472:6646:1:28:1707:::|h[Kit Jin's Sultry Cinch]|h|r65k", -- [1]
 			"Silncedead-Kazzak", -- [2]
@@ -1496,7 +1298,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Silncedead|r",
 			[51] = 1607085918,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [67]
+		}, -- [58]
 		{
 			"Sylvanas Community || M0 for 220k WITH ARMOR STACK || Heroic Run 125k ||   2xrun Mythic For  420k || 5xrun 880 || Torghast lvl 1 150k Lvl 2 250k  Lvl 3 350k ||[Castle Nathria] Raid HC  Wis me For more info about runs", -- [1]
 			"Hâmeddark-Kazzak", -- [2]
@@ -1518,7 +1320,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Hâmeddark|r",
 			[51] = 1607085925,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [68]
+		}, -- [59]
 		{
 			"<NOVA> Offering ||HC Dungeons =100k|| and ||Mythic 0 =200k , 2x M0 = 380k , 4x M0 =740k , 6x M0 =1080k|| ! Special offer for World Tour ( all Mythic 0 Dungeons Only 1.2M ) .||TORGHAST LAYER 1,2,3|| GOLD ONLY", -- [1]
 			"Novajiren-Kazzak", -- [2]
@@ -1540,7 +1342,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaNovajiren|r",
 			[51] = 1607085927,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [69]
+		}, -- [60]
 		{
 			"WTB |cffa335ee|Hitem:172232::::::::60:250:::::::|h[Eternal Crystal]|h|r", -- [1]
 			"Gjore-Kazzak", -- [2]
@@ -1562,7 +1364,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Gjore|r",
 			[51] = 1607085931,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [70]
+		}, -- [61]
 		{
 			"<> S Y L V A N A S <> WTS >>((mythic 0 = 220k))<< + ARMOR STACK >>((You Get All Loot))<<oFFer>>((2XM0 420k))*((5xM0 880k))*((8xM0 1410K))>(heroic dungeons 125k)>[Castle Nathria] personal loot>Torghast>(First L=150k)*(second L=250k)*(Third L=350k)/W me", -- [1]
 			"Sylvasboost-Kazzak", -- [2]
@@ -1584,7 +1386,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Sylvasboost|r",
 			[51] = 1607085934,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [71]
+		}, -- [62]
 		{
 			"HIRE ME as  a tank for NM/HC/ M0    <3 <3 <3 /w me ", -- [1]
 			"Jasmaya-Kazzak", -- [2]
@@ -1606,7 +1408,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Jasmaya|r",
 			[51] = 1607085935,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [72]
+		}, -- [63]
 		{
 			"<NOVA> Offering ||HC Dungeons =100k || and ||Mythic 0 =200k / 2x M0 = 380k , 4x M0 =740k , 6x M0 =1080k || Special offer for World Tour ( all Mythic 0 Dungeons  1.2M ) ||Torghast Layer1 : 70k / Layer 2 : 170k /layer3 : 250k  ) Gold only /w me for info", -- [1]
 			"Nbcjiraya-Kazzak", -- [2]
@@ -1628,7 +1430,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Nbcjiraya|r",
 			[51] = 1607085945,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [73]
+		}, -- [64]
 		{
 			"WTS-- 8-- Dungeons mythic 200k", -- [1]
 			"Getto-Kazzak", -- [2]
@@ -1650,7 +1452,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Getto|r",
 			[51] = 1607085948,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [74]
+		}, -- [65]
 		{
 			"<< SYLVANAS COMMUNITY >>  SELLING Mythic +0 = 220k ARMORSTACK + LOOT  || 2 Run=420k /    3 run =  595k   /   5 run = 880k  /  8 run = 1410k   / |cff71d5ff|Hspell:344659:0|h[Voracious Gorger]|h|r + Achiv 2.3M  /  Torghast  L1=150k --L2=250k /W info", -- [1]
 			"Seevda-Kazzak", -- [2]
@@ -1672,7 +1474,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Seevda|r",
 			[51] = 1607085950,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [75]
+		}, -- [66]
 		{
 			"|cffa335ee|Hitem:184788::::::::60:102:::4:6652:7193:1472:6646:1:28:1707:::|h[Kit Jin's Sultry Cinch]|h|r 65k", -- [1]
 			"Silncedead-Kazzak", -- [2]
@@ -1694,7 +1496,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Silncedead|r",
 			[51] = 1607085954,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [76]
+		}, -- [67]
 		{
 			"< Torghast Boost >184 Prot Paladin boosting any layer! Layer 1 = 20k, Layer 2 = 35k, Layer 3 = 50k. Finished in 25 min average", -- [1]
 			"Torghaster-Kazzak", -- [2]
@@ -1716,7 +1518,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcTorghaster|r",
 			[51] = 1607085960,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [77]
+		}, -- [68]
 		{
 			"WTS <<HEROIC>> and <<MYTHIC0>> dungeons -- torghast tower layer 1/2/3 FAST AND FAIR PRICE!! /w for more info", -- [1]
 			"Liindsey-Kazzak", -- [2]
@@ -1738,7 +1540,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaLiindsey|r",
 			[51] = 1607085963,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [78]
+		}, -- [69]
 		{
 			"<Prestige Boosting> WTS @@ GOLD ONLY Boosting@@ >> M0 150k / Heroic 100k!  {Heroic Nathria Pre Bookings Available} {Torghast Layer 3 - 180k - 340k for both wings!! } /w for more info about boosting for us also!", -- [1]
 			"Droppediit-Kazzak", -- [2]
@@ -1760,7 +1562,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cDroppediit|r",
 			[51] = 1607085973,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [79]
+		}, -- [70]
 		{
 			"lf any guild", -- [1]
 			"Ricekrispies-Kazzak", -- [2]
@@ -1782,7 +1584,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Ricekrispies|r",
 			[51] = 1607085982,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [80]
+		}, -- [71]
 		{
 			"tank LF guild", -- [1]
 			"Varison-Kazzak", -- [2]
@@ -1804,7 +1606,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Varison|r",
 			[51] = 1607085993,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [81]
+		}, -- [72]
 		{
 			"WTS mythic 0 and heroic cheap price for gold acc gold in all realm wiss me for info /fast run / 8/8 mythic / discount for multi runs / lether plate mail stack ", -- [1]
 			"Resolution-Kazzak", -- [2]
@@ -1826,7 +1628,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Resolution|r",
 			[51] = 1607085996,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [82]
+		}, -- [73]
 		{
 			"HIRE ME as  a tank for NM/HC/ M0    <3 <3 <3 /w me ", -- [1]
 			"Jasmaya-Kazzak", -- [2]
@@ -1848,7 +1650,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Jasmaya|r",
 			[51] = 1607085999,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [83]
+		}, -- [74]
 		{
 			"WTB |cffa335ee|Hitem:172232::::::::60:250:::::::|h[Eternal Crystal]|h|r", -- [1]
 			"Gjore-Kazzak", -- [2]
@@ -1870,7 +1672,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Gjore|r",
 			[51] = 1607086001,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [84]
+		}, -- [75]
 		{
 			"PerfeCt Community< WTS Boost All Dungeons 8/8 Heroic And Mythic And torghast Layer 1-2-3  Full Run Only Gold /W for best Prices and Discounts", -- [1]
 			"Parsblood-Kazzak", -- [2]
@@ -1892,7 +1694,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Parsblood|r",
 			[51] = 1607086009,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [85]
+		}, -- [76]
 		{
 			"<Kazzakstan is greatest> Guild in the world... Jagshemash, Brand new guild recruiting, LF mostly dps but all roles are welcome, We will be aiming for cutting edge, Socials are also welcome, Raid: Wed/Thur/Mon 9-12pm RT /w me for more info chenqui", -- [1]
 			"Spanditree-Kazzak", -- [2]
@@ -1914,7 +1716,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Spanditree|r",
 			[51] = 1607086013,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [86]
+		}, -- [77]
 		{
 			"WTS <<HEROIC>> and <<MYTHIC0>> dungeons -- torghast tower layer 1/2/3 FAST AND FAIR PRICE!! /w for more info", -- [1]
 			"Liindsey-Kazzak", -- [2]
@@ -1936,7 +1738,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec6eaLiindsey|r",
 			[51] = 1607086013,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [87]
+		}, -- [78]
 		{
 			"<> S Y L V A N A S <> WTS >>((mythic 0 = 220k))<< + ARMOR STACK >>((You Get All Loot))<<oFFer>>((2XM0 420k))*((5xM0 880k))*((8xM0 1410K))>(heroic dungeons 125k)>[Castle Nathria] personal loot>Torghast>(First L=150k)*(second L=250k)*(Third L=350k)/W me", -- [1]
 			"Sylvasboost-Kazzak", -- [2]
@@ -1958,7 +1760,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Sylvasboost|r",
 			[51] = 1607086019,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [88]
+		}, -- [79]
 		{
 			"LFW |cffffd000|Htrade:Player-1305-05A56EB3:195119:165|h[Leatherworking]|h|r (ur mats) u will get 3k gold if u craft with me drxD", -- [1]
 			"Changingit-Kazzak", -- [2]
@@ -1980,7 +1782,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Changingit|r",
 			[51] = 1607086020,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [89]
+		}, -- [80]
 		{
 			"|cffffd000|Htrade:Player-1305-0BAADEA3:2259:171|h[Alchemy]|h|r LFW, Shadestone Transmute. My mats or yours", -- [1]
 			"Krond-Kazzak", -- [2]
@@ -2002,7 +1804,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Krond|r",
 			[51] = 1607086029,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [90]
+		}, -- [81]
 		{
 			"WTS Boost All Mythic &  All Heroic dungeon Whisper Me For Info", -- [1]
 			"Elfstylish-Kazzak", -- [2]
@@ -2024,7 +1826,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Elfstylish|r",
 			[51] = 1607086031,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [91]
+		}, -- [82]
 		{
 			"Want To Sell [WTS] All Mythic 0 - All Dungeons << HC <<< Very Good Price Right Now <<<<", -- [1]
 			"Vanqûish-Kazzak", -- [2]
@@ -2046,7 +1848,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Vanqûish|r",
 			[51] = 1607086033,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [92]
+		}, -- [83]
 		{
 			"[WTS] Fast Powerleveling to 60 lvl! Heroic & Mythic Dungeons, Renown Farm, Covenants, Torghast, Castle Nathria preorders and other Boosts. We have over 12886 Trustpilot reviews. Visit WowVendor.net for more info!", -- [1]
 			"Skrarn-Kazzak", -- [2]
@@ -2068,7 +1870,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cSkrarn|r",
 			[51] = 1607086037,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [93]
+		}, -- [84]
 		{
 			"< Nova Community > special Offering  For World Tour ( all Mythic 0 Dungeon  1.2M )  ||  Mythic 0 =200k / 2x M0 = 380k / 4x M0 = 740/ 6x M0 =1080k || Special || Torghast Layer 1: 70k / Layer 2: 170k / Layer 3 : 250k ) || Gold Only", -- [1]
 			"Novaservices-Kazzak", -- [2]
@@ -2090,7 +1892,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Novaservices|r",
 			[51] = 1607086040,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [94]
+		}, -- [85]
 		{
 			"< Torghast Boost >184 Prot Paladin boosting any layer! Layer 1 = 20k, Layer 2 = 35k, Layer 3 = 50k. Finished in 25 min average", -- [1]
 			"Torghaster-Kazzak", -- [2]
@@ -2112,7 +1914,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcTorghaster|r",
 			[51] = 1607086045,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [95]
+		}, -- [86]
 		{
 			"Sylvanas Community || M0 for 220k WITH ARMOR STACK || Heroic Run 125k ||   2xrun Mythic For  420k || 5xrun 880 || Torghast lvl 1 150k Lvl 2 250k  Lvl 3 350k ||[Castle Nathria] Raid HC  Wis me For more info about runs", -- [1]
 			"Hâmeddark-Kazzak", -- [2]
@@ -2134,7 +1936,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Hâmeddark|r",
 			[51] = 1607086045,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [96]
+		}, -- [87]
 		{
 			"<< SYLVANAS COMMUNITY >>  SELLING Mythic +0 = 220k ARMORSTACK + LOOT  || 2 Run=420k /    3 run =  595k   /   5 run = 880k  /  8 run = 1410k   / |cff71d5ff|Hspell:344659:0|h[Voracious Gorger]|h|r + Achiv 2.3M  /  Torghast  L1=150k --L2=250k /W info", -- [1]
 			"Seevda-Kazzak", -- [2]
@@ -2156,7 +1958,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Seevda|r",
 			[51] = 1607086052,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [97]
+		}, -- [88]
 		{
 			"WTS ( MYTHIC 110k) (HEROIC 50k) (NORMAL 25k) GP RDY +180 ilvl fast run /w me for info", -- [1]
 			"Servent-Kazzak", -- [2]
@@ -2178,7 +1980,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cServent|r",
 			[51] = 1607086068,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [98]
+		}, -- [89]
 		{
 			"<NOVA> Offering ||HC Dungeons =100k || and ||Mythic 0 =200k / 2x M0 = 380k , 4x M0 =740k , 6x M0 =1080k || Special offer for World Tour ( all Mythic 0 Dungeons  1.2M ) ||Torghast Layer1 : 70k / Layer 2 : 170k /layer3 : 250k  ) Gold only /w me for info", -- [1]
 			"Nbcjiraya-Kazzak", -- [2]
@@ -2199,6 +2001,204 @@ ElvCharacterDB = {
 			true, -- [17]
 			[52] = "|cfffef367Nbcjiraya|r",
 			[51] = 1607086082,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [90]
+		{
+			"<NOVA> Offering Castle Nathria HC 10/10 250k - Traders 110k / [<Mythic 10-20 In Time>] [+10 79k /+12 99k /+14 95k (110k Timed)/+15 180k (190k Timed)]  [<Keyston Master 1330K>][ArmorStack] / CN Mythic 10/10 7.7m - Trader/ PVP 2v2,3v3,RBG /w More!", -- [1]
+			"Novaalpa-Kazzak", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Novaalpa-Kazzak", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			151, -- [11]
+			"Player-1305-0BF3D623", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcNovaalpa|r",
+			[51] = 1620371250,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [91]
+		{
+			"<NOVA>  || M+15 intime = 190k || M+14 weekly = 95k || M+12 = 99k || 4xM+15= 684k || 4x M+12 = 356k || 4x M+10 = 284k ||  AREANA RATE || 8/8m+0 =280k || ( Castle Nathria Mythic ) Castle Nathria hc 250k||(  Keyston Master 1330k(guranteed time all keys )", -- [1]
+			"Novasuper-Kazzak", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Novasuper-Kazzak", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			152, -- [11]
+			"Player-1305-0BF80F61", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffef367Novasuper|r",
+			[51] = 1620371253,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [92]
+		{
+			"Boost PVP Conquest cap 12k max..15k honor cap//no ilvl req//get all of your 200 ilvl items fast//Boost rate push 0-1400..get combatant and upgrade your gears..cheap..whisper", -- [1]
+			"Plosamuraplq-Kazzak", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Plosamuraplq-Kazzak", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			154, -- [11]
+			"Player-1305-0BF93F1C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffef367Plosamuraplq|r",
+			[51] = 1620371259,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [93]
+		{
+			"< NOVA > is OFFERING || KSM 1330K |||| M+10 79K |||| M+12 99K|||| M+14 110K |||| M+15 190K |||| Multiple Run Free Stack And Discount |||| MYTHIC CASTLE |||| HC CASTLE 250K Trader 120K, 110K if multi trader |||| Thorghast boosts /w for info now!", -- [1]
+			"Novasodith-Kazzak", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Novasodith-Kazzak", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			155, -- [11]
+			"Player-1305-0BF208E9", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3ec6eaNovasodith|r",
+			[51] = 1620371260,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [94]
+		{
+			"WTS 7- 15 keys / ARMOR STACK / FAST RUN / LVLUP BOOST 50 TO 60 / Fair Price !!!", -- [1]
+			"Shamanlol-Kazzak", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Shamanlol-Kazzak", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			163, -- [11]
+			"Player-1305-0BC470CF", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcShamanlol|r",
+			[51] = 1620371292,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [95]
+		{
+			"<Icecrown> SELLING Mythic+ for Gold!  ||||||M+15=190k||||||  ||M+14=110k||  ||M+12=100k||  ||M+10=80k||! ~4X +15=750k~ |||| ~4x +14=400k~ |||| M0 - M+22 ||||Torghast Runs|||| Mythic Raid |||| PVP |||| /w me :)", -- [1]
+			"Iccria-Kazzak", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Iccria-Kazzak", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			166, -- [11]
+			"Player-1305-0BF49F75", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffefefeIccria|r",
+			[51] = 1620371296,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [96]
+		{
+			"WTB All CSGO/Dota2/Rust/TF2/Steam Items for Classic/Retail Gold go to trade-raid.com", -- [1]
+			"Tradedraids-Kazzak", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Tradedraids-Kazzak", -- [5]
+			"DND", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			168, -- [11]
+			"Player-1305-0BF68115", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcTradedraids|r",
+			[51] = 1620371301,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [97]
+		{
+			"Boost PVP Conquest cap 12k max..15k honor cap//no ilvl req//get all of your 200 ilvl items fast//Boost rate push 0-1400..get combatant and upgrade your gears..cheap..whisper", -- [1]
+			"Plosamuraplq-Kazzak", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Plosamuraplq-Kazzak", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			172, -- [11]
+			"Player-1305-0BF93F1C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffef367Plosamuraplq|r",
+			[51] = 1620371319,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [98]
+		{
+			"<NOVA> Offering Castle Nathria HC 10/10 250k - Traders 110k / [<Mythic 10-20 In Time>] [+10 79k /+12 99k /+14 95k (110k Timed)/+15 180k (190k Timed)]  [<Keyston Master 1330K>][ArmorStack] / CN Mythic 10/10 7.7m - Trader/ PVP 2v2,3v3,RBG /w More!", -- [1]
+			"Novaalpa-Kazzak", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Novaalpa-Kazzak", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			173, -- [11]
+			"Player-1305-0BF3D623", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcNovaalpa|r",
+			[51] = 1620371321,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [99]
 	},

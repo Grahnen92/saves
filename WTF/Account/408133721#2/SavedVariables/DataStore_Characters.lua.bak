@@ -1,0 +1,33 @@
+
+DataStore_CharactersDB = {
+	["profileKeys"] = {
+		["Bernardana - Ravencrest"] = "Bernardana - Ravencrest",
+	},
+	["global"] = {
+		["Characters"] = {
+			["Default.Ravencrest.Bernardana"] = {
+				["XPMax"] = 63985,
+				["played"] = 317647,
+				["playedThisLevel"] = 1434,
+				["isResting"] = false,
+				["lastUpdate"] = 1619957828,
+				["class"] = "Shaman",
+				["race"] = "Pandaren",
+				["level"] = 36,
+				["XP"] = 49606,
+				["realm"] = "Ravencrest",
+				["RestXP"] = 48762,
+				["money"] = 15845407,
+				["gender"] = 3,
+				["hearthstone"] = "Trade District",
+				["name"] = "Bernardana",
+				["subZone"] = "Abandoned Junkheap",
+				["faction"] = "Alliance",
+				["englishRace"] = "Pandaren",
+				["englishClass"] = "SHAMAN",
+				["lastLogoutTimestamp"] = 1619957828,
+				["zone"] = "Tiragarde Sound",
+			},
+		},
+	},
+}

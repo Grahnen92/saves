@@ -1,101 +1,56 @@
 
 DataStore_CraftsDB = {
 	["profileKeys"] = {
-		["Kêl - Defias Brotherhood"] = "Kêl - Defias Brotherhood",
-		["Thaler - Defias Brotherhood"] = "Thaler - Defias Brotherhood",
-		["Osa - Defias Brotherhood"] = "Osa - Defias Brotherhood",
-		["Gladwin - Ravencrest"] = "Gladwin - Ravencrest",
-		["Tzol - Defias Brotherhood"] = "Tzol - Defias Brotherhood",
-		["Ureg - Defias Brotherhood"] = "Ureg - Defias Brotherhood",
-		["Zuldo - Defias Brotherhood"] = "Zuldo - Defias Brotherhood",
-		["Cazh - Kazzak"] = "Cazh - Kazzak",
-		["Kodah - Defias Brotherhood"] = "Kodah - Defias Brotherhood",
-		["Prella - Defias Brotherhood"] = "Prella - Defias Brotherhood",
-		["Gladwin - Defias Brotherhood"] = "Gladwin - Defias Brotherhood",
-		["Ärlig - Ravencrest"] = "Ärlig - Ravencrest",
-		["Rekhyt - Vashj"] = "Rekhyt - Vashj",
-		["Mfgd - Defias Brotherhood"] = "Mfgd - Defias Brotherhood",
-		["Greve - Ravencrest"] = "Greve - Ravencrest",
-		["Venedict - Defias Brotherhood"] = "Venedict - Defias Brotherhood",
-		["Ored - Kazzak"] = "Ored - Kazzak",
-		["Gask - Ravencrest"] = "Gask - Ravencrest",
-		["Rektar - Defias Brotherhood"] = "Rektar - Defias Brotherhood",
-		["Träl - Defias Brotherhood"] = "Träl - Defias Brotherhood",
 		["Addled - Defias Brotherhood"] = "Addled - Defias Brotherhood",
-		["Gladwin - Kazzak"] = "Gladwin - Kazzak",
-		["Vidja - Ravencrest"] = "Vidja - Ravencrest",
+		["Osa - Defias Brotherhood"] = "Osa - Defias Brotherhood",
+		["Ösa - Defias Brotherhood"] = "Ösa - Defias Brotherhood",
+		["Ureg - Defias Brotherhood"] = "Ureg - Defias Brotherhood",
+		["Greve - Ravencrest"] = "Greve - Ravencrest",
+		["Rektar - Defias Brotherhood"] = "Rektar - Defias Brotherhood",
+		["Ored - Kazzak"] = "Ored - Kazzak",
 		["Odöde - Defias Brotherhood"] = "Odöde - Defias Brotherhood",
-		["Orek - Defias Brotherhood"] = "Orek - Defias Brotherhood",
+		["Gladwin - Kazzak"] = "Gladwin - Kazzak",
 		["Rever - Ravencrest"] = "Rever - Ravencrest",
 		["Grave - Vashj"] = "Grave - Vashj",
-		["Ödette - Defias Brotherhood"] = "Ödette - Defias Brotherhood",
 		["Dryda - Ravencrest"] = "Dryda - Ravencrest",
 		["Vite - Ravencrest"] = "Vite - Ravencrest",
-		["Ösa - Defias Brotherhood"] = "Ösa - Defias Brotherhood",
+		["Thaler - Defias Brotherhood"] = "Thaler - Defias Brotherhood",
+		["Gladwin - Ravencrest"] = "Gladwin - Ravencrest",
+		["Allvarg - Ravencrest"] = "Allvarg - Ravencrest",
+		["Zuldo - Defias Brotherhood"] = "Zuldo - Defias Brotherhood",
+		["Rekhyt - Vashj"] = "Rekhyt - Vashj",
+		["Gladwin - Defias Brotherhood"] = "Gladwin - Defias Brotherhood",
+		["Träl - Defias Brotherhood"] = "Träl - Defias Brotherhood",
+		["Ödette - Defias Brotherhood"] = "Ödette - Defias Brotherhood",
+		["Vidja - Ravencrest"] = "Vidja - Ravencrest",
+		["Cazh - Kazzak"] = "Cazh - Kazzak",
+		["Venedict - Defias Brotherhood"] = "Venedict - Defias Brotherhood",
+		["Mfgd - Defias Brotherhood"] = "Mfgd - Defias Brotherhood",
+		["Prella - Defias Brotherhood"] = "Prella - Defias Brotherhood",
+		["Orek - Defias Brotherhood"] = "Orek - Defias Brotherhood",
+		["Ärlig - Ravencrest"] = "Ärlig - Ravencrest",
+		["Gask - Ravencrest"] = "Gask - Ravencrest",
+		["Kodah - Defias Brotherhood"] = "Kodah - Defias Brotherhood",
+		["Tzol - Defias Brotherhood"] = "Tzol - Defias Brotherhood",
+		["Kêl - Defias Brotherhood"] = "Kêl - Defias Brotherhood",
+		["Dal - Ravencrest"] = "Dal - Ravencrest",
 	},
 	["global"] = {
 		["Characters"] = {
-			["Default.Ravencrest.Vidja"] = {
-				["Professions"] = {
-					["Herbalism"] = {
-						["CurrentLevelName"] = "Draenor Herbalism",
-					},
-					["Mining"] = {
-						["CurrentLevelName"] = "Legion Mining",
-					},
-				},
-				["Prof2"] = "Mining",
-				["lastUpdate"] = 1603345083,
-				["Prof1"] = "Herbalism",
-			},
-			["Default.Defias Brotherhood.Ureg"] = {
-				["ArcheologyItems"] = {
-					[86864] = true,
-					[86865] = true,
-					[89701] = true,
-					[88262] = true,
-					[88908] = true,
-					[93440] = true,
-					[93442] = true,
-					[93444] = true,
-					[89890] = true,
-					[88929] = true,
-				},
-				["Professions"] = {
-					["Cooking"] = {
-						["CurrentLevelName"] = "Legion Cooking",
-					},
-					["Herbalism"] = {
-						["CurrentLevelName"] = "Zandalari Herbalism",
-					},
-					["Archaeology"] = {
-						["MaxRank"] = 150,
-						["Rank"] = 100,
-					},
-					["Alchemy"] = {
-						["CurrentLevelName"] = "Zandalari Alchemy",
-					},
-				},
-				["Prof2"] = "Herbalism",
-				["lastUpdate"] = 1606418042,
-				["Prof1"] = "Alchemy",
-			},
 			["Default.Ravencrest.Ärlig"] = {
+				["lastUpdate"] = 1620290322,
+				["Prof2"] = "Herbalism",
 				["Professions"] = {
-					["Alchemy"] = {
-						["CurrentLevelName"] = "Kul Tiran Alchemy",
-					},
 					["Herbalism"] = {
 						["CurrentLevelName"] = "Kul Tiran Herbalism",
 					},
+					["Alchemy"] = {
+						["CurrentLevelName"] = "Kul Tiran Alchemy",
+					},
 				},
-				["Prof2"] = "Herbalism",
-				["lastUpdate"] = 1603345035,
 				["Prof1"] = "Alchemy",
 			},
 			["Default.Vashj.Rekhyt"] = {
-				["lastUpdate"] = 1603345239,
-				["Prof2"] = "Skinning",
 				["Professions"] = {
 					["Skinning"] = {
 						["CurrentLevelName"] = "Skinning",
@@ -104,55 +59,28 @@ DataStore_CraftsDB = {
 						["CurrentLevelName"] = "Leatherworking",
 					},
 				},
+				["Prof2"] = "Skinning",
+				["lastUpdate"] = 1603345239,
 				["Prof1"] = "Leatherworking",
 			},
-			["Default.Ravencrest.Gladwin"] = {
-				["lastUpdate"] = 1604951195,
-				["Prof2"] = "Enchanting",
-				["Professions"] = {
-					["Blacksmithing"] = {
-						["CurrentLevelName"] = "Kul Tiran Blacksmithing",
-					},
-					["Enchanting"] = {
-						["CurrentLevelName"] = "Kul Tiran Enchanting",
-					},
-				},
-				["Prof1"] = "Blacksmithing",
-			},
 			["Default.Defias Brotherhood.Träl"] = {
+				["lastUpdate"] = 1620672859,
+				["Prof2"] = "Herbalism",
 				["Professions"] = {
 					["Cooking"] = {
 						["CurrentLevelName"] = "Legion Cooking",
 					},
-					["Herbalism"] = {
-						["CurrentLevelName"] = "Zandalari Herbalism",
+					["Alchemy"] = {
+						["CurrentLevelName"] = "Zandalari Alchemy",
 					},
 					["Fishing"] = {
 						["CurrentLevelName"] = "Fishing",
 					},
-					["Alchemy"] = {
-						["CurrentLevelName"] = "Zandalari Alchemy",
+					["Herbalism"] = {
+						["CurrentLevelName"] = "Zandalari Herbalism",
 					},
 				},
-				["Prof2"] = "Herbalism",
-				["lastUpdate"] = 1606410121,
 				["Prof1"] = "Alchemy",
-			},
-			["Default.Kazzak.Cazh"] = {
-				["lastUpdate"] = 1603344920,
-				["Prof2"] = "Skinning",
-				["Professions"] = {
-					["Skinning"] = {
-						["CurrentLevelName"] = "Skinning",
-					},
-					["Leatherworking"] = {
-						["CurrentLevelName"] = "Leatherworking",
-					},
-				},
-				["Prof1"] = "Leatherworking",
-			},
-			["Default.Defias Brotherhood.Osa"] = {
-				["lastUpdate"] = 1604665882,
 			},
 			["Default.Defias Brotherhood.Orek"] = {
 				["ArcheologyItems"] = {
@@ -177,42 +105,18 @@ DataStore_CraftsDB = {
 					["Fishing"] = {
 						["CurrentLevelName"] = "Fishing",
 					},
-					["Engineering"] = {
-						["CurrentLevelName"] = "Legion Engineering",
-					},
 					["Alchemy"] = {
 						["CurrentLevelName"] = "Legion Alchemy",
 					},
+					["Engineering"] = {
+						["CurrentLevelName"] = "Legion Engineering",
+					},
 				},
 				["Prof2"] = "Engineering",
-				["lastUpdate"] = 1606403998,
+				["lastUpdate"] = 1620066923,
 				["Prof1"] = "Alchemy",
 			},
-			["Default.Kazzak.Ored"] = {
-				["lastUpdate"] = 1607082367,
-			},
-			["Default.Defias Brotherhood.Gladwin"] = {
-				["lastUpdate"] = 1603344724,
-				["Prof2"] = "Mining",
-				["Professions"] = {
-					["Blacksmithing"] = {
-						["CurrentLevelName"] = "Legion Blacksmithing",
-					},
-					["Mining"] = {
-						["CurrentLevelName"] = "Legion Mining",
-					},
-				},
-				["Prof1"] = "Blacksmithing",
-			},
-			["Default.Ravencrest.Rever"] = {
-				["lastUpdate"] = 1603345150,
-			},
-			["Default.Defias Brotherhood.Tzol"] = {
-				["lastUpdate"] = 1606932851,
-			},
 			["Default.Ravencrest.Gask"] = {
-				["lastUpdate"] = 1608926383,
-				["Prof2"] = "Jewelcrafting",
 				["Professions"] = {
 					["Jewelcrafting"] = {
 						["CurrentLevelName"] = "Jewelcrafting",
@@ -221,13 +125,29 @@ DataStore_CraftsDB = {
 						["CurrentLevelName"] = "Mining",
 					},
 				},
+				["Prof2"] = "Jewelcrafting",
+				["lastUpdate"] = 1608926383,
 				["Prof1"] = "Mining",
 			},
-			["Default.Defias Brotherhood.Thaler"] = {
-				["lastUpdate"] = 1615131099,
-			},
-			["Default.Defias Brotherhood.Mfgd"] = {
-				["lastUpdate"] = 1606932731,
+			["Default.Defias Brotherhood.Zuldo"] = {
+				["lastUpdate"] = 1604090329,
+				["Prof2"] = "Skinning",
+				["Professions"] = {
+					["Cooking"] = {
+						["CurrentLevelName"] = "Draenor Cooking",
+					},
+					["Leatherworking"] = {
+						["CurrentLevelName"] = "Draenor Leatherworking",
+					},
+					["Skinning"] = {
+						["CurrentLevelName"] = "Draenor Skinning",
+					},
+					["Archaeology"] = {
+						["MaxRank"] = 75,
+						["Rank"] = 1,
+					},
+				},
+				["Prof1"] = "Leatherworking",
 			},
 			["Default.Defias Brotherhood.Ösa"] = {
 				["lastUpdate"] = 1604650918,
@@ -235,116 +155,26 @@ DataStore_CraftsDB = {
 			["Default.Ravencrest.Greve"] = {
 				["lastUpdate"] = 1604988879,
 			},
-			["Default.Defias Brotherhood.Rektar"] = {
+			["Default.Ravencrest.Allvarg"] = {
 				["Professions"] = {
-					["Inscription"] = {
-						["CurrentLevelName"] = "Legion Inscription",
-					},
-					["Alchemy"] = {
-						["CurrentLevelName"] = "Legion Alchemy",
-					},
-					["Cooking"] = {
-						["CurrentLevelName"] = "Draenor Cooking",
-					},
-				},
-				["Prof2"] = "Inscription",
-				["lastUpdate"] = 1603344805,
-				["Prof1"] = "Alchemy",
-			},
-			["Default.Ravencrest.Vite"] = {
-				["lastUpdate"] = 1603345429,
-			},
-			["Default.Ravencrest.Dryda"] = {
-				["lastUpdate"] = 1603345170,
-				["Prof2"] = "Skinning",
-				["Professions"] = {
-					["Cooking"] = {
-						["CurrentLevelName"] = "Draenor Cooking",
-					},
-					["Leatherworking"] = {
-						["CurrentLevelName"] = "Draenor Leatherworking",
-					},
-					["Skinning"] = {
-						["CurrentLevelName"] = "Draenor Skinning",
-					},
-					["Archaeology"] = {
-						["MaxRank"] = 75,
-						["Rank"] = 1,
-					},
-				},
-				["Prof1"] = "Leatherworking",
-			},
-			["Default.Vashj.Grave"] = {
-				["Professions"] = {
-					["Cooking"] = {
-						["CurrentLevelName"] = "Northrend Cooking",
+					["Herbalism"] = {
+						["CurrentLevelName"] = "Herbalism",
 					},
 					["Mining"] = {
-						["CurrentLevelName"] = "Cataclysm Mining",
-					},
-					["Engineering"] = {
-						["CurrentLevelName"] = "Cataclysm Engineering",
-					},
-					["Fishing"] = {
-						["CurrentLevelName"] = "Fishing",
+						["CurrentLevelName"] = "Mining",
 					},
 				},
-				["Prof2"] = "Engineering",
-				["lastUpdate"] = 1603345217,
-				["Prof1"] = "Mining",
+				["Prof2"] = "Mining",
+				["lastUpdate"] = 1620765117,
+				["Prof1"] = "Herbalism",
 			},
-			["Default.Defias Brotherhood.Odöde"] = {
-				["lastUpdate"] = 1605125817,
-			},
-			["Default.Kazzak.Gladwin"] = {
-				["Professions"] = {
-					["Cooking"] = {
-						["CurrentLevelName"] = "Zandalari Cooking",
-					},
-					["Blacksmithing"] = {
-						["CurrentLevelName"] = "Shadowlands Blacksmithing",
-					},
-					["Archaeology"] = {
-						["MaxRank"] = 75,
-						["Rank"] = 10,
-					},
-					["Fishing"] = {
-						["CurrentLevelName"] = "Zandalari Fishing",
-					},
-					["Enchanting"] = {
-						["CurrentLevelName"] = "Shadowlands Enchanting",
-					},
-				},
-				["Prof2"] = "Enchanting",
-				["lastUpdate"] = 1610431140,
-				["Prof1"] = "Blacksmithing",
+			["Default.Defias Brotherhood.Tzol"] = {
+				["lastUpdate"] = 1606932851,
 			},
 			["Default.Defias Brotherhood.Prella"] = {
 				["lastUpdate"] = 1604484041,
 			},
-			["Default.Defias Brotherhood.Zuldo"] = {
-				["Professions"] = {
-					["Cooking"] = {
-						["CurrentLevelName"] = "Draenor Cooking",
-					},
-					["Leatherworking"] = {
-						["CurrentLevelName"] = "Draenor Leatherworking",
-					},
-					["Skinning"] = {
-						["CurrentLevelName"] = "Draenor Skinning",
-					},
-					["Archaeology"] = {
-						["MaxRank"] = 75,
-						["Rank"] = 1,
-					},
-				},
-				["Prof2"] = "Skinning",
-				["lastUpdate"] = 1604090329,
-				["Prof1"] = "Leatherworking",
-			},
 			["Default.Defias Brotherhood.Venedict"] = {
-				["lastUpdate"] = 1604499452,
-				["Prof2"] = "Enchanting",
 				["Professions"] = {
 					["Tailoring"] = {
 						["CurrentLevelName"] = "Draenor Tailoring",
@@ -359,6 +189,8 @@ DataStore_CraftsDB = {
 						["CurrentLevelName"] = "Draenor Enchanting",
 					},
 				},
+				["Prof2"] = "Enchanting",
+				["lastUpdate"] = 1604499452,
 				["Prof1"] = "Tailoring",
 			},
 			["Default.Defias Brotherhood.Addled"] = {
@@ -405,32 +237,32 @@ DataStore_CraftsDB = {
 					[88929] = true,
 					[139782] = true,
 					[90493] = true,
-					[90421] = true,
+					[93440] = true,
 					[89890] = true,
 					[98560] = true,
-					[90730] = true,
+					[91790] = true,
 					[86866] = true,
-					[86865] = true,
-					[90558] = true,
+					[98588] = true,
+					[88907] = true,
 					[89717] = true,
 					[90581] = true,
-					[90458] = true,
+					[86864] = true,
 					[139784] = true,
 					[90734] = true,
 					[90987] = true,
 					[113989] = true,
-					[90864] = true,
-					[91780] = true,
 					[88930] = true,
+					[91780] = true,
+					[90864] = true,
 					[89891] = true,
 					[139785] = true,
-					[86864] = true,
+					[90458] = true,
 					[90423] = true,
-					[88907] = true,
-					[98588] = true,
-					[91790] = true,
+					[90558] = true,
+					[86865] = true,
+					[90730] = true,
 					[89693] = true,
-					[93440] = true,
+					[90421] = true,
 				},
 				["Professions"] = {
 					["Cooking"] = {
@@ -443,37 +275,23 @@ DataStore_CraftsDB = {
 					["Fishing"] = {
 						["CurrentLevelName"] = "Draenor Fishing",
 					},
-					["Alchemy"] = {
-						["CurrentLevelName"] = "Kul Tiran Alchemy",
-					},
 					["Herbalism"] = {
 						["CurrentLevelName"] = "Kul Tiran Herbalism",
 					},
+					["Alchemy"] = {
+						["CurrentLevelName"] = "Kul Tiran Alchemy",
+					},
 				},
 				["Prof2"] = "Herbalism",
-				["lastUpdate"] = 1603344788,
+				["lastUpdate"] = 1620316124,
 				["Prof1"] = "Alchemy",
 			},
 			["Default.Defias Brotherhood.Ödette"] = {
 				["lastUpdate"] = 1604650192,
 			},
-			["Default.Defias Brotherhood.Kodah"] = {
-				["lastUpdate"] = 1608959130,
-				["Prof2"] = "Enchanting",
-				["Professions"] = {
-					["Alchemy"] = {
-						["CurrentLevelName"] = "Legion Alchemy",
-					},
-					["Cooking"] = {
-						["CurrentLevelName"] = "Legion Cooking",
-					},
-					["Enchanting"] = {
-						["CurrentLevelName"] = "Legion Enchanting",
-					},
-				},
-				["Prof1"] = "Alchemy",
-			},
 			["Default.Defias Brotherhood.Kêl"] = {
+				["lastUpdate"] = 1603344863,
+				["Prof2"] = "Mining",
 				["Professions"] = {
 					["Cooking"] = {
 						["CurrentLevelName"] = "Draenor Cooking",
@@ -485,45 +303,247 @@ DataStore_CraftsDB = {
 						["CurrentLevelName"] = "Pandaria Mining",
 					},
 				},
-				["Prof2"] = "Mining",
-				["lastUpdate"] = 1603344863,
 				["Prof1"] = "Blacksmithing",
+			},
+			["Default.Defias Brotherhood.Gladwin"] = {
+				["Professions"] = {
+					["Mining"] = {
+						["CurrentLevelName"] = "Legion Mining",
+					},
+					["Blacksmithing"] = {
+						["CurrentLevelName"] = "Legion Blacksmithing",
+					},
+				},
+				["Prof2"] = "Mining",
+				["lastUpdate"] = 1603344724,
+				["Prof1"] = "Blacksmithing",
+			},
+			["Default.Vashj.Grave"] = {
+				["lastUpdate"] = 1603345217,
+				["Prof2"] = "Engineering",
+				["Professions"] = {
+					["Cooking"] = {
+						["CurrentLevelName"] = "Northrend Cooking",
+					},
+					["Mining"] = {
+						["CurrentLevelName"] = "Cataclysm Mining",
+					},
+					["Fishing"] = {
+						["CurrentLevelName"] = "Fishing",
+					},
+					["Engineering"] = {
+						["CurrentLevelName"] = "Cataclysm Engineering",
+					},
+				},
+				["Prof1"] = "Mining",
+			},
+			["Default.Defias Brotherhood.Thaler"] = {
+				["lastUpdate"] = 1620466029,
+			},
+			["Default.Defias Brotherhood.Mfgd"] = {
+				["lastUpdate"] = 1606932731,
+			},
+			["Default.Ravencrest.Dryda"] = {
+				["Professions"] = {
+					["Cooking"] = {
+						["CurrentLevelName"] = "Draenor Cooking",
+					},
+					["Leatherworking"] = {
+						["CurrentLevelName"] = "Draenor Leatherworking",
+					},
+					["Archaeology"] = {
+						["MaxRank"] = 75,
+						["Rank"] = 1,
+					},
+					["Skinning"] = {
+						["CurrentLevelName"] = "Draenor Skinning",
+					},
+				},
+				["Prof2"] = "Skinning",
+				["lastUpdate"] = 1620466097,
+				["Prof1"] = "Leatherworking",
+			},
+			["Default.Defias Brotherhood.Rektar"] = {
+				["lastUpdate"] = 1603344805,
+				["Prof2"] = "Inscription",
+				["Professions"] = {
+					["Inscription"] = {
+						["CurrentLevelName"] = "Legion Inscription",
+					},
+					["Cooking"] = {
+						["CurrentLevelName"] = "Draenor Cooking",
+					},
+					["Alchemy"] = {
+						["CurrentLevelName"] = "Legion Alchemy",
+					},
+				},
+				["Prof1"] = "Alchemy",
+			},
+			["Default.Ravencrest.Vite"] = {
+				["lastUpdate"] = 1603345429,
+			},
+			["Default.Ravencrest.Vidja"] = {
+				["lastUpdate"] = 1616336756,
+				["Prof2"] = "Mining",
+				["Professions"] = {
+					["Herbalism"] = {
+						["CurrentLevelName"] = "Draenor Herbalism",
+					},
+					["Mining"] = {
+						["CurrentLevelName"] = "Legion Mining",
+					},
+				},
+				["Prof1"] = "Herbalism",
+			},
+			["Default.Defias Brotherhood.Ureg"] = {
+				["ArcheologyItems"] = {
+					[86864] = true,
+					[86865] = true,
+					[89701] = true,
+					[88262] = true,
+					[88908] = true,
+					[93440] = true,
+					[93442] = true,
+					[93444] = true,
+					[89890] = true,
+					[88929] = true,
+				},
+				["Professions"] = {
+					["Cooking"] = {
+						["CurrentLevelName"] = "Legion Cooking",
+					},
+					["Alchemy"] = {
+						["CurrentLevelName"] = "Zandalari Alchemy",
+					},
+					["Archaeology"] = {
+						["MaxRank"] = 150,
+						["Rank"] = 100,
+					},
+					["Herbalism"] = {
+						["CurrentLevelName"] = "Zandalari Herbalism",
+					},
+				},
+				["Prof2"] = "Herbalism",
+				["lastUpdate"] = 1620290286,
+				["Prof1"] = "Alchemy",
+			},
+			["Default.Defias Brotherhood.Odöde"] = {
+				["lastUpdate"] = 1605125817,
+			},
+			["Default.Kazzak.Gladwin"] = {
+				["lastUpdate"] = 1610431140,
+				["Prof2"] = "Enchanting",
+				["Professions"] = {
+					["Cooking"] = {
+						["CurrentLevelName"] = "Zandalari Cooking",
+					},
+					["Blacksmithing"] = {
+						["CurrentLevelName"] = "Shadowlands Blacksmithing",
+					},
+					["Archaeology"] = {
+						["MaxRank"] = 75,
+						["Rank"] = 10,
+					},
+					["Fishing"] = {
+						["CurrentLevelName"] = "Zandalari Fishing",
+					},
+					["Enchanting"] = {
+						["CurrentLevelName"] = "Shadowlands Enchanting",
+					},
+				},
+				["Prof1"] = "Blacksmithing",
+			},
+			["Default.Kazzak.Ored"] = {
+				["lastUpdate"] = 1620371241,
+			},
+			["Default.Ravencrest.Dal"] = {
+				["lastUpdate"] = 1620563582,
+			},
+			["Default.Defias Brotherhood.Osa"] = {
+				["lastUpdate"] = 1604665882,
+			},
+			["Default.Ravencrest.Rever"] = {
+				["lastUpdate"] = 1620373431,
+			},
+			["Default.Ravencrest.Gladwin"] = {
+				["Professions"] = {
+					["Blacksmithing"] = {
+						["CurrentLevelName"] = "Kul Tiran Blacksmithing",
+					},
+					["Enchanting"] = {
+						["CurrentLevelName"] = "Kul Tiran Enchanting",
+					},
+				},
+				["Prof2"] = "Enchanting",
+				["lastUpdate"] = 1620469622,
+				["Prof1"] = "Blacksmithing",
+			},
+			["Default.Defias Brotherhood.Kodah"] = {
+				["Professions"] = {
+					["Alchemy"] = {
+						["CurrentLevelName"] = "Legion Alchemy",
+					},
+					["Cooking"] = {
+						["CurrentLevelName"] = "Legion Cooking",
+					},
+					["Enchanting"] = {
+						["CurrentLevelName"] = "Legion Enchanting",
+					},
+				},
+				["Prof2"] = "Enchanting",
+				["lastUpdate"] = 1608959130,
+				["Prof1"] = "Alchemy",
+			},
+			["Default.Kazzak.Cazh"] = {
+				["Professions"] = {
+					["Skinning"] = {
+						["CurrentLevelName"] = "Skinning",
+					},
+					["Leatherworking"] = {
+						["CurrentLevelName"] = "Leatherworking",
+					},
+				},
+				["Prof2"] = "Skinning",
+				["lastUpdate"] = 1603344920,
+				["Prof1"] = "Leatherworking",
 			},
 		},
 	},
 }
 DataStore_CraftsRefDB = {
 	["profileKeys"] = {
-		["Kêl - Defias Brotherhood"] = "Kêl - Defias Brotherhood",
-		["Thaler - Defias Brotherhood"] = "Thaler - Defias Brotherhood",
-		["Osa - Defias Brotherhood"] = "Osa - Defias Brotherhood",
-		["Gladwin - Ravencrest"] = "Gladwin - Ravencrest",
-		["Tzol - Defias Brotherhood"] = "Tzol - Defias Brotherhood",
-		["Ureg - Defias Brotherhood"] = "Ureg - Defias Brotherhood",
-		["Zuldo - Defias Brotherhood"] = "Zuldo - Defias Brotherhood",
-		["Cazh - Kazzak"] = "Cazh - Kazzak",
-		["Kodah - Defias Brotherhood"] = "Kodah - Defias Brotherhood",
-		["Prella - Defias Brotherhood"] = "Prella - Defias Brotherhood",
-		["Gladwin - Defias Brotherhood"] = "Gladwin - Defias Brotherhood",
-		["Ärlig - Ravencrest"] = "Ärlig - Ravencrest",
-		["Rekhyt - Vashj"] = "Rekhyt - Vashj",
-		["Mfgd - Defias Brotherhood"] = "Mfgd - Defias Brotherhood",
-		["Greve - Ravencrest"] = "Greve - Ravencrest",
-		["Venedict - Defias Brotherhood"] = "Venedict - Defias Brotherhood",
-		["Ored - Kazzak"] = "Ored - Kazzak",
-		["Gask - Ravencrest"] = "Gask - Ravencrest",
-		["Rektar - Defias Brotherhood"] = "Rektar - Defias Brotherhood",
-		["Träl - Defias Brotherhood"] = "Träl - Defias Brotherhood",
 		["Addled - Defias Brotherhood"] = "Addled - Defias Brotherhood",
-		["Gladwin - Kazzak"] = "Gladwin - Kazzak",
-		["Vidja - Ravencrest"] = "Vidja - Ravencrest",
+		["Osa - Defias Brotherhood"] = "Osa - Defias Brotherhood",
+		["Ösa - Defias Brotherhood"] = "Ösa - Defias Brotherhood",
+		["Ureg - Defias Brotherhood"] = "Ureg - Defias Brotherhood",
+		["Greve - Ravencrest"] = "Greve - Ravencrest",
+		["Rektar - Defias Brotherhood"] = "Rektar - Defias Brotherhood",
+		["Ored - Kazzak"] = "Ored - Kazzak",
 		["Odöde - Defias Brotherhood"] = "Odöde - Defias Brotherhood",
-		["Orek - Defias Brotherhood"] = "Orek - Defias Brotherhood",
+		["Gladwin - Kazzak"] = "Gladwin - Kazzak",
 		["Rever - Ravencrest"] = "Rever - Ravencrest",
 		["Grave - Vashj"] = "Grave - Vashj",
-		["Ödette - Defias Brotherhood"] = "Ödette - Defias Brotherhood",
 		["Dryda - Ravencrest"] = "Dryda - Ravencrest",
 		["Vite - Ravencrest"] = "Vite - Ravencrest",
-		["Ösa - Defias Brotherhood"] = "Ösa - Defias Brotherhood",
+		["Thaler - Defias Brotherhood"] = "Thaler - Defias Brotherhood",
+		["Gladwin - Ravencrest"] = "Gladwin - Ravencrest",
+		["Allvarg - Ravencrest"] = "Allvarg - Ravencrest",
+		["Zuldo - Defias Brotherhood"] = "Zuldo - Defias Brotherhood",
+		["Rekhyt - Vashj"] = "Rekhyt - Vashj",
+		["Gladwin - Defias Brotherhood"] = "Gladwin - Defias Brotherhood",
+		["Träl - Defias Brotherhood"] = "Träl - Defias Brotherhood",
+		["Ödette - Defias Brotherhood"] = "Ödette - Defias Brotherhood",
+		["Vidja - Ravencrest"] = "Vidja - Ravencrest",
+		["Cazh - Kazzak"] = "Cazh - Kazzak",
+		["Venedict - Defias Brotherhood"] = "Venedict - Defias Brotherhood",
+		["Mfgd - Defias Brotherhood"] = "Mfgd - Defias Brotherhood",
+		["Prella - Defias Brotherhood"] = "Prella - Defias Brotherhood",
+		["Orek - Defias Brotherhood"] = "Orek - Defias Brotherhood",
+		["Ärlig - Ravencrest"] = "Ärlig - Ravencrest",
+		["Gask - Ravencrest"] = "Gask - Ravencrest",
+		["Kodah - Defias Brotherhood"] = "Kodah - Defias Brotherhood",
+		["Tzol - Defias Brotherhood"] = "Tzol - Defias Brotherhood",
+		["Kêl - Defias Brotherhood"] = "Kêl - Defias Brotherhood",
+		["Dal - Ravencrest"] = "Dal - Ravencrest",
 	},
 }

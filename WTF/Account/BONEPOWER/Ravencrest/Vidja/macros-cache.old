@@ -1,0 +1,4 @@
+VER 3 0100000000000001 "Kill Command" "457329"
+#showtooltip
+/cast [@pettarget,harm,nodead] [] Kill Command
+END

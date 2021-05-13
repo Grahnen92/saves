@@ -2,753 +2,27 @@
 ElvCharacterDB = {
 	["ChatEditHistory"] = {
 		" hc?", -- [1]
-		"vill testa igen", -- [2]
-		"och är ju kul å tjöta med gamla wow polare under release! kolla nya grejjer", -- [3]
-		"testar rogue", -- [4]
-		"Som sagt, jag tänker inte pressa stenhårt. Siktar på att hitta ett gäng att raida med, men äre inget kul så är de ju bara sluta", -- [5]
-		"sad but true", -- [6]
-		"Om man ska raida är det nog som du säger", -- [7]
-		"ska bli kul å casuala med is å jonil", -- [8]
-		"/reload", -- [9]
-		"hc?", -- [10]
-		"jag tänker definitivt försöka raida eftersom de va så länge sen", -- [11]
-		"jag tkr det är kul so far", -- [12]
-		"vad händer?", -- [13]
-		"jepp", -- [14]
-		"/wa", -- [15]
-		"tråkit att pressa upp på egen hand", -- [16]
-		"hehe märker det ^^", -- [17]
-		"/ec", -- [18]
-		"haha <3", -- [19]
-		"/roar", -- [20]
+		"sad but true", -- [2]
+		"jag tkr det är kul so far", -- [3]
+		"jag tänker definitivt försöka raida eftersom de va så länge sen", -- [4]
+		"testar rogue", -- [5]
+		"/ec", -- [6]
+		"/roar", -- [7]
+		"Om man ska raida är det nog som du säger", -- [8]
+		"och är ju kul å tjöta med gamla wow polare under release! kolla nya grejjer", -- [9]
+		"/wa", -- [10]
+		"vad händer?", -- [11]
+		"/reload", -- [12]
+		"ska bli kul å casuala med is å jonil", -- [13]
+		"hehe märker det ^^", -- [14]
+		"tråkit att pressa upp på egen hand", -- [15]
+		"jepp", -- [16]
+		"Som sagt, jag tänker inte pressa stenhårt. Siktar på att hitta ett gäng att raida med, men äre inget kul så är de ju bara sluta", -- [17]
+		"hc?", -- [18]
+		"vill testa igen", -- [19]
+		"haha <3", -- [20]
 	},
 	["ChatHistoryLog"] = {
-		{
-			"shamans were never popular", -- [1]
-			"Othiel-Ragnaros", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Othiel-Ragnaros", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			14802, -- [11]
-			"Player-3682-0854B582", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff48cbaOthiel-Ragnaros|r",
-			[51] = 1513502724,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [1]
-		{
-			"ez and fun", -- [1]
-			"Aakke-Khadgar", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Aakke-Khadgar", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			14859, -- [11]
-			"Player-1080-00E9E870", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffAakke-Khadgar|r",
-			[51] = 1513503165,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [2]
-		{
-			"none of us died", -- [1]
-			"Ulcsham-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Ulcsham-Draenor", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			14862, -- [11]
-			"Player-1403-06B41AEF", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff0070ddUlcsham-Draenor|r",
-			[51] = 1513503182,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [3]
-		{
-			"the year of the shammy ", -- [1]
-			"Reinstorm-TarrenMill", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Reinstorm-TarrenMill", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			14875, -- [11]
-			"Player-1084-08480057", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff0070ddReinstorm-TarrenMill|r",
-			[51] = 1513503189,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [4]
-		{
-			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Val'sharah", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Val'sharah", -- [9]
-			0, -- [10]
-			14886, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1513503213,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [5]
-		{
-			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Val'sharah", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Val'sharah", -- [9]
-			0, -- [10]
-			14898, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1513503278,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [6]
-		{
-			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Val'sharah", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Val'sharah", -- [9]
-			0, -- [10]
-			14899, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1513503340,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [7]
-		{
-			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Val'sharah", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Val'sharah", -- [9]
-			0, -- [10]
-			14900, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1513503409,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [8]
-		{
-			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Val'sharah", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Val'sharah", -- [9]
-			0, -- [10]
-			14901, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1513503505,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [9]
-		{
-			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Val'sharah", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Val'sharah", -- [9]
-			0, -- [10]
-			14903, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1513503583,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [10]
-		{
-			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Val'sharah", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Val'sharah", -- [9]
-			0, -- [10]
-			14904, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1513503653,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [11]
-		{
-			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Val'sharah", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Val'sharah", -- [9]
-			0, -- [10]
-			14905, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1513503765,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [12]
-		{
-			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Val'sharah", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Val'sharah", -- [9]
-			0, -- [10]
-			14906, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1513503877,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [13]
-		{
-			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Val'sharah", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Val'sharah", -- [9]
-			0, -- [10]
-			14907, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1513503948,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [14]
-		{
-			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Val'sharah", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Val'sharah", -- [9]
-			0, -- [10]
-			14908, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1513504008,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [15]
-		{
-			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Val'sharah", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Val'sharah", -- [9]
-			0, -- [10]
-			14909, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1513504068,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [16]
-		{
-			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Val'sharah", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Val'sharah", -- [9]
-			0, -- [10]
-			14910, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1513504136,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [17]
-		{
-			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Val'sharah", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Val'sharah", -- [9]
-			0, -- [10]
-			14911, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1513504197,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [18]
-		{
-			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Val'sharah", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Val'sharah", -- [9]
-			0, -- [10]
-			14912, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1513504273,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [19]
-		{
-			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Val'sharah", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Val'sharah", -- [9]
-			0, -- [10]
-			14913, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1513504333,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [20]
-		{
-			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Val'sharah", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Val'sharah", -- [9]
-			0, -- [10]
-			14914, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1513504395,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [21]
-		{
-			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Val'sharah", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Val'sharah", -- [9]
-			0, -- [10]
-			14915, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1513504455,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [22]
-		{
-			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Val'sharah", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Val'sharah", -- [9]
-			0, -- [10]
-			14916, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1513504529,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [23]
-		{
-			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Val'sharah", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Val'sharah", -- [9]
-			0, -- [10]
-			14918, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1513504594,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [24]
-		{
-			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Val'sharah", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Val'sharah", -- [9]
-			0, -- [10]
-			14919, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1513504659,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [25]
-		{
-			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Val'sharah", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Val'sharah", -- [9]
-			0, -- [10]
-			14920, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1513504726,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [26]
-		{
-			"|cffffff00Starstalker's Point is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Val'sharah", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Val'sharah", -- [9]
-			0, -- [10]
-			14921, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1513504786,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [27]
-		{
-			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Val'sharah", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Val'sharah", -- [9]
-			0, -- [10]
-			136, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1513889661,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [28]
-		{
-			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Val'sharah", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Val'sharah", -- [9]
-			0, -- [10]
-			137, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1513889721,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [29]
-		{
-			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Val'sharah", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Val'sharah", -- [9]
-			0, -- [10]
-			142, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1513889796,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [30]
-		{
-			"Just a fun guild looking to get more active, come join the banter, also have Discord/teamspeak 3 if you want to join", -- [1]
-			"Fumico-Ravenholdt", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Fumico-Ravenholdt", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			177, -- [11]
-			"Player-1096-07348B9A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff48cbaFumico-Ravenholdt|r",
-			[51] = 1513890400,
-			[50] = "CHAT_MSG_WHISPER",
-		}, -- [31]
-		{
-			"inc mine", -- [1]
-			"Olitivia-Genjuros", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Olitivia-Genjuros", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			69, -- [11]
-			"Player-3660-060D6A7D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffOlitivia-Genjuros|r",
-			[51] = 1514055101,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [32]
-		{
-			"mine ok", -- [1]
-			"Olitivia-Genjuros", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Olitivia-Genjuros", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			70, -- [11]
-			"Player-3660-060D6A7D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffOlitivia-Genjuros|r",
-			[51] = 1514055113,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [33]
 		{
 			"aoe lh flag", -- [1]
 			"Bujtar-Stormreaver", -- [2]
@@ -770,7 +44,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edBujtar-Stormreaver|r",
 			[51] = 1514055125,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [34]
+		}, -- [1]
 		{
 			"we are inc", -- [1]
 			"Bujtar-Stormreaver", -- [2]
@@ -792,7 +66,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edBujtar-Stormreaver|r",
 			[51] = 1514055126,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [35]
+		}, -- [2]
 		{
 			"mines", -- [1]
 			"Harkoop-AzjolNerub", -- [2]
@@ -814,7 +88,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Harkoop-AzjolNerub|r",
 			[51] = 1514055158,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [36]
+		}, -- [3]
 		{
 			"mines safe", -- [1]
 			"Harkoop-AzjolNerub", -- [2]
@@ -836,7 +110,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Harkoop-AzjolNerub|r",
 			[51] = 1514055191,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [37]
+		}, -- [4]
 		{
 			"dj evryone", -- [1]
 			"Dkarthas-Kazzak", -- [2]
@@ -858,7 +132,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aDkarthas-Kazzak|r",
 			[51] = 1514055421,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [38]
+		}, -- [5]
 		{
 			"gj", -- [1]
 			"Dkarthas-Kazzak", -- [2]
@@ -880,7 +154,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aDkarthas-Kazzak|r",
 			[51] = 1514055426,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [39]
+		}, -- [6]
 		{
 			"come top", -- [1]
 			"Aversión-Kazzak", -- [2]
@@ -902,7 +176,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aAversión-Kazzak|r",
 			[51] = 1514096881,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [40]
+		}, -- [7]
 		{
 			"idiot team", -- [1]
 			"Aversión-Kazzak", -- [2]
@@ -924,7 +198,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aAversión-Kazzak|r",
 			[51] = 1514096984,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [41]
+		}, -- [8]
 		{
 			"!@#$ u", -- [1]
 			"Glacierz-DefiasBrotherhood", -- [2]
@@ -946,7 +220,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaGlacierz|r",
 			[51] = 1514097033,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [42]
+		}, -- [9]
 		{
 			"BET INC", -- [1]
 			"Deathfather-Kazzak", -- [2]
@@ -968,7 +242,7 @@ ElvCharacterDB = {
 			[52] = "|cfffff468Deathfather-Kazzak|r",
 			[51] = 1514193086,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [43]
+		}, -- [10]
 		{
 			"incs fr", -- [1]
 			"Lewan-ArgentDawn", -- [2]
@@ -990,7 +264,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaLewan-ArgentDawn|r",
 			[51] = 1514193236,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [44]
+		}, -- [11]
 		{
 			"FR", -- [1]
 			"Lewan-ArgentDawn", -- [2]
@@ -1012,7 +286,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaLewan-ArgentDawn|r",
 			[51] = 1514193246,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [45]
+		}, -- [12]
 		{
 			"3 at fr", -- [1]
 			"Deathfather-Kazzak", -- [2]
@@ -1034,7 +308,7 @@ ElvCharacterDB = {
 			[52] = "|cfffff468Deathfather-Kazzak|r",
 			[51] = 1514193292,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [46]
+		}, -- [13]
 		{
 			"4", -- [1]
 			"Deathfather-Kazzak", -- [2]
@@ -1056,7 +330,7 @@ ElvCharacterDB = {
 			[52] = "|cfffff468Deathfather-Kazzak|r",
 			[51] = 1514193292,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [47]
+		}, -- [14]
 		{
 			"help mage tower", -- [1]
 			"Lewan-ArgentDawn", -- [2]
@@ -1078,7 +352,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaLewan-ArgentDawn|r",
 			[51] = 1514193327,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [48]
+		}, -- [15]
 		{
 			"get another tower", -- [1]
 			"Lewan-ArgentDawn", -- [2]
@@ -1100,7 +374,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaLewan-ArgentDawn|r",
 			[51] = 1514193375,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [49]
+		}, -- [16]
 		{
 			"dont cap", -- [1]
 			"Weedflickan-TwistingNether", -- [2]
@@ -1122,7 +396,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aWeedflickan-TwistingNether|r",
 			[51] = 1514193398,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [50]
+		}, -- [17]
 		{
 			"get mid", -- [1]
 			"Lewan-ArgentDawn", -- [2]
@@ -1144,7 +418,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaLewan-ArgentDawn|r",
 			[51] = 1514193403,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [51]
+		}, -- [18]
 		{
 			"Someone defend F", -- [1]
 			"Lewan-ArgentDawn", -- [2]
@@ -1166,7 +440,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaLewan-ArgentDawn|r",
 			[51] = 1514193435,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [52]
+		}, -- [19]
 		{
 			"watch FRR", -- [1]
 			"Deathfather-Kazzak", -- [2]
@@ -1188,7 +462,7 @@ ElvCharacterDB = {
 			[52] = "|cfffff468Deathfather-Kazzak|r",
 			[51] = 1514193444,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [53]
+		}, -- [20]
 		{
 			"FR", -- [1]
 			"Lewan-ArgentDawn", -- [2]
@@ -1210,7 +484,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaLewan-ArgentDawn|r",
 			[51] = 1514193445,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [54]
+		}, -- [21]
 		{
 			"inc FRR", -- [1]
 			"Deathfather-Kazzak", -- [2]
@@ -1232,7 +506,7 @@ ElvCharacterDB = {
 			[52] = "|cfffff468Deathfather-Kazzak|r",
 			[51] = 1514193450,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [55]
+		}, -- [22]
 		{
 			"GO FR SOMEONE ", -- [1]
 			"Lewan-ArgentDawn", -- [2]
@@ -1254,7 +528,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaLewan-ArgentDawn|r",
 			[51] = 1514193461,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [56]
+		}, -- [23]
 		{
 			"cap", -- [1]
 			"Weedflickan-TwistingNether", -- [2]
@@ -1276,7 +550,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aWeedflickan-TwistingNether|r",
 			[51] = 1514193464,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [57]
+		}, -- [24]
 		{
 			"BET", -- [1]
 			"Deathfather-Kazzak", -- [2]
@@ -1298,7 +572,7 @@ ElvCharacterDB = {
 			[52] = "|cfffff468Deathfather-Kazzak|r",
 			[51] = 1514193517,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [58]
+		}, -- [25]
 		{
 			"get another tower", -- [1]
 			"Lewan-ArgentDawn", -- [2]
@@ -1320,7 +594,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaLewan-ArgentDawn|r",
 			[51] = 1514193580,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [59]
+		}, -- [26]
 		{
 			"fr", -- [1]
 			"Lewan-ArgentDawn", -- [2]
@@ -1342,7 +616,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaLewan-ArgentDawn|r",
 			[51] = 1514193655,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [60]
+		}, -- [27]
 		{
 			"FR", -- [1]
 			"Lewan-ArgentDawn", -- [2]
@@ -1364,7 +638,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaLewan-ArgentDawn|r",
 			[51] = 1514193674,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [61]
+		}, -- [28]
 		{
 			"good", -- [1]
 			"Lewan-ArgentDawn", -- [2]
@@ -1386,7 +660,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaLewan-ArgentDawn|r",
 			[51] = 1514193697,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [62]
+		}, -- [29]
 		{
 			"dont cap", -- [1]
 			"Lewan-ArgentDawn", -- [2]
@@ -1408,7 +682,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaLewan-ArgentDawn|r",
 			[51] = 1514193720,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [63]
+		}, -- [30]
 		{
 			"get mid", -- [1]
 			"Lewan-ArgentDawn", -- [2]
@@ -1430,7 +704,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaLewan-ArgentDawn|r",
 			[51] = 1514193724,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [64]
+		}, -- [31]
 		{
 			"Howdy mortal!:D Sorry for interrupting, i'll keep it short. I couldn't help but to notice that you're not in a guild so I was wondering if you were looking for one? If so we can chat about the active PVE/P community <Sparta> to see if it suits you. Boss ~", -- [1]
 			"Boss", -- [2]
@@ -1452,7 +726,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Boss|r",
 			[51] = 1514355988,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [65]
+		}, -- [32]
 		{
 			"invite", -- [1]
 			"|Kf22|k00000|k", -- [2]
@@ -1475,7 +749,7 @@ ElvCharacterDB = {
 			[51] = 1534446592,
 			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
 			[53] = "isafo",
-		}, -- [66]
+		}, -- [33]
 		{
 			"have the wanted q?", -- [1]
 			"Addled-DefiasBrotherhood", -- [2]
@@ -1497,7 +771,7 @@ ElvCharacterDB = {
 			[52] = "|cfffff468Addled|r",
 			[51] = 1534491731,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [67]
+		}, -- [34]
 		{
 			"thanks :)", -- [1]
 			"Addled-DefiasBrotherhood", -- [2]
@@ -1519,7 +793,7 @@ ElvCharacterDB = {
 			[52] = "|cfffff468Addled|r",
 			[51] = 1534491815,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [68]
+		}, -- [35]
 		{
 			"yoyo", -- [1]
 			"|Kf2|k00000|k", -- [2]
@@ -1542,7 +816,7 @@ ElvCharacterDB = {
 			[51] = 1534495818,
 			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
 			[53] = "tiger",
-		}, -- [69]
+		}, -- [36]
 		{
 			"vad händer?", -- [1]
 			"|Kf2|k00000|k", -- [2]
@@ -1565,7 +839,7 @@ ElvCharacterDB = {
 			[51] = 1534495821,
 			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
 			[53] = "tiger",
-		}, -- [70]
+		}, -- [37]
 		{
 			"gör wqs", -- [1]
 			"|Kf2|k00000|k", -- [2]
@@ -1588,7 +862,7 @@ ElvCharacterDB = {
 			[51] = 1534495834,
 			[50] = "CHAT_MSG_BN_WHISPER",
 			[53] = "tiger",
-		}, -- [71]
+		}, -- [38]
 		{
 			"okok", -- [1]
 			"|Kf2|k00000|k", -- [2]
@@ -1611,7 +885,7 @@ ElvCharacterDB = {
 			[51] = 1534495852,
 			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
 			[53] = "tiger",
-		}, -- [72]
+		}, -- [39]
 		{
 			"du då?", -- [1]
 			"|Kf2|k00000|k", -- [2]
@@ -1634,7 +908,7 @@ ElvCharacterDB = {
 			[51] = 1534495915,
 			[50] = "CHAT_MSG_BN_WHISPER",
 			[53] = "tiger",
-		}, -- [73]
+		}, -- [40]
 		{
 			"levlar ny?", -- [1]
 			"|Kf2|k00000|k", -- [2]
@@ -1657,7 +931,7 @@ ElvCharacterDB = {
 			[51] = 1534495919,
 			[50] = "CHAT_MSG_BN_WHISPER",
 			[53] = "tiger",
-		}, -- [74]
+		}, -- [41]
 		{
 			"testar rogue", -- [1]
 			"|Kf2|k00000|k", -- [2]
@@ -1680,7 +954,7 @@ ElvCharacterDB = {
 			[51] = 1534495927,
 			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
 			[53] = "tiger",
-		}, -- [75]
+		}, -- [42]
 		{
 			"ah k", -- [1]
 			"|Kf2|k00000|k", -- [2]
@@ -1703,7 +977,7 @@ ElvCharacterDB = {
 			[51] = 1534495933,
 			[50] = "CHAT_MSG_BN_WHISPER",
 			[53] = "tiger",
-		}, -- [76]
+		}, -- [43]
 		{
 			"äre mythics idag?", -- [1]
 			"|Kf2|k00000|k", -- [2]
@@ -1726,7 +1000,7 @@ ElvCharacterDB = {
 			[51] = 1534495944,
 			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
 			[53] = "tiger",
-		}, -- [77]
+		}, -- [44]
 		{
 			"mm kan vi nog sikta på", -- [1]
 			"|Kf2|k00000|k", -- [2]
@@ -1749,7 +1023,7 @@ ElvCharacterDB = {
 			[51] = 1534495950,
 			[50] = "CHAT_MSG_BN_WHISPER",
 			[53] = "tiger",
-		}, -- [78]
+		}, -- [45]
 		{
 			"är det värt att lägga tid på det här spelet? är det värd tid till entertainment trade-off?", -- [1]
 			"|Kf2|k00000|k", -- [2]
@@ -1772,7 +1046,7 @@ ElvCharacterDB = {
 			[51] = 1534528917,
 			[50] = "CHAT_MSG_BN_WHISPER",
 			[53] = "tiger",
-		}, -- [79]
+		}, -- [46]
 		{
 			"haha <3", -- [1]
 			"|Kf2|k00000|k", -- [2]
@@ -1795,7 +1069,7 @@ ElvCharacterDB = {
 			[51] = 1534529090,
 			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
 			[53] = "tiger",
-		}, -- [80]
+		}, -- [47]
 		{
 			"bra fråga", -- [1]
 			"|Kf2|k00000|k", -- [2]
@@ -1818,7 +1092,7 @@ ElvCharacterDB = {
 			[51] = 1534529096,
 			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
 			[53] = "tiger",
-		}, -- [81]
+		}, -- [48]
 		{
 			"jag tkr det är kul so far", -- [1]
 			"|Kf2|k00000|k", -- [2]
@@ -1841,7 +1115,7 @@ ElvCharacterDB = {
 			[51] = 1534529122,
 			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
 			[53] = "tiger",
-		}, -- [82]
+		}, -- [49]
 		{
 			"men fårse hur hårt jag pressar", -- [1]
 			"|Kf2|k00000|k", -- [2]
@@ -1864,7 +1138,7 @@ ElvCharacterDB = {
 			[51] = 1534529137,
 			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
 			[53] = "tiger",
-		}, -- [83]
+		}, -- [50]
 		{
 			"Om man ska raida är det nog som du säger", -- [1]
 			"|Kf2|k00000|k", -- [2]
@@ -1887,7 +1161,7 @@ ElvCharacterDB = {
 			[51] = 1534529163,
 			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
 			[53] = "tiger",
-		}, -- [84]
+		}, -- [51]
 		{
 			"man måste hitta ett gäng man trivs med", -- [1]
 			"|Kf2|k00000|k", -- [2]
@@ -1910,7 +1184,7 @@ ElvCharacterDB = {
 			[51] = 1534529169,
 			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
 			[53] = "tiger",
-		}, -- [85]
+		}, -- [52]
 		{
 			"tråkit att pressa upp på egen hand", -- [1]
 			"|Kf2|k00000|k", -- [2]
@@ -1933,7 +1207,7 @@ ElvCharacterDB = {
 			[51] = 1534529199,
 			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
 			[53] = "tiger",
-		}, -- [86]
+		}, -- [53]
 		{
 			"jag tänker definitivt försöka raida eftersom de va så länge sen", -- [1]
 			"|Kf2|k00000|k", -- [2]
@@ -1956,7 +1230,7 @@ ElvCharacterDB = {
 			[51] = 1534529218,
 			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
 			[53] = "tiger",
-		}, -- [87]
+		}, -- [54]
 		{
 			"vill testa igen", -- [1]
 			"|Kf2|k00000|k", -- [2]
@@ -1979,7 +1253,7 @@ ElvCharacterDB = {
 			[51] = 1534529227,
 			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
 			[53] = "tiger",
-		}, -- [88]
+		}, -- [55]
 		{
 			"mm", -- [1]
 			"|Kf2|k00000|k", -- [2]
@@ -2002,7 +1276,7 @@ ElvCharacterDB = {
 			[51] = 1534529324,
 			[50] = "CHAT_MSG_BN_WHISPER",
 			[53] = "tiger",
-		}, -- [89]
+		}, -- [56]
 		{
 			"jag blir fundersam och velig när jag haft ett helt gäng att spela med och nu har alla lagt av typ", -- [1]
 			"|Kf2|k00000|k", -- [2]
@@ -2025,7 +1299,7 @@ ElvCharacterDB = {
 			[51] = 1534529348,
 			[50] = "CHAT_MSG_BN_WHISPER",
 			[53] = "tiger",
-		}, -- [90]
+		}, -- [57]
 		{
 			"och jag vet inte om spelet i sig är så pass kul att jag vill spela även om jag är själv", -- [1]
 			"|Kf2|k00000|k", -- [2]
@@ -2048,7 +1322,7 @@ ElvCharacterDB = {
 			[51] = 1534529365,
 			[50] = "CHAT_MSG_BN_WHISPER",
 			[53] = "tiger",
-		}, -- [91]
+		}, -- [58]
 		{
 			"hade jag haft 0 polare som spelade hade jag aldrig ens tänkt tanken", -- [1]
 			"|Kf2|k00000|k", -- [2]
@@ -2071,7 +1345,7 @@ ElvCharacterDB = {
 			[51] = 1534529376,
 			[50] = "CHAT_MSG_BN_WHISPER",
 			[53] = "tiger",
-		}, -- [92]
+		}, -- [59]
 		{
 			"jepp", -- [1]
 			"|Kf2|k00000|k", -- [2]
@@ -2094,7 +1368,7 @@ ElvCharacterDB = {
 			[51] = 1534529396,
 			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
 			[53] = "tiger",
-		}, -- [93]
+		}, -- [60]
 		{
 			"man blir lurad av att massa polare spelar på release men ingen tänker raida typ... om 1 månag har antagligen 90% lagt av igen", -- [1]
 			"|Kf2|k00000|k", -- [2]
@@ -2117,7 +1391,7 @@ ElvCharacterDB = {
 			[51] = 1534529397,
 			[50] = "CHAT_MSG_BN_WHISPER",
 			[53] = "tiger",
-		}, -- [94]
+		}, -- [61]
 		{
 			"jepp", -- [1]
 			"|Kf2|k00000|k", -- [2]
@@ -2140,7 +1414,7 @@ ElvCharacterDB = {
 			[51] = 1534529425,
 			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
 			[53] = "tiger",
-		}, -- [95]
+		}, -- [62]
 		{
 			"sad but true", -- [1]
 			"|Kf2|k00000|k", -- [2]
@@ -2163,7 +1437,7 @@ ElvCharacterDB = {
 			[51] = 1534529448,
 			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
 			[53] = "tiger",
-		}, -- [96]
+		}, -- [63]
 		{
 			"Som sagt, jag tänker inte pressa stenhårt. Siktar på att hitta ett gäng att raida med, men äre inget kul så är de ju bara sluta", -- [1]
 			"|Kf2|k00000|k", -- [2]
@@ -2186,7 +1460,7 @@ ElvCharacterDB = {
 			[51] = 1534529551,
 			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
 			[53] = "tiger",
-		}, -- [97]
+		}, -- [64]
 		{
 			"mm", -- [1]
 			"|Kf2|k00000|k", -- [2]
@@ -2209,7 +1483,7 @@ ElvCharacterDB = {
 			[51] = 1534529586,
 			[50] = "CHAT_MSG_BN_WHISPER",
 			[53] = "tiger",
-		}, -- [98]
+		}, -- [65]
 		{
 			"ah jag har lite existens-kris", -- [1]
 			"|Kf2|k00000|k", -- [2]
@@ -2232,7 +1506,7 @@ ElvCharacterDB = {
 			[51] = 1534529602,
 			[50] = "CHAT_MSG_BN_WHISPER",
 			[53] = "tiger",
-		}, -- [99]
+		}, -- [66]
 		{
 			"och är ju kul å tjöta med gamla wow polare under release! kolla nya grejjer", -- [1]
 			"|Kf2|k00000|k", -- [2]
@@ -2255,7 +1529,7 @@ ElvCharacterDB = {
 			[51] = 1534529607,
 			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
 			[53] = "tiger",
-		}, -- [100]
+		}, -- [67]
 		{
 			"ska bli kul å casuala med is å jonil", -- [1]
 			"|Kf2|k00000|k", -- [2]
@@ -2278,7 +1552,7 @@ ElvCharacterDB = {
 			[51] = 1534529616,
 			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
 			[53] = "tiger",
-		}, -- [101]
+		}, -- [68]
 		{
 			"hehe märker det ^^", -- [1]
 			"|Kf2|k00000|k", -- [2]
@@ -2301,7 +1575,7 @@ ElvCharacterDB = {
 			[51] = 1534529633,
 			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
 			[53] = "tiger",
-		}, -- [102]
+		}, -- [69]
 		{
 			"|cffffff00Arom's Stand is under attack!|r", -- [1]
 			"", -- [2]
@@ -2323,7 +1597,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1535176895,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [103]
+		}, -- [70]
 		{
 			"|cffffff00Arom's Stand is under attack!|r", -- [1]
 			"", -- [2]
@@ -2345,7 +1619,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1535176965,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [104]
+		}, -- [71]
 		{
 			"|cffffff00Falconhurst is under attack!|r", -- [1]
 			"", -- [2]
@@ -2367,7 +1641,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1535177093,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [105]
+		}, -- [72]
 		{
 			"|cffffff00Fallhaven is under attack!|r", -- [1]
 			"", -- [2]
@@ -2389,7 +1663,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1535179179,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [106]
+		}, -- [73]
 		{
 			"|cffffff00Teller Farm is under attack!|r", -- [1]
 			"", -- [2]
@@ -2411,7 +1685,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1535181651,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [107]
+		}, -- [74]
 		{
 			"|cffffff00Fallhaven is under attack!|r", -- [1]
 			"", -- [2]
@@ -2433,7 +1707,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1535182688,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [108]
+		}, -- [75]
 		{
 			"|cffffff00Anyport is under attack!|r", -- [1]
 			"", -- [2]
@@ -2455,7 +1729,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1535349652,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [109]
+		}, -- [76]
 		{
 			"hc?", -- [1]
 			"|Kf25|k00000|k", -- [2]
@@ -2478,7 +1752,7 @@ ElvCharacterDB = {
 			[51] = 1535391937,
 			[50] = "CHAT_MSG_BN_WHISPER_INFORM",
 			[53] = "isafo",
-		}, -- [110]
+		}, -- [77]
 		{
 			"Jag är på", -- [1]
 			"|Kf25|k00000|k", -- [2]
@@ -2501,7 +1775,7 @@ ElvCharacterDB = {
 			[51] = 1535391955,
 			[50] = "CHAT_MSG_BN_WHISPER",
 			[53] = "isafo",
-		}, -- [111]
+		}, -- [78]
 		{
 			"|cffffff00Whitegrove Chapel is under attack!|r", -- [1]
 			"", -- [2]
@@ -2523,7 +1797,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1559371315,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [112]
+		}, -- [79]
 		{
 			"Najwieksza polska gildia na Defiasie - One Murloc One Jar - zaprasza wszystkich graczy! ", -- [1]
 			"Ashenbeard-DefiasBrotherhood", -- [2]
@@ -2545,7 +1819,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Ashenbeard|r",
 			[51] = 1559376923,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [113]
+		}, -- [80]
 		{
 			"|cffffff00Mariner's Row is under attack!|r", -- [1]
 			"", -- [2]
@@ -2567,7 +1841,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1575232986,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [114]
+		}, -- [81]
 		{
 			"Unstable Runic Mark on Addled", -- [1]
 			"Addled-DefiasBrotherhood", -- [2]
@@ -2589,7 +1863,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Addled|r",
 			[51] = 1575314025,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [115]
+		}, -- [82]
 		{
 			"Unstable Runic Mark on Addled", -- [1]
 			"Addled-DefiasBrotherhood", -- [2]
@@ -2611,7 +1885,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Addled|r",
 			[51] = 1575314037,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [116]
+		}, -- [83]
 		{
 			"Soul Thorns on Addled", -- [1]
 			"Addled-DefiasBrotherhood", -- [2]
@@ -2633,7 +1907,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Addled|r",
 			[51] = 1575314424,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [117]
+		}, -- [84]
 		{
 			"Virulent Pathogen", -- [1]
 			"Addled-DefiasBrotherhood", -- [2]
@@ -2655,7 +1929,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Addled|r",
 			[51] = 1575314897,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [118]
+		}, -- [85]
 		{
 			"Virulent Pathogen", -- [1]
 			"Addled-DefiasBrotherhood", -- [2]
@@ -2677,7 +1951,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Addled|r",
 			[51] = 1575314947,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [119]
+		}, -- [86]
 		{
 			"Virulent Pathogen", -- [1]
 			"Addled-DefiasBrotherhood", -- [2]
@@ -2699,7 +1973,7 @@ ElvCharacterDB = {
 			[52] = "|cfffef367Addled|r",
 			[51] = 1575314964,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [120]
+		}, -- [87]
 		{
 			"WTS Ny'alotha Heroic12/12 + Heroic Full Gear; Ny'alotha Mythic; Arena 3x3 , 2x2– we can help to farm new pvp mounts; Glory of the Ny'alotha Raider;", -- [1]
 			"Hanemal-Ravenholdt", -- [2]
@@ -2721,7 +1995,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeHanemal-Ravenholdt|r",
 			[51] = 1587807226,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [121]
+		}, -- [88]
 		{
 			"WTS Ny'alotha Mythic and Heroic 12/12; Mythic Dungeons Boost: 8/8-10/10 BFA; Horrific Visions 5 chest run + masks; M 10-23+ in time.", -- [1]
 			"Poskela-Ravenholdt", -- [2]
@@ -2743,7 +2017,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefePoskela-Ravenholdt|r",
 			[51] = 1595228466,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [122]
+		}, -- [89]
 		{
 			"|cffffff00The Canals is under attack!|r", -- [1]
 			"", -- [2]
@@ -2765,7 +2039,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1595229169,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [123]
+		}, -- [90]
 		{
 			"|cffffff00Trade District is under attack!|r", -- [1]
 			"", -- [2]
@@ -2787,7 +2061,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1595229231,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [124]
+		}, -- [91]
 		{
 			"|cffffff00The Canals is under attack!|r", -- [1]
 			"", -- [2]
@@ -2809,7 +2083,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1595229267,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [125]
+		}, -- [92]
 		{
 			"<Gallywix> DEALS on |cff66bbff|Hjournal:0:1180:14|h[Ny'alotha, the Waking City]|h|r Heroic (190K), Mythic+ 10-24, |cff71d5ff|Hspell:289555:0|h[Glacial Tidestorm]|h|r (ONLY 400K), Mechagon Hardmode, Rare mounts, Legacy content, PvP & more (Gold only)", -- [1]
 			"Gallybld-Ravenholdt", -- [2]
@@ -2831,7 +2105,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Gallybld-Ravenholdt|r",
 			[51] = 1595229793,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [126]
+		}, -- [93]
 		{
 			"WTS Ny'alotha Mythic and Heroic 12/12; Mythic Dungeons Boost: 8/8-10/10 BFA; Horrific Visions 5 chest run + masks; M 10-23+ in time.", -- [1]
 			"Poskela-Ravenholdt", -- [2]
@@ -2853,6 +2127,116 @@ ElvCharacterDB = {
 			[52] = "|cfffefefePoskela-Ravenholdt|r",
 			[51] = 1595229811,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [127]
+		}, -- [94]
+		{
+			"anyone in Ravendreath want to help me with a Grand Inquisitor?", -- [1]
+			"Nightstorm-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"4. LookingForGroup", -- [4]
+			"Nightstorm-DefiasBrotherhood", -- [5]
+			"", -- [6]
+			26, -- [7]
+			4, -- [8]
+			"LookingForGroup", -- [9]
+			0, -- [10]
+			13, -- [11]
+			"Player-1096-07DD8D6A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffe7b09Nightstorm|r",
+			[51] = 1620073608,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [95]
+		{
+			"ur still trying", -- [1]
+			"Lewsgirl-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Lewsgirl-DefiasBrotherhood", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			14, -- [11]
+			"Player-1096-09DA364C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Lewsgirl|r",
+			[51] = 1620073823,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [96]
+		{
+			"i went off for 6 hours and ur still typing WTB ", -- [1]
+			"Lewsgirl-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Lewsgirl-DefiasBrotherhood", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			15, -- [11]
+			"Player-1096-09DA364C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffe7b09Lewsgirl|r",
+			[51] = 1620073835,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [97]
+		{
+			"<NBC> Offers: |cff66bbff|Hjournal:0:1190:14|h[Castle Nathria]|h|r 10/10 HC 300k, Sire HC 50k,  Mythic 10/10, Keystone Master 1.49m, M+12 99k, M+15 200k ( Buy 2 or more = discounts), PVP, Torghast, Gold only, accepting on all realms, /w for info", -- [1]
+			"Nbcskadi-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Nbcskadi-DefiasBrotherhood", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			18, -- [11]
+			"Player-1096-0A1BB095", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff8687edNbcskadi|r",
+			[51] = 1620074891,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [98]
+		{
+			"<ICECROWN> M+16 500k || M+17 650k||M +14 110k +15 200k || Untimed 14 100k || 15 180k || 4x M+ Vault packages|| KSM = 1500K || 50-60 boost ||Twisting Corridors 1-8|| HC 10/10CN || Mythic CN ||Mounts & Hunter Pets || /w me to book: ) Gold only <3  ", -- [1]
+			"Redflash-DefiasBrotherhood", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Redflash-DefiasBrotherhood", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			19, -- [11]
+			"Player-1096-06B6AF7C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffef367Redflash|r",
+			[51] = 1620075063,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [99]
 	},
 }

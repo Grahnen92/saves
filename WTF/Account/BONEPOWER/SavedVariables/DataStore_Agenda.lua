@@ -1,92 +1,64 @@
 
 DataStore_AgendaDB = {
 	["profileKeys"] = {
-		["Kêl - Defias Brotherhood"] = "Kêl - Defias Brotherhood",
-		["Thaler - Defias Brotherhood"] = "Thaler - Defias Brotherhood",
+		["Addled - Defias Brotherhood"] = "Addled - Defias Brotherhood",
 		["Osa - Defias Brotherhood"] = "Osa - Defias Brotherhood",
-		["Gladwin - Ravencrest"] = "Gladwin - Ravencrest",
 		["Ösa - Defias Brotherhood"] = "Ösa - Defias Brotherhood",
 		["Ureg - Defias Brotherhood"] = "Ureg - Defias Brotherhood",
-		["Zuldo - Defias Brotherhood"] = "Zuldo - Defias Brotherhood",
-		["Vite - Ravencrest"] = "Vite - Ravencrest",
-		["Dryda - Ravencrest"] = "Dryda - Ravencrest",
-		["Ödette - Defias Brotherhood"] = "Ödette - Defias Brotherhood",
-		["Venedict - Defias Brotherhood"] = "Venedict - Defias Brotherhood",
-		["Rever - Ravencrest"] = "Rever - Ravencrest",
-		["Rekhyt - Vashj"] = "Rekhyt - Vashj",
-		["Gask - Ravencrest"] = "Gask - Ravencrest",
 		["Greve - Ravencrest"] = "Greve - Ravencrest",
-		["Gladwin - Defias Brotherhood"] = "Gladwin - Defias Brotherhood",
-		["Ored - Kazzak"] = "Ored - Kazzak",
-		["Mfgd - Defias Brotherhood"] = "Mfgd - Defias Brotherhood",
-		["Odöde - Defias Brotherhood"] = "Odöde - Defias Brotherhood",
-		["Vidja - Ravencrest"] = "Vidja - Ravencrest",
-		["Addled - Defias Brotherhood"] = "Addled - Defias Brotherhood",
-		["Gladwin - Kazzak"] = "Gladwin - Kazzak",
-		["Träl - Defias Brotherhood"] = "Träl - Defias Brotherhood",
 		["Rektar - Defias Brotherhood"] = "Rektar - Defias Brotherhood",
-		["Orek - Defias Brotherhood"] = "Orek - Defias Brotherhood",
-		["Ärlig - Ravencrest"] = "Ärlig - Ravencrest",
+		["Ored - Kazzak"] = "Ored - Kazzak",
+		["Odöde - Defias Brotherhood"] = "Odöde - Defias Brotherhood",
+		["Gladwin - Kazzak"] = "Gladwin - Kazzak",
+		["Rever - Ravencrest"] = "Rever - Ravencrest",
 		["Grave - Vashj"] = "Grave - Vashj",
-		["Prella - Defias Brotherhood"] = "Prella - Defias Brotherhood",
-		["Tzol - Defias Brotherhood"] = "Tzol - Defias Brotherhood",
+		["Dryda - Ravencrest"] = "Dryda - Ravencrest",
+		["Vite - Ravencrest"] = "Vite - Ravencrest",
+		["Thaler - Defias Brotherhood"] = "Thaler - Defias Brotherhood",
+		["Gladwin - Ravencrest"] = "Gladwin - Ravencrest",
+		["Allvarg - Ravencrest"] = "Allvarg - Ravencrest",
+		["Zuldo - Defias Brotherhood"] = "Zuldo - Defias Brotherhood",
+		["Rekhyt - Vashj"] = "Rekhyt - Vashj",
+		["Gladwin - Defias Brotherhood"] = "Gladwin - Defias Brotherhood",
+		["Träl - Defias Brotherhood"] = "Träl - Defias Brotherhood",
+		["Dal - Ravencrest"] = "Dal - Ravencrest",
+		["Kêl - Defias Brotherhood"] = "Kêl - Defias Brotherhood",
 		["Cazh - Kazzak"] = "Cazh - Kazzak",
 		["Kodah - Defias Brotherhood"] = "Kodah - Defias Brotherhood",
+		["Gask - Ravencrest"] = "Gask - Ravencrest",
+		["Prella - Defias Brotherhood"] = "Prella - Defias Brotherhood",
+		["Orek - Defias Brotherhood"] = "Orek - Defias Brotherhood",
+		["Ärlig - Ravencrest"] = "Ärlig - Ravencrest",
+		["Mfgd - Defias Brotherhood"] = "Mfgd - Defias Brotherhood",
+		["Venedict - Defias Brotherhood"] = "Venedict - Defias Brotherhood",
+		["Tzol - Defias Brotherhood"] = "Tzol - Defias Brotherhood",
+		["Vidja - Ravencrest"] = "Vidja - Ravencrest",
+		["Ödette - Defias Brotherhood"] = "Ödette - Defias Brotherhood",
 	},
 	["global"] = {
 		["Options"] = {
 			["WeeklyResetHour"] = 6,
 			["WeeklyResetDay"] = 3,
-			["NextWeeklyReset"] = "2021-03-10",
+			["NextWeeklyReset"] = "2021-05-19",
 		},
 		["Characters"] = {
+			["Default.Ravencrest.Ärlig"] = {
+				["lastUpdate"] = 1620290323,
+			},
 			["Default.Vashj.Rekhyt"] = {
 				["lastUpdate"] = 1603345239,
 			},
-			["Default.Defias Brotherhood.Orek"] = {
-				["lastUpdate"] = 1606403998,
-			},
-			["Default.Ravencrest.Ärlig"] = {
-				["lastUpdate"] = 1603345035,
-			},
-			["Default.Ravencrest.Vidja"] = {
-				["lastUpdate"] = 1603345084,
-			},
-			["Default.Defias Brotherhood.Ödette"] = {
-				["lastUpdate"] = 1604650192,
-			},
 			["Default.Defias Brotherhood.Träl"] = {
-				["lastUpdate"] = 1606410121,
+				["lastUpdate"] = 1620672860,
 			},
-			["Default.Defias Brotherhood.Addled"] = {
-				["lastUpdate"] = 1603344788,
+			["Default.Defias Brotherhood.Orek"] = {
+				["lastUpdate"] = 1620066933,
 			},
-			["Default.Defias Brotherhood.Venedict"] = {
-				["lastUpdate"] = 1604499453,
-			},
-			["Default.Defias Brotherhood.Ureg"] = {
-				["lastUpdate"] = 1606418042,
+			["Default.Ravencrest.Gask"] = {
+				["lastUpdate"] = 1608926383,
 			},
 			["Default.Defias Brotherhood.Zuldo"] = {
 				["lastUpdate"] = 1604090329,
-			},
-			["Default.Defias Brotherhood.Gladwin"] = {
-				["lastUpdate"] = 1603344724,
-			},
-			["Default.Ravencrest.Vite"] = {
-				["lastUpdate"] = 1603345429,
-			},
-			["Default.Kazzak.Gladwin"] = {
-				["lastUpdate"] = 1610431140,
-			},
-			["Default.Kazzak.Ored"] = {
-				["lastUpdate"] = 1607082367,
-			},
-			["Default.Defias Brotherhood.Thaler"] = {
-				["lastUpdate"] = 1615134147,
-			},
-			["Default.Defias Brotherhood.Mfgd"] = {
-				["lastUpdate"] = 1606932731,
 			},
 			["Default.Defias Brotherhood.Ösa"] = {
 				["lastUpdate"] = 1604650920,
@@ -94,20 +66,8 @@ DataStore_AgendaDB = {
 			["Default.Ravencrest.Greve"] = {
 				["lastUpdate"] = 1604988879,
 			},
-			["Default.Defias Brotherhood.Rektar"] = {
-				["lastUpdate"] = 1603344805,
-			},
-			["Default.Ravencrest.Rever"] = {
-				["lastUpdate"] = 1603345150,
-			},
-			["Default.Ravencrest.Dryda"] = {
-				["lastUpdate"] = 1603345170,
-			},
-			["Default.Vashj.Grave"] = {
-				["lastUpdate"] = 1603345217,
-			},
-			["Default.Defias Brotherhood.Odöde"] = {
-				["lastUpdate"] = 1605125844,
+			["Default.Ravencrest.Allvarg"] = {
+				["lastUpdate"] = 1620765119,
 			},
 			["Default.Defias Brotherhood.Tzol"] = {
 				["lastUpdate"] = 1606932853,
@@ -115,36 +75,71 @@ DataStore_AgendaDB = {
 			["Default.Defias Brotherhood.Prella"] = {
 				["lastUpdate"] = 1604484041,
 			},
-			["Default.Ravencrest.Gask"] = {
-				["lastUpdate"] = 1608926383,
+			["Default.Defias Brotherhood.Venedict"] = {
+				["lastUpdate"] = 1604499453,
 			},
-			["Default.Defias Brotherhood.Osa"] = {
-				["lastUpdate"] = 1604666089,
+			["Default.Defias Brotherhood.Addled"] = {
+				["lastUpdate"] = 1620316126,
+			},
+			["Default.Defias Brotherhood.Ödette"] = {
+				["lastUpdate"] = 1604650192,
+			},
+			["Default.Defias Brotherhood.Kêl"] = {
+				["lastUpdate"] = 1603344861,
+			},
+			["Default.Defias Brotherhood.Gladwin"] = {
+				["lastUpdate"] = 1603344724,
+			},
+			["Default.Vashj.Grave"] = {
+				["lastUpdate"] = 1603345217,
+			},
+			["Default.Defias Brotherhood.Thaler"] = {
+				["lastUpdate"] = 1620466030,
+			},
+			["Default.Defias Brotherhood.Mfgd"] = {
+				["lastUpdate"] = 1606932731,
 			},
 			["Default.Kazzak.Cazh"] = {
 				["lastUpdate"] = 1603344920,
 			},
+			["Default.Defias Brotherhood.Rektar"] = {
+				["lastUpdate"] = 1603344805,
+			},
+			["Default.Ravencrest.Dryda"] = {
+				["lastUpdate"] = 1620466097,
+			},
+			["Default.Ravencrest.Vidja"] = {
+				["lastUpdate"] = 1616336756,
+			},
+			["Default.Defias Brotherhood.Ureg"] = {
+				["lastUpdate"] = 1620290286,
+			},
+			["Default.Defias Brotherhood.Odöde"] = {
+				["lastUpdate"] = 1605125844,
+			},
+			["Default.Kazzak.Gladwin"] = {
+				["lastUpdate"] = 1610431140,
+			},
+			["Default.Ravencrest.Rever"] = {
+				["lastUpdate"] = 1620823116,
+			},
+			["Default.Ravencrest.Dal"] = {
+				["lastUpdate"] = 1620563582,
+			},
+			["Default.Defias Brotherhood.Osa"] = {
+				["lastUpdate"] = 1604666089,
+			},
+			["Default.Kazzak.Ored"] = {
+				["lastUpdate"] = 1620371241,
+			},
 			["Default.Ravencrest.Gladwin"] = {
-				["lastUpdate"] = 1604951195,
-				["DungeonBosses"] = {
-					["Battle of Dazar'alor Looking For Raid|1497849353"] = {
-						["King Rastakhan"] = false,
-						["Lady Jaina Proudmoore"] = false,
-						["Jadefire Masters"] = false,
-						["Conclave of the Chosen"] = false,
-						["Grong the Revenant"] = false,
-						["Stormwall Blockade"] = false,
-						["Mekkatorque"] = false,
-						["Champion of the Light"] = true,
-						["Opulence"] = false,
-					},
-				},
+				["lastUpdate"] = 1620469622,
 			},
 			["Default.Defias Brotherhood.Kodah"] = {
 				["lastUpdate"] = 1608959130,
 			},
-			["Default.Defias Brotherhood.Kêl"] = {
-				["lastUpdate"] = 1603344861,
+			["Default.Ravencrest.Vite"] = {
+				["lastUpdate"] = 1603345429,
 			},
 		},
 	},
