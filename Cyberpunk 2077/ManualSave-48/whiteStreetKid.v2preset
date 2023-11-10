@@ -1,0 +1,2554 @@
+{
+  "JsonVersion": "0.0.8",
+  "Data": {
+    "DataExists": 1,
+    "Unknown1": 0,
+    "IsBrainGenderMale": 1,
+    "Preset": {
+      "$type": "gameuiCharacterCustomizationPreset",
+      "armsGroups": [
+        {
+          "$type": "gameuiCustomizationGroup",
+          "customization": [
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "holstered_arms_data_male"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "holstered_data"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\common\\player_base_bodies\\appearances\\arms\\a0_000_holstered_data.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "a0_000_pma_base__nails_01_all_white__multilayer"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "nails_color"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\common\\player_base_bodies\\appearances\\a0_000_base__nails.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "a0_000_pma_base__01_ca_pale"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "h_default_arms_colors"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\common\\player_base_bodies\\appearances\\a0_000_base__full.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "male_a0_000_personal_link"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "personal_link_simple"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\common\\player_base_bodies\\appearances\\arms\\personal_link\\a0_000_holstered_personal_link.app"
+                },
+                "Flags": "Soft"
+              }
+            }
+          ],
+          "morphs": [],
+          "name": {
+            "$type": "CName",
+            "$storage": "string",
+            "$value": "holstered_default"
+          }
+        },
+        {
+          "$type": "gameuiCustomizationGroup",
+          "customization": [
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "holstered_arms_data_male"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "holstered_data"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\common\\player_base_bodies\\appearances\\arms\\a0_000_holstered_data.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "male_a0_000_strong_arms__01_ca_pale"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "h_strong_arms_colors_base"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\common\\player_base_bodies\\appearances\\arms\\strong_arms\\a0_000_holstered_strong_arms__base.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "male_a0_000_strong_arms__01_ca_pale"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "h_strong_arms_colors_cyberware01"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\common\\player_base_bodies\\appearances\\arms\\strong_arms\\a0_000_holstered_strong_arms__cyberware_01.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "male_a0_000_personal_link"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "personal_link_simple"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\common\\player_base_bodies\\appearances\\arms\\personal_link\\a0_000_holstered_personal_link.app"
+                },
+                "Flags": "Soft"
+              }
+            }
+          ],
+          "morphs": [],
+          "name": {
+            "$type": "CName",
+            "$storage": "string",
+            "$value": "holstered_strong"
+          }
+        },
+        {
+          "$type": "gameuiCustomizationGroup",
+          "customization": [
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "male_a0_000_strong_arms__01_ca_pale"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "u_strong_arms_colors_base"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\common\\player_base_bodies\\appearances\\arms\\strong_arms\\a0_000_unholstered_strong_arms__base.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "male_a0_000_strong_arms__01_ca_pale"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "u_strong_arms_colors_cyberware01"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\common\\player_base_bodies\\appearances\\arms\\strong_arms\\a0_000_unholstered_strong_arms__cyberware_01.app"
+                },
+                "Flags": "Soft"
+              }
+            }
+          ],
+          "morphs": [],
+          "name": {
+            "$type": "CName",
+            "$storage": "string",
+            "$value": "unholstered_strong"
+          }
+        },
+        {
+          "$type": "gameuiCustomizationGroup",
+          "customization": [
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "holstered_arms_data_male"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "holstered_data"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\common\\player_base_bodies\\appearances\\arms\\a0_000_holstered_data.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "a0_000_pma_base__nails_01_all_white__multilayer"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "nails_color"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\common\\player_base_bodies\\appearances\\a0_000_base__nails.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "male_a0_000_personal_link__01_ca_pale"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "h_monowire_arms_colors_base"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\common\\player_base_bodies\\appearances\\arms\\monowire_whip\\a0_000_holstered_monowire_whip.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "male_a0_000_personal_link"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "personal_link_simple"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\common\\player_base_bodies\\appearances\\arms\\personal_link\\a0_000_holstered_personal_link.app"
+                },
+                "Flags": "Soft"
+              }
+            }
+          ],
+          "morphs": [],
+          "name": {
+            "$type": "CName",
+            "$storage": "string",
+            "$value": "holstered_nanowire"
+          }
+        },
+        {
+          "$type": "gameuiCustomizationGroup",
+          "customization": [
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "a0_000_pma_base__nails_01_all_white__multilayer"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "nails_color"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\common\\player_base_bodies\\appearances\\a0_000_base__nails.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "male_a0_000_personal_link__01_ca_pale"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "u_monowire_arms_colors_base"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\common\\player_base_bodies\\appearances\\arms\\monowire_whip\\a0_000_unholstered_monowire_whip.app"
+                },
+                "Flags": "Soft"
+              }
+            }
+          ],
+          "morphs": [],
+          "name": {
+            "$type": "CName",
+            "$storage": "string",
+            "$value": "unholstered_nanowire"
+          }
+        },
+        {
+          "$type": "gameuiCustomizationGroup",
+          "customization": [
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "a0_000_pma_base__nails_01_all_white__multilayer"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "nails_color"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\common\\player_base_bodies\\appearances\\a0_000_base__nails.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "a0_000_pma_base__01_ca_pale"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "h_default_arms_colors"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\common\\player_base_bodies\\appearances\\a0_000_base__full.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "male_a0_000_personal_link"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "personal_link_simple"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\common\\player_base_bodies\\appearances\\arms\\personal_link\\a0_000_holstered_personal_link.app"
+                },
+                "Flags": "Soft"
+              }
+            }
+          ],
+          "morphs": [],
+          "name": {
+            "$type": "CName",
+            "$storage": "string",
+            "$value": "character_customization"
+          }
+        },
+        {
+          "$type": "gameuiCustomizationGroup",
+          "customization": [
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "male_a0_000_personal_link"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "personal_link_simple"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\common\\player_base_bodies\\appearances\\arms\\personal_link\\a0_000_holstered_personal_link.app"
+                },
+                "Flags": "Soft"
+              }
+            }
+          ],
+          "morphs": [],
+          "name": {
+            "$type": "CName",
+            "$storage": "string",
+            "$value": "personal_link_simple"
+          }
+        },
+        {
+          "$type": "gameuiCustomizationGroup",
+          "customization": [
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "male_a0_000_personal_link"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "personal_link_advanced"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\common\\player_base_bodies\\appearances\\arms\\personal_link\\a0_000_unholstered_personal_link.app"
+                },
+                "Flags": "Soft"
+              }
+            }
+          ],
+          "morphs": [],
+          "name": {
+            "$type": "CName",
+            "$storage": "string",
+            "$value": "personal_link_advanced"
+          }
+        },
+        {
+          "$type": "gameuiCustomizationGroup",
+          "customization": [
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "holstered_arms_data_male"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "holstered_data"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\common\\player_base_bodies\\appearances\\arms\\a0_000_holstered_data.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "a0_000_pma_base__nails_01_all_white__multilayer"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "nails_color"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\common\\player_base_bodies\\appearances\\a0_000_base__nails.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "male__01_ca_pale"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "h_launcher_arms_colors_base"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\common\\player_base_bodies\\appearances\\arms\\launcher\\a0_000_holstered_launcher__base.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "male__01_ca_pale"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "h_launcher_arms_colors_cyberware01"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\common\\player_base_bodies\\appearances\\arms\\launcher\\a0_000_holstered_launcher__cyberware_01.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "male_a0_000_personal_link"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "personal_link_simple"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\common\\player_base_bodies\\appearances\\arms\\personal_link\\a0_000_holstered_personal_link.app"
+                },
+                "Flags": "Soft"
+              }
+            }
+          ],
+          "morphs": [],
+          "name": {
+            "$type": "CName",
+            "$storage": "string",
+            "$value": "holstered_launcher"
+          }
+        },
+        {
+          "$type": "gameuiCustomizationGroup",
+          "customization": [
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "male__01_ca_pale"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "u_launcher_arms_colors_base"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\common\\player_base_bodies\\appearances\\arms\\launcher\\a0_000_unholstered_launcher__base.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "male__01_ca_pale"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "u_launcher_arms_colors_cyberware01"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\common\\player_base_bodies\\appearances\\arms\\launcher\\a0_000_unholstered_launcher__cyberware_01.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "a0_000_pma_base__nails_01_all_white__multilayer"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "u_launcher_nails_color"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\common\\player_base_bodies\\appearances\\arms\\launcher\\a0_000_unholstered_launcher__nails.app"
+                },
+                "Flags": "Soft"
+              }
+            }
+          ],
+          "morphs": [],
+          "name": {
+            "$type": "CName",
+            "$storage": "string",
+            "$value": "unholstered_launcher"
+          }
+        },
+        {
+          "$type": "gameuiCustomizationGroup",
+          "customization": [
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "holstered_arms_data_male"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "holstered_data"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\common\\player_base_bodies\\appearances\\arms\\a0_000_holstered_data.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "a0_000_pma_base__nails_01_all_white__multilayer"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "nails_color"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\common\\player_base_bodies\\appearances\\a0_000_base__nails.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "male_a0_000_mantisblade__01_ca_pale"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "h_mantis_arms_colors_base"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\common\\player_base_bodies\\appearances\\arms\\mantisblade\\a0_000_holstered_mantisblade__base.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "male_a0_000_mantisblade__01_ca_pale"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "h_mantis_arms_colors_cyberware01"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\common\\player_base_bodies\\appearances\\arms\\mantisblade\\a0_000_holstered_mantisblade__cyberware_01.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "male_a0_000_personal_link"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "personal_link_simple"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\common\\player_base_bodies\\appearances\\arms\\personal_link\\a0_000_holstered_personal_link.app"
+                },
+                "Flags": "Soft"
+              }
+            }
+          ],
+          "morphs": [],
+          "name": {
+            "$type": "CName",
+            "$storage": "string",
+            "$value": "holstered_mantis"
+          }
+        },
+        {
+          "$type": "gameuiCustomizationGroup",
+          "customization": [
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "male_a0_000_mantisblade__01_ca_pale"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "u_mantis_arms_colors_base"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\common\\player_base_bodies\\appearances\\arms\\mantisblade\\a0_000_unholstered_mantisblade__base.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "male_a0_000_mantisblade__01_ca_pale"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "u_mantis_arms_colors_cyberware01"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\common\\player_base_bodies\\appearances\\arms\\mantisblade\\a0_000_unholstered_mantisblade__cyberware_01.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "a0_000_pma_base__nails_01_all_white__multilayer"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "u_mantise_nails_color"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\common\\player_base_bodies\\appearances\\arms\\mantisblade\\a0_000_unholstered_mantisblade__nails.app"
+                },
+                "Flags": "Soft"
+              }
+            }
+          ],
+          "morphs": [],
+          "name": {
+            "$type": "CName",
+            "$storage": "string",
+            "$value": "unholstered_mantis"
+          }
+        },
+        {
+          "$type": "gameuiCustomizationGroup",
+          "customization": [],
+          "morphs": [],
+          "name": {
+            "$type": "CName",
+            "$storage": "string",
+            "$value": "nails"
+          }
+        }
+      ],
+      "bodyGroups": [
+        {
+          "$type": "gameuiCustomizationGroup",
+          "customization": [
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "Censor_Nudity",
+              "censorFlagAction": "Deactivate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "t0_000_pma_base__01_ca_pale"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "body_color"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\common\\player_base_bodies\\appearances\\t0_000_base__full.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "Censor_Nudity",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "t0_000_pma_fpp__01_ca_pale"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "body_color_censored"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\common\\player_base_bodies\\appearances\\t0_000_fpp__full_censored.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "m__01_ca_pale"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "body_tattoo_01"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\common\\player_base_bodies\\appearances\\t0_000_base__tattoo_01.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "Censor_Nudity",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "male_001"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "underpants"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\common\\player_base_bodies\\appearances\\t0_000_base__censored_items.app"
+                },
+                "Flags": "Soft"
+              }
+            }
+          ],
+          "morphs": [],
+          "name": {
+            "$type": "CName",
+            "$storage": "string",
+            "$value": "FPP_Body"
+          }
+        },
+        {
+          "$type": "gameuiCustomizationGroup",
+          "customization": [
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "Censor_Nudity",
+              "censorFlagAction": "Deactivate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "t0_000_pma_base__01_ca_pale"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "body_color"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\common\\player_base_bodies\\appearances\\t0_000_base__full.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "Censor_Nudity",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "t0_000_pma_fpp__01_ca_pale"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "body_color_censored"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\common\\player_base_bodies\\appearances\\t0_000_fpp__full_censored.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "m__01_ca_pale"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "body_tattoo_01"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\common\\player_base_bodies\\appearances\\t0_000_base__tattoo_01.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "Censor_Nudity",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "male_001"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "underpants"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\common\\player_base_bodies\\appearances\\t0_000_base__censored_items.app"
+                },
+                "Flags": "Soft"
+              }
+            }
+          ],
+          "morphs": [],
+          "name": {
+            "$type": "CName",
+            "$storage": "string",
+            "$value": "TPP_Body"
+          }
+        },
+        {
+          "$type": "gameuiCustomizationGroup",
+          "customization": [
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "Censor_Nudity",
+              "censorFlagAction": "Deactivate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "t0_000_pma_base__01_ca_pale"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "body_color"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\common\\player_base_bodies\\appearances\\t0_000_base__full.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "Censor_Nudity",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "t0_000_pma_fpp__01_ca_pale"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "body_color_censored"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\common\\player_base_bodies\\appearances\\t0_000_fpp__full_censored.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "m__01_ca_pale"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "body_tattoo_01"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\common\\player_base_bodies\\appearances\\t0_000_base__tattoo_01.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "Censor_Nudity",
+              "censorFlagAction": "Deactivate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "i0_000_pma_base__penis__01_ca_pale"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "genitals_01"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\common\\player_base_bodies\\appearances\\i0_000_base__genitals.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "Censor_Nudity",
+              "censorFlagAction": "Deactivate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "i0_000_pma_base__penis_hairstyle__01_black"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "penis_base_hairstyle_01"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\common\\player_base_bodies\\appearances\\i0_000_base__genitals_hairstyle_01.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "Censor_Nudity",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "male_001"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "underpants"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\common\\player_base_bodies\\appearances\\t0_000_base__censored_items.app"
+                },
+                "Flags": "Soft"
+              }
+            }
+          ],
+          "morphs": [],
+          "name": {
+            "$type": "CName",
+            "$storage": "string",
+            "$value": "character_creation"
+          }
+        },
+        {
+          "$type": "gameuiCustomizationGroup",
+          "customization": [
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "Censor_Nudity",
+              "censorFlagAction": "Deactivate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "i0_000_pma_base__penis__01_ca_pale"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "genitals_01"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\common\\player_base_bodies\\appearances\\i0_000_base__genitals.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "Censor_Nudity",
+              "censorFlagAction": "Deactivate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "i0_000_pma_base__penis_hairstyle__01_black"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "penis_base_hairstyle_01"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\common\\player_base_bodies\\appearances\\i0_000_base__genitals_hairstyle_01.app"
+                },
+                "Flags": "Soft"
+              }
+            }
+          ],
+          "morphs": [],
+          "name": {
+            "$type": "CName",
+            "$storage": "string",
+            "$value": "genitals"
+          }
+        },
+        {
+          "$type": "gameuiCustomizationGroup",
+          "customization": [],
+          "morphs": [],
+          "name": {
+            "$type": "CName",
+            "$storage": "string",
+            "$value": "breast"
+          }
+        }
+      ],
+      "cookingPlatform": "PLATFORM_None",
+      "headGroups": [
+        {
+          "$type": "gameuiCustomizationGroup",
+          "customization": [
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "h0_000_pma__basehead__face_rig"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "tpp_head_face_rig"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "ep1\\characters\\head\\player_base_heads\\appearances\\head\\face_rig\\h0_000__basehead_face_rig_ep1.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "h0_000_pma__basehead__01_ca_pale"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "skin_type_01"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\head\\player_base_heads\\appearances\\head\\h0_000__basehead.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "he_000_pma__basehead__14_gradient_grey"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "eyes_color"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\head\\player_base_heads\\appearances\\head\\he_000__basehead.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "male__05_brown_liquorice"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "eyelash_color"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\head\\player_base_heads\\appearances\\head\\hel_000__basehead.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "m__01_ca_pale"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "facial_tattoo_01"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\head\\player_base_heads\\appearances\\head\\tattoos\\hx_000__tattoo_01.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "male_ht_000__basehead"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "teeth"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\head\\player_base_heads\\appearances\\head\\ht_000__basehead.app"
+                },
+                "Flags": "Soft"
+              }
+            }
+          ],
+          "morphs": [
+            {
+              "$type": "gameuiCustomizationMorph",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "regionName": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "eyes"
+              },
+              "targetName": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "h101"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationMorph",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "regionName": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "nose"
+              },
+              "targetName": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "h102"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationMorph",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "regionName": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "mouth"
+              },
+              "targetName": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "h023"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationMorph",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "regionName": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "jaw"
+              },
+              "targetName": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "h194"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationMorph",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "regionName": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "ear"
+              },
+              "targetName": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "h015"
+              }
+            }
+          ],
+          "name": {
+            "$type": "CName",
+            "$storage": "string",
+            "$value": "TPP"
+          }
+        },
+        {
+          "$type": "gameuiCustomizationGroup",
+          "customization": [
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "n0_000_pma_fpp__neck__01_ca_pale"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "neck"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\common\\player_base_bodies\\appearances\\n0_000_base_fpp__neck.app"
+                },
+                "Flags": "Soft"
+              }
+            }
+          ],
+          "morphs": [],
+          "name": {
+            "$type": "CName",
+            "$storage": "string",
+            "$value": "FPP"
+          }
+        },
+        {
+          "$type": "gameuiCustomizationGroup",
+          "customization": [
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "01_blonde_platinum"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "hair_color_cyberware_18"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\head\\player_base_heads\\appearances\\hairs\\hh_017_pma__hairs_026_cyberware_01.app"
+                },
+                "Flags": "Soft"
+              }
+            }
+          ],
+          "morphs": [],
+          "name": {
+            "$type": "CName",
+            "$storage": "string",
+            "$value": "hairs"
+          }
+        },
+        {
+          "$type": "gameuiCustomizationGroup",
+          "customization": [
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "h0_000_pma__basehead__face_rig"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "tpp_head_face_rig"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "ep1\\characters\\head\\player_base_heads\\appearances\\head\\face_rig\\h0_000__basehead_face_rig_ep1.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "h0_000_pma__basehead__01_ca_pale"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "skin_type_01"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\head\\player_base_heads\\appearances\\head\\h0_000__basehead.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "01_blonde_platinum"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "hair_color_cyberware_18"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\head\\player_base_heads\\appearances\\hairs\\hh_017_pma__hairs_026_cyberware_01.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "default"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "hair_color_fpp_18"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\head\\player_base_heads\\appearances\\hairs\\fpp\\hh_017_pma__hairs_026_fpp.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "he_000_pma__basehead__14_gradient_grey"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "eyes_color"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\head\\player_base_heads\\appearances\\head\\he_000__basehead.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "male__12_gray_gunmetal"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "eyebrows_color1"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\head\\player_base_heads\\appearances\\head\\eyebrows\\heb_000__basehead_01.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "male__05_brown_liquorice"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "eyelash_color"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\head\\player_base_heads\\appearances\\head\\hel_000__basehead.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "hx_000_pma__cyberware_01__01_ca_pale"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "cyberware_01"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\head\\player_base_heads\\appearances\\head\\hx_000__cyberware.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "m__01_ca_pale"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "facial_tattoo_01"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\head\\player_base_heads\\appearances\\head\\tattoos\\hx_000__tattoo_01.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "male_ht_000__basehead"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "teeth"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\head\\player_base_heads\\appearances\\head\\ht_000__basehead.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "hx_000_pma__morphs_makeup_freckles_01__01_black"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "makeupCheeks_02"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\head\\player_base_heads\\appearances\\head\\makeup_freckles\\hx_000__basehead_makeup_freckles_02.app"
+                },
+                "Flags": "Soft"
+              }
+            }
+          ],
+          "morphs": [
+            {
+              "$type": "gameuiCustomizationMorph",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "regionName": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "eyes"
+              },
+              "targetName": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "h101"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationMorph",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "regionName": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "nose"
+              },
+              "targetName": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "h102"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationMorph",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "regionName": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "mouth"
+              },
+              "targetName": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "h023"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationMorph",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "regionName": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "jaw"
+              },
+              "targetName": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "h194"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationMorph",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "regionName": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "ear"
+              },
+              "targetName": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "h015"
+              }
+            }
+          ],
+          "name": {
+            "$type": "CName",
+            "$storage": "string",
+            "$value": "character_customization"
+          }
+        },
+        {
+          "$type": "gameuiCustomizationGroup",
+          "customization": [
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "h0_000_pma__basehead__01_ca_pale"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "tpp_head_proxy"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\head\\player_base_heads\\appearances\\head\\proxy\\h0_000__basehead_proxy.app"
+                },
+                "Flags": "Soft"
+              }
+            }
+          ],
+          "morphs": [],
+          "name": {
+            "$type": "CName",
+            "$storage": "string",
+            "$value": "TPP_proxy"
+          }
+        },
+        {
+          "$type": "gameuiCustomizationGroup",
+          "customization": [
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "n0_000_pma_fpp__neck__01_ca_pale"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "fpp_head_proxy"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\common\\player_base_bodies\\appearances\\n0_000_base_fpp__neck.app"
+                },
+                "Flags": "Soft"
+              }
+            }
+          ],
+          "morphs": [],
+          "name": {
+            "$type": "CName",
+            "$storage": "string",
+            "$value": "FPP_proxy"
+          }
+        },
+        {
+          "$type": "gameuiCustomizationGroup",
+          "customization": [
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "default"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "hair_color_fpp_18"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\head\\player_base_heads\\appearances\\hairs\\fpp\\hh_017_pma__hairs_026_fpp.app"
+                },
+                "Flags": "Soft"
+              }
+            }
+          ],
+          "morphs": [],
+          "name": {
+            "$type": "CName",
+            "$storage": "string",
+            "$value": "FPP_hairs"
+          }
+        },
+        {
+          "$type": "gameuiCustomizationGroup",
+          "customization": [
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "h0_000_pma__basehead__face_rig_photomode"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "tpp_head_face_rig_photomode"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\head\\player_base_heads\\appearances\\head\\face_rig\\h0_000__basehead_face_rig_photomode.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "h0_000_pma__basehead__01_ca_pale"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "skin_type_01"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\head\\player_base_heads\\appearances\\head\\h0_000__basehead.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "he_000_pma__basehead__14_gradient_grey"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "eyes_color"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\head\\player_base_heads\\appearances\\head\\he_000__basehead.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "male__05_brown_liquorice"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "eyelash_color"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\head\\player_base_heads\\appearances\\head\\hel_000__basehead.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "m__01_ca_pale"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "facial_tattoo_01"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\head\\player_base_heads\\appearances\\head\\tattoos\\hx_000__tattoo_01.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "male_ht_000__basehead"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "teeth"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\head\\player_base_heads\\appearances\\head\\ht_000__basehead.app"
+                },
+                "Flags": "Soft"
+              }
+            }
+          ],
+          "morphs": [
+            {
+              "$type": "gameuiCustomizationMorph",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "regionName": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "eyes"
+              },
+              "targetName": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "h101"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationMorph",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "regionName": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "nose"
+              },
+              "targetName": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "h102"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationMorph",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "regionName": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "mouth"
+              },
+              "targetName": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "h023"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationMorph",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "regionName": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "jaw"
+              },
+              "targetName": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "h194"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationMorph",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "regionName": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "ear"
+              },
+              "targetName": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "h015"
+              }
+            }
+          ],
+          "name": {
+            "$type": "CName",
+            "$storage": "string",
+            "$value": "TPP_photomode"
+          }
+        },
+        {
+          "$type": "gameuiCustomizationGroup",
+          "customization": [],
+          "morphs": [],
+          "name": {
+            "$type": "CName",
+            "$storage": "string",
+            "$value": "beards"
+          }
+        },
+        {
+          "$type": "gameuiCustomizationGroup",
+          "customization": [
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "male__12_gray_gunmetal"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "eyebrows_color1"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\head\\player_base_heads\\appearances\\head\\eyebrows\\heb_000__basehead_01.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "hx_000_pma__cyberware_01__01_ca_pale"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "cyberware_01"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\head\\player_base_heads\\appearances\\head\\hx_000__cyberware.app"
+                },
+                "Flags": "Soft"
+              }
+            },
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "hx_000_pma__morphs_makeup_freckles_01__01_black"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "makeupCheeks_02"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\head\\player_base_heads\\appearances\\head\\makeup_freckles\\hx_000__basehead_makeup_freckles_02.app"
+                },
+                "Flags": "Soft"
+              }
+            }
+          ],
+          "morphs": [],
+          "name": {
+            "$type": "CName",
+            "$storage": "string",
+            "$value": "face"
+          }
+        },
+        {
+          "$type": "gameuiCustomizationGroup",
+          "customization": [
+            {
+              "$type": "gameuiCustomizationAppearance",
+              "censorFlag": "0",
+              "censorFlagAction": "Activate",
+              "definition": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "h0_000_pma__scars_01__q_307"
+              },
+              "name": {
+                "$type": "CName",
+                "$storage": "string",
+                "$value": "finalSceneBruises"
+              },
+              "resource": {
+                "DepotPath": {
+                  "$type": "ResourcePath",
+                  "$storage": "string",
+                  "$value": "base\\characters\\head\\player_base_heads\\appearances\\head\\hx_000__beatenup_q_307.app"
+                },
+                "Flags": "Soft"
+              }
+            }
+          ],
+          "morphs": [],
+          "name": {
+            "$type": "CName",
+            "$storage": "string",
+            "$value": "finalSceneBruises"
+          }
+        }
+      ],
+      "isMale": 1,
+      "perspectiveInfo": [
+        {
+          "$type": "gameuiPerspectiveInfo",
+          "fpp": {
+            "$type": "CName",
+            "$storage": "string",
+            "$value": "FPP_Body"
+          },
+          "name": {
+            "$type": "CName",
+            "$storage": "string",
+            "$value": "FPP_Body"
+          },
+          "tpp": {
+            "$type": "CName",
+            "$storage": "string",
+            "$value": "TPP_Body"
+          }
+        }
+      ],
+      "tags": {
+        "$type": "redTagList",
+        "tags": [
+          {
+            "$type": "CName",
+            "$storage": "string",
+            "$value": "blonde_platinum"
+          },
+          {
+            "$type": "CName",
+            "$storage": "string",
+            "$value": "Short"
+          }
+        ]
+      },
+      "version": 12
+    }
+  }
+}
